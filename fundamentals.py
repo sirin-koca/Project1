@@ -4,9 +4,8 @@ over many lines.
 # This is a short comment.
 
 # Let's learn Python!
-# Run this script in commandline like powershell by typing: py helloworld.py
-# Remember to save the file after editing.
-# The file (python script) has to be saved under "User" aka sirin.
+# Run this script in commandline eg. powershell by typing: py helloworld.py
+# The file (python script) has to be saved under "User"
 
 print("# - Hello, World! What a beautiful day! Today we are going to learn PYTHON! :) ")
 
