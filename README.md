@@ -1,18 +1,19 @@
 # Python Fundamentals
-### Data Types: 
+
+* Data Types: 
 Python has various data types such as integers, floating-point numbers, strings, and booleans.
-### Variables: 
+* Variables: 
 Variables are used to store data values. The assignment operator (=) is used to assign a value to a variable.
-### Operators: 
+* Operators: 
 Python supports the usual mathematical operators such as +, -, *, /, and %.
-### Control Flow: 
+* Control Flow: 
 Python uses indentation to define control flow, instead of curly braces or keywords.
-### Functions: 
+* Functions: 
 Functions are used to organize code and to perform specific tasks. The def keyword is used to define a function.
-### Modules: 
+* Modules: 
 Python has a large standard library that includes modules for various tasks. Additional modules can be imported using the import keyword.
 
-## Examples
+### Examples
 
 ```
 # variable assignment
