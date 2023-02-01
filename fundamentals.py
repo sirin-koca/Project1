@@ -67,3 +67,12 @@ print(z)
 
 x = "Python is cool!"
 print(x)
+
+# CASTING in Python
+num = int(5.1)
+msg = str(5)
+
+num = 5**2
+
+print(num, msg)
+
