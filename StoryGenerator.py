@@ -1,5 +1,5 @@
 '''
-Mad Libs Story Generator
+Mad Libs Story Generator by Sirin Koca
 -------------------------------------------------------------
 '''
 

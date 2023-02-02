@@ -2,34 +2,49 @@
 over many lines.
 """
 # This is a short comment.
-
+# Run this script in commandline e.g. Powershell by typing: py helloworld.py
 # Let's learn Python!
-# Run this script in commandline eg. powershell by typing: py helloworld.py
-# The file (python script) has to be saved under "User"
 
-print("# - Hello, World! What a beautiful day! Today we are going to learn PYTHON! :) ")
-
-if 5 > 2:
-    print("# - Yes, five is bigger than two")
+# Print “Hello, World!” to console
+print("Hello, World!")
 
 y = "Hello, Sirin!"
 print(y)
 
-# ASSIGN and REASSIGN variables:
+# Assigning variables:
 x = 4  # x is of type int
-x = "Sally"  # x is now of type str
+x = "Sally"  # x is now of type string
 print(x)
-
-# CASTING in Python:
-x = str(3)  # x will be '3'
-y = int(3)  # y will be 3
-z = float(3)  # z will be 3.0
+print(type(x))
 
 # Get the name of the datatype with type() function:
 x = 5
 y = "John"
 print(type(x))
 print(type(y))
+
+# Conditional statements:
+if 5 > 2:
+    print("# - Yes, five is bigger than two")
+
+x = 5
+if x > 0:
+    print("x is positive")
+else:
+    print("x is negative")
+
+x = 5
+if x > 0:
+    print("x is positive")
+elif x == 0:
+    print("x is zero")
+else:
+    print("x is negative")
+
+# Casting:
+x = str(3)  # x will be '3'
+y = int(3)  # y will be 3
+z = float(3)  # z will be 3.0
 
 x = "John"
 # is the same as
@@ -71,7 +86,47 @@ print(x)
 num = int(5.1)
 msg = str(5)
 
-num = 5**2
+# Mathematical operations
+# Addition
+x = 5
+y = 3
+result = x + y
+print("The result of x + y is:", result)
 
-print(num, msg)
+# Subtraction
+x = 5
+y = 3
+result = x - y
+print("The result of x - y is:", result)
 
+# Multiplication
+x = 5
+y = 3
+result = x * y
+print("The result of x * y is:", result)
+
+# Division
+x = 5
+y = 3
+result = x / y
+print("The result of x / y is:", result)
+
+# Integer division
+x = 5
+y = 3
+result = x // y
+print("The result of x // y is:", result)
+
+# Modulus
+x = 5
+y = 3
+result = x % y
+print("The result of x % y is:", result)
+
+# Exponentiation
+x = 5
+y = 3
+result = x ** y
+print("The result of x ** y is:", result)
+
+# sirin-koca
