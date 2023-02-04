@@ -1,4 +1,4 @@
-# Python Fundamentals 🐍
+# Python Fundamentals 𓆗
 
 * Data Types: Python has various data types such as integers, floating-point numbers, strings, and booleans.
 * Variables: Variables are used to store data values. The assignment operator (=) is used to assign a value to a variable.
