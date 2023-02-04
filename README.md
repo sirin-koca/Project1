@@ -1,4 +1,4 @@
-# Python Fundamentals
+# Python Fundamentals 🐍
 
 * Data Types: 
 Python has various data types such as integers, floating-point numbers, strings, and booleans.
