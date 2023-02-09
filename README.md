@@ -31,7 +31,7 @@ def add(a, b):
 
 # function call
 result = add(x, y)
-print(result)  # 7
+print(result)  # outputs 7 : (5 + 2)
 
 # import statement
 import math
