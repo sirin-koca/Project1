@@ -48,4 +48,17 @@ finally:
         f.close()
         print("File closed.")
 
+# Example3:
+value = input("Enter a number: ")
+
+try:
+    number = int(value)
+    if number > 0:
+        print("The number is positive.")
+    else:
+        print("The number is non-positive.")
+except ValueError:
+    print("Invalid input: not a number.")
+
+
 exit()
