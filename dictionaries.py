@@ -4,6 +4,9 @@ Dictionaries are also known as associative arrays, maps, or hash tables in other
 
 Dictionaries are commonly used in Python for tasks such as counting the frequency of words in a text,
 storing configuration data, and organizing information in a more flexible way than lists or arrays.
+
+In Python, dictionaries are created using curly braces {} and are unordered, meaning that the elements are not
+stored in a specific order. Keys and values are separated by colons :, and each key-value pair is separated by a comma.
 """
 
 # Example1
