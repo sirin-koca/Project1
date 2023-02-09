@@ -1,6 +1,9 @@
 """
 A dictionary in Python is a collection of key-value pairs, where each key is associated with a value.
 Dictionaries are also known as associative arrays, maps, or hash tables in other programming languages.
+
+Dictionaries are commonly used in Python for tasks such as counting the frequency of words in a text,
+storing configuration data, and organizing information in a more flexible way than lists or arrays.
 """
 
 # Example1
