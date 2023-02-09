@@ -53,7 +53,8 @@ numbers = [3, 1, 4, 2]
 print(sorted(numbers))  # prints [1, 2, 3, 4]
 
 # split()
-""" The split() method is a built-in method in Python for strings. It splits a string into a list of substrings based on 
+""" 
+The split() method is a built-in method in Python for strings. It splits a string into a list of substrings based on 
 a specified delimiter, which by default is any whitespace character (such as a space, tab, or line break).
 """
 text = "This is a sample text"

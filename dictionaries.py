@@ -18,6 +18,7 @@ text = "This is a sample text for counting the frequency of words in a text usin
 
 # Split the text into words
 words = text.split()
+print(words)
 
 # Initialize an empty dictionary to store the word frequencies
 word_frequency = {}
@@ -33,7 +34,5 @@ for word in words:
 
 # Print the word frequencies
 print(word_frequency)
-
-
 
 exit()
