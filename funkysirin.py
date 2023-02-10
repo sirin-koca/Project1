@@ -19,9 +19,10 @@ def funkysirin():
     name = input("Whats your name?")
     age = input("How old are you?")
     if not name or not age:
-        print("Who are you?")
+        print("Who's there? Identify yourself or be gone, mysterious stranger!")
+        exit()
     else:
-        print("Thanks!\nYour name and age is: " + name + ", " + age)
+        print("Your name and age is: " + name + ", " + age)
         print("*****Welcome " + name + "*****")
 
     choice = (input("Do you wanna play a game " + name + "? Y / N ?"))
