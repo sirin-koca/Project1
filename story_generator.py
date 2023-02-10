@@ -53,4 +53,4 @@ print("Some kids like ", food, " I think pizza is the best, and my favorite is t
 
 print("If I could, I would eat pizza ", number, " times a day.")
 
-print('--------------------------Bon Appetit!---------------------------------------')
+print('-----------Bon Appetit!------------------------------------------------------')

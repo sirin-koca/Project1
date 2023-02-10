@@ -15,5 +15,16 @@ def my_function(arg=None):
 my_function()  # Output: No argument was passed to the function.
 my_function("hello")  # Output: The argument is: hello
 
-exit()
 
+def funkysirin(name=None, age=None):
+    name = input("Whats your name?")
+    age = input("How old are you?")
+    if age is None and name is None:
+        print("Who are you?")
+    else:
+        print("My name and age: " + name + ", " + age)
+
+
+funkysirin()
+
+exit()
