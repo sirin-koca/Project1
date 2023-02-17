@@ -83,7 +83,6 @@ def add_numbers(x, y):
 # Function call:
 result = add_numbers(5, 3)
 print(result)  # Output: 8
-
 ``` 
 
 </td>
