@@ -103,82 +103,6 @@ tip_percent = 0.20
 pi = 3.14159
 print(pi)
 
-# elif Statement
-
-pet_type = "fish"
-
-if pet_type == "dog":
-    print("You have a dog.")
-elif pet_type == "cat":
-    print("You have a cat.")
-elif pet_type == "fish":
-    # this is performed
-    print("You have a fish")
-else:
-    print("Not sure!")
-
-    if 'Yes' == 'Yes':
-        # evaluates to True
-        print('They are equal')
-
-    if (2 > 1) == (5 < 10):
-        # evaluates to True
-        print('Both expressions give the same result')
-
-    c = '2'
-    d = 2
-
-    if c == d:
-        print('They are equal')
-    else:
-        print('They are not equal')
-
-        # Not Equals Operator
-
-        if "Yes" != "No":
-            # evaluates to True
-            print("They are NOT equal")
-
-        val1 = 10
-        val2 = 20
-
-        if val1 != val2:
-            print("They are NOT equal")
-
-        if (10 > 1) != (10 > 1000):
-            # True != False
-            print("They are NOT equal")
-
-            # if Statement
-
-            test_value = 100
-
-            if test_value > 1:
-                # Expression evaluates to True
-                print("This code is executed!")
-
-            if test_value > 1000:
-                # Expression evaluates to False
-                print("This code is NOT executed!")
-
-            print("Program continues at this point.")
-
-            # else Statement
-
-            test_value = 50
-
-            if test_value < 1:
-                print("Value is < 1")
-            else:
-                print("Value is >= 1")
-
-            test_string = "VALID"
-
-            if test_string == "NOT_VALID":
-                print("String equals NOT_VALID")
-            else:
-                print("String equals something else!")
-
 # LIST
 primes = [2, 3, 5, 7, 11]
 print(primes)
@@ -195,8 +119,7 @@ names = ['Jenny', 'Sam', 'Alexis']
 mixed = ['Jenny', 1, 2]
 list_of_lists = [['a', 1], ['b', 2]]
 
-orders = ['daisies', 'periwinkle']
-orders.append('tulips')
+orders = ['daisies', 'periwinkle', 'tulips']
 print(orders)
 # Result: ['daisies', 'periwinkle', 'tulips']
 

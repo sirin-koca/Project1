@@ -13,15 +13,15 @@ print(y)
 
 # Assigning variables:
 x = 4  # x is of type int
-x = "Sally"  # x is now of type string
+xs = "Sally"  # x is now of type string
 print(x)
-print(type(x))
+print(type(xs))
 
 # Get the name of the datatype with type() function:
-x = 5
-y = "John"
-print(type(x))
-print(type(y))
+xnum = 5
+ystring = "John"
+print(type(xnum))
+print(type(ystring))
 
 # Conditional statements:
 if 5 > 2:
@@ -40,11 +40,6 @@ elif x == 0:
     print("x is zero")
 else:
     print("x is negative")
-
-# Casting:
-x = str(3)  # x will be '3'
-y = int(3)  # y will be 3
-z = float(3)  # z will be 3.0
 
 x = "John"
 # is the same as
@@ -82,51 +77,58 @@ print(z)
 x = "Python is cool!"
 print(x)
 
-# CASTING in Python
+# Casting:
+x = str(3)  # x will be '3'
+y = int(3)  # y will be 3
+z = float(3)  # z will be 3.0
 num = int(5.1)
 msg = str(5)
+print("This is a number: ")
+print(num)
+print("This is a text: " + msg)
 
 # Mathematical operations
 # Addition
-x = 5
-y = 3
-result = x + y
+a = 5
+b = 3
+result = a + b
 print("The result of x + y is:", result)
 
 # Subtraction
-x = 5
-y = 3
-result = x - y
+x1 = 5
+y1 = 3
+result = x1 - y1
 print("The result of x - y is:", result)
 
 # Multiplication
-x = 5
-y = 3
-result = x * y
+x2 = 5
+y2 = 3
+result = x2 * y2
 print("The result of x * y is:", result)
 
 # Division
-x = 5
-y = 3
-result = x / y
+x3 = 5
+y3 = 3
+result = x3 / y3
 print("The result of x / y is:", result)
 
 # Integer division
-x = 5
-y = 3
-result = x // y
+x4 = 5
+y4 = 3
+result = x4 // y4
 print("The result of x // y is:", result)
 
 # Modulus
-x = 5
-y = 3
-result = x % y
+x5 = 5
+y5 = 3
+result = x5 % y5
 print("The result of x % y is:", result)
 
 # Exponentiation
-x = 5
-y = 3
-result = x ** y
+x6 = 5
+y6 = 3
+result = x6 ** y6
 print("The result of x ** y is:", result)
 
+exit()
 # sirin-koca
