@@ -25,9 +25,9 @@ def funkysirin():
         print("Your name and age is: " + name + ", " + age)
         print("*****Welcome " + name + "*****")
 
-    choice = (input("Do you wanna play a game " + name + "? Y / N ?"))
+    choice = (input("Do you wanna play a game " + name + "? y / n ?"))
 
-    if choice == "Y":
+    if choice == "y":
         # Ask the user to guess the number
         print(":::Welcome to the number guessing game!:::")
         print("I'm thinking of a number between 1 and 100. Can you guess what it is?")
@@ -49,7 +49,7 @@ def funkysirin():
             except ValueError:
                 print("Invalid input. Please enter a number.")
 
-    elif choice == "N":
+    elif choice == "n":
         print("Ok, have a good one!")
     else:
         print("Something went wrong, please try again!")

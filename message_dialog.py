@@ -4,7 +4,7 @@ from tkinter import messagebox
 root = tk.Tk()
 root.withdraw()
 
-answer = messagebox.askquestion("Question", "How is your day? Fine, Yes / No ?")
+answer = messagebox.askquestion("Question", "Hello, how are you? Yes / No ?")
 
 if answer == 'yes':
     print("The user clicked 'Yes'.")
