@@ -1,4 +1,25 @@
-# if Statement -----------------------------------------------------
+"""
+Logical-statements:
+In Python we have 3 logical statements (like in discrete mathematics): and, or, not.
+    and: returns true if both are true,
+    or: returns true at least one of its true,
+    not: inverts the given truth value.
+
+If-statements: 
+An "if statement" is written by using the "if" keyword. 
+Python supports the usual logical conditions from mathematics:
+    Equals: a == b
+    Not Equals: a != b
+    Less than: a < b
+    Less than or equal to: a <= b
+    Greater than: a > b
+    Greater than or equal to: a >= b
+    These conditions can be used in several ways, most commonly in "if statements" and loops.
+
+Indentation:
+Python relies on indentation (whitespace at the beginning of a line) to define scope in the code. 
+Other programming languages often use curly-brackets for this purpose.
+"""
 
 if 'Yes' == 'Yes':
     # evaluates to True
