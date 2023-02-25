@@ -2,7 +2,7 @@
 Logical-statements:
 In Python we have 3 logical statements (like in discrete mathematics): and, or, not.
     and: returns true if both are true,
-    or: returns true at least one of its true,
+    or: returns true at least one of it's true,
     not: inverts the given truth value.
 
 If-statements: 
