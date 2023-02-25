@@ -1,7 +1,9 @@
-# We declare and assign values to several variables of different data types, including str, int, float, and bool.
-# We also show the rules for naming variables in Python, such as that variable names must start with
-# a letter or an underscore, can't start with a number, can contain letters, numbers, and underscores, and must not
-# be the same as any Python keywords.
+"""
+We declare and assign values to several variables of different data types, including str, int, float, and bool.
+We also show the rules for naming variables in Python, such as that variable names must start with
+a letter or an underscore, can't start with a number, can contain letters, numbers, and underscores, and must not
+be the same as any Python keywords.
+"""
 
 # Variable declaration and assignment
 name = "John Doe"
