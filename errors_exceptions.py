@@ -7,6 +7,7 @@ a command where it is not expected, or a missing parenthesis can all trigger a S
 A NameError occurs when the Python interpreter sees a word it does not recognize. Code that contains something that
 looks like a variable but was never defined will throw a NameError.
 """
+
 # NameError
 print("This is a message")
 # print(Abracadabra) throws a NameError: name 'Abracadabra' is not defined
