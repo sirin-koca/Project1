@@ -1,6 +1,5 @@
-# In python, we cannot concatinate an int and a string together
+# In python, we cannot concatinate an int and a string together, so we need to use casting:
 
-# Casting:
 x = str(3)  # x will be '3'
 y = int(3)  # y will be 3
 z = float(3)  # z will be 3.0
