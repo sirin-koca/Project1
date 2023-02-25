@@ -1,9 +1,8 @@
+# Python basics!
 # Comment on a single line
-
 user = "JDoe"  # Comment after code
 
 # Arithmetic operations
-
 result1 = 10 + 30
 result2 = 40 - 10
 result3 = 50 * 5
