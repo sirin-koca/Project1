@@ -116,9 +116,9 @@ elif x >= 0:
 else:
     print("x is less than zero")
 
-"""
-The line "if x = 0:" will cause a SyntaxError because = is not a relational operator. If this was fixed, then x is equal to zero would print, but “x is greater than zero” would not print because the elif conditional would not be checked.
-"""
+"""The line "if x = 0:" will cause a SyntaxError because = is not a relational operator. If this was fixed, 
+then x is equal to zero would print, but “x is greater than zero” would not print because the elif conditional would 
+not be checked."""
 
 
 exit()
