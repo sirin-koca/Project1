@@ -1,4 +1,3 @@
-
 # If-statements and Boolean expressions:
 
 # ex1
@@ -55,7 +54,6 @@ if student_credits >= 120 or gpa >= 2.0:
 if pet == "dog" and name == "Maya":
     print("I love you, Maya!")
 
-
 # *** IF NOT ***
 s_credits = 120
 gpa = 1.8
@@ -68,5 +66,32 @@ if not gpa >= 2.0:
 
 if not s_credits >= 120 and not gpa >= 2.0:
     print("You do not meet either requirement to graduate!")
+
+# ELIF:
+# Remember to cast user-input if you are dealing with numbers:
+donation = int(input("How much you would like to donate?"))
+print("Thank you for the donation!")
+
+if donation >= 1000:
+    print("You've achieved platinum status")
+elif donation >= 500:
+    print("You've achieved gold donor status")
+elif donation >= 100:
+    print("You've achieved silver donor status")
+else:
+    print("You've achieved bronze donor status")
+
+# ex
+grade = 86
+if grade >= 90:
+    print("A")
+elif grade >= 80:
+    print("B")
+elif grade >= 70:
+    print("C")
+elif grade >= 60:
+    print("D")
+else:
+    print("F")
 
 exit()

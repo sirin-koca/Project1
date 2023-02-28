@@ -9,4 +9,7 @@ print("This is a number: ")
 print(num)
 print("This is a text: " + msg)
 
+# User input is always a string, so we need to cast string to integer.
+guess = int(input('Pick a number between 1 and 10: '))
+
 exit()
