@@ -1,3 +1,5 @@
+# Basic calculator
+
 print("Welcome to the calculator!")
 
 try:
