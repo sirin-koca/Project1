@@ -67,7 +67,7 @@ i += 1
 ```
 
 </td>
-<td td valign="top"> Functions in Python are defined using the def keyword. They can take any number of arguments, and can return a value.  
+<td td valign="top"> Functions in Python are defined using the <code>def</code> keyword. They can take any number of arguments, and can return a value.  
 
 
 ```
