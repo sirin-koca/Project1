@@ -38,7 +38,7 @@ num = int(5.1)
 ```
 
 </td>
-<td td valign="top"> Python provides a variety of control flow statements such as conditional statements for branching and looping. The if statement is used to test a condition and execute a block of code if the condition is true. An else clause can be used to execute a block of code if the condition is false.   
+<td td valign="top"> Python provides a variety of control flow statements such as conditional statements for branching and looping. The if statement is used to test a condition and execute a block of code if the condition is <code/>True</code>. An else clause can be used to execute a block of code if the condition is <code>False</code>.   
 
 
 ```
