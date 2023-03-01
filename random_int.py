@@ -1,3 +1,4 @@
+# Number guessing program
 import random
 
 number = random.randint(1, 25)
