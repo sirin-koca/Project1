@@ -9,7 +9,10 @@ print("This is a number: ")
 print(num)
 print("This is a text: " + msg)
 
-# User input is always a string, so we need to cast string to integer.
+# User input is always a string.
+# So we need to cast string-litterals to integer or other number-datatypes to deal with numbers.
 guess = int(input('Pick a number between 1 and 10: '))
+print("Your number is:")
+print(guess)
 
 exit()
