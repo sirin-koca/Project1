@@ -1,13 +1,13 @@
 # Number guessing program
 import random
 
-number = random.randint(1, 25)
+number = random.randint(1, 50)
 
 # number_of_guesses = 0
 
-for i in range(5):
-    # while number_of_guesses < 5:
-    print('Guess a number between 1 and 25:')
+for i in range(50):
+    # while number_of_guesses < 50:
+    print('Guess a number between 1 and 50:')
     guess = input()
     guess = int(guess)
 
@@ -22,10 +22,11 @@ for i in range(5):
     if guess == number:
         break
 
-if guess == number:
-    print('You guessed the number!')
-    print("Write exit() to exit.")
 
+if guess == number:
+    print('Bravo! You guessed the number.')
 else:
     print('You did not guess the number. The number was ' + str(number))
-    print("Write exit() to exit.")
+
+
+exit()
