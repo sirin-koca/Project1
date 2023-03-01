@@ -1,7 +1,4 @@
-"""
-Number Guessing Game
--------------------------------------------------------------
-"""
+# Number Guessing Game
 
 import random
 
