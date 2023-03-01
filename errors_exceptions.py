@@ -1,4 +1,7 @@
-"""
+"""Python refers to the mistakes within the program as errors and will point to the location where an error occurred
+with a ^ character. When programs throw errors that we didn’t expect to encounter, we call those errors bugs.
+Programmers call the process of updating the program so that it no longer produces bugs debugging.
+
 Two common errors that we encounter while writing Python are SyntaxError and NameError.
 
 SyntaxError means there is something wrong with the way your program is written — punctuation that does not belong,
