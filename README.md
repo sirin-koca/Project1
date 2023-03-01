@@ -1,6 +1,8 @@
 # Python
 Python is a high-level, interpreted programming language that is both versatile and powerful. Its simplicity and ease of use, combined with its extensive libraries and frameworks, make it a go-to language for a variety of technical tasks. Whether you're building machine learning models, automating workflows, or developing web applications, Python is a language that can handle it all with grace and ease.
 
+My Python projects: [Programs](https://github.com/sirin-koca/Python_Fundamentals/tree/master/programs)
+
 <table> 
 <thead>
 <tr>
