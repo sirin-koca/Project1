@@ -1,7 +1,4 @@
-'''
-Mad Libs Story Generator by Sirin Koca
--------------------------------------------------------------
-'''
+# Mad Libs Story Generator by Sirin Koca
 
 # Questions for the user to answer
 
