@@ -1,5 +1,16 @@
 # If-statements and Boolean expressions:
 
+# ex0
+is_hot = False
+is_cold = True
+if is_hot:
+    print("Drink water")
+elif is_cold:
+    print("Wear warm clothes")
+else:
+    print("Its a lovely day!")
+
+
 # ex1
 test_value = 100
 
