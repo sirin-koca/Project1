@@ -82,6 +82,29 @@ import math
 print(math.pi)
 ```
 
+Here are some examples of popular Python modules:
+
+* __os module__: Provides a way to interact with the operating system, including tasks such as file and directory operations, process management, and user and group management.
+
+* __sys module__: Provides access to system-specific parameters and functions, such as the command line arguments, the standard input and output streams, and the Python interpreter's version information.
+
+* __math module__: Provides mathematical functions and constants, such as trigonometric functions, logarithmic functions, and the value of pi.
+
+* __datetime module__: Provides classes for working with dates, times, and time intervals, including functions for formatting and parsing dates and times.
+
+* __random module__: Provides functions for generating random numbers, shuffling sequences, and selecting random elements from a sequence.
+
+* __re module__: Provides regular expression matching operations, allowing you to search for and manipulate text using patterns.
+
+* __json module__: Provides functions for encoding and decoding JSON data, which is a lightweight data format used for exchanging data between applications.
+
+* __requests module__: Provides functions for making HTTP requests, allowing you to interact with web APIs and retrieve data from the internet.
+
+* __numpy module__: Provides fast, efficient arrays for numerical computing, allowing you to perform complex calculations on large datasets.
+
+* __pandas module__: Provides data analysis and manipulation tools, allowing you to work with structured data such as spreadsheets and SQL tables.
+
+
 ## File Handling
 File handling is the process of reading from and writing to files on your computer. Python provides several functions for file handling, including open(), read(), write(), and close(). Understanding file handling is important for working with data stored in files.
 
