@@ -2,10 +2,10 @@
 import os
 import sys
 
+# Show current directory:
 cwd = os.getcwd()
 ls = os.listdir()
 
-# Display the content of the directory:
 print("Current working directory:", cwd)
 print("Items in this directory:", ls)
 
