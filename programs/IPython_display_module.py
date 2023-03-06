@@ -1,32 +1,23 @@
-# We will use the os-module:
-import os
-import sys
+from IPython.display import display, Image, HTML, Audio, Video
 
-cwd = os.getcwd()
-ls = os.listdir()
+# Display text
+text = "Hello, World!"
+display(text)
 
-# Display the content of the directory:
-print("Current working directory:", cwd)
-print("Items in this directory:", ls)
+# Display img
+image_path = "path/to/image.jpg"
+Image(filename=image_path)
 
-# Get user input to open a file from this directory:
-name = input("Enter file name: ")
+# Display HTML
+html_code = "<h1>Hello, World!</h1>"
+HTML(html_code)
+
+# Display audio
+audio_path = "path/to/audio.mp3"
+Audio(filename=audio_path)
+
+# Display video
+video_path = "path/to/video.mp4"
+Video(filename=video_path)
 
 
-def open_file():
-    try:
-        my_file = open(name)
-        return my_file
-    except FileNotFoundError:
-        return None
-
-
-file = open_file()
-if file:
-    # do something with the file here
-    print("File opened successfully")
-    os.startfile(name)
-else:
-    print("File not found")
-
-sys.exit()

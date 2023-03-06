@@ -1,15 +1,19 @@
+# We will use the os-module:
 import os
+import sys
 
 cwd = os.getcwd()
 ls = os.listdir()
 
+# Display the content of the directory:
 print("Current working directory:", cwd)
 print("Items in this directory:", ls)
 
+# Get user input to open a file from this directory:
 name = input("Enter file name: ")
 
 
-def sirin():
+def open_file():
     try:
         my_file = open(name)
         return my_file
@@ -17,11 +21,12 @@ def sirin():
         return None
 
 
-file = sirin()
+file = open_file()
 if file:
     # do something with the file here
     print("File opened successfully")
-    content = file.read()
-    print(content)
+    os.startfile(name)
 else:
     print("File not found")
+
+sys.exit()
