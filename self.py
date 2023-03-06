@@ -11,6 +11,7 @@ Car class. Inside the drive method, we print out a message that includes the val
 
 Finally, we create an instance of the Car class (car1) with the make "Toyota" and model "Corolla". We then call the
 drive method on car1, which prints out the message "The Toyota Corolla is driving."""
+import sys
 
 
 # Example
@@ -25,3 +26,5 @@ class Car:
 
 car1 = Car("Toyota", "Corolla")
 car1.drive()  # output: The Toyota Corolla is driving.
+
+sys.exit()
