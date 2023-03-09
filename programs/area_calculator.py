@@ -6,7 +6,8 @@ import sys
 base = 20
 height = 30
 area = (base * height) / 2
-print(f'The triangle area is {area}')
+print(f'The triangle area is {area}')  # Method1
+# print("The triangle area is", area)  # Method2
 
 length = 2
 width = 12
