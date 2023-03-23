@@ -18,4 +18,4 @@ radius = 36
 area = round(math.pi * radius ** 2)
 print(f'The circle area is {area}')
 
-sys.exit()
+exit()
