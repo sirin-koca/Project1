@@ -28,4 +28,8 @@ print(type(date.today().year))
 print(type(date.today().month))
 print(type(date.today().day))
 
+parsecs = 11
+lightyears = 11*3.26
+print(f"11 parsecs is {lightyears} lightyears")
+
 SystemExit
