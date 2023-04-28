@@ -202,4 +202,4 @@ print(result)  # Output: 8
 </tbody>
 </table>
 
-[sirin-koca](https://github.com/sirin-koca) | OsloMet 2023
+[sirin-koca](https://github.com/sirin-koca) | OsloMet 2022
