@@ -1,4 +1,5 @@
 # In python, we cannot concatinate an int and a string together, so we need to use casting:
+import sys
 
 x = str(3)  # x will be '3'
 y = int(3)  # y will be 3
@@ -15,4 +16,4 @@ guess = int(input('Pick a number between 1 and 10: '))
 print("Your number is:")
 print(guess)
 
-exit()
+sys.exit()

@@ -1,5 +1,28 @@
 import sys
 
+"""
+def - Used to define a function.
+return - Used to return a value from a function.
+if - Used for conditional statements.
+else - Used alongside if for alternative conditional statements.
+elif - Used after if to check multiple conditions.
+while - Used for while loops.
+for - Used for for loops.
+import - Used to import modules.
+from - Used with import to import specific attributes or functions from a module.
+class - Used to define a class.
+pass - A null operation; a placeholder where no action is required.
+break - Used to exit a loop prematurely.
+continue - Skips the rest of the loop's current iteration and moves to the next iteration.
+in - Used to check if an item exists within an iterable (like a list) or as part of the for loop.
+is - Used to test object identity (i.e., whether two references refer to the same object).
+not - Logical NOT. Used to invert the truth value.
+and - Logical AND.
+or - Logical OR.
+try - Used for exception handling.
+except - Used with try to catch exceptions.
+"""
+
 # Python keywords
 
 # and: logical operator that returns True if both operands are True, otherwise False.
@@ -73,3 +96,4 @@ except ZeroDivisionError:
 # finally: used in a try-`
 
 sys.exit()
+

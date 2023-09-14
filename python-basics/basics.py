@@ -1,12 +1,20 @@
-# Python basics!
-# Comment on a single line
-user = "JDoe"  # Comment after code
+
+# PYTHON BASICS
+
+# MUST KNOW:
+
+
+# This is a comment on a single line
 
 """
 This is a
 multiline
 comment.
 """
+
+# Variables
+name = "John"
+age = 30
 
 # Concatenation
 """
@@ -16,7 +24,7 @@ the integer to a string, and then you can concatenate the two values. Here is an
 """
 x = 25
 y = "The lucky number is: "
-z = y + str(x)
+z = y + str(x)  # converting int to string
 print(z)
 
 # Arithmetic operations
@@ -31,11 +39,7 @@ print(result1, result2, result3, result4, result5, result6)
 
 # Plus-Equal Operator
 counter = 0
-counter += 10
-
-# This is equivalent to
-counter = 0
-counter = counter + 10
+counter += 10   # This is equivalent to: counter = counter + 10
 
 # These are all valid variable names and assignment
 user_name = "codey"

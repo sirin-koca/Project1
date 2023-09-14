@@ -1,6 +1,11 @@
-"""In Python, self is a convention used to refer to the instance of a class. When you define a method in a class,
+"""
+In Python, self is a convention used to refer to the instance of a class. When you define a method in a class,
 the first parameter of the method is usually self, which refers to the instance of the class that the method is being
 called on.
+
+self is a reference to the instance of the object itself, and dot notation is a way to access the object's attributes
+and methods. When you're inside a class method, you use self followed by dot notation (self.some_attribute) to access
+or modify the object's attributes or to call other methods of the same object.
 
 In this example, we define a Car class with an __init__ method that takes two parameters, make and model,
 as well as the self parameter. Inside the __init__ method, we set two instance variables (self.make and self.model)

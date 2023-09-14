@@ -1,29 +1,29 @@
 """
-"funkysirin" is the name of this interactive game. When you run the code, it first greets the user,
+Welcome to Funky Numbers! An interactive number guessing game. When you run the code, it first greets the user,
 asks for their name and age, and then asks if they would like to play a game. If the user chooses to play,
 they are asked to guess a random number between 1 and 100, and the program keeps track of how many tries it takes
-the user to guess the correct number. If the user enters an invalid input,
-a "ValueError" exception is raised and the user is prompted to enter a valid number.
+the user to guess the correct number. If the user enters an invalid input, a "ValueError" exception is raised and
+the user is prompted to enter a valid number.
 """
 # Generate a random number with random-module
 import random
 
 
 # User interaction
-def funkysirin():
+def funky_numbers():
     start = """Welcome! 
     Lets get to know you.
     Please identify yourself."""
     print(start)
 
     name = input("Whats your name?")
-    age = input("How old are you?")
+    print("*** Welcome " + name + " ***")
+    age = input("Please tell us your age?")
     if not name or not age:
         print("Who's there? Identify yourself or be gone, mysterious stranger!")
         exit()
     else:
-        print("Your name and age is: " + name + ", " + age)
-        print("*****Welcome " + name + "*****")
+        print("Thank you! Your name and age is: " + name + ", " + age)
 
     choice = (input("Do you wanna play a game " + name + "? y / n ?"))
 
@@ -55,6 +55,6 @@ def funkysirin():
         print("Something went wrong, please try again!")
 
 
-funkysirin()
+funky_numbers()
 
 exit()

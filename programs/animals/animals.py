@@ -28,7 +28,7 @@ if __name__ == '__main__':
 
 
 def my_animals():
-    animal = input("What's your favorite animal? ")
+    animal = input("\n What's your favorite animal? ")
     if animal.isdigit():
         print("You must use letters")
     elif animal == 0:

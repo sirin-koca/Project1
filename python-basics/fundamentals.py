@@ -1,6 +1,8 @@
 """ This is a comment
 over many lines.
 """
+import sys
+
 # This is a short comment.
 # Run this script in commandline e.g. Powershell by typing: py helloworld.py
 # Let's learn Python!
@@ -130,5 +132,5 @@ y6 = 3
 result = x6 ** y6
 print("The result of x ** y is:", result)
 
-exit()
+sys.exit()
 # sirin-koca
