@@ -1,6 +1,5 @@
 # Python Fundamentals
-This repository provides an introduction to the most fundamental and important aspects of Python programming language.
-
+An introduction to the most fundamental aspects of Python programming language.
 My Python projects: [Programs](https://github.com/sirin-koca/Python_Fundamentals/tree/master/programs)
 
 ---
