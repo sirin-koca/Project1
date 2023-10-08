@@ -4,17 +4,6 @@ My Python projects: [Programs](https://github.com/sirin-koca/Python_Fundamentals
 
 ---
 
-## Contents
-- Introduction
-- Data Types
-- Variables
-- Control Flow Statements
-- Functions
-- Classes
-- Modules
-- File Handling
-- Conclusion
-
 ## Introduction
 Python is a high-level, interpreted, and general-purpose programming language that is easy to learn and has a simple syntax. It is a versatile language and can be used for a wide range of applications, such as web development, data analysis, machine learning, and artificial intelligence. Its simplicity and ease of use, combined with its extensive libraries and frameworks, make it a go-to language for a variety of technical tasks. Whether you're building machine learning models, automating workflows, or developing web applications, Python is a language that can handle it all with grace and ease. Python has also a vast library of modules and packages that make it easier to accomplish complex tasks with minimal coding.
 
