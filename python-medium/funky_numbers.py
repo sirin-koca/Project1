@@ -7,6 +7,7 @@ the user is prompted to enter a valid number.
 """
 # Generate a random number with random-module
 import random
+import sys
 
 
 # User interaction
@@ -57,4 +58,4 @@ def funky_numbers():
 
 funky_numbers()
 
-exit()
+sys.exit()
