@@ -20,6 +20,7 @@ if __name__ == '__main__':
 
     # Output the average grade
     print("The average grade is:", average_grade)
+    # The average grade is: 3.25
 
     sys.exit()
 
