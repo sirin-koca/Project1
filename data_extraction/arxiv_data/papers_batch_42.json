@@ -1,0 +1,1411 @@
+[
+    {
+        "id": "http://arxiv.org/abs/2206.05836v2",
+        "title": "GLIPv2: Unifying Localization and Vision-Language Understanding",
+        "abstract": "  We present GLIPv2, a grounded VL understanding model, that serves both\nlocalization tasks (e.g., object detection, instance segmentation) and\nVision-Language (VL) understanding tasks (e.g., VQA, image captioning). GLIPv2\nelegantly unifies localization pre-training and Vision-Language Pre-training\n(VLP) with three pre-training tasks: phrase grounding as a VL reformulation of\nthe detection task, region-word contrastive learning as a novel region-word\nlevel contrastive learning task, and the masked language modeling. This\nunification not only simplifies the previous multi-stage VLP procedure but also\nachieves mutual benefits between localization and understanding tasks.\nExperimental results show that a single GLIPv2 model (all model weights are\nshared) achieves near SoTA performance on various localization and\nunderstanding tasks. The model also shows (1) strong zero-shot and few-shot\nadaption performance on open-vocabulary object detection tasks and (2) superior\ngrounding capability on VL understanding tasks. Code will be released at\nhttps://github.com/microsoft/GLIP.\n",
+        "published": "2022",
+        "authors": [
+            "Haotian Zhang",
+            "Pengchuan Zhang",
+            "Xiaowei Hu",
+            "Yen-Chun Chen",
+            "Liunian Harold Li",
+            "Xiyang Dai",
+            "Lijuan Wang",
+            "Lu Yuan",
+            "Jenq-Neng Hwang",
+            "Jianfeng Gao"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2207.00056v3",
+        "title": "MultiViz: Towards Visualizing and Understanding Multimodal Models",
+        "abstract": "  The promise of multimodal models for real-world applications has inspired\nresearch in visualizing and understanding their internal mechanics with the end\ngoal of empowering stakeholders to visualize model behavior, perform model\ndebugging, and promote trust in machine learning models. However, modern\nmultimodal models are typically black-box neural networks, which makes it\nchallenging to understand their internal mechanics. How can we visualize the\ninternal modeling of multimodal interactions in these models? Our paper aims to\nfill this gap by proposing MultiViz, a method for analyzing the behavior of\nmultimodal models by scaffolding the problem of interpretability into 4 stages:\n(1) unimodal importance: how each modality contributes towards downstream\nmodeling and prediction, (2) cross-modal interactions: how different modalities\nrelate with each other, (3) multimodal representations: how unimodal and\ncross-modal interactions are represented in decision-level features, and (4)\nmultimodal prediction: how decision-level features are composed to make a\nprediction. MultiViz is designed to operate on diverse modalities, models,\ntasks, and research areas. Through experiments on 8 trained models across 6\nreal-world tasks, we show that the complementary stages in MultiViz together\nenable users to (1) simulate model predictions, (2) assign interpretable\nconcepts to features, (3) perform error analysis on model misclassifications,\nand (4) use insights from error analysis to debug models. MultiViz is publicly\navailable, will be regularly updated with new interpretation tools and metrics,\nand welcomes inputs from the community.\n",
+        "published": "2022",
+        "authors": [
+            "Paul Pu Liang",
+            "Yiwei Lyu",
+            "Gunjan Chhablani",
+            "Nihal Jain",
+            "Zihao Deng",
+            "Xingbo Wang",
+            "Louis-Philippe Morency",
+            "Ruslan Salakhutdinov"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2207.00691v1",
+        "title": "American == White in Multimodal Language-and-Image AI",
+        "abstract": "  Three state-of-the-art language-and-image AI models, CLIP, SLIP, and BLIP,\nare evaluated for evidence of a bias previously observed in social and\nexperimental psychology: equating American identity with being White. Embedding\nassociation tests (EATs) using standardized images of self-identified Asian,\nBlack, Latina/o, and White individuals from the Chicago Face Database (CFD)\nreveal that White individuals are more associated with collective in-group\nwords than are Asian, Black, or Latina/o individuals. In assessments of three\ncore aspects of American identity reported by social psychologists,\nsingle-category EATs reveal that images of White individuals are more\nassociated with patriotism and with being born in America, but that, consistent\nwith prior findings in psychology, White individuals are associated with being\nless likely to treat people of all races and backgrounds equally. Three\ndownstream machine learning tasks demonstrate biases associating American with\nWhite. In a visual question answering task using BLIP, 97% of White individuals\nare identified as American, compared to only 3% of Asian individuals. When\nasked in what state the individual depicted lives in, the model responds China\n53% of the time for Asian individuals, but always with an American state for\nWhite individuals. In an image captioning task, BLIP remarks upon the race of\nAsian individuals as much as 36% of the time, but never remarks upon race for\nWhite individuals. Finally, provided with an initialization image from the CFD\nand the text \"an American person,\" a synthetic image generator (VQGAN) using\nthe text-based guidance of CLIP lightens the skin tone of individuals of all\nraces (by 35% for Black individuals, based on pixel brightness). The results\nindicate that biases equating American identity with being White are learned by\nlanguage-and-image AI, and propagate to downstream applications of such models.\n",
+        "published": "2022",
+        "authors": [
+            "Robert Wolfe",
+            "Aylin Caliskan"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2207.05749v1",
+        "title": "Towards Highly Expressive Machine Learning Models of Non-Melanoma Skin\n  Cancer",
+        "abstract": "  Pathologists have a rich vocabulary with which they can describe all the\nnuances of cellular morphology. In their world, there is a natural pairing of\nimages and words. Recent advances demonstrate that machine learning models can\nnow be trained to learn high-quality image features and represent them as\ndiscrete units of information. This enables natural language, which is also\ndiscrete, to be jointly modelled alongside the imaging, resulting in a\ndescription of the contents of the imaging. Here we present experiments in\napplying discrete modelling techniques to the problem domain of non-melanoma\nskin cancer, specifically, histological images of Intraepidermal Carcinoma\n(IEC). Implementing a VQ-GAN model to reconstruct high-resolution (256x256)\nimages of IEC images, we trained a sequence-to-sequence transformer to generate\nnatural language descriptions using pathologist terminology. Combined with the\nidea of interactive concept vectors available by using continuous generative\nmethods, we demonstrate an additional angle of interpretability. The result is\na promising means of working towards highly expressive machine learning systems\nwhich are not only useful as predictive/classification tools, but also means to\nfurther our scientific understanding of disease.\n",
+        "published": "2022",
+        "authors": [
+            "Simon M. Thomas",
+            "James G. Lefevre",
+            "Glenn Baxter",
+            "Nicholas A. Hamilton"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2207.06403v1",
+        "title": "3D Concept Grounding on Neural Fields",
+        "abstract": "  In this paper, we address the challenging problem of 3D concept grounding\n(i.e. segmenting and learning visual concepts) by looking at RGBD images and\nreasoning about paired questions and answers. Existing visual reasoning\napproaches typically utilize supervised methods to extract 2D segmentation\nmasks on which concepts are grounded. In contrast, humans are capable of\ngrounding concepts on the underlying 3D representation of images. However,\ntraditionally inferred 3D representations (e.g., point clouds, voxelgrids, and\nmeshes) cannot capture continuous 3D features flexibly, thus making it\nchallenging to ground concepts to 3D regions based on the language description\nof the object being referred to. To address both issues, we propose to leverage\nthe continuous, differentiable nature of neural fields to segment and learn\nconcepts. Specifically, each 3D coordinate in a scene is represented as a\nhigh-dimensional descriptor. Concept grounding can then be performed by\ncomputing the similarity between the descriptor vector of a 3D coordinate and\nthe vector embedding of a language concept, which enables segmentations and\nconcept learning to be jointly learned on neural fields in a differentiable\nfashion. As a result, both 3D semantic and instance segmentations can emerge\ndirectly from question answering supervision using a set of defined neural\noperators on top of neural fields (e.g., filtering and counting). Experimental\nresults show that our proposed framework outperforms\nunsupervised/language-mediated segmentation models on semantic and instance\nsegmentation tasks, as well as outperforms existing models on the challenging\n3D aware visual reasoning tasks. Furthermore, our framework can generalize well\nto unseen shape categories and real scans.\n",
+        "published": "2022",
+        "authors": [
+            "Yining Hong",
+            "Yilun Du",
+            "Chunru Lin",
+            "Joshua B. Tenenbaum",
+            "Chuang Gan"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2207.11247v1",
+        "title": "Panoptic Scene Graph Generation",
+        "abstract": "  Existing research addresses scene graph generation (SGG) -- a critical\ntechnology for scene understanding in images -- from a detection perspective,\ni.e., objects are detected using bounding boxes followed by prediction of their\npairwise relationships. We argue that such a paradigm causes several problems\nthat impede the progress of the field. For instance, bounding box-based labels\nin current datasets usually contain redundant classes like hairs, and leave out\nbackground information that is crucial to the understanding of context. In this\nwork, we introduce panoptic scene graph generation (PSG), a new problem task\nthat requires the model to generate a more comprehensive scene graph\nrepresentation based on panoptic segmentations rather than rigid bounding\nboxes. A high-quality PSG dataset, which contains 49k well-annotated\noverlapping images from COCO and Visual Genome, is created for the community to\nkeep track of its progress. For benchmarking, we build four two-stage\nbaselines, which are modified from classic methods in SGG, and two one-stage\nbaselines called PSGTR and PSGFormer, which are based on the efficient\nTransformer-based detector, i.e., DETR. While PSGTR uses a set of queries to\ndirectly learn triplets, PSGFormer separately models the objects and relations\nin the form of queries from two Transformer decoders, followed by a\nprompting-like relation-object matching mechanism. In the end, we share\ninsights on open challenges and future directions.\n",
+        "published": "2022",
+        "authors": [
+            "Jingkang Yang",
+            "Yi Zhe Ang",
+            "Zujin Guo",
+            "Kaiyang Zhou",
+            "Wayne Zhang",
+            "Ziwei Liu"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2208.08080v1",
+        "title": "Multimodal Lecture Presentations Dataset: Understanding Multimodality in\n  Educational Slides",
+        "abstract": "  Lecture slide presentations, a sequence of pages that contain text and\nfigures accompanied by speech, are constructed and presented carefully in order\nto optimally transfer knowledge to students. Previous studies in multimedia and\npsychology attribute the effectiveness of lecture presentations to their\nmultimodal nature. As a step toward developing AI to aid in student learning as\nintelligent teacher assistants, we introduce the Multimodal Lecture\nPresentations dataset as a large-scale benchmark testing the capabilities of\nmachine learning models in multimodal understanding of educational content. Our\ndataset contains aligned slides and spoken language, for 180+ hours of video\nand 9000+ slides, with 10 lecturers from various subjects (e.g., computer\nscience, dentistry, biology). We introduce two research tasks which are\ndesigned as stepping stones towards AI agents that can explain (automatically\ncaptioning a lecture presentation) and illustrate (synthesizing visual figures\nto accompany spoken explanations) educational content. We provide manual\nannotations to help implement these two research tasks and evaluate\nstate-of-the-art models on them. Comparing baselines and human student\nperformances, we find that current models struggle in (1) weak crossmodal\nalignment between slides and spoken text, (2) learning novel visual mediums,\n(3) technical language, and (4) long-range sequences. Towards addressing this\nissue, we also introduce PolyViLT, a multimodal transformer trained with a\nmulti-instance learning loss that is more effective than current approaches. We\nconclude by shedding light on the challenges and opportunities in multimodal\nunderstanding of educational presentations.\n",
+        "published": "2022",
+        "authors": [
+            "Dong Won Lee",
+            "Chaitanya Ahuja",
+            "Paul Pu Liang",
+            "Sanika Natu",
+            "Louis-Philippe Morency"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2208.08232v2",
+        "title": "HELP ME THINK: A Simple Prompting Strategy for Non-experts to Create\n  Customized Content with Models",
+        "abstract": "  Controlling the text generated by language models and customizing the content\nhas been a long-standing challenge. Existing prompting techniques proposed in\npursuit of providing control are task-specific and lack generality; this\nprovides overwhelming choices for non-expert users to find a suitable method\nfor their task. The effort associated with those techniques, such as in writing\nexamples, explanations, instructions, etc. further limits their adoption among\nnon-expert users. In this paper, we propose a simple prompting strategy HELP ME\nTHINK where we encourage GPT3 to help non-expert users by asking a set of\nrelevant questions and leveraging user answers to execute the task. We\ndemonstrate the efficacy of our technique HELP ME THINK on a variety of tasks.\nSpecifically, we focus on tasks that are hard for average humans and require\nsignificant thinking to perform. We hope our work will encourage the\ndevelopment of unconventional ways to harness the power of large language\nmodels.\n",
+        "published": "2022",
+        "authors": [
+            "Swaroop Mishra",
+            "Elnaz Nouri"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2208.08241v4",
+        "title": "ILLUME: Rationalizing Vision-Language Models through Human Interactions",
+        "abstract": "  Bootstrapping from pre-trained language models has been proven to be an\nefficient approach for building vision-language models (VLM) for tasks such as\nimage captioning or visual question answering. However, outputs of these models\nrarely align with user's rationales for specific answers. In order to improve\nthis alignment and reinforce commonsense reasons, we propose a tuning paradigm\nbased on human interactions with machine-generated data. Our ILLUME executes\nthe following loop: Given an image-question-answer prompt, the VLM samples\nmultiple candidate rationales, and a human critic provides feedback via\npreference selection, used for fine-tuning. This loop increases the training\ndata and gradually carves out the VLM's rationalization capabilities that are\naligned with human intent. Our exhaustive experiments demonstrate that ILLUME\nis competitive with standard supervised finetuning while using significantly\nfewer training data and only requiring minimal feedback.\n",
+        "published": "2022",
+        "authors": [
+            "Manuel Brack",
+            "Patrick Schramowski",
+            "Bj\u00f6rn Deiseroth",
+            "Kristian Kersting"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2209.03126v2",
+        "title": "DM$^2$S$^2$: Deep Multi-Modal Sequence Sets with Hierarchical Modality\n  Attention",
+        "abstract": "  There is increasing interest in the use of multimodal data in various web\napplications, such as digital advertising and e-commerce. Typical methods for\nextracting important information from multimodal data rely on a mid-fusion\narchitecture that combines the feature representations from multiple encoders.\nHowever, as the number of modalities increases, several potential problems with\nthe mid-fusion model structure arise, such as an increase in the dimensionality\nof the concatenated multimodal features and missing modalities. To address\nthese problems, we propose a new concept that considers multimodal inputs as a\nset of sequences, namely, deep multimodal sequence sets (DM$^2$S$^2$). Our\nset-aware concept consists of three components that capture the relationships\namong multiple modalities: (a) a BERT-based encoder to handle the inter- and\nintra-order of elements in the sequences, (b) intra-modality residual attention\n(IntraMRA) to capture the importance of the elements in a modality, and (c)\ninter-modality residual attention (InterMRA) to enhance the importance of\nelements with modality-level granularity further. Our concept exhibits\nperformance that is comparable to or better than the previous set-aware models.\nFurthermore, we demonstrate that the visualization of the learned InterMRA and\nIntraMRA weights can provide an interpretation of the prediction results.\n",
+        "published": "2022",
+        "authors": [
+            "Shunsuke Kitada",
+            "Yuki Iwazaki",
+            "Riku Togashi",
+            "Hitoshi Iyatomi"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2209.03430v2",
+        "title": "Foundations and Trends in Multimodal Machine Learning: Principles,\n  Challenges, and Open Questions",
+        "abstract": "  Multimodal machine learning is a vibrant multi-disciplinary research field\nthat aims to design computer agents with intelligent capabilities such as\nunderstanding, reasoning, and learning through integrating multiple\ncommunicative modalities, including linguistic, acoustic, visual, tactile, and\nphysiological messages. With the recent interest in video understanding,\nembodied autonomous agents, text-to-image generation, and multisensor fusion in\napplication domains such as healthcare and robotics, multimodal machine\nlearning has brought unique computational and theoretical challenges to the\nmachine learning community given the heterogeneity of data sources and the\ninterconnections often found between modalities. However, the breadth of\nprogress in multimodal research has made it difficult to identify the common\nthemes and open questions in the field. By synthesizing a broad range of\napplication domains and theoretical frameworks from both historical and recent\nperspectives, this paper is designed to provide an overview of the\ncomputational and theoretical foundations of multimodal machine learning. We\nstart by defining three key principles of modality heterogeneity, connections,\nand interactions that have driven subsequent innovations, and propose a\ntaxonomy of six core technical challenges: representation, alignment,\nreasoning, generation, transference, and quantification covering historical and\nrecent trends. Recent technical achievements will be presented through the lens\nof this taxonomy, allowing researchers to understand the similarities and\ndifferences across new approaches. We end by motivating several open problems\nfor future research as identified by our taxonomy.\n",
+        "published": "2022",
+        "authors": [
+            "Paul Pu Liang",
+            "Amir Zadeh",
+            "Louis-Philippe Morency"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2209.09513v2",
+        "title": "Learn to Explain: Multimodal Reasoning via Thought Chains for Science\n  Question Answering",
+        "abstract": "  When answering a question, humans utilize the information available across\ndifferent modalities to synthesize a consistent and complete chain of thought\n(CoT). This process is normally a black box in the case of deep learning models\nlike large-scale language models. Recently, science question benchmarks have\nbeen used to diagnose the multi-hop reasoning ability and interpretability of\nan AI system. However, existing datasets fail to provide annotations for the\nanswers, or are restricted to the textual-only modality, small scales, and\nlimited domain diversity. To this end, we present Science Question Answering\n(ScienceQA), a new benchmark that consists of ~21k multimodal multiple choice\nquestions with a diverse set of science topics and annotations of their answers\nwith corresponding lectures and explanations. We further design language models\nto learn to generate lectures and explanations as the chain of thought (CoT) to\nmimic the multi-hop reasoning process when answering ScienceQA questions.\nScienceQA demonstrates the utility of CoT in language models, as CoT improves\nthe question answering performance by 1.20% in few-shot GPT-3 and 3.99% in\nfine-tuned UnifiedQA. We also explore the upper bound for models to leverage\nexplanations by feeding those in the input; we observe that it improves the\nfew-shot performance of GPT-3 by 18.96%. Our analysis further shows that\nlanguage models, similar to humans, benefit from explanations to learn from\nfewer data and achieve the same performance with just 40% of the data. The data\nand code are available at https://scienceqa.github.io.\n",
+        "published": "2022",
+        "authors": [
+            "Pan Lu",
+            "Swaroop Mishra",
+            "Tony Xia",
+            "Liang Qiu",
+            "Kai-Wei Chang",
+            "Song-Chun Zhu",
+            "Oyvind Tafjord",
+            "Peter Clark",
+            "Ashwin Kalyan"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2209.14697v2",
+        "title": "Creative Painting with Latent Diffusion Models",
+        "abstract": "  Artistic painting has achieved significant progress during recent years.\nUsing an autoencoder to connect the original images with compressed latent\nspaces and a cross attention enhanced U-Net as the backbone of diffusion,\nlatent diffusion models (LDMs) have achieved stable and high fertility image\ngeneration. In this paper, we focus on enhancing the creative painting ability\nof current LDMs in two directions, textual condition extension and model\nretraining with Wikiart dataset. Through textual condition extension, users'\ninput prompts are expanded with rich contextual knowledge for deeper\nunderstanding and explaining the prompts. Wikiart dataset contains 80K famous\nartworks drawn during recent 400 years by more than 1,000 famous artists in\nrich styles and genres. Through the retraining, we are able to ask these\nartists to draw novel and creative painting on modern topics. Direct\ncomparisons with the original model show that the creativity and artistry are\nenriched.\n",
+        "published": "2022",
+        "authors": [
+            "Xianchao Wu"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2210.00312v4",
+        "title": "Multimodal Analogical Reasoning over Knowledge Graphs",
+        "abstract": "  Analogical reasoning is fundamental to human cognition and holds an important\nplace in various fields. However, previous studies mainly focus on single-modal\nanalogical reasoning and ignore taking advantage of structure knowledge.\nNotably, the research in cognitive psychology has demonstrated that information\nfrom multimodal sources always brings more powerful cognitive transfer than\nsingle modality sources. To this end, we introduce the new task of multimodal\nanalogical reasoning over knowledge graphs, which requires multimodal reasoning\nability with the help of background knowledge. Specifically, we construct a\nMultimodal Analogical Reasoning dataSet (MARS) and a multimodal knowledge graph\nMarKG. We evaluate with multimodal knowledge graph embedding and pre-trained\nTransformer baselines, illustrating the potential challenges of the proposed\ntask. We further propose a novel model-agnostic Multimodal analogical reasoning\nframework with Transformer (MarT) motivated by the structure mapping theory,\nwhich can obtain better performance. Code and datasets are available in\nhttps://github.com/zjunlp/MKG_Analogy.\n",
+        "published": "2022",
+        "authors": [
+            "Ningyu Zhang",
+            "Lei Li",
+            "Xiang Chen",
+            "Xiaozhuan Liang",
+            "Shumin Deng",
+            "Huajun Chen"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2210.11233v1",
+        "title": "Context-driven Visual Object Recognition based on Knowledge Graphs",
+        "abstract": "  Current deep learning methods for object recognition are purely data-driven\nand require a large number of training samples to achieve good results. Due to\ntheir sole dependence on image data, these methods tend to fail when confronted\nwith new environments where even small deviations occur. Human perception,\nhowever, has proven to be significantly more robust to such distribution\nshifts. It is assumed that their ability to deal with unknown scenarios is\nbased on extensive incorporation of contextual knowledge. Context can be based\neither on object co-occurrences in a scene or on memory of experience. In\naccordance with the human visual cortex which uses context to form different\nobject representations for a seen image, we propose an approach that enhances\ndeep learning methods by using external contextual knowledge encoded in a\nknowledge graph. Therefore, we extract different contextual views from a\ngeneric knowledge graph, transform the views into vector space and infuse it\ninto a DNN. We conduct a series of experiments to investigate the impact of\ndifferent contextual views on the learned object representations for the same\nimage dataset. The experimental results provide evidence that the contextual\nviews influence the image representations in the DNN differently and therefore\nlead to different predictions for the same images. We also show that context\nhelps to strengthen the robustness of object recognition models for\nout-of-distribution images, usually occurring in transfer learning tasks or\nreal-world scenarios.\n",
+        "published": "2022",
+        "authors": [
+            "Sebastian Monka",
+            "Lavdim Halilaj",
+            "Achim Rettinger"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2210.15377v2",
+        "title": "Retrieving Users' Opinions on Social Media with Multimodal Aspect-Based\n  Sentiment Analysis",
+        "abstract": "  People post their opinions and experiences on social media, yielding rich\ndatabases of end-users' sentiments. This paper shows to what extent machine\nlearning can analyze and structure these databases. An automated data analysis\npipeline is deployed to provide insights into user-generated content for\nresearchers in other domains. First, the domain expert can select an image and\na term of interest. Then, the pipeline uses image retrieval to find all images\nshowing similar content and applies aspect-based sentiment analysis to outline\nusers' opinions about the selected term. As part of an interdisciplinary\nproject between architecture and computer science researchers, an empirical\nstudy of Hamburg's Elbphilharmonie was conveyed. Therefore, we selected 300\nthousand posts with the hashtag \\enquote{\\texttt{hamburg}} from the platform\nFlickr. Image retrieval methods generated a subset of slightly more than 1.5\nthousand images displaying the Elbphilharmonie. We found that these posts\nmainly convey a neutral or positive sentiment towards it. With this pipeline,\nwe suggest a new semantic computing method that offers novel insights into\nend-users opinions, e.g., for architecture domain experts.\n",
+        "published": "2022",
+        "authors": [
+            "Miriam Ansch\u00fctz",
+            "Tobias Eder",
+            "Georg Groh"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2211.04325v1",
+        "title": "Will we run out of data? An analysis of the limits of scaling datasets\n  in Machine Learning",
+        "abstract": "  We analyze the growth of dataset sizes used in machine learning for natural\nlanguage processing and computer vision, and extrapolate these using two\nmethods; using the historical growth rate and estimating the compute-optimal\ndataset size for future predicted compute budgets. We investigate the growth in\ndata usage by estimating the total stock of unlabeled data available on the\ninternet over the coming decades. Our analysis indicates that the stock of\nhigh-quality language data will be exhausted soon; likely before 2026. By\ncontrast, the stock of low-quality language data and image data will be\nexhausted only much later; between 2030 and 2050 (for low-quality language) and\nbetween 2030 and 2060 (for images). Our work suggests that the current trend of\never-growing ML models that rely on enormous datasets might slow down if data\nefficiency is not drastically improved or new sources of data become available.\n",
+        "published": "2022",
+        "authors": [
+            "Pablo Villalobos",
+            "Jaime Sevilla",
+            "Lennart Heim",
+            "Tamay Besiroglu",
+            "Marius Hobbhahn",
+            "Anson Ho"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2211.05617v1",
+        "title": "Debiasing Methods for Fairer Neural Models in Vision and Language\n  Research: A Survey",
+        "abstract": "  Despite being responsible for state-of-the-art results in several computer\nvision and natural language processing tasks, neural networks have faced harsh\ncriticism due to some of their current shortcomings. One of them is that neural\nnetworks are correlation machines prone to model biases within the data instead\nof focusing on actual useful causal relationships. This problem is particularly\nserious in application domains affected by aspects such as race, gender, and\nage. To prevent models from incurring on unfair decision-making, the AI\ncommunity has concentrated efforts in correcting algorithmic biases, giving\nrise to the research area now widely known as fairness in AI. In this survey\npaper, we provide an in-depth overview of the main debiasing methods for\nfairness-aware neural networks in the context of vision and language research.\nWe propose a novel taxonomy to better organize the literature on debiasing\nmethods for fairness, and we discuss the current challenges, trends, and\nimportant future work directions for the interested researcher and\npractitioner.\n",
+        "published": "2022",
+        "authors": [
+            "Ot\u00e1vio Parraga",
+            "Martin D. More",
+            "Christian M. Oliveira",
+            "Nathan S. Gavenski",
+            "Lucas S. Kupssinsk\u00fc",
+            "Adilson Medronha",
+            "Luis V. Moura",
+            "Gabriel S. Sim\u00f5es",
+            "Rodrigo C. Barros"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2211.05719v3",
+        "title": "MMDialog: A Large-scale Multi-turn Dialogue Dataset Towards Multi-modal\n  Open-domain Conversation",
+        "abstract": "  Responding with multi-modal content has been recognized as an essential\ncapability for an intelligent conversational agent. In this paper, we introduce\nthe MMDialog dataset to better facilitate multi-modal conversation. MMDialog is\ncomposed of a curated set of 1.08 million real-world dialogues with 1.53\nmillion unique images across 4,184 topics. MMDialog has two main and unique\nadvantages. First, it is the largest multi-modal conversation dataset by the\nnumber of dialogues by 88x. Second, it contains massive topics to generalize\nthe open-domain. To build engaging dialogue system with this dataset, we\npropose and normalize two response producing tasks based on retrieval and\ngenerative scenarios. In addition, we build two baselines for above tasks with\nstate-of-the-art techniques and report their experimental performance. We also\npropose a novel evaluation metric MM-Relevance to measure the multi-modal\nresponses. Our dataset and scripts are available in\nhttps://github.com/victorsungo/MMDialog.\n",
+        "published": "2022",
+        "authors": [
+            "Jiazhan Feng",
+            "Qingfeng Sun",
+            "Can Xu",
+            "Pu Zhao",
+            "Yaming Yang",
+            "Chongyang Tao",
+            "Dongyan Zhao",
+            "Qingwei Lin"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2211.07504v1",
+        "title": "On Analyzing the Role of Image for Visual-enhanced Relation Extraction",
+        "abstract": "  Multimodal relation extraction is an essential task for knowledge graph\nconstruction. In this paper, we take an in-depth empirical analysis that\nindicates the inaccurate information in the visual scene graph leads to poor\nmodal alignment weights, further degrading performance. Moreover, the visual\nshuffle experiments illustrate that the current approaches may not take full\nadvantage of visual information. Based on the above observation, we further\npropose a strong baseline with an implicit fine-grained multimodal alignment\nbased on Transformer for multimodal relation extraction. Experimental results\ndemonstrate the better performance of our method. Codes are available at\nhttps://github.com/zjunlp/DeepKE/tree/main/example/re/multimodal.\n",
+        "published": "2022",
+        "authors": [
+            "Lei Li",
+            "Xiang Chen",
+            "Shuofei Qiao",
+            "Feiyu Xiong",
+            "Huajun Chen",
+            "Ningyu Zhang"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2211.08086v1",
+        "title": "Visually Grounded VQA by Lattice-based Retrieval",
+        "abstract": "  Visual Grounding (VG) in Visual Question Answering (VQA) systems describes\nhow well a system manages to tie a question and its answer to relevant image\nregions. Systems with strong VG are considered intuitively interpretable and\nsuggest an improved scene understanding. While VQA accuracy performances have\nseen impressive gains over the past few years, explicit improvements to VG\nperformance and evaluation thereof have often taken a back seat on the road to\noverall accuracy improvements. A cause of this originates in the predominant\nchoice of learning paradigm for VQA systems, which consists of training a\ndiscriminative classifier over a predetermined set of answer options.\n  In this work, we break with the dominant VQA modeling paradigm of\nclassification and investigate VQA from the standpoint of an information\nretrieval task. As such, the developed system directly ties VG into its core\nsearch procedure. Our system operates over a weighted, directed, acyclic graph,\na.k.a. \"lattice\", which is derived from the scene graph of a given image in\nconjunction with region-referring expressions extracted from the question.\n  We give a detailed analysis of our approach and discuss its distinctive\nproperties and limitations. Our approach achieves the strongest VG performance\namong examined systems and exhibits exceptional generalization capabilities in\na number of scenarios.\n",
+        "published": "2022",
+        "authors": [
+            "Daniel Reich",
+            "Felix Putze",
+            "Tanja Schultz"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2211.09427v1",
+        "title": "Feedback is Needed for Retakes: An Explainable Poor Image Notification\n  Framework for the Visually Impaired",
+        "abstract": "  We propose a simple yet effective image captioning framework that can\ndetermine the quality of an image and notify the user of the reasons for any\nflaws in the image. Our framework first determines the quality of images and\nthen generates captions using only those images that are determined to be of\nhigh quality. The user is notified by the flaws feature to retake if image\nquality is low, and this cycle is repeated until the input image is deemed to\nbe of high quality. As a component of the framework, we trained and evaluated a\nlow-quality image detection model that simultaneously learns difficulty in\nrecognizing images and individual flaws, and we demonstrated that our proposal\ncan explain the reasons for flaws with a sufficient score. We also evaluated a\ndataset with low-quality images removed by our framework and found improved\nvalues for all four common metrics (e.g., BLEU-4, METEOR, ROUGE-L, CIDEr),\nconfirming an improvement in general-purpose image captioning capability. Our\nframework would assist the visually impaired, who have difficulty judging image\nquality.\n",
+        "published": "2022",
+        "authors": [
+            "Kazuya Ohata",
+            "Shunsuke Kitada",
+            "Hitoshi Iyatomi"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2211.09800v2",
+        "title": "InstructPix2Pix: Learning to Follow Image Editing Instructions",
+        "abstract": "  We propose a method for editing images from human instructions: given an\ninput image and a written instruction that tells the model what to do, our\nmodel follows these instructions to edit the image. To obtain training data for\nthis problem, we combine the knowledge of two large pretrained models -- a\nlanguage model (GPT-3) and a text-to-image model (Stable Diffusion) -- to\ngenerate a large dataset of image editing examples. Our conditional diffusion\nmodel, InstructPix2Pix, is trained on our generated data, and generalizes to\nreal images and user-written instructions at inference time. Since it performs\nedits in the forward pass and does not require per example fine-tuning or\ninversion, our model edits images quickly, in a matter of seconds. We show\ncompelling editing results for a diverse collection of input images and written\ninstructions.\n",
+        "published": "2022",
+        "authors": [
+            "Tim Brooks",
+            "Aleksander Holynski",
+            "Alexei A. Efros"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2211.13972v1",
+        "title": "Picking on the Same Person: Does Algorithmic Monoculture lead to Outcome\n  Homogenization?",
+        "abstract": "  As the scope of machine learning broadens, we observe a recurring theme of\nalgorithmic monoculture: the same systems, or systems that share components\n(e.g. training data), are deployed by multiple decision-makers. While sharing\noffers clear advantages (e.g. amortizing costs), does it bear risks? We\nintroduce and formalize one such risk, outcome homogenization: the extent to\nwhich particular individuals or groups experience negative outcomes from all\ndecision-makers. If the same individuals or groups exclusively experience\nundesirable outcomes, this may institutionalize systemic exclusion and\nreinscribe social hierarchy. To relate algorithmic monoculture and outcome\nhomogenization, we propose the component-sharing hypothesis: if decision-makers\nshare components like training data or specific models, then they will produce\nmore homogeneous outcomes. We test this hypothesis on algorithmic fairness\nbenchmarks, demonstrating that sharing training data reliably exacerbates\nhomogenization, with individual-level effects generally exceeding group-level\neffects. Further, given the dominant paradigm in AI of foundation models, i.e.\nmodels that can be adapted for myriad downstream tasks, we test whether model\nsharing homogenizes outcomes across tasks. We observe mixed results: we find\nthat for both vision and language settings, the specific methods for adapting a\nfoundation model significantly influence the degree of outcome homogenization.\nWe conclude with philosophical analyses of and societal challenges for outcome\nhomogenization, with an eye towards implications for deployed machine learning\nsystems.\n",
+        "published": "2022",
+        "authors": [
+            "Rishi Bommasani",
+            "Kathleen A. Creel",
+            "Ananya Kumar",
+            "Dan Jurafsky",
+            "Percy Liang"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2211.14905v2",
+        "title": "Multi-Modal Few-Shot Temporal Action Detection",
+        "abstract": "  Few-shot (FS) and zero-shot (ZS) learning are two different approaches for\nscaling temporal action detection (TAD) to new classes. The former adapts a\npretrained vision model to a new task represented by as few as a single video\nper class, whilst the latter requires no training examples by exploiting a\nsemantic description of the new class. In this work, we introduce a new\nmulti-modality few-shot (MMFS) TAD problem, which can be considered as a\nmarriage of FS-TAD and ZS-TAD by leveraging few-shot support videos and new\nclass names jointly. To tackle this problem, we further introduce a novel\nMUlti-modality PromPt mETa-learning (MUPPET) method. This is enabled by\nefficiently bridging pretrained vision and language models whilst maximally\nreusing already learned capacity. Concretely, we construct multi-modal prompts\nby mapping support videos into the textual token space of a vision-language\nmodel using a meta-learned adapter-equipped visual semantics tokenizer. To\ntackle large intra-class variation, we further design a query feature\nregulation scheme. Extensive experiments on ActivityNetv1.3 and THUMOS14\ndemonstrate that our MUPPET outperforms state-of-the-art alternative methods,\noften by a large margin. We also show that our MUPPET can be easily extended to\ntackle the few-shot object detection problem and again achieves the\nstate-of-the-art performance on MS-COCO dataset. The code will be available in\nhttps://github.com/sauradip/MUPPET\n",
+        "published": "2022",
+        "authors": [
+            "Sauradip Nag",
+            "Mengmeng Xu",
+            "Xiatian Zhu",
+            "Juan-Manuel Perez-Rua",
+            "Bernard Ghanem",
+            "Yi-Zhe Song",
+            "Tao Xiang"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2212.09597v8",
+        "title": "Reasoning with Language Model Prompting: A Survey",
+        "abstract": "  Reasoning, as an essential ability for complex problem-solving, can provide\nback-end support for various real-world applications, such as medical\ndiagnosis, negotiation, etc. This paper provides a comprehensive survey of\ncutting-edge research on reasoning with language model prompting. We introduce\nresearch works with comparisons and summaries and provide systematic resources\nto help beginners. We also discuss the potential reasons for emerging such\nreasoning abilities and highlight future research directions. Resources are\navailable at https://github.com/zjunlp/Prompt4ReasoningPapers (updated\nperiodically).\n",
+        "published": "2022",
+        "authors": [
+            "Shuofei Qiao",
+            "Yixin Ou",
+            "Ningyu Zhang",
+            "Xiang Chen",
+            "Yunzhi Yao",
+            "Shumin Deng",
+            "Chuanqi Tan",
+            "Fei Huang",
+            "Huajun Chen"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2212.11261v2",
+        "title": "Contrastive Language-Vision AI Models Pretrained on Web-Scraped\n  Multimodal Data Exhibit Sexual Objectification Bias",
+        "abstract": "  Nine language-vision AI models trained on web scrapes with the Contrastive\nLanguage-Image Pretraining (CLIP) objective are evaluated for evidence of a\nbias studied by psychologists: the sexual objectification of girls and women,\nwhich occurs when a person's human characteristics, such as emotions, are\ndisregarded and the person is treated as a body. We replicate three experiments\nin psychology quantifying sexual objectification and show that the phenomena\npersist in AI. A first experiment uses standardized images of women from the\nSexual OBjectification and EMotion Database, and finds that human\ncharacteristics are disassociated from images of objectified women: the model's\nrecognition of emotional state is mediated by whether the subject is fully or\npartially clothed. Embedding association tests (EATs) return significant effect\nsizes for both anger (d >0.80) and sadness (d >0.50), associating images of\nfully clothed subjects with emotions. GRAD-CAM saliency maps highlight that\nCLIP gets distracted from emotional expressions in objectified images. A second\nexperiment measures the effect in a representative application: an automatic\nimage captioner (Antarctic Captions) includes words denoting emotion less than\n50% as often for images of partially clothed women than for images of fully\nclothed women. A third experiment finds that images of female professionals\n(scientists, doctors, executives) are likely to be associated with sexual\ndescriptions relative to images of male professionals. A fourth experiment\nshows that a prompt of \"a [age] year old girl\" generates sexualized images (as\ndetermined by an NSFW classifier) up to 73% of the time for VQGAN-CLIP and\nStable Diffusion; the corresponding rate for boys never surpasses 9%. The\nevidence indicates that language-vision AI models trained on web scrapes learn\nbiases of sexual objectification, which propagate to downstream applications.\n",
+        "published": "2022",
+        "authors": [
+            "Robert Wolfe",
+            "Yiwei Yang",
+            "Bill Howe",
+            "Aylin Caliskan"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2301.01949v1",
+        "title": "SPRING: Situated Conversation Agent Pretrained with Multimodal Questions\n  from Incremental Layout Graph",
+        "abstract": "  Existing multimodal conversation agents have shown impressive abilities to\nlocate absolute positions or retrieve attributes in simple scenarios, but they\nfail to perform well when complex relative positions and information alignments\nare involved, which poses a bottleneck in response quality. In this paper, we\npropose a Situated Conversation Agent Petrained with Multimodal Questions from\nINcremental Layout Graph (SPRING) with abilities of reasoning multi-hops\nspatial relations and connecting them with visual attributes in crowded\nsituated scenarios. Specifically, we design two types of Multimodal Question\nAnswering (MQA) tasks to pretrain the agent. All QA pairs utilized during\npretraining are generated from novel Incremental Layout Graphs (ILG). QA pair\ndifficulty labels automatically annotated by ILG are used to promote MQA-based\nCurriculum Learning. Experimental results verify the SPRING's effectiveness,\nshowing that it significantly outperforms state-of-the-art approaches on both\nSIMMC 1.0 and SIMMC 2.0 datasets.\n",
+        "published": "2023",
+        "authors": [
+            "Yuxing Long",
+            "Binyuan Hui",
+            "Fulong Ye",
+            "Yanyang Li",
+            "Zhuoxin Han",
+            "Caixia Yuan",
+            "Yongbin Li",
+            "Xiaojie Wang"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2301.07093v2",
+        "title": "GLIGEN: Open-Set Grounded Text-to-Image Generation",
+        "abstract": "  Large-scale text-to-image diffusion models have made amazing advances.\nHowever, the status quo is to use text input alone, which can impede\ncontrollability. In this work, we propose GLIGEN, Grounded-Language-to-Image\nGeneration, a novel approach that builds upon and extends the functionality of\nexisting pre-trained text-to-image diffusion models by enabling them to also be\nconditioned on grounding inputs. To preserve the vast concept knowledge of the\npre-trained model, we freeze all of its weights and inject the grounding\ninformation into new trainable layers via a gated mechanism. Our model achieves\nopen-world grounded text2img generation with caption and bounding box condition\ninputs, and the grounding ability generalizes well to novel spatial\nconfigurations and concepts. GLIGEN's zero-shot performance on COCO and LVIS\noutperforms that of existing supervised layout-to-image baselines by a large\nmargin.\n",
+        "published": "2023",
+        "authors": [
+            "Yuheng Li",
+            "Haotian Liu",
+            "Qingyang Wu",
+            "Fangzhou Mu",
+            "Jianwei Yang",
+            "Jianfeng Gao",
+            "Chunyuan Li",
+            "Yong Jae Lee"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2301.08846v1",
+        "title": "Regeneration Learning: A Learning Paradigm for Data Generation",
+        "abstract": "  Machine learning methods for conditional data generation usually build a\nmapping from source conditional data X to target data Y. The target Y (e.g.,\ntext, speech, music, image, video) is usually high-dimensional and complex, and\ncontains information that does not exist in source data, which hinders\neffective and efficient learning on the source-target mapping. In this paper,\nwe present a learning paradigm called regeneration learning for data\ngeneration, which first generates Y' (an abstraction/representation of Y) from\nX and then generates Y from Y'. During training, Y' is obtained from Y through\neither handcrafted rules or self-supervised learning and is used to learn\nX-->Y' and Y'-->Y. Regeneration learning extends the concept of representation\nlearning to data generation tasks, and can be regarded as a counterpart of\ntraditional representation learning, since 1) regeneration learning handles the\nabstraction (Y') of the target data Y for data generation while traditional\nrepresentation learning handles the abstraction (X') of source data X for data\nunderstanding; 2) both the processes of Y'-->Y in regeneration learning and\nX-->X' in representation learning can be learned in a self-supervised way\n(e.g., pre-training); 3) both the mappings from X to Y' in regeneration\nlearning and from X' to Y in representation learning are simpler than the\ndirect mapping from X to Y. We show that regeneration learning can be a\nwidely-used paradigm for data generation (e.g., text generation, speech\nrecognition, speech synthesis, music composition, image generation, and video\ngeneration) and can provide valuable insights into developing data generation\nmethods.\n",
+        "published": "2023",
+        "authors": [
+            "Xu Tan",
+            "Tao Qin",
+            "Jiang Bian",
+            "Tie-Yan Liu",
+            "Yoshua Bengio"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2302.04858v2",
+        "title": "Re-ViLM: Retrieval-Augmented Visual Language Model for Zero and Few-Shot\n  Image Captioning",
+        "abstract": "  Augmenting pretrained language models (LMs) with a vision encoder (e.g.,\nFlamingo) has obtained the state-of-the-art results in image-to-text\ngeneration. However, these models store all the knowledge within their\nparameters, thus often requiring enormous model parameters to model the\nabundant visual concepts and very rich textual descriptions. Additionally, they\nare inefficient in incorporating new data, requiring a computational-expensive\nfine-tuning process. In this work, we introduce a Retrieval-augmented Visual\nLanguage Model, Re-ViLM, built upon the Flamingo, that supports retrieving the\nrelevant knowledge from the external database for zero and in-context few-shot\nimage-to-text generations. By storing certain knowledge explicitly in the\nexternal database, our approach reduces the number of model parameters and can\neasily accommodate new data during evaluation by simply updating the database.\nWe also construct an interleaved image and text data that facilitates\nin-context few-shot learning capabilities. We demonstrate that Re-ViLM\nsignificantly boosts performance for image-to-text generation tasks, especially\nfor zero-shot and few-shot generation in out-of-domain settings with 4 times\nless parameters compared with baseline methods.\n",
+        "published": "2023",
+        "authors": [
+            "Zhuolin Yang",
+            "Wei Ping",
+            "Zihan Liu",
+            "Vijay Korthikanti",
+            "Weili Nie",
+            "De-An Huang",
+            "Linxi Fan",
+            "Zhiding Yu",
+            "Shiyi Lan",
+            "Bo Li",
+            "Ming-Yu Liu",
+            "Yuke Zhu",
+            "Mohammad Shoeybi",
+            "Bryan Catanzaro",
+            "Chaowei Xiao",
+            "Anima Anandkumar"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2303.09618v1",
+        "title": "HIVE: Harnessing Human Feedback for Instructional Visual Editing",
+        "abstract": "  Incorporating human feedback has been shown to be crucial to align text\ngenerated by large language models to human preferences. We hypothesize that\nstate-of-the-art instructional image editing models, where outputs are\ngenerated based on an input image and an editing instruction, could similarly\nbenefit from human feedback, as their outputs may not adhere to the correct\ninstructions and preferences of users. In this paper, we present a novel\nframework to harness human feedback for instructional visual editing (HIVE).\nSpecifically, we collect human feedback on the edited images and learn a reward\nfunction to capture the underlying user preferences. We then introduce scalable\ndiffusion model fine-tuning methods that can incorporate human preferences\nbased on the estimated reward. Besides, to mitigate the bias brought by the\nlimitation of data, we contribute a new 1M training dataset, a 3.6K reward\ndataset for rewards learning, and a 1K evaluation dataset to boost the\nperformance of instructional image editing. We conduct extensive empirical\nexperiments quantitatively and qualitatively, showing that HIVE is favored over\nprevious state-of-the-art instructional image editing approaches by a large\nmargin.\n",
+        "published": "2023",
+        "authors": [
+            "Shu Zhang",
+            "Xinyi Yang",
+            "Yihao Feng",
+            "Can Qin",
+            "Chia-Chih Chen",
+            "Ning Yu",
+            "Zeyuan Chen",
+            "Huan Wang",
+            "Silvio Savarese",
+            "Stefano Ermon",
+            "Caiming Xiong",
+            "Ran Xu"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2303.12489v1",
+        "title": "Few-shot Multimodal Multitask Multilingual Learning",
+        "abstract": "  While few-shot learning as a transfer learning paradigm has gained\nsignificant traction for scenarios with limited data, it has primarily been\nexplored in the context of building unimodal and unilingual models.\nFurthermore, a significant part of the existing literature in the domain of\nfew-shot multitask learning perform in-context learning which requires manually\ngenerated prompts as the input, yielding varying outcomes depending on the\nlevel of manual prompt-engineering. In addition, in-context learning suffers\nfrom substantial computational, memory, and storage costs which eventually\nleads to high inference latency because it involves running all of the prompt's\nexamples through the model every time a prediction is made. In contrast,\nmethods based on the transfer learning via the fine-tuning paradigm avoid the\naforementioned issues at a one-time cost of fine-tuning weights on a per-task\nbasis. However, such methods lack exposure to few-shot multimodal multitask\nlearning. In this paper, we propose few-shot learning for a multimodal\nmultitask multilingual (FM3) setting by adapting pre-trained vision and\nlanguage models using task-specific hypernetworks and contrastively fine-tuning\nthem to enable few-shot learning. FM3's architecture combines the best of both\nworlds of in-context and fine-tuning based learning and consists of three major\ncomponents: (i) multimodal contrastive fine-tuning to enable few-shot learning,\n(ii) hypernetwork task adaptation to perform multitask learning, and (iii)\ntask-specific output heads to cater to a plethora of diverse tasks. FM3 learns\nthe most prominent tasks in the vision and language domains along with their\nintersections, namely visual entailment (VE), visual question answering (VQA),\nand natural language understanding (NLU) tasks such as neural entity\nrecognition (NER) and the GLUE benchmark including QNLI, MNLI, QQP, and SST-2.\n",
+        "published": "2023",
+        "authors": [
+            "Aman Chadha",
+            "Vinija Jain"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2303.13549v1",
+        "title": "Optical Character Recognition and Transcription of Berber Signs from\n  Images in a Low-Resource Language Amazigh",
+        "abstract": "  The Berber, or Amazigh language family is a low-resource North African\nvernacular language spoken by the indigenous Berber ethnic group. It has its\nown unique alphabet called Tifinagh used across Berber communities in Morocco,\nAlgeria, and others. The Afroasiatic language Berber is spoken by 14 million\npeople, yet lacks adequate representation in education, research, web\napplications etc. For instance, there is no option of translation to or from\nAmazigh / Berber on Google Translate, which hosts over 100 languages today.\nConsequently, we do not find specialized educational apps, L2 (2nd language\nlearner) acquisition, automated language translation, and remote-access\nfacilities enabled in Berber. Motivated by this background, we propose a\nsupervised approach called DaToBS for Detection and Transcription of Berber\nSigns. The DaToBS approach entails the automatic recognition and transcription\nof Tifinagh characters from signs in photographs of natural environments. This\nis achieved by self-creating a corpus of 1862 pre-processed character images;\ncurating the corpus with human-guided annotation; and feeding it into an OCR\nmodel via the deployment of CNN for deep learning based on computer vision\nmodels. We deploy computer vision modeling (rather than language models)\nbecause there are pictorial symbols in this alphabet, this deployment being a\nnovel aspect of our work. The DaToBS experimentation and analyses yield over 92\npercent accuracy in our research. To the best of our knowledge, ours is among\nthe first few works in the automated transcription of Berber signs from\nroadside images with deep learning, yielding high accuracy. This can pave the\nway for developing pedagogical applications in the Berber language, thereby\naddressing an important goal of outreach to underrepresented communities via AI\nin education.\n",
+        "published": "2023",
+        "authors": [
+            "Levi Corallo",
+            "Aparna S. Varde"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2303.14116v1",
+        "title": "Improving Prediction Performance and Model Interpretability through\n  Attention Mechanisms from Basic and Applied Research Perspectives",
+        "abstract": "  With the dramatic advances in deep learning technology, machine learning\nresearch is focusing on improving the interpretability of model predictions as\nwell as prediction performance in both basic and applied research. While deep\nlearning models have much higher prediction performance than traditional\nmachine learning models, the specific prediction process is still difficult to\ninterpret and/or explain. This is known as the black-boxing of machine learning\nmodels and is recognized as a particularly important problem in a wide range of\nresearch fields, including manufacturing, commerce, robotics, and other\nindustries where the use of such technology has become commonplace, as well as\nthe medical field, where mistakes are not tolerated. This bulletin is based on\nthe summary of the author's dissertation. The research summarized in the\ndissertation focuses on the attention mechanism, which has been the focus of\nmuch attention in recent years, and discusses its potential for both basic\nresearch in terms of improving prediction performance and interpretability, and\napplied research in terms of evaluating it for real-world applications using\nlarge data sets beyond the laboratory environment. The dissertation also\nconcludes with a summary of the implications of these findings for subsequent\nresearch and future prospects in the field.\n",
+        "published": "2023",
+        "authors": [
+            "Shunsuke Kitada"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2303.16199v2",
+        "title": "LLaMA-Adapter: Efficient Fine-tuning of Language Models with Zero-init\n  Attention",
+        "abstract": "  We present LLaMA-Adapter, a lightweight adaption method to efficiently\nfine-tune LLaMA into an instruction-following model. Using 52K self-instruct\ndemonstrations, LLaMA-Adapter only introduces 1.2M learnable parameters upon\nthe frozen LLaMA 7B model, and costs less than one hour for fine-tuning on 8\nA100 GPUs. Specifically, we adopt a set of learnable adaption prompts, and\nprepend them to the word tokens at higher transformer layers. Then, a\nzero-initialized attention mechanism with zero gating is proposed, which\nadaptively injects the new instructional cues into LLaMA, while effectively\npreserves its pre-trained knowledge. With our efficient training, LLaMA-Adapter\ncan generate high-quality responses, comparable to Alpaca with fully fine-tuned\n7B parameters. Besides language commands, our approach can be simply extended\nto multi-modal instructions for learning image-conditioned LLaMA model, which\nachieves superior reasoning performance on ScienceQA and COCO Caption\nbenchmarks. Furthermore, we also evaluate the zero-initialized attention\nmechanism for fine-tuning other pre-trained models (ViT, RoBERTa) on\ntraditional vision and language tasks, demonstrating the superior\ngeneralization capacity of our approach. Code is released at\nhttps://github.com/OpenGVLab/LLaMA-Adapter.\n",
+        "published": "2023",
+        "authors": [
+            "Renrui Zhang",
+            "Jiaming Han",
+            "Chris Liu",
+            "Peng Gao",
+            "Aojun Zhou",
+            "Xiangfei Hu",
+            "Shilin Yan",
+            "Pan Lu",
+            "Hongsheng Li",
+            "Yu Qiao"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2303.17839v1",
+        "title": "Learning Procedure-aware Video Representation from Instructional Videos\n  and Their Narrations",
+        "abstract": "  The abundance of instructional videos and their narrations over the Internet\noffers an exciting avenue for understanding procedural activities. In this\nwork, we propose to learn video representation that encodes both action steps\nand their temporal ordering, based on a large-scale dataset of web\ninstructional videos and their narrations, without using human annotations. Our\nmethod jointly learns a video representation to encode individual step\nconcepts, and a deep probabilistic model to capture both temporal dependencies\nand immense individual variations in the step ordering. We empirically\ndemonstrate that learning temporal ordering not only enables new capabilities\nfor procedure reasoning, but also reinforces the recognition of individual\nsteps. Our model significantly advances the state-of-the-art results on step\nclassification (+2.8% / +3.3% on COIN / EPIC-Kitchens) and step forecasting\n(+7.4% on COIN). Moreover, our model attains promising results in zero-shot\ninference for step classification and forecasting, as well as in predicting\ndiverse and plausible steps for incomplete procedures. Our code is available at\nhttps://github.com/facebookresearch/ProcedureVRL.\n",
+        "published": "2023",
+        "authors": [
+            "Yiwu Zhong",
+            "Licheng Yu",
+            "Yang Bai",
+            "Shangwen Li",
+            "Xueting Yan",
+            "Yin Li"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2304.06488v1",
+        "title": "One Small Step for Generative AI, One Giant Leap for AGI: A Complete\n  Survey on ChatGPT in AIGC Era",
+        "abstract": "  OpenAI has recently released GPT-4 (a.k.a. ChatGPT plus), which is\ndemonstrated to be one small step for generative AI (GAI), but one giant leap\nfor artificial general intelligence (AGI). Since its official release in\nNovember 2022, ChatGPT has quickly attracted numerous users with extensive\nmedia coverage. Such unprecedented attention has also motivated numerous\nresearchers to investigate ChatGPT from various aspects. According to Google\nscholar, there are more than 500 articles with ChatGPT in their titles or\nmentioning it in their abstracts. Considering this, a review is urgently\nneeded, and our work fills this gap. Overall, this work is the first to survey\nChatGPT with a comprehensive review of its underlying technology, applications,\nand challenges. Moreover, we present an outlook on how ChatGPT might evolve to\nrealize general-purpose AIGC (a.k.a. AI-generated content), which will be a\nsignificant milestone for the development of AGI.\n",
+        "published": "2023",
+        "authors": [
+            "Chaoning Zhang",
+            "Chenshuang Zhang",
+            "Chenghao Li",
+            "Yu Qiao",
+            "Sheng Zheng",
+            "Sumit Kumar Dam",
+            "Mengchun Zhang",
+            "Jung Uk Kim",
+            "Seong Tae Kim",
+            "Jinwoo Choi",
+            "Gyeong-Moon Park",
+            "Sung-Ho Bae",
+            "Lik-Hang Lee",
+            "Pan Hui",
+            "In So Kweon",
+            "Choong Seon Hong"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2304.09826v2",
+        "title": "Fairness in AI and Its Long-Term Implications on Society",
+        "abstract": "  Successful deployment of artificial intelligence (AI) in various settings has\nled to numerous positive outcomes for individuals and society. However, AI\nsystems have also been shown to harm parts of the population due to biased\npredictions. AI fairness focuses on mitigating such biases to ensure AI\ndecision making is not discriminatory towards certain groups. We take a closer\nlook at AI fairness and analyze how lack of AI fairness can lead to deepening\nof biases over time and act as a social stressor. More specifically, we discuss\nhow biased models can lead to more negative real-world outcomes for certain\ngroups, which may then become more prevalent by deploying new AI models trained\non increasingly biased data, resulting in a feedback loop. If the issues\npersist, they could be reinforced by interactions with other risks and have\nsevere implications on society in the form of social unrest. We examine current\nstrategies for improving AI fairness, assess their limitations in terms of\nreal-world deployment, and explore potential paths forward to ensure we reap\nAI's benefits without causing society's collapse.\n",
+        "published": "2023",
+        "authors": [
+            "Ondrej Bohdal",
+            "Timothy Hospedales",
+            "Philip H. S. Torr",
+            "Fazl Barez"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2304.11095v1",
+        "title": "Is Cross-modal Information Retrieval Possible without Training?",
+        "abstract": "  Encoded representations from a pretrained deep learning model (e.g., BERT\ntext embeddings, penultimate CNN layer activations of an image) convey a rich\nset of features beneficial for information retrieval. Embeddings for a\nparticular modality of data occupy a high-dimensional space of its own, but it\ncan be semantically aligned to another by a simple mapping without training a\ndeep neural net. In this paper, we take a simple mapping computed from the\nleast squares and singular value decomposition (SVD) for a solution to the\nProcrustes problem to serve a means to cross-modal information retrieval. That\nis, given information in one modality such as text, the mapping helps us locate\na semantically equivalent data item in another modality such as image. Using\noff-the-shelf pretrained deep learning models, we have experimented the\naforementioned simple cross-modal mappings in tasks of text-to-image and\nimage-to-text retrieval. Despite simplicity, our mappings perform reasonably\nwell reaching the highest accuracy of 77% on recall@10, which is comparable to\nthose requiring costly neural net training and fine-tuning. We have improved\nthe simple mappings by contrastive learning on the pretrained models.\nContrastive learning can be thought as properly biasing the pretrained encoders\nto enhance the cross-modal mapping quality. We have further improved the\nperformance by multilayer perceptron with gating (gMLP), a simple neural\narchitecture.\n",
+        "published": "2023",
+        "authors": [
+            "Hyunjin Choi",
+            "Hyunjae Lee",
+            "Seongho Joe",
+            "Youngjune L. Gwon"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2304.15010v1",
+        "title": "LLaMA-Adapter V2: Parameter-Efficient Visual Instruction Model",
+        "abstract": "  How to efficiently transform large language models (LLMs) into instruction\nfollowers is recently a popular research direction, while training LLM for\nmulti-modal reasoning remains less explored. Although the recent LLaMA-Adapter\ndemonstrates the potential to handle visual inputs with LLMs, it still cannot\ngeneralize well to open-ended visual instructions and lags behind GPT-4. In\nthis paper, we present LLaMA-Adapter V2, a parameter-efficient visual\ninstruction model. Specifically, we first augment LLaMA-Adapter by unlocking\nmore learnable parameters (e.g., norm, bias and scale), which distribute the\ninstruction-following ability across the entire LLaMA model besides adapters.\nSecondly, we propose an early fusion strategy to feed visual tokens only into\nthe early LLM layers, contributing to better visual knowledge incorporation.\nThirdly, a joint training paradigm of image-text pairs and\ninstruction-following data is introduced by optimizing disjoint groups of\nlearnable parameters. This strategy effectively alleviates the interference\nbetween the two tasks of image-text alignment and instruction following and\nachieves strong multi-modal reasoning with only a small-scale image-text and\ninstruction dataset. During inference, we incorporate additional expert models\n(e.g. captioning/OCR systems) into LLaMA-Adapter to further enhance its image\nunderstanding capability without incurring training costs. Compared to the\noriginal LLaMA-Adapter, our LLaMA-Adapter V2 can perform open-ended multi-modal\ninstructions by merely introducing 14M parameters over LLaMA. The newly\ndesigned framework also exhibits stronger language-only instruction-following\ncapabilities and even excels in chat interactions. Our code and models are\navailable at https://github.com/ZrrSkywalker/LLaMA-Adapter.\n",
+        "published": "2023",
+        "authors": [
+            "Peng Gao",
+            "Jiaming Han",
+            "Renrui Zhang",
+            "Ziyi Lin",
+            "Shijie Geng",
+            "Aojun Zhou",
+            "Wei Zhang",
+            "Pan Lu",
+            "Conghui He",
+            "Xiangyu Yue",
+            "Hongsheng Li",
+            "Yu Qiao"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2305.03048v2",
+        "title": "Personalize Segment Anything Model with One Shot",
+        "abstract": "  Driven by large-data pre-training, Segment Anything Model (SAM) has been\ndemonstrated as a powerful and promptable framework, revolutionizing the\nsegmentation models. Despite the generality, customizing SAM for specific\nvisual concepts without man-powered prompting is under explored, e.g.,\nautomatically segmenting your pet dog in different images. In this paper, we\npropose a training-free Personalization approach for SAM, termed as PerSAM.\nGiven only a single image with a reference mask, PerSAM first localizes the\ntarget concept by a location prior, and segments it within other images or\nvideos via three techniques: target-guided attention, target-semantic\nprompting, and cascaded post-refinement. In this way, we effectively adapt SAM\nfor private use without any training. To further alleviate the mask ambiguity,\nwe present an efficient one-shot fine-tuning variant, PerSAM-F. Freezing the\nentire SAM, we introduce two learnable weights for multi-scale masks, only\ntraining 2 parameters within 10 seconds for improved performance. To\ndemonstrate our efficacy, we construct a new segmentation dataset, PerSeg, for\npersonalized evaluation, and test our methods on video object segmentation with\ncompetitive performance. Besides, our approach can also enhance DreamBooth to\npersonalize Stable Diffusion for text-to-image generation, which discards the\nbackground disturbance for better target appearance learning. Code is released\nat https://github.com/ZrrSkywalker/Personalize-SAM\n",
+        "published": "2023",
+        "authors": [
+            "Renrui Zhang",
+            "Zhengkai Jiang",
+            "Ziyu Guo",
+            "Shilin Yan",
+            "Junting Pan",
+            "Xianzheng Ma",
+            "Hao Dong",
+            "Peng Gao",
+            "Hongsheng Li"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2305.10913v2",
+        "title": "Weakly-Supervised Visual-Textual Grounding with Semantic Prior\n  Refinement",
+        "abstract": "  Using only image-sentence pairs, weakly-supervised visual-textual grounding\naims to learn region-phrase correspondences of the respective entity mentions.\nCompared to the supervised approach, learning is more difficult since bounding\nboxes and textual phrases correspondences are unavailable. In light of this, we\npropose the Semantic Prior Refinement Model (SPRM), whose predictions are\nobtained by combining the output of two main modules. The first untrained\nmodule aims to return a rough alignment between textual phrases and bounding\nboxes. The second trained module is composed of two sub-components that refine\nthe rough alignment to improve the accuracy of the final phrase-bounding box\nalignments. The model is trained to maximize the multimodal similarity between\nan image and a sentence, while minimizing the multimodal similarity of the same\nsentence and a new unrelated image, carefully selected to help the most during\ntraining. Our approach shows state-of-the-art results on two popular datasets,\nFlickr30k Entities and ReferIt, shining especially on ReferIt with a 9.6%\nabsolute improvement. Moreover, thanks to the untrained component, it reaches\ncompetitive performances just using a small fraction of training examples.\n",
+        "published": "2023",
+        "authors": [
+            "Davide Rigoni",
+            "Luca Parolari",
+            "Luciano Serafini",
+            "Alessandro Sperduti",
+            "Lamberto Ballan"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2305.12311v1",
+        "title": "i-Code V2: An Autoregressive Generation Framework over Vision, Language,\n  and Speech Data",
+        "abstract": "  The convergence of text, visual, and audio data is a key step towards\nhuman-like artificial intelligence, however the current Vision-Language-Speech\nlandscape is dominated by encoder-only models which lack generative abilities.\nWe propose closing this gap with i-Code V2, the first model capable of\ngenerating natural language from any combination of Vision, Language, and\nSpeech data. i-Code V2 is an integrative system that leverages state-of-the-art\nsingle-modality encoders, combining their outputs with a new modality-fusing\nencoder in order to flexibly project combinations of modalities into a shared\nrepresentational space. Next, language tokens are generated from these\nrepresentations via an autoregressive decoder. The whole framework is\npretrained end-to-end on a large collection of dual- and single-modality\ndatasets using a novel text completion objective that can be generalized across\narbitrary combinations of modalities. i-Code V2 matches or outperforms\nstate-of-the-art single- and dual-modality baselines on 7 multimodal tasks,\ndemonstrating the power of generative multimodal pretraining across a diversity\nof tasks and signals.\n",
+        "published": "2023",
+        "authors": [
+            "Ziyi Yang",
+            "Mahmoud Khademi",
+            "Yichong Xu",
+            "Reid Pryzant",
+            "Yuwei Fang",
+            "Chenguang Zhu",
+            "Dongdong Chen",
+            "Yao Qian",
+            "Mei Gao",
+            "Yi-Ling Chen",
+            "Robert Gmyr",
+            "Naoyuki Kanda",
+            "Noel Codella",
+            "Bin Xiao",
+            "Yu Shi",
+            "Lu Yuan",
+            "Takuya Yoshioka",
+            "Michael Zeng",
+            "Xuedong Huang"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2305.13172v3",
+        "title": "Editing Large Language Models: Problems, Methods, and Opportunities",
+        "abstract": "  Despite the ability to train capable LLMs, the methodology for maintaining\ntheir relevancy and rectifying errors remains elusive. To this end, the past\nfew years have witnessed a surge in techniques for editing LLMs, the objective\nof which is to efficiently alter the behavior of LLMs within a specific domain\nwithout negatively impacting performance across other inputs. This paper\nembarks on a deep exploration of the problems, methods, and opportunities\nrelated to model editing for LLMs. In particular, we provide an exhaustive\noverview of the task definition and challenges associated with model editing,\nalong with an in-depth empirical analysis of the most progressive methods\ncurrently at our disposal. We also build a new benchmark dataset to facilitate\na more robust evaluation and pinpoint enduring issues intrinsic to existing\ntechniques. Our objective is to provide valuable insights into the\neffectiveness and feasibility of each editing technique, thereby assisting the\ncommunity in making informed decisions on the selection of the most appropriate\nmethod for a specific task or context. Code and datasets are available at\nhttps://github.com/zjunlp/EasyEdit.\n",
+        "published": "2023",
+        "authors": [
+            "Yunzhi Yao",
+            "Peng Wang",
+            "Bozhong Tian",
+            "Siyuan Cheng",
+            "Zhoubo Li",
+            "Shumin Deng",
+            "Huajun Chen",
+            "Ningyu Zhang"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2305.13484v3",
+        "title": "Flover: A Temporal Fusion Framework for Efficient Autoregressive Model\n  Parallel Inference",
+        "abstract": "  Autoregressive models, despite their commendable performance in a myriad of\ngenerative tasks, face challenges stemming from their inherently sequential\nstructure. Inference on these models, by design, harnesses a temporal\ndependency, where the current token's probability distribution is conditioned\non preceding tokens. This inherent characteristic severely impedes\ncomputational efficiency during inference as a typical inference request can\nrequire more than thousands of tokens, where generating each token requires a\nload of entire model weights, making the inference more memory-bound. The large\noverhead becomes profound in real deployment where requests arrive randomly,\nnecessitating various generation lengths. Existing solutions, such as dynamic\nbatching and concurrent instances, introduce significant response delays and\nbandwidth contention, falling short of achieving optimal latency and\nthroughput. To address these shortcomings, we propose Flover -- a temporal\nfusion framework for efficiently inferring multiple requests in parallel. We\ndeconstruct the general generation pipeline into pre-processing and token\ngeneration, and equip the framework with a dedicated work scheduler for fusing\nthe generation process temporally across all requests. By orchestrating the\ntoken-level parallelism, Flover exhibits optimal hardware efficiency and\nsignificantly spares the system resources. By further employing a fast buffer\nreordering algorithm that allows memory eviction of finished tasks, it brings\nover 11x inference speedup on GPT and 16x on LLAMA compared to the cutting-edge\nsolutions provided by NVIDIA FasterTransformer. Crucially, by leveraging the\nadvanced tensor parallel technique, Flover proves efficacious across diverse\ncomputational landscapes, from single-GPU setups to distributed scenarios,\nthereby offering robust performance optimization that adapts to variable use\ncases.\n",
+        "published": "2023",
+        "authors": [
+            "Jinghan Yao",
+            "Nawras Alnaasan",
+            "Tian Chen",
+            "Aamir Shafi",
+            "Hari Subramoni",
+            "Dhabaleswar K.",
+            " Panda"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2305.17493v2",
+        "title": "The Curse of Recursion: Training on Generated Data Makes Models Forget",
+        "abstract": "  Stable Diffusion revolutionised image creation from descriptive text. GPT-2,\nGPT-3(.5) and GPT-4 demonstrated astonishing performance across a variety of\nlanguage tasks. ChatGPT introduced such language models to the general public.\nIt is now clear that large language models (LLMs) are here to stay, and will\nbring about drastic change in the whole ecosystem of online text and images. In\nthis paper we consider what the future might hold. What will happen to GPT-{n}\nonce LLMs contribute much of the language found online? We find that use of\nmodel-generated content in training causes irreversible defects in the\nresulting models, where tails of the original content distribution disappear.\nWe refer to this effect as Model Collapse and show that it can occur in\nVariational Autoencoders, Gaussian Mixture Models and LLMs. We build\ntheoretical intuition behind the phenomenon and portray its ubiquity amongst\nall learned generative models. We demonstrate that it has to be taken seriously\nif we are to sustain the benefits of training from large-scale data scraped\nfrom the web. Indeed, the value of data collected about genuine human\ninteractions with systems will be increasingly valuable in the presence of\ncontent generated by LLMs in data crawled from the Internet.\n",
+        "published": "2023",
+        "authors": [
+            "Ilia Shumailov",
+            "Zakhar Shumaylov",
+            "Yiren Zhao",
+            "Yarin Gal",
+            "Nicolas Papernot",
+            "Ross Anderson"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2305.18500v2",
+        "title": "VAST: A Vision-Audio-Subtitle-Text Omni-Modality Foundation Model and\n  Dataset",
+        "abstract": "  Vision and text have been fully explored in contemporary video-text\nfoundational models, while other modalities such as audio and subtitles in\nvideos have not received sufficient attention. In this paper, we resort to\nestablish connections between multi-modality video tracks, including Vision,\nAudio, and Subtitle, and Text by exploring an automatically generated\nlarge-scale omni-modality video caption dataset called VAST-27M. Specifically,\nwe first collect 27 million open-domain video clips and separately train a\nvision and an audio captioner to generate vision and audio captions. Then, we\nemploy an off-the-shelf Large Language Model (LLM) to integrate the generated\ncaptions, together with subtitles and instructional prompts into omni-modality\ncaptions. Based on the proposed VAST-27M dataset, we train an omni-modality\nvideo-text foundational model named VAST, which can perceive and process\nvision, audio, and subtitle modalities from video, and better support various\ntasks including vision-text, audio-text, and multi-modal video-text tasks\n(retrieval, captioning and QA). Extensive experiments have been conducted to\ndemonstrate the effectiveness of our proposed VAST-27M corpus and VAST\nfoundation model. VAST achieves 22 new state-of-the-art results on various\ncross-modality benchmarks. Code, model and dataset will be released at\nhttps://github.com/TXH-mercury/VAST.\n",
+        "published": "2023",
+        "authors": [
+            "Sihan Chen",
+            "Handong Li",
+            "Qunbo Wang",
+            "Zijia Zhao",
+            "Mingzhen Sun",
+            "Xinxin Zhu",
+            "Jing Liu"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2306.01016v1",
+        "title": "PV2TEA: Patching Visual Modality to Textual-Established Information\n  Extraction",
+        "abstract": "  Information extraction, e.g., attribute value extraction, has been\nextensively studied and formulated based only on text. However, many attributes\ncan benefit from image-based extraction, like color, shape, pattern, among\nothers. The visual modality has long been underutilized, mainly due to\nmultimodal annotation difficulty. In this paper, we aim to patch the visual\nmodality to the textual-established attribute information extractor. The\ncross-modality integration faces several unique challenges: (C1) images and\ntextual descriptions are loosely paired intra-sample and inter-samples; (C2)\nimages usually contain rich backgrounds that can mislead the prediction; (C3)\nweakly supervised labels from textual-established extractors are biased for\nmultimodal training. We present PV2TEA, an encoder-decoder architecture\nequipped with three bias reduction schemes: (S1) Augmented label-smoothed\ncontrast to improve the cross-modality alignment for loosely-paired image and\ntext; (S2) Attention-pruning that adaptively distinguishes the visual\nforeground; (S3) Two-level neighborhood regularization that mitigates the label\ntextual bias via reliability estimation. Empirical results on real-world\ne-Commerce datasets demonstrate up to 11.74% absolute (20.97% relatively) F1\nincrease over unimodal baselines.\n",
+        "published": "2023",
+        "authors": [
+            "Hejie Cui",
+            "Rongmei Lin",
+            "Nasser Zalmout",
+            "Chenwei Zhang",
+            "Jingbo Shang",
+            "Carl Yang",
+            "Xian Li"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2306.05268v2",
+        "title": "Factorized Contrastive Learning: Going Beyond Multi-view Redundancy",
+        "abstract": "  In a wide range of multimodal tasks, contrastive learning has become a\nparticularly appealing approach since it can successfully learn representations\nfrom abundant unlabeled data with only pairing information (e.g., image-caption\nor video-audio pairs). Underpinning these approaches is the assumption of\nmulti-view redundancy - that shared information between modalities is necessary\nand sufficient for downstream tasks. However, in many real-world settings,\ntask-relevant information is also contained in modality-unique regions:\ninformation that is only present in one modality but still relevant to the\ntask. How can we learn self-supervised multimodal representations to capture\nboth shared and unique information relevant to downstream tasks? This paper\nproposes FactorCL, a new multimodal representation learning method to go beyond\nmulti-view redundancy. FactorCL is built from three new contributions: (1)\nfactorizing task-relevant information into shared and unique representations,\n(2) capturing task-relevant information via maximizing MI lower bounds and\nremoving task-irrelevant information via minimizing MI upper bounds, and (3)\nmultimodal data augmentations to approximate task relevance without labels. On\nlarge-scale real-world datasets, FactorCL captures both shared and unique\ninformation and achieves state-of-the-art results on six benchmarks\n",
+        "published": "2023",
+        "authors": [
+            "Paul Pu Liang",
+            "Zihao Deng",
+            "Martin Ma",
+            "James Zou",
+            "Louis-Philippe Morency",
+            "Ruslan Salakhutdinov"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2306.09085v1",
+        "title": "COSA: Concatenated Sample Pretrained Vision-Language Foundation Model",
+        "abstract": "  Due to the limited scale and quality of video-text training corpus, most\nvision-language foundation models employ image-text datasets for pretraining\nand primarily focus on modeling visually semantic representations while\ndisregarding temporal semantic representations and correlations. To address\nthis issue, we propose COSA, a COncatenated SAmple pretrained vision-language\nfoundation model. COSA jointly models visual contents and event-level temporal\ncues using only image-text corpora. We achieve this by sequentially\nconcatenating multiple image-text pairs as inputs for pretraining. This\ntransformation effectively converts existing image-text corpora into a pseudo\nlong-form video-paragraph corpus, enabling richer scene transformations and\nexplicit event-description correspondence. Extensive experiments demonstrate\nthat COSA consistently improves performance across a broad range of downstream\ntasks, including long-form/short-form video-text tasks and image-text tasks\nsuch as retrieval, captioning, and question answering. Notably, COSA achieves\nstate-of-the-art results on various competitive benchmarks. Code and model are\nreleased at https://github.com/TXH-mercury/COSA.\n",
+        "published": "2023",
+        "authors": [
+            "Sihan Chen",
+            "Xingjian He",
+            "Handong Li",
+            "Xiaojie Jin",
+            "Jiashi Feng",
+            "Jing Liu"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2306.11593v1",
+        "title": "Improving Image Captioning Descriptiveness by Ranking and LLM-based\n  Fusion",
+        "abstract": "  State-of-The-Art (SoTA) image captioning models often rely on the Microsoft\nCOCO (MS-COCO) dataset for training. This dataset contains annotations provided\nby human annotators, who typically produce captions averaging around ten\ntokens. However, this constraint presents a challenge in effectively capturing\ncomplex scenes and conveying detailed information. Furthermore, captioning\nmodels tend to exhibit bias towards the ``average'' caption, which captures\nonly the more general aspects. What would happen if we were able to\nautomatically generate longer captions, thereby making them more detailed?\nWould these captions, evaluated by humans, be more or less representative of\nthe image content compared to the original MS-COCO captions? In this paper, we\npresent a novel approach to address previous challenges by showcasing how\ncaptions generated from different SoTA models can be effectively fused,\nresulting in richer captions. Our proposed method leverages existing models\nfrom the literature, eliminating the need for additional training. Instead, it\nutilizes an image-text based metric to rank the captions generated by SoTA\nmodels for a given image. Subsequently, the top two captions are fused using a\nLarge Language Model (LLM). Experimental results demonstrate the effectiveness\nof our approach, as the captions generated by our model exhibit higher\nconsistency with human judgment when evaluated on the MS-COCO test set. By\ncombining the strengths of various SoTA models, our method enhances the quality\nand appeal of image captions, bridging the gap between automated systems and\nthe rich, informative nature of human-generated descriptions. This advance\nopens up new possibilities for generating captions that are more suitable for\nthe training of both vision-language and captioning models.\n",
+        "published": "2023",
+        "authors": [
+            "Simone Bianco",
+            "Luigi Celona",
+            "Marco Donzella",
+            "Paolo Napoletano"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2306.16413v1",
+        "title": "MultiZoo & MultiBench: A Standardized Toolkit for Multimodal Deep\n  Learning",
+        "abstract": "  Learning multimodal representations involves integrating information from\nmultiple heterogeneous sources of data. In order to accelerate progress towards\nunderstudied modalities and tasks while ensuring real-world robustness, we\nrelease MultiZoo, a public toolkit consisting of standardized implementations\nof > 20 core multimodal algorithms and MultiBench, a large-scale benchmark\nspanning 15 datasets, 10 modalities, 20 prediction tasks, and 6 research areas.\nTogether, these provide an automated end-to-end machine learning pipeline that\nsimplifies and standardizes data loading, experimental setup, and model\nevaluation. To enable holistic evaluation, we offer a comprehensive methodology\nto assess (1) generalization, (2) time and space complexity, and (3) modality\nrobustness. MultiBench paves the way towards a better understanding of the\ncapabilities and limitations of multimodal models, while ensuring ease of use,\naccessibility, and reproducibility. Our toolkits are publicly available, will\nbe regularly updated, and welcome inputs from the community.\n",
+        "published": "2023",
+        "authors": [
+            "Paul Pu Liang",
+            "Yiwei Lyu",
+            "Xiang Fan",
+            "Arav Agarwal",
+            "Yun Cheng",
+            "Louis-Philippe Morency",
+            "Ruslan Salakhutdinov"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2307.04114v1",
+        "title": "FILM: How can Few-Shot Image Classification Benefit from Pre-Trained\n  Language Models?",
+        "abstract": "  Few-shot learning aims to train models that can be generalized to novel\nclasses with only a few samples. Recently, a line of works are proposed to\nenhance few-shot learning with accessible semantic information from class\nnames. However, these works focus on improving existing modules such as visual\nprototypes and feature extractors of the standard few-shot learning framework.\nThis limits the full potential use of semantic information. In this paper, we\npropose a novel few-shot learning framework that uses pre-trained language\nmodels based on contrastive learning. To address the challenge of alignment\nbetween visual features and textual embeddings obtained from text-based\npre-trained language model, we carefully design the textual branch of our\nframework and introduce a metric module to generalize the cosine similarity.\nFor better transferability, we let the metric module adapt to different\nfew-shot tasks and adopt MAML to train the model via bi-level optimization.\nMoreover, we conduct extensive experiments on multiple benchmarks to\ndemonstrate the effectiveness of our method.\n",
+        "published": "2023",
+        "authors": [
+            "Zihao Jiang",
+            "Yunkai Dang",
+            "Dong Pang",
+            "Huishuai Zhang",
+            "Weiran Huang"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2307.07513v1",
+        "title": "An empirical study of using radiology reports and images to improve ICU\n  mortality prediction",
+        "abstract": "  Background: The predictive Intensive Care Unit (ICU) scoring system plays an\nimportant role in ICU management because it predicts important outcomes,\nespecially mortality. Many scoring systems have been developed and used in the\nICU. These scoring systems are primarily based on the structured clinical data\nin the electronic health record (EHR), which may suffer the loss of important\nclinical information in the narratives and images. Methods: In this work, we\nbuild a deep learning based survival prediction model with multi-modality data\nto predict ICU mortality. Four sets of features are investigated: (1)\nphysiological measurements of Simplified Acute Physiology Score (SAPS) II, (2)\ncommon thorax diseases pre-defined by radiologists, (3) BERT-based text\nrepresentations, and (4) chest X-ray image features. We use the Medical\nInformation Mart for Intensive Care IV (MIMIC-IV) dataset to evaluate the\nproposed model. Results: Our model achieves the average C-index of 0.7829 (95%\nconfidence interval, 0.7620-0.8038), which substantially exceeds that of the\nbaseline with SAPS-II features (0.7470 (0.7263-0.7676)). Ablation studies\nfurther demonstrate the contributions of pre-defined labels (2.00%), text\nfeatures (2.44%), and image features (2.82%).\n",
+        "published": "2023",
+        "authors": [
+            "Mingquan Lin",
+            "Song Wang",
+            "Ying Ding",
+            "Lihui Zhao",
+            "Fei Wang",
+            "Yifan Peng"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2307.10802v1",
+        "title": "Meta-Transformer: A Unified Framework for Multimodal Learning",
+        "abstract": "  Multimodal learning aims to build models that can process and relate\ninformation from multiple modalities. Despite years of development in this\nfield, it still remains challenging to design a unified network for processing\nvarious modalities ($\\textit{e.g.}$ natural language, 2D images, 3D point\nclouds, audio, video, time series, tabular data) due to the inherent gaps among\nthem. In this work, we propose a framework, named Meta-Transformer, that\nleverages a $\\textbf{frozen}$ encoder to perform multimodal perception without\nany paired multimodal training data. In Meta-Transformer, the raw input data\nfrom various modalities are mapped into a shared token space, allowing a\nsubsequent encoder with frozen parameters to extract high-level semantic\nfeatures of the input data. Composed of three main components: a unified data\ntokenizer, a modality-shared encoder, and task-specific heads for downstream\ntasks, Meta-Transformer is the first framework to perform unified learning\nacross 12 modalities with unpaired data. Experiments on different benchmarks\nreveal that Meta-Transformer can handle a wide range of tasks including\nfundamental perception (text, image, point cloud, audio, video), practical\napplication (X-Ray, infrared, hyperspectral, and IMU), and data mining (graph,\ntabular, and time-series). Meta-Transformer indicates a promising future for\ndeveloping unified multimodal intelligence with transformers. Code will be\navailable at https://github.com/invictus717/MetaTransformer\n",
+        "published": "2023",
+        "authors": [
+            "Yiyuan Zhang",
+            "Kaixiong Gong",
+            "Kaipeng Zhang",
+            "Hongsheng Li",
+            "Yu Qiao",
+            "Wanli Ouyang",
+            "Xiangyu Yue"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2307.16680v5",
+        "title": "On the Trustworthiness Landscape of State-of-the-art Generative Models:\n  A Survey and Outlook",
+        "abstract": "  Diffusion models and large language models have emerged as leading-edge\ngenerative models, revolutionizing various aspects of human life. However, the\npractical implementations of these models have also exposed inherent risks,\nbringing to the forefront their evil sides and sparking concerns regarding\ntheir trustworthiness. Despite the wealth of literature on this subject, a\ncomprehensive survey specifically delving into the intersection of large-scale\ngenerative models and their trustworthiness remains largely absent. To bridge\nthis gap, this paper investigates both the long-standing and emerging threats\nassociated with these models across four fundamental dimensions: 1) privacy, 2)\nsecurity, 3) fairness, and 4) responsibility. Based on the investigation\nresults, we develop an extensive map outlining the trustworthiness of large\ngenerative models. After that, we provide practical recommendations and\npotential research directions for future secure applications equipped with\nlarge generative models, ultimately promoting the trustworthiness of the models\nand benefiting the society as a whole.\n",
+        "published": "2023",
+        "authors": [
+            "Mingyuan Fan",
+            "Chengyu Wang",
+            "Cen Chen",
+            "Yang Liu",
+            "Jun Huang"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2308.07269v1",
+        "title": "EasyEdit: An Easy-to-use Knowledge Editing Framework for Large Language\n  Models",
+        "abstract": "  Large Language Models (LLMs) usually suffer from knowledge cutoff or fallacy\nissues, which means they are unaware of unseen events or generate text with\nincorrect facts owing to the outdated/noisy data. To this end, many knowledge\nediting approaches for LLMs have emerged -- aiming to subtly inject/edit\nupdated knowledge or adjust undesired behavior while minimizing the impact on\nunrelated inputs. Nevertheless, due to significant differences among various\nknowledge editing methods and the variations in task setups, there is no\nstandard implementation framework available for the community, which hinders\npractitioners to apply knowledge editing to applications. To address these\nissues, we propose EasyEdit, an easy-to-use knowledge editing framework for\nLLMs. It supports various cutting-edge knowledge editing approaches and can be\nreadily apply to many well-known LLMs such as T5, GPT-J, LlaMA, etc.\nEmpirically, we report the knowledge editing results on LlaMA-2 with EasyEdit,\ndemonstrating that knowledge editing surpasses traditional fine-tuning in terms\nof reliability and generalization. We have released the source code on GitHub\nat https://github.com/zjunlp/EasyEdit, along with Google Colab tutorials and\ncomprehensive documentation for beginners to get started. Besides, we present\nan online system for real-time knowledge editing, and a demo video at\nhttp://knowlm.zjukg.cn/easyedit.mp4.\n",
+        "published": "2023",
+        "authors": [
+            "Peng Wang",
+            "Ningyu Zhang",
+            "Xin Xie",
+            "Yunzhi Yao",
+            "Bozhong Tian",
+            "Mengru Wang",
+            "Zekun Xi",
+            "Siyuan Cheng",
+            "Kangwei Liu",
+            "Guozhou Zheng",
+            "Huajun Chen"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2309.00615v1",
+        "title": "Point-Bind & Point-LLM: Aligning Point Cloud with Multi-modality for 3D\n  Understanding, Generation, and Instruction Following",
+        "abstract": "  We introduce Point-Bind, a 3D multi-modality model aligning point clouds with\n2D image, language, audio, and video. Guided by ImageBind, we construct a joint\nembedding space between 3D and multi-modalities, enabling many promising\napplications, e.g., any-to-3D generation, 3D embedding arithmetic, and 3D\nopen-world understanding. On top of this, we further present Point-LLM, the\nfirst 3D large language model (LLM) following 3D multi-modal instructions. By\nparameter-efficient fine-tuning techniques, Point-LLM injects the semantics of\nPoint-Bind into pre-trained LLMs, e.g., LLaMA, which requires no 3D instruction\ndata, but exhibits superior 3D and multi-modal question-answering capacity. We\nhope our work may cast a light on the community for extending 3D point clouds\nto multi-modality applications. Code is available at\nhttps://github.com/ZiyuGuo99/Point-Bind_Point-LLM.\n",
+        "published": "2023",
+        "authors": [
+            "Ziyu Guo",
+            "Renrui Zhang",
+            "Xiangyang Zhu",
+            "Yiwen Tang",
+            "Xianzheng Ma",
+            "Jiaming Han",
+            "Kexin Chen",
+            "Peng Gao",
+            "Xianzhi Li",
+            "Hongsheng Li",
+            "Pheng-Ann Heng"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2309.07120v1",
+        "title": "Sight Beyond Text: Multi-Modal Training Enhances LLMs in Truthfulness\n  and Ethics",
+        "abstract": "  Multi-modal large language models (MLLMs) are trained based on large language\nmodels (LLM), with an enhanced capability to comprehend multi-modal inputs and\ngenerate textual responses. While they excel in multi-modal tasks, the pure NLP\nabilities of MLLMs are often underestimated and left untested. In this study,\nwe get out of the box and unveil an intriguing characteristic of MLLMs -- our\npreliminary results suggest that visual instruction tuning, a prevailing\nstrategy for transitioning LLMs into MLLMs, unexpectedly and interestingly\nhelps models attain both improved truthfulness and ethical alignment in the\npure NLP context. For example, a visual-instruction-tuned LLaMA2 7B model\nsurpasses the performance of the LLaMA2-chat 7B model, fine-tuned with over one\nmillion human annotations, on TruthfulQA-mc and Ethics benchmarks. Further\nanalysis reveals that the improved alignment can be attributed to the superior\ninstruction quality inherent to visual-text data. In releasing our code at\ngithub.com/UCSC-VLAA/Sight-Beyond-Text, we aspire to foster further exploration\ninto the intrinsic value of visual-text synergies and, in a broader scope,\nmulti-modal interactions in alignment research.\n",
+        "published": "2023",
+        "authors": [
+            "Haoqin Tu",
+            "Bingchen Zhao",
+            "Chen Wei",
+            "Cihang Xie"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2309.12460v2",
+        "title": "Multimodal Deep Learning for Scientific Imaging Interpretation",
+        "abstract": "  In the domain of scientific imaging, interpreting visual data often demands\nan intricate combination of human expertise and deep comprehension of the\nsubject materials. This study presents a novel methodology to linguistically\nemulate and subsequently evaluate human-like interactions with Scanning\nElectron Microscopy (SEM) images, specifically of glass materials. Leveraging a\nmultimodal deep learning framework, our approach distills insights from both\ntextual and visual data harvested from peer-reviewed articles, further\naugmented by the capabilities of GPT-4 for refined data synthesis and\nevaluation. Despite inherent challenges--such as nuanced interpretations and\nthe limited availability of specialized datasets--our model (GlassLLaVA) excels\nin crafting accurate interpretations, identifying key features, and detecting\ndefects in previously unseen SEM images. Moreover, we introduce versatile\nevaluation metrics, suitable for an array of scientific imaging applications,\nwhich allows for benchmarking against research-grounded answers. Benefiting\nfrom the robustness of contemporary Large Language Models, our model adeptly\naligns with insights from research papers. This advancement not only\nunderscores considerable progress in bridging the gap between human and machine\ninterpretation in scientific imaging, but also hints at expansive avenues for\nfuture research and broader application.\n",
+        "published": "2023",
+        "authors": [
+            "Abdulelah S. Alshehri",
+            "Franklin L. Lee",
+            "Shihu Wang"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2309.13885v1",
+        "title": "TouchUp-G: Improving Feature Representation through Graph-Centric\n  Finetuning",
+        "abstract": "  How can we enhance the node features acquired from Pretrained Models (PMs) to\nbetter suit downstream graph learning tasks? Graph Neural Networks (GNNs) have\nbecome the state-of-the-art approach for many high-impact, real-world graph\napplications. For feature-rich graphs, a prevalent practice involves utilizing\na PM directly to generate features, without incorporating any domain adaptation\ntechniques. Nevertheless, this practice is suboptimal because the node features\nextracted from PM are graph-agnostic and prevent GNNs from fully utilizing the\npotential correlations between the graph structure and node features, leading\nto a decline in GNNs performance. In this work, we seek to improve the node\nfeatures obtained from a PM for downstream graph tasks and introduce TOUCHUP-G,\nwhich has several advantages. It is (a) General: applicable to any downstream\ngraph task, including link prediction which is often employed in recommender\nsystems; (b) Multi-modal: able to improve raw features of any modality (e.g.\nimages, texts, audio); (c) Principled: it is closely related to a novel metric,\nfeature homophily, which we propose to quantify the potential correlations\nbetween the graph structure and node features and we show that TOUCHUP-G can\neffectively shrink the discrepancy between the graph structure and node\nfeatures; (d) Effective: achieving state-of-the-art results on four real-world\ndatasets spanning different tasks and modalities.\n",
+        "published": "2023",
+        "authors": [
+            "Jing Zhu",
+            "Xiang Song",
+            "Vassilis N. Ioannidis",
+            "Danai Koutra",
+            "Christos Faloutsos"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2309.14726v1",
+        "title": "PLMM: Personal Large Models on Mobile Devices",
+        "abstract": "  Inspired by Federated Learning, in this paper, we propose personal large\nmodels that are distilled from traditional large language models but more\nadaptive to local users' personal information such as education background and\nhobbies. We classify the large language models into three levels: the personal\nlevel, expert level and traditional level. The personal level models are\nadaptive to users' personal information. They encrypt the users' input and\nprotect their privacy. The expert level models focus on merging specific\nknowledge such as finance, IT and art. The traditional models focus on the\nuniversal knowledge discovery and upgrading the expert models. In such\nclassifications, the personal models directly interact with the user. For the\nwhole system, the personal models have users' (encrypted) personal information.\nMoreover, such models must be small enough to be performed on personal\ncomputers or mobile devices. Finally, they also have to response in real-time\nfor better user experience and produce high quality results. The proposed\npersonal large models can be applied in a wide range of applications such as\nlanguage and vision tasks.\n",
+        "published": "2023",
+        "authors": [
+            "Yuanhao Gong"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2310.01405v3",
+        "title": "Representation Engineering: A Top-Down Approach to AI Transparency",
+        "abstract": "  In this paper, we identify and characterize the emerging area of\nrepresentation engineering (RepE), an approach to enhancing the transparency of\nAI systems that draws on insights from cognitive neuroscience. RepE places\npopulation-level representations, rather than neurons or circuits, at the\ncenter of analysis, equipping us with novel methods for monitoring and\nmanipulating high-level cognitive phenomena in deep neural networks (DNNs). We\nprovide baselines and an initial analysis of RepE techniques, showing that they\noffer simple yet effective solutions for improving our understanding and\ncontrol of large language models. We showcase how these methods can provide\ntraction on a wide range of safety-relevant problems, including honesty,\nharmlessness, power-seeking, and more, demonstrating the promise of top-down\ntransparency research. We hope that this work catalyzes further exploration of\nRepE and fosters advancements in the transparency and safety of AI systems.\n",
+        "published": "2023",
+        "authors": [
+            "Andy Zou",
+            "Long Phan",
+            "Sarah Chen",
+            "James Campbell",
+            "Phillip Guo",
+            "Richard Ren",
+            "Alexander Pan",
+            "Xuwang Yin",
+            "Mantas Mazeika",
+            "Ann-Kathrin Dombrowski",
+            "Shashwat Goel",
+            "Nathaniel Li",
+            "Michael J. Byun",
+            "Zifan Wang",
+            "Alex Mallen",
+            "Steven Basart",
+            "Sanmi Koyejo",
+            "Dawn Song",
+            "Matt Fredrikson",
+            "J. Zico Kolter",
+            "Dan Hendrycks"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2310.02129v2",
+        "title": "Unveiling the Pitfalls of Knowledge Editing for Large Language Models",
+        "abstract": "  As the cost associated with fine-tuning Large Language Models (LLMs)\ncontinues to rise, recent research efforts have pivoted towards developing\nmethodologies to edit implicit knowledge embedded within LLMs. Yet, there's\nstill a dark cloud lingering overhead -- will knowledge editing trigger\nbutterfly effect? since it is still unclear whether knowledge editing might\nintroduce side effects that pose potential risks or not. This paper pioneers\nthe investigation into the potential pitfalls associated with knowledge editing\nfor LLMs. To achieve this, we introduce new benchmark datasets and propose\ninnovative evaluation metrics. Our results underline two pivotal concerns: (1)\nKnowledge Conflict: Editing groups of facts that logically clash can magnify\nthe inherent inconsistencies in LLMs-a facet neglected by previous methods. (2)\nKnowledge Distortion: Altering parameters with the aim of editing factual\nknowledge can irrevocably warp the innate knowledge structure of LLMs.\nExperimental results vividly demonstrate that knowledge editing might\ninadvertently cast a shadow of unintended consequences on LLMs, which warrant\nattention and efforts for future works. Code is available at\nhttps://github.com/zjunlp/PitfallsKnowledgeEditing.\n",
+        "published": "2023",
+        "authors": [
+            "Zhoubo Li",
+            "Ningyu Zhang",
+            "Yunzhi Yao",
+            "Mengru Wang",
+            "Xi Chen",
+            "Huajun Chen"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2310.08475v4",
+        "title": "Can We Edit Multimodal Large Language Models?",
+        "abstract": "  In this paper, we focus on editing Multimodal Large Language Models (MLLMs).\nCompared to editing single-modal LLMs, multimodal model editing is more\nchallenging, which demands a higher level of scrutiny and careful consideration\nin the editing process. To facilitate research in this area, we construct a new\nbenchmark, dubbed MMEdit, for editing multimodal LLMs and establishing a suite\nof innovative metrics for evaluation. We conduct comprehensive experiments\ninvolving various model editing baselines and analyze the impact of editing\ndifferent components for multimodal LLMs. Empirically, we notice that previous\nbaselines can implement editing multimodal LLMs to some extent, but the effect\nis still barely satisfactory, indicating the potential difficulty of this task.\nWe hope that our work can provide the NLP community with insights. Code and\ndataset are available in https://github.com/zjunlp/EasyEdit.\n",
+        "published": "2023",
+        "authors": [
+            "Siyuan Cheng",
+            "Bozhong Tian",
+            "Qingbin Liu",
+            "Xi Chen",
+            "Yongheng Wang",
+            "Huajun Chen",
+            "Ningyu Zhang"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2310.12086v2",
+        "title": "FactCHD: Benchmarking Fact-Conflicting Hallucination Detection",
+        "abstract": "  Despite their impressive generative capabilities, LLMs are hindered by\nfact-conflicting hallucinations in real-world applications. The accurate\nidentification of hallucinations in texts generated by LLMs, especially in\ncomplex inferential scenarios, is a relatively unexplored area. To address this\ngap, we present FactCHD, a dedicated benchmark designed for the detection of\nfact-conflicting hallucinations from LLMs. FactCHD features a diverse dataset\nthat spans various factuality patterns, including vanilla, multi-hop,\ncomparison, and set operation. A distinctive element of FactCHD is its\nintegration of fact-based evidence chains, significantly enhancing the depth of\nevaluating the detectors' explanations. Experiments on different LLMs expose\nthe shortcomings of current approaches in detecting factual errors accurately.\nFurthermore, we introduce Truth-Triangulator that synthesizes reflective\nconsiderations by tool-enhanced ChatGPT and LoRA-tuning based on Llama2, aiming\nto yield more credible detection through the amalgamation of predictive results\nand evidence. The benchmark dataset is available at\nhttps://github.com/zjunlp/FactCHD.\n",
+        "published": "2023",
+        "authors": [
+            "Xiang Chen",
+            "Duanzheng Song",
+            "Honghao Gui",
+            "Chenxi Wang",
+            "Ningyu Zhang",
+            "Jiang Yong",
+            "Fei Huang",
+            "Chengfei Lv",
+            "Dan Zhang",
+            "Huajun Chen"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2310.12100v1",
+        "title": "Non-Intrusive Adaptation: Input-Centric Parameter-efficient Fine-Tuning\n  for Versatile Multimodal Modeling",
+        "abstract": "  Large language models (LLMs) and vision language models (VLMs) demonstrate\nexcellent performance on a wide range of tasks by scaling up parameter counts\nfrom O(10^9) to O(10^{12}) levels and further beyond. These large scales make\nit impossible to adapt and deploy fully specialized models given a task of\ninterest. Parameter-efficient fine-tuning (PEFT) emerges as a promising\ndirection to tackle the adaptation and serving challenges for such large\nmodels. We categorize PEFT techniques into two types: intrusive and\nnon-intrusive. Intrusive PEFT techniques directly change a model's internal\narchitecture. Though more flexible, they introduce significant complexities for\ntraining and serving. Non-intrusive PEFT techniques leave the internal\narchitecture unchanged and only adapt model-external parameters, such as\nembeddings for input. In this work, we describe AdaLink as a non-intrusive PEFT\ntechnique that achieves competitive performance compared to SoTA intrusive PEFT\n(LoRA) and full model fine-tuning (FT) on various tasks. We evaluate using both\ntext-only and multimodal tasks, with experiments that account for both\nparameter-count scaling and training regime (with and without instruction\ntuning).\n",
+        "published": "2023",
+        "authors": [
+            "Yaqing Wang",
+            "Jialin Wu",
+            "Tanmaya Dabral",
+            "Jiageng Zhang",
+            "Geoff Brown",
+            "Chun-Ta Lu",
+            "Frederick Liu",
+            "Yi Liang",
+            "Bo Pang",
+            "Michael Bendersky",
+            "Radu Soricut"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2310.12274v1",
+        "title": "An Image is Worth Multiple Words: Learning Object Level Concepts using\n  Multi-Concept Prompt Learning",
+        "abstract": "  Textural Inversion, a prompt learning method, learns a singular embedding for\na new \"word\" to represent image style and appearance, allowing it to be\nintegrated into natural language sentences to generate novel synthesised\nimages. However, identifying and integrating multiple object-level concepts\nwithin one scene poses significant challenges even when embeddings for\nindividual concepts are attainable. This is further confirmed by our empirical\ntests. To address this challenge, we introduce a framework for Multi-Concept\nPrompt Learning (MCPL), where multiple new \"words\" are simultaneously learned\nfrom a single sentence-image pair. To enhance the accuracy of word-concept\ncorrelation, we propose three regularisation techniques: Attention Masking\n(AttnMask) to concentrate learning on relevant areas; Prompts Contrastive Loss\n(PromptCL) to separate the embeddings of different concepts; and Bind adjective\n(Bind adj.) to associate new \"words\" with known words. We evaluate via image\ngeneration, editing, and attention visualisation with diverse images. Extensive\nquantitative comparisons demonstrate that our method can learn more\nsemantically disentangled concepts with enhanced word-concept correlation.\nAdditionally, we introduce a novel dataset and evaluation protocol tailored for\nthis new task of learning object-level concepts.\n",
+        "published": "2023",
+        "authors": [
+            "Chen Jin",
+            "Ryutaro Tanno",
+            "Amrutha Saseendran",
+            "Tom Diethe",
+            "Philip Teare"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2310.14670v2",
+        "title": "Dataset Bias Mitigation in Multiple-Choice Visual Question Answering and\n  Beyond",
+        "abstract": "  Vision-language (VL) understanding tasks evaluate models' comprehension of\ncomplex visual scenes through multiple-choice questions. However, we have\nidentified two dataset biases that models can exploit as shortcuts to resolve\nvarious VL tasks correctly without proper understanding. The first type of\ndataset bias is \\emph{Unbalanced Matching} bias, where the correct answer\noverlaps the question and image more than the incorrect answers. The second\ntype of dataset bias is \\emph{Distractor Similarity} bias, where incorrect\nanswers are overly dissimilar to the correct answer but significantly similar\nto other incorrect answers within the same sample. To address these dataset\nbiases, we first propose Adversarial Data Synthesis (ADS) to generate synthetic\ntraining and debiased evaluation data. We then introduce Intra-sample\nCounterfactual Training (ICT) to assist models in utilizing the synthesized\ntraining data, particularly the counterfactual data, via focusing on\nintra-sample differentiation. Extensive experiments demonstrate the\neffectiveness of ADS and ICT in consistently improving model performance across\ndifferent benchmarks, even in domain-shifted scenarios.\n",
+        "published": "2023",
+        "authors": [
+            "Zhecan Wang",
+            "Long Chen",
+            "Haoxuan You",
+            "Keyang Xu",
+            "Yicheng He",
+            "Wenhao Li",
+            "Noel Codella",
+            "Kai-Wei Chang",
+            "Shih-Fu Chang"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2311.05437v1",
+        "title": "LLaVA-Plus: Learning to Use Tools for Creating Multimodal Agents",
+        "abstract": "  LLaVA-Plus is a general-purpose multimodal assistant that expands the\ncapabilities of large multimodal models. It maintains a skill repository of\npre-trained vision and vision-language models and can activate relevant tools\nbased on users' inputs to fulfill real-world tasks. LLaVA-Plus is trained on\nmultimodal instruction-following data to acquire the ability to use tools,\ncovering visual understanding, generation, external knowledge retrieval, and\ncompositions. Empirical results show that LLaVA-Plus outperforms LLaVA in\nexisting capabilities and exhibits new ones. It is distinct in that the image\nquery is directly grounded and actively engaged throughout the entire human-AI\ninteraction sessions, significantly improving tool use performance and enabling\nnew scenarios.\n",
+        "published": "2023",
+        "authors": [
+            "Shilong Liu",
+            "Hao Cheng",
+            "Haotian Liu",
+            "Hao Zhang",
+            "Feng Li",
+            "Tianhe Ren",
+            "Xueyan Zou",
+            "Jianwei Yang",
+            "Hang Su",
+            "Jun Zhu",
+            "Lei Zhang",
+            "Jianfeng Gao",
+            "Chunyuan Li"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2311.06217v1",
+        "title": "MultiIoT: Towards Large-scale Multisensory Learning for the Internet of\n  Things",
+        "abstract": "  The Internet of Things (IoT), the network integrating billions of smart\nphysical devices embedded with sensors, software, and communication\ntechnologies for the purpose of connecting and exchanging data with other\ndevices and systems, is a critical and rapidly expanding component of our\nmodern world. The IoT ecosystem provides a rich source of real-world modalities\nsuch as motion, thermal, geolocation, imaging, depth, sensors, video, and audio\nfor prediction tasks involving the pose, gaze, activities, and gestures of\nhumans as well as the touch, contact, pose, 3D of physical objects. Machine\nlearning presents a rich opportunity to automatically process IoT data at\nscale, enabling efficient inference for impact in understanding human\nwellbeing, controlling physical devices, and interconnecting smart cities. To\ndevelop machine learning technologies for IoT, this paper proposes MultiIoT,\nthe most expansive IoT benchmark to date, encompassing over 1.15 million\nsamples from 12 modalities and 8 tasks. MultiIoT introduces unique challenges\ninvolving (1) learning from many sensory modalities, (2) fine-grained\ninteractions across long temporal ranges, and (3) extreme heterogeneity due to\nunique structure and noise topologies in real-world sensors. We also release a\nset of strong modeling baselines, spanning modality and task-specific methods\nto multisensory and multitask models to encourage future research in\nmultisensory representation learning for IoT.\n",
+        "published": "2023",
+        "authors": [
+            "Shentong Mo",
+            "Paul Pu Liang",
+            "Russ Salakhutdinov",
+            "Louis-Philippe Morency"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2311.06329v1",
+        "title": "A Survey of AI Text-to-Image and AI Text-to-Video Generators",
+        "abstract": "  Text-to-Image and Text-to-Video AI generation models are revolutionary\ntechnologies that use deep learning and natural language processing (NLP)\ntechniques to create images and videos from textual descriptions. This paper\ninvestigates cutting-edge approaches in the discipline of Text-to-Image and\nText-to-Video AI generations. The survey provides an overview of the existing\nliterature as well as an analysis of the approaches used in various studies. It\ncovers data preprocessing techniques, neural network types, and evaluation\nmetrics used in the field. In addition, the paper discusses the challenges and\nlimitations of Text-to-Image and Text-to-Video AI generations, as well as\nfuture research directions. Overall, these models have promising potential for\na wide range of applications such as video production, content creation, and\ndigital marketing.\n",
+        "published": "2023",
+        "authors": [
+            "Aditi Singh"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2311.16941v1",
+        "title": "Debiasing Multimodal Models via Causal Information Minimization",
+        "abstract": "  Most existing debiasing methods for multimodal models, including causal\nintervention and inference methods, utilize approximate heuristics to represent\nthe biases, such as shallow features from early stages of training or unimodal\nfeatures for multimodal tasks like VQA, etc., which may not be accurate. In\nthis paper, we study bias arising from confounders in a causal graph for\nmultimodal data and examine a novel approach that leverages causally-motivated\ninformation minimization to learn the confounder representations. Robust\npredictive features contain diverse information that helps a model generalize\nto out-of-distribution data. Hence, minimizing the information content of\nfeatures obtained from a pretrained biased model helps learn the simplest\npredictive features that capture the underlying data distribution. We treat\nthese features as confounder representations and use them via methods motivated\nby causal theory to remove bias from models. We find that the learned\nconfounder representations indeed capture dataset biases, and the proposed\ndebiasing methods improve out-of-distribution (OOD) performance on multiple\nmultimodal datasets without sacrificing in-distribution performance.\nAdditionally, we introduce a novel metric to quantify the sufficiency of\nspurious features in models' predictions that further demonstrates the\neffectiveness of our proposed methods. Our code is available at:\nhttps://github.com/Vaidehi99/CausalInfoMin\n",
+        "published": "2023",
+        "authors": [
+            "Vaidehi Patil",
+            "Adyasha Maharana",
+            "Mohit Bansal"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2312.03700v1",
+        "title": "OneLLM: One Framework to Align All Modalities with Language",
+        "abstract": "  Multimodal large language models (MLLMs) have gained significant attention\ndue to their strong multimodal understanding capability. However, existing\nworks rely heavily on modality-specific encoders, which usually differ in\narchitecture and are limited to common modalities. In this paper, we present\nOneLLM, an MLLM that aligns eight modalities to language using a unified\nframework. We achieve this through a unified multimodal encoder and a\nprogressive multimodal alignment pipeline. In detail, we first train an image\nprojection module to connect a vision encoder with LLM. Then, we build a\nuniversal projection module (UPM) by mixing multiple image projection modules\nand dynamic routing. Finally, we progressively align more modalities to LLM\nwith the UPM. To fully leverage the potential of OneLLM in following\ninstructions, we also curated a comprehensive multimodal instruction dataset,\nincluding 2M items from image, audio, video, point cloud, depth/normal map, IMU\nand fMRI brain activity. OneLLM is evaluated on 25 diverse benchmarks,\nencompassing tasks such as multimodal captioning, question answering and\nreasoning, where it delivers excellent performance. Code, data, model and\nonline demo are available at https://github.com/csuhan/OneLLM\n",
+        "published": "2023",
+        "authors": [
+            "Jiaming Han",
+            "Kaixiong Gong",
+            "Yiyuan Zhang",
+            "Jiaqi Wang",
+            "Kaipeng Zhang",
+            "Dahua Lin",
+            "Yu Qiao",
+            "Peng Gao",
+            "Xiangyu Yue"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2401.01286v3",
+        "title": "A Comprehensive Study of Knowledge Editing for Large Language Models",
+        "abstract": "  Large Language Models (LLMs) have shown extraordinary capabilities in\nunderstanding and generating text that closely mirrors human communication.\nHowever, a primary limitation lies in the significant computational demands\nduring training, arising from their extensive parameterization. This challenge\nis further intensified by the dynamic nature of the world, necessitating\nfrequent updates to LLMs to correct outdated information or integrate new\nknowledge, thereby ensuring their continued relevance. Note that many\napplications demand continual model adjustments post-training to address\ndeficiencies or undesirable behaviors. There is an increasing interest in\nefficient, lightweight methods for on-the-fly model modifications. To this end,\nrecent years have seen a burgeoning in the techniques of knowledge editing for\nLLMs, which aim to efficiently modify LLMs' behaviors within specific domains\nwhile preserving overall performance across various inputs. In this paper, we\nfirst define the knowledge editing problem and then provide a comprehensive\nreview of cutting-edge approaches. Drawing inspiration from educational and\ncognitive research theories, we propose a unified categorization criterion that\nclassifies knowledge editing methods into three groups: resorting to external\nknowledge, merging knowledge into the model, and editing intrinsic knowledge.\nFurthermore, we introduce a new benchmark, KnowEdit, for a comprehensive\nempirical evaluation of representative knowledge editing approaches.\nAdditionally, we provide an in-depth analysis of knowledge location, which can\ngive a deeper understanding of the knowledge structures inherent within LLMs.\nFinally, we discuss several potential applications of knowledge editing,\noutlining its broad and impactful implications.\n",
+        "published": "2024",
+        "authors": [
+            "Ningyu Zhang",
+            "Yunzhi Yao",
+            "Bozhong Tian",
+            "Peng Wang",
+            "Shumin Deng",
+            "Mengru Wang",
+            "Zekun Xi",
+            "Shengyu Mao",
+            "Jintian Zhang",
+            "Yuansheng Ni",
+            "Siyuan Cheng",
+            "Ziwen Xu",
+            "Xin Xu",
+            "Jia-Chen Gu",
+            "Yong Jiang",
+            "Pengjun Xie",
+            "Fei Huang",
+            "Lei Liang",
+            "Zhiqiang Zhang",
+            "Xiaowei Zhu",
+            "Jun Zhou",
+            "Huajun Chen"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1806.06920v1",
+        "title": "Maximum a Posteriori Policy Optimisation",
+        "abstract": "  We introduce a new algorithm for reinforcement learning called Maximum\naposteriori Policy Optimisation (MPO) based on coordinate ascent on a relative\nentropy objective. We show that several existing methods can directly be\nrelated to our derivation. We develop two off-policy algorithms and demonstrate\nthat they are competitive with the state-of-the-art in deep reinforcement\nlearning. In particular, for continuous control, our method outperforms\nexisting methods with respect to sample efficiency, premature convergence and\nrobustness to hyperparameter settings while achieving similar or better final\nperformance.\n",
+        "published": "2018",
+        "authors": [
+            "Abbas Abdolmaleki",
+            "Jost Tobias Springenberg",
+            "Yuval Tassa",
+            "Remi Munos",
+            "Nicolas Heess",
+            "Martin Riedmiller"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1908.00177v1",
+        "title": "Learning When to Drive in Intersections by Combining Reinforcement\n  Learning and Model Predictive Control",
+        "abstract": "  In this paper, we propose a decision making algorithm intended for automated\nvehicles that negotiate with other possibly non-automated vehicles in\nintersections. The decision algorithm is separated into two parts: a high-level\ndecision module based on reinforcement learning, and a low-level planning\nmodule based on model predictive control. Traffic is simulated with numerous\npredefined driver behaviors and intentions, and the performance of the proposed\ndecision algorithm was evaluated against another controller. The results show\nthat the proposed decision algorithm yields shorter training episodes and an\nincreased performance in success rate compared to the other controller.\n",
+        "published": "2019",
+        "authors": [
+            "Tommy Tram",
+            "Ivo Batkovic",
+            "Mohammad Ali",
+            "Jonas Sj\u00f6berg"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1908.01046v2",
+        "title": "Adaptive Stress Testing with Reward Augmentation for Autonomous Vehicle\n  Validation",
+        "abstract": "  Determining possible failure scenarios is a critical step in the evaluation\nof autonomous vehicle systems. Real-world vehicle testing is commonly employed\nfor autonomous vehicle validation, but the costs and time requirements are\nhigh. Consequently, simulation-driven methods such as Adaptive Stress Testing\n(AST) have been proposed to aid in validation. AST formulates the problem of\nfinding the most likely failure scenarios as a Markov decision process, which\ncan be solved using reinforcement learning. In practice, AST tends to find\nscenarios where failure is unavoidable and tends to repeatedly discover the\nsame types of failures of a system. This work addresses these issues by\nencoding domain relevant information into the search procedure. With this\nmodification, the AST method discovers a larger and more expressive subset of\nthe failure space when compared to the original AST formulation. We show that\nour approach is able to identify useful failure scenarios of an autonomous\nvehicle policy.\n",
+        "published": "2019",
+        "authors": [
+            "Anthony Corso",
+            "Peter Du",
+            "Katherine Driggs-Campbell",
+            "Mykel J. Kochenderfer"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2003.02655v2",
+        "title": "PPMC RL Training Algorithm: Rough Terrain Intelligent Robots through\n  Reinforcement Learning",
+        "abstract": "  Robots can now learn how to make decisions and control themselves,\ngeneralizing learned behaviors to unseen scenarios. In particular, AI powered\nrobots show promise in rough environments like the lunar surface, due to the\nenvironmental uncertainties. We address this critical generalization aspect for\nrobot locomotion in rough terrain through a training algorithm we have created\ncalled the Path Planning and Motion Control (PPMC) Training Algorithm. This\nalgorithm is coupled with any generic reinforcement learning algorithm to teach\nrobots how to respond to user commands and to travel to designated locations on\na single neural network. In this paper, we show that the algorithm works\nindependent of the robot structure, demonstrating that it works on a wheeled\nrover in addition the past results on a quadruped walking robot. Further, we\ntake several big steps towards real world practicality by introducing a rough\nhighly uneven terrain. Critically, we show through experiments that the robot\nlearns to generalize to new rough terrain maps, retaining a 100% success rate.\nTo the best of our knowledge, this is the first paper to introduce a generic\ntraining algorithm teaching generalized PPMC in rough environments to any\nrobot, with just the use of reinforcement learning.\n",
+        "published": "2020",
+        "authors": [
+            "Tamir Blum",
+            "Kazuya Yoshida"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2007.00178v1",
+        "title": "Reinforcement Learning based Control of Imitative Policies for\n  Near-Accident Driving",
+        "abstract": "  Autonomous driving has achieved significant progress in recent years, but\nautonomous cars are still unable to tackle high-risk situations where a\npotential accident is likely. In such near-accident scenarios, even a minor\nchange in the vehicle's actions may result in drastically different\nconsequences. To avoid unsafe actions in near-accident scenarios, we need to\nfully explore the environment. However, reinforcement learning (RL) and\nimitation learning (IL), two widely-used policy learning methods, cannot model\nrapid phase transitions and are not scalable to fully cover all the states. To\naddress driving in near-accident scenarios, we propose a hierarchical\nreinforcement and imitation learning (H-ReIL) approach that consists of\nlow-level policies learned by IL for discrete driving modes, and a high-level\npolicy learned by RL that switches between different driving modes. Our\napproach exploits the advantages of both IL and RL by integrating them into a\nunified learning framework. Experimental results and user studies suggest our\napproach can achieve higher efficiency and safety compared to other methods.\nAnalyses of the policies demonstrate our high-level policy appropriately\nswitches between different low-level policies in near-accident driving\nsituations.\n",
+        "published": "2020",
+        "authors": [
+            "Zhangjie Cao",
+            "Erdem B\u0131y\u0131k",
+            "Woodrow Z. Wang",
+            "Allan Raventos",
+            "Adrien Gaidon",
+            "Guy Rosman",
+            "Dorsa Sadigh"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2007.12401v2",
+        "title": "Predictive Information Accelerates Learning in RL",
+        "abstract": "  The Predictive Information is the mutual information between the past and the\nfuture, I(X_past; X_future). We hypothesize that capturing the predictive\ninformation is useful in RL, since the ability to model what will happen next\nis necessary for success on many tasks. To test our hypothesis, we train Soft\nActor-Critic (SAC) agents from pixels with an auxiliary task that learns a\ncompressed representation of the predictive information of the RL environment\ndynamics using a contrastive version of the Conditional Entropy Bottleneck\n(CEB) objective. We refer to these as Predictive Information SAC (PI-SAC)\nagents. We show that PI-SAC agents can substantially improve sample efficiency\nover challenging baselines on tasks from the DM Control suite of continuous\ncontrol environments. We evaluate PI-SAC agents by comparing against\nuncompressed PI-SAC agents, other compressed and uncompressed agents, and SAC\nagents directly trained from pixels. Our implementation is given on GitHub.\n",
+        "published": "2020",
+        "authors": [
+            "Kuang-Huei Lee",
+            "Ian Fischer",
+            "Anthony Liu",
+            "Yijie Guo",
+            "Honglak Lee",
+            "John Canny",
+            "Sergio Guadarrama"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2008.05556v3",
+        "title": "Model-Based Offline Planning",
+        "abstract": "  Offline learning is a key part of making reinforcement learning (RL) useable\nin real systems. Offline RL looks at scenarios where there is data from a\nsystem's operation, but no direct access to the system when learning a policy.\nRecent work on training RL policies from offline data has shown results both\nwith model-free policies learned directly from the data, or with planning on\ntop of learnt models of the data. Model-free policies tend to be more\nperformant, but are more opaque, harder to command externally, and less easy to\nintegrate into larger systems. We propose an offline learner that generates a\nmodel that can be used to control the system directly through planning. This\nallows us to have easily controllable policies directly from data, without ever\ninteracting with the system. We show the performance of our algorithm,\nModel-Based Offline Planning (MBOP) on a series of robotics-inspired tasks, and\ndemonstrate its ability leverage planning to respect environmental constraints.\nWe are able to find near-optimal polices for certain simulated systems from as\nlittle as 50 seconds of real-time system interaction, and create zero-shot\ngoal-conditioned policies on a series of environments. An accompanying video\ncan be found here: https://youtu.be/nxGGHdZOFts\n",
+        "published": "2020",
+        "authors": [
+            "Arthur Argenson",
+            "Gabriel Dulac-Arnold"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1906.05015v12",
+        "title": "Deep Reinforcement Learning for Unmanned Aerial Vehicle-Assisted\n  Vehicular Networks",
+        "abstract": "  Unmanned aerial vehicles (UAVs) are envisioned to complement the 5G\ncommunication infrastructure in future smart cities. Hot spots easily appear in\nroad intersections, where effective communication among vehicles is\nchallenging. UAVs may serve as relays with the advantages of low price, easy\ndeployment, line-of-sight links, and flexible mobility. In this paper, we study\na UAV-assisted vehicular network where the UAV jointly adjusts its transmission\ncontrol (power and channel) and 3D flight to maximize the total throughput.\nFirst, we formulate a Markov decision process (MDP) problem by modeling the\nmobility of the UAV/vehicles and the state transitions. Secondly, we solve the\ntarget problem using a deep reinforcement learning method, namely, the deep\ndeterministic policy gradient (DDPG), and propose three solutions with\ndifferent control objectives. Deep reinforcement learning methods obtain the\noptimal policy through the interactions with the environment without knowing\nthe environment variables. Considering that environment variables in our\nproblem are unknown and unmeasurable, we choose a deep reinforcement learning\nmethod to solve it. Moreover, considering the energy consumption of 3D flight,\nwe extend the proposed solutions to maximize the total throughput per unit\nenergy. To encourage or discourage the UAV's mobility according to its\nprediction, the DDPG framework is modified, where the UAV adjusts its learning\nrate automatically. Thirdly, in a simplified model with small state space and\naction space, we verify the optimality of proposed algorithms. Comparing with\ntwo baseline schemes, we demonstrate the effectiveness of proposed algorithms\nin a realistic model.\n",
+        "published": "2019",
+        "authors": [
+            "Ming Zhu",
+            "Xiao-Yang Liu",
+            "Anwar Walid"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1909.05477v2",
+        "title": "Maximum Likelihood Constraint Inference for Inverse Reinforcement\n  Learning",
+        "abstract": "  While most approaches to the problem of Inverse Reinforcement Learning (IRL)\nfocus on estimating a reward function that best explains an expert agent's\npolicy or demonstrated behavior on a control task, it is often the case that\nsuch behavior is more succinctly represented by a simple reward combined with a\nset of hard constraints. In this setting, the agent is attempting to maximize\ncumulative rewards subject to these given constraints on their behavior. We\nreformulate the problem of IRL on Markov Decision Processes (MDPs) such that,\ngiven a nominal model of the environment and a nominal reward function, we seek\nto estimate state, action, and feature constraints in the environment that\nmotivate an agent's behavior. Our approach is based on the Maximum Entropy IRL\nframework, which allows us to reason about the likelihood of an expert agent's\ndemonstrations given our knowledge of an MDP. Using our method, we can infer\nwhich constraints can be added to the MDP to most increase the likelihood of\nobserving these demonstrations. We present an algorithm which iteratively\ninfers the Maximum Likelihood Constraint to best explain observed behavior, and\nwe evaluate its efficacy using both simulated behavior and recorded data of\nhumans navigating around an obstacle.\n",
+        "published": "2019",
+        "authors": [
+            "Dexter R. R. Scobee",
+            "S. Shankar Sastry"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1909.06034v1",
+        "title": "Deep Learned Path Planning via Randomized Reward-Linked-Goals and\n  Potential Space Applications",
+        "abstract": "  Space exploration missions have seen use of increasingly sophisticated\nrobotic systems with ever more autonomy. Deep learning promises to take this\neven a step further, and has applications for high-level tasks, like path\nplanning, as well as low-level tasks, like motion control, which are critical\ncomponents for mission efficiency and success. Using deep reinforcement\nend-to-end learning with randomized reward function parameters during training,\nwe teach a simulated 8 degree-of-freedom quadruped ant-like robot to travel\nanywhere within a perimeter, conducting path plan and motion control on a\nsingle neural network, without any system model or prior knowledge of the\nterrain or environment. Our approach also allows for user specified waypoints,\nwhich could translate well to either fully autonomous or\nsemi-autonomous/teleoperated space applications that encounter delay times. We\ntrained the agent using randomly generated waypoints linked to the reward\nfunction and passed waypoint coordinates as inputs to the neural network. Such\napplications show promise on a variety of space exploration robots, including\nhigh speed rovers for fast locomotion and legged cave robots for rough terrain.\n",
+        "published": "2019",
+        "authors": [
+            "Tamir Blum",
+            "William Jones",
+            "Kazuya Yoshida"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1909.06493v1",
+        "title": "Flight Controller Synthesis Via Deep Reinforcement Learning",
+        "abstract": "  Traditional control methods are inadequate in many deployment settings\ninvolving control of Cyber-Physical Systems (CPS). In such settings, CPS\ncontrollers must operate and respond to unpredictable interactions, conditions,\nor failure modes. Dealing with such unpredictability requires the use of\nexecutive and cognitive control functions that allow for planning and\nreasoning. Motivated by the sport of drone racing, this dissertation addresses\nthese concerns for state-of-the-art flight control by investigating the use of\ndeep neural networks to bring essential elements of higher-level cognition for\nconstructing low level flight controllers.\n  This thesis reports on the development and release of an open source, full\nsolution stack for building neuro-flight controllers. This stack consists of\nthe methodology for constructing a multicopter digital twin for synthesize the\nflight controller unique to a specific aircraft, a tuning framework for\nimplementing training environments (GymFC), and a firmware for the world's\nfirst neural network supported flight controller (Neuroflight). GymFC's novel\napproach fuses together the digital twinning paradigm for flight control\ntraining to provide seamless transfer to hardware. Additionally, this thesis\nexamines alternative reward system functions as well as changes to the software\nenvironment to bridge the gap between the simulation and real world deployment\nenvironments.\n  Work summarized in this thesis demonstrates that reinforcement learning is\nable to be leveraged for training neural network controllers capable, not only\nof maintaining stable flight, but also precision aerobatic maneuvers in real\nworld settings. As such, this work provides a foundation for developing the\nnext generation of flight control systems.\n",
+        "published": "2019",
+        "authors": [
+            "William Koch"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1909.09705v1",
+        "title": "A Layered Architecture for Active Perception: Image Classification using\n  Deep Reinforcement Learning",
+        "abstract": "  We propose a planning and perception mechanism for a robot (agent), that can\nonly observe the underlying environment partially, in order to solve an image\nclassification problem. A three-layer architecture is suggested that consists\nof a meta-layer that decides the intermediate goals, an action-layer that\nselects local actions as the agent navigates towards a goal, and a\nclassification-layer that evaluates the reward and makes a prediction. We\ndesign and implement these layers using deep reinforcement learning. A\ngeneralized policy gradient algorithm is utilized to learn the parameters of\nthese layers to maximize the expected reward. Our proposed methodology is\ntested on the MNIST dataset of handwritten digits, which provides us with a\nlevel of explainability while interpreting the agent's intermediate goals and\ncourse of action.\n",
+        "published": "2019",
+        "authors": [
+            "Hossein K. Mousavi",
+            "Guangyi Liu",
+            "Weihang Yuan",
+            "Martin Tak\u00e1\u010d",
+            "H\u00e9ctor Mu\u00f1oz-Avila",
+            "Nader Motee"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1909.11538v1",
+        "title": "Automated Lane Change Decision Making using Deep Reinforcement Learning\n  in Dynamic and Uncertain Highway Environment",
+        "abstract": "  Autonomous lane changing is a critical feature for advanced autonomous\ndriving systems, that involves several challenges such as uncertainty in other\ndriver's behaviors and the trade-off between safety and agility. In this work,\nwe develop a novel simulation environment that emulates these challenges and\ntrain a deep reinforcement learning agent that yields consistent performance in\na variety of dynamic and uncertain traffic scenarios. Results show that the\nproposed data-driven approach performs significantly better in noisy\nenvironments compared to methods that rely solely on heuristics.\n",
+        "published": "2019",
+        "authors": [
+            "Ali Alizadeh",
+            "Majid Moghadam",
+            "Yunus Bicer",
+            "Nazim Kemal Ure",
+            "Ugur Yavas",
+            "Can Kurtulus"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2005.05178v1",
+        "title": "DeepRacing: Parameterized Trajectories for Autonomous Racing",
+        "abstract": "  We consider the challenging problem of high speed autonomous racing in a\nrealistic Formula One environment. DeepRacing is a novel end-to-end framework,\nand a virtual testbed for training and evaluating algorithms for autonomous\nracing. The virtual testbed is implemented using the realistic F1 series of\nvideo games, developed by Codemasters, which many Formula One drivers use for\ntraining. This virtual testbed is released under an open-source license both as\na standalone C++ API and as a binding to the popular Robot Operating System 2\n(ROS2) framework. This open-source API allows anyone to use the high fidelity\nphysics and photo-realistic capabilities of the F1 game as a simulator, and\nwithout hacking any game engine code. We use this framework to evaluate several\nneural network methodologies for autonomous racing. Specifically, we consider\nseveral fully end-to-end models that directly predict steering and acceleration\ncommands for an autonomous race car as well as a model that predicts a list of\nwaypoints to follow in the car's local coordinate system, with the task of\nselecting a steering/throttle angle left to a classical control algorithm. We\nalso present a novel method of autonomous racing by training a deep neural\nnetwork to predict a parameterized representation of a trajectory rather than a\nlist of waypoints. We evaluate these models performance in our open-source\nsimulator and show that trajectory prediction far outperforms end-to-end\ndriving. Additionally, we show that open-loop performance for an end-to-end\nmodel, i.e. root-mean-square error for a model's predicted control values, does\nnot necessarily correlate with increased driving performance in the closed-loop\nsense, i.e. actual ability to race around a track. Finally, we show that our\nproposed model of parameterized trajectory prediction outperforms both\nend-to-end control and waypoint prediction.\n",
+        "published": "2020",
+        "authors": [
+            "Trent Weiss",
+            "Madhur Behl"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2005.07385v2",
+        "title": "Enhancing Lattice-based Motion Planning with Introspective Learning and\n  Reasoning",
+        "abstract": "  Lattice-based motion planning is a hybrid planning method where a plan made\nup of discrete actions simultaneously is a physically feasible trajectory. The\nplanning takes both discrete and continuous aspects into account, for example\naction pre-conditions and collision-free action-duration in the configuration\nspace. Safe motion planing rely on well-calibrated safety-margins for collision\nchecking. The trajectory tracking controller must further be able to reliably\nexecute the motions within this safety margin for the execution to be safe. In\nthis work we are concerned with introspective learning and reasoning about\ncontroller performance over time. Normal controller execution of the different\nactions is learned using reliable and uncertainty-aware machine learning\ntechniques. By correcting for execution bias we manage to substantially reduce\nthe safety margin of motion actions. Reasoning takes place to both verify that\nthe learned models stays safe and to improve collision checking effectiveness\nin the motion planner by the use of more accurate execution predictions with a\nsmaller safety margin. The presented approach allows for explicit awareness of\ncontroller performance under normal circumstances, and timely detection of\nincorrect performance in abnormal circumstances. Evaluation is made on the\nnonlinear dynamics of a quadcopter in 3D using simulation. Video:\nhttps://youtu.be/STmZduvSUMM\n",
+        "published": "2020",
+        "authors": [
+            "Mattias Tiger",
+            "David Bergstr\u00f6m",
+            "Andreas Norrstig",
+            "Fredrik Heintz"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2009.08973v2",
+        "title": "GRAC: Self-Guided and Self-Regularized Actor-Critic",
+        "abstract": "  Deep reinforcement learning (DRL) algorithms have successfully been\ndemonstrated on a range of challenging decision making and control tasks. One\ndominant component of recent deep reinforcement learning algorithms is the\ntarget network which mitigates the divergence when learning the Q function.\nHowever, target networks can slow down the learning process due to delayed\nfunction updates. Our main contribution in this work is a self-regularized\nTD-learning method to address divergence without requiring a target network.\nAdditionally, we propose a self-guided policy improvement method by combining\npolicy-gradient with zero-order optimization to search for actions associated\nwith higher Q-values in a broad neighborhood. This makes learning more robust\nto local noise in the Q function approximation and guides the updates of our\nactor network. Taken together, these components define GRAC, a novel\nself-guided and self-regularized actor critic algorithm. We evaluate GRAC on\nthe suite of OpenAI gym tasks, achieving or outperforming state of the art in\nevery environment tested.\n",
+        "published": "2020",
+        "authors": [
+            "Lin Shao",
+            "Yifan You",
+            "Mengyuan Yan",
+            "Qingyun Sun",
+            "Jeannette Bohg"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2106.14866v2",
+        "title": "Learning from an Exploring Demonstrator: Optimal Reward Estimation for\n  Bandits",
+        "abstract": "  We introduce the \"inverse bandit\" problem of estimating the rewards of a\nmulti-armed bandit instance from observing the learning process of a low-regret\ndemonstrator. Existing approaches to the related problem of inverse\nreinforcement learning assume the execution of an optimal policy, and thereby\nsuffer from an identifiability issue. In contrast, we propose to leverage the\ndemonstrator's behavior en route to optimality, and in particular, the\nexploration phase, for reward estimation. We begin by establishing a general\ninformation-theoretic lower bound under this paradigm that applies to any\ndemonstrator algorithm, which characterizes a fundamental tradeoff between\nreward estimation and the amount of exploration of the demonstrator. Then, we\ndevelop simple and efficient reward estimators for upper-confidence-based\ndemonstrator algorithms that attain the optimal tradeoff, showing in particular\nthat consistent reward estimation -- free of identifiability issues -- is\npossible under our paradigm. Extensive simulations on both synthetic and\nsemi-synthetic data corroborate our theoretical results.\n",
+        "published": "2021",
+        "authors": [
+            "Wenshuo Guo",
+            "Kumar Krishna Agrawal",
+            "Aditya Grover",
+            "Vidya Muthukumar",
+            "Ashwin Pananjady"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2110.03032v3",
+        "title": "Learning Multi-Objective Curricula for Robotic Policy Learning",
+        "abstract": "  Various automatic curriculum learning (ACL) methods have been proposed to\nimprove the sample efficiency and final performance of deep reinforcement\nlearning (DRL). They are designed to control how a DRL agent collects data,\nwhich is inspired by how humans gradually adapt their learning processes to\ntheir capabilities. For example, ACL can be used for subgoal generation, reward\nshaping, environment generation, or initial state generation. However, prior\nwork only considers curriculum learning following one of the aforementioned\npredefined paradigms. It is unclear which of these paradigms are complementary,\nand how the combination of them can be learned from interactions with the\nenvironment. Therefore, in this paper, we propose a unified automatic\ncurriculum learning framework to create multi-objective but coherent curricula\nthat are generated by a set of parametric curriculum modules. Each curriculum\nmodule is instantiated as a neural network and is responsible for generating a\nparticular curriculum. In order to coordinate those potentially conflicting\nmodules in unified parameter space, we propose a multi-task hyper-net learning\nframework that uses a single hyper-net to parameterize all those curriculum\nmodules. In addition to existing hand-designed curricula paradigms, we further\ndesign a flexible memory mechanism to learn an abstract curriculum, which may\notherwise be difficult to design manually. We evaluate our method on a series\nof robotic manipulation tasks and demonstrate its superiority over other\nstate-of-the-art ACL methods in terms of sample efficiency and final\nperformance.\n",
+        "published": "2021",
+        "authors": [
+            "Jikun Kang",
+            "Miao Liu",
+            "Abhinav Gupta",
+            "Chris Pal",
+            "Xue Liu",
+            "Jie Fu"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2112.05244v2",
+        "title": "An Experimental Design Perspective on Model-Based Reinforcement Learning",
+        "abstract": "  In many practical applications of RL, it is expensive to observe state\ntransitions from the environment. For example, in the problem of plasma control\nfor nuclear fusion, computing the next state for a given state-action pair\nrequires querying an expensive transition function which can lead to many hours\nof computer simulation or dollars of scientific research. Such expensive data\ncollection prohibits application of standard RL algorithms which usually\nrequire a large number of observations to learn. In this work, we address the\nproblem of efficiently learning a policy while making a minimal number of\nstate-action queries to the transition function. In particular, we leverage\nideas from Bayesian optimal experimental design to guide the selection of\nstate-action queries for efficient learning. We propose an acquisition function\nthat quantifies how much information a state-action pair would provide about\nthe optimal solution to a Markov decision process. At each iteration, our\nalgorithm maximizes this acquisition function, to choose the most informative\nstate-action pair to be queried, thus yielding a data-efficient RL approach. We\nexperiment with a variety of simulated continuous control problems and show\nthat our approach learns an optimal policy with up to $5$ -- $1,000\\times$ less\ndata than model-based RL baselines and $10^3$ -- $10^5\\times$ less data than\nmodel-free RL baselines. We also provide several ablated comparisons which\npoint to substantial improvements arising from the principled method of\nobtaining data.\n",
+        "published": "2021",
+        "authors": [
+            "Viraj Mehta",
+            "Biswajit Paria",
+            "Jeff Schneider",
+            "Stefano Ermon",
+            "Willie Neiswanger"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1505.01596v2",
+        "title": "Learning to See by Moving",
+        "abstract": "  The dominant paradigm for feature learning in computer vision relies on\ntraining neural networks for the task of object recognition using millions of\nhand labelled images. Is it possible to learn useful features for a diverse set\nof visual tasks using any other form of supervision? In biology, living\norganisms developed the ability of visual perception for the purpose of moving\nand acting in the world. Drawing inspiration from this observation, in this\nwork we investigate if the awareness of egomotion can be used as a supervisory\nsignal for feature learning. As opposed to the knowledge of class labels,\ninformation about egomotion is freely available to mobile agents. We show that\ngiven the same number of training images, features learnt using egomotion as\nsupervision compare favourably to features learnt using class-label as\nsupervision on visual tasks of scene recognition, object recognition, visual\nodometry and keypoint matching.\n",
+        "published": "2015",
+        "authors": [
+            "Pulkit Agrawal",
+            "Joao Carreira",
+            "Jitendra Malik"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1505.07427v4",
+        "title": "PoseNet: A Convolutional Network for Real-Time 6-DOF Camera\n  Relocalization",
+        "abstract": "  We present a robust and real-time monocular six degree of freedom\nrelocalization system. Our system trains a convolutional neural network to\nregress the 6-DOF camera pose from a single RGB image in an end-to-end manner\nwith no need of additional engineering or graph optimisation. The algorithm can\noperate indoors and outdoors in real time, taking 5ms per frame to compute. It\nobtains approximately 2m and 6 degree accuracy for large scale outdoor scenes\nand 0.5m and 10 degree accuracy indoors. This is achieved using an efficient 23\nlayer deep convnet, demonstrating that convnets can be used to solve\ncomplicated out of image plane regression problems. This was made possible by\nleveraging transfer learning from large scale classification data. We show the\nconvnet localizes from high level features and is robust to difficult lighting,\nmotion blur and different camera intrinsics where point based SIFT registration\nfails. Furthermore we show how the pose feature that is produced generalizes to\nother scenes allowing us to regress pose with only a few dozen training\nexamples. PoseNet code, dataset and an online demonstration is available on our\nproject webpage, at http://mi.eng.cam.ac.uk/projects/relocalisation/\n",
+        "published": "2015",
+        "authors": [
+            "Alex Kendall",
+            "Matthew Grimes",
+            "Roberto Cipolla"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1711.06834v2",
+        "title": "Neural Network Based Reinforcement Learning for Audio-Visual Gaze\n  Control in Human-Robot Interaction",
+        "abstract": "  This paper introduces a novel neural network-based reinforcement learning\napproach for robot gaze control. Our approach enables a robot to learn and to\nadapt its gaze control strategy for human-robot interaction neither with the\nuse of external sensors nor with human supervision. The robot learns to focus\nits attention onto groups of people from its own audio-visual experiences,\nindependently of the number of people, of their positions and of their physical\nappearances. In particular, we use a recurrent neural network architecture in\ncombination with Q-learning to find an optimal action-selection policy; we\npre-train the network using a simulated environment that mimics realistic\nscenarios that involve speaking/silent participants, thus avoiding the need of\ntedious sessions of a robot interacting with people. Our experimental\nevaluation suggests that the proposed method is robust against parameter\nestimation, i.e. the parameter values yielded by the method do not have a\ndecisive impact on the performance. The best results are obtained when both\naudio and visual information is jointly used. Experiments with the Nao robot\nindicate that our framework is a step forward towards the autonomous learning\nof socially acceptable gaze behavior.\n",
+        "published": "2017",
+        "authors": [
+            "St\u00e9phane Lathuili\u00e8re",
+            "Benoit Mass\u00e9",
+            "Pablo Mesejo",
+            "Radu Horaud"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1910.10949v1",
+        "title": "ROBO: Robust, Fully Neural Object Detection for Robot Soccer",
+        "abstract": "  Deep Learning has become exceptionally popular in the last few years due to\nits success in computer vision and other fields of AI. However, deep neural\nnetworks are computationally expensive, which limits their application in low\npower embedded systems, such as mobile robots. In this paper, an efficient\nneural network architecture is proposed for the problem of detecting relevant\nobjects in robot soccer environments. The ROBO model's increase in efficiency\nis achieved by exploiting the peculiarities of the environment. Compared to the\nstate-of-the-art Tiny YOLO model, the proposed network provides approximately\n35 times decrease in run time, while achieving superior average precision,\nalthough at the cost of slightly worse localization accuracy.\n",
+        "published": "2019",
+        "authors": [
+            "Marton Szemenyei",
+            "Vladimir Estivill-Castro"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2004.12886v3",
+        "title": "Control Design of Autonomous Drone Using Deep Learning Based Image\n  Understanding Techniques",
+        "abstract": "  This paper presents a new framework to use images as the inputs for the\ncontroller to have autonomous flight, considering the noisy indoor environment\nand uncertainties. A new Proportional-Integral-Derivative-Accelerated (PIDA)\ncontrol with a derivative filter is proposed to improves drone/quadcopter\nflight stability within a noisy environment and enables autonomous flight using\nobject and depth detection techniques. The mathematical model is derived from\nan accurate model with a high level of fidelity by addressing the problems of\nnon-linearity, uncertainties, and coupling. The proposed PIDA controller is\ntuned by Stochastic Dual Simplex Algorithm (SDSA) to support autonomous flight.\nThe simulation results show that adapting the deep learning-based image\nunderstanding techniques (RetinaNet ant colony detection and PSMNet) to the\nproposed controller can enable the generation and tracking of the desired point\nin the presence of environmental disturbances.\n",
+        "published": "2020",
+        "authors": [
+            "Seid Miad Zandavi",
+            "Vera Chung",
+            "Ali Anaissi"
+        ]
+    }
+]

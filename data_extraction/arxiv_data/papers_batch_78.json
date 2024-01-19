@@ -1,0 +1,1204 @@
+[
+    {
+        "id": "http://arxiv.org/abs/2301.11564v1",
+        "title": "Learning 6-DoF Fine-grained Grasp Detection Based on Part Affordance\n  Grounding",
+        "abstract": "  Robotic grasping is a fundamental ability for a robot to interact with the\nenvironment. Current methods focus on how to obtain a stable and reliable\ngrasping pose in object wise, while little work has been studied on part\n(shape)-wise grasping which is related to fine-grained grasping and robotic\naffordance. Parts can be seen as atomic elements to compose an object, which\ncontains rich semantic knowledge and a strong correlation with affordance.\nHowever, lacking a large part-wise 3D robotic dataset limits the development of\npart representation learning and downstream application. In this paper, we\npropose a new large Language-guided SHape grAsPing datasEt (named Lang-SHAPE)\nto learn 3D part-wise affordance and grasping ability. We design a novel\ntwo-stage fine-grained robotic grasping network (named PIONEER), including a\nnovel 3D part language grounding model, and a part-aware grasp pose detection\nmodel. To evaluate the effectiveness, we perform multi-level difficulty part\nlanguage grounding grasping experiments and deploy our proposed model on a real\nrobot. Results show our method achieves satisfactory performance and efficiency\nin reference identification, affordance inference, and 3D part-aware grasping.\nOur dataset and code are available on our project website\nhttps://sites.google.com/view/lang-shape\n",
+        "published": "2023",
+        "authors": [
+            "Yaoxian Song",
+            "Penglei Sun",
+            "Yi Ren",
+            "Yu Zheng",
+            "Yue Zhang"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2311.04260v1",
+        "title": "Fully Automated Task Management for Generation, Execution, and\n  Evaluation: A Framework for Fetch-and-Carry Tasks with Natural Language\n  Instructions in Continuous Space",
+        "abstract": "  This paper aims to develop a framework that enables a robot to execute tasks\nbased on visual information, in response to natural language instructions for\nFetch-and-Carry with Object Grounding (FCOG) tasks. Although there have been\nmany frameworks, they usually rely on manually given instruction sentences.\nTherefore, evaluations have only been conducted with fixed tasks. Furthermore,\nmany multimodal language understanding models for the benchmarks only consider\ndiscrete actions. To address the limitations, we propose a framework for the\nfull automation of the generation, execution, and evaluation of FCOG tasks. In\naddition, we introduce an approach to solving the FCOG tasks by dividing them\ninto four distinct subtasks.\n",
+        "published": "2023",
+        "authors": [
+            "Motonari Kambara",
+            "Komei Sugiura"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2312.06351v1",
+        "title": "Evaluation of Large Language Models for Decision Making in Autonomous\n  Driving",
+        "abstract": "  Various methods have been proposed for utilizing Large Language Models (LLMs)\nin autonomous driving. One strategy of using LLMs for autonomous driving\ninvolves inputting surrounding objects as text prompts to the LLMs, along with\ntheir coordinate and velocity information, and then outputting the subsequent\nmovements of the vehicle. When using LLMs for such purposes, capabilities such\nas spatial recognition and planning are essential. In particular, two\nfoundational capabilities are required: (1) spatial-aware decision making,\nwhich is the ability to recognize space from coordinate information and make\ndecisions to avoid collisions, and (2) the ability to adhere to traffic rules.\nHowever, quantitative research has not been conducted on how accurately\ndifferent types of LLMs can handle these problems. In this study, we\nquantitatively evaluated these two abilities of LLMs in the context of\nautonomous driving. Furthermore, to conduct a Proof of Concept (POC) for the\nfeasibility of implementing these abilities in actual vehicles, we developed a\nsystem that uses LLMs to drive a vehicle.\n",
+        "published": "2023",
+        "authors": [
+            "Kotaro Tanahashi",
+            "Yuichi Inoue",
+            "Yu Yamaguchi",
+            "Hidetatsu Yaginuma",
+            "Daiki Shiotsuka",
+            "Hiroyuki Shimatani",
+            "Kohei Iwamasa",
+            "Yoshiaki Inoue",
+            "Takafumi Yamaguchi",
+            "Koki Igari",
+            "Tsukasa Horinouchi",
+            "Kento Tokuhiro",
+            "Yugo Tokuchi",
+            "Shunsuke Aoki"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2312.06722v1",
+        "title": "EgoPlan-Bench: Benchmarking Egocentric Embodied Planning with Multimodal\n  Large Language Models",
+        "abstract": "  Multimodal Large Language Models (MLLMs), building upon the powerful Large\nLanguage Models (LLMs) with exceptional reasoning and generalization\ncapability, have opened up new avenues for embodied task planning. MLLMs excel\nin their ability to integrate diverse environmental inputs, such as real-time\ntask progress, visual observations, and open-form language instructions, which\nare crucial for executable task planning. In this work, we introduce a\nbenchmark with human annotations, EgoPlan-Bench, to quantitatively investigate\nthe potential of MLLMs as embodied task planners in real-world scenarios. Our\nbenchmark is distinguished by realistic tasks derived from real-world videos, a\ndiverse set of actions involving interactions with hundreds of different\nobjects, and complex visual observations from varied environments. We evaluate\nvarious open-source MLLMs, revealing that these models have not yet evolved\ninto embodied planning generalists (even GPT-4V). We further construct an\ninstruction-tuning dataset EgoPlan-IT from videos of human-object interactions,\nto facilitate the learning of high-level task planning in intricate real-world\nsituations. The experiment results demonstrate that the model tuned on\nEgoPlan-IT not only significantly improves performance on our benchmark, but\nalso effectively acts as embodied planner in simulations.\n",
+        "published": "2023",
+        "authors": [
+            "Yi Chen",
+            "Yuying Ge",
+            "Yixiao Ge",
+            "Mingyu Ding",
+            "Bohao Li",
+            "Rui Wang",
+            "Ruifeng Xu",
+            "Ying Shan",
+            "Xihui Liu"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2312.13219v1",
+        "title": "Interactive Visual Task Learning for Robots",
+        "abstract": "  We present a framework for robots to learn novel visual concepts and tasks\nvia in-situ linguistic interactions with human users. Previous approaches have\neither used large pre-trained visual models to infer novel objects zero-shot,\nor added novel concepts along with their attributes and representations to a\nconcept hierarchy. We extend the approaches that focus on learning visual\nconcept hierarchies by enabling them to learn novel concepts and solve unseen\nrobotics tasks with them. To enable a visual concept learner to solve robotics\ntasks one-shot, we developed two distinct techniques. Firstly, we propose a\nnovel approach, Hi-Viscont(HIerarchical VISual CONcept learner for Task), which\naugments information of a novel concept to its parent nodes within a concept\nhierarchy. This information propagation allows all concepts in a hierarchy to\nupdate as novel concepts are taught in a continual learning setting. Secondly,\nwe represent a visual task as a scene graph with language annotations, allowing\nus to create novel permutations of a demonstrated task zero-shot in-situ. We\npresent two sets of results. Firstly, we compare Hi-Viscont with the baseline\nmodel (FALCON) on visual question answering(VQA) in three domains. While being\ncomparable to the baseline model on leaf level concepts, Hi-Viscont achieves an\nimprovement of over 9% on non-leaf concepts on average. We compare our model's\nperformance against the baseline FALCON model. Our framework achieves 33%\nimprovements in success rate metric, and 19% improvements in the object level\naccuracy compared to the baseline model. With both of these results we\ndemonstrate the ability of our model to learn tasks and concepts in a continual\nlearning setting on the robot.\n",
+        "published": "2023",
+        "authors": [
+            "Weiwei Gu",
+            "Anant Sah",
+            "Nakul Gopalan"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2312.15844v1",
+        "title": "Learning-To-Rank Approach for Identifying Everyday Objects Using a\n  Physical-World Search Engine",
+        "abstract": "  Domestic service robots offer a solution to the increasing demand for daily\ncare and support. A human-in-the-loop approach that combines automation and\noperator intervention is considered to be a realistic approach to their use in\nsociety. Therefore, we focus on the task of retrieving target objects from\nopen-vocabulary user instructions in a human-in-the-loop setting, which we\ndefine as the learning-to-rank physical objects (LTRPO) task. For example,\ngiven the instruction \"Please go to the dining room which has a round table.\nPick up the bottle on it,\" the model is required to output a ranked list of\ntarget objects that the operator/user can select. In this paper, we propose\nMultiRankIt, which is a novel approach for the LTRPO task. MultiRankIt\nintroduces the Crossmodal Noun Phrase Encoder to model the relationship between\nphrases that contain referring expressions and the target bounding box, and the\nCrossmodal Region Feature Encoder to model the relationship between the target\nobject and multiple images of its surrounding contextual environment.\nAdditionally, we built a new dataset for the LTRPO task that consists of\ninstructions with complex referring expressions accompanied by real indoor\nenvironmental images that feature various target objects. We validated our\nmodel on the dataset and it outperformed the baseline method in terms of the\nmean reciprocal rank and recall@k. Furthermore, we conducted physical\nexperiments in a setting where a domestic service robot retrieved everyday\nobjects in a standardized domestic environment, based on users' instruction in\na human--in--the--loop setting. The experimental results demonstrate that the\nsuccess rate for object retrieval achieved 80%. Our code is available at\nhttps://github.com/keio-smilab23/MultiRankIt.\n",
+        "published": "2023",
+        "authors": [
+            "Kanta Kaneda",
+            "Shunya Nagashima",
+            "Ryosuke Korekata",
+            "Motonari Kambara",
+            "Komei Sugiura"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1806.03831v1",
+        "title": "Interactive Visual Grounding of Referring Expressions for Human-Robot\n  Interaction",
+        "abstract": "  This paper presents INGRESS, a robot system that follows human natural\nlanguage instructions to pick and place everyday objects. The core issue here\nis the grounding of referring expressions: infer objects and their\nrelationships from input images and language expressions. INGRESS allows for\nunconstrained object categories and unconstrained language expressions.\nFurther, it asks questions to disambiguate referring expressions interactively.\nTo achieve these, we take the approach of grounding by generation and propose a\ntwo-stage neural network model for grounding. The first stage uses a neural\nnetwork to generate visual descriptions of objects, compares them with the\ninput language expression, and identifies a set of candidate objects. The\nsecond stage uses another neural network to examine all pairwise relations\nbetween the candidates and infers the most likely referred object. The same\nneural networks are used for both grounding and question generation for\ndisambiguation. Experiments show that INGRESS outperformed a state-of-the-art\nmethod on the RefCOCO dataset and in robot experiments with humans.\n",
+        "published": "2018",
+        "authors": [
+            "Mohit Shridhar",
+            "David Hsu"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1910.02974v3",
+        "title": "SMArT: Training Shallow Memory-aware Transformers for Robotic\n  Explainability",
+        "abstract": "  The ability to generate natural language explanations conditioned on the\nvisual perception is a crucial step towards autonomous agents which can explain\nthemselves and communicate with humans. While the research efforts in image and\nvideo captioning are giving promising results, this is often done at the\nexpense of the computational requirements of the approaches, limiting their\napplicability to real contexts. In this paper, we propose a fully-attentive\ncaptioning algorithm which can provide state-of-the-art performances on\nlanguage generation while restricting its computational demands. Our model is\ninspired by the Transformer model and employs only two Transformer layers in\nthe encoding and decoding stages. Further, it incorporates a novel memory-aware\nencoding of image regions. Experiments demonstrate that our approach achieves\ncompetitive results in terms of caption quality while featuring reduced\ncomputational demands. Further, to evaluate its applicability on autonomous\nagents, we conduct experiments on simulated scenes taken from the perspective\nof domestic robots.\n",
+        "published": "2019",
+        "authors": [
+            "Marcella Cornia",
+            "Lorenzo Baraldi",
+            "Rita Cucchiara"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1910.11301v3",
+        "title": "Cross-Lingual Vision-Language Navigation",
+        "abstract": "  Commanding a robot to navigate with natural language instructions is a\nlong-term goal for grounded language understanding and robotics. But the\ndominant language is English, according to previous studies on vision-language\nnavigation (VLN). To go beyond English and serve people speaking different\nlanguages, we collect a bilingual Room-to-Room (BL-R2R) dataset, extending the\noriginal benchmark with new Chinese instructions. Based on this newly\nintroduced dataset, we study how an agent can be trained on existing English\ninstructions but navigate effectively with another language under a zero-shot\nlearning scenario. Without any training data of the target language, our model\nshows competitive results even compared to a model with full access to the\ntarget language training data. Moreover, we investigate the transferring\nability of our model when given a certain amount of target language training\ndata.\n",
+        "published": "2019",
+        "authors": [
+            "An Yan",
+            "Xin Eric Wang",
+            "Jiangtao Feng",
+            "Lei Li",
+            "William Yang Wang"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1512.01525v1",
+        "title": "Learning the Semantics of Manipulation Action",
+        "abstract": "  In this paper we present a formal computational framework for modeling\nmanipulation actions. The introduced formalism leads to semantics of\nmanipulation action and has applications to both observing and understanding\nhuman manipulation actions as well as executing them with a robotic mechanism\n(e.g. a humanoid robot). It is based on a Combinatory Categorial Grammar. The\ngoal of the introduced framework is to: (1) represent manipulation actions with\nboth syntax and semantic parts, where the semantic part employs\n$\\lambda$-calculus; (2) enable a probabilistic semantic parsing schema to learn\nthe $\\lambda$-calculus representation of manipulation action from an annotated\naction corpus of videos; (3) use (1) and (2) to develop a system that visually\nobserves manipulation actions and understands their meaning while it can reason\nbeyond observations using propositional logic and axiom schemata. The\nexperiments conducted on a public available large manipulation action dataset\nvalidate the theoretical framework and our implementation.\n",
+        "published": "2015",
+        "authors": [
+            "Yezhou Yang",
+            "Yiannis Aloimonos",
+            "Cornelia Fermuller",
+            "Eren Erdal Aksoy"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1512.03460v1",
+        "title": "Neural Self Talk: Image Understanding via Continuous Questioning and\n  Answering",
+        "abstract": "  In this paper we consider the problem of continuously discovering image\ncontents by actively asking image based questions and subsequently answering\nthe questions being asked. The key components include a Visual Question\nGeneration (VQG) module and a Visual Question Answering module, in which\nRecurrent Neural Networks (RNN) and Convolutional Neural Network (CNN) are\nused. Given a dataset that contains images, questions and their answers, both\nmodules are trained at the same time, with the difference being VQG uses the\nimages as input and the corresponding questions as output, while VQA uses\nimages and questions as input and the corresponding answers as output. We\nevaluate the self talk process subjectively using Amazon Mechanical Turk, which\nshow effectiveness of the proposed method.\n",
+        "published": "2015",
+        "authors": [
+            "Yezhou Yang",
+            "Yi Li",
+            "Cornelia Fermuller",
+            "Yiannis Aloimonos"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2107.00789v1",
+        "title": "Case Relation Transformer: A Crossmodal Language Generation Model for\n  Fetching Instructions",
+        "abstract": "  There have been many studies in robotics to improve the communication skills\nof domestic service robots. Most studies, however, have not fully benefited\nfrom recent advances in deep neural networks because the training datasets are\nnot large enough. In this paper, our aim is to augment the datasets based on a\ncrossmodal language generation model. We propose the Case Relation Transformer\n(CRT), which generates a fetching instruction sentence from an image, such as\n\"Move the blue flip-flop to the lower left box.\" Unlike existing methods, the\nCRT uses the Transformer to integrate the visual features and geometry features\nof objects in the image. The CRT can handle the objects because of the Case\nRelation Block. We conducted comparison experiments and a human evaluation. The\nexperimental results show the CRT outperforms baseline methods.\n",
+        "published": "2021",
+        "authors": [
+            "Motonari Kambara",
+            "Komei Sugiura"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2107.03438v3",
+        "title": "LanguageRefer: Spatial-Language Model for 3D Visual Grounding",
+        "abstract": "  For robots to understand human instructions and perform meaningful tasks in\nthe near future, it is important to develop learned models that comprehend\nreferential language to identify common objects in real-world 3D scenes. In\nthis paper, we introduce a spatial-language model for a 3D visual grounding\nproblem. Specifically, given a reconstructed 3D scene in the form of point\nclouds with 3D bounding boxes of potential object candidates, and a language\nutterance referring to a target object in the scene, our model successfully\nidentifies the target object from a set of potential candidates. Specifically,\nLanguageRefer uses a transformer-based architecture that combines spatial\nembedding from bounding boxes with fine-tuned language embeddings from\nDistilBert to predict the target object. We show that it performs competitively\non visio-linguistic datasets proposed by ReferIt3D. Further, we analyze its\nspatial reasoning task performance decoupled from perception noise, the\naccuracy of view-dependent utterances, and viewpoint annotations for potential\nrobotics applications.\n",
+        "published": "2021",
+        "authors": [
+            "Junha Roh",
+            "Karthik Desingh",
+            "Ali Farhadi",
+            "Dieter Fox"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1905.13153v2",
+        "title": "Grounding Language Attributes to Objects using Bayesian Eigenobjects",
+        "abstract": "  We develop a system to disambiguate object instances within the same class\nbased on simple physical descriptions. The system takes as input a natural\nlanguage phrase and a depth image containing a segmented object and predicts\nhow similar the observed object is to the object described by the phrase. Our\nsystem is designed to learn from only a small amount of human-labeled language\ndata and generalize to viewpoints not represented in the language-annotated\ndepth image training set. By decoupling 3D shape representation from language\nrepresentation, this method is able to ground language to novel objects using a\nsmall amount of language-annotated depth-data and a larger corpus of unlabeled\n3D object meshes, even when these objects are partially observed from unusual\nviewpoints. Our system is able to disambiguate between novel objects, observed\nvia depth images, based on natural language descriptions. Our method also\nenables view-point transfer; trained on human-annotated data on a small set of\ndepth images captured from frontal viewpoints, our system successfully\npredicted object attributes from rear views despite having no such depth images\nin its training set. Finally, we demonstrate our approach on a Baxter robot,\nenabling it to pick specific objects based on human-provided natural language\ndescriptions.\n",
+        "published": "2019",
+        "authors": [
+            "Vanya Cohen",
+            "Benjamin Burchfiel",
+            "Thao Nguyen",
+            "Nakul Gopalan",
+            "Stefanie Tellex",
+            "George Konidaris"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2002.08434v1",
+        "title": "Interactive Natural Language-based Person Search",
+        "abstract": "  In this work, we consider the problem of searching people in an unconstrained\nenvironment, with natural language descriptions. Specifically, we study how to\nsystematically design an algorithm to effectively acquire descriptions from\nhumans. An algorithm is proposed by adapting models, used for visual and\nlanguage understanding, to search a person of interest (POI) in a principled\nway, achieving promising results without the need to re-design another\ncomplicated model. We then investigate an iterative question-answering (QA)\nstrategy that enable robots to request additional information about the POI's\nappearance from the user. To this end, we introduce a greedy algorithm to rank\nquestions in terms of their significance, and equip the algorithm with the\ncapability to dynamically adjust the length of human-robot interaction\naccording to model's uncertainty. Our approach is validated not only on\nbenchmark datasets but on a mobile robot, moving in a dynamic and crowded\nenvironment.\n",
+        "published": "2020",
+        "authors": [
+            "Vikram Shree",
+            "Wei-Lun Chao",
+            "Mark Campbell"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2109.15207v1",
+        "title": "Language-Aligned Waypoint (LAW) Supervision for Vision-and-Language\n  Navigation in Continuous Environments",
+        "abstract": "  In the Vision-and-Language Navigation (VLN) task an embodied agent navigates\na 3D environment, following natural language instructions. A challenge in this\ntask is how to handle 'off the path' scenarios where an agent veers from a\nreference path. Prior work supervises the agent with actions based on the\nshortest path from the agent's location to the goal, but such goal-oriented\nsupervision is often not in alignment with the instruction. Furthermore, the\nevaluation metrics employed by prior work do not measure how much of a language\ninstruction the agent is able to follow. In this work, we propose a simple and\neffective language-aligned supervision scheme, and a new metric that measures\nthe number of sub-instructions the agent has completed during navigation.\n",
+        "published": "2021",
+        "authors": [
+            "Sonia Raychaudhuri",
+            "Saim Wani",
+            "Shivansh Patel",
+            "Unnat Jain",
+            "Angel X. Chang"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2110.02207v1",
+        "title": "Waypoint Models for Instruction-guided Navigation in Continuous\n  Environments",
+        "abstract": "  Little inquiry has explicitly addressed the role of action spaces in\nlanguage-guided visual navigation -- either in terms of its effect on\nnavigation success or the efficiency with which a robotic agent could execute\nthe resulting trajectory. Building on the recently released VLN-CE setting for\ninstruction following in continuous environments, we develop a class of\nlanguage-conditioned waypoint prediction networks to examine this question. We\nvary the expressivity of these models to explore a spectrum between low-level\nactions and continuous waypoint prediction. We measure task performance and\nestimated execution time on a profiled LoCoBot robot. We find more expressive\nmodels result in simpler, faster to execute trajectories, but lower-level\nactions can achieve better navigation metrics by approximating shortest paths\nbetter. Further, our models outperform prior work in VLN-CE and set a new\nstate-of-the-art on the public leaderboard -- increasing success rate by 4%\nwith our best model on this challenging task.\n",
+        "published": "2021",
+        "authors": [
+            "Jacob Krantz",
+            "Aaron Gokaslan",
+            "Dhruv Batra",
+            "Stefan Lee",
+            "Oleksandr Maksymets"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2204.09667v2",
+        "title": "Sim-2-Sim Transfer for Vision-and-Language Navigation in Continuous\n  Environments",
+        "abstract": "  Recent work in Vision-and-Language Navigation (VLN) has presented two\nenvironmental paradigms with differing realism -- the standard VLN setting\nbuilt on topological environments where navigation is abstracted away, and the\nVLN-CE setting where agents must navigate continuous 3D environments using\nlow-level actions. Despite sharing the high-level task and even the underlying\ninstruction-path data, performance on VLN-CE lags behind VLN significantly. In\nthis work, we explore this gap by transferring an agent from the abstract\nenvironment of VLN to the continuous environment of VLN-CE. We find that this\nsim-2-sim transfer is highly effective, improving over the prior state of the\nart in VLN-CE by +12% success rate. While this demonstrates the potential for\nthis direction, the transfer does not fully retain the original performance of\nthe agent in the abstract setting. We present a sequence of experiments to\nidentify what differences result in performance degradation, providing clear\ndirections for further improvement.\n",
+        "published": "2022",
+        "authors": [
+            "Jacob Krantz",
+            "Stefan Lee"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2207.09083v1",
+        "title": "Relational Future Captioning Model for Explaining Likely Collisions in\n  Daily Tasks",
+        "abstract": "  Domestic service robots that support daily tasks are a promising solution for\nelderly or disabled people. It is crucial for domestic service robots to\nexplain the collision risk before they perform actions. In this paper, our aim\nis to generate a caption about a future event. We propose the Relational Future\nCaptioning Model (RFCM), a crossmodal language generation model for the future\ncaptioning task. The RFCM has the Relational Self-Attention Encoder to extract\nthe relationships between events more effectively than the conventional\nself-attention in transformers. We conducted comparison experiments, and the\nresults show the RFCM outperforms a baseline method on two datasets.\n",
+        "published": "2022",
+        "authors": [
+            "Motonari Kambara",
+            "Komei Sugiura"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2304.03047v2",
+        "title": "ETPNav: Evolving Topological Planning for Vision-Language Navigation in\n  Continuous Environments",
+        "abstract": "  Vision-language navigation is a task that requires an agent to follow\ninstructions to navigate in environments. It becomes increasingly crucial in\nthe field of embodied AI, with potential applications in autonomous navigation,\nsearch and rescue, and human-robot interaction. In this paper, we propose to\naddress a more practical yet challenging counterpart setting - vision-language\nnavigation in continuous environments (VLN-CE). To develop a robust VLN-CE\nagent, we propose a new navigation framework, ETPNav, which focuses on two\ncritical skills: 1) the capability to abstract environments and generate\nlong-range navigation plans, and 2) the ability of obstacle-avoiding control in\ncontinuous environments. ETPNav performs online topological mapping of\nenvironments by self-organizing predicted waypoints along a traversed path,\nwithout prior environmental experience. It privileges the agent to break down\nthe navigation procedure into high-level planning and low-level control.\nConcurrently, ETPNav utilizes a transformer-based cross-modal planner to\ngenerate navigation plans based on topological maps and instructions. The plan\nis then performed through an obstacle-avoiding controller that leverages a\ntrial-and-error heuristic to prevent navigation from getting stuck in\nobstacles. Experimental results demonstrate the effectiveness of the proposed\nmethod. ETPNav yields more than 10% and 20% improvements over prior\nstate-of-the-art on R2R-CE and RxR-CE datasets, respectively. Our code is\navailable at https://github.com/MarSaKi/ETPNav.\n",
+        "published": "2023",
+        "authors": [
+            "Dong An",
+            "Hanqing Wang",
+            "Wenguan Wang",
+            "Zun Wang",
+            "Yan Huang",
+            "Keji He",
+            "Liang Wang"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2307.05942v1",
+        "title": "Prototypical Contrastive Transfer Learning for Multimodal Language\n  Understanding",
+        "abstract": "  Although domestic service robots are expected to assist individuals who\nrequire support, they cannot currently interact smoothly with people through\nnatural language. For example, given the instruction \"Bring me a bottle from\nthe kitchen,\" it is difficult for such robots to specify the bottle in an\nindoor environment. Most conventional models have been trained on real-world\ndatasets that are labor-intensive to collect, and they have not fully leveraged\nsimulation data through a transfer learning framework. In this study, we\npropose a novel transfer learning approach for multimodal language\nunderstanding called Prototypical Contrastive Transfer Learning (PCTL), which\nuses a new contrastive loss called Dual ProtoNCE. We introduce PCTL to the task\nof identifying target objects in domestic environments according to free-form\nnatural language instructions. To validate PCTL, we built new real-world and\nsimulation datasets. Our experiment demonstrated that PCTL outperformed\nexisting methods. Specifically, PCTL achieved an accuracy of 78.1%, whereas\nsimple fine-tuning achieved an accuracy of 73.4%.\n",
+        "published": "2023",
+        "authors": [
+            "Seitaro Otsuki",
+            "Shintaro Ishikawa",
+            "Komei Sugiura"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2307.07166v1",
+        "title": "Switching Head-Tail Funnel UNITER for Dual Referring Expression\n  Comprehension with Fetch-and-Carry Tasks",
+        "abstract": "  This paper describes a domestic service robot (DSR) that fetches everyday\nobjects and carries them to specified destinations according to free-form\nnatural language instructions. Given an instruction such as \"Move the bottle on\nthe left side of the plate to the empty chair,\" the DSR is expected to identify\nthe bottle and the chair from multiple candidates in the environment and carry\nthe target object to the destination. Most of the existing multimodal language\nunderstanding methods are impractical in terms of computational complexity\nbecause they require inferences for all combinations of target object\ncandidates and destination candidates. We propose Switching Head-Tail Funnel\nUNITER, which solves the task by predicting the target object and the\ndestination individually using a single model. Our method is validated on a\nnewly-built dataset consisting of object manipulation instructions and semi\nphoto-realistic images captured in a standard Embodied AI simulator. The\nresults show that our method outperforms the baseline method in terms of\nlanguage comprehension accuracy. Furthermore, we conduct physical experiments\nin which a DSR delivers standardized everyday objects in a standardized\ndomestic environment as requested by instructions with referring expressions.\nThe experimental results show that the object grasping and placing actions are\nachieved with success rates of more than 90%.\n",
+        "published": "2023",
+        "authors": [
+            "Ryosuke Korekata",
+            "Motonari Kambara",
+            "Yu Yoshida",
+            "Shintaro Ishikawa",
+            "Yosuke Kawasaki",
+            "Masaki Takahashi",
+            "Komei Sugiura"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2307.08597v1",
+        "title": "Multimodal Diffusion Segmentation Model for Object Segmentation from\n  Manipulation Instructions",
+        "abstract": "  In this study, we aim to develop a model that comprehends a natural language\ninstruction (e.g., \"Go to the living room and get the nearest pillow to the\nradio art on the wall\") and generates a segmentation mask for the target\neveryday object. The task is challenging because it requires (1) the\nunderstanding of the referring expressions for multiple objects in the\ninstruction, (2) the prediction of the target phrase of the sentence among the\nmultiple phrases, and (3) the generation of pixel-wise segmentation masks\nrather than bounding boxes. Studies have been conducted on languagebased\nsegmentation methods; however, they sometimes mask irrelevant regions for\ncomplex sentences. In this paper, we propose the Multimodal Diffusion\nSegmentation Model (MDSM), which generates a mask in the first stage and\nrefines it in the second stage. We introduce a crossmodal parallel feature\nextraction mechanism and extend diffusion probabilistic models to handle\ncrossmodal features. To validate our model, we built a new dataset based on the\nwell-known Matterport3D and REVERIE datasets. This dataset consists of\ninstructions with complex referring expressions accompanied by real indoor\nenvironmental images that feature various target objects, in addition to\npixel-wise segmentation masks. The performance of MDSM surpassed that of the\nbaseline method by a large margin of +10.13 mean IoU.\n",
+        "published": "2023",
+        "authors": [
+            "Yui Iioka",
+            "Yu Yoshida",
+            "Yuiga Wada",
+            "Shumpei Hatanaka",
+            "Komei Sugiura"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2307.12045v1",
+        "title": "Revisiting Distillation for Continual Learning on Visual Question\n  Localized-Answering in Robotic Surgery",
+        "abstract": "  The visual-question localized-answering (VQLA) system can serve as a\nknowledgeable assistant in surgical education. Except for providing text-based\nanswers, the VQLA system can highlight the interested region for better\nsurgical scene understanding. However, deep neural networks (DNNs) suffer from\ncatastrophic forgetting when learning new knowledge. Specifically, when DNNs\nlearn on incremental classes or tasks, their performance on old tasks drops\ndramatically. Furthermore, due to medical data privacy and licensing issues, it\nis often difficult to access old data when updating continual learning (CL)\nmodels. Therefore, we develop a non-exemplar continual surgical VQLA framework,\nto explore and balance the rigidity-plasticity trade-off of DNNs in a\nsequential learning paradigm. We revisit the distillation loss in CL tasks, and\npropose rigidity-plasticity-aware distillation (RP-Dist) and self-calibrated\nheterogeneous distillation (SH-Dist) to preserve the old knowledge. The weight\naligning (WA) technique is also integrated to adjust the weight bias between\nold and new tasks. We further establish a CL framework on three public surgical\ndatasets in the context of surgical settings that consist of overlapping\nclasses between old and new surgical VQLA tasks. With extensive experiments, we\ndemonstrate that our proposed method excellently reconciles learning and\nforgetting on the continual surgical VQLA over conventional CL methods. Our\ncode is publicly accessible.\n",
+        "published": "2023",
+        "authors": [
+            "Long Bai",
+            "Mobarakol Islam",
+            "Hongliang Ren"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2309.16898v1",
+        "title": "A Sign Language Recognition System with Pepper, Lightweight-Transformer,\n  and LLM",
+        "abstract": "  This research explores using lightweight deep neural network architectures to\nenable the humanoid robot Pepper to understand American Sign Language (ASL) and\nfacilitate non-verbal human-robot interaction. First, we introduce a\nlightweight and efficient model for ASL understanding optimized for embedded\nsystems, ensuring rapid sign recognition while conserving computational\nresources. Building upon this, we employ large language models (LLMs) for\nintelligent robot interactions. Through intricate prompt engineering, we tailor\ninteractions to allow the Pepper Robot to generate natural Co-Speech Gesture\nresponses, laying the foundation for more organic and intuitive humanoid-robot\ndialogues. Finally, we present an integrated software pipeline, embodying\nadvancements in a socially aware AI interaction model. Leveraging the Pepper\nRobot's capabilities, we demonstrate the practicality and effectiveness of our\napproach in real-world scenarios. The results highlight a profound potential\nfor enhancing human-robot interaction through non-verbal interactions, bridging\ncommunication gaps, and making technology more accessible and understandable.\n",
+        "published": "2023",
+        "authors": [
+            "JongYoon Lim",
+            "Inkyu Sa",
+            "Bruce MacDonald",
+            "Ho Seok Ahn"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2310.12020v2",
+        "title": "LoHoRavens: A Long-Horizon Language-Conditioned Benchmark for Robotic\n  Tabletop Manipulation",
+        "abstract": "  The convergence of embodied agents and large language models (LLMs) has\nbrought significant advancements to embodied instruction following.\nParticularly, the strong reasoning capabilities of LLMs make it possible for\nrobots to perform long-horizon tasks without expensive annotated\ndemonstrations. However, public benchmarks for testing the long-horizon\nreasoning capabilities of language-conditioned robots in various scenarios are\nstill missing. To fill this gap, this work focuses on the tabletop manipulation\ntask and releases a simulation benchmark, \\textit{LoHoRavens}, which covers\nvarious long-horizon reasoning aspects spanning color, size, space, arithmetics\nand reference. Furthermore, there is a key modality bridging problem for\nlong-horizon manipulation tasks with LLMs: how to incorporate the observation\nfeedback during robot execution for the LLM's closed-loop planning, which is\nhowever less studied by prior work. We investigate two methods of bridging the\nmodality gap: caption generation and learnable interface for incorporating\nexplicit and implicit observation feedback to the LLM, respectively. These\nmethods serve as the two baselines for our proposed benchmark. Experiments show\nthat both methods struggle to solve some tasks, indicating long-horizon\nmanipulation tasks are still challenging for current popular models. We expect\nthe proposed public benchmark and baselines can help the community develop\nbetter models for long-horizon tabletop manipulation tasks.\n",
+        "published": "2023",
+        "authors": [
+            "Shengqiang Zhang",
+            "Philipp Wicke",
+            "L\u00fctfi Kerem \u015eenel",
+            "Luis Figueredo",
+            "Abdeldjallil Naceri",
+            "Sami Haddadin",
+            "Barbara Plank",
+            "Hinrich Sch\u00fctze"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2311.06855v1",
+        "title": "DialMAT: Dialogue-Enabled Transformer with Moment-Based Adversarial\n  Training",
+        "abstract": "  This paper focuses on the DialFRED task, which is the task of embodied\ninstruction following in a setting where an agent can actively ask questions\nabout the task. To address this task, we propose DialMAT. DialMAT introduces\nMoment-based Adversarial Training, which incorporates adversarial perturbations\ninto the latent space of language, image, and action. Additionally, it\nintroduces a crossmodal parallel feature extraction mechanism that applies\nfoundation models to both language and image. We evaluated our model using a\ndataset constructed from the DialFRED dataset and demonstrated superior\nperformance compared to the baseline method in terms of success rate and path\nweighted success rate. The model secured the top position in the DialFRED\nChallenge, which took place at the CVPR 2023 Embodied AI workshop.\n",
+        "published": "2023",
+        "authors": [
+            "Kanta Kaneda",
+            "Ryosuke Korekata",
+            "Yuiga Wada",
+            "Shunya Nagashima",
+            "Motonari Kambara",
+            "Yui Iioka",
+            "Haruka Matsuo",
+            "Yuto Imai",
+            "Takayuki Nishimura",
+            "Komei Sugiura"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2311.10883v1",
+        "title": "Labeling Indoor Scenes with Fusion of Out-of-the-Box Perception Models",
+        "abstract": "  The image annotation stage is a critical and often the most time-consuming\npart required for training and evaluating object detection and semantic\nsegmentation models. Deployment of the existing models in novel environments\noften requires detecting novel semantic classes not present in the training\ndata. Furthermore, indoor scenes contain significant viewpoint variations,\nwhich need to be handled properly by trained perception models. We propose to\nleverage the recent advancements in state-of-the-art models for bottom-up\nsegmentation (SAM), object detection (Detic), and semantic segmentation\n(MaskFormer), all trained on large-scale datasets. We aim to develop a\ncost-effective labeling approach to obtain pseudo-labels for semantic\nsegmentation and object instance detection in indoor environments, with the\nultimate goal of facilitating the training of lightweight models for various\ndownstream tasks. We also propose a multi-view labeling fusion stage, which\nconsiders the setting where multiple views of the scenes are available and can\nbe used to identify and rectify single-view inconsistencies. We demonstrate the\neffectiveness of the proposed approach on the Active Vision dataset and the\nADE20K dataset. We evaluate the quality of our labeling process by comparing it\nwith human annotations. Also, we demonstrate the effectiveness of the obtained\nlabels in downstream tasks such as object goal navigation and part discovery.\nIn the context of object goal navigation, we depict enhanced performance using\nthis fusion approach compared to a zero-shot baseline that utilizes large\nmonolithic vision-language pre-trained models.\n",
+        "published": "2023",
+        "authors": [
+            "Yimeng Li",
+            "Navid Rajabi",
+            "Sulabh Shrestha",
+            "Md Alimoor Reza",
+            "Jana Kosecka"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2311.12015v1",
+        "title": "GPT-4V(ision) for Robotics: Multimodal Task Planning from Human\n  Demonstration",
+        "abstract": "  We introduce a pipeline that enhances a general-purpose Vision Language\nModel, GPT-4V(ision), by integrating observations of human actions to\nfacilitate robotic manipulation. This system analyzes videos of humans\nperforming tasks and creates executable robot programs that incorporate\naffordance insights. The computation starts by analyzing the videos with GPT-4V\nto convert environmental and action details into text, followed by a\nGPT-4-empowered task planner. In the following analyses, vision systems\nreanalyze the video with the task plan. Object names are grounded using an\nopen-vocabulary object detector, while focus on the hand-object relation helps\nto detect the moment of grasping and releasing. This spatiotemporal grounding\nallows the vision systems to further gather affordance data (e.g., grasp type,\nway points, and body postures). Experiments across various scenarios\ndemonstrate this method's efficacy in achieving real robots' operations from\nhuman demonstrations in a zero-shot manner. The prompts of GPT-4V/GPT-4 are\navailable at this project page:\nhttps://microsoft.github.io/GPT4Vision-Robot-Manipulation-Prompts/\n",
+        "published": "2023",
+        "authors": [
+            "Naoki Wake",
+            "Atsushi Kanehira",
+            "Kazuhiro Sasabuchi",
+            "Jun Takamatsu",
+            "Katsushi Ikeuchi"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/cs/9905013v1",
+        "title": "Robust Combining of Disparate Classifiers through Order Statistics",
+        "abstract": "  Integrating the outputs of multiple classifiers via combiners or\nmeta-learners has led to substantial improvements in several difficult pattern\nrecognition problems. In the typical setting investigated till now, each\nclassifier is trained on data taken or resampled from a common data set, or\n(almost) randomly selected subsets thereof, and thus experiences similar\nquality of training data. However, in certain situations where data is acquired\nand analyzed on-line at several geographically distributed locations, the\nquality of data may vary substantially, leading to large discrepancies in\nperformance of individual classifiers. In this article we introduce and\ninvestigate a family of classifiers based on order statistics, for robust\nhandling of such cases. Based on a mathematical modeling of how the decision\nboundaries are affected by order statistic combiners, we derive expressions for\nthe reductions in error expected when such combiners are used. We show\nanalytically that the selection of the median, the maximum and in general, the\n$i^{th}$ order statistic improves classification performance. Furthermore, we\nintroduce the trim and spread combiners, both based on linear combinations of\nthe ordered classifier outputs, and show that they are quite beneficial in\npresence of outliers or uneven classifier performance. Experimental results on\nseveral public domain data sets corroborate these findings.\n",
+        "published": "1999",
+        "authors": [
+            "Kagan Tumer",
+            "Joydeep Ghosh"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1009.3589v1",
+        "title": "Deep Self-Taught Learning for Handwritten Character Recognition",
+        "abstract": "  Recent theoretical and empirical work in statistical machine learning has\ndemonstrated the importance of learning algorithms for deep architectures,\ni.e., function classes obtained by composing multiple non-linear\ntransformations. Self-taught learning (exploiting unlabeled examples or\nexamples from other distributions) has already been applied to deep learners,\nbut mostly to show the advantage of unlabeled examples. Here we explore the\nadvantage brought by {\\em out-of-distribution examples}. For this purpose we\ndeveloped a powerful generator of stochastic variations and noise processes for\ncharacter images, including not only affine transformations but also slant,\nlocal elastic deformations, changes in thickness, background images, grey level\nchanges, contrast, occlusion, and various types of noise. The\nout-of-distribution examples are obtained from these highly distorted images or\nby including examples of object classes different from those in the target test\nset. We show that {\\em deep learners benefit more from out-of-distribution\nexamples than a corresponding shallow learner}, at least in the area of\nhandwritten character recognition. In fact, we show that they beat previously\npublished results and reach human-level performance on both handwritten digit\nclassification and 62-class handwritten character recognition.\n",
+        "published": "2010",
+        "authors": [
+            "Fr\u00e9d\u00e9ric Bastien",
+            "Yoshua Bengio",
+            "Arnaud Bergeron",
+            "Nicolas Boulanger-Lewandowski",
+            "Thomas Breuel",
+            "Youssouf Chherawala",
+            "Moustapha Cisse",
+            "Myriam C\u00f4t\u00e9",
+            "Dumitru Erhan",
+            "Jeremy Eustache",
+            "Xavier Glorot",
+            "Xavier Muller",
+            "Sylvain Pannetier Lebeuf",
+            "Razvan Pascanu",
+            "Salah Rifai",
+            "Francois Savard",
+            "Guillaume Sicard"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1204.3968v1",
+        "title": "Convolutional Neural Networks Applied to House Numbers Digit\n  Classification",
+        "abstract": "  We classify digits of real-world house numbers using convolutional neural\nnetworks (ConvNets). ConvNets are hierarchical feature learning neural networks\nwhose structure is biologically inspired. Unlike many popular vision approaches\nthat are hand-designed, ConvNets can automatically learn a unique set of\nfeatures optimized for a given task. We augmented the traditional ConvNet\narchitecture by learning multi-stage features and by using Lp pooling and\nestablish a new state-of-the-art of 94.85% accuracy on the SVHN dataset (45.2%\nerror improvement). Furthermore, we analyze the benefits of different pooling\nmethods and multi-stage features in ConvNets. The source code and a tutorial\nare available at eblearn.sf.net.\n",
+        "published": "2012",
+        "authors": [
+            "Pierre Sermanet",
+            "Soumith Chintala",
+            "Yann LeCun"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1207.0580v1",
+        "title": "Improving neural networks by preventing co-adaptation of feature\n  detectors",
+        "abstract": "  When a large feedforward neural network is trained on a small training set,\nit typically performs poorly on held-out test data. This \"overfitting\" is\ngreatly reduced by randomly omitting half of the feature detectors on each\ntraining case. This prevents complex co-adaptations in which a feature detector\nis only helpful in the context of several other specific feature detectors.\nInstead, each neuron learns to detect a feature that is generally helpful for\nproducing the correct answer given the combinatorially large variety of\ninternal contexts in which it must operate. Random \"dropout\" gives big\nimprovements on many benchmark tasks and sets new records for speech and object\nrecognition.\n",
+        "published": "2012",
+        "authors": [
+            "Geoffrey E. Hinton",
+            "Nitish Srivastava",
+            "Alex Krizhevsky",
+            "Ilya Sutskever",
+            "Ruslan R. Salakhutdinov"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1207.5774v3",
+        "title": "A New Training Algorithm for Kanerva's Sparse Distributed Memory",
+        "abstract": "  The Sparse Distributed Memory proposed by Pentii Kanerva (SDM in short) was\nthought to be a model of human long term memory. The architecture of the SDM\npermits to store binary patterns and to retrieve them using partially matching\npatterns. However Kanerva's model is especially efficient only in handling\nrandom data. The purpose of this article is to introduce a new approach of\ntraining Kanerva's SDM that can handle efficiently non-random data, and to\nprovide it the capability to recognize inverted patterns. This approach uses a\nsignal model which is different from the one proposed for different purposes by\nHely, Willshaw and Hayes in [4]. This article additionally suggests a different\nway of creating hard locations in the memory despite the Kanerva's static\nmodel.\n",
+        "published": "2012",
+        "authors": [
+            "Lou Marvin Caraig"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1311.6881v1",
+        "title": "Color and Shape Content Based Image Classification using RBF Network and\n  PSO Technique: A Survey",
+        "abstract": "  The improvement of the accuracy of image query retrieval used image\nclassification technique. Image classification is well known technique of\nsupervised learning. The improved method of image classification increases the\nworking efficiency of image query retrieval. For the improvements of\nclassification technique we used RBF neural network function for better\nprediction of feature used in image retrieval.Colour content is represented by\npixel values in image classification using radial base function(RBF) technique.\nThis approach provides better result compare to SVM technique in image\nrepresentation.Image is represented by matrix though RBF using pixel values of\ncolour intensity of image. Firstly we using RGB colour model. In this colour\nmodel we use red, green and blue colour intensity values in matrix.SVM with\npartical swarm optimization for image classification is implemented in content\nof images which provide better Results based on the proposed approach are found\nencouraging in terms of color image classification accuracy.\n",
+        "published": "2013",
+        "authors": [
+            "Abhishek Pandey",
+            "Anjna Jayant Deen",
+            "Rajeev Pandey"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1311.7251v1",
+        "title": "Spatially-Adaptive Reconstruction in Computed Tomography using Neural\n  Networks",
+        "abstract": "  We propose a supervised machine learning approach for boosting existing\nsignal and image recovery methods and demonstrate its efficacy on example of\nimage reconstruction in computed tomography. Our technique is based on a local\nnonlinear fusion of several image estimates, all obtained by applying a chosen\nreconstruction algorithm with different values of its control parameters.\nUsually such output images have different bias/variance trade-off. The fusion\nof the images is performed by feed-forward neural network trained on a set of\nknown examples. Numerical experiments show an improvement in reconstruction\nquality relatively to existing direct and iterative reconstruction methods.\n",
+        "published": "2013",
+        "authors": [
+            "Joseph Shtok",
+            "Michael Zibulevsky",
+            "Michael Elad"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1312.4384v1",
+        "title": "Rectifying Self Organizing Maps for Automatic Concept Learning from Web\n  Images",
+        "abstract": "  We attack the problem of learning concepts automatically from noisy web image\nsearch results. Going beyond low level attributes, such as colour and texture,\nwe explore weakly-labelled datasets for the learning of higher level concepts,\nsuch as scene categories. The idea is based on discovering common\ncharacteristics shared among subsets of images by posing a method that is able\nto organise the data while eliminating irrelevant instances. We propose a novel\nclustering and outlier detection method, namely Rectifying Self Organizing Maps\n(RSOM). Given an image collection returned for a concept query, RSOM provides\nclusters pruned from outliers. Each cluster is used to train a model\nrepresenting a different characteristics of the concept. The proposed method\noutperforms the state-of-the-art studies on the task of learning low-level\nconcepts, and it is competitive in learning higher level concepts as well. It\nis capable to work at large scale with no supervision through exploiting the\navailable sources.\n",
+        "published": "2013",
+        "authors": [
+            "Eren Golge",
+            "Pinar Duygulu"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1312.4400v3",
+        "title": "Network In Network",
+        "abstract": "  We propose a novel deep network structure called \"Network In Network\" (NIN)\nto enhance model discriminability for local patches within the receptive field.\nThe conventional convolutional layer uses linear filters followed by a\nnonlinear activation function to scan the input. Instead, we build micro neural\nnetworks with more complex structures to abstract the data within the receptive\nfield. We instantiate the micro neural network with a multilayer perceptron,\nwhich is a potent function approximator. The feature maps are obtained by\nsliding the micro networks over the input in a similar manner as CNN; they are\nthen fed into the next layer. Deep NIN can be implemented by stacking mutiple\nof the above described structure. With enhanced local modeling via the micro\nnetwork, we are able to utilize global average pooling over feature maps in the\nclassification layer, which is easier to interpret and less prone to\noverfitting than traditional fully connected layers. We demonstrated the\nstate-of-the-art classification performances with NIN on CIFAR-10 and\nCIFAR-100, and reasonable performances on SVHN and MNIST datasets.\n",
+        "published": "2013",
+        "authors": [
+            "Min Lin",
+            "Qiang Chen",
+            "Shuicheng Yan"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1312.4569v2",
+        "title": "Dropout improves Recurrent Neural Networks for Handwriting Recognition",
+        "abstract": "  Recurrent neural networks (RNNs) with Long Short-Term memory cells currently\nhold the best known results in unconstrained handwriting recognition. We show\nthat their performance can be greatly improved using dropout - a recently\nproposed regularization method for deep architectures. While previous works\nshowed that dropout gave superior performance in the context of convolutional\nnetworks, it had never been applied to RNNs. In our approach, dropout is\ncarefully used in the network so that it does not affect the recurrent\nconnections, hence the power of RNNs in modeling sequence is preserved.\nExtensive experiments on a broad range of handwritten databases confirm the\neffectiveness of dropout on deep architectures even when the network mainly\nconsists of recurrent and shared connections.\n",
+        "published": "2013",
+        "authors": [
+            "Vu Pham",
+            "Th\u00e9odore Bluche",
+            "Christopher Kermorvant",
+            "J\u00e9r\u00f4me Louradour"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1312.5242v3",
+        "title": "Unsupervised feature learning by augmenting single images",
+        "abstract": "  When deep learning is applied to visual object recognition, data augmentation\nis often used to generate additional training data without extra labeling cost.\nIt helps to reduce overfitting and increase the performance of the algorithm.\nIn this paper we investigate if it is possible to use data augmentation as the\nmain component of an unsupervised feature learning architecture. To that end we\nsample a set of random image patches and declare each of them to be a separate\nsingle-image surrogate class. We then extend these trivial one-element classes\nby applying a variety of transformations to the initial 'seed' patches. Finally\nwe train a convolutional neural network to discriminate between these surrogate\nclasses. The feature representation learned by the network can then be used in\nvarious vision tasks. We find that this simple feature learning algorithm is\nsurprisingly successful, achieving competitive classification results on\nseveral popular vision datasets (STL-10, CIFAR-10, Caltech-101).\n",
+        "published": "2013",
+        "authors": [
+            "Alexey Dosovitskiy",
+            "Jost Tobias Springenberg",
+            "Thomas Brox"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1312.5783v1",
+        "title": "Unsupervised Feature Learning by Deep Sparse Coding",
+        "abstract": "  In this paper, we propose a new unsupervised feature learning framework,\nnamely Deep Sparse Coding (DeepSC), that extends sparse coding to a multi-layer\narchitecture for visual object recognition tasks. The main innovation of the\nframework is that it connects the sparse-encoders from different layers by a\nsparse-to-dense module. The sparse-to-dense module is a composition of a local\nspatial pooling step and a low-dimensional embedding process, which takes\nadvantage of the spatial smoothness information in the image. As a result, the\nnew method is able to learn several levels of sparse representation of the\nimage which capture features at a variety of abstraction levels and\nsimultaneously preserve the spatial smoothness between the neighboring image\npatches. Combining the feature representations from multiple layers, DeepSC\nachieves the state-of-the-art performance on multiple object recognition tasks.\n",
+        "published": "2013",
+        "authors": [
+            "Yunlong He",
+            "Koray Kavukcuoglu",
+            "Yun Wang",
+            "Arthur Szlam",
+            "Yanjun Qi"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1312.5851v5",
+        "title": "Fast Training of Convolutional Networks through FFTs",
+        "abstract": "  Convolutional networks are one of the most widely employed architectures in\ncomputer vision and machine learning. In order to leverage their ability to\nlearn complex functions, large amounts of data are required for training.\nTraining a large convolutional network to produce state-of-the-art results can\ntake weeks, even when using modern GPUs. Producing labels using a trained\nnetwork can also be costly when dealing with web-scale datasets. In this work,\nwe present a simple algorithm which accelerates training and inference by a\nsignificant factor, and can yield improvements of over an order of magnitude\ncompared to existing state-of-the-art implementations. This is done by\ncomputing convolutions as pointwise products in the Fourier domain while\nreusing the same transformed feature map many times. The algorithm is\nimplemented on a GPU architecture and addresses a number of related challenges.\n",
+        "published": "2013",
+        "authors": [
+            "Michael Mathieu",
+            "Mikael Henaff",
+            "Yann LeCun"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1312.6158v2",
+        "title": "Deep Belief Networks for Image Denoising",
+        "abstract": "  Deep Belief Networks which are hierarchical generative models are effective\ntools for feature representation and extraction. Furthermore, DBNs can be used\nin numerous aspects of Machine Learning such as image denoising. In this paper,\nwe propose a novel method for image denoising which relies on the DBNs' ability\nin feature representation. This work is based upon learning of the noise\nbehavior. Generally, features which are extracted using DBNs are presented as\nthe values of the last layer nodes. We train a DBN a way that the network\ntotally distinguishes between nodes presenting noise and nodes presenting image\ncontent in the last later of DBN, i.e. the nodes in the last layer of trained\nDBN are divided into two distinct groups of nodes. After detecting the nodes\nwhich are presenting the noise, we are able to make the noise nodes inactive\nand reconstruct a noiseless image. In section 4 we explore the results of\napplying this method on the MNIST dataset of handwritten digits which is\ncorrupted with additive white Gaussian noise (AWGN). A reduction of 65.9% in\naverage mean square error (MSE) was achieved when the proposed method was used\nfor the reconstruction of the noisy images.\n",
+        "published": "2013",
+        "authors": [
+            "Mohammad Ali Keyvanrad",
+            "Mohammad Pezeshki",
+            "Mohammad Ali Homayounpour"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1312.6171v2",
+        "title": "Learning Paired-associate Images with An Unsupervised Deep Learning\n  Architecture",
+        "abstract": "  This paper presents an unsupervised multi-modal learning system that learns\nassociative representation from two input modalities, or channels, such that\ninput on one channel will correctly generate the associated response at the\nother and vice versa. In this way, the system develops a kind of supervised\nclassification model meant to simulate aspects of human associative memory. The\nsystem uses a deep learning architecture (DLA) composed of two input/output\nchannels formed from stacked Restricted Boltzmann Machines (RBM) and an\nassociative memory network that combines the two channels. The DLA is trained\non pairs of MNIST handwritten digit images to develop hierarchical features and\nassociative representations that are able to reconstruct one image given its\npaired-associate. Experiments show that the multi-modal learning system\ngenerates models that are as accurate as back-propagation networks but with the\nadvantage of a bi-directional network and unsupervised learning from either\npaired or non-paired training examples.\n",
+        "published": "2013",
+        "authors": [
+            "Ti Wang",
+            "Daniel L. Silver"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1312.6186v1",
+        "title": "GPU Asynchronous Stochastic Gradient Descent to Speed Up Neural Network\n  Training",
+        "abstract": "  The ability to train large-scale neural networks has resulted in\nstate-of-the-art performance in many areas of computer vision. These results\nhave largely come from computational break throughs of two forms: model\nparallelism, e.g. GPU accelerated training, which has seen quick adoption in\ncomputer vision circles, and data parallelism, e.g. A-SGD, whose large scale\nhas been used mostly in industry. We report early experiments with a system\nthat makes use of both model parallelism and data parallelism, we call GPU\nA-SGD. We show using GPU A-SGD it is possible to speed up training of large\nconvolutional neural networks useful for computer vision. We believe GPU A-SGD\nwill make it possible to train larger networks on larger training sets in a\nreasonable amount of time.\n",
+        "published": "2013",
+        "authors": [
+            "Thomas Paine",
+            "Hailin Jin",
+            "Jianchao Yang",
+            "Zhe Lin",
+            "Thomas Huang"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1312.6199v4",
+        "title": "Intriguing properties of neural networks",
+        "abstract": "  Deep neural networks are highly expressive models that have recently achieved\nstate of the art performance on speech and visual recognition tasks. While\ntheir expressiveness is the reason they succeed, it also causes them to learn\nuninterpretable solutions that could have counter-intuitive properties. In this\npaper we report two such properties.\n  First, we find that there is no distinction between individual high level\nunits and random linear combinations of high level units, according to various\nmethods of unit analysis. It suggests that it is the space, rather than the\nindividual units, that contains of the semantic information in the high layers\nof neural networks.\n  Second, we find that deep neural networks learn input-output mappings that\nare fairly discontinuous to a significant extend. We can cause the network to\nmisclassify an image by applying a certain imperceptible perturbation, which is\nfound by maximizing the network's prediction error. In addition, the specific\nnature of these perturbations is not a random artifact of learning: the same\nperturbation can cause a different network, that was trained on a different\nsubset of the dataset, to misclassify the same input.\n",
+        "published": "2013",
+        "authors": [
+            "Christian Szegedy",
+            "Wojciech Zaremba",
+            "Ilya Sutskever",
+            "Joan Bruna",
+            "Dumitru Erhan",
+            "Ian Goodfellow",
+            "Rob Fergus"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1312.6203v3",
+        "title": "Spectral Networks and Locally Connected Networks on Graphs",
+        "abstract": "  Convolutional Neural Networks are extremely efficient architectures in image\nand audio recognition tasks, thanks to their ability to exploit the local\ntranslational invariance of signal classes over their domain. In this paper we\nconsider possible generalizations of CNNs to signals defined on more general\ndomains without the action of a translation group. In particular, we propose\ntwo constructions, one based upon a hierarchical clustering of the domain, and\nanother based on the spectrum of the graph Laplacian. We show through\nexperiments that for low-dimensional graphs it is possible to learn\nconvolutional layers with a number of parameters independent of the input size,\nresulting in efficient deep architectures.\n",
+        "published": "2013",
+        "authors": [
+            "Joan Bruna",
+            "Wojciech Zaremba",
+            "Arthur Szlam",
+            "Yann LeCun"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1312.6204v2",
+        "title": "One-Shot Adaptation of Supervised Deep Convolutional Models",
+        "abstract": "  Dataset bias remains a significant barrier towards solving real world\ncomputer vision tasks. Though deep convolutional networks have proven to be a\ncompetitive approach for image classification, a question remains: have these\nmodels have solved the dataset bias problem? In general, training or\nfine-tuning a state-of-the-art deep model on a new domain requires a\nsignificant amount of data, which for many applications is simply not\navailable. Transfer of models directly to new domains without adaptation has\nhistorically led to poor recognition performance. In this paper, we pose the\nfollowing question: is a single image dataset, much larger than previously\nexplored for adaptation, comprehensive enough to learn general deep models that\nmay be effectively applied to new image domains? In other words, are deep CNNs\ntrained on large amounts of labeled data as susceptible to dataset bias as\nprevious methods have been shown to be? We show that a generic supervised deep\nCNN model trained on a large dataset reduces, but does not remove, dataset\nbias. Furthermore, we propose several methods for adaptation with deep models\nthat are able to operate with little (one example per category) or no labeled\ndomain specific data. Our experiments show that adaptation of deep models on\nbenchmark visual domain adaptation datasets can provide a significant\nperformance boost.\n",
+        "published": "2013",
+        "authors": [
+            "Judy Hoffman",
+            "Eric Tzeng",
+            "Jeff Donahue",
+            "Yangqing Jia",
+            "Kate Saenko",
+            "Trevor Darrell"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1312.6885v1",
+        "title": "Deep learning for class-generic object detection",
+        "abstract": "  We investigate the use of deep neural networks for the novel task of class\ngeneric object detection. We show that neural networks originally designed for\nimage recognition can be trained to detect objects within images, regardless of\ntheir class, including objects for which no bounding box labels have been\nprovided. In addition, we show that bounding box labels yield a 1% performance\nincrease on the ImageNet recognition challenge.\n",
+        "published": "2013",
+        "authors": [
+            "Brody Huval",
+            "Adam Coates",
+            "Andrew Ng"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1312.7302v6",
+        "title": "Learning Human Pose Estimation Features with Convolutional Networks",
+        "abstract": "  This paper introduces a new architecture for human pose estimation using a\nmulti- layer convolutional network architecture and a modified learning\ntechnique that learns low-level features and higher-level weak spatial models.\nUnconstrained human pose estimation is one of the hardest problems in computer\nvision, and our new architecture and learning schema shows significant\nimprovement over the current state-of-the-art results. The main contribution of\nthis paper is showing, for the first time, that a specific variation of deep\nlearning is able to outperform all existing traditional architectures on this\ntask. The paper also discusses several lessons learned while researching\nalternatives, most notably, that it is possible to learn strong low-level\nfeature detectors on features that might even just cover a few pixels in the\nimage. Higher-level spatial models improve somewhat the overall result, but to\na much lesser extent then expected. Many researchers previously argued that the\nkinematic structure and top-down information is crucial for this domain, but\nwith our purely bottom up, and weak spatial model, we could improve other more\ncomplicated architectures that currently produce the best results. This mirrors\nwhat many other researchers, like those in the speech recognition, object\nrecognition, and other domains have experienced.\n",
+        "published": "2013",
+        "authors": [
+            "Arjun Jain",
+            "Jonathan Tompson",
+            "Mykhaylo Andriluka",
+            "Graham W. Taylor",
+            "Christoph Bregler"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1402.2031v1",
+        "title": "Deeply Coupled Auto-encoder Networks for Cross-view Classification",
+        "abstract": "  The comparison of heterogeneous samples extensively exists in many\napplications, especially in the task of image classification. In this paper, we\npropose a simple but effective coupled neural network, called Deeply Coupled\nAutoencoder Networks (DCAN), which seeks to build two deep neural networks,\ncoupled with each other in every corresponding layers. In DCAN, each deep\nstructure is developed via stacking multiple discriminative coupled\nauto-encoders, a denoising auto-encoder trained with maximum margin criterion\nconsisting of intra-class compactness and inter-class penalty. This single\nlayer component makes our model simultaneously preserve the local consistency\nand enhance its discriminative capability. With increasing number of layers,\nthe coupled networks can gradually narrow the gap between the two views.\nExtensive experiments on cross-view image classification tasks demonstrate the\nsuperiority of our method over state-of-the-art methods.\n",
+        "published": "2014",
+        "authors": [
+            "Wen Wang",
+            "Zhen Cui",
+            "Hong Chang",
+            "Shiguang Shan",
+            "Xilin Chen"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1405.6137v1",
+        "title": "An enhanced neural network based approach towards object extraction",
+        "abstract": "  The improvements in spectral and spatial resolution of the satellite images\nhave facilitated the automatic extraction and identification of the features\nfrom satellite images and aerial photographs. An automatic object extraction\nmethod is presented for extracting and identifying the various objects from\nsatellite images and the accuracy of the system is verified with regard to IRS\nsatellite images. The system is based on neural network and simulates the\nprocess of visual interpretation from remote sensing images and hence increases\nthe efficiency of image analysis. This approach obtains the basic\ncharacteristics of the various features and the performance is enhanced by the\nautomatic learning approach, intelligent interpretation, and intelligent\ninterpolation. The major advantage of the method is its simplicity and that the\nsystem identifies the features not only based on pixel value but also based on\nthe shape, haralick features etc of the objects. Further the system allows\nflexibility for identifying the features within the same category based on size\nand shape. The successful application of the system verified its effectiveness\nand the accuracy of the system were assessed by ground truth verification.\n",
+        "published": "2014",
+        "authors": [
+            "S. K. Katiyar",
+            "P. V. Arun"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1407.3068v2",
+        "title": "Deep Networks with Internal Selective Attention through Feedback\n  Connections",
+        "abstract": "  Traditional convolutional neural networks (CNN) are stationary and\nfeedforward. They neither change their parameters during evaluation nor use\nfeedback from higher to lower layers. Real brains, however, do. So does our\nDeep Attention Selective Network (dasNet) architecture. DasNets feedback\nstructure can dynamically alter its convolutional filter sensitivities during\nclassification. It harnesses the power of sequential processing to improve\nclassification performance, by allowing the network to iteratively focus its\ninternal attention on some of its convolutional filters. Feedback is trained\nthrough direct policy search in a huge million-dimensional parameter space,\nthrough scalable natural evolution strategies (SNES). On the CIFAR-10 and\nCIFAR-100 datasets, dasNet outperforms the previous state-of-the-art model.\n",
+        "published": "2014",
+        "authors": [
+            "Marijn Stollenga",
+            "Jonathan Masci",
+            "Faustino Gomez",
+            "Juergen Schmidhuber"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1407.4764v3",
+        "title": "Efficient On-the-fly Category Retrieval using ConvNets and GPUs",
+        "abstract": "  We investigate the gains in precision and speed, that can be obtained by\nusing Convolutional Networks (ConvNets) for on-the-fly retrieval - where\nclassifiers are learnt at run time for a textual query from downloaded images,\nand used to rank large image or video datasets.\n  We make three contributions: (i) we present an evaluation of state-of-the-art\nimage representations for object category retrieval over standard benchmark\ndatasets containing 1M+ images; (ii) we show that ConvNets can be used to\nobtain features which are incredibly performant, and yet much lower dimensional\nthan previous state-of-the-art image representations, and that their\ndimensionality can be reduced further without loss in performance by\ncompression using product quantization or binarization. Consequently, features\nwith the state-of-the-art performance on large-scale datasets of millions of\nimages can fit in the memory of even a commodity GPU card; (iii) we show that\nan SVM classifier can be learnt within a ConvNet framework on a GPU in parallel\nwith downloading the new training images, allowing for a continuous refinement\nof the model as more images become available, and simultaneous training and\nranking. The outcome is an on-the-fly system that significantly outperforms its\npredecessors in terms of: precision of retrieval, memory requirements, and\nspeed, facilitating accurate on-the-fly learning and ranking in under a second\non a single GPU.\n",
+        "published": "2014",
+        "authors": [
+            "Ken Chatfield",
+            "Karen Simonyan",
+            "Andrew Zisserman"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1407.4979v1",
+        "title": "Deep Metric Learning for Practical Person Re-Identification",
+        "abstract": "  Various hand-crafted features and metric learning methods prevail in the\nfield of person re-identification. Compared to these methods, this paper\nproposes a more general way that can learn a similarity metric from image\npixels directly. By using a \"siamese\" deep neural network, the proposed method\ncan jointly learn the color feature, texture feature and metric in a unified\nframework. The network has a symmetry structure with two sub-networks which are\nconnected by Cosine function. To deal with the big variations of person images,\nbinomial deviance is used to evaluate the cost between similarities and labels,\nwhich is proved to be robust to outliers.\n  Compared to existing researches, a more practical setting is studied in the\nexperiments that is training and test on different datasets (cross dataset\nperson re-identification). Both in \"intra dataset\" and \"cross dataset\"\nsettings, the superiorities of the proposed method are illustrated on VIPeR and\nPRID.\n",
+        "published": "2014",
+        "authors": [
+            "Dong Yi",
+            "Zhen Lei",
+            "Stan Z. Li"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1408.2938v1",
+        "title": "Learning Multi-Scale Representations for Material Classification",
+        "abstract": "  The recent progress in sparse coding and deep learning has made unsupervised\nfeature learning methods a strong competitor to hand-crafted descriptors. In\ncomputer vision, success stories of learned features have been predominantly\nreported for object recognition tasks. In this paper, we investigate if and how\nfeature learning can be used for material recognition. We propose two\nstrategies to incorporate scale information into the learning procedure\nresulting in a novel multi-scale coding procedure. Our results show that our\nlearned features for material recognition outperform hand-crafted descriptors\non the FMD and the KTH-TIPS2 material classification benchmarks.\n",
+        "published": "2014",
+        "authors": [
+            "Wenbin Li",
+            "Mario Fritz"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1408.3264v7",
+        "title": "A brief survey on deep belief networks and introducing a new object\n  oriented toolbox (DeeBNet)",
+        "abstract": "  Nowadays, this is very popular to use the deep architectures in machine\nlearning. Deep Belief Networks (DBNs) are deep architectures that use stack of\nRestricted Boltzmann Machines (RBM) to create a powerful generative model using\ntraining data. DBNs have many ability like feature extraction and\nclassification that are used in many applications like image processing, speech\nprocessing and etc. This paper introduces a new object oriented MATLAB toolbox\nwith most of abilities needed for the implementation of DBNs. In the new\nversion, the toolbox can be used in Octave. According to the results of the\nexperiments conducted on MNIST (image), ISOLET (speech), and 20 Newsgroups\n(text) datasets, it was shown that the toolbox can learn automatically a good\nrepresentation of the input from unlabeled data with better discrimination\nbetween different classes. Also on all datasets, the obtained classification\nerrors are comparable to those of state of the art classifiers. In addition,\nthe toolbox supports different sampling methods (e.g. Gibbs, CD, PCD and our\nnew FEPCD method), different sparsity methods (quadratic, rate distortion and\nour new normal method), different RBM types (generative and discriminative),\nusing GPU, etc. The toolbox is a user-friendly open source software and is\nfreely available on the website\nhttp://ceit.aut.ac.ir/~keyvanrad/DeeBNet%20Toolbox.html .\n",
+        "published": "2014",
+        "authors": [
+            "Mohammad Ali Keyvanrad",
+            "Mohammad Mehdi Homayounpour"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1408.3750v1",
+        "title": "Real-time emotion recognition for gaming using deep convolutional\n  network features",
+        "abstract": "  The goal of the present study is to explore the application of deep\nconvolutional network features to emotion recognition. Results indicate that\nthey perform similarly to other published models at a best recognition rate of\n94.4%, and do so with a single still image rather than a video stream. An\nimplementation of an affective feedback game is also described, where a\nclassifier using these features tracks the facial expressions of a player in\nreal-time.\n",
+        "published": "2014",
+        "authors": [
+            "S\u00e9bastien Ouellet"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1408.5093v1",
+        "title": "Caffe: Convolutional Architecture for Fast Feature Embedding",
+        "abstract": "  Caffe provides multimedia scientists and practitioners with a clean and\nmodifiable framework for state-of-the-art deep learning algorithms and a\ncollection of reference models. The framework is a BSD-licensed C++ library\nwith Python and MATLAB bindings for training and deploying general-purpose\nconvolutional neural networks and other deep models efficiently on commodity\narchitectures. Caffe fits industry and internet-scale media needs by CUDA GPU\ncomputation, processing over 40 million images a day on a single K40 or Titan\nGPU ($\\approx$ 2.5 ms per image). By separating model representation from\nactual implementation, Caffe allows experimentation and seamless switching\namong platforms for ease of development and deployment from prototyping\nmachines to cloud environments. Caffe is maintained and developed by the\nBerkeley Vision and Learning Center (BVLC) with the help of an active community\nof contributors on GitHub. It powers ongoing research projects, large-scale\nindustrial applications, and startup prototypes in vision, speech, and\nmultimedia.\n",
+        "published": "2014",
+        "authors": [
+            "Yangqing Jia",
+            "Evan Shelhamer",
+            "Jeff Donahue",
+            "Sergey Karayev",
+            "Jonathan Long",
+            "Ross Girshick",
+            "Sergio Guadarrama",
+            "Trevor Darrell"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1409.3970v3",
+        "title": "A Deep and Autoregressive Approach for Topic Modeling of Multimodal Data",
+        "abstract": "  Topic modeling based on latent Dirichlet allocation (LDA) has been a\nframework of choice to deal with multimodal data, such as in image annotation\ntasks. Another popular approach to model the multimodal data is through deep\nneural networks, such as the deep Boltzmann machine (DBM). Recently, a new type\nof topic model called the Document Neural Autoregressive Distribution Estimator\n(DocNADE) was proposed and demonstrated state-of-the-art performance for text\ndocument modeling. In this work, we show how to successfully apply and extend\nthis model to multimodal data, such as simultaneous image classification and\nannotation. First, we propose SupDocNADE, a supervised extension of DocNADE,\nthat increases the discriminative power of the learned hidden topic features\nand show how to employ it to learn a joint representation from image visual\nwords, annotation words and class label information. We test our model on the\nLabelMe and UIUC-Sports data sets and show that it compares favorably to other\ntopic models. Second, we propose a deep extension of our model and provide an\nefficient way of training the deep model. Experimental results show that our\ndeep model outperforms its shallow version and reaches state-of-the-art\nperformance on the Multimedia Information Retrieval (MIR) Flickr data set.\n",
+        "published": "2014",
+        "authors": [
+            "Yin Zheng",
+            "Yu-Jin Zhang",
+            "Hugo Larochelle"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1409.4326v2",
+        "title": "Computing the Stereo Matching Cost with a Convolutional Neural Network",
+        "abstract": "  We present a method for extracting depth information from a rectified image\npair. We train a convolutional neural network to predict how well two image\npatches match and use it to compute the stereo matching cost. The cost is\nrefined by cross-based cost aggregation and semiglobal matching, followed by a\nleft-right consistency check to eliminate errors in the occluded regions. Our\nstereo method achieves an error rate of 2.61 % on the KITTI stereo dataset and\nis currently (August 2014) the top performing method on this dataset.\n",
+        "published": "2014",
+        "authors": [
+            "Jure \u017dbontar",
+            "Yann LeCun"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1409.7963v1",
+        "title": "MoDeep: A Deep Learning Framework Using Motion Features for Human Pose\n  Estimation",
+        "abstract": "  In this work, we propose a novel and efficient method for articulated human\npose estimation in videos using a convolutional network architecture, which\nincorporates both color and motion features. We propose a new human body pose\ndataset, FLIC-motion, that extends the FLIC dataset with additional motion\nfeatures. We apply our architecture to this dataset and report significantly\nbetter performance than current state-of-the-art pose detection systems.\n",
+        "published": "2014",
+        "authors": [
+            "Arjun Jain",
+            "Jonathan Tompson",
+            "Yann LeCun",
+            "Christoph Bregler"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1410.8586v1",
+        "title": "DeepSentiBank: Visual Sentiment Concept Classification with Deep\n  Convolutional Neural Networks",
+        "abstract": "  This paper introduces a visual sentiment concept classification method based\non deep convolutional neural networks (CNNs). The visual sentiment concepts are\nadjective noun pairs (ANPs) automatically discovered from the tags of web\nphotos, and can be utilized as effective statistical cues for detecting\nemotions depicted in the images. Nearly one million Flickr images tagged with\nthese ANPs are downloaded to train the classifiers of the concepts. We adopt\nthe popular model of deep convolutional neural networks which recently shows\ngreat performance improvement on classifying large-scale web-based image\ndataset such as ImageNet. Our deep CNNs model is trained based on Caffe, a\nnewly developed deep learning framework. To deal with the biased training data\nwhich only contains images with strong sentiment and to prevent overfitting, we\ninitialize the model with the model weights trained from ImageNet. Performance\nevaluation shows the newly trained deep CNNs model SentiBank 2.0 (or called\nDeepSentiBank) is significantly improved in both annotation accuracy and\nretrieval performance, compared to its predecessors which mainly use binary SVM\nclassification models.\n",
+        "published": "2014",
+        "authors": [
+            "Tao Chen",
+            "Damian Borth",
+            "Trevor Darrell",
+            "Shih-Fu Chang"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1411.1091v1",
+        "title": "Do Convnets Learn Correspondence?",
+        "abstract": "  Convolutional neural nets (convnets) trained from massive labeled datasets\nhave substantially improved the state-of-the-art in image classification and\nobject detection. However, visual understanding requires establishing\ncorrespondence on a finer level than object category. Given their large pooling\nregions and training from whole-image labels, it is not clear that convnets\nderive their success from an accurate correspondence model which could be used\nfor precise localization. In this paper, we study the effectiveness of convnet\nactivation features for tasks requiring correspondence. We present evidence\nthat convnet features localize at a much finer scale than their receptive field\nsizes, that they can be used to perform intraclass alignment as well as\nconventional hand-engineered features, and that they outperform conventional\nfeatures in keypoint prediction on objects from PASCAL VOC 2011.\n",
+        "published": "2014",
+        "authors": [
+            "Jonathan Long",
+            "Ning Zhang",
+            "Trevor Darrell"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1411.1509v1",
+        "title": "Convolutional Neural Network-based Place Recognition",
+        "abstract": "  Recently Convolutional Neural Networks (CNNs) have been shown to achieve\nstate-of-the-art performance on various classification tasks. In this paper, we\npresent for the first time a place recognition technique based on CNN models,\nby combining the powerful features learnt by CNNs with a spatial and sequential\nfilter. Applying the system to a 70 km benchmark place recognition dataset we\nachieve a 75% increase in recall at 100% precision, significantly outperforming\nall previous state of the art techniques. We also conduct a comprehensive\nperformance comparison of the utility of features from all 21 layers for place\nrecognition, both for the benchmark dataset and for a second dataset with more\nsignificant viewpoint changes.\n",
+        "published": "2014",
+        "authors": [
+            "Zetao Chen",
+            "Obadiah Lam",
+            "Adam Jacobson",
+            "Michael Milford"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1411.3815v6",
+        "title": "Predictive Encoding of Contextual Relationships for Perceptual\n  Inference, Interpolation and Prediction",
+        "abstract": "  We propose a new neurally-inspired model that can learn to encode the global\nrelationship context of visual events across time and space and to use the\ncontextual information to modulate the analysis by synthesis process in a\npredictive coding framework. The model learns latent contextual representations\nby maximizing the predictability of visual events based on local and global\ncontextual information through both top-down and bottom-up processes. In\ncontrast to standard predictive coding models, the prediction error in this\nmodel is used to update the contextual representation but does not alter the\nfeedforward input for the next layer, and is thus more consistent with\nneurophysiological observations. We establish the computational feasibility of\nthis model by demonstrating its ability in several aspects. We show that our\nmodel can outperform state-of-art performances of gated Boltzmann machines\n(GBM) in estimation of contextual information. Our model can also interpolate\nmissing events or predict future events in image sequences while simultaneously\nestimating contextual information. We show it achieves state-of-art\nperformances in terms of prediction accuracy in a variety of tasks and\npossesses the ability to interpolate missing frames, a function that is lacking\nin GBM.\n",
+        "published": "2014",
+        "authors": [
+            "Mingmin Zhao",
+            "Chengxu Zhuang",
+            "Yizhou Wang",
+            "Tai Sing Lee"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1411.5908v2",
+        "title": "Understanding image representations by measuring their equivariance and\n  equivalence",
+        "abstract": "  Despite the importance of image representations such as histograms of\noriented gradients and deep Convolutional Neural Networks (CNN), our\ntheoretical understanding of them remains limited. Aiming at filling this gap,\nwe investigate three key mathematical properties of representations:\nequivariance, invariance, and equivalence. Equivariance studies how\ntransformations of the input image are encoded by the representation,\ninvariance being a special case where a transformation has no effect.\nEquivalence studies whether two representations, for example two different\nparametrisations of a CNN, capture the same visual information or not. A number\nof methods to establish these properties empirically are proposed, including\nintroducing transformation and stitching layers in CNNs. These methods are then\napplied to popular representations to reveal insightful aspects of their\nstructure, including clarifying at which layers in a CNN certain geometric\ninvariances are achieved. While the focus of the paper is theoretical, direct\napplications to structured-output regression are demonstrated too.\n",
+        "published": "2014",
+        "authors": [
+            "Karel Lenc",
+            "Andrea Vedaldi"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1411.5928v4",
+        "title": "Learning to Generate Chairs, Tables and Cars with Convolutional Networks",
+        "abstract": "  We train generative 'up-convolutional' neural networks which are able to\ngenerate images of objects given object style, viewpoint, and color. We train\nthe networks on rendered 3D models of chairs, tables, and cars. Our experiments\nshow that the networks do not merely learn all images by heart, but rather find\na meaningful representation of 3D models allowing them to assess the similarity\nof different models, interpolate between given views to generate the missing\nones, extrapolate views, and invent new objects not present in the training set\nby recombining training instances, or even two different object classes.\nMoreover, we show that such generative networks can be used to find\ncorrespondences between different objects from the dataset, outperforming\nexisting approaches on this task.\n",
+        "published": "2014",
+        "authors": [
+            "Alexey Dosovitskiy",
+            "Jost Tobias Springenberg",
+            "Maxim Tatarchenko",
+            "Thomas Brox"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1411.6369v1",
+        "title": "Scale-Invariant Convolutional Neural Networks",
+        "abstract": "  Even though convolutional neural networks (CNN) has achieved near-human\nperformance in various computer vision tasks, its ability to tolerate scale\nvariations is limited. The popular practise is making the model bigger first,\nand then train it with data augmentation using extensive scale-jittering. In\nthis paper, we propose a scaleinvariant convolutional neural network (SiCNN), a\nmodeldesigned to incorporate multi-scale feature exaction and classification\ninto the network structure. SiCNN uses a multi-column architecture, with each\ncolumn focusing on a particular scale. Unlike previous multi-column strategies,\nthese columns share the same set of filter parameters by a scale transformation\namong them. This design deals with scale variation without blowing up the model\nsize. Experimental results show that SiCNN detects features at various scales,\nand the classification result exhibits strong robustness against object scale\nvariations.\n",
+        "published": "2014",
+        "authors": [
+            "Yichong Xu",
+            "Tianjun Xiao",
+            "Jiaxing Zhang",
+            "Kuiyuan Yang",
+            "Zheng Zhang"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1412.1628v2",
+        "title": "Fisher Kernel for Deep Neural Activations",
+        "abstract": "  Compared to image representation based on low-level local descriptors, deep\nneural activations of Convolutional Neural Networks (CNNs) are richer in\nmid-level representation, but poorer in geometric invariance properties. In\nthis paper, we present a straightforward framework for better image\nrepresentation by combining the two approaches. To take advantages of both\nrepresentations, we propose an efficient method to extract a fair amount of\nmulti-scale dense local activations from a pre-trained CNN. We then aggregate\nthe activations by Fisher kernel framework, which has been modified with a\nsimple scale-wise normalization essential to make it suitable for CNN\nactivations. Replacing the direct use of a single activation vector with our\nrepresentation demonstrates significant performance improvements: +17.76 (Acc.)\non MIT Indoor 67 and +7.18 (mAP) on PASCAL VOC 2007. The results suggest that\nour proposal can be used as a primary image representation for better\nperformances in visual recognition tasks.\n",
+        "published": "2014",
+        "authors": [
+            "Donggeun Yoo",
+            "Sunggyun Park",
+            "Joon-Young Lee",
+            "In So Kweon"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1412.3684v1",
+        "title": "Object Recognition Using Deep Neural Networks: A Survey",
+        "abstract": "  Recognition of objects using Deep Neural Networks is an active area of\nresearch and many breakthroughs have been made in the last few years. The paper\nattempts to indicate how far this field has progressed. The paper briefly\ndescribes the history of research in Neural Networks and describe several of\nthe recent advances in this field. The performances of recently developed\nNeural Network Algorithm over benchmark datasets have been tabulated. Finally,\nsome the applications of this field have been provided.\n",
+        "published": "2014",
+        "authors": [
+            "Soren Goyal",
+            "Paul Benjamin"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1412.4564v3",
+        "title": "MatConvNet - Convolutional Neural Networks for MATLAB",
+        "abstract": "  MatConvNet is an implementation of Convolutional Neural Networks (CNNs) for\nMATLAB. The toolbox is designed with an emphasis on simplicity and flexibility.\nIt exposes the building blocks of CNNs as easy-to-use MATLAB functions,\nproviding routines for computing linear convolutions with filter banks, feature\npooling, and many more. In this manner, MatConvNet allows fast prototyping of\nnew CNN architectures; at the same time, it supports efficient computation on\nCPU and GPU allowing to train complex models on large datasets such as ImageNet\nILSVRC. This document provides an overview of CNNs and how they are implemented\nin MatConvNet and gives the technical details of each computational block in\nthe toolbox.\n",
+        "published": "2014",
+        "authors": [
+            "Andrea Vedaldi",
+            "Karel Lenc"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1412.5068v4",
+        "title": "Towards Deep Neural Network Architectures Robust to Adversarial Examples",
+        "abstract": "  Recent work has shown deep neural networks (DNNs) to be highly susceptible to\nwell-designed, small perturbations at the input layer, or so-called adversarial\nexamples. Taking images as an example, such distortions are often\nimperceptible, but can result in 100% mis-classification for a state of the art\nDNN. We study the structure of adversarial examples and explore network\ntopology, pre-processing and training strategies to improve the robustness of\nDNNs. We perform various experiments to assess the removability of adversarial\nexamples by corrupting with additional noise and pre-processing with denoising\nautoencoders (DAEs). We find that DAEs can remove substantial amounts of the\nadversarial noise. How- ever, when stacking the DAE with the original DNN, the\nresulting network can again be attacked by new adversarial examples with even\nsmaller distortion. As a solution, we propose Deep Contractive Network, a model\nwith a new end-to-end training procedure that includes a smoothness penalty\ninspired by the contractive autoencoder (CAE). This increases the network\nrobustness to adversarial examples, without a significant performance penalty.\n",
+        "published": "2014",
+        "authors": [
+            "Shixiang Gu",
+            "Luca Rigazio"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1412.5104v1",
+        "title": "Locally Scale-Invariant Convolutional Neural Networks",
+        "abstract": "  Convolutional Neural Networks (ConvNets) have shown excellent results on many\nvisual classification tasks. With the exception of ImageNet, these datasets are\ncarefully crafted such that objects are well-aligned at similar scales.\nNaturally, the feature learning problem gets more challenging as the amount of\nvariation in the data increases, as the models have to learn to be invariant to\ncertain changes in appearance. Recent results on the ImageNet dataset show that\ngiven enough data, ConvNets can learn such invariances producing very\ndiscriminative features [1]. But could we do more: use less parameters, less\ndata, learn more discriminative features, if certain invariances were built\ninto the learning process? In this paper we present a simple model that allows\nConvNets to learn features in a locally scale-invariant manner without\nincreasing the number of model parameters. We show on a modified MNIST dataset\nthat when faced with scale variation, building in scale-invariance allows\nConvNets to learn more discriminative features with reduced chances of\nover-fitting.\n",
+        "published": "2014",
+        "authors": [
+            "Angjoo Kanazawa",
+            "Abhishek Sharma",
+            "David Jacobs"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1412.6115v1",
+        "title": "Compressing Deep Convolutional Networks using Vector Quantization",
+        "abstract": "  Deep convolutional neural networks (CNN) has become the most promising method\nfor object recognition, repeatedly demonstrating record breaking results for\nimage classification and object detection in recent years. However, a very deep\nCNN generally involves many layers with millions of parameters, making the\nstorage of the network model to be extremely large. This prohibits the usage of\ndeep CNNs on resource limited hardware, especially cell phones or other\nembedded devices. In this paper, we tackle this model storage issue by\ninvestigating information theoretical vector quantization methods for\ncompressing the parameters of CNNs. In particular, we have found in terms of\ncompressing the most storage demanding dense connected layers, vector\nquantization methods have a clear gain over existing matrix factorization\nmethods. Simply applying k-means clustering to the weights or conducting\nproduct quantization can lead to a very good balance between model size and\nrecognition accuracy. For the 1000-category classification task in the ImageNet\nchallenge, we are able to achieve 16-24 times compression of the network with\nonly 1% loss of classification accuracy using the state-of-the-art CNN.\n",
+        "published": "2014",
+        "authors": [
+            "Yunchao Gong",
+            "Liu Liu",
+            "Ming Yang",
+            "Lubomir Bourdev"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1412.6296v2",
+        "title": "Generative Modeling of Convolutional Neural Networks",
+        "abstract": "  The convolutional neural networks (CNNs) have proven to be a powerful tool\nfor discriminative learning. Recently researchers have also started to show\ninterest in the generative aspects of CNNs in order to gain a deeper\nunderstanding of what they have learned and how to further improve them. This\npaper investigates generative modeling of CNNs. The main contributions include:\n(1) We construct a generative model for the CNN in the form of exponential\ntilting of a reference distribution. (2) We propose a generative gradient for\npre-training CNNs by a non-parametric importance sampling scheme, which is\nfundamentally different from the commonly used discriminative gradient, and yet\nhas the same computational architecture and cost as the latter. (3) We propose\na generative visualization method for the CNNs by sampling from an explicit\nparametric image distribution. The proposed visualization method can directly\ndraw synthetic samples for any given node in a trained CNN by the Hamiltonian\nMonte Carlo (HMC) algorithm, without resorting to any extra hold-out images.\nExperiments on the challenging ImageNet benchmark show that the proposed\ngenerative gradient pre-training consistently helps improve the performances of\nCNNs, and the proposed generative visualization method generates meaningful and\nvaried samples of synthetic images from a large-scale deep CNN.\n",
+        "published": "2014",
+        "authors": [
+            "Jifeng Dai",
+            "Yang Lu",
+            "Ying-Nian Wu"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1412.6583v4",
+        "title": "Discovering Hidden Factors of Variation in Deep Networks",
+        "abstract": "  Deep learning has enjoyed a great deal of success because of its ability to\nlearn useful features for tasks such as classification. But there has been less\nexploration in learning the factors of variation apart from the classification\nsignal. By augmenting autoencoders with simple regularization terms during\ntraining, we demonstrate that standard deep architectures can discover and\nexplicitly represent factors of variation beyond those relevant for\ncategorization. We introduce a cross-covariance penalty (XCov) as a method to\ndisentangle factors like handwriting style for digits and subject identity in\nfaces. We demonstrate this on the MNIST handwritten digit database, the Toronto\nFaces Database (TFD) and the Multi-PIE dataset by generating manipulated\ninstances of the data. Furthermore, we demonstrate these deep networks can\nextrapolate `hidden' variation in the supervised signal.\n",
+        "published": "2014",
+        "authors": [
+            "Brian Cheung",
+            "Jesse A. Livezey",
+            "Arjun K. Bansal",
+            "Bruno A. Olshausen"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1412.6596v3",
+        "title": "Training Deep Neural Networks on Noisy Labels with Bootstrapping",
+        "abstract": "  Current state-of-the-art deep learning systems for visual object recognition\nand detection use purely supervised training with regularization such as\ndropout to avoid overfitting. The performance depends critically on the amount\nof labeled examples, and in current practice the labels are assumed to be\nunambiguous and accurate. However, this assumption often does not hold; e.g. in\nrecognition, class labels may be missing; in detection, objects in the image\nmay not be localized; and in general, the labeling may be subjective. In this\nwork we propose a generic way to handle noisy and incomplete labeling by\naugmenting the prediction objective with a notion of consistency. We consider a\nprediction consistent if the same prediction is made given similar percepts,\nwhere the notion of similarity is between deep network features computed from\nthe input data. In experiments we demonstrate that our approach yields\nsubstantial robustness to label noise on several datasets. On MNIST handwritten\ndigits, we show that our model is robust to label corruption. On the Toronto\nFace Database, we show that our model handles well the case of subjective\nlabels in emotion recognition, achieving state-of-the- art results, and can\nalso benefit from unlabeled face images with no modification to our method. On\nthe ILSVRC2014 detection challenge data, we show that our approach extends to\nvery deep networks, high resolution images and structured outputs, and results\nin improved scalable detection.\n",
+        "published": "2014",
+        "authors": [
+            "Scott Reed",
+            "Honglak Lee",
+            "Dragomir Anguelov",
+            "Christian Szegedy",
+            "Dumitru Erhan",
+            "Andrew Rabinovich"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1412.6597v4",
+        "title": "An Analysis of Unsupervised Pre-training in Light of Recent Advances",
+        "abstract": "  Convolutional neural networks perform well on object recognition because of a\nnumber of recent advances: rectified linear units (ReLUs), data augmentation,\ndropout, and large labelled datasets. Unsupervised data has been proposed as\nanother way to improve performance. Unfortunately, unsupervised pre-training is\nnot used by state-of-the-art methods leading to the following question: Is\nunsupervised pre-training still useful given recent advances? If so, when? We\nanswer this in three parts: we 1) develop an unsupervised method that\nincorporates ReLUs and recent unsupervised regularization techniques, 2)\nanalyze the benefits of unsupervised pre-training compared to data augmentation\nand dropout on CIFAR-10 while varying the ratio of unsupervised to supervised\nsamples, 3) verify our findings on STL-10. We discover unsupervised\npre-training, as expected, helps when the ratio of unsupervised to supervised\nsamples is high, and surprisingly, hurts when the ratio is low. We also use\nunsupervised pre-training with additional color augmentation to achieve near\nstate-of-the-art performance on STL-10.\n",
+        "published": "2014",
+        "authors": [
+            "Tom Le Paine",
+            "Pooya Khorrami",
+            "Wei Han",
+            "Thomas S. Huang"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1412.6618v3",
+        "title": "Permutohedral Lattice CNNs",
+        "abstract": "  This paper presents a convolutional layer that is able to process sparse\ninput features. As an example, for image recognition problems this allows an\nefficient filtering of signals that do not lie on a dense grid (like pixel\nposition), but of more general features (such as color values). The presented\nalgorithm makes use of the permutohedral lattice data structure. The\npermutohedral lattice was introduced to efficiently implement a bilateral\nfilter, a commonly used image processing operation. Its use allows for a\ngeneralization of the convolution type found in current (spatial) convolutional\nnetwork architectures.\n",
+        "published": "2014",
+        "authors": [
+            "Martin Kiefel",
+            "Varun Jampani",
+            "Peter V. Gehler"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1412.6806v3",
+        "title": "Striving for Simplicity: The All Convolutional Net",
+        "abstract": "  Most modern convolutional neural networks (CNNs) used for object recognition\nare built using the same principles: Alternating convolution and max-pooling\nlayers followed by a small number of fully connected layers. We re-evaluate the\nstate of the art for object recognition from small images with convolutional\nnetworks, questioning the necessity of different components in the pipeline. We\nfind that max-pooling can simply be replaced by a convolutional layer with\nincreased stride without loss in accuracy on several image recognition\nbenchmarks. Following this finding -- and building on other recent work for\nfinding simple network structures -- we propose a new architecture that\nconsists solely of convolutional layers and yields competitive or state of the\nart performance on several object recognition datasets (CIFAR-10, CIFAR-100,\nImageNet). To analyze the network we introduce a new variant of the\n\"deconvolution approach\" for visualizing features learned by CNNs, which can be\napplied to a broader range of network structures than existing approaches.\n",
+        "published": "2014",
+        "authors": [
+            "Jost Tobias Springenberg",
+            "Alexey Dosovitskiy",
+            "Thomas Brox",
+            "Martin Riedmiller"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1412.6857v5",
+        "title": "Contour Detection Using Cost-Sensitive Convolutional Neural Networks",
+        "abstract": "  We address the problem of contour detection via per-pixel classifications of\nedge point. To facilitate the process, the proposed approach leverages with\nDenseNet, an efficient implementation of multiscale convolutional neural\nnetworks (CNNs), to extract an informative feature vector for each pixel and\nuses an SVM classifier to accomplish contour detection. The main challenge lies\nin adapting a pre-trained per-image CNN model for yielding per-pixel image\nfeatures. We propose to base on the DenseNet architecture to achieve pixelwise\nfine-tuning and then consider a cost-sensitive strategy to further improve the\nlearning with a small dataset of edge and non-edge image patches. In the\nexperiment of contour detection, we look into the effectiveness of combining\nper-pixel features from different CNN layers and obtain comparable performances\nto the state-of-the-art on BSDS500.\n",
+        "published": "2014",
+        "authors": [
+            "Jyh-Jing Hwang",
+            "Tyng-Luh Liu"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1412.6885v1",
+        "title": "Half-CNN: A General Framework for Whole-Image Regression",
+        "abstract": "  The Convolutional Neural Network (CNN) has achieved great success in image\nclassification. The classification model can also be utilized at image or patch\nlevel for many other applications, such as object detection and segmentation.\nIn this paper, we propose a whole-image CNN regression model, by removing the\nfull connection layer and training the network with continuous feature maps.\nThis is a generic regression framework that fits many applications. We\ndemonstrate this method through two tasks: simultaneous face detection &\nsegmentation, and scene saliency prediction. The result is comparable with\nother models in the respective fields, using only a small scale network. Since\nthe regression model is trained on corresponding image / feature map pairs,\nthere are no requirements on uniform input size as opposed to the\nclassification model. Our framework avoids classifier design, a process that\nmay introduce too much manual intervention in model development. Yet, it is\nhighly correlated to the classification network and offers some in-deep review\nof CNN structures.\n",
+        "published": "2014",
+        "authors": [
+            "Jun Yuan",
+            "Bingbing Ni",
+            "Ashraf A. Kassim"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1412.7006v2",
+        "title": "Multi-modal Sensor Registration for Vehicle Perception via Deep Neural\n  Networks",
+        "abstract": "  The ability to simultaneously leverage multiple modes of sensor information\nis critical for perception of an automated vehicle's physical surroundings.\nSpatio-temporal alignment of registration of the incoming information is often\na prerequisite to analyzing the fused data. The persistence and reliability of\nmulti-modal registration is therefore the key to the stability of decision\nsupport systems ingesting the fused information. LiDAR-video systems like on\nthose many driverless cars are a common example of where keeping the LiDAR and\nvideo channels registered to common physical features is important. We develop\na deep learning method that takes multiple channels of heterogeneous data, to\ndetect the misalignment of the LiDAR-video inputs. A number of variations were\ntested on the Ford LiDAR-video driving test data set and will be discussed. To\nthe best of our knowledge the use of multi-modal deep convolutional neural\nnetworks for dynamic real-time LiDAR-video registration has not been presented.\n",
+        "published": "2014",
+        "authors": [
+            "Michael Giering",
+            "Vivek Venugopalan",
+            "Kishore Reddy"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1412.7007v3",
+        "title": "Occlusion Edge Detection in RGB-D Frames using Deep Convolutional\n  Networks",
+        "abstract": "  Occlusion edges in images which correspond to range discontinuity in the\nscene from the point of view of the observer are an important prerequisite for\nmany vision and mobile robot tasks. Although they can be extracted from range\ndata however extracting them from images and videos would be extremely\nbeneficial. We trained a deep convolutional neural network (CNN) to identify\nocclusion edges in images and videos with both RGB-D and RGB inputs. The use of\nCNN avoids hand-crafting of features for automatically isolating occlusion\nedges and distinguishing them from appearance edges. Other than quantitative\nocclusion edge detection results, qualitative results are provided to\ndemonstrate the trade-off between high resolution analysis and frame-level\ncomputation time which is critical for real-time robotics applications.\n",
+        "published": "2014",
+        "authors": [
+            "Soumik Sarkar",
+            "Vivek Venugopalan",
+            "Kishore Reddy",
+            "Michael Giering",
+            "Julian Ryde",
+            "Navdeep Jaitly"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1412.7024v5",
+        "title": "Training deep neural networks with low precision multiplications",
+        "abstract": "  Multipliers are the most space and power-hungry arithmetic operators of the\ndigital implementation of deep neural networks. We train a set of\nstate-of-the-art neural networks (Maxout networks) on three benchmark datasets:\nMNIST, CIFAR-10 and SVHN. They are trained with three distinct formats:\nfloating point, fixed point and dynamic fixed point. For each of those datasets\nand for each of those formats, we assess the impact of the precision of the\nmultiplications on the final error after training. We find that very low\nprecision is sufficient not just for running trained networks but also for\ntraining them. For example, it is possible to train Maxout networks with 10\nbits multiplications.\n",
+        "published": "2014",
+        "authors": [
+            "Matthieu Courbariaux",
+            "Yoshua Bengio",
+            "Jean-Pierre David"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1412.7054v3",
+        "title": "Attention for Fine-Grained Categorization",
+        "abstract": "  This paper presents experiments extending the work of Ba et al. (2014) on\nrecurrent neural models for attention into less constrained visual\nenvironments, specifically fine-grained categorization on the Stanford Dogs\ndata set. In this work we use an RNN of the same structure but substitute a\nmore powerful visual network and perform large-scale pre-training of the visual\nnetwork outside of the attention RNN. Most work in attention models to date\nfocuses on tasks with toy or more constrained visual environments, whereas we\npresent results for fine-grained categorization better than the\nstate-of-the-art GoogLeNet classification model. We show that our model learns\nto direct high resolution attention to the most discriminative regions without\nany spatial supervision such as bounding boxes, and it is able to discriminate\nfine-grained dog breeds moderately well even when given only an initial\nlow-resolution context image and narrow, inexpensive glimpses at faces and fur\npatterns. This and similar attention models have the major advantage of being\ntrained end-to-end, as opposed to other current detection and recognition\npipelines with hand-engineered components where information is lost. While our\nmodel is state-of-the-art, further work is needed to fully leverage the\nsequential input.\n",
+        "published": "2014",
+        "authors": [
+            "Pierre Sermanet",
+            "Andrea Frome",
+            "Esteban Real"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1412.7062v4",
+        "title": "Semantic Image Segmentation with Deep Convolutional Nets and Fully\n  Connected CRFs",
+        "abstract": "  Deep Convolutional Neural Networks (DCNNs) have recently shown state of the\nart performance in high level vision tasks, such as image classification and\nobject detection. This work brings together methods from DCNNs and\nprobabilistic graphical models for addressing the task of pixel-level\nclassification (also called \"semantic image segmentation\"). We show that\nresponses at the final layer of DCNNs are not sufficiently localized for\naccurate object segmentation. This is due to the very invariance properties\nthat make DCNNs good for high level tasks. We overcome this poor localization\nproperty of deep networks by combining the responses at the final DCNN layer\nwith a fully connected Conditional Random Field (CRF). Qualitatively, our\n\"DeepLab\" system is able to localize segment boundaries at a level of accuracy\nwhich is beyond previous methods. Quantitatively, our method sets the new\nstate-of-art at the PASCAL VOC-2012 semantic image segmentation task, reaching\n71.6% IOU accuracy in the test set. We show how these results can be obtained\nefficiently: Careful network re-purposing and a novel application of the 'hole'\nalgorithm from the wavelet community allow dense computation of neural net\nresponses at 8 frames per second on a modern GPU.\n",
+        "published": "2014",
+        "authors": [
+            "Liang-Chieh Chen",
+            "George Papandreou",
+            "Iasonas Kokkinos",
+            "Kevin Murphy",
+            "Alan L. Yuille"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1412.7122v4",
+        "title": "Learning Deep Object Detectors from 3D Models",
+        "abstract": "  Crowdsourced 3D CAD models are becoming easily accessible online, and can\npotentially generate an infinite number of training images for almost any\nobject category.We show that augmenting the training data of contemporary Deep\nConvolutional Neural Net (DCNN) models with such synthetic data can be\neffective, especially when real training data is limited or not well matched to\nthe target domain. Most freely available CAD models capture 3D shape but are\noften missing other low level cues, such as realistic object texture, pose, or\nbackground. In a detailed analysis, we use synthetic CAD-rendered images to\nprobe the ability of DCNN to learn without these cues, with surprising\nfindings. In particular, we show that when the DCNN is fine-tuned on the target\ndetection task, it exhibits a large degree of invariance to missing low-level\ncues, but, when pretrained on generic ImageNet classification, it learns better\nwhen the low-level cues are simulated. We show that our synthetic DCNN training\napproach significantly outperforms previous methods on the PASCAL VOC2007\ndataset when learning in the few-shot scenario and improves performance in a\ndomain shift scenario on the Office benchmark.\n",
+        "published": "2014",
+        "authors": [
+            "Xingchao Peng",
+            "Baochen Sun",
+            "Karim Ali",
+            "Kate Saenko"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1412.7144v4",
+        "title": "Fully Convolutional Multi-Class Multiple Instance Learning",
+        "abstract": "  Multiple instance learning (MIL) can reduce the need for costly annotation in\ntasks such as semantic segmentation by weakening the required degree of\nsupervision. We propose a novel MIL formulation of multi-class semantic\nsegmentation learning by a fully convolutional network. In this setting, we\nseek to learn a semantic segmentation model from just weak image-level labels.\nThe model is trained end-to-end to jointly optimize the representation while\ndisambiguating the pixel-image label assignment. Fully convolutional training\naccepts inputs of any size, does not need object proposal pre-processing, and\noffers a pixelwise loss map for selecting latent instances. Our multi-class MIL\nloss exploits the further supervision given by images with multiple labels. We\nevaluate this approach through preliminary experiments on the PASCAL VOC\nsegmentation challenge.\n",
+        "published": "2014",
+        "authors": [
+            "Deepak Pathak",
+            "Evan Shelhamer",
+            "Jonathan Long",
+            "Trevor Darrell"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1412.7155v4",
+        "title": "Learning Compact Convolutional Neural Networks with Nested Dropout",
+        "abstract": "  Recently, nested dropout was proposed as a method for ordering representation\nunits in autoencoders by their information content, without diminishing\nreconstruction cost. However, it has only been applied to training\nfully-connected autoencoders in an unsupervised setting. We explore the impact\nof nested dropout on the convolutional layers in a CNN trained by\nbackpropagation, investigating whether nested dropout can provide a simple and\nsystematic way to determine the optimal representation size with respect to the\ndesired accuracy and desired task and data complexity.\n",
+        "published": "2014",
+        "authors": [
+            "Chelsea Finn",
+            "Lisa Anne Hendricks",
+            "Trevor Darrell"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1412.7190v4",
+        "title": "Convolutional Neural Networks for joint object detection and pose\n  estimation: A comparative study",
+        "abstract": "  In this paper we study the application of convolutional neural networks for\njointly detecting objects depicted in still images and estimating their 3D\npose. We identify different feature representations of oriented objects, and\nenergies that lead a network to learn this representations. The choice of the\nrepresentation is crucial since the pose of an object has a natural, continuous\nstructure while its category is a discrete variable. We evaluate the different\napproaches on the joint object detection and pose estimation task of the\nPascal3D+ benchmark using Average Viewpoint Precision. We show that a\nclassification approach on discretized viewpoints achieves state-of-the-art\nperformance for joint object detection and pose estimation, and significantly\noutperforms existing baselines on this benchmark.\n",
+        "published": "2014",
+        "authors": [
+            "Francisco Massa",
+            "Mathieu Aubry",
+            "Renaud Marlet"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1412.7259v3",
+        "title": "Unsupervised Feature Learning with C-SVDDNet",
+        "abstract": "  In this paper, we investigate the problem of learning feature representation\nfrom unlabeled data using a single-layer K-means network. A K-means network\nmaps the input data into a feature representation by finding the nearest\ncentroid for each input point, which has attracted researchers' great attention\nrecently due to its simplicity, effectiveness, and scalability. However, one\ndrawback of this feature mapping is that it tends to be unreliable when the\ntraining data contains noise. To address this issue, we propose a SVDD based\nfeature learning algorithm that describes the density and distribution of each\ncluster from K-means with an SVDD ball for more robust feature representation.\nFor this purpose, we present a new SVDD algorithm called C-SVDD that centers\nthe SVDD ball towards the mode of local density of each cluster, and we show\nthat the objective of C-SVDD can be solved very efficiently as a linear\nprogramming problem. Additionally, traditional unsupervised feature learning\nmethods usually take an average or sum of local representations to obtain\nglobal representation which ignore spatial relationship among them. To use\nspatial information we propose a global representation with a variant of SIFT\ndescriptor. The architecture is also extended with multiple receptive field\nscales and multiple pooling sizes. Extensive experiments on several popular\nobject recognition benchmarks, such as STL-10, MINST, Holiday and Copydays\nshows that the proposed C-SVDDNet method yields comparable or better\nperformance than that of the previous state of the art methods.\n",
+        "published": "2014",
+        "authors": [
+            "Dong Wang",
+            "Xiaoyang Tan"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1412.7659v3",
+        "title": "Transformation Properties of Learned Visual Representations",
+        "abstract": "  When a three-dimensional object moves relative to an observer, a change\noccurs on the observer's image plane and in the visual representation computed\nby a learned model. Starting with the idea that a good visual representation is\none that transforms linearly under scene motions, we show, using the theory of\ngroup representations, that any such representation is equivalent to a\ncombination of the elementary irreducible representations. We derive a striking\nrelationship between irreducibility and the statistical dependency structure of\nthe representation, by showing that under restricted conditions, irreducible\nrepresentations are decorrelated. Under partial observability, as induced by\nthe perspective projection of a scene onto the image plane, the motion group\ndoes not have a linear action on the space of images, so that it becomes\nnecessary to perform inference over a latent representation that does transform\nlinearly. This idea is demonstrated in a model of rotating NORB objects that\nemploys a latent representation of the non-commutative 3D rotation group SO(3).\n",
+        "published": "2014",
+        "authors": [
+            "Taco S. Cohen",
+            "Max Welling"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1412.7755v2",
+        "title": "Multiple Object Recognition with Visual Attention",
+        "abstract": "  We present an attention-based model for recognizing multiple objects in\nimages. The proposed model is a deep recurrent neural network trained with\nreinforcement learning to attend to the most relevant regions of the input\nimage. We show that the model learns to both localize and recognize multiple\nobjects despite being given only class labels during training. We evaluate the\nmodel on the challenging task of transcribing house number sequences from\nGoogle Street View images and show that it is both more accurate than the\nstate-of-the-art convolutional networks and uses fewer parameters and less\ncomputation.\n",
+        "published": "2014",
+        "authors": [
+            "Jimmy Ba",
+            "Volodymyr Mnih",
+            "Koray Kavukcuoglu"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1412.8307v2",
+        "title": "Fast, simple and accurate handwritten digit classification by training\n  shallow neural network classifiers with the 'extreme learning machine'\n  algorithm",
+        "abstract": "  Recent advances in training deep (multi-layer) architectures have inspired a\nrenaissance in neural network use. For example, deep convolutional networks are\nbecoming the default option for difficult tasks on large datasets, such as\nimage and speech recognition. However, here we show that error rates below 1%\non the MNIST handwritten digit benchmark can be replicated with shallow\nnon-convolutional neural networks. This is achieved by training such networks\nusing the 'Extreme Learning Machine' (ELM) approach, which also enables a very\nrapid training time (~10 minutes). Adding distortions, as is common practise\nfor MNIST, reduces error rates even further. Our methods are also shown to be\ncapable of achieving less than 5.5% error rates on the NORB image database. To\nachieve these results, we introduce several enhancements to the standard ELM\nalgorithm, which individually and in combination can significantly improve\nperformance. The main innovation is to ensure each hidden-unit operates only on\na randomly sized and positioned patch of each image. This form of random\n`receptive field' sampling of the input ensures the input weight matrix is\nsparse, with about 90% of weights equal to zero. Furthermore, combining our\nmethods with a small number of iterations of a single-batch backpropagation\nmethod can significantly reduce the number of hidden-units required to achieve\na particular performance. Our close to state-of-the-art results for MNIST and\nNORB suggest that the ease of use and accuracy of the ELM algorithm for\ndesigning a single-hidden-layer neural network classifier should cause it to be\ngiven greater consideration either as a standalone method for simpler problems,\nor as the final classification stage in deep neural networks applied to more\ndifficult problems.\n",
+        "published": "2014",
+        "authors": [
+            "Mark D. McDonnell",
+            "Migel D. Tissera",
+            "Tony Vladusich",
+            "Andr\u00e9 van Schaik",
+            "Jonathan Tapson"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1501.00777v1",
+        "title": "Sparse Deep Stacking Network for Image Classification",
+        "abstract": "  Sparse coding can learn good robust representation to noise and model more\nhigher-order representation for image classification. However, the inference\nalgorithm is computationally expensive even though the supervised signals are\nused to learn compact and discriminative dictionaries in sparse coding\ntechniques. Luckily, a simplified neural network module (SNNM) has been\nproposed to directly learn the discriminative dictionaries for avoiding the\nexpensive inference. But the SNNM module ignores the sparse representations.\nTherefore, we propose a sparse SNNM module by adding the mixed-norm\nregularization (l1/l2 norm). The sparse SNNM modules are further stacked to\nbuild a sparse deep stacking network (S-DSN). In the experiments, we evaluate\nS-DSN with four databases, including Extended YaleB, AR, 15 scene and\nCaltech101. Experimental results show that our model outperforms related\nclassification methods with only a linear classifier. It is worth noting that\nwe reach 98.8% recognition accuracy on 15 scene.\n",
+        "published": "2015",
+        "authors": [
+            "Jun Li",
+            "Heyou Chang",
+            "Jian Yang"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1501.06115v2",
+        "title": "Constrained Extreme Learning Machines: A Study on Classification Cases",
+        "abstract": "  Extreme learning machine (ELM) is an extremely fast learning method and has a\npowerful performance for pattern recognition tasks proven by enormous\nresearches and engineers. However, its good generalization ability is built on\nlarge numbers of hidden neurons, which is not beneficial to real time response\nin the test process. In this paper, we proposed new ways, named \"constrained\nextreme learning machines\" (CELMs), to randomly select hidden neurons based on\nsample distribution. Compared to completely random selection of hidden nodes in\nELM, the CELMs randomly select hidden nodes from the constrained vector space\ncontaining some basic combinations of original sample vectors. The experimental\nresults show that the CELMs have better generalization ability than traditional\nELM, SVM and some other related methods. Additionally, the CELMs have a similar\nfast learning speed as ELM.\n",
+        "published": "2015",
+        "authors": [
+            "Wentao Zhu",
+            "Jun Miao",
+            "Laiyun Qing"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1502.04623v2",
+        "title": "DRAW: A Recurrent Neural Network For Image Generation",
+        "abstract": "  This paper introduces the Deep Recurrent Attentive Writer (DRAW) neural\nnetwork architecture for image generation. DRAW networks combine a novel\nspatial attention mechanism that mimics the foveation of the human eye, with a\nsequential variational auto-encoding framework that allows for the iterative\nconstruction of complex images. The system substantially improves on the state\nof the art for generative models on MNIST, and, when trained on the Street View\nHouse Numbers dataset, it generates images that cannot be distinguished from\nreal data with the naked eye.\n",
+        "published": "2015",
+        "authors": [
+            "Karol Gregor",
+            "Ivo Danihelka",
+            "Alex Graves",
+            "Danilo Jimenez Rezende",
+            "Daan Wierstra"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1502.04681v3",
+        "title": "Unsupervised Learning of Video Representations using LSTMs",
+        "abstract": "  We use multilayer Long Short Term Memory (LSTM) networks to learn\nrepresentations of video sequences. Our model uses an encoder LSTM to map an\ninput sequence into a fixed length representation. This representation is\ndecoded using single or multiple decoder LSTMs to perform different tasks, such\nas reconstructing the input sequence, or predicting the future sequence. We\nexperiment with two kinds of input sequences - patches of image pixels and\nhigh-level representations (\"percepts\") of video frames extracted using a\npretrained convolutional net. We explore different design choices such as\nwhether the decoder LSTMs should condition on the generated output. We analyze\nthe outputs of the model qualitatively to see how well the model can\nextrapolate the learned video representation into the future and into the past.\nWe try to visualize and interpret the learned features. We stress test the\nmodel by running it on longer time scales and on out-of-domain data. We further\nevaluate the representations by finetuning them for a supervised learning\nproblem - human action recognition on the UCF-101 and HMDB-51 datasets. We show\nthat the representations help improve classification accuracy, especially when\nthere are only a few training examples. Even models pretrained on unrelated\ndatasets (300 hours of YouTube videos) can help action recognition performance.\n",
+        "published": "2015",
+        "authors": [
+            "Nitish Srivastava",
+            "Elman Mansimov",
+            "Ruslan Salakhutdinov"
+        ]
+    }
+]

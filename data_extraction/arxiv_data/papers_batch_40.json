@@ -1,0 +1,1168 @@
+[
+    {
+        "id": "http://arxiv.org/abs/2012.09134v1",
+        "title": "Multi-agent navigation based on deep reinforcement learning and\n  traditional pathfinding algorithm",
+        "abstract": "  We develop a new framework for multi-agent collision avoidance problem. The\nframework combined traditional pathfinding algorithm and reinforcement\nlearning. In our approach, the agents learn whether to be navigated or to take\nsimple actions to avoid their partners via a deep neural network trained by\nreinforcement learning at each time step. This framework makes it possible for\nagents to arrive terminal points in abstract new scenarios. In our experiments,\nwe use Unity3D and Tensorflow to build the model and environment for our\nscenarios. We analyze the results and modify the parameters to approach a\nwell-behaved strategy for our agents. Our strategy could be attached in\ndifferent environments under different cases, especially when the scale is\nlarge.\n",
+        "published": "2020",
+        "authors": [
+            "Hongda Qiu"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2103.04015v1",
+        "title": "Dynamic Resource Management for Providing QoS in Drone Delivery Systems",
+        "abstract": "  Drones have been considered as an alternative means of package delivery to\nreduce the delivery cost and time. Due to the battery limitations, the drones\nare best suited for last-mile delivery, i.e., the delivery from the package\ndistribution centers (PDCs) to the customers. Since a typical delivery system\nconsists of multiple PDCs, each having random and time-varying demands, the\ndynamic drone-to-PDC allocation would be of great importance in meeting the\ndemand in an efficient manner. In this paper, we study the dynamic UAV\nassignment problem for a drone delivery system with the goal of providing\nmeasurable Quality of Service (QoS) guarantees. We adopt a queueing theoretic\napproach to model the customer-service nature of the problem. Furthermore, we\ntake a deep reinforcement learning approach to obtain a dynamic policy for the\nre-allocation of the UAVs. This policy guarantees a probabilistic upper-bound\non the queue length of the packages waiting in each PDC, which is beneficial\nfrom both the service provider's and the customers' viewpoints. We evaluate the\nperformance of our proposed algorithm by considering three broad arrival\nclasses, including Bernoulli, Time-Varying Bernoulli, and Markov-Modulated\nBernoulli arrivals. Our results show that the proposed method outperforms the\nbaselines, particularly in scenarios with Time-Varying and Markov-Modulated\nBernoulli arrivals, which are more representative of real-world demand\npatterns. Moreover, our algorithm satisfies the QoS constraints in all the\nstudied scenarios while minimizing the average number of UAVs in use.\n",
+        "published": "2021",
+        "authors": [
+            "Behzad Khamidehi",
+            "Majid Raeis",
+            "Elvino S. Sousa"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2103.05091v2",
+        "title": "Learning Connectivity for Data Distribution in Robot Teams",
+        "abstract": "  Many algorithms for control of multi-robot teams operate under the assumption\nthat low-latency, global state information necessary to coordinate agent\nactions can readily be disseminated among the team. However, in harsh\nenvironments with no existing communication infrastructure, robots must form\nad-hoc networks, forcing the team to operate in a distributed fashion. To\novercome this challenge, we propose a task-agnostic, decentralized, low-latency\nmethod for data distribution in ad-hoc networks using Graph Neural Networks\n(GNN). Our approach enables multi-agent algorithms based on global state\ninformation to function by ensuring it is available at each robot. To do this,\nagents glean information about the topology of the network from packet\ntransmissions and feed it to a GNN running locally which instructs the agent\nwhen and where to transmit the latest state information. We train the\ndistributed GNN communication policies via reinforcement learning using the\naverage Age of Information as the reward function and show that it improves\ntraining stability compared to task-specific reward functions. Our approach\nperforms favorably compared to industry-standard methods for data distribution\nsuch as random flooding and round robin. We also show that the trained policies\ngeneralize to larger teams of both static and mobile agents.\n",
+        "published": "2021",
+        "authors": [
+            "Ekaterina Tolstaya",
+            "Landon Butler",
+            "Daniel Mox",
+            "James Paulos",
+            "Vijay Kumar",
+            "Alejandro Ribeiro"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2103.09520v1",
+        "title": "Decentralized Reinforcement Learning for Multi-Target Search and\n  Detection by a Team of Drones",
+        "abstract": "  Targets search and detection encompasses a variety of decision problems such\nas coverage, surveillance, search, observing and pursuit-evasion along with\nothers. In this paper we develop a multi-agent deep reinforcement learning\n(MADRL) method to coordinate a group of aerial vehicles (drones) for the\npurpose of locating a set of static targets in an unknown area. To that end, we\nhave designed a realistic drone simulator that replicates the dynamics and\nperturbations of a real experiment, including statistical inferences taken from\nexperimental data for its modeling. Our reinforcement learning method, which\nutilized this simulator for training, was able to find near-optimal policies\nfor the drones. In contrast to other state-of-the-art MADRL methods, our method\nis fully decentralized during both learning and execution, can handle\nhigh-dimensional and continuous observation spaces, and does not require tuning\nof additional hyperparameters.\n",
+        "published": "2021",
+        "authors": [
+            "Roi Yehoshua",
+            "Juan Heredia-Juesas",
+            "Yushu Wu",
+            "Christopher Amato",
+            "Jose Martinez-Lorenzo"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2103.13446v3",
+        "title": "ModGNN: Expert Policy Approximation in Multi-Agent Systems with a\n  Modular Graph Neural Network Architecture",
+        "abstract": "  Recent work in the multi-agent domain has shown the promise of Graph Neural\nNetworks (GNNs) to learn complex coordination strategies. However, most current\napproaches use minor variants of a Graph Convolutional Network (GCN), which\napplies a convolution to the communication graph formed by the multi-agent\nsystem. In this paper, we investigate whether the performance and\ngeneralization of GCNs can be improved upon. We introduce ModGNN, a\ndecentralized framework which serves as a generalization of GCNs, providing\nmore flexibility. To test our hypothesis, we evaluate an implementation of\nModGNN against several baselines in the multi-agent flocking problem. We\nperform an ablation analysis to show that the most important component of our\nframework is one that does not exist in a GCN. By varying the number of agents,\nwe also demonstrate that an application-agnostic implementation of ModGNN\npossesses an improved ability to generalize to new environments.\n",
+        "published": "2021",
+        "authors": [
+            "Ryan Kortvelesy",
+            "Amanda Prorok"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2110.07922v2",
+        "title": "Anomaly Detection in Multi-Agent Trajectories for Automated Driving",
+        "abstract": "  Human drivers can recognise fast abnormal driving situations to avoid\naccidents. Similar to humans, automated vehicles are supposed to perform\nanomaly detection. In this work, we propose the spatio-temporal graph\nauto-encoder for learning normal driving behaviours. Our innovation is the\nability to jointly learn multiple trajectories of a dynamic number of agents.\nTo perform anomaly detection, we first estimate a density function of the\nlearned trajectory feature representation and then detect anomalies in\nlow-density regions. Due to the lack of multi-agent trajectory datasets for\nanomaly detection in automated driving, we introduce our dataset using a\ndriving simulator for normal and abnormal manoeuvres. Our evaluations show that\nour approach learns the relation between different agents and delivers\npromising results compared to the related works. The code, simulation and the\ndataset are publicly available on https://github.com/againerju/maad_highway.\n",
+        "published": "2021",
+        "authors": [
+            "Julian Wiederer",
+            "Arij Bouazizi",
+            "Marco Troina",
+            "Ulrich Kressel",
+            "Vasileios Belagiannis"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2111.14598v1",
+        "title": "Multi-UAV Conflict Resolution with Graph Convolutional Reinforcement\n  Learning",
+        "abstract": "  Safety is the primary concern when it comes to air traffic. In-flight safety\nbetween Unmanned Aircraft Vehicles (UAVs) is ensured through pairwise\nseparation minima, utilizing conflict detection and resolution methods.\nExisting methods mainly deal with pairwise conflicts, however due to an\nexpected increase in traffic density, encounters with more than two UAVs are\nlikely to happen. In this paper, we model multi-UAV conflict resolution as a\nmulti-agent reinforcement learning problem. We implement an algorithm based on\ngraph neural networks where cooperative agents can communicate to jointly\ngenerate resolution maneuvers. The model is evaluated in scenarios with 3 and 4\npresent agents. Results show that agents are able to successfully solve the\nmulti-UAV conflicts through a cooperative strategy.\n",
+        "published": "2021",
+        "authors": [
+            "Ralvi Isufaj",
+            "Marsel Omeri",
+            "Miquel Angel Piera"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2112.00956v1",
+        "title": "Personalized Federated Learning of Driver Prediction Models for\n  Autonomous Driving",
+        "abstract": "  Autonomous vehicles (AVs) must interact with a diverse set of human drivers\nin heterogeneous geographic areas. Ideally, fleets of AVs should share\ntrajectory data to continually re-train and improve trajectory forecasting\nmodels from collective experience using cloud-based distributed learning. At\nthe same time, these robots should ideally avoid uploading raw driver\ninteraction data in order to protect proprietary policies (when sharing\ninsights with other companies) or protect driver privacy from insurance\ncompanies. Federated learning (FL) is a popular mechanism to learn models in\ncloud servers from diverse users without divulging private local data. However,\nFL is often not robust -- it learns sub-optimal models when user data comes\nfrom highly heterogeneous distributions, which is a key hallmark of human-robot\ninteractions. In this paper, we present a novel variant of personalized FL to\nspecialize robust robot learning models to diverse user distributions. Our\nalgorithm outperforms standard FL benchmarks by up to 2x in real user studies\nthat we conducted where human-operated vehicles must gracefully merge lanes\nwith simulated AVs in the standard CARLA and CARLO AV simulators.\n",
+        "published": "2021",
+        "authors": [
+            "Manabu Nakanoya",
+            "Junha Im",
+            "Hang Qiu",
+            "Sachin Katti",
+            "Marco Pavone",
+            "Sandeep Chinchali"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2112.02843v1",
+        "title": "Learning-based Measurement Scheduling for Loosely-Coupled Cooperative\n  Localization",
+        "abstract": "  In cooperative localization, communicating mobile agents use inter-agent\nrelative measurements to improve their dead-reckoning-based global\nlocalization. Measurement scheduling enables an agent to decide which subset of\navailable inter-agent relative measurements it should process when its\ncomputational resources are limited. Optimal measurement scheduling is an\nNP-hard combinatorial optimization problem. The so-called sequential greedy\n(SG) algorithm is a popular suboptimal polynomial-time solution for this\nproblem. However, the merit function evaluation for the SG algorithms requires\naccess to the state estimate vector and error covariance matrix of all the\nlandmark agents (teammates that an agent can take measurements from). This\npaper proposes a measurement scheduling for CL that follows the SG approach but\nreduces the communication and computation cost by using a neural network-based\nsurrogate model as a proxy for the SG algorithm's merit function. The\nsignificance of this model is that it is driven by local information and only a\nscalar metadata from the landmark agents. This solution addresses the time and\nmemory complexity issues of running the SG algorithm in three ways: (a)\nreducing the inter-agent communication message size, (b) decreasing the\ncomplexity of function evaluations by using a simpler surrogate (proxy)\nfunction, (c) reducing the required memory size.Simulations demonstrate our\nresults.\n",
+        "published": "2021",
+        "authors": [
+            "Jianan Zhu",
+            "Solmaz S. Kia"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2112.07663v2",
+        "title": "Learning Connectivity-Maximizing Network Configurations",
+        "abstract": "  In this letter we propose a data-driven approach to optimizing the algebraic\nconnectivity of a team of robots. While a considerable amount of research has\nbeen devoted to this problem, we lack a method that scales in a manner suitable\nfor online applications for more than a handful of agents. To that end, we\npropose a supervised learning approach with a convolutional neural network\n(CNN) that learns to place communication agents from an expert that uses an\noptimization-based strategy. We demonstrate the performance of our CNN on\ncanonical line and ring topologies, 105k randomly generated test cases, and\nlarger teams not seen during training. We also show how our system can be\napplied to dynamic robot teams through a Unity-based simulation. After\ntraining, our system produces connected configurations over an order of\nmagnitude faster than the optimization-based scheme for teams of 10-20 agents.\n",
+        "published": "2021",
+        "authors": [
+            "Daniel Mox",
+            "Vijay Kumar",
+            "Alejandro Ribeiro"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2201.07452v2",
+        "title": "Interpretable Learned Emergent Communication for Human-Agent Teams",
+        "abstract": "  Learning interpretable communication is essential for multi-agent and\nhuman-agent teams (HATs). In multi-agent reinforcement learning for\npartially-observable environments, agents may convey information to others via\nlearned communication, allowing the team to complete its task. Inspired by\nhuman languages, recent works study discrete (using only a finite set of\ntokens) and sparse (communicating only at some time-steps) communication.\nHowever, the utility of such communication in human-agent team experiments has\nnot yet been investigated. In this work, we analyze the efficacy of\nsparse-discrete methods for producing emergent communication that enables high\nagent-only and human-agent team performance. We develop agent-only teams that\ncommunicate sparsely via our scheme of Enforcers that sufficiently constrain\ncommunication to any budget. Our results show no loss or minimal loss of\nperformance in benchmark environments and tasks. In human-agent teams tested in\nbenchmark environments, where agents have been modeled using the Enforcers, we\nfind that a prototype-based method produces meaningful discrete tokens that\nenable human partners to learn agent communication faster and better than a\none-hot baseline. Additional HAT experiments show that an appropriate sparsity\nlevel lowers the cognitive load of humans when communicating with teams of\nagents and leads to superior team performance.\n",
+        "published": "2022",
+        "authors": [
+            "Seth Karten",
+            "Mycal Tucker",
+            "Huao Li",
+            "Siva Kailas",
+            "Michael Lewis",
+            "Katia Sycara"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2201.09467v1",
+        "title": "CTRMs: Learning to Construct Cooperative Timed Roadmaps for Multi-agent\n  Path Planning in Continuous Spaces",
+        "abstract": "  Multi-agent path planning (MAPP) in continuous spaces is a challenging\nproblem with significant practical importance. One promising approach is to\nfirst construct graphs approximating the spaces, called roadmaps, and then\napply multi-agent pathfinding (MAPF) algorithms to derive a set of\nconflict-free paths. While conventional studies have utilized roadmap\nconstruction methods developed for single-agent planning, it remains largely\nunexplored how we can construct roadmaps that work effectively for multiple\nagents. To this end, we propose a novel concept of roadmaps called cooperative\ntimed roadmaps (CTRMs). CTRMs enable each agent to focus on its important\nlocations around potential solution paths in a way that considers the behavior\nof other agents to avoid inter-agent collisions (i.e., \"cooperative\"), while\nbeing augmented in the time direction to make it easy to derive a \"timed\"\nsolution path. To construct CTRMs, we developed a machine-learning approach\nthat learns a generative model from a collection of relevant problem instances\nand plausible solutions and then uses the learned model to sample the vertices\nof CTRMs for new, previously unseen problem instances. Our empirical evaluation\nrevealed that the use of CTRMs significantly reduced the planning effort with\nacceptable overheads while maintaining a success rate and solution quality\ncomparable to conventional roadmap construction approaches.\n",
+        "published": "2022",
+        "authors": [
+            "Keisuke Okumura",
+            "Ryo Yonetani",
+            "Mai Nishimura",
+            "Asako Kanezaki"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2203.04524v2",
+        "title": "Multi-Agent Active Search using Detection and Location Uncertainty",
+        "abstract": "  Active search, in applications like environment monitoring or disaster\nresponse missions, involves autonomous agents detecting targets in a search\nspace using decision making algorithms that adapt to the history of their\nobservations. Active search algorithms must contend with two types of\nuncertainty: detection uncertainty and location uncertainty. The more common\napproach in robotics is to focus on location uncertainty and remove detection\nuncertainty by thresholding the detection probability to zero or one. In\ncontrast, it is common in the sparse signal processing literature to assume the\ntarget location is accurate and instead focus on the uncertainty of its\ndetection. In this work, we first propose an inference method to jointly handle\nboth target detection and location uncertainty. We then build a decision making\nalgorithm on this inference method that uses Thompson sampling to enable\ndecentralized multi-agent active search. We perform simulation experiments to\nshow that our algorithms outperform competing baselines that only account for\neither target detection or location uncertainty. We finally demonstrate the\nreal world transferability of our algorithms using a realistic simulation\nenvironment we created on the Unreal Engine 4 platform with an AirSim plugin.\n",
+        "published": "2022",
+        "authors": [
+            "Arundhati Banerjee",
+            "Ramina Ghods",
+            "Jeff Schneider"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2207.03530v2",
+        "title": "VMAS: A Vectorized Multi-Agent Simulator for Collective Robot Learning",
+        "abstract": "  While many multi-robot coordination problems can be solved optimally by exact\nalgorithms, solutions are often not scalable in the number of robots.\nMulti-Agent Reinforcement Learning (MARL) is gaining increasing attention in\nthe robotics community as a promising solution to tackle such problems.\nNevertheless, we still lack the tools that allow us to quickly and efficiently\nfind solutions to large-scale collective learning tasks. In this work, we\nintroduce the Vectorized Multi-Agent Simulator (VMAS). VMAS is an open-source\nframework designed for efficient MARL benchmarking. It is comprised of a\nvectorized 2D physics engine written in PyTorch and a set of twelve challenging\nmulti-robot scenarios. Additional scenarios can be implemented through a simple\nand modular interface. We demonstrate how vectorization enables parallel\nsimulation on accelerated hardware without added complexity. When comparing\nVMAS to OpenAI MPE, we show how MPE's execution time increases linearly in the\nnumber of simulations while VMAS is able to execute 30,000 parallel simulations\nin under 10s, proving more than 100x faster. Using VMAS's RLlib interface, we\nbenchmark our multi-robot scenarios using various Proximal Policy Optimization\n(PPO)-based MARL algorithms. VMAS's scenarios prove challenging in orthogonal\nways for state-of-the-art MARL algorithms. The VMAS framework is available at\nhttps://github.com/proroklab/VectorizedMultiAgentSimulator. A video of VMAS\nscenarios and experiments is available at https://youtu.be/aaDRYfiesAY.\n",
+        "published": "2022",
+        "authors": [
+            "Matteo Bettini",
+            "Ryan Kortvelesy",
+            "Jan Blumenkamp",
+            "Amanda Prorok"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2209.02865v1",
+        "title": "DC-MRTA: Decentralized Multi-Robot Task Allocation and Navigation in\n  Complex Environments",
+        "abstract": "  We present a novel reinforcement learning (RL) based task allocation and\ndecentralized navigation algorithm for mobile robots in warehouse environments.\nOur approach is designed for scenarios in which multiple robots are used to\nperform various pick up and delivery tasks. We consider the problem of joint\ndecentralized task allocation and navigation and present a two level approach\nto solve it. At the higher level, we solve the task allocation by formulating\nit in terms of Markov Decision Processes and choosing the appropriate rewards\nto minimize the Total Travel Delay (TTD). At the lower level, we use a\ndecentralized navigation scheme based on ORCA that enables each robot to\nperform these tasks in an independent manner, and avoid collisions with other\nrobots and dynamic obstacles. We combine these lower and upper levels by\ndefining rewards for the higher level as the feedback from the lower level\nnavigation algorithm. We perform extensive evaluation in complex warehouse\nlayouts with large number of agents and highlight the benefits over\nstate-of-the-art algorithms based on myopic pickup distance minimization and\nregret-based task selection. We observe improvement up to 14% in terms of task\ncompletion time and up-to 40% improvement in terms of computing collision-free\ntrajectories for the robots.\n",
+        "published": "2022",
+        "authors": [
+            "Aakriti Agrawal",
+            "Senthil Hariharan",
+            "Amrit Singh Bedi",
+            "Dinesh Manocha"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2209.11279v1",
+        "title": "Environment Optimization for Multi-Agent Navigation",
+        "abstract": "  Traditional approaches to the design of multi-agent navigation algorithms\nconsider the environment as a fixed constraint, despite the obvious influence\nof spatial constraints on agents' performance. Yet hand-designing improved\nenvironment layouts and structures is inefficient and potentially expensive.\nThe goal of this paper is to consider the environment as a decision variable in\na system-level optimization problem, where both agent performance and\nenvironment cost can be accounted for. We begin by proposing a novel\nenvironment optimization problem. We show, through formal proofs, under which\nconditions the environment can change while guaranteeing completeness (i.e.,\nall agents reach their navigation goals). Our solution leverages a model-free\nreinforcement learning approach. In order to accommodate a broad range of\nimplementation scenarios, we include both online and offline optimization, and\nboth discrete and continuous environment representations. Numerical results\ncorroborate our theoretical findings and validate our approach.\n",
+        "published": "2022",
+        "authors": [
+            "Zhan Gao",
+            "Amanda Prorok"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2210.02259v1",
+        "title": "Cost Aware Asynchronous Multi-Agent Active Search",
+        "abstract": "  Multi-agent active search requires autonomous agents to choose sensing\nactions that efficiently locate targets. In a realistic setting, agents also\nmust consider the costs that their decisions incur. Previously proposed active\nsearch algorithms simplify the problem by ignoring uncertainty in the agent's\nenvironment, using myopic decision making, and/or overlooking costs. In this\npaper, we introduce an online active search algorithm to detect targets in an\nunknown environment by making adaptive cost-aware decisions regarding the\nagent's actions. Our algorithm combines principles from Thompson Sampling (for\nsearch space exploration and decentralized multi-agent decision making), Monte\nCarlo Tree Search (for long horizon planning) and pareto-optimal confidence\nbounds (for multi-objective optimization in an unknown environment) to propose\nan online lookahead planner that removes all the simplifications. We analyze\nthe algorithm's performance in simulation to show its efficacy in cost aware\nactive search.\n",
+        "published": "2022",
+        "authors": [
+            "Arundhati Banerjee",
+            "Ramina Ghods",
+            "Jeff Schneider"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2211.05952v4",
+        "title": "Efficient Domain Coverage for Vehicles with Second-Order Dynamics via\n  Multi-Agent Reinforcement Learning",
+        "abstract": "  Collaborative autonomous multi-agent systems covering a specified area have\nmany potential applications, such as UAV search and rescue, forest fire\nfighting, and real-time high-resolution monitoring. Traditional approaches for\nsuch coverage problems involve designing a model-based control policy based on\nsensor data. However, designing model-based controllers is challenging, and the\nstate-of-the-art classical control policy still exhibits a large degree of\nsub-optimality. In this paper, we present a reinforcement learning (RL)\napproach for the multi-agent efficient domain coverage problem involving agents\nwith second-order dynamics. Our approach is based on the Multi-Agent Proximal\nPolicy Optimization Algorithm (MAPPO). Our proposed network architecture\nincludes the incorporation of LSTM and self-attention, which allows the trained\npolicy to adapt to a variable number of agents. Our trained policy\nsignificantly outperforms the state-of-the-art classical control policy. We\ndemonstrate our proposed method in a variety of simulated experiments.\n",
+        "published": "2022",
+        "authors": [
+            "Xinyu Zhao",
+            "Razvan C. Fetecau",
+            "Mo Chen"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2212.08710v1",
+        "title": "JFP: Joint Future Prediction with Interactive Multi-Agent Modeling for\n  Autonomous Driving",
+        "abstract": "  We propose JFP, a Joint Future Prediction model that can learn to generate\naccurate and consistent multi-agent future trajectories. For this task, many\ndifferent methods have been proposed to capture social interactions in the\nencoding part of the model, however, considerably less focus has been placed on\nrepresenting interactions in the decoder and output stages. As a result, the\npredicted trajectories are not necessarily consistent with each other, and\noften result in unrealistic trajectory overlaps. In contrast, we propose an\nend-to-end trainable model that learns directly the interaction between pairs\nof agents in a structured, graphical model formulation in order to generate\nconsistent future trajectories. It sets new state-of-the-art results on Waymo\nOpen Motion Dataset (WOMD) for the interactive setting. We also investigate a\nmore complex multi-agent setting for both WOMD and a larger internal dataset,\nwhere our approach improves significantly on the trajectory overlap metrics\nwhile obtaining on-par or better performance on single-agent trajectory\nmetrics.\n",
+        "published": "2022",
+        "authors": [
+            "Wenjie Luo",
+            "Cheolho Park",
+            "Andre Cornman",
+            "Benjamin Sapp",
+            "Dragomir Anguelov"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2301.05294v2",
+        "title": "Learning to Control and Coordinate Mixed Traffic Through Robot Vehicles\n  at Complex and Unsignalized Intersections",
+        "abstract": "  Intersections are essential road infrastructures for traffic in modern\nmetropolises. However, they can also be the bottleneck of traffic flows as a\nresult of traffic incidents or the absence of traffic coordination mechanisms\nsuch as traffic lights. Recently, various control and coordination mechanisms\nthat are beyond traditional control methods have been proposed to improve the\nefficiency of intersection traffic. Amongst these methods, the control of\nforeseeable mixed traffic that consists of human-driven vehicles (HVs) and\nrobot vehicles (RVs) has emerged. In this project, we propose a decentralized\nmulti-agent reinforcement learning approach for the control and coordination of\nmixed traffic at real-world, complex intersections--a topic that has not been\npreviously explored. Comprehensive experiments are conducted to show the\neffectiveness of our approach. In particular, we show that using 5% RVs, we can\nprevent congestion formation inside a complex intersection under the actual\ntraffic demand of 700 vehicles per hour. In contrast, without RVs, congestion\nstarts to develop when the traffic demand reaches as low as 200 vehicles per\nhour. When there exist more than 60% RVs in traffic, our method starts to\nachieve comparable or even better performance to traffic signals on the average\nwaiting time of all vehicles at the intersection. Our method is also robust\nagainst both blackout events and sudden RV percentage drops, and enjoys\nexcellent generalizablility, which is illustrated by its successful deployment\nin two unseen intersections.\n",
+        "published": "2023",
+        "authors": [
+            "Dawei Wang",
+            "Weizi Li",
+            "Lei Zhu",
+            "Jia Pan"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2302.09167v3",
+        "title": "Mixed Traffic Control and Coordination from Pixels",
+        "abstract": "  Traffic congestion is a persistent problem in our society. Existing methods\nfor traffic control have proven futile in alleviating current congestion levels\nleading researchers to explore ideas with robot vehicles given the increased\nemergence of vehicles with different levels of autonomy on our roads. This\ngives rise to mixed traffic control, where robot vehicles regulate human-driven\nvehicles through reinforcement learning (RL). However, most existing studies\nuse precise observations that involve global information, such as environment\noutflow, and local information, i.e., vehicle positions and velocities.\nObtaining this information requires updating existing road infrastructure with\nvast sensor environments and communication to potentially unwilling human\ndrivers. We consider image observations as the alternative for mixed traffic\ncontrol via RL: 1) images are ubiquitous through satellite imagery, in-car\ncamera systems, and traffic monitoring systems; 2) images do not require a\ncomplete re-imagination of the observation space from environment to\nenvironment; and 3) images only require communication to equipment. In this\nwork, we show robot vehicles using image observations can achieve similar\nperformance to using precise information on environments, including ring,\nfigure eight, intersection, merge, and bottleneck. In certain scenarios, our\napproach even outperforms using precision observations, e.g., up to 26%\nincrease in average vehicle velocity in the merge environment and a 6% increase\nin outflow in the bottleneck environment, despite only using local traffic\ninformation as opposed to global traffic information.\n",
+        "published": "2023",
+        "authors": [
+            "Michael Villarreal",
+            "Bibek Poudel",
+            "Jia Pan",
+            "Weizi Li"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2303.04313v2",
+        "title": "Online Control Barrier Functions for Decentralized Multi-Agent\n  Navigation",
+        "abstract": "  Control barrier functions (CBFs) enable guaranteed safe multi-agent\nnavigation in the continuous domain. The resulting navigation performance,\nhowever, is highly sensitive to the underlying hyperparameters. Traditional\napproaches consider fixed CBFs (where parameters are tuned apriori), and hence,\ntypically do not perform well in cluttered and highly dynamic environments:\nconservative parameter values can lead to inefficient agent trajectories, or\neven failure to reach goal positions, whereas aggressive parameter values can\nlead to infeasible controls. To overcome these issues, in this paper, we\npropose online CBFs, whereby hyperparameters are tuned in real-time, as a\nfunction of what agents perceive in their immediate neighborhood. Since the\nexplicit relationship between CBFs and navigation performance is hard to model,\nwe leverage reinforcement learning to learn CBF-tuning policies in a model-free\nmanner. Because we parameterize the policies with graph neural networks (GNNs),\nwe are able to synthesize decentralized agent controllers that adjust parameter\nvalues locally, varying the degree of conservative and aggressive behaviors\nacross agents. Simulations as well as real-world experiments show that (i)\nonline CBFs are capable of solving navigation scenarios that are infeasible for\nfixed CBFs, and (ii), that they improve navigation performance by adapting to\nother agents and changes in the environment.\n",
+        "published": "2023",
+        "authors": [
+            "Zhan Gao",
+            "Guang Yang",
+            "Amanda Prorok"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2305.16148v2",
+        "title": "Leveraging Human Feedback to Evolve and Discover Novel Emergent\n  Behaviors in Robot Swarms",
+        "abstract": "  Robot swarms often exhibit emergent behaviors that are fascinating to\nobserve; however, it is often difficult to predict what swarm behaviors can\nemerge under a given set of agent capabilities. We seek to efficiently leverage\nhuman input to automatically discover a taxonomy of collective behaviors that\ncan emerge from a particular multi-agent system, without requiring the human to\nknow beforehand what behaviors are interesting or even possible. Our proposed\napproach adapts to user preferences by learning a similarity space over swarm\ncollective behaviors using self-supervised learning and human-in-the-loop\nqueries. We combine our learned similarity metric with novelty search and\nclustering to explore and categorize the space of possible swarm behaviors. We\nalso propose several general-purpose heuristics that improve the efficiency of\nour novelty search by prioritizing robot controllers that are likely to lead to\ninteresting emergent behaviors. We test our approach in simulation on two robot\ncapability models and show that our methods consistently discover a richer set\nof emergent behaviors than prior work. Code, videos, and datasets are available\nat https://sites.google.com/view/evolving-novel-swarms.\n",
+        "published": "2023",
+        "authors": [
+            "Connor Mattson",
+            "Daniel S. Brown"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2306.00087v1",
+        "title": "Adaptive Coordination in Social Embodied Rearrangement",
+        "abstract": "  We present the task of \"Social Rearrangement\", consisting of cooperative\neveryday tasks like setting up the dinner table, tidying a house or unpacking\ngroceries in a simulated multi-agent environment. In Social Rearrangement, two\nrobots coordinate to complete a long-horizon task, using onboard sensing and\negocentric observations, and no privileged information about the environment.\nWe study zero-shot coordination (ZSC) in this task, where an agent collaborates\nwith a new partner, emulating a scenario where a robot collaborates with a new\nhuman partner. Prior ZSC approaches struggle to generalize in our complex and\nvisually rich setting, and on further analysis, we find that they fail to\ngenerate diverse coordination behaviors at training time. To counter this, we\npropose Behavior Diversity Play (BDP), a novel ZSC approach that encourages\ndiversity through a discriminability objective. Our results demonstrate that\nBDP learns adaptive agents that can tackle visual coordination, and zero-shot\ngeneralize to new partners in unseen environments, achieving 35% higher success\nand 32% higher efficiency compared to baselines.\n",
+        "published": "2023",
+        "authors": [
+            "Andrew Szot",
+            "Unnat Jain",
+            "Dhruv Batra",
+            "Zsolt Kira",
+            "Ruta Desai",
+            "Akshara Rai"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2306.04781v1",
+        "title": "Learning to Navigate in Turbulent Flows with Aerial Robot Swarms: A\n  Cooperative Deep Reinforcement Learning Approach",
+        "abstract": "  Aerial operation in turbulent environments is a challenging problem due to\nthe chaotic behavior of the flow. This problem is made even more complex when a\nteam of aerial robots is trying to achieve coordinated motion in turbulent wind\nconditions. In this paper, we present a novel multi-robot controller to\nnavigate in turbulent flows, decoupling the trajectory-tracking control from\nthe turbulence compensation via a nested control architecture. Unlike previous\nworks, our method does not learn to compensate for the air-flow at a specific\ntime and space. Instead, our method learns to compensate for the flow based on\nits effect on the team. This is made possible via a deep reinforcement learning\napproach, implemented via a Graph Convolutional Neural Network (GCNN)-based\narchitecture, which enables robots to achieve better wind compensation by\nprocessing the spatial-temporal correlation of wind flows across the team. Our\napproach scales well to large robot teams -- as each robot only uses\ninformation from its nearest neighbors -- , and generalizes well to robot teams\nlarger than seen in training. Simulated experiments demonstrate how information\nsharing improves turbulence compensation in a team of aerial robots and\ndemonstrate the flexibility of our method over different team configurations.\n",
+        "published": "2023",
+        "authors": [
+            "Diego Pati\u00f1o",
+            "Siddharth Mayya",
+            "Juan Calderon",
+            "Kostas Daniilidis",
+            "David Salda\u00f1a"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2306.06236v3",
+        "title": "iPLAN: Intent-Aware Planning in Heterogeneous Traffic via Distributed\n  Multi-Agent Reinforcement Learning",
+        "abstract": "  Navigating safely and efficiently in dense and heterogeneous traffic\nscenarios is challenging for autonomous vehicles (AVs) due to their inability\nto infer the behaviors or intentions of nearby drivers. In this work, we\nintroduce a distributed multi-agent reinforcement learning (MARL) algorithm\nthat can predict trajectories and intents in dense and heterogeneous traffic\nscenarios. Our approach for intent-aware planning, iPLAN, allows agents to\ninfer nearby drivers' intents solely from their local observations. We model\ntwo distinct incentives for agents' strategies: Behavioral Incentive for\nhigh-level decision-making based on their driving behavior or personality and\nInstant Incentive for motion planning for collision avoidance based on the\ncurrent traffic state. Our approach enables agents to infer their opponents'\nbehavior incentives and integrate this inferred information into their\ndecision-making and motion-planning processes. We perform experiments on two\nsimulation environments, Non-Cooperative Navigation and Heterogeneous Highway.\nIn Heterogeneous Highway, results show that, compared with centralized training\ndecentralized execution (CTDE) MARL baselines such as QMIX and MAPPO, our\nmethod yields a 4.3% and 38.4% higher episodic reward in mild and chaotic\ntraffic, with 48.1% higher success rate and 80.6% longer survival time in\nchaotic traffic. We also compare with a decentralized training decentralized\nexecution (DTDE) baseline IPPO and demonstrate a higher episodic reward of\n12.7% and 6.3% in mild traffic and chaotic traffic, 25.3% higher success rate,\nand 13.7% longer survival time.\n",
+        "published": "2023",
+        "authors": [
+            "Xiyang Wu",
+            "Rohan Chandra",
+            "Tianrui Guan",
+            "Amrit Singh Bedi",
+            "Dinesh Manocha"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2307.06244v2",
+        "title": "Diffusion Models for Multi-target Adversarial Tracking",
+        "abstract": "  Target tracking plays a crucial role in real-world scenarios, particularly in\ndrug-trafficking interdiction, where the knowledge of an adversarial target's\nlocation is often limited. Improving autonomous tracking systems will enable\nunmanned aerial, surface, and underwater vehicles to better assist in\ninterdicting smugglers that use manned surface, semi-submersible, and aerial\nvessels. As unmanned drones proliferate, accurate autonomous target estimation\nis even more crucial for security and safety. This paper presents Constrained\nAgent-based Diffusion for Enhanced Multi-Agent Tracking (CADENCE), an approach\naimed at generating comprehensive predictions of adversary locations by\nleveraging past sparse state information. To assess the effectiveness of this\napproach, we evaluate predictions on single-target and multi-target pursuit\nenvironments, employing Monte-Carlo sampling of the diffusion model to estimate\nthe probability associated with each generated trajectory. We propose a novel\ncross-attention based diffusion model that utilizes constraint-based sampling\nto generate multimodal track hypotheses. Our single-target model surpasses the\nperformance of all baseline methods on Average Displacement Error (ADE) for\npredictions across all time horizons.\n",
+        "published": "2023",
+        "authors": [
+            "Sean Ye",
+            "Manisha Natarajan",
+            "Zixuan Wu",
+            "Matthew Gombolay"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2308.14947v1",
+        "title": "Improving Reinforcement Learning Training Regimes for Social Robot\n  Navigation",
+        "abstract": "  In order for autonomous mobile robots to navigate in human spaces, they must\nabide by our social norms. Reinforcement learning (RL) has emerged as an\neffective method to train robot navigation policies that are able to respect\nthese norms. However, a large portion of existing work in the field conducts\nboth RL training and testing in simplistic environments. This limits the\ngeneralization potential of these models to unseen environments, and the\nmeaningfulness of their reported results. We propose a method to improve the\ngeneralization performance of RL social navigation methods using curriculum\nlearning. By employing multiple environment types and by modeling pedestrians\nusing multiple dynamics models, we are able to progressively diversify and\nescalate difficulty in training. Our results show that the use of curriculum\nlearning in training can be used to achieve better generalization performance\nthan previous training methods. We also show that results presented in many\nexisting state-of-the art RL social navigation works do not evaluate their\nmethods outside of their training environments, and thus do not reflect their\npolicies' failure to adequately generalize to out-of-distribution scenarios. In\nresponse, we validate our training approach on larger and more crowded testing\nenvironments than those used in training, allowing for more meaningful\nmeasurements of model performance.\n",
+        "published": "2023",
+        "authors": [
+            "Adam Sigal",
+            "Hsiu-Chin Lin",
+            "AJung Moon"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2310.16941v1",
+        "title": "Exploring Behavior Discovery Methods for Heterogeneous Swarms of\n  Limited-Capability Robots",
+        "abstract": "  We study the problem of determining the emergent behaviors that are possible\ngiven a functionally heterogeneous swarm of robots with limited capabilities.\nPrior work has considered behavior search for homogeneous swarms and proposed\nthe use of novelty search over either a hand-specified or learned behavior\nspace followed by clustering to return a taxonomy of emergent behaviors to the\nuser. In this paper, we seek to better understand the role of novelty search\nand the efficacy of using clustering to discover novel emergent behaviors.\nThrough a large set of experiments and ablations, we analyze the effect of\nrepresentations, evolutionary search, and various clustering methods in the\nsearch for novel behaviors in a heterogeneous swarm. Our results indicate that\nprior methods fail to discover many interesting behaviors and that an iterative\nhuman-in-the-loop discovery process discovers more behaviors than random\nsearch, swarm chemistry, and automated behavior discovery. The combined\ndiscoveries of our experiments uncover 23 emergent behaviors, 18 of which are\nnovel discoveries. To the best of our knowledge, these are the first known\nemergent behaviors for heterogeneous swarms of computation-free agents. Videos,\ncode, and appendix are available at the project website:\nhttps://sites.google.com/view/heterogeneous-bd-methods\n",
+        "published": "2023",
+        "authors": [
+            "Connor Mattson",
+            "Jeremy C. Clark",
+            "Daniel S. Brown"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2311.00252v1",
+        "title": "Active Neural Topological Mapping for Multi-Agent Exploration",
+        "abstract": "  This paper investigates the multi-agent cooperative exploration problem,\nwhich requires multiple agents to explore an unseen environment via sensory\nsignals in a limited time. A popular approach to exploration tasks is to\ncombine active mapping with planning. Metric maps capture the details of the\nspatial representation, but are with high communication traffic and may vary\nsignificantly between scenarios, resulting in inferior generalization.\nTopological maps are a promising alternative as they consist only of nodes and\nedges with abstract but essential information and are less influenced by the\nscene structures. However, most existing topology-based exploration tasks\nutilize classical methods for planning, which are time-consuming and\nsub-optimal due to their handcrafted design. Deep reinforcement learning (DRL)\nhas shown great potential for learning (near) optimal policies through fast\nend-to-end inference. In this paper, we propose Multi-Agent Neural Topological\nMapping (MANTM) to improve exploration efficiency and generalization for\nmulti-agent exploration tasks. MANTM mainly comprises a Topological Mapper and\na novel RL-based Hierarchical Topological Planner (HTP). The Topological Mapper\nemploys a visual encoder and distance-based heuristics to construct a graph\ncontaining main nodes and their corresponding ghost nodes. The HTP leverages\ngraph neural networks to capture correlations between agents and graph nodes in\na coarse-to-fine manner for effective global goal selection. Extensive\nexperiments conducted in a physically-realistic simulator, Habitat, demonstrate\nthat MANTM reduces the steps by at least 26.40% over planning-based baselines\nand by at least 7.63% over RL-based competitors in unseen scenarios.\n",
+        "published": "2023",
+        "authors": [
+            "Xinyi Yang",
+            "Yuxiang Yang",
+            "Chao Yu",
+            "Jiayu Chen",
+            "Jingchen Yu",
+            "Haibing Ren",
+            "Huazhong Yang",
+            "Yu Wang"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2311.04740v1",
+        "title": "Enhancing Multi-Agent Coordination through Common Operating Picture\n  Integration",
+        "abstract": "  In multi-agent systems, agents possess only local observations of the\nenvironment. Communication between teammates becomes crucial for enhancing\ncoordination. Past research has primarily focused on encoding local information\ninto embedding messages which are unintelligible to humans. We find that using\nthese messages in agent's policy learning leads to brittle policies when tested\non out-of-distribution initial states. We present an approach to multi-agent\ncoordination, where each agent is equipped with the capability to integrate its\n(history of) observations, actions and messages received into a Common\nOperating Picture (COP) and disseminate the COP. This process takes into\naccount the dynamic nature of the environment and the shared mission. We\nconducted experiments in the StarCraft2 environment to validate our approach.\nOur results demonstrate the efficacy of COP integration, and show that\nCOP-based training leads to robust policies compared to state-of-the-art\nMulti-Agent Reinforcement Learning (MARL) methods when faced with\nout-of-distribution initial states.\n",
+        "published": "2023",
+        "authors": [
+            "Peihong Yu",
+            "Bhoram Lee",
+            "Aswin Raghavan",
+            "Supun Samarasekara",
+            "Pratap Tokekar",
+            "James Zachary Hare"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2311.09852v1",
+        "title": "Short vs. Long-term Coordination of Drones: When Distributed\n  Optimization Meets Deep Reinforcement Learning",
+        "abstract": "  Swarms of smart drones, with the support of charging technology, can provide\ncompleting sensing capabilities in Smart Cities, such as traffic monitoring and\ndisaster response. Existing approaches, including distributed optimization and\ndeep reinforcement learning (DRL), aim to coordinate drones to achieve\ncost-effective, high-quality navigation, sensing, and recharging. However, they\nhave distinct challenges: short-term optimization struggles to provide\nsustained benefits, while long-term DRL lacks scalability, resilience, and\nflexibility. To bridge this gap, this paper introduces a new progressive\napproach that encompasses the planning and selection based on distributed\noptimization, as well as DRL-based flying direction scheduling. Extensive\nexperiment with datasets generated from realisitic urban mobility demonstrate\nthe outstanding performance of the proposed solution in traffic monitoring\ncompared to three baseline methods.\n",
+        "published": "2023",
+        "authors": [
+            "Chuhao Qin",
+            "Evangelos Pournaras"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2312.01227v2",
+        "title": "Distributed Bayesian Estimation in Sensor Networks: Consensus on\n  Marginal Densities",
+        "abstract": "  In this paper, we aim to design and analyze distributed Bayesian estimation\nalgorithms for sensor networks. The challenges we address are to (i) derive a\ndistributed provably-correct algorithm in the functional space of probability\ndistributions over continuous variables, and (ii) leverage these results to\nobtain new distributed estimators restricted to subsets of variables observed\nby individual agents. This relates to applications such as cooperative\nlocalization and federated learning, where the data collected at any agent\ndepends on a subset of all variables of interest. We present Bayesian density\nestimation algorithms using data from non-linear likelihoods at agents in\ncentralized, distributed, and marginal distributed settings. After setting up a\ndistributed estimation objective, we prove almost-sure convergence to the\noptimal set of pdfs at each agent. Then, we prove the same for a storage-aware\nalgorithm estimating densities only over relevant variables at each agent.\nFinally, we present a Gaussian version of these algorithms and implement it in\na mapping problem using variational inference to handle non-linear likelihood\nmodels associated with LiDAR sensing.\n",
+        "published": "2023",
+        "authors": [
+            "Parth Paritosh",
+            "Nikolay Atanasov",
+            "Sonia Martinez"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2312.13910v1",
+        "title": "Multi-Agent Probabilistic Ensembles with Trajectory Sampling for\n  Connected Autonomous Vehicles",
+        "abstract": "  Autonomous Vehicles (AVs) have attracted significant attention in recent\nyears and Reinforcement Learning (RL) has shown remarkable performance in\nimproving the autonomy of vehicles. In that regard, the widely adopted\nModel-Free RL (MFRL) promises to solve decision-making tasks in connected AVs\n(CAVs), contingent on the readiness of a significant amount of data samples for\ntraining. Nevertheless, it might be infeasible in practice and possibly lead to\nlearning instability. In contrast, Model-Based RL (MBRL) manifests itself in\nsample-efficient learning, but the asymptotic performance of MBRL might lag\nbehind the state-of-the-art MFRL algorithms. Furthermore, most studies for CAVs\nare limited to the decision-making of a single AV only, thus underscoring the\nperformance due to the absence of communications. In this study, we try to\naddress the decision-making problem of multiple CAVs with limited\ncommunications and propose a decentralized Multi-Agent Probabilistic Ensembles\nwith Trajectory Sampling algorithm MA-PETS. In particular, in order to better\ncapture the uncertainty of the unknown environment, MA-PETS leverages\nProbabilistic Ensemble (PE) neural networks to learn from communicated samples\namong neighboring CAVs. Afterwards, MA-PETS capably develops Trajectory\nSampling (TS)-based model-predictive control for decision-making. On this\nbasis, we derive the multi-agent group regret bound affected by the number of\nagents within the communication range and mathematically validate that\nincorporating effective information exchange among agents into the multi-agent\nlearning scheme contributes to reducing the group regret bound in the worst\ncase. Finally, we empirically demonstrate the superiority of MA-PETS in terms\nof the sample efficiency comparable to MFBL.\n",
+        "published": "2023",
+        "authors": [
+            "Ruoqi Wen",
+            "Jiahao Huang",
+            "Rongpeng Li",
+            "Guoru Ding",
+            "Zhifeng Zhao"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2401.00445v1",
+        "title": "Energy-Efficient Power Control for Multiple-Task Split Inference in\n  UAVs: A Tiny Learning-Based Approach",
+        "abstract": "  The limited energy and computing resources of unmanned aerial vehicles (UAVs)\nhinder the application of aerial artificial intelligence. The utilization of\nsplit inference in UAVs garners significant attention due to its effectiveness\nin mitigating computing and energy requirements. However, achieving\nenergy-efficient split inference in UAVs remains complex considering of various\ncrucial parameters such as energy level and delay constraints, especially\ninvolving multiple tasks. In this paper, we present a two-timescale approach\nfor energy minimization in split inference, where discrete and continuous\nvariables are segregated into two timescales to reduce the size of action space\nand computational complexity. This segregation enables the utilization of tiny\nreinforcement learning (TRL) for selecting discrete transmission modes for\nsequential tasks. Moreover, optimization programming (OP) is embedded between\nTRL's output and reward function to optimize the continuous transmit power.\nSpecifically, we replace the optimization of transmit power with that of\ntransmission time to decrease the computational complexity of OP since we\nreveal that energy consumption monotonically decreases with increasing\ntransmission time. The replacement significantly reduces the feasible region\nand enables a fast solution according to the closed-form expression for optimal\ntransmit power. Simulation results show that the proposed algorithm can achieve\na higher probability of successful task completion with lower energy\nconsumption.\n",
+        "published": "2023",
+        "authors": [
+            "Chenxi Zhao",
+            "Min Sheng",
+            "Junyu Liu",
+            "Tianshu Chu",
+            "Jiandong Li"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2010.13407v1",
+        "title": "Behavioral decision-making for urban autonomous driving in the presence\n  of pedestrians using Deep Recurrent Q-Network",
+        "abstract": "  Decision making for autonomous driving in urban environments is challenging\ndue to the complexity of the road structure and the uncertainty in the behavior\nof diverse road users. Traditional methods consist of manually designed rules\nas the driving policy, which require expert domain knowledge, are difficult to\ngeneralize and might give sub-optimal results as the environment gets complex.\nWhereas, using reinforcement learning, optimal driving policy could be learned\nand improved automatically through several interactions with the environment.\nHowever, current research in the field of reinforcement learning for autonomous\ndriving is mainly focused on highway setup with little to no emphasis on urban\nenvironments. In this work, a deep reinforcement learning based decision-making\napproach for high-level driving behavior is proposed for urban environments in\nthe presence of pedestrians. For this, the use of Deep Recurrent Q-Network\n(DRQN) is explored, a method combining state-of-the art Deep Q-Network (DQN)\nwith a long term short term memory (LSTM) layer helping the agent gain a memory\nof the environment. A 3-D state representation is designed as the input\ncombined with a well defined reward function to train the agent for learning an\nappropriate behavior policy in a real-world like urban simulator. The proposed\nmethod is evaluated for dense urban scenarios and compared with a rule-based\napproach and results show that the proposed DRQN based driving behavior\ndecision maker outperforms the rule-based approach.\n",
+        "published": "2020",
+        "authors": [
+            "Niranjan Deshpande",
+            "Dominique Vaufreydaz",
+            "Anne Spalanzani"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/cs/0009012v1",
+        "title": "Modeling Ambiguity in a Multi-Agent System",
+        "abstract": "  This paper investigates the formal pragmatics of ambiguous expressions by\nmodeling ambiguity in a multi-agent system. Such a framework allows us to give\na more refined notion of the kind of information that is conveyed by ambiguous\nexpressions. We analyze how ambiguity affects the knowledge of the dialog\nparticipants and, especially, what they know about each other after an\nambiguous sentence has been uttered. The agents communicate with each other by\nmeans of a TELL-function, whose application is constrained by an implementation\nof some of Grice's maxims. The information states of the multi-agent system\nitself are represented as a Kripke structures and TELL is an update function on\nthose structures. This framework enables us to distinguish between the\ninformation conveyed by ambiguous sentences vs. the information conveyed by\ndisjunctions, and between semantic ambiguity vs. perceived ambiguity.\n",
+        "published": "2000",
+        "authors": [
+            "Christof Monz"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1601.06732v1",
+        "title": "Concept Generation in Language Evolution",
+        "abstract": "  This thesis investigates the generation of new concepts from combinations of\nexisting concepts as a language evolves. We give a method for combining\nconcepts, and will be investigating the utility of composite concepts in\nlanguage evolution and thence the utility of concept generation.\n",
+        "published": "2016",
+        "authors": [
+            "Martha Lewis",
+            "Jonathan Lawry"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1601.06763v1",
+        "title": "Emerging Dimension Weights in a Conceptual Spaces Model of Concept\n  Combination",
+        "abstract": "  We investigate the generation of new concepts from combinations of properties\nas an artificial language develops. To do so, we have developed a new framework\nfor conjunctive concept combination. This framework gives a semantic grounding\nto the weighted sum approach to concept combination seen in the literature. We\nimplement the framework in a multi-agent simulation of language evolution and\nshow that shared combination weights emerge. The expected value and the\nvariance of these weights across agents may be predicted from the distribution\nof elements in the conceptual space, as determined by the underlying\nenvironment, together with the rate at which agents adopt others' concepts.\nWhen this rate is smaller, the agents are able to converge to weights with\nlower variance. However, the time taken to converge to a steady state\ndistribution of weights is longer.\n",
+        "published": "2016",
+        "authors": [
+            "Martha Lewis",
+            "Jonathan Lawry"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1908.05135v1",
+        "title": "Mastering emergent language: learning to guide in simulated navigation",
+        "abstract": "  To cooperate with humans effectively, virtual agents need to be able to\nunderstand and execute language instructions. A typical setup to achieve this\nis with a scripted teacher which guides a virtual agent using language\ninstructions. However, such setup has clear limitations in scalability and,\nmore importantly, it is not interactive. Here, we introduce an autonomous agent\nthat uses discrete communication to interactively guide other agents to\nnavigate and act on a simulated environment. The developed communication\nprotocol is trainable, emergent and requires no additional supervision. The\nemergent language speeds up learning of new agents, it generalizes across\nincrementally more difficult tasks and, contrary to most other emergent\nlanguages, it is highly interpretable. We demonstrate how the emitted messages\ncorrelate with particular actions and observations, and how new agents become\nless dependent on this guidance as training progresses. By exploiting the\ncorrelations identified in our analysis, we manage to successfully address the\nagents in their own language.\n",
+        "published": "2019",
+        "authors": [
+            "Mathijs Mul",
+            "Diane Bouchacourt",
+            "Elia Bruni"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1906.00580v1",
+        "title": "Massive Styles Transfer with Limited Labeled Data",
+        "abstract": "  Language style transfer has attracted more and more attention in the past few\nyears. Recent researches focus on improving neural models targeting at\ntransferring from one style to the other with labeled data. However,\ntransferring across multiple styles is often very useful in real-life\napplications. Previous researches of language style transfer have two main\ndeficiencies: dependency on massive labeled data and neglect of mutual\ninfluence among different style transfer tasks. In this paper, we propose a\nmulti-agent style transfer system (MAST) for addressing multiple style transfer\ntasks with limited labeled data, by leveraging abundant unlabeled data and the\nmutual benefit among the multiple styles. A style transfer agent in our system\nnot only learns from unlabeled data by using techniques like denoising\nauto-encoder and back-translation, but also learns to cooperate with other\nstyle transfer agents in a self-organization manner. We conduct our experiments\nby simulating a set of real-world style transfer tasks with multiple versions\nof the Bible. Our model significantly outperforms the other competitive\nmethods. Extensive results and analysis further verify the efficacy of our\nproposed system.\n",
+        "published": "2019",
+        "authors": [
+            "Hongyu Zang",
+            "Xiaojun Wan"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1909.05863v1",
+        "title": "Finding Generalizable Evidence by Learning to Convince Q&A Models",
+        "abstract": "  We propose a system that finds the strongest supporting evidence for a given\nanswer to a question, using passage-based question-answering (QA) as a testbed.\nWe train evidence agents to select the passage sentences that most convince a\npretrained QA model of a given answer, if the QA model received those sentences\ninstead of the full passage. Rather than finding evidence that convinces one\nmodel alone, we find that agents select evidence that generalizes; agent-chosen\nevidence increases the plausibility of the supported answer, as judged by other\nQA models and humans. Given its general nature, this approach improves QA in a\nrobust manner: using agent-selected evidence (i) humans can correctly answer\nquestions with only ~20% of the full passage and (ii) QA models can generalize\nto longer passages and harder questions.\n",
+        "published": "2019",
+        "authors": [
+            "Ethan Perez",
+            "Siddharth Karamcheti",
+            "Rob Fergus",
+            "Jason Weston",
+            "Douwe Kiela",
+            "Kyunghyun Cho"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2303.04544v1",
+        "title": "Models of symbol emergence in communication: a conceptual review and a\n  guide for avoiding local minima",
+        "abstract": "  Computational simulations are a popular method for testing hypotheses about\nthe emergence of communication. This kind of research is performed in a variety\nof traditions including language evolution, developmental psychology, cognitive\nscience, machine learning, robotics, etc. The motivations for the models are\ndifferent, but the operationalizations and methods used are often similar. We\nidentify the assumptions and explanatory targets of several most representative\nmodels and summarise the known results. We claim that some of the assumptions\n-- such as portraying meaning in terms of mapping, focusing on the descriptive\nfunction of communication, modelling signals with amodal tokens -- may hinder\nthe success of modelling. Relaxing these assumptions and foregrounding the\ninteractions of embodied and situated agents allows one to systematise the\nmultiplicity of pressures under which symbolic systems evolve. In line with\nthis perspective, we sketch the road towards modelling the emergence of\nmeaningful symbolic communication, where symbols are simultaneously grounded in\naction and perception and form an abstract system.\n",
+        "published": "2023",
+        "authors": [
+            "Julian Zubek",
+            "Tomasz Korbak",
+            "Joanna R\u0105czaszek-Leonardi"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2310.08901v1",
+        "title": "Welfare Diplomacy: Benchmarking Language Model Cooperation",
+        "abstract": "  The growing capabilities and increasingly widespread deployment of AI systems\nnecessitate robust benchmarks for measuring their cooperative capabilities.\nUnfortunately, most multi-agent benchmarks are either zero-sum or purely\ncooperative, providing limited opportunities for such measurements. We\nintroduce a general-sum variant of the zero-sum board game Diplomacy -- called\nWelfare Diplomacy -- in which players must balance investing in military\nconquest and domestic welfare. We argue that Welfare Diplomacy facilitates both\na clearer assessment of and stronger training incentives for cooperative\ncapabilities. Our contributions are: (1) proposing the Welfare Diplomacy rules\nand implementing them via an open-source Diplomacy engine; (2) constructing\nbaseline agents using zero-shot prompted language models; and (3) conducting\nexperiments where we find that baselines using state-of-the-art models attain\nhigh social welfare but are exploitable. Our work aims to promote societal\nsafety by aiding researchers in developing and assessing multi-agent AI\nsystems. Code to evaluate Welfare Diplomacy and reproduce our experiments is\navailable at https://github.com/mukobi/welfare-diplomacy.\n",
+        "published": "2023",
+        "authors": [
+            "Gabriel Mukobi",
+            "Hannah Erlebach",
+            "Niklas Lauffer",
+            "Lewis Hammond",
+            "Alan Chan",
+            "Jesse Clifton"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2310.17512v1",
+        "title": "CompeteAI: Understanding the Competition Behaviors in Large Language\n  Model-based Agents",
+        "abstract": "  Large language models (LLMs) have been widely used as agents to complete\ndifferent tasks, such as personal assistance or event planning. While most work\nhas focused on cooperation and collaboration between agents, little work\nexplores competition, another important mechanism that fosters the development\nof society and economy. In this paper, we seek to examine the competition\nbehaviors in LLM-based agents. We first propose a general framework to study\nthe competition between agents. Then, we implement a practical competitive\nenvironment using GPT-4 to simulate a virtual town with two types of agents,\nincluding restaurant agents and customer agents. Specifically, restaurant\nagents compete with each other to attract more customers, where the competition\nfosters them to transform, such as cultivating new operating strategies. The\nresults of our experiments reveal several interesting findings ranging from\nsocial learning to Matthew Effect, which aligns well with existing sociological\nand economic theories. We believe that competition between agents deserves\nfurther investigation to help us understand society better. The code will be\nreleased soon.\n",
+        "published": "2023",
+        "authors": [
+            "Qinlin Zhao",
+            "Jindong Wang",
+            "Yixuan Zhang",
+            "Yiqiao Jin",
+            "Kaijie Zhu",
+            "Hao Chen",
+            "Xing Xie"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2312.11970v1",
+        "title": "Large Language Models Empowered Agent-based Modeling and Simulation: A\n  Survey and Perspectives",
+        "abstract": "  Agent-based modeling and simulation has evolved as a powerful tool for\nmodeling complex systems, offering insights into emergent behaviors and\ninteractions among diverse agents. Integrating large language models into\nagent-based modeling and simulation presents a promising avenue for enhancing\nsimulation capabilities. This paper surveys the landscape of utilizing large\nlanguage models in agent-based modeling and simulation, examining their\nchallenges and promising future directions. In this survey, since this is an\ninterdisciplinary field, we first introduce the background of agent-based\nmodeling and simulation and large language model-empowered agents. We then\ndiscuss the motivation for applying large language models to agent-based\nsimulation and systematically analyze the challenges in environment perception,\nhuman alignment, action generation, and evaluation. Most importantly, we\nprovide a comprehensive overview of the recent works of large language\nmodel-empowered agent-based modeling and simulation in multiple scenarios,\nwhich can be divided into four domains: cyber, physical, social, and hybrid,\ncovering simulation of both real-world and virtual environments. Finally, since\nthis area is new and quickly evolving, we discuss the open problems and\npromising future directions.\n",
+        "published": "2023",
+        "authors": [
+            "Chen Gao",
+            "Xiaochong Lan",
+            "Nian Li",
+            "Yuan Yuan",
+            "Jingtao Ding",
+            "Zhilun Zhou",
+            "Fengli Xu",
+            "Yong Li"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2401.02870v1",
+        "title": "AFSPP: Agent Framework for Shaping Preference and Personality with Large\n  Language Models",
+        "abstract": "  The evolution of Large Language Models (LLMs) has introduced a new paradigm\nfor investigating human behavior emulation. Recent research has employed\nLLM-based Agents to create a sociological research environment, in which agents\nexhibit behavior based on the unfiltered characteristics of large language\nmodels. However, these studies overlook the iterative development within a\nhuman-like setting - Human preferences and personalities are complex, shaped by\nvarious factors and subject to ongoing change as a result of environmental and\nsubjective influences. In light of this observation, we propose Agent Framework\nfor Shaping Preference and Personality (AFSPP), exploring the multifaceted\nimpact of social networks and subjective consciousness on LLM-based Agents'\npreference and personality formation. With AFSPP, we have, for the first time,\nsuccessfully replicated several key findings from human personality\nexperiments. And other AFSPP-based experimental results indicate that plan\nmaking, sensory perceptions and social networking with subjective information,\nwield the most pronounced influence on preference shaping. AFSPP can\nsignificantly enhance the efficiency and scope of psychological experiments,\nwhile yielding valuable insights for Trustworthy Artificial Intelligence\nresearch for strategies to prevent undesirable preference and personality\ndevelopment.\n",
+        "published": "2024",
+        "authors": [
+            "Zihong He",
+            "Changwang Zhang"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2401.05799v1",
+        "title": "Designing Heterogeneous LLM Agents for Financial Sentiment Analysis",
+        "abstract": "  Large language models (LLMs) have drastically changed the possible ways to\ndesign intelligent systems, shifting the focuses from massive data acquisition\nand new modeling training to human alignment and strategical elicitation of the\nfull potential of existing pre-trained models. This paradigm shift, however, is\nnot fully realized in financial sentiment analysis (FSA), due to the\ndiscriminative nature of this task and a lack of prescriptive knowledge of how\nto leverage generative models in such a context. This study investigates the\neffectiveness of the new paradigm, i.e., using LLMs without fine-tuning for\nFSA. Rooted in Minsky's theory of mind and emotions, a design framework with\nheterogeneous LLM agents is proposed. The framework instantiates specialized\nagents using prior domain knowledge of the types of FSA errors and reasons on\nthe aggregated agent discussions. Comprehensive evaluation on FSA datasets show\nthat the framework yields better accuracies, especially when the discussions\nare substantial. This study contributes to the design foundations and paves new\navenues for LLMs-based FSA. Implications on business and management are also\ndiscussed.\n",
+        "published": "2024",
+        "authors": [
+            "Frank Xing"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1203.0504v1",
+        "title": "Modelling Social Structures and Hierarchies in Language Evolution",
+        "abstract": "  Language evolution might have preferred certain prior social configurations\nover others. Experiments conducted with models of different social structures\n(varying subgroup interactions and the role of a dominant interlocutor) suggest\nthat having isolated agent groups rather than an interconnected agent is more\nadvantageous for the emergence of a social communication system. Distinctive\ngroups that are closely connected by communication yield systems less like\nnatural language than fully isolated groups inhabiting the same world.\nFurthermore, the addition of a dominant male who is asymmetrically favoured as\na hearer, and equally likely to be a speaker has no positive influence on the\ndisjoint groups.\n",
+        "published": "2012",
+        "authors": [
+            "Martin Bachwerk",
+            "Carl Vogel"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1203.0512v1",
+        "title": "Establishing linguistic conventions in task-oriented primeval dialogue",
+        "abstract": "  In this paper, we claim that language is likely to have emerged as a\nmechanism for coordinating the solution of complex tasks. To confirm this\nthesis, computer simulations are performed based on the coordination task\npresented by Garrod & Anderson (1987). The role of success in task-oriented\ndialogue is analytically evaluated with the help of performance measurements\nand a thorough lexical analysis of the emergent communication system.\nSimulation results confirm a strong effect of success mattering on both\nreliability and dispersion of linguistic conventions.\n",
+        "published": "2012",
+        "authors": [
+            "Martin Bachwerk",
+            "Carl Vogel"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1601.06755v1",
+        "title": "The Utility of Hedged Assertions in the Emergence of Shared Categorical\n  Labels",
+        "abstract": "  We investigate the emergence of shared concepts in a community of language\nusers using a multi-agent simulation. We extend results showing that negated\nassertions are of use in developing shared categories, to include assertions\nmodified by linguistic hedges. Results show that using hedged assertions\npositively affects the emergence of shared categories in two distinct ways.\nFirstly, using contraction hedges like `very' gives better convergence over\ntime. Secondly, using expansion hedges such as `quite' reduces concept overlap.\nHowever, both these improvements come at a cost of slower speed of development.\n",
+        "published": "2016",
+        "authors": [
+            "Martha Lewis",
+            "Jonathan Lawry"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1902.06897v2",
+        "title": "Winning an Election: On Emergent Strategic Communication in Multi-Agent\n  Networks",
+        "abstract": "  Humans use language to collectively execute abstract strategies besides using\nit as a referential tool for identifying physical entities. Recently, multiple\nattempts at replicating the process of emergence of language in artificial\nagents have been made. While existing approaches study emergent languages as\nreferential tools, in this paper, we study their role in discovering and\nimplementing strategies. We formulate the problem using a voting game where two\ncandidate agents contest in an election with the goal of convincing population\nmembers (other agents), that are connected to each other via an underlying\nnetwork, to vote for them. To achieve this goal, agents are only allowed to\nexchange messages in the form of sequences of discrete symbols to spread their\npropaganda. We use neural networks with Gumbel-Softmax relaxation for sampling\ncategorical random variables to parameterize the policies followed by all\nagents. Using our proposed framework, we provide concrete answers to the\nfollowing questions: (i) Do the agents learn to communicate in a meaningful way\nand does the emergent communication play a role in deciding the winner? (ii)\nDoes the system evolve as expected under various reward structures? (iii) How\nis the emergent language affected by the community structure in the network? To\nthe best of our knowledge, we are the first to explore emergence of\ncommunication for discovering and implementing strategies in a setting where\nagents communicate over a network.\n",
+        "published": "2019",
+        "authors": [
+            "Shubham Gupta",
+            "Ambedkar Dukkipati"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2006.04109v2",
+        "title": "Incorporating Pragmatic Reasoning Communication into Emergent Language",
+        "abstract": "  Emergentism and pragmatics are two research fields that study the dynamics of\nlinguistic communication along substantially different timescales and\nintelligence levels. From the perspective of multi-agent reinforcement\nlearning, they correspond to stochastic games with reinforcement training and\nstage games with opponent awareness. Given that their combination has been\nexplored in linguistics, we propose computational models that combine\nshort-term mutual reasoning-based pragmatics with long-term language\nemergentism. We explore this for agent communication referential games as well\nas in Starcraft II, assessing the relative merits of different kinds of mutual\nreasoning pragmatics models both empirically and theoretically. Our results\nshed light on their importance for making inroads towards getting more natural,\naccurate, robust, fine-grained, and succinct utterances.\n",
+        "published": "2020",
+        "authors": [
+            "Yipeng Kang",
+            "Tonghan Wang",
+            "Gerard de Melo"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2008.04162v7",
+        "title": "Navigating Human Language Models with Synthetic Agents",
+        "abstract": "  Modern natural language models such as the GPT-2/GPT-3 contain tremendous\namounts of information about human belief in a consistently testable form. If\nthese models could be shown to accurately reflect the underlying beliefs of the\nhuman beings that produced the data used to train these models, then such\nmodels become a powerful sociological tool in ways that are distinct from\ntraditional methods, such as interviews and surveys. In this study, We train a\nversion of the GPT-2 on a corpora of historical chess games, and then \"launch\"\nclusters of synthetic agents into the model, using text strings to create\ncontext and orientation. We compare the trajectories contained in the text\ngenerated by the agents/model and compare that to the known ground truth of the\nchess board, move legality, and historical patterns of play. We find that the\npercentages of moves by piece using the model are substantially similar from\nhuman patterns. We further find that the model creates an accurate latent\nrepresentation of the chessboard, and that it is possible to plot trajectories\nof legal moves across the board using this knowledge.\n",
+        "published": "2020",
+        "authors": [
+            "Philip Feldman",
+            "Antonio Bucchiarone"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2010.01878v1",
+        "title": "\"LazImpa\": Lazy and Impatient neural agents learn to communicate\n  efficiently",
+        "abstract": "  Previous work has shown that artificial neural agents naturally develop\nsurprisingly non-efficient codes. This is illustrated by the fact that in a\nreferential game involving a speaker and a listener neural networks optimizing\naccurate transmission over a discrete channel, the emergent messages fail to\nachieve an optimal length. Furthermore, frequent messages tend to be longer\nthan infrequent ones, a pattern contrary to the Zipf Law of Abbreviation (ZLA)\nobserved in all natural languages. Here, we show that near-optimal and\nZLA-compatible messages can emerge, but only if both the speaker and the\nlistener are modified. We hence introduce a new communication system,\n\"LazImpa\", where the speaker is made increasingly lazy, i.e. avoids long\nmessages, and the listener impatient, i.e.,~seeks to guess the intended content\nas soon as possible.\n",
+        "published": "2020",
+        "authors": [
+            "Mathieu Rita",
+            "Rahma Chaabouni",
+            "Emmanuel Dupoux"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1904.03266v1",
+        "title": "Domain Authoring Assistant for Intelligent Virtual Agents",
+        "abstract": "  Developing intelligent virtual characters has attracted a lot of attention in\nthe recent years. The process of creating such characters often involves a team\nof creative authors who describe different aspects of the characters in natural\nlanguage, and planning experts that translate this description into a planning\ndomain. This can be quite challenging as the team of creative authors should\ndiligently define every aspect of the character especially if it contains\ncomplex human-like behavior. Also a team of engineers has to manually translate\nthe natural language description of a character's personality into the planning\ndomain knowledge. This can be extremely time and resource demanding and can be\nan obstacle to author's creativity. The goal of this paper is to introduce an\nauthoring assistant tool to automate the process of domain generation from\nnatural language description of virtual characters, thus bridging between the\ncreative authoring team and the planning domain experts. Moreover, the proposed\ntool also identifies possible missing information in the domain description and\niteratively makes suggestions to the author.\n",
+        "published": "2019",
+        "authors": [
+            "Sepehr Janghorbani",
+            "Ashutosh Modi",
+            "Jakob Buhmann",
+            "Mubbasir Kapadia"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2005.00110v1",
+        "title": "On the Spontaneous Emergence of Discrete and Compositional Signals",
+        "abstract": "  We propose a general framework to study language emergence through signaling\ngames with neural agents. Using a continuous latent space, we are able to (i)\ntrain using backpropagation, (ii) show that discrete messages nonetheless\nnaturally emerge. We explore whether categorical perception effects follow and\nshow that the messages are not compositional.\n",
+        "published": "2020",
+        "authors": [
+            "Nur Geffen Lan",
+            "Emmanuel Chemla",
+            "Shane Steinert-Threlkeld"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2106.07728v2",
+        "title": "Targeted Data Acquisition for Evolving Negotiation Agents",
+        "abstract": "  Successful negotiators must learn how to balance optimizing for self-interest\nand cooperation. Yet current artificial negotiation agents often heavily depend\non the quality of the static datasets they were trained on, limiting their\ncapacity to fashion an adaptive response balancing self-interest and\ncooperation. For this reason, we find that these agents can achieve either high\nutility or cooperation, but not both. To address this, we introduce a targeted\ndata acquisition framework where we guide the exploration of a reinforcement\nlearning agent using annotations from an expert oracle. The guided exploration\nincentivizes the learning agent to go beyond its static dataset and develop new\nnegotiation strategies. We show that this enables our agents to obtain\nhigher-reward and more Pareto-optimal solutions when negotiating with both\nsimulated and human partners compared to standard supervised learning and\nreinforcement learning methods. This trend additionally holds when comparing\nagents using our targeted data acquisition framework to variants of agents\ntrained with a mix of supervised learning and reinforcement learning, or to\nagents using tailored reward functions that explicitly optimize for utility and\nPareto-optimality.\n",
+        "published": "2021",
+        "authors": [
+            "Minae Kwon",
+            "Siddharth Karamcheti",
+            "Mariano-Florentino Cuellar",
+            "Dorsa Sadigh"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2304.11693v1",
+        "title": "Studying the Impact of Semi-Cooperative Drivers on Overall Highway Flow",
+        "abstract": "  Semi-cooperative behaviors are intrinsic properties of human drivers and\nshould be considered for autonomous driving. In addition, new autonomous\nplanners can consider the social value orientation (SVO) of human drivers to\ngenerate socially-compliant trajectories. Yet the overall impact on traffic\nflow for this new class of planners remain to be understood. In this work, we\npresent study of implicit semi-cooperative driving where agents deploy a\ngame-theoretic version of iterative best response assuming knowledge of the\nSVOs of other agents. We simulate nominal traffic flow and investigate whether\nthe proportion of prosocial agents on the road impact individual or system-wide\ndriving performance. Experiments show that the proportion of prosocial agents\nhas a minor impact on overall traffic flow and that benefits of\nsemi-cooperation disproportionally affect egoistic and high-speed drivers.\n",
+        "published": "2023",
+        "authors": [
+            "Noam Buckman",
+            "Sertac Karaman",
+            "Daniela Rus"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2305.11460v1",
+        "title": "Self-Agreement: A Framework for Fine-tuning Language Models to Find\n  Agreement among Diverse Opinions",
+        "abstract": "  Finding an agreement among diverse opinions is a challenging topic in\nmultiagent systems. Recently, large language models (LLMs) have shown great\npotential in addressing this challenge due to their remarkable capabilities in\ncomprehending human opinions and generating human-like text. However, they\ntypically rely on extensive human-annotated data. In this paper, we propose\nSelf-Agreement, a novel framework for fine-tuning LLMs to autonomously find\nagreement using data generated by LLM itself. Specifically, our approach\nemploys the generative pre-trained transformer-3 (GPT-3) to generate multiple\nopinions for each question in a question dataset and create several agreement\ncandidates among these opinions. Then, a bidirectional encoder representations\nfrom transformers (BERT)-based model evaluates the agreement score of each\nagreement candidate and selects the one with the highest agreement score. This\nprocess yields a dataset of question-opinion-agreements, which we use to\nfine-tune a pre-trained LLM for discovering agreements among diverse opinions.\nRemarkably, a pre-trained LLM fine-tuned by our Self-Agreement framework\nachieves comparable performance to GPT-3 with only 1/25 of its parameters,\nshowcasing its ability to identify agreement among various opinions without the\nneed for human-annotated data.\n",
+        "published": "2023",
+        "authors": [
+            "Shiyao Ding",
+            "Takayuki Ito"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2307.06187v1",
+        "title": "Self-Adaptive Large Language Model (LLM)-Based Multiagent Systems",
+        "abstract": "  In autonomic computing, self-adaptation has been proposed as a fundamental\nparadigm to manage the complexity of multiagent systems (MASs). This achieved\nby extending a system with support to monitor and adapt itself to achieve\nspecific concerns of interest. Communication in these systems is key given that\nin scenarios involving agent interaction, it enhances cooperation and reduces\ncoordination challenges by enabling direct, clear information exchange.\nHowever, improving the expressiveness of the interaction communication with\nMASs is not without challenges. In this sense, the interplay between\nself-adaptive systems and effective communication is crucial for future MAS\nadvancements. In this paper, we propose the integration of large language\nmodels (LLMs) such as GPT-based technologies into multiagent systems. We anchor\nour methodology on the MAPE-K model, which is renowned for its robust support\nin monitoring, analyzing, planning, and executing system adaptations in\nresponse to dynamic environments. We also present a practical illustration of\nthe proposed approach, in which we implement and assess a basic MAS-based\napplication. The approach significantly advances the state-of-the-art of\nself-adaptive systems by proposing a new paradigm for MAS self-adaptation of\nautonomous systems based on LLM capabilities.\n",
+        "published": "2023",
+        "authors": [
+            "Nathalia Nascimento",
+            "Paulo Alencar",
+            "Donald Cowan"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2308.02541v1",
+        "title": "Towards More Human-like AI Communication: A Review of Emergent\n  Communication Research",
+        "abstract": "  In the recent shift towards human-centric AI, the need for machines to\naccurately use natural language has become increasingly important. While a\ncommon approach to achieve this is to train large language models, this method\npresents a form of learning misalignment where the model may not capture the\nunderlying structure and reasoning humans employ in using natural language,\npotentially leading to unexpected or unreliable behavior. Emergent\ncommunication (Emecom) is a field of research that has seen a growing number of\npublications in recent years, aiming to develop artificial agents capable of\nusing natural language in a way that goes beyond simple discriminative tasks\nand can effectively communicate and learn new concepts. In this review, we\npresent Emecom under two aspects. Firstly, we delineate all the common\nproprieties we find across the literature and how they relate to human\ninteractions. Secondly, we identify two subcategories and highlight their\ncharacteristics and open challenges. We encourage researchers to work together\nby demonstrating that different methods can be viewed as diverse solutions to a\ncommon problem and emphasize the importance of including diverse perspectives\nand expertise in the field. We believe a deeper understanding of human\ncommunication is crucial to developing machines that can accurately use natural\nlanguage in human-machine interactions.\n",
+        "published": "2023",
+        "authors": [
+            "Nicolo' Brandizzi"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2310.02170v1",
+        "title": "Dynamic LLM-Agent Network: An LLM-agent Collaboration Framework with\n  Agent Team Optimization",
+        "abstract": "  Large language model (LLM) agents have been shown effective on a wide range\nof tasks, and by ensembling multiple LLM agents, their performances could be\nfurther improved. Existing approaches employ a fixed set of agents to interact\nwith each other in a static architecture, which limits their generalizability\nto various tasks and requires strong human prior in designing these agents. In\nthis work, we propose to construct a strategic team of agents communicating in\na dynamic interaction architecture based on the task query. Specifically, we\nbuild a framework named Dynamic LLM-Agent Network ($\\textbf{DyLAN}$) for\nLLM-agent collaboration on complicated tasks like reasoning and code\ngeneration. DyLAN enables agents to interact for multiple rounds in a dynamic\narchitecture with inference-time agent selection and an early-stopping\nmechanism to improve performance and efficiency. We further design an automatic\nagent team optimization algorithm based on an unsupervised metric termed\n$\\textit{Agent Importance Score}$, enabling the selection of best agents based\non the contribution each agent makes. Empirically, we demonstrate that DyLAN\nperforms well in both reasoning and code generation tasks with reasonable\ncomputational cost. DyLAN achieves 13.0% and 13.3% improvement on MATH and\nHumanEval, respectively, compared to a single execution on GPT-35-turbo. On\nspecific subjects of MMLU, agent team optimization in DyLAN increases accuracy\nby up to 25.0%.\n",
+        "published": "2023",
+        "authors": [
+            "Zijun Liu",
+            "Yanzhe Zhang",
+            "Peng Li",
+            "Yang Liu",
+            "Diyi Yang"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2401.03408v1",
+        "title": "Escalation Risks from Language Models in Military and Diplomatic\n  Decision-Making",
+        "abstract": "  Governments are increasingly considering integrating autonomous AI agents in\nhigh-stakes military and foreign-policy decision-making, especially with the\nemergence of advanced generative AI models like GPT-4. Our work aims to\nscrutinize the behavior of multiple AI agents in simulated wargames,\nspecifically focusing on their predilection to take escalatory actions that may\nexacerbate multilateral conflicts. Drawing on political science and\ninternational relations literature about escalation dynamics, we design a novel\nwargame simulation and scoring framework to assess the escalation risks of\nactions taken by these agents in different scenarios. Contrary to prior\nstudies, our research provides both qualitative and quantitative insights and\nfocuses on large language models (LLMs). We find that all five studied\noff-the-shelf LLMs show forms of escalation and difficult-to-predict escalation\npatterns. We observe that models tend to develop arms-race dynamics, leading to\ngreater conflict, and in rare cases, even to the deployment of nuclear weapons.\nQualitatively, we also collect the models' reported reasonings for chosen\nactions and observe worrying justifications based on deterrence and\nfirst-strike tactics. Given the high stakes of military and foreign-policy\ncontexts, we recommend further examination and cautious consideration before\ndeploying autonomous language model agents for strategic military or diplomatic\ndecision-making.\n",
+        "published": "2024",
+        "authors": [
+            "Juan-Pablo Rivera",
+            "Gabriel Mukobi",
+            "Anka Reuel",
+            "Max Lamparth",
+            "Chandler Smith",
+            "Jacquelyn Schneider"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2401.03630v1",
+        "title": "Why Solving Multi-agent Path Finding with Large Language Model has not\n  Succeeded Yet",
+        "abstract": "  With the explosive influence caused by the success of large language models\n(LLM) like ChatGPT and GPT-4, there has been an extensive amount of recent work\nshowing that foundation models can be used to solve a large variety of tasks.\nHowever, there is very limited work that shares insights on multi-agent\nplanning. Multi-agent planning is different from other domains by combining the\ndifficulty of multi-agent coordination and planning, and making it hard to\nleverage external tools to facilitate the reasoning needed. In this paper, we\nfocus on the problem of multi-agent path finding (MAPF), which is also known as\nmulti-robot route planning, and study how to solve MAPF with LLMs. We first\nshow the motivating success on an empty room map without obstacles, then the\nfailure to plan on a slightly harder room map. We present our hypothesis of why\ndirectly solving MAPF with LLMs has not been successful yet, and we use various\nexperiments to support our hypothesis.\n",
+        "published": "2024",
+        "authors": [
+            "Weizhe Chen",
+            "Sven Koenig",
+            "Bistra Dilkina"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1711.11017v1",
+        "title": "HoME: a Household Multimodal Environment",
+        "abstract": "  We introduce HoME: a Household Multimodal Environment for artificial agents\nto learn from vision, audio, semantics, physics, and interaction with objects\nand other agents, all within a realistic context. HoME integrates over 45,000\ndiverse 3D house layouts based on the SUNCG dataset, a scale which may\nfacilitate learning, generalization, and transfer. HoME is an open-source,\nOpenAI Gym-compatible platform extensible to tasks in reinforcement learning,\nlanguage grounding, sound-based navigation, robotics, multi-agent learning, and\nmore. We hope HoME better enables artificial agents to learn as humans do: in\nan interactive, multimodal, and richly contextualized setting.\n",
+        "published": "2017",
+        "authors": [
+            "Simon Brodeur",
+            "Ethan Perez",
+            "Ankesh Anand",
+            "Florian Golemo",
+            "Luca Celotti",
+            "Florian Strub",
+            "Jean Rouat",
+            "Hugo Larochelle",
+            "Aaron Courville"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2210.09083v3",
+        "title": "Nish: A Novel Negative Stimulated Hybrid Activation Function",
+        "abstract": "  An activation function has a significant impact on the efficiency and\nrobustness of the neural networks. As an alternative, we evolved a cutting-edge\nnon-monotonic activation function, Negative Stimulated Hybrid Activation\nFunction (Nish). It acts as a Rectified Linear Unit (ReLU) function for the\npositive region and a sinus-sigmoidal function for the negative region. In\nother words, it incorporates a sigmoid and a sine function and gaining new\ndynamics over classical ReLU. We analyzed the consistency of the Nish for\ndifferent combinations of essential networks and most common activation\nfunctions using on several most popular benchmarks. From the experimental\nresults, we reported that the accuracy rates achieved by the Nish is slightly\nbetter than compared to the Mish in classification.\n",
+        "published": "2022",
+        "authors": [
+            "Yildiray Anagun",
+            "Sahin Isik"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1509.05722v1",
+        "title": "Energy saving in smart homes based on consumer behaviour: A case study",
+        "abstract": "  This paper presents a case study of a recommender system that can be used to\nsave energy in smart homes without lowering the comfort of the inhabitants. We\npresent an algorithm that uses consumer behavior data only and uses machine\nlearning to suggest actions for inhabitants to reduce the energy consumption of\ntheir homes. The system mines for frequent and periodic patterns in the event\ndata provided by the Digitalstrom home automation system. These patterns are\nconverted into association rules, prioritized and compared with the current\nbehavior of the inhabitants. If the system detects an opportunities to save\nenergy without decreasing the comfort level it sends a recommendation to the\nresidents.\n",
+        "published": "2015",
+        "authors": [
+            "Michael Zehnder",
+            "Holger Wache",
+            "Hans-Friedrich Witschel",
+            "Danilo Zanatta",
+            "Miguel Rodriguez"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1602.05450v2",
+        "title": "Inverse Reinforcement Learning in Swarm Systems",
+        "abstract": "  Inverse reinforcement learning (IRL) has become a useful tool for learning\nbehavioral models from demonstration data. However, IRL remains mostly\nunexplored for multi-agent systems. In this paper, we show how the principle of\nIRL can be extended to homogeneous large-scale problems, inspired by the\ncollective swarming behavior of natural systems. In particular, we make the\nfollowing contributions to the field: 1) We introduce the swarMDP framework, a\nsub-class of decentralized partially observable Markov decision processes\nendowed with a swarm characterization. 2) Exploiting the inherent homogeneity\nof this framework, we reduce the resulting multi-agent IRL problem to a\nsingle-agent one by proving that the agent-specific value functions in this\nmodel coincide. 3) To solve the corresponding control problem, we propose a\nnovel heterogeneous learning scheme that is particularly tailored to the swarm\nsetting. Results on two example systems demonstrate that our framework is able\nto produce meaningful local reward models from which we can replicate the\nobserved global system dynamics.\n",
+        "published": "2016",
+        "authors": [
+            "Adrian \u0160o\u0161i\u0107",
+            "Wasiur R. KhudaBukhsh",
+            "Abdelhak M. Zoubir",
+            "Heinz Koeppl"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1803.03491v1",
+        "title": "Valuing knowledge, information and agency in Multi-agent Reinforcement\n  Learning: a case study in smart buildings",
+        "abstract": "  Increasing energy efficiency in buildings can reduce costs and emissions\nsubstantially. Historically, this has been treated as a local, or single-agent,\noptimization problem. However, many buildings utilize the same types of thermal\nequipment e.g. electric heaters and hot water vessels. During operation,\noccupants in these buildings interact with the equipment differently thereby\ndriving them to diverse regions in the state-space. Reinforcement learning\nagents can learn from these interactions, recorded as sensor data, to optimize\nthe overall energy efficiency. However, if these agents operate individually at\na household level, they can not exploit the replicated structure in the\nproblem. In this paper, we demonstrate that this problem can indeed benefit\nfrom multi-agent collaboration by making use of targeted exploration of the\nstate-space allowing for better generalization. We also investigate trade-offs\nbetween integrating human knowledge and additional sensors. Results show that\nsavings of over 40% are possible with collaborative multi-agent systems making\nuse of either expert knowledge or additional sensors with no loss of occupant\ncomfort. We find that such multi-agent systems comfortably outperform\ncomparable single agent systems.\n",
+        "published": "2018",
+        "authors": [
+            "Hussain Kazmi",
+            "Johan Suykens",
+            "Johan Driesen"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1905.13225v1",
+        "title": "Modeling Theory of Mind in Multi-Agent Games Using Adaptive Feedback\n  Control",
+        "abstract": "  A major challenge in cognitive science and AI has been to understand how\nautonomous agents might acquire and predict behavioral and mental states of\nother agents in the course of complex social interactions. How does such an\nagent model the goals, beliefs, and actions of other agents it interacts with?\nWhat are the computational principles to model a Theory of Mind (ToM)? Deep\nlearning approaches to address these questions fall short of a better\nunderstanding of the problem. In part, this is due to the black-box nature of\ndeep networks, wherein computational mechanisms of ToM are not readily\nrevealed. Here, we consider alternative hypotheses seeking to model how the\nbrain might realize a ToM. In particular, we propose embodied and situated\nagent models based on distributed adaptive control theory to predict actions of\nother agents in five different game theoretic tasks (Harmony Game, Hawk-Dove,\nStag-Hunt, Prisoner's Dilemma and Battle of the Exes). Our multi-layer control\nmodels implement top-down predictions from adaptive to reactive layers of\ncontrol and bottom-up error feedback from reactive to adaptive layers. We test\ncooperative and competitive strategies among seven different agent models\n(cooperative, greedy, tit-for-tat, reinforcement-based, rational, predictive\nand other's-model agents). We show that, compared to pure reinforcement-based\nstrategies, probabilistic learning agents modeled on rational, predictive and\nother's-model phenotypes perform better in game-theoretic metrics across tasks.\nOur autonomous multi-agent models capture systems-level processes underlying a\nToM and highlight architectural principles of ToM from a control-theoretic\nperspective.\n",
+        "published": "2019",
+        "authors": [
+            "Ismael T. Freire",
+            "Xerxes D. Arsiwalla",
+            "Jordi-Ysard Puigb\u00f2",
+            "Paul Verschure"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2104.06655v2",
+        "title": "Decomposed Soft Actor-Critic Method for Cooperative Multi-Agent\n  Reinforcement Learning",
+        "abstract": "  Deep reinforcement learning methods have shown great performance on many\nchallenging cooperative multi-agent tasks. Two main promising research\ndirections are multi-agent value function decomposition and multi-agent policy\ngradients. In this paper, we propose a new decomposed multi-agent soft\nactor-critic (mSAC) method, which effectively combines the advantages of the\naforementioned two methods. The main modules include decomposed Q network\narchitecture, discrete probabilistic policy and counterfactual advantage\nfunction (optinal). Theoretically, mSAC supports efficient off-policy learning\nand addresses credit assignment problem partially in both discrete and\ncontinuous action spaces. Tested on StarCraft II micromanagement cooperative\nmultiagent benchmark, we empirically investigate the performance of mSAC\nagainst its variants and analyze the effects of the different components.\nExperimental results demonstrate that mSAC significantly outperforms\npolicy-based approach COMA, and achieves competitive results with SOTA\nvalue-based approach Qmix on most tasks in terms of asymptotic perfomance\nmetric. In addition, mSAC achieves pretty good results on large action space\ntasks, such as 2c_vs_64zg and MMM2.\n",
+        "published": "2021",
+        "authors": [
+            "Yuan Pu",
+            "Shaochen Wang",
+            "Rui Yang",
+            "Xin Yao",
+            "Bin Li"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2305.15340v1",
+        "title": "Bayesian calibration of differentiable agent-based models",
+        "abstract": "  Agent-based modelling (ABMing) is a powerful and intuitive approach to\nmodelling complex systems; however, the intractability of ABMs' likelihood\nfunctions and the non-differentiability of the mathematical operations\ncomprising these models present a challenge to their use in the real world.\nThese difficulties have in turn generated research on approximate Bayesian\ninference methods for ABMs and on constructing differentiable approximations to\narbitrary ABMs, but little work has been directed towards designing approximate\nBayesian inference techniques for the specific case of differentiable ABMs. In\nthis work, we aim to address this gap and discuss how generalised variational\ninference procedures may be employed to provide misspecification-robust\nBayesian parameter inferences for differentiable ABMs. We demonstrate with\nexperiments on a differentiable ABM of the COVID-19 pandemic that our approach\ncan result in accurate inferences, and discuss avenues for future work.\n",
+        "published": "2023",
+        "authors": [
+            "Arnau Quera-Bofarull",
+            "Ayush Chopra",
+            "Anisoara Calinescu",
+            "Michael Wooldridge",
+            "Joel Dyer"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2307.01085v1",
+        "title": "Some challenges of calibrating differentiable agent-based models",
+        "abstract": "  Agent-based models (ABMs) are a promising approach to modelling and reasoning\nabout complex systems, yet their application in practice is impeded by their\ncomplexity, discrete nature, and the difficulty of performing parameter\ninference and optimisation tasks. This in turn has sparked interest in the\nconstruction of differentiable ABMs as a strategy for combatting these\ndifficulties, yet a number of challenges remain. In this paper, we discuss and\npresent experiments that highlight some of these challenges, along with\npotential solutions.\n",
+        "published": "2023",
+        "authors": [
+            "Arnau Quera-Bofarull",
+            "Joel Dyer",
+            "Anisoara Calinescu",
+            "Michael Wooldridge"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/0803.2981v1",
+        "title": "Idiotypic Immune Networks in Mobile Robot Control",
+        "abstract": "  Jerne's idiotypic network theory postulates that the immune response involves\ninter-antibody stimulation and suppression as well as matching to antigens. The\ntheory has proved the most popular Artificial Immune System (ais) model for\nincorporation into behavior-based robotics but guidelines for implementing\nidiotypic selection are scarce. Furthermore, the direct effects of employing\nthe technique have not been demonstrated in the form of a comparison with\nnon-idiotypic systems. This paper aims to address these issues. A method for\nintegrating an idiotypic ais network with a Reinforcement Learning based\ncontrol system (rl) is described and the mechanisms underlying antibody\nstimulation and suppression are explained in detail. Some hypotheses that\naccount for the network advantage are put forward and tested using three\nsystems with increasing idiotypic complexity. The basic rl, a simplified hybrid\nais-rl that implements idiotypic selection independently of derived\nconcentration levels and a full hybrid ais-rl scheme are examined. The test bed\ntakes the form of a simulated Pioneer robot that is required to navigate\nthrough maze worlds detecting and tracking door markers.\n",
+        "published": "2008",
+        "authors": [
+            "Amanda Whitbrook",
+            "Uwe Aickelin",
+            "Jonathan Garibaldi"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/0910.3115v1",
+        "title": "An Idiotypic Immune Network as a Short Term Learning Architecture for\n  Mobile Robots",
+        "abstract": "  A combined Short-Term Learning (STL) and Long-Term Learning (LTL) approach to\nsolving mobile robot navigation problems is presented and tested in both real\nand simulated environments. The LTL consists of rapid simulations that use a\nGenetic Algorithm to derive diverse sets of behaviours. These sets are then\ntransferred to an idiotypic Artificial Immune System (AIS), which forms the STL\nphase, and the system is said to be seeded. The combined LTL-STL approach is\ncompared with using STL only, and with using a handdesigned controller. In\naddition, the STL phase is tested when the idiotypic mechanism is turned off.\nThe results provide substantial evidence that the best option is the seeded\nidiotypic system, i.e. the architecture that merges LTL with an idiotypic AIS\nfor the STL. They also show that structurally different environments can be\nused for the two phases without compromising transferability\n",
+        "published": "2009",
+        "authors": [
+            "Amanda Whitbrook",
+            "Uwe Aickelin",
+            "Jonathan M Garibaldi"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1003.4145v1",
+        "title": "Mimicking the Behaviour of Idiotypic AIS Robot Controllers Using\n  Probabilistic Systems",
+        "abstract": "  Previous work has shown that robot navigation systems that employ an\narchitecture based upon the idiotypic network theory of the immune system have\nan advantage over control techniques that rely on reinforcement learning only.\nThis is thought to be a result of intelligent behaviour selection on the part\nof the idiotypic robot. In this paper an attempt is made to imitate idiotypic\ndynamics by creating controllers that use reinforcement with a number of\ndifferent probabilistic schemes to select robot behaviour. The aims are to show\nthat the idiotypic system is not merely performing some kind of periodic random\nbehaviour selection, and to try to gain further insight into the processes that\ngovern the idiotypic mechanism. Trials are carried out using simulated Pioneer\nrobots that undertake navigation exercises. Results show that a scheme that\nboosts the probability of selecting highly-ranked alternative behaviours to 50%\nduring stall conditions comes closest to achieving the properties of the\nidiotypic system, but remains unable to match it in terms of all round\nperformance.\n",
+        "published": "2010",
+        "authors": [
+            "Amanda Whitbrook",
+            "Uwe Aickelin",
+            "Jonathan Garibaldi"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1004.5222v1",
+        "title": "The Application of a Dendritic Cell Algorithm to a Robotic Classifier",
+        "abstract": "  The dendritic cell algorithm is an immune-inspired technique for processing\ntime-dependant data. Here we propose it as a possible solution for a robotic\nclassification problem. The dendritic cell algorithm is implemented on a real\nrobot and an investigation is performed into the effects of varying the\nmigration threshold median for the cell population. The algorithm performs well\non a classification task with very little tuning. Ways of extending the\nimplementation to allow it to be used as a classifier within the field of\nrobotic security are suggested.\n",
+        "published": "2010",
+        "authors": [
+            "Robert Oates",
+            "Julie Greensmith",
+            "Uwe Aickelin",
+            "Jonathan M. Garibaldi",
+            "Graham Kendall"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1006.2945v1",
+        "title": "Two-Timescale Learning Using Idiotypic Behaviour Mediation For A\n  Navigating Mobile Robot",
+        "abstract": "  A combined Short-Term Learning (STL) and Long-Term Learning (LTL) approach to\nsolving mobile-robot navigation problems is presented and tested in both the\nreal and virtual domains. The LTL phase consists of rapid simulations that use\na Genetic Algorithm to derive diverse sets of behaviours, encoded as variable\nsets of attributes, and the STL phase is an idiotypic Artificial Immune System.\nResults from the LTL phase show that sets of behaviours develop very rapidly,\nand significantly greater diversity is obtained when multiple autonomous\npopulations are used, rather than a single one. The architecture is assessed\nunder various scenarios, including removal of the LTL phase and switching off\nthe idiotypic mechanism in the STL phase. The comparisons provide substantial\nevidence that the best option is the inclusion of both the LTL phase and the\nidiotypic system. In addition, this paper shows that structurally different\nenvironments can be used for the two phases without compromising\ntransferability.\n",
+        "published": "2010",
+        "authors": [
+            "Amanda Whitbrook",
+            "Uwe Aickelin",
+            "Jonathan M. Garibaldi"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1006.3650v1",
+        "title": "The Use of Probabilistic Systems to Mimic the Behaviour of Idiotypic AIS\n  Robot Controllers",
+        "abstract": "  Previous work has shown that robot navigation systems that employ an\narchitecture based upon the idiotypic network theory of the immune system have\nan advantage over control techniques that rely on reinforcement learning only.\nThis is thought to be a result of intelligent behaviour selection on the part\nof the idiotypic robot. In this paper an attempt is made to imitate idiotypic\ndynamics by creating controllers that use reinforcement with a number of\ndifferent probabilistic schemes to select robot behaviour. The aims are to show\nthat the idiotypic system is not merely performing some kind of periodic random\nbehaviour selection, and to try to gain further insight into the processes that\ngovern the idiotypic mechanism. Trials are carried out using simulated Pioneer\nrobots that undertake navigation exercises. Results show that a scheme that\nboosts the probability of selecting highly-ranked alternative behaviours to 50%\nduring stall conditions comes closest to achieving the properties of the\nidiotypic system, but remains unable to match it in terms of all round\nperformance.\n",
+        "published": "2010",
+        "authors": [
+            "Amanda Whitbrook",
+            "Uwe Aickelin",
+            "Jonathan M. Garibaldi"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1011.3912v1",
+        "title": "Artificial Hormone Reaction Networks: Towards Higher Evolvability in\n  Evolutionary Multi-Modular Robotics",
+        "abstract": "  The semi-automatic or automatic synthesis of robot controller software is\nboth desirable and challenging. Synthesis of rather simple behaviors such as\ncollision avoidance by applying artificial evolution has been shown multiple\ntimes. However, the difficulty of this synthesis increases heavily with\nincreasing complexity of the task that should be performed by the robot. We try\nto tackle this problem of complexity with Artificial Homeostatic Hormone\nSystems (AHHS), which provide both intrinsic, homeostatic processes and\n(transient) intrinsic, variant behavior. By using AHHS the need for pre-defined\ncontroller topologies or information about the field of application is\nminimized. We investigate how the principle design of the controller and the\nhormone network size affects the overall performance of the artificial\nevolution (i.e., evolvability). This is done by comparing two variants of AHHS\nthat show different effects when mutated. We evolve a controller for a robot\nbuilt from five autonomous, cooperating modules. The desired behavior is a form\nof gait resulting in fast locomotion by using the modules' main hinges.\n",
+        "published": "2010",
+        "authors": [
+            "Heiko Hamann",
+            "J\u00fcrgen Stradner",
+            "Thomas Schmickl",
+            "Karl Crailsheim"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1101.6001v1",
+        "title": "Boolean network robotics: a proof of concept",
+        "abstract": "  Dynamical systems theory and complexity science provide powerful tools for\nanalysing artificial agents and robots. Furthermore, they have been recently\nproposed also as a source of design principles and guidelines. Boolean networks\nare a prominent example of complex dynamical systems and they have been shown\nto effectively capture important phenomena in gene regulation. From an\nengineering perspective, these models are very compelling, because they can\nexhibit rich and complex behaviours, in spite of the compactness of their\ndescription. In this paper, we propose the use of Boolean networks for\ncontrolling robots' behaviour. The network is designed by means of an automatic\nprocedure based on stochastic local search techniques. We show that this\napproach makes it possible to design a network which enables the robot to\naccomplish a task that requires the capability of navigating the space using a\nlight stimulus, as well as the formation and use of an internal memory.\n",
+        "published": "2011",
+        "authors": [
+            "Andrea Roli",
+            "Mattia Manfroni",
+            "Carlo Pinciroli",
+            "Mauro Birattari"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1304.2888v1",
+        "title": "Roborobo! a Fast Robot Simulator for Swarm and Collective Robotics",
+        "abstract": "  Roborobo! is a multi-platform, highly portable, robot simulator for\nlarge-scale collective robotics experiments. Roborobo! is coded in C++, and\nfollows the KISS guideline (\"Keep it simple\"). Therefore, its external\ndependency is solely limited to the widely available SDL library for fast 2D\nGraphics. Roborobo! is based on a Khepera/ePuck model. It is targeted for fast\nsingle and multi-robots simulation, and has already been used in more than a\ndozen published research mainly concerned with evolutionary swarm robotics,\nincluding environment-driven self-adaptation and distributed evolutionary\noptimization, as well as online onboard embodied evolution and embodied\nmorphogenesis.\n",
+        "published": "2013",
+        "authors": [
+            "Nicolas Bredeche",
+            "Jean-Marc Montanier",
+            "Berend Weel",
+            "Evert Haasdijk"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1509.07035v2",
+        "title": "Designing Behaviour in Bio-inspired Robots Using Associative Topologies\n  of Spiking-Neural-Networks",
+        "abstract": "  This study explores the design and control of the behaviour of agents and\nrobots using simple circuits of spiking neurons and Spike Timing Dependent\nPlasticity (STDP) as a mechanism of associative and unsupervised learning.\nBased on a \"reward and punishment\" classical conditioning, it is demonstrated\nthat these robots learnt to identify and avoid obstacles as well as to identify\nand look for rewarding stimuli. Using the simulation and programming\nenvironment NetLogo, a software engine for the Integrate and Fire model was\ndeveloped, which allowed us to monitor in discrete time steps the dynamics of\neach single neuron, synapse and spike in the proposed neural networks. These\nspiking neural networks (SNN) served as simple brains for the experimental\nrobots. The Lego Mindstorms robot kit was used for the embodiment of the\nsimulated agents. In this paper the topological building blocks are presented\nas well as the neural parameters required to reproduce the experiments. This\npaper summarizes the resulting behaviour as well as the observed dynamics of\nthe neural circuits. The Internet-link to the NetLogo code is included in the\nannex.\n",
+        "published": "2015",
+        "authors": [
+            "Cristian Jimenez-Romero",
+            "David Sousa-Rodrigues",
+            "Jeffrey H. Johnson"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1711.06605v1",
+        "title": "Evolving soft locomotion in aquatic and terrestrial environments:\n  effects of material properties and environmental transitions",
+        "abstract": "  Designing soft robots poses considerable challenges: automated design\napproaches may be particularly appealing in this field, as they promise to\noptimize complex multi-material machines with very little or no human\nintervention. Evolutionary soft robotics is concerned with the application of\noptimization algorithms inspired by natural evolution in order to let soft\nrobots (both morphologies and controllers) spontaneously evolve within\nphysically-realistic simulated environments, figuring out how to satisfy a set\nof objectives defined by human designers. In this paper a powerful evolutionary\nsystem is put in place in order to perform a broad investigation on the\nfree-form evolution of walking and swimming soft robots in different\nenvironments. Three sets of experiments are reported, tackling different\naspects of the evolution of soft locomotion. The first two sets explore the\neffects of different material properties on the evolution of terrestrial and\naquatic soft locomotion: particularly, we show how different materials lead to\nthe evolution of different morphologies, behaviors, and energy-performance\ntradeoffs. It is found that within our simplified physics world stiffer robots\nevolve more sophisticated and effective gaits and morphologies on land, while\nsofter ones tend to perform better in water. The third set of experiments\nstarts investigating the effect and potential benefits of major environmental\ntransitions (land - water) during evolution. Results provide interesting\nmorphological exaptation phenomena, and point out a potential asymmetry between\nland-water and water-land transitions: while the first type of transition\nappears to be detrimental, the second one seems to have some beneficial\neffects.\n",
+        "published": "2017",
+        "authors": [
+            "Francesco Corucci",
+            "Nick Cheney",
+            "Francesco Giorgio-Serchi",
+            "Josh Bongard",
+            "Cecilia Laschi"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1801.02805v2",
+        "title": "DeepTraffic: Crowdsourced Hyperparameter Tuning of Deep Reinforcement\n  Learning Systems for Multi-Agent Dense Traffic Navigation",
+        "abstract": "  We present a traffic simulation named DeepTraffic where the planning systems\nfor a subset of the vehicles are handled by a neural network as part of a\nmodel-free, off-policy reinforcement learning process. The primary goal of\nDeepTraffic is to make the hands-on study of deep reinforcement learning\naccessible to thousands of students, educators, and researchers in order to\ninspire and fuel the exploration and evaluation of deep Q-learning network\nvariants and hyperparameter configurations through large-scale, open\ncompetition. This paper investigates the crowd-sourced hyperparameter tuning of\nthe policy network that resulted from the first iteration of the DeepTraffic\ncompetition where thousands of participants actively searched through the\nhyperparameter space.\n",
+        "published": "2018",
+        "authors": [
+            "Lex Fridman",
+            "Jack Terwilliger",
+            "Benedikt Jenik"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1807.01035v2",
+        "title": "Deep Neural Object Analysis by Interactive Auditory Exploration with a\n  Humanoid Robot",
+        "abstract": "  We present a novel approach for interactive auditory object analysis with a\nhumanoid robot. The robot elicits sensory information by physically shaking\nvisually indistinguishable plastic capsules. It gathers the resulting audio\nsignals from microphones that are embedded into the robotic ears. A neural\nnetwork architecture learns from these signals to analyze properties of the\ncontents of the containers. Specifically, we evaluate the material\nclassification and weight prediction accuracy and demonstrate that the\nframework is fairly robust to acoustic real-world noise.\n",
+        "published": "2018",
+        "authors": [
+            "Manfred Eppe",
+            "Matthias Kerzel",
+            "Erik Strahl",
+            "Stefan Wermter"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1107.5387v1",
+        "title": "Controlling wheelchairs by body motions: A learning framework for the\n  adaptive remapping of space",
+        "abstract": "  Learning to operate a vehicle is generally accomplished by forming a new\ncognitive map between the body motions and extrapersonal space. Here, we\nconsider the challenge of remapping movement-to-space representations in\nsurvivors of spinal cord injury, for the control of powered wheelchairs. Our\ngoal is to facilitate this remapping by developing interfaces between residual\nbody motions and navigational commands that exploit the degrees of freedom that\ndisabled individuals are most capable to coordinate. We present a new framework\nfor allowing spinal cord injured persons to control powered wheelchairs through\nsignals derived from their residual mobility. The main novelty of this approach\nlies in substituting the more common joystick controllers of powered\nwheelchairs with a sensor shirt. This allows the whole upper body of the user\nto operate as an adaptive joystick. Considerations about learning and risks\nhave lead us to develop a safe testing environment in 3D Virtual Reality. A\nPersonal Augmented Reality Immersive System (PARIS) allows us to analyse\nlearning skills and provide users with an adequate training to control a\nsimulated wheelchair through the signals generated by body motions in a safe\nenvironment. We provide a description of the basic theory, of the development\nphases and of the operation of the complete system. We also present preliminary\nresults illustrating the processing of the data and supporting of the\nfeasibility of this approach.\n",
+        "published": "2011",
+        "authors": [
+            "Tauseef Gulrez",
+            "Alessandro Tognetti",
+            "Alon Fishbach",
+            "Santiago Acosta",
+            "Christopher Scharver",
+            "Danilo De Rossi",
+            "Ferdinando A. Mussa-Ivaldi"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1504.04909v1",
+        "title": "Illuminating search spaces by mapping elites",
+        "abstract": "  Many fields use search algorithms, which automatically explore a search space\nto find high-performing solutions: chemists search through the space of\nmolecules to discover new drugs; engineers search for stronger, cheaper, safer\ndesigns, scientists search for models that best explain data, etc. The goal of\nsearch algorithms has traditionally been to return the single\nhighest-performing solution in a search space. Here we describe a new,\nfundamentally different type of algorithm that is more useful because it\nprovides a holistic view of how high-performing solutions are distributed\nthroughout a search space. It creates a map of high-performing solutions at\neach point in a space defined by dimensions of variation that a user gets to\nchoose. This Multi-dimensional Archive of Phenotypic Elites (MAP-Elites)\nalgorithm illuminates search spaces, allowing researchers to understand how\ninteresting attributes of solutions combine to affect performance, either\npositively or, equally of interest, negatively. For example, a drug company may\nwish to understand how performance changes as the size of molecules and their\ncost-to-produce vary. MAP-Elites produces a large diversity of high-performing,\nyet qualitatively different solutions, which can be more helpful than a single,\nhigh-performing solution. Interestingly, because MAP-Elites explores more of\nthe search space, it also tends to find a better overall solution than\nstate-of-the-art search algorithms. We demonstrate the benefits of this new\nalgorithm in three different problem domains ranging from producing modular\nneural networks to designing simulated and real soft robots. Because MAP-\nElites (1) illuminates the relationship between performance and dimensions of\ninterest in solutions, (2) returns a set of high-performing, yet diverse\nsolutions, and (3) improves finding a single, best solution, it will advance\nscience and engineering.\n",
+        "published": "2015",
+        "authors": [
+            "Jean-Baptiste Mouret",
+            "Jeff Clune"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1812.05687v2",
+        "title": "Ablation of a Robot's Brain: Neural Networks Under a Knife",
+        "abstract": "  It is still not fully understood exactly how neural networks are able to\nsolve the complex tasks that have recently pushed AI research forward. We\npresent a novel method for determining how information is structured inside a\nneural network. Using ablation (a neuroscience technique for cutting away parts\nof a brain to determine their function), we approach several neural network\narchitectures from a biological perspective. Through an analysis of this\nmethod's results, we examine important similarities between biological and\nartificial neural networks to search for the implicit knowledge locked away in\nthe network's weights.\n",
+        "published": "2018",
+        "authors": [
+            "Peter E. Lillian",
+            "Richard Meyes",
+            "Tobias Meisen"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1903.07107v1",
+        "title": "Adaptive Genomic Evolution of Neural Network Topologies (AGENT) for\n  State-to-Action Mapping in Autonomous Agents",
+        "abstract": "  Neuroevolution is a process of training neural networks (NN) through an\nevolutionary algorithm, usually to serve as a state-to-action mapping model in\ncontrol or reinforcement learning-type problems. This paper builds on the Neuro\nEvolution of Augmented Topologies (NEAT) formalism that allows designing\ntopology and weight evolving NNs. Fundamental advancements are made to the\nneuroevolution process to address premature stagnation and convergence issues,\ncentral among which is the incorporation of automated mechanisms to control the\npopulation diversity and average fitness improvement within the neuroevolution\nprocess. Insights into the performance and efficiency of the new algorithm is\nobtained by evaluating it on three benchmark problems from the Open AI platform\nand an Unmanned Aerial Vehicle (UAV) collision avoidance problem.\n",
+        "published": "2019",
+        "authors": [
+            "Amir Behjat",
+            "Sharat Chidambaran",
+            "Souma Chowdhury"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1903.11621v1",
+        "title": "Self-adaptive decision-making mechanisms to balance the execution of\n  multiple tasks for a multi-robots team",
+        "abstract": "  This work addresses the coordination problem of multiple robots with the goal\nof finding specific hazardous targets in an unknown area and dealing with them\ncooperatively. The desired behaviour for the robotic system entails multiple\nrequirements, which may also be conflicting. The paper presents the problem as\na constrained bi-objective optimization problem in which mobile robots must\nperform two specific tasks of exploration and at same time cooperation and\ncoordination for disarming the hazardous targets. These objectives are opposed\ngoals, in which one may be favored, but only at the expense of the other.\nTherefore, a good trade-off must be found. For this purpose, a nature-inspired\napproach and an analytical mathematical model to solve this problem considering\na single equivalent weighted objective function are presented. The results of\nproposed coordination model, simulated in a two dimensional terrain, are showed\nin order to assess the behaviour of the proposed solution to tackle this\nproblem. We have analyzed the performance of the approach and the influence of\nthe weights of the objective function under different conditions: static and\ndynamic. In this latter situation, the robots may fail under the stringent\nlimited budget of energy or for hazardous events. The paper concludes with a\ncritical discussion of the experimental results.\n",
+        "published": "2019",
+        "authors": [
+            "Nunzia Palmieri",
+            "Xin-She Yang",
+            "Floriano De Rango",
+            "Amilcare Francesco Santamaria"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1912.02811v2",
+        "title": "Clone Swarms: Learning to Predict and Control Multi-Robot Systems by\n  Imitation",
+        "abstract": "  In this paper, we propose SwarmNet -- a neural network architecture that can\nlearn to predict and imitate the behavior of an observed swarm of agents in a\ncentralized manner. Tested on artificially generated swarm motion data, the\nnetwork achieves high levels of prediction accuracy and imitation authenticity.\nWe compare our model to previous approaches for modelling interaction systems\nand show how modifying components of other models gradually approaches the\nperformance of ours. Finally, we also discuss an extension of SwarmNet that can\ndeal with nondeterministic, noisy, and uncertain environments, as often found\nin robotics applications.\n",
+        "published": "2019",
+        "authors": [
+            "Siyu Zhou",
+            "Mariano Phielipp",
+            "Jorge A. Sefair",
+            "Sara I. Walker",
+            "Heni Ben Amor"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2006.06431v1",
+        "title": "Complementary Visual Neuronal Systems Model for Collision Sensing",
+        "abstract": "  Inspired by insects' visual brains, this paper presents original modelling of\na complementary visual neuronal systems model for real-time and robust\ncollision sensing. Two categories of wide-field motion sensitive neurons, i.e.,\nthe lobula giant movement detectors (LGMDs) in locusts and the lobula plate\ntangential cells (LPTCs) in flies, have been studied, intensively. The LGMDs\nhave specific selectivity to approaching objects in depth that threaten\ncollision; whilst the LPTCs are only sensitive to translating objects in\nhorizontal and vertical directions. Though each has been modelled and applied\nin various visual scenes including robot scenarios, little has been done on\ninvestigating their complementary functionality and selectivity when\nfunctioning together. To fill this vacancy, we introduce a hybrid model\ncombining two LGMDs (LGMD-1 and LGMD-2) with horizontally (rightward and\nleftward) sensitive LPTCs (LPTC-R and LPTC-L) specialising in fast collision\nperception. With coordination and competition between different activated\nneurons, the proximity feature by frontal approaching stimuli can be largely\nsharpened up by suppressing translating and receding motions. The proposed\nmethod has been implemented in ground micro-mobile robots as embedded systems.\nThe multi-robot experiments have demonstrated the effectiveness and robustness\nof the proposed model for frontal collision sensing, which outperforms previous\nsingle-type neuron computation methods against translating interference.\n",
+        "published": "2020",
+        "authors": [
+            "Qinbing Fu",
+            "Shigang Yue"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2006.15960v2",
+        "title": "End-Effect Exploration Drive for Effective Motor Learning",
+        "abstract": "  Stemming on the idea that a key objective in reinforcement learning is to\ninvert a target distribution of effects, end-effect drives are proposed as an\neffective way to implement goal-directed motor learning, in the absence of an\nexplicit forward model. An end-effect model relies on a simple statistical\nrecording of the effect of the current policy, here used as a substitute for\nthe more resource-demanding forward models. When combined with a reward\nstructure, it forms the core of a lightweight variational free energy\nminimization setup. The main difficulty lies in the maintenance of this\nsimplified effect model together with the online update of the policy. When the\nprior target distribution is uniform, it provides a ways to learn an efficient\nexploration policy, consistently with the intrinsic curiosity principles. When\ncombined with an extrinsic reward, our approach is finally shown to provide a\nfaster training than traditional off-policy techniques.\n",
+        "published": "2020",
+        "authors": [
+            "Emmanuel Dauc\u00e9"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2007.11845v3",
+        "title": "Time Perception: A Review on Psychological, Computational and Robotic\n  Models",
+        "abstract": "  Animals exploit time to survive in the world. Temporal information is\nrequired for higher-level cognitive abilities such as planning, decision\nmaking, communication, and effective cooperation. Since time is an inseparable\npart of cognition, there is a growing interest in the artificial intelligence\napproach to subjective time, which has a possibility of advancing the field.\nThe current survey study aims to provide researchers with an interdisciplinary\nperspective on time perception. Firstly, we introduce a brief background from\nthe psychology and neuroscience literature, covering the characteristics and\nmodels of time perception and related abilities. Secondly, we summarize the\nemergent computational and robotic models of time perception. A general\noverview to the literature reveals that a substantial amount of timing models\nare based on a dedicated time processing like the emergence of a clock-like\nmechanism from the neural network dynamics and reveal a relationship between\nthe embodiment and time perception. We also notice that most models of timing\nare developed for either sensory timing (i.e. ability to assess an interval) or\nmotor timing (i.e. ability to reproduce an interval). The number of timing\nmodels capable of retrospective timing, which is the ability to track time\nwithout paying attention, is insufficient. In this light, we discuss the\npossible research directions to promote interdisciplinary collaboration in the\nfield of time perception.\n",
+        "published": "2020",
+        "authors": [
+            "Hamit Basgol",
+            "Inci Ayhan",
+            "Emre Ugur"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2010.02039v1",
+        "title": "Motion-Encoded Particle Swarm Optimization for Moving Target Search\n  Using UAVs",
+        "abstract": "  This paper presents a novel algorithm named the motion-encoded particle swarm\noptimization (MPSO) for finding a moving target with unmanned aerial vehicles\n(UAVs). From the Bayesian theory, the search problem can be converted to the\noptimization of a cost function that represents the probability of detecting\nthe target. Here, the proposed MPSO is developed to solve that problem by\nencoding the search trajectory as a series of UAV motion paths evolving over\nthe generation of particles in a PSO algorithm. This motion-encoded approach\nallows for preserving important properties of the swarm including the cognitive\nand social coherence, and thus resulting in better solutions. Results from\nextensive simulations with existing methods show that the proposed MPSO\nimproves the detection performance by 24\\% and time performance by 4.71 times\ncompared to the original PSO, and moreover, also outperforms other\nstate-of-the-art metaheuristic optimization algorithms including the artificial\nbee colony (ABC), ant colony optimization (ACO), genetic algorithm (GA),\ndifferential evolution (DE), and tree-seed algorithm (TSA) in most search\nscenarios. Experiments have been conducted with real UAVs in searching for a\ndynamic target in different scenarios to demonstrate MPSO merits in a practical\napplication.\n",
+        "published": "2020",
+        "authors": [
+            "Manh Duong Phung",
+            "Quang Phuc Ha"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2010.04463v1",
+        "title": "Bioinspired Bipedal Locomotion Control for Humanoid Robotics Based on\n  EACO",
+        "abstract": "  To construct a robot that can walk as efficiently and steadily as humans or\nother legged animals, we develop an enhanced elitist-mutated ant colony\noptimization~(EACO) algorithm with genetic and crossover operators in real-time\napplications to humanoid robotics or other legged robots. This work presents\npromoting global search capability and convergence rate of the EACO applied to\nhumanoid robots in real-time by estimating the expected convergence rate using\nMarkov chain. Furthermore, we put a special focus on the EACO algorithm on a\nwide range of problems, from ACO, real-coded GAs, GAs with neural\nnetworks~(NNs), particle swarm optimization~(PSO) to complex robotics systems\nincluding gait synthesis, dynamic modeling of parameterizable trajectories and\ngait optimization of humanoid robotics. The experimental results illustrate the\ncapability of this method to discover the premature convergence probability,\ntackle successfully inherent stagnation, and promote the convergence rate of\nthe EACO-based humanoid robotics systems and demonstrated the applicability and\nthe effectiveness of our strategy for solving sophisticated optimization tasks.\nWe found reliable and fast walking gaits with a velocity of up to 0.47m/s using\nthe EACO optimization strategy. These findings have significant implications\nfor understanding and tackling inherent stagnation and poor convergence rate of\nthe EACO and provide new insight into the genetic architectures and control\noptimization of humanoid robotics.\n",
+        "published": "2020",
+        "authors": [
+            "Jingan Yang",
+            "Yang Peng"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2010.09531v1",
+        "title": "Learning Locomotion Skills in Evolvable Robots",
+        "abstract": "  The challenge of robotic reproduction -- making of new robots by recombining\ntwo existing ones -- has been recently cracked and physically evolving robot\nsystems have come within reach. Here we address the next big hurdle: producing\nan adequate brain for a newborn robot. In particular, we address the task of\ntargeted locomotion which is arguably a fundamental skill in any practical\nimplementation. We introduce a controller architecture and a generic learning\nmethod to allow a modular robot with an arbitrary shape to learn to walk\ntowards a target and follow this target if it moves. Our approach is validated\non three robots, a spider, a gecko, and their offspring, in three real-world\nscenarios.\n",
+        "published": "2020",
+        "authors": [
+            "Gongjin Lan",
+            "Maarten van Hooft",
+            "Matteo De Carlo",
+            "Jakub M. Tomczak",
+            "A. E. Eiben"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2101.09709v1",
+        "title": "Neuromorphic adaptive spiking CPG towards bio-inspired locomotion of\n  legged robots",
+        "abstract": "  In recent years, locomotion mechanisms exhibited by vertebrate animals have\nbeen the inspiration for the improvement in the performance of robotic systems.\nThese mechanisms include the adaptability of their locomotion to any change\nregistered in the environment through their biological sensors. In this regard,\nwe aim to replicate such kind of adaptability in legged robots through a\nSpiking Central Pattern Generator. This Spiking Central Pattern Generator\ngenerates different locomotion (rhythmic) patterns which are driven by an\nexternal stimulus, that is, the output of a Force Sensitive Resistor connected\nto the robot to provide feedback. The Spiking Central Pattern Generator\nconsists of a network of five populations of Leaky Integrate-and-Fire neurons\ndesigned with a specific topology in such a way that the rhythmic patterns can\nbe generated and driven by the aforementioned external stimulus. Therefore, the\nlocomotion of the end robotic platform (any-legged robot) can be adapted to the\nterrain by using any sensor as input. The Spiking Central Pattern Generator\nwith adaptive learning has been numerically validated at software and hardware\nlevel, using the Brian 2 simulator and the SpiNNaker neuromorphic platform for\nthe latest. In particular, our experiments clearly show an adaptation in the\noscillation frequencies between the spikes produced in the populations of the\nSpiking Central Pattern Generator while the input stimulus varies. To validate\nthe robustness and adaptability of the Spiking Central Pattern Generator, we\nhave performed several tests by variating the output of the sensor. These\nexperiments were carried out in Brian 2 and SpiNNaker; both implementations\nshowed a similar behavior with a Pearson correlation coefficient of 0.905.\n",
+        "published": "2021",
+        "authors": [
+            "Pablo Lopez-Osorio",
+            "Alberto Patino-Saucedo",
+            "Juan P. Dominguez-Morales",
+            "Horacio Rostro-Gonzalez",
+            "Fernando Perez-Pe\u00f1a"
+        ]
+    }
+]

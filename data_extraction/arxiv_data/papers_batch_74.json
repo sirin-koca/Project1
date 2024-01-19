@@ -1,0 +1,1211 @@
+[
+    {
+        "id": "http://arxiv.org/abs/2207.04827v4",
+        "title": "Classification and Generation of real-world data with an Associative\n  Memory Model",
+        "abstract": "  Drawing from memory the face of a friend you have not seen in years is a\ndifficult task. However, if you happen to cross paths, you would easily\nrecognize each other. The biological memory is equipped with an impressive\ncompression algorithm that can store the essential, and then infer the details\nto match perception. The Willshaw Memory is a simple abstract model for\ncortical computations which implements mechanisms of biological memories. Using\nour recently proposed sparse coding prescription for visual patterns, this\nmodel can store and retrieve an impressive amount of real-world data in a\nfault-tolerant manner. In this paper, we extend the capabilities of the basic\nAssociative Memory Model by using a Multiple-Modality framework. In this\nsetting, the memory stores several modalities (e.g., visual, or textual) of\neach pattern simultaneously. After training, the memory can be used to infer\nmissing modalities when just a subset is perceived. Using a simple\nencoder-memory-decoder architecture, and a newly proposed iterative retrieval\nalgorithm for the Willshaw Model, we perform experiments on the MNIST dataset.\nBy storing both the images and labels as modalities, a single Memory can be\nused not only to retrieve and complete patterns but also to classify and\ngenerate new ones. We further discuss how this model could be used for other\nlearning tasks, thus serving as a biologically-inspired framework for learning.\n",
+        "published": "2022",
+        "authors": [
+            "Rodrigo Simas",
+            "Luis Sa-Couto",
+            "Andreas Wichert"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2207.04857v3",
+        "title": "Emergence of Novelty in Evolutionary Algorithms",
+        "abstract": "  One of the main problems of evolutionary algorithms is the convergence of the\npopulation to local minima. In this paper, we explore techniques that can avoid\nthis problem by encouraging a diverse behavior of the agents through a shared\nreward system. The rewards are randomly distributed in the environment, and the\nagents are only rewarded for collecting them first. This leads to an emergence\nof a novel behavior of the agents. We introduce our approach to the maze\nproblem and compare it to the previously proposed solution, denoted as Novelty\nSearch (Lehman and Stanley, 2011a). We find that our solution leads to an\nimproved performance while being significantly simpler. Building on that, we\ngeneralize the problem and apply our approach to a more advanced set of tasks,\nAtari Games, where we observe a similar performance quality with much less\ncomputational power needed.\n",
+        "published": "2022",
+        "authors": [
+            "David Herel",
+            "Dominika Zogatova",
+            "Matej Kripner",
+            "Tomas Mikolov"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2207.04876v3",
+        "title": "On the Intrinsic Structures of Spiking Neural Networks",
+        "abstract": "  Recent years have emerged a surge of interest in SNNs owing to their\nremarkable potential to handle time-dependent and event-driven data. The\nperformance of SNNs hinges not only on selecting an apposite architecture and\nfine-tuning connection weights, similar to conventional ANNs, but also on the\nmeticulous configuration of intrinsic structures within spiking computations.\nHowever, there has been a dearth of comprehensive studies examining the impact\nof intrinsic structures. Consequently, developers often find it challenging to\napply a standardized configuration of SNNs across diverse datasets or tasks.\nThis work delves deep into the intrinsic structures of SNNs. Initially, we\nunveil two pivotal components of intrinsic structures: the integration\noperation and firing-reset mechanism, by elucidating their influence on the\nexpressivity of SNNs. Furthermore, we draw two key conclusions: the membrane\ntime hyper-parameter is intimately linked to the eigenvalues of the integration\noperation, dictating the functional topology of spiking dynamics, and various\nhyper-parameters of the firing-reset mechanism govern the overall firing\ncapacity of an SNN, mitigating the injection ratio or sampling density of input\ndata. These findings elucidate why the efficacy of SNNs hinges heavily on the\nconfiguration of intrinsic structures and lead to a recommendation that\nenhancing the adaptability of these structures contributes to improving the\noverall performance and applicability of SNNs. Inspired by this recognition, we\npropose two feasible approaches to enhance SNN learning. These involve\nleveraging self-connection architectures and employing stochastic spiking\nneurons to augment the adaptability of the integration operation and\nfiring-reset mechanism, respectively. We verify the effectiveness of the\nproposed methods from perspectives of theory and practice.\n",
+        "published": "2022",
+        "authors": [
+            "Shao-Qun Zhang",
+            "Jia-Yi Chen",
+            "Jin-Hui Wu",
+            "Gao Zhang",
+            "Huan Xiong",
+            "Bin Gu",
+            "Zhi-Hua Zhou"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2207.04881v1",
+        "title": "Simple and complex spiking neurons: perspectives and analysis in a\n  simple STDP scenario",
+        "abstract": "  Spiking neural networks (SNNs) are largely inspired by biology and\nneuroscience and leverage ideas and theories to create fast and efficient\nlearning systems. Spiking neuron models are adopted as core processing units in\nneuromorphic systems because they enable event-based processing. The\nintegrate-and-fire (I&F) models are often adopted, with the simple Leaky I&F\n(LIF) being the most used. The reason for adopting such models is their\nefficiency and/or biological plausibility. Nevertheless, rigorous justification\nfor adopting LIF over other neuron models for use in artificial learning\nsystems has not yet been studied. This work considers various neuron models in\nthe literature and then selects computational neuron models that are\nsingle-variable, efficient, and display different types of complexities. From\nthis selection, we make a comparative study of three simple I&F neuron models,\nnamely the LIF, the Quadratic I&F (QIF) and the Exponential I&F (EIF), to\nunderstand whether the use of more complex models increases the performance of\nthe system and whether the choice of a neuron model can be directed by the task\nto be completed. Neuron models are tested within an SNN trained with\nSpike-Timing Dependent Plasticity (STDP) on a classification task on the\nN-MNIST and DVS Gestures datasets. Experimental results reveal that more\ncomplex neurons manifest the same ability as simpler ones to achieve high\nlevels of accuracy on a simple dataset (N-MNIST), albeit requiring comparably\nmore hyper-parameter tuning. However, when the data possess richer\nSpatio-temporal features, the QIF and EIF neuron models steadily achieve better\nresults. This suggests that accurately selecting the model based on the\nrichness of the feature spectrum of the data could improve the whole system's\nperformance. Finally, the code implementing the spiking neurons in the\nSpykeTorch framework is made publicly available.\n",
+        "published": "2022",
+        "authors": [
+            "Davide Liberato Manna",
+            "Alex Vicente Sola",
+            "Paul Kirkland",
+            "Trevor Bihl",
+            "Gaetano Di Caterina"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2207.04884v1",
+        "title": "Proposal and Verification of Novel Machine Learning on Classification\n  Problems",
+        "abstract": "  This paper aims at proposing a new machine learning for classification\nproblems. The classification problem has a wide range of applications, and\nthere are many approaches such as decision trees, neural networks, and Bayesian\nnets. In this paper, we focus on the action of neurons in the brain, especially\nthe EPSP/IPSP cancellation between excitatory and inhibitory synapses, and\npropose a Machine Learning that does not belong to any conventional method. The\nfeature is to consider one neuron and give it a multivariable Xj (j = 1, 2,.)\nand its function value F(Xj) as data to the input layer. The multivariable\ninput layer and processing neuron are linked by two lines to each variable\nnode. One line is called an EPSP edge, and the other is called an IPSP edge,\nand a parameter {\\Delta}j common to each edge is introduced. The processing\nneuron is divided back and forth into two parts, and at the front side, a pulse\nhaving a width 2{\\Delta}j and a height 1 is defined around an input X . The\nlatter half of the processing neuron defines a pulse having a width 2{\\Delta}j\ncentered on the input Xj and a height F(Xj) based on a value obtained from the\ninput layer of F(Xj). This information is defined as belonging to group i. In\nother words, the group i has a width of 2{\\Delta}j centered on the input Xj, is\ndefined in a region of height F(Xj), and all outputs of xi within the variable\nrange are F(Xi). This group is learned and stored by a few minutes of the\nTeaching signals, and the output of the TEST signals is predicted by which\ngroup the TEST signals belongs to. The parameter {\\Delta}j is optimized so that\nthe accuracy of the prediction is maximized. The proposed method was applied to\nthe flower species classification problem of Iris, the rank classification\nproblem of used cars, and the ring classification problem of abalone, and the\ncalculation was compared with the neural networks.\n",
+        "published": "2022",
+        "authors": [
+            "Chikako Dozono",
+            "Mina Aragaki",
+            "Hana Hebishima",
+            "Shin-ichi Inage"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2207.04889v1",
+        "title": "Linear Leaky-Integrate-and-Fire Neuron Model Based Spiking Neural\n  Networks and Its Mapping Relationship to Deep Neural Networks",
+        "abstract": "  Spiking neural networks (SNNs) are brain-inspired machine learning algorithms\nwith merits such as biological plausibility and unsupervised learning\ncapability. Previous works have shown that converting Artificial Neural\nNetworks (ANNs) into SNNs is a practical and efficient approach for\nimplementing an SNN. However, the basic principle and theoretical groundwork\nare lacking for training a non-accuracy-loss SNN. This paper establishes a\nprecise mathematical mapping between the biological parameters of the Linear\nLeaky-Integrate-and-Fire model (LIF)/SNNs and the parameters of ReLU-AN/Deep\nNeural Networks (DNNs). Such mapping relationship is analytically proven under\ncertain conditions and demonstrated by simulation and real data experiments. It\ncan serve as the theoretical basis for the potential combination of the\nrespective merits of the two categories of neural networks.\n",
+        "published": "2022",
+        "authors": [
+            "Sijia Lu",
+            "Feng Xu"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2207.05451v1",
+        "title": "Adversarial Robustness Assessment of NeuroEvolution Approaches",
+        "abstract": "  NeuroEvolution automates the generation of Artificial Neural Networks through\nthe application of techniques from Evolutionary Computation. The main goal of\nthese approaches is to build models that maximize predictive performance,\nsometimes with an additional objective of minimizing computational complexity.\nAlthough the evolved models achieve competitive results performance-wise, their\nrobustness to adversarial examples, which becomes a concern in\nsecurity-critical scenarios, has received limited attention. In this paper, we\nevaluate the adversarial robustness of models found by two prominent\nNeuroEvolution approaches on the CIFAR-10 image classification task: DENSER and\nNSGA-Net. Since the models are publicly available, we consider white-box\nuntargeted attacks, where the perturbations are bounded by either the L2 or the\nLinfinity-norm. Similarly to manually-designed networks, our results show that\nwhen the evolved models are attacked with iterative methods, their accuracy\nusually drops to, or close to, zero under both distance metrics. The DENSER\nmodel is an exception to this trend, showing some resistance under the L2\nthreat model, where its accuracy only drops from 93.70% to 18.10% even with\niterative attacks. Additionally, we analyzed the impact of pre-processing\napplied to the data before the first layer of the network. Our observations\nsuggest that some of these techniques can exacerbate the perturbations added to\nthe original inputs, potentially harming robustness. Thus, this choice should\nnot be neglected when automatically designing networks for applications where\nadversarial attacks are prone to occur.\n",
+        "published": "2022",
+        "authors": [
+            "In\u00eas Valentim",
+            "Nuno Louren\u00e7o",
+            "Nuno Antunes"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2207.05561v1",
+        "title": "Brain-inspired Graph Spiking Neural Networks for Commonsense Knowledge\n  Representation and Reasoning",
+        "abstract": "  How neural networks in the human brain represent commonsense knowledge, and\ncomplete related reasoning tasks is an important research topic in\nneuroscience, cognitive science, psychology, and artificial intelligence.\nAlthough the traditional artificial neural network using fixed-length vectors\nto represent symbols has gained good performance in some specific tasks, it is\nstill a black box that lacks interpretability, far from how humans perceive the\nworld. Inspired by the grandmother-cell hypothesis in neuroscience, this work\ninvestigates how population encoding and spiking timing-dependent plasticity\n(STDP) mechanisms can be integrated into the learning of spiking neural\nnetworks, and how a population of neurons can represent a symbol via guiding\nthe completion of sequential firing between different neuron populations. The\nneuron populations of different communities together constitute the entire\ncommonsense knowledge graph, forming a giant graph spiking neural network.\nMoreover, we introduced the Reward-modulated spiking timing-dependent\nplasticity (R-STDP) mechanism to simulate the biological reinforcement learning\nprocess and completed the related reasoning tasks accordingly, achieving\ncomparable accuracy and faster convergence speed than the graph convolutional\nartificial neural networks. For the fields of neuroscience and cognitive\nscience, the work in this paper provided the foundation of computational\nmodeling for further exploration of the way the human brain represents\ncommonsense knowledge. For the field of artificial intelligence, this paper\nindicated the exploration direction for realizing a more robust and\ninterpretable neural network by constructing a commonsense knowledge\nrepresentation and reasoning spiking neural networks with solid biological\nplausibility.\n",
+        "published": "2022",
+        "authors": [
+            "Hongjian Fang",
+            "Yi Zeng",
+            "Jianbo Tang",
+            "Yuwei Wang",
+            "Yao Liang",
+            "Xin Liu"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2207.07338v6",
+        "title": "Context-sensitive neocortical neurons transform the effectiveness and\n  efficiency of neural information processing",
+        "abstract": "  Deep learning (DL) has big-data processing capabilities that are as good, or\neven better, than those of humans in many real-world domains, but at the cost\nof high energy requirements that may be unsustainable in some applications and\nof errors, that, though infrequent, can be large. We hypothesise that a\nfundamental weakness of DL lies in its intrinsic dependence on\nintegrate-and-fire point neurons that maximise information transmission\nirrespective of whether it is relevant in the current context or not. This\nleads to unnecessary neural firing and to the feedforward transmission of\nconflicting messages, which makes learning difficult and processing energy\ninefficient. Here we show how to circumvent these limitations by mimicking the\ncapabilities of context-sensitive neocortical neurons that receive input from\ndiverse sources as a context to amplify and attenuate the transmission of\nrelevant and irrelevant information, respectively. We demonstrate that a deep\nnetwork composed of such local processors seeks to maximise agreement between\nthe active neurons, thus restricting the transmission of conflicting\ninformation to higher levels and reducing the neural activity required to\nprocess large amounts of heterogeneous real-world data. As shown to be far more\neffective and efficient than current forms of DL, this two-point neuron study\noffers a possible step-change in transforming the cellular foundations of deep\nnetwork architectures.\n",
+        "published": "2022",
+        "authors": [
+            "Ahsan Adeel",
+            "Mario Franco",
+            "Mohsin Raza",
+            "Khubaib Ahmed"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2207.09453v1",
+        "title": "e3nn: Euclidean Neural Networks",
+        "abstract": "  We present e3nn, a generalized framework for creating E(3) equivariant\ntrainable functions, also known as Euclidean neural networks. e3nn naturally\noperates on geometry and geometric tensors that describe systems in 3D and\ntransform predictably under a change of coordinate system. The core of e3nn are\nequivariant operations such as the TensorProduct class or the spherical\nharmonics functions that can be composed to create more complex modules such as\nconvolutions and attention mechanisms. These core operations of e3nn can be\nused to efficiently articulate Tensor Field Networks, 3D Steerable CNNs,\nClebsch-Gordan Networks, SE(3) Transformers and other E(3) equivariant\nnetworks.\n",
+        "published": "2022",
+        "authors": [
+            "Mario Geiger",
+            "Tess Smidt"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2207.12138v1",
+        "title": "Towards Fairness-Aware Multi-Objective Optimization",
+        "abstract": "  Recent years have seen the rapid development of fairness-aware machine\nlearning in mitigating unfairness or discrimination in decision-making in a\nwide range of applications. However, much less attention has been paid to the\nfairness-aware multi-objective optimization, which is indeed commonly seen in\nreal life, such as fair resource allocation problems and data driven\nmulti-objective optimization problems. This paper aims to illuminate and\nbroaden our understanding of multi-objective optimization from the perspective\nof fairness. To this end, we start with a discussion of user preferences in\nmulti-objective optimization and then explore its relationship to fairness in\nmachine learning and multi-objective optimization. Following the above\ndiscussions, representative cases of fairness-aware multiobjective optimization\nare presented, further elaborating the importance of fairness in traditional\nmulti-objective optimization, data-driven optimization and federated\noptimization. Finally, challenges and opportunities in fairness-aware\nmulti-objective optimization are addressed. We hope that this article makes a\nsmall step forward towards understanding fairness in the context of\noptimization and promote research interest in fairness-aware multi-objective\noptimization.\n",
+        "published": "2022",
+        "authors": [
+            "Guo Yu",
+            "Lianbo Ma",
+            "Wei Du",
+            "Wenli Du",
+            "Yaochu Jin"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2207.12316v2",
+        "title": "A Theoretical Framework for Inference and Learning in Predictive Coding\n  Networks",
+        "abstract": "  Predictive coding (PC) is an influential theory in computational\nneuroscience, which argues that the cortex forms unsupervised world models by\nimplementing a hierarchical process of prediction error minimization. PC\nnetworks (PCNs) are trained in two phases. First, neural activities are updated\nto optimize the network's response to external stimuli. Second, synaptic\nweights are updated to consolidate this change in activity -- an algorithm\ncalled \\emph{prospective configuration}. While previous work has shown how in\nvarious limits, PCNs can be found to approximate backpropagation (BP), recent\nwork has demonstrated that PCNs operating in this standard regime, which does\nnot approximate BP, nevertheless obtain competitive training and generalization\nperformance to BP-trained networks while outperforming them on tasks such as\nonline, few-shot, and continual learning, where brains are known to excel.\nDespite this promising empirical performance, little is understood\ntheoretically about the properties and dynamics of PCNs in this regime. In this\npaper, we provide a comprehensive theoretical analysis of the properties of\nPCNs trained with prospective configuration. We first derive analytical results\nconcerning the inference equilibrium for PCNs and a previously unknown close\nconnection relationship to target propagation (TP). Secondly, we provide a\ntheoretical analysis of learning in PCNs as a variant of generalized\nexpectation-maximization and use that to prove the convergence of PCNs to\ncritical points of the BP loss function, thus showing that deep PCNs can, in\ntheory, achieve the same generalization performance as BP, while maintaining\ntheir unique advantages.\n",
+        "published": "2022",
+        "authors": [
+            "Beren Millidge",
+            "Yuhang Song",
+            "Tommaso Salvatori",
+            "Thomas Lukasiewicz",
+            "Rafal Bogacz"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2207.12323v1",
+        "title": "Unsupervised Hebbian Learning on Point Sets in StarCraft II",
+        "abstract": "  Learning the evolution of real-time strategy (RTS) game is a challenging\nproblem in artificial intelligent (AI) system. In this paper, we present a\nnovel Hebbian learning method to extract the global feature of point sets in\nStarCraft II game units, and its application to predict the movement of the\npoints. Our model includes encoder, LSTM, and decoder, and we train the encoder\nwith the unsupervised learning method. We introduce the concept of neuron\nactivity aware learning combined with k-Winner-Takes-All. The optimal value of\nneuron activity is mathematically derived, and experiments support the\neffectiveness of the concept over the downstream task. Our Hebbian learning\nrule benefits the prediction with lower loss compared to self-supervised\nlearning. Also, our model significantly saves the computational cost such as\nactivations and FLOPs compared to a frame-based approach.\n",
+        "published": "2022",
+        "authors": [
+            "Beomseok Kang",
+            "Harshit Kumar",
+            "Saurabh Dash",
+            "Saibal Mukhopadhyay"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2208.00555v1",
+        "title": "Evo* 2022 -- Late-Breaking Abstracts Volume",
+        "abstract": "  Volume with the Late-Breaking Abstracts submitted to the Evo* 2022\nConference, held in Madrid (Spain), from 20 to 22 of April. These papers\npresent ongoing research and preliminary results investigating on the\napplication of different approaches of Bioinspired Methods (mainly Evolutionary\nComputation) to different problems, most of them real world ones.\n",
+        "published": "2022",
+        "authors": [
+            "A. M. Mora",
+            "A. I. Esparcia-Alc\u00e1zar"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2208.00877v2",
+        "title": "Self-supervised Group Meiosis Contrastive Learning for EEG-Based Emotion\n  Recognition",
+        "abstract": "  The progress of EEG-based emotion recognition has received widespread\nattention from the fields of human-machine interactions and cognitive science\nin recent years. However, how to recognize emotions with limited labels has\nbecome a new research and application bottleneck. To address the issue, this\npaper proposes a Self-supervised Group Meiosis Contrastive learning framework\n(SGMC) based on the stimuli consistent EEG signals in human being. In the SGMC,\na novel genetics-inspired data augmentation method, named Meiosis, is\ndeveloped. It takes advantage of the alignment of stimuli among the EEG samples\nin a group for generating augmented groups by pairing, cross exchanging, and\nseparating. And the model adopts a group projector to extract group-level\nfeature representations from group EEG samples triggered by the same emotion\nvideo stimuli. Then contrastive learning is employed to maximize the similarity\nof group-level representations of augmented groups with the same stimuli. The\nSGMC achieves the state-of-the-art emotion recognition results on the publicly\navailable DEAP dataset with an accuracy of 94.72% and 95.68% in valence and\narousal dimensions, and also reaches competitive performance on the public SEED\ndataset with an accuracy of 94.04%. It is worthy of noting that the SGMC shows\nsignificant performance even when using limited labels. Moreover, the results\nof feature visualization suggest that the model might have learned video-level\nemotion-related feature representations to improve emotion recognition. And the\neffects of group size are further evaluated in the hyper parametric analysis.\nFinally, a control experiment and ablation study are carried out to examine the\nrationality of architecture. The code is provided publicly online.\n",
+        "published": "2022",
+        "authors": [
+            "Haoning Kan",
+            "Jiale Yu",
+            "Jiajin Huang",
+            "Zihe Liu",
+            "Haiyan Zhou"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2208.01191v2",
+        "title": "Implicit Two-Tower Policies",
+        "abstract": "  We present a new class of structured reinforcement learning\npolicy-architectures, Implicit Two-Tower (ITT) policies, where the actions are\nchosen based on the attention scores of their learnable latent representations\nwith those of the input states. By explicitly disentangling action from state\nprocessing in the policy stack, we achieve two main goals: substantial\ncomputational gains and better performance. Our architectures are compatible\nwith both: discrete and continuous action spaces. By conducting tests on 15\nenvironments from OpenAI Gym and DeepMind Control Suite, we show that\nITT-architectures are particularly suited for blackbox/evolutionary\noptimization and the corresponding policy training algorithms outperform their\nvanilla unstructured implicit counterparts as well as commonly used explicit\npolicies. We complement our analysis by showing how techniques such as hashing\nand lazy tower updates, critically relying on the two-tower structure of ITTs,\ncan be applied to obtain additional computational improvements.\n",
+        "published": "2022",
+        "authors": [
+            "Yunfan Zhao",
+            "Qingkai Pan",
+            "Krzysztof Choromanski",
+            "Deepali Jain",
+            "Vikas Sindhwani"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2208.02656v2",
+        "title": "Invariant Representations with Stochastically Quantized Neural Networks",
+        "abstract": "  Representation learning algorithms offer the opportunity to learn invariant\nrepresentations of the input data with regard to nuisance factors. Many authors\nhave leveraged such strategies to learn fair representations, i.e., vectors\nwhere information about sensitive attributes is removed. These methods are\nattractive as they may be interpreted as minimizing the mutual information\nbetween a neural layer's activations and a sensitive attribute. However, the\ntheoretical grounding of such methods relies either on the computation of\ninfinitely accurate adversaries or on minimizing a variational upper bound of a\nmutual information estimate. In this paper, we propose a methodology for direct\ncomputation of the mutual information between a neural layer and a sensitive\nattribute. We employ stochastically-activated binary neural networks, which\nlets us treat neurons as random variables. We are then able to compute (not\nbound) the mutual information between a layer and a sensitive attribute and use\nthis information as a regularization factor during gradient descent. We show\nthat this method compares favorably with the state of the art in fair\nrepresentation learning and that the learned representations display a higher\nlevel of invariance compared to full-precision neural networks.\n",
+        "published": "2022",
+        "authors": [
+            "Mattia Cerrato",
+            "Marius K\u00f6ppel",
+            "Roberto Esposito",
+            "Stefan Kramer"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2208.03211v8",
+        "title": "Why do networks have inhibitory/negative connections?",
+        "abstract": "  Why do brains have inhibitory connections? Why do deep networks have negative\nweights? We propose an answer from the perspective of representation capacity.\nWe believe representing functions is the primary role of both (i) the brain in\nnatural intelligence, and (ii) deep networks in artificial intelligence. Our\nanswer to why there are inhibitory/negative weights is: to learn more\nfunctions. We prove that, in the absence of negative weights, neural networks\nwith non-decreasing activation functions are not universal approximators. While\nthis may be an intuitive result to some, to the best of our knowledge, there is\nno formal theory, in either machine learning or neuroscience, that demonstrates\nwhy negative weights are crucial in the context of representation capacity.\nFurther, we provide insights on the geometric properties of the representation\nspace that non-negative deep networks cannot represent. We expect these\ninsights will yield a deeper understanding of more sophisticated inductive\npriors imposed on the distribution of weights that lead to more efficient\nbiological and machine learning.\n",
+        "published": "2022",
+        "authors": [
+            "Qingyang Wang",
+            "Michael A. Powell",
+            "Ali Geisa",
+            "Eric Bridgeford",
+            "Carey E. Priebe",
+            "Joshua T. Vogelstein"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2208.04832v1",
+        "title": "On the Importance of Critical Period in Multi-stage Reinforcement\n  Learning",
+        "abstract": "  The initial years of an infant's life are known as the critical period,\nduring which the overall development of learning performance is significantly\nimpacted due to neural plasticity. In recent studies, an AI agent, with a deep\nneural network mimicking mechanisms of actual neurons, exhibited a learning\nperiod similar to human's critical period. Especially during this initial\nperiod, the appropriate stimuli play a vital role in developing learning\nability. However, transforming human cognitive bias into an appropriate shaping\nreward is quite challenging, and prior works on critical period do not focus on\nfinding the appropriate stimulus. To take a step further, we propose\nmulti-stage reinforcement learning to emphasize finding ``appropriate stimulus\"\naround the critical period. Inspired by humans' early cognitive-developmental\nstage, we use multi-stage guidance near the critical period, and demonstrate\nthe appropriate shaping reward (stage-2 guidance) in terms of the AI agent's\nperformance, efficiency, and stability.\n",
+        "published": "2022",
+        "authors": [
+            "Junseok Park",
+            "Inwoo Hwang",
+            "Min Whoo Lee",
+            "Hyunseok Oh",
+            "Minsu Lee",
+            "Youngki Lee",
+            "Byoung-Tak Zhang"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2208.10227v1",
+        "title": "One Model, Any CSP: Graph Neural Networks as Fast Global Search\n  Heuristics for Constraint Satisfaction",
+        "abstract": "  We propose a universal Graph Neural Network architecture which can be trained\nas an end-2-end search heuristic for any Constraint Satisfaction Problem (CSP).\nOur architecture can be trained unsupervised with policy gradient descent to\ngenerate problem specific heuristics for any CSP in a purely data driven\nmanner. The approach is based on a novel graph representation for CSPs that is\nboth generic and compact and enables us to process every possible CSP instance\nwith one GNN, regardless of constraint arity, relations or domain size. Unlike\nprevious RL-based methods, we operate on a global search action space and allow\nour GNN to modify any number of variables in every step of the stochastic\nsearch. This enables our method to properly leverage the inherent parallelism\nof GNNs. We perform a thorough empirical evaluation where we learn heuristics\nfor well known and important CSPs from random data, including graph coloring,\nMaxCut, 3-SAT and MAX-k-SAT. Our approach outperforms prior approaches for\nneural combinatorial optimization by a substantial margin. It can compete with,\nand even improve upon, conventional search heuristics on test instances that\nare several orders of magnitude larger and structurally more complex than those\nseen during training.\n",
+        "published": "2022",
+        "authors": [
+            "Jan T\u00f6nshoff",
+            "Berke Kisin",
+            "Jakob Lindner",
+            "Martin Grohe"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2208.10364v3",
+        "title": "Scaling Up Dynamic Graph Representation Learning via Spiking Neural\n  Networks",
+        "abstract": "  Recent years have seen a surge in research on dynamic graph representation\nlearning, which aims to model temporal graphs that are dynamic and evolving\nconstantly over time. However, current work typically models graph dynamics\nwith recurrent neural networks (RNNs), making them suffer seriously from\ncomputation and memory overheads on large temporal graphs. So far, scalability\nof dynamic graph representation learning on large temporal graphs remains one\nof the major challenges. In this paper, we present a scalable framework, namely\nSpikeNet, to efficiently capture the temporal and structural patterns of\ntemporal graphs. We explore a new direction in that we can capture the evolving\ndynamics of temporal graphs with spiking neural networks (SNNs) instead of\nRNNs. As a low-power alternative to RNNs, SNNs explicitly model graph dynamics\nas spike trains of neuron populations and enable spike-based propagation in an\nefficient way. Experiments on three large real-world temporal graph datasets\ndemonstrate that SpikeNet outperforms strong baselines on the temporal node\nclassification task with lower computational costs. Particularly, SpikeNet\ngeneralizes to a large temporal graph (2.7M nodes and 13.9M edges) with\nsignificantly fewer parameters and computation overheads.Our code is publicly\navailable at \\url{https://github.com/EdisonLeeeee/SpikeNet}.\n",
+        "published": "2022",
+        "authors": [
+            "Jintang Li",
+            "Zhouxin Yu",
+            "Zulun Zhu",
+            "Liang Chen",
+            "Qi Yu",
+            "Zibin Zheng",
+            "Sheng Tian",
+            "Ruofan Wu",
+            "Changhua Meng"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2208.12564v1",
+        "title": "Can a Hebbian-like learning rule be avoiding the curse of dimensionality\n  in sparse distributed data?",
+        "abstract": "  It is generally assumed that the brain uses something akin to sparse\ndistributed representations. These representations, however, are\nhigh-dimensional and consequently they affect classification performance of\ntraditional Machine Learning models due to \"the curse of dimensionality\". In\ntasks for which there is a vast amount of labeled data, Deep Networks seem to\nsolve this issue with many layers and a non-Hebbian backpropagation algorithm.\nThe brain, however, seems to be able to solve the problem with few layers. In\nthis work, we hypothesize that this happens by using Hebbian learning.\nActually, the Hebbian-like learning rule of Restricted Boltzmann Machines\nlearns the input patterns asymmetrically. It exclusively learns the correlation\nbetween non-zero values and ignores the zeros, which represent the vast\nmajority of the input dimensionality. By ignoring the zeros \"the curse of\ndimensionality\" problem can be avoided. To test our hypothesis, we generated\nseveral sparse datasets and compared the performance of a Restricted Boltzmann\nMachine classifier with some Backprop-trained networks. The experiments using\nthese codes confirm our initial intuition as the Restricted Boltzmann Machine\nshows a good generalization performance, while the Neural Networks trained with\nthe backpropagation algorithm overfit the training data.\n",
+        "published": "2022",
+        "authors": [
+            "Maria Os\u00f3rio",
+            "Lu\u00eds Sa-Couto",
+            "Andreas Wichert"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2208.12758v1",
+        "title": "Quality Diversity Evolutionary Learning of Decision Trees",
+        "abstract": "  Addressing the need for explainable Machine Learning has emerged as one of\nthe most important research directions in modern Artificial Intelligence (AI).\nWhile the current dominant paradigm in the field is based on black-box models,\ntypically in the form of (deep) neural networks, these models lack direct\ninterpretability for human users, i.e., their outcomes (and, even more so,\ntheir inner working) are opaque and hard to understand. This is hindering the\nadoption of AI in safety-critical applications, where high interests are at\nstake. In these applications, explainable by design models, such as decision\ntrees, may be more suitable, as they provide interpretability. Recent works\nhave proposed the hybridization of decision trees and Reinforcement Learning,\nto combine the advantages of the two approaches. So far, however, these works\nhave focused on the optimization of those hybrid models. Here, we apply\nMAP-Elites for diversifying hybrid models over a feature space that captures\nboth the model complexity and its behavioral variability. We apply our method\non two well-known control problems from the OpenAI Gym library, on which we\ndiscuss the \"illumination\" patterns projected by MAP-Elites, comparing its\nresults against existing similar approaches.\n",
+        "published": "2022",
+        "authors": [
+            "Andrea Ferigo",
+            "Leonardo Lucio Custode",
+            "Giovanni Iacca"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2208.12777v1",
+        "title": "Prospect Theory-inspired Automated P2P Energy Trading with\n  Q-learning-based Dynamic Pricing",
+        "abstract": "  The widespread adoption of distributed energy resources, and the advent of\nsmart grid technologies, have allowed traditionally passive power system users\nto become actively involved in energy trading. Recognizing the fact that the\ntraditional centralized grid-driven energy markets offer minimal profitability\nto these users, recent research has shifted focus towards decentralized\npeer-to-peer (P2P) energy markets. In these markets, users trade energy with\neach other, with higher benefits than buying or selling to the grid. However,\nmost researches in P2P energy trading largely overlook the user perception in\nthe trading process, assuming constant availability, participation, and full\ncompliance. As a result, these approaches may result in negative attitudes and\nreduced engagement over time. In this paper, we design an automated P2P energy\nmarket that takes user perception into account. We employ prospect theory to\nmodel the user perception and formulate an optimization framework to maximize\nthe buyer's perception while matching demand and production. Given the\nnon-linear and non-convex nature of the optimization problem, we propose\nDifferential Evolution-based Algorithm for Trading Energy called DEbATE.\nAdditionally, we introduce a risk-sensitive Q-learning algorithm, named Pricing\nmechanism with Q-learning and Risk-sensitivity (PQR), which learns the optimal\nprice for sellers considering their perceived utility. Results based on real\ntraces of energy consumption and production, as well as realistic prospect\ntheory functions, show that our approach achieves a 26% higher perceived value\nfor buyers and generates 7% more reward for sellers, compared to a recent state\nof the art approach.\n",
+        "published": "2022",
+        "authors": [
+            "Ashutosh Timilsina",
+            "Simone Silvestri"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2208.13246v1",
+        "title": "AutoQML: Automatic Generation and Training of Robust Quantum-Inspired\n  Classifiers by Using Genetic Algorithms on Grayscale Images",
+        "abstract": "  We propose a new hybrid system for automatically generating and training\nquantum-inspired classifiers on grayscale images by using multiobjective\ngenetic algorithms. We define a dynamic fitness function to obtain the smallest\npossible circuit and highest accuracy on unseen data, ensuring that the\nproposed technique is generalizable and robust. We minimize the complexity of\nthe generated circuits in terms of the number of entanglement gates by\npenalizing their appearance. We reduce the size of the images with two\ndimensionality reduction approaches: principal component analysis (PCA), which\nis encoded in the individual for optimization purpose, and a small\nconvolutional autoencoder (CAE). These two methods are compared with one\nanother and with a classical nonlinear approach to understand their behaviors\nand to ensure that the classification ability is due to the quantum circuit and\nnot the preprocessing technique used for dimensionality reduction.\n",
+        "published": "2022",
+        "authors": [
+            "Sergio Altares-L\u00f3pez",
+            "Juan Jos\u00e9 Garc\u00eda-Ripoll",
+            "Angela Ribeiro"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2208.13723v2",
+        "title": "Bayesian Continual Learning via Spiking Neural Networks",
+        "abstract": "  Among the main features of biological intelligence are energy efficiency,\ncapacity for continual adaptation, and risk management via uncertainty\nquantification. Neuromorphic engineering has been thus far mostly driven by the\ngoal of implementing energy-efficient machines that take inspiration from the\ntime-based computing paradigm of biological brains. In this paper, we take\nsteps towards the design of neuromorphic systems that are capable of adaptation\nto changing learning tasks, while producing well-calibrated uncertainty\nquantification estimates. To this end, we derive online learning rules for\nspiking neural networks (SNNs) within a Bayesian continual learning framework.\nIn it, each synaptic weight is represented by parameters that quantify the\ncurrent epistemic uncertainty resulting from prior knowledge and observed data.\nThe proposed online rules update the distribution parameters in a streaming\nfashion as data are observed. We instantiate the proposed approach for both\nreal-valued and binary synaptic weights. Experimental results using Intel's\nLava platform show the merits of Bayesian over frequentist learning in terms of\ncapacity for adaptation and uncertainty quantification.\n",
+        "published": "2022",
+        "authors": [
+            "Nicolas Skatchkovsky",
+            "Hyeryung Jang",
+            "Osvaldo Simeone"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2209.00083v1",
+        "title": "Feynman on Artificial Intelligence and Machine Learning, with Updates",
+        "abstract": "  I present my recollections of Richard Feynman's mid-1980s interest in\nartificial intelligence and neural networks, set in the technical context of\nthe physics-related approaches to neural networks of that time. I attempt to\nevaluate his ideas in the light of the substantial advances in the field since\nthen, and vice versa. There are aspects of Feynman's interests that I think\nhave been largely achieved and others that remain excitingly open, notably in\ncomputational science, and potentially including the revival of symbolic\nmethods therein.\n",
+        "published": "2022",
+        "authors": [
+            "Eric Mjolsness"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2209.00530v1",
+        "title": "Holomorphic Equilibrium Propagation Computes Exact Gradients Through\n  Finite Size Oscillations",
+        "abstract": "  Equilibrium propagation (EP) is an alternative to backpropagation (BP) that\nallows the training of deep neural networks with local learning rules. It thus\nprovides a compelling framework for training neuromorphic systems and\nunderstanding learning in neurobiology. However, EP requires infinitesimal\nteaching signals, thereby limiting its applicability in noisy physical systems.\nMoreover, the algorithm requires separate temporal phases and has not been\napplied to large-scale problems. Here we address these issues by extending EP\nto holomorphic networks. We show analytically that this extension naturally\nleads to exact gradients even for finite-amplitude teaching signals.\nImportantly, the gradient can be computed as the first Fourier coefficient from\nfinite neuronal activity oscillations in continuous time without requiring\nseparate phases. Further, we demonstrate in numerical simulations that our\napproach permits robust estimation of gradients in the presence of noise and\nthat deeper models benefit from the finite teaching signals. Finally, we\nestablish the first benchmark for EP on the ImageNet 32x32 dataset and show\nthat it matches the performance of an equivalent network trained with BP. Our\nwork provides analytical insights that enable scaling EP to large-scale\nproblems and establishes a formal framework for how oscillations could support\nlearning in biological and neuromorphic systems.\n",
+        "published": "2022",
+        "authors": [
+            "Axel Laborieux",
+            "Friedemann Zenke"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2209.03108v1",
+        "title": "Open-Ended Evolution for Minecraft Building Generation",
+        "abstract": "  This paper proposes a procedural content generator which evolves Minecraft\nbuildings according to an open-ended and intrinsic definition of novelty. To\nrealize this goal we evaluate individuals' novelty in the latent space using a\n3D autoencoder, and alternate between phases of exploration and transformation.\nDuring exploration the system evolves multiple populations of CPPNs through\nCPPN-NEAT and constrained novelty search in the latent space (defined by the\ncurrent autoencoder). We apply a set of repair and constraint functions to\nensure candidates adhere to basic structural rules and constraints during\nevolution. During transformation, we reshape the boundaries of the latent space\nto identify new interesting areas of the solution space by retraining the\nautoencoder with novel content. In this study we evaluate five different\napproaches for training the autoencoder during transformation and its impact on\npopulations' quality and diversity during evolution. Our results show that by\nretraining the autoencoder we can achieve better open-ended complexity compared\nto a static model, which is further improved when retraining using larger\ndatasets of individuals with diverse complexities.\n",
+        "published": "2022",
+        "authors": [
+            "Matthew Barthet",
+            "Antonios Liapis",
+            "Georgios N. Yannakakis"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2209.04425v1",
+        "title": "The Role Of Biology In Deep Learning",
+        "abstract": "  Artificial neural networks took a lot of inspiration from their biological\ncounterparts in becoming our best machine perceptual systems. This work\nsummarizes some of that history and incorporates modern theoretical\nneuroscience into experiments with artificial neural networks from the field of\ndeep learning. Specifically, iterative magnitude pruning is used to train\nsparsely connected networks with 33x fewer weights without loss in performance.\nThese are used to test and ultimately reject the hypothesis that weight\nsparsity alone improves image noise robustness. Recent work mitigated\ncatastrophic forgetting using weight sparsity, activation sparsity, and active\ndendrite modeling. This paper replicates those findings, and extends the method\nto train convolutional neural networks on a more challenging continual learning\ntask. The code has been made publicly available.\n",
+        "published": "2022",
+        "authors": [
+            "Robert Bain"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2209.06114v1",
+        "title": "Analysing the Predictivity of Features to Characterise the Search Space",
+        "abstract": "  Exploring search spaces is one of the most unpredictable challenges that has\nattracted the interest of researchers for decades. One way to handle\nunpredictability is to characterise the search spaces and take actions\naccordingly. A well-characterised search space can assist in mapping the\nproblem states to a set of operators for generating new problem states. In this\npaper, a landscape analysis-based set of features has been analysed using the\nmost renown machine learning approaches to determine the optimal feature set.\nHowever, in order to deal with problem complexity and induce commonality for\ntransferring experience across domains, the selection of the most\nrepresentative features remains crucial. The proposed approach analyses the\npredictivity of a set of features in order to determine the best\ncategorization.\n",
+        "published": "2022",
+        "authors": [
+            "Rafet Durgut",
+            "Mehmet Emin Aydin",
+            "Hisham Ihshaish",
+            "Abdur Rakib"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2209.06828v1",
+        "title": "A Temporal Anomaly Detection System for Vehicles utilizing Functional\n  Working Groups and Sensor Channels",
+        "abstract": "  A modern vehicle fitted with sensors, actuators, and Electronic Control Units\n(ECUs) can be divided into several operational subsystems called Functional\nWorking Groups (FWGs). Examples of these FWGs include the engine system,\ntransmission, fuel system, brakes, etc. Each FWG has associated sensor-channels\nthat gauge vehicular operating conditions. This data rich environment is\nconducive to the development of Predictive Maintenance (PdM) technologies.\nUndercutting various PdM technologies is the need for robust anomaly detection\nmodels that can identify events or observations which deviate significantly\nfrom the majority of the data and do not conform to a well defined notion of\nnormal vehicular operational behavior. In this paper, we introduce the Vehicle\nPerformance, Reliability, and Operations (VePRO) dataset and use it to create a\nmulti-phased approach to anomaly detection. Utilizing Temporal Convolution\nNetworks (TCN), our anomaly detection system can achieve 96% detection accuracy\nand accurately predicts 91% of true anomalies. The performance of our anomaly\ndetection system improves when sensor channels from multiple FWGs are utilized.\n",
+        "published": "2022",
+        "authors": [
+            "Subash Neupane",
+            "Ivan A. Fernandez",
+            "Wilson Patterson",
+            "Sudip Mittal",
+            "Shahram Rahimi"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2209.06862v6",
+        "title": "Deep learning in a bilateral brain with hemispheric specialization",
+        "abstract": "  The brains of all bilaterally symmetric animals on Earth are divided into\nleft and right hemispheres. The anatomy and functionality of the hemispheres\nhave a large degree of overlap, but there are asymmetries and they specialize\nto possess different attributes. Several studies have used computational models\nto mimic hemispheric asymmetries with a focus on reproducing human data on\nsemantic and visual processing tasks. In this study, we aimed to understand how\ndual hemispheres could interact in a given task. We propose a bilateral\nartificial neural network that imitates a lateralization observed in nature:\nthat the left hemisphere specializes in specificity and the right in\ngeneralities. We used two ResNet-9 convolutional neural networks with different\ntraining objectives and tested it on an image classification task. Our analysis\nfound that the hemispheres represent complementary features that are exploited\nby a network head which implements a type of weighted attention. The bilateral\narchitecture outperformed a range of baselines of similar representational\ncapacity that don't exploit differential specialization. The results\ndemonstrate the efficacy of bilateralism, contribute to an understanding of\nbilateralism in biological brains and the architecture serves as an inductive\nbias when designing new AI systems.\n",
+        "published": "2022",
+        "authors": [
+            "Chandramouli Rajagopalan",
+            "David Rawlinson",
+            "Elkhonon Goldberg",
+            "Gideon Kowadlo"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2209.06904v2",
+        "title": "Forecasting Evolution of Clusters in Game Agents with Hebbian Learning",
+        "abstract": "  Large multi-agent systems such as real-time strategy games are often driven\nby collective behavior of agents. For example, in StarCraft II, human players\ngroup spatially near agents into a team and control the team to defeat\nopponents. In this light, clustering the agents in the game has been used for\nvarious purposes such as the efficient control of the agents in multi-agent\nreinforcement learning and game analytic tools for the game users. However,\ndespite the useful information provided by clustering, learning the dynamics of\nmulti-agent systems at a cluster level has been rarely studied yet. In this\npaper, we present a hybrid AI model that couples unsupervised and\nself-supervised learning to forecast evolution of the clusters in StarCraft II.\nWe develop an unsupervised Hebbian learning method in a set-to-cluster module\nto efficiently create a variable number of the clusters with lower inference\ntime complexity than K-means clustering. Also, a long short-term memory based\nprediction module is designed to recursively forecast state vectors generated\nby the set-to-cluster module to define cluster configuration. We experimentally\ndemonstrate the proposed model successfully predicts complex movement of the\nclusters in the game.\n",
+        "published": "2022",
+        "authors": [
+            "Beomseok Kang",
+            "Saibal Mukhopadhyay"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2209.07404v1",
+        "title": "Self-Organizing Map Neural Network Algorithm for the Determination of\n  Fracture Location in Solid-State Process joined Dissimilar Alloys",
+        "abstract": "  The subject area known as computational neuroscience involves the\ninvestigation of brain function using mathematical techniques and theories. In\norder to comprehend how the brain processes information, it can also include\nvarious methods from signal processing, computer science, and physics. In the\npresent work, for the first time a neurobiological based unsupervised machine\nlearning algorithm i.e., Self-Organizing Map Neural Network is implemented for\ndetermining the fracture location in dissimilar friction stir welded\nAA5754-C11000 alloys. Too Shoulder Diameter (mm), Tool Rotational Speed (RPM),\nand Tool Traverse Speed (mm/min) are input parameters while the Fracture\nlocation i.e. whether the specimen fracture at Thermo-Mechanically Affected\nZone (TMAZ) of copper or it fractures at TMAZ of Aluminium. The results showed\nthat the implemented algorithm is able to predict the fracture location with\n96.92% accuracy.\n",
+        "published": "2022",
+        "authors": [
+            "Akshansh Mishra",
+            "Anish Dasgupta"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2209.07575v1",
+        "title": "A Nested Genetic Algorithm for Explaining Classification Data Sets with\n  Decision Rules",
+        "abstract": "  Our goal in this paper is to automatically extract a set of decision rules\n(rule set) that best explains a classification data set. First, a large set of\ndecision rules is extracted from a set of decision trees trained on the data\nset. The rule set should be concise, accurate, have a maximum coverage and\nminimum number of inconsistencies. This problem can be formalized as a modified\nversion of the weighted budgeted maximum coverage problem, known to be NP-hard.\nTo solve the combinatorial optimization problem efficiently, we introduce a\nnested genetic algorithm which we then use to derive explanations for ten\npublic data sets.\n",
+        "published": "2022",
+        "authors": [
+            "Paul-Amaury Matt",
+            "Rosina Ziegler",
+            "Danilo Brajovic",
+            "Marco Roth",
+            "Marco F. Huber"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2209.08898v1",
+        "title": "Batch Layer Normalization, A new normalization layer for CNNs and RNN",
+        "abstract": "  This study introduces a new normalization layer termed Batch Layer\nNormalization (BLN) to reduce the problem of internal covariate shift in deep\nneural network layers. As a combined version of batch and layer normalization,\nBLN adaptively puts appropriate weight on mini-batch and feature normalization\nbased on the inverse size of mini-batches to normalize the input to a layer\nduring the learning process. It also performs the exact computation with a\nminor change at inference times, using either mini-batch statistics or\npopulation statistics. The decision process to either use statistics of\nmini-batch or population gives BLN the ability to play a comprehensive role in\nthe hyper-parameter optimization process of models. The key advantage of BLN is\nthe support of the theoretical analysis of being independent of the input data,\nand its statistical configuration heavily depends on the task performed, the\namount of training data, and the size of batches. Test results indicate the\napplication potential of BLN and its faster convergence than batch\nnormalization and layer normalization in both Convolutional and Recurrent\nNeural Networks. The code of the experiments is publicly available online\n(https://github.com/A2Amir/Batch-Layer-Normalization).\n",
+        "published": "2022",
+        "authors": [
+            "Amir Ziaee",
+            "Erion \u00c7ano"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2209.09626v4",
+        "title": "Sequence Learning Using Equilibrium Propagation",
+        "abstract": "  Equilibrium Propagation (EP) is a powerful and more bio-plausible alternative\nto conventional learning frameworks such as backpropagation. The effectiveness\nof EP stems from the fact that it relies only on local computations and\nrequires solely one kind of computational unit during both of its training\nphases, thereby enabling greater applicability in domains such as bio-inspired\nneuromorphic computing. The dynamics of the model in EP is governed by an\nenergy function and the internal states of the model consequently converge to a\nsteady state following the state transition rules defined by the same. However,\nby definition, EP requires the input to the model (a convergent RNN) to be\nstatic in both the phases of training. Thus it is not possible to design a\nmodel for sequence classification using EP with an LSTM or GRU like\narchitecture. In this paper, we leverage recent developments in modern hopfield\nnetworks to further understand energy based models and develop solutions for\ncomplex sequence classification tasks using EP while satisfying its convergence\ncriteria and maintaining its theoretical similarities with recurrent\nbackpropagation. We explore the possibility of integrating modern hopfield\nnetworks as an attention mechanism with convergent RNN models used in EP,\nthereby extending its applicability for the first time on two different\nsequence classification tasks in natural language processing viz. sentiment\nanalysis (IMDB dataset) and natural language inference (SNLI dataset).\n",
+        "published": "2022",
+        "authors": [
+            "Malyaban Bal",
+            "Abhronil Sengupta"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2209.10055v1",
+        "title": "Lamarckian Platform: Pushing the Boundaries of Evolutionary\n  Reinforcement Learning towards Asynchronous Commercial Games",
+        "abstract": "  Despite the emerging progress of integrating evolutionary computation into\nreinforcement learning, the absence of a high-performance platform endowing\ncomposability and massive parallelism causes non-trivial difficulties for\nresearch and applications related to asynchronous commercial games. Here we\nintroduce Lamarckian - an open-source platform featuring support for\nevolutionary reinforcement learning scalable to distributed computing\nresources. To improve the training speed and data efficiency, Lamarckian adopts\noptimized communication methods and an asynchronous evolutionary reinforcement\nlearning workflow. To meet the demand for an asynchronous interface by\ncommercial games and various methods, Lamarckian tailors an asynchronous Markov\nDecision Process interface and designs an object-oriented software architecture\nwith decoupled modules. In comparison with the state-of-the-art RLlib, we\nempirically demonstrate the unique advantages of Lamarckian on benchmark tests\nwith up to 6000 CPU cores: i) both the sampling efficiency and training speed\nare doubled when running PPO on Google football game; ii) the training speed is\n13 times faster when running PBT+PPO on Pong game. Moreover, we also present\ntwo use cases: i) how Lamarckian is applied to generating behavior-diverse game\nAI; ii) how Lamarckian is applied to game balancing tests for an asynchronous\ncommercial game.\n",
+        "published": "2022",
+        "authors": [
+            "Hui Bai",
+            "Ruimin Shen",
+            "Yue Lin",
+            "Botian Xu",
+            "Ran Cheng"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2209.10818v2",
+        "title": "Memory-Augmented Graph Neural Networks: A Brain-Inspired Review",
+        "abstract": "  We provide a comprehensive review of the existing literature on\nmemory-augmented GNNs. We review these works through the lens of psychology and\nneuroscience, which has several established theories on how multiple memory\nsystems and mechanisms operate in biological brains. We propose a taxonomy of\nmemory-augmented GNNs and a set of criteria for comparing their memory\nmechanisms. We also provide critical discussions on the limitations of these\nworks. Finally, we discuss the challenges and future directions for this area.\n",
+        "published": "2022",
+        "authors": [
+            "Guixiang Ma",
+            "Vy A. Vo",
+            "Theodore Willke",
+            "Nesreen K. Ahmed"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2209.14406v2",
+        "title": "Biological connectomes as a representation for the architecture of\n  artificial neural networks",
+        "abstract": "  Grand efforts in neuroscience are working toward mapping the connectomes of\nmany new species, including the near completion of the Drosophila melanogaster.\nIt is important to ask whether these models could benefit artificial\nintelligence. In this work we ask two fundamental questions: (1) where and when\nbiological connectomes can provide use in machine learning, (2) which design\nprinciples are necessary for extracting a good representation of the\nconnectome. Toward this end, we translate the motor circuit of the C. Elegans\nnematode into artificial neural networks at varying levels of biophysical\nrealism and evaluate the outcome of training these networks on motor and\nnon-motor behavioral tasks. We demonstrate that biophysical realism need not be\nupheld to attain the advantages of using biological circuits. We also establish\nthat, even if the exact wiring diagram is not retained, the architectural\nstatistics provide a valuable prior. Finally, we show that while the C. Elegans\nlocomotion circuit provides a powerful inductive bias on locomotion problems,\nits structure may hinder performance on tasks unrelated to locomotion such as\nvisual classification problems.\n",
+        "published": "2022",
+        "authors": [
+            "Samuel Schmidgall",
+            "Catherine Schuman",
+            "Maryam Parsa"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2209.15278v3",
+        "title": "Rethinking skip connection model as a learnable Markov chain",
+        "abstract": "  Over past few years afterward the birth of ResNet, skip connection has become\nthe defacto standard for the design of modern architectures due to its\nwidespread adoption, easy optimization and proven performance. Prior work has\nexplained the effectiveness of the skip connection mechanism from different\nperspectives. In this work, we deep dive into the model's behaviors with skip\nconnections which can be formulated as a learnable Markov chain. An efficient\nMarkov chain is preferred as it always maps the input data to the target domain\nin a better way. However, while a model is explained as a Markov chain, it is\nnot guaranteed to be optimized following an efficient Markov chain by existing\nSGD-based optimizers which are prone to get trapped in local optimal points. In\norder to towards a more efficient Markov chain, we propose a simple routine of\npenal connection to make any residual-like model become a learnable Markov\nchain. Aside from that, the penal connection can also be viewed as a particular\nmodel regularization and can be easily implemented with one line of code in the\nmost popular deep learning frameworks~\\footnote{Source code:\n\\url{https://github.com/densechen/penal-connection}}. The encouraging\nexperimental results in multi-modal translation and image recognition\nempirically confirm our conjecture of the learnable Markov chain view and\ndemonstrate the superiority of the proposed penal connection.\n",
+        "published": "2022",
+        "authors": [
+            "Dengsheng Chen",
+            "Jie Hu",
+            "Wenwen Qiang",
+            "Xiaoming Wei",
+            "Enhua Wu"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2210.00062v2",
+        "title": "Learning Robust Kernel Ensembles with Kernel Average Pooling",
+        "abstract": "  Model ensembles have long been used in machine learning to reduce the\nvariance in individual model predictions, making them more robust to input\nperturbations. Pseudo-ensemble methods like dropout have also been commonly\nused in deep learning models to improve generalization. However, the\napplication of these techniques to improve neural networks' robustness against\ninput perturbations remains underexplored. We introduce Kernel Average Pooling\n(KAP), a neural network building block that applies the mean filter along the\nkernel dimension of the layer activation tensor. We show that ensembles of\nkernels with similar functionality naturally emerge in convolutional neural\nnetworks equipped with KAP and trained with backpropagation. Moreover, we show\nthat when trained on inputs perturbed with additive Gaussian noise, KAP models\nare remarkably robust against various forms of adversarial attacks. Empirical\nevaluations on CIFAR10, CIFAR100, TinyImagenet, and Imagenet datasets show\nsubstantial improvements in robustness against strong adversarial attacks such\nas AutoAttack without training on any adversarial examples.\n",
+        "published": "2022",
+        "authors": [
+            "Pouya Bashivan",
+            "Adam Ibrahim",
+            "Amirozhan Dehghani",
+            "Yifei Ren"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2210.00894v1",
+        "title": "A Novel Explainable Out-of-Distribution Detection Approach for Spiking\n  Neural Networks",
+        "abstract": "  Research around Spiking Neural Networks has ignited during the last years due\nto their advantages when compared to traditional neural networks, including\ntheir efficient processing and inherent ability to model complex temporal\ndynamics. Despite these differences, Spiking Neural Networks face similar\nissues than other neural computation counterparts when deployed in real-world\nsettings. This work addresses one of the practical circumstances that can\nhinder the trustworthiness of this family of models: the possibility of\nquerying a trained model with samples far from the distribution of its training\ndata (also referred to as Out-of-Distribution or OoD data). Specifically, this\nwork presents a novel OoD detector that can identify whether test examples\ninput to a Spiking Neural Network belong to the distribution of the data over\nwhich it was trained. For this purpose, we characterize the internal\nactivations of the hidden layers of the network in the form of spike count\npatterns, which lay a basis for determining when the activations induced by a\ntest instance is atypical. Furthermore, a local explanation method is devised\nto produce attribution maps revealing which parts of the input instance push\nmost towards the detection of an example as an OoD sample. Experimental results\nare performed over several image classification datasets to compare the\nproposed detector to other OoD detection schemes from the literature. As the\nobtained results clearly show, the proposed detector performs competitively\nagainst such alternative schemes, and produces relevance attribution maps that\nconform to expectations for synthetically created OoD instances.\n",
+        "published": "2022",
+        "authors": [
+            "Aitor Martinez Seras",
+            "Javier Del Ser",
+            "Jesus L. Lobo",
+            "Pablo Garcia-Bringas",
+            "Nikola Kasabov"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2210.01892v3",
+        "title": "Polysemanticity and Capacity in Neural Networks",
+        "abstract": "  Individual neurons in neural networks often represent a mixture of unrelated\nfeatures. This phenomenon, called polysemanticity, can make interpreting neural\nnetworks more difficult and so we aim to understand its causes. We propose\ndoing so through the lens of feature \\emph{capacity}, which is the fractional\ndimension each feature consumes in the embedding space. We show that in a toy\nmodel the optimal capacity allocation tends to monosemantically represent the\nmost important features, polysemantically represent less important features (in\nproportion to their impact on the loss), and entirely ignore the least\nimportant features. Polysemanticity is more prevalent when the inputs have\nhigher kurtosis or sparsity and more prevalent in some architectures than\nothers. Given an optimal allocation of capacity, we go on to study the geometry\nof the embedding space. We find a block-semi-orthogonal structure, with\ndiffering block sizes in different models, highlighting the impact of model\narchitecture on the interpretability of its neurons.\n",
+        "published": "2022",
+        "authors": [
+            "Adam Scherlis",
+            "Kshitij Sachan",
+            "Adam S. Jermyn",
+            "Joe Benton",
+            "Buck Shlegeris"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2210.03516v4",
+        "title": "Neuroevolution is a Competitive Alternative to Reinforcement Learning\n  for Skill Discovery",
+        "abstract": "  Deep Reinforcement Learning (RL) has emerged as a powerful paradigm for\ntraining neural policies to solve complex control tasks. However, these\npolicies tend to be overfit to the exact specifications of the task and\nenvironment they were trained on, and thus do not perform well when conditions\ndeviate slightly or when composed hierarchically to solve even more complex\ntasks. Recent work has shown that training a mixture of policies, as opposed to\na single one, that are driven to explore different regions of the state-action\nspace can address this shortcoming by generating a diverse set of behaviors,\nreferred to as skills, that can be collectively used to great effect in\nadaptation tasks or for hierarchical planning. This is typically realized by\nincluding a diversity term - often derived from information theory - in the\nobjective function optimized by RL. However these approaches often require\ncareful hyperparameter tuning to be effective. In this work, we demonstrate\nthat less widely-used neuroevolution methods, specifically Quality Diversity\n(QD), are a competitive alternative to information-theory-augmented RL for\nskill discovery. Through an extensive empirical evaluation comparing eight\nstate-of-the-art algorithms (four flagship algorithms from each line of work)\non the basis of (i) metrics directly evaluating the skills' diversity, (ii) the\nskills' performance on adaptation tasks, and (iii) the skills' performance when\nused as primitives for hierarchical planning; QD methods are found to provide\nequal, and sometimes improved, performance whilst being less sensitive to\nhyperparameters and more scalable. As no single method is found to provide\nnear-optimal performance across all environments, there is a rich scope for\nfurther research which we support by proposing future directions and providing\noptimized open-source implementations.\n",
+        "published": "2022",
+        "authors": [
+            "Felix Chalumeau",
+            "Raphael Boige",
+            "Bryan Lim",
+            "Valentin Mac\u00e9",
+            "Maxime Allard",
+            "Arthur Flajolet",
+            "Antoine Cully",
+            "Thomas Pierrot"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2210.03517v1",
+        "title": "Fairness in generative modeling",
+        "abstract": "  We design general-purpose algorithms for addressing fairness issues and mode\ncollapse in generative modeling. More precisely, to design fair algorithms for\nas many sensitive variables as possible, including variables we might not be\naware of, we assume no prior knowledge of sensitive variables: our algorithms\nuse unsupervised fairness only, meaning no information related to the sensitive\nvariables is used for our fairness-improving methods. All images of faces (even\ngenerated ones) have been removed to mitigate legal risks.\n",
+        "published": "2022",
+        "authors": [
+            "Mariia Zameshina",
+            "Olivier Teytaud",
+            "Fabien Teytaud",
+            "Vlad Hosu",
+            "Nathanael Carraz",
+            "Laurent Najman",
+            "Markus Wagner"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2210.04195v2",
+        "title": "Online Training Through Time for Spiking Neural Networks",
+        "abstract": "  Spiking neural networks (SNNs) are promising brain-inspired energy-efficient\nmodels. Recent progress in training methods has enabled successful deep SNNs on\nlarge-scale tasks with low latency. Particularly, backpropagation through time\n(BPTT) with surrogate gradients (SG) is popularly used to achieve high\nperformance in a very small number of time steps. However, it is at the cost of\nlarge memory consumption for training, lack of theoretical clarity for\noptimization, and inconsistency with the online property of biological learning\nand rules on neuromorphic hardware. Other works connect spike representations\nof SNNs with equivalent artificial neural network formulation and train SNNs by\ngradients from equivalent mappings to ensure descent directions. But they fail\nto achieve low latency and are also not online. In this work, we propose online\ntraining through time (OTTT) for SNNs, which is derived from BPTT to enable\nforward-in-time learning by tracking presynaptic activities and leveraging\ninstantaneous loss and gradients. Meanwhile, we theoretically analyze and prove\nthat gradients of OTTT can provide a similar descent direction for optimization\nas gradients based on spike representations under both feedforward and\nrecurrent conditions. OTTT only requires constant training memory costs\nagnostic to time steps, avoiding the significant memory costs of BPTT for GPU\ntraining. Furthermore, the update rule of OTTT is in the form of three-factor\nHebbian learning, which could pave a path for online on-chip learning. With\nOTTT, it is the first time that two mainstream supervised SNN training methods,\nBPTT with SG and spike representation-based training, are connected, and\nmeanwhile in a biologically plausible form. Experiments on CIFAR-10, CIFAR-100,\nImageNet, and CIFAR10-DVS demonstrate the superior performance of our method on\nlarge-scale static and neuromorphic datasets in small time steps.\n",
+        "published": "2022",
+        "authors": [
+            "Mingqing Xiao",
+            "Qingyan Meng",
+            "Zongpeng Zhang",
+            "Di He",
+            "Zhouchen Lin"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2210.06350v1",
+        "title": "CTL++: Evaluating Generalization on Never-Seen Compositional Patterns of\n  Known Functions, and Compatibility of Neural Representations",
+        "abstract": "  Well-designed diagnostic tasks have played a key role in studying the failure\nof neural nets (NNs) to generalize systematically. Famous examples include SCAN\nand Compositional Table Lookup (CTL). Here we introduce CTL++, a new diagnostic\ndataset based on compositions of unary symbolic functions. While the original\nCTL is used to test length generalization or productivity, CTL++ is designed to\ntest systematicity of NNs, that is, their capability to generalize to unseen\ncompositions of known functions. CTL++ splits functions into groups and tests\nperformance on group elements composed in a way not seen during training. We\nshow that recent CTL-solving Transformer variants fail on CTL++. The simplicity\nof the task design allows for fine-grained control of task difficulty, as well\nas many insightful analyses. For example, we measure how much overlap between\ngroups is needed by tested NNs for learning to compose. We also visualize how\nlearned symbol representations in outputs of functions from different groups\nare compatible in case of success but not in case of failure. These results\nprovide insights into failure cases reported on more complex compositions in\nthe natural language domain. Our code is public.\n",
+        "published": "2022",
+        "authors": [
+            "R\u00f3bert Csord\u00e1s",
+            "Kazuki Irie",
+            "J\u00fcrgen Schmidhuber"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2210.11672v1",
+        "title": "Stochastic Adaptive Activation Function",
+        "abstract": "  The simulation of human neurons and neurotransmission mechanisms has been\nrealized in deep neural networks based on the theoretical implementations of\nactivation functions. However, recent studies have reported that the threshold\npotential of neurons exhibits different values according to the locations and\ntypes of individual neurons, and that the activation functions have limitations\nin terms of representing this variability. Therefore, this study proposes a\nsimple yet effective activation function that facilitates different thresholds\nand adaptive activations according to the positions of units and the contexts\nof inputs. Furthermore, the proposed activation function mathematically\nexhibits a more generalized form of Swish activation function, and thus we\ndenoted it as Adaptive SwisH (ASH). ASH highlights informative features that\nexhibit large values in the top percentiles in an input, whereas it rectifies\nlow values. Most importantly, ASH exhibits trainable, adaptive, and\ncontext-aware properties compared to other activation functions. Furthermore,\nASH represents general formula of the previously studied activation function\nand provides a reasonable mathematical background for the superior performance.\nTo validate the effectiveness and robustness of ASH, we implemented ASH into\nmany deep learning models for various tasks, including classification,\ndetection, segmentation, and image generation. Experimental analysis\ndemonstrates that our activation function can provide the benefits of more\naccurate prediction and earlier convergence in many deep learning applications.\n",
+        "published": "2022",
+        "authors": [
+            "Kyungsu Lee",
+            "Jaeseung Yang",
+            "Haeyun Lee",
+            "Jae Youn Hwang"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2210.16754v1",
+        "title": "Mitigating Unfairness via Evolutionary Multi-objective Ensemble Learning",
+        "abstract": "  In the literature of mitigating unfairness in machine learning, many fairness\nmeasures are designed to evaluate predictions of learning models and also\nutilised to guide the training of fair models. It has been theoretically and\nempirically shown that there exist conflicts and inconsistencies among accuracy\nand multiple fairness measures. Optimising one or several fairness measures may\nsacrifice or deteriorate other measures. Two key questions should be\nconsidered, how to simultaneously optimise accuracy and multiple fairness\nmeasures, and how to optimise all the considered fairness measures more\neffectively. In this paper, we view the mitigating unfairness problem as a\nmulti-objective learning problem considering the conflicts among fairness\nmeasures. A multi-objective evolutionary learning framework is used to\nsimultaneously optimise several metrics (including accuracy and multiple\nfairness measures) of machine learning models. Then, ensembles are constructed\nbased on the learning models in order to automatically balance different\nmetrics. Empirical results on eight well-known datasets demonstrate that\ncompared with the state-of-the-art approaches for mitigating unfairness, our\nproposed algorithm can provide decision-makers with better tradeoffs among\naccuracy and multiple fairness metrics. Furthermore, the high-quality models\ngenerated by the framework can be used to construct an ensemble to\nautomatically achieve a better tradeoff among all the considered fairness\nmetrics than other ensemble methods. Our code is publicly available at\nhttps://github.com/qingquan63/FairEMOL\n",
+        "published": "2022",
+        "authors": [
+            "Zhang Qingquan",
+            "Liu Jialin",
+            "Zhang Zeqi",
+            "Wen Junyi",
+            "Mao Bifei",
+            "Yao Xin"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2211.02658v4",
+        "title": "Dealing with Drift of Adaptation Spaces in Learning-based Self-Adaptive\n  Systems using Lifelong Self-Adaptation",
+        "abstract": "  Recently, machine learning (ML) has become a popular approach to support\nself-adaptation. ML has been used to deal with several problems in\nself-adaptation, such as maintaining an up-to-date runtime model under\nuncertainty and scalable decision-making. Yet, exploiting ML comes with\ninherent challenges. In this paper, we focus on a particularly important\nchallenge for learning-based self-adaptive systems: drift in adaptation spaces.\nWith adaptation space we refer to the set of adaptation options a self-adaptive\nsystem can select from at a given time to adapt based on the estimated quality\nproperties of the adaptation options. Drift of adaptation spaces originates\nfrom uncertainties, affecting the quality properties of the adaptation options.\nSuch drift may imply that eventually no adaptation option can satisfy the\ninitial set of the adaptation goals, deteriorating the quality of the system,\nor adaptation options may emerge that allow enhancing the adaptation goals. In\nML, such shift corresponds to novel class appearance, a type of concept drift\nin target data that common ML techniques have problems dealing with. To tackle\nthis problem, we present a novel approach to self-adaptation that enhances\nlearning-based self-adaptive systems with a lifelong ML layer. We refer to this\napproach as lifelong self-adaptation. The lifelong ML layer tracks the system\nand its environment, associates this knowledge with the current tasks,\nidentifies new tasks based on differences, and updates the learning models of\nthe self-adaptive system accordingly. A human stakeholder may be involved to\nsupport the learning process and adjust the learning and goal models. We\npresent a general architecture for lifelong self-adaptation and apply it to the\ncase of drift of adaptation spaces that affects the decision-making in\nself-adaptation. We validate the approach for a series of scenarios using the\nDeltaIoT exemplar.\n",
+        "published": "2022",
+        "authors": [
+            "Omid Gheibi",
+            "Danny Weyns"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2211.07747v1",
+        "title": "Detection of fraudulent financial papers by picking a collection of\n  characteristics using optimization algorithms and classification techniques\n  based on squirrels",
+        "abstract": "  To produce important investment decisions, investors require financial\nrecords and economic information. However, most companies manipulate investors\nand financial institutions by inflating their financial statements. Fraudulent\nFinancial Activities exist in any monetary or financial transaction scenario,\nwhether physical or electronic. A challenging problem that arises in this\ndomain is the issue that affects and troubles individuals and institutions.\nThis problem has attracted more attention in the field in part owing to the\nprevalence of financial fraud and the paucity of previous research. For this\npurpose, in this study, the main approach to solve this problem, an anomaly\ndetection-based approach based on a combination of feature selection based on\nsquirrel optimization pattern and classification methods have been used. The\naim is to develop this method to provide a model for detecting anomalies in\nfinancial statements using a combination of selected features with the nearest\nneighbor classifications, neural networks, support vector machine, and\nBayesian. Anomaly samples are then analyzed and compared to recommended\ntechniques using assessment criteria. Squirrel optimization's meta-exploratory\ncapability, along with the approach's ability to identify abnormalities in\nfinancial data, has been shown to be effective in implementing the suggested\nstrategy. They discovered fake financial statements because of their expertise.\n",
+        "published": "2022",
+        "authors": [
+            "Peyman Mohammadzadeh germi",
+            "Mohsen Najarbashi"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2211.08397v1",
+        "title": "Local learning through propagation delays in spiking neural networks",
+        "abstract": "  We propose a novel local learning rule for spiking neural networks in which\nspike propagation times undergo activity-dependent plasticity. Our plasticity\nrule aligns pre-synaptic spike times to produce a stronger and more rapid\nresponse. Inputs are encoded by latency coding and outputs decoded by matching\nsimilar patterns of output spiking activity. We demonstrate the use of this\nmethod in a three-layer feedfoward network with inputs from a database of\nhandwritten digits. Networks consistently improve their classification accuracy\nafter training, and training with this method also allowed networks to\ngeneralize to an input class unseen during training. Our proposed method takes\nadvantage of the ability of spiking neurons to support many different\ntime-locked sequences of spikes, each of which can be activated by different\ninput activations. The proof-of-concept shown here demonstrates the great\npotential for local delay learning to expand the memory capacity and\ngeneralizability of spiking neural networks.\n",
+        "published": "2022",
+        "authors": [
+            "J\u00f8rgen Jensen Farner",
+            "Ola Huse Ramstad",
+            "Stefano Nichele",
+            "Kristine Heiney"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2211.08408v1",
+        "title": "On the biological plausibility of orthogonal initialisation for solving\n  gradient instability in deep neural networks",
+        "abstract": "  Initialising the synaptic weights of artificial neural networks (ANNs) with\northogonal matrices is known to alleviate vanishing and exploding gradient\nproblems. A major objection against such initialisation schemes is that they\nare deemed biologically implausible as they mandate factorization techniques\nthat are difficult to attribute to a neurobiological process. This paper\npresents two initialisation schemes that allow a network to naturally evolve\nits weights to form orthogonal matrices, provides theoretical analysis that\npre-training orthogonalisation always converges, and empirically confirms that\nthe proposed schemes outperform randomly initialised recurrent and feedforward\nnetworks.\n",
+        "published": "2022",
+        "authors": [
+            "Nikolay Manchev",
+            "Michael Spratling"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2211.10250v2",
+        "title": "HiveNAS: Neural Architecture Search using Artificial Bee Colony\n  Optimization",
+        "abstract": "  The traditional Neural Network-development process requires substantial\nexpert knowledge and relies heavily on intuition and trial-and-error. Neural\nArchitecture Search (NAS) frameworks were introduced to robustly search for\nnetwork topologies, as well as facilitate the automated development of Neural\nNetworks. While some optimization approaches -- such as Genetic Algorithms --\nhave been extensively explored in the NAS context, other Metaheuristic\nOptimization algorithms have not yet been investigated. In this study, we\nevaluate the viability of Artificial Bee Colony optimization for Neural\nArchitecture Search. Our proposed framework, HiveNAS, outperforms existing\nstate-of-the-art Swarm Intelligence-based NAS frameworks in a fraction of the\ntime.\n",
+        "published": "2022",
+        "authors": [
+            "Mohamed Shahawy",
+            "Elhadj Benkhelifa"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2211.11092v2",
+        "title": "Q-Ensemble for Offline RL: Don't Scale the Ensemble, Scale the Batch\n  Size",
+        "abstract": "  Training large neural networks is known to be time-consuming, with the\nlearning duration taking days or even weeks. To address this problem,\nlarge-batch optimization was introduced. This approach demonstrated that\nscaling mini-batch sizes with appropriate learning rate adjustments can speed\nup the training process by orders of magnitude. While long training time was\nnot typically a major issue for model-free deep offline RL algorithms, recently\nintroduced Q-ensemble methods achieving state-of-the-art performance made this\nissue more relevant, notably extending the training duration. In this work, we\ndemonstrate how this class of methods can benefit from large-batch\noptimization, which is commonly overlooked by the deep offline RL community. We\nshow that scaling the mini-batch size and naively adjusting the learning rate\nallows for (1) a reduced size of the Q-ensemble, (2) stronger penalization of\nout-of-distribution actions, and (3) improved convergence time, effectively\nshortening training duration by 3-4x times on average.\n",
+        "published": "2022",
+        "authors": [
+            "Alexander Nikulin",
+            "Vladislav Kurenkov",
+            "Denis Tarasov",
+            "Dmitry Akimov",
+            "Sergey Kolesnikov"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2211.11096v2",
+        "title": "Let Offline RL Flow: Training Conservative Agents in the Latent Space of\n  Normalizing Flows",
+        "abstract": "  Offline reinforcement learning aims to train a policy on a pre-recorded and\nfixed dataset without any additional environment interactions. There are two\nmajor challenges in this setting: (1) extrapolation error caused by\napproximating the value of state-action pairs not well-covered by the training\ndata and (2) distributional shift between behavior and inference policies. One\nway to tackle these problems is to induce conservatism - i.e., keeping the\nlearned policies closer to the behavioral ones. To achieve this, we build upon\nrecent works on learning policies in latent action spaces and use a special\nform of Normalizing Flows for constructing a generative model, which we use as\na conservative action encoder. This Normalizing Flows action encoder is\npre-trained in a supervised manner on the offline dataset, and then an\nadditional policy model - controller in the latent space - is trained via\nreinforcement learning. This approach avoids querying actions outside of the\ntraining dataset and therefore does not require additional regularization for\nout-of-dataset actions. We evaluate our method on various locomotion and\nnavigation tasks, demonstrating that our approach outperforms recently proposed\nalgorithms with generative action models on a large portion of datasets.\n",
+        "published": "2022",
+        "authors": [
+            "Dmitriy Akimov",
+            "Vladislav Kurenkov",
+            "Alexander Nikulin",
+            "Denis Tarasov",
+            "Sergey Kolesnikov"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2211.11760v2",
+        "title": "A Low Latency Adaptive Coding Spiking Framework for Deep Reinforcement\n  Learning",
+        "abstract": "  In recent years, spiking neural networks (SNNs) have been used in\nreinforcement learning (RL) due to their low power consumption and event-driven\nfeatures. However, spiking reinforcement learning (SRL), which suffers from\nfixed coding methods, still faces the problems of high latency and poor\nversatility. In this paper, we use learnable matrix multiplication to encode\nand decode spikes, improving the flexibility of the coders and thus reducing\nlatency. Meanwhile, we train the SNNs using the direct training method and use\ntwo different structures for online and offline RL algorithms, which gives our\nmodel a wider range of applications. Extensive experiments have revealed that\nour method achieves optimal performance with ultra-low latency (as low as 0.8%\nof other SRL methods) and excellent energy efficiency (up to 5X the DNNs) in\ndifferent algorithms and different environments.\n",
+        "published": "2022",
+        "authors": [
+            "Lang Qin",
+            "Rui Yan",
+            "Huajin Tang"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2211.12610v1",
+        "title": "Efficient Exploration using Model-Based Quality-Diversity with Gradients",
+        "abstract": "  Exploration is a key challenge in Reinforcement Learning, especially in\nlong-horizon, deceptive and sparse-reward environments. For such applications,\npopulation-based approaches have proven effective. Methods such as\nQuality-Diversity deals with this by encouraging novel solutions and producing\na diversity of behaviours. However, these methods are driven by either\nundirected sampling (i.e. mutations) or use approximated gradients (i.e.\nEvolution Strategies) in the parameter space, which makes them highly\nsample-inefficient. In this paper, we propose a model-based Quality-Diversity\napproach. It extends existing QD methods to use gradients for efficient\nexploitation and leverage perturbations in imagination for efficient\nexploration. Our approach optimizes all members of a population simultaneously\nto maintain both performance and diversity efficiently by leveraging the\neffectiveness of QD algorithms as good data generators to train deep models. We\ndemonstrate that it maintains the divergent search capabilities of\npopulation-based approaches on tasks with deceptive rewards while significantly\nimproving their sample efficiency and quality of solutions.\n",
+        "published": "2022",
+        "authors": [
+            "Bryan Lim",
+            "Manon Flageat",
+            "Antoine Cully"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2211.14500v1",
+        "title": "Deep neuroevolution to predict primary brain tumor grade from functional\n  MRI adjacency matrices",
+        "abstract": "  Whereas MRI produces anatomic information about the brain, functional MRI\n(fMRI) tells us about neural activity within the brain, including how various\nregions communicate with each other. The full chorus of conversations within\nthe brain is summarized elegantly in the adjacency matrix. Although\ninformation-rich, adjacency matrices typically provide little in the way of\nintuition. Whereas trained radiologists viewing anatomic MRI can readily\ndistinguish between different kinds of brain cancer, a similar determination\nusing adjacency matrices would exceed any expert's grasp. Artificial\nintelligence (AI) in radiology usually analyzes anatomic imaging, providing\nassistance to radiologists. For non-intuitive data types such as adjacency\nmatrices, AI moves beyond the role of helpful assistant, emerging as\nindispensible. We sought here to show that AI can learn to discern between two\nimportant brain tumor types, high-grade glioma (HGG) and low-grade glioma\n(LGG), based on adjacency matrices. We trained a convolutional neural networks\n(CNN) with the method of deep neuroevolution (DNE), because of the latter's\nrecent promising results; DNE has produced remarkably accurate CNNs even when\nrelying on small and noisy training sets, or performing nuanced tasks. After\ntraining on just 30 adjacency matrices, our CNN could tell HGG apart from LGG\nwith perfect testing set accuracy. Saliency maps revealed that the network\nlearned highly sophisticated and complex features to achieve its success.\nHence, we have shown that it is possible for AI to recognize brain tumor type\nfrom functional connectivity. In future work, we will apply DNE to other noisy\nand somewhat cryptic forms of medical data, including further explorations with\nfMRI.\n",
+        "published": "2022",
+        "authors": [
+            "Joseph Stember",
+            "Mehrnaz Jenabi",
+            "Luca Pasquini",
+            "Kyung Peck",
+            "Andrei Holodny",
+            "Hrithwik Shalu"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2211.15387v2",
+        "title": "AIREPAIR: A Repair Platform for Neural Networks",
+        "abstract": "  We present AIREPAIR, a platform for repairing neural networks. It features\nthe integration of existing network repair tools. Based on AIREPAIR, one can\nrun different repair methods on the same model, thus enabling the fair\ncomparison of different repair techniques. We evaluate AIREPAIR with three\nstate-of-the-art repair tools on popular deep-learning datasets and models. Our\nevaluation confirms the utility of AIREPAIR, by comparing and analyzing the\nresults from different repair techniques. A demonstration is available at\nhttps://youtu.be/UkKw5neeWhw.\n",
+        "published": "2022",
+        "authors": [
+            "Xidan Song",
+            "Youcheng Sun",
+            "Mustafa A. Mustafa",
+            "Lucas Cordeiro"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2212.00720v1",
+        "title": "Incremental Predictive Coding: A Parallel and Fully Automatic Learning\n  Algorithm",
+        "abstract": "  Neuroscience-inspired models, such as predictive coding, have the potential\nto play an important role in the future of machine intelligence. However, they\nare not yet used in industrial applications due to some limitations, such as\nthe lack of efficiency. In this work, we address this by proposing incremental\npredictive coding (iPC), a variation of the original framework derived from the\nincremental expectation maximization algorithm, where every operation can be\nperformed in parallel without external control. We show both theoretically and\nempirically that iPC is much faster than the original algorithm originally\ndeveloped by Rao and Ballard, while maintaining performance comparable to\nbackpropagation in image classification tasks. This work impacts several areas,\nhas general applications in computational neuroscience and machine learning,\nand specific applications in scenarios where automatization and parallelization\nare important, such as distributed computing and implementations of deep\nlearning models on analog and neuromorphic chips.\n",
+        "published": "2022",
+        "authors": [
+            "Tommaso Salvatori",
+            "Yuhang Song",
+            "Beren Millidge",
+            "Zhenghua Xu",
+            "Lei Sha",
+            "Cornelius Emde",
+            "Rafal Bogacz",
+            "Thomas Lukasiewicz"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2212.01232v1",
+        "title": "Loss shaping enhances exact gradient learning with EventProp in Spiking\n  Neural Networks",
+        "abstract": "  In a recent paper Wunderlich and Pehle introduced the EventProp algorithm\nthat enables training spiking neural networks by gradient descent on exact\ngradients. In this paper we present extensions of EventProp to support a wider\nclass of loss functions and an implementation in the GPU enhanced neuronal\nnetworks framework which exploits sparsity. The GPU acceleration allows us to\ntest EventProp extensively on more challenging learning benchmarks. We find\nthat EventProp performs well on some tasks but for others there are issues\nwhere learning is slow or fails entirely. Here, we analyse these issues in\ndetail and discover that they relate to the use of the exact gradient of the\nloss function, which by its nature does not provide information about loss\nchanges due to spike creation or spike deletion. Depending on the details of\nthe task and loss function, descending the exact gradient with EventProp can\nlead to the deletion of important spikes and so to an inadvertent increase of\nthe loss and decrease of classification accuracy and hence a failure to learn.\nIn other situations the lack of knowledge about the benefits of creating\nadditional spikes can lead to a lack of gradient flow into earlier layers,\nslowing down learning. We eventually present a first glimpse of a solution to\nthese problems in the form of `loss shaping', where we introduce a suitable\nweighting function into an integral loss to increase gradient flow from the\noutput layer towards earlier layers.\n",
+        "published": "2022",
+        "authors": [
+            "Thomas Nowotny",
+            "James P. Turner",
+            "James C. Knight"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2212.04858v2",
+        "title": "Implicit variance regularization in non-contrastive SSL",
+        "abstract": "  Non-contrastive SSL methods like BYOL and SimSiam rely on asymmetric\npredictor networks to avoid representational collapse without negative samples.\nYet, how predictor networks facilitate stable learning is not fully understood.\nWhile previous theoretical analyses assumed Euclidean losses, most practical\nimplementations rely on cosine similarity. To gain further theoretical insight\ninto non-contrastive SSL, we analytically study learning dynamics in\nconjunction with Euclidean and cosine similarity in the eigenspace of\nclosed-form linear predictor networks. We show that both avoid collapse through\nimplicit variance regularization albeit through different dynamical mechanisms.\nMoreover, we find that the eigenvalues act as effective learning rate\nmultipliers and propose a family of isotropic loss functions (IsoLoss) that\nequalize convergence rates across eigenmodes. Empirically, IsoLoss speeds up\nthe initial learning dynamics and increases robustness, thereby allowing us to\ndispense with the EMA target network typically used with non-contrastive\nmethods. Our analysis sheds light on the variance regularization mechanisms of\nnon-contrastive SSL and lays the theoretical grounds for crafting novel loss\nfunctions that shape the learning dynamics of the predictor's spectrum.\n",
+        "published": "2022",
+        "authors": [
+            "Manu Srinath Halvagal",
+            "Axel Laborieux",
+            "Friedemann Zenke"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2212.06662v2",
+        "title": "Selected Trends in Artificial Intelligence for Space Applications",
+        "abstract": "  The development and adoption of artificial intelligence (AI) technologies in\nspace applications is growing quickly as the consensus increases on the\npotential benefits introduced. As more and more aerospace engineers are\nbecoming aware of new trends in AI, traditional approaches are revisited to\nconsider the applications of emerging AI technologies. Already at the time of\nwriting, the scope of AI-related activities across academia, the aerospace\nindustry and space agencies is so wide that an in-depth review would not fit in\nthese pages. In this chapter we focus instead on two main emerging trends we\nbelieve capture the most relevant and exciting activities in the field:\ndifferentiable intelligence and on-board machine learning. Differentiable\nintelligence, in a nutshell, refers to works making extensive use of automatic\ndifferentiation frameworks to learn the parameters of machine learning or\nrelated models. Onboard machine learning considers the problem of moving\ninference, as well as learning, onboard. Within these fields, we discuss a few\nselected projects originating from the European Space Agency's (ESA) Advanced\nConcepts Team (ACT), giving priority to advanced topics going beyond the\ntransposition of established AI techniques and practices to the space domain.\n",
+        "published": "2022",
+        "authors": [
+            "Dario Izzo",
+            "Gabriele Meoni",
+            "Pablo G\u00f3mez",
+            "Dominik Dold",
+            "Alexander Zoechbauer"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2212.07624v3",
+        "title": "Neuroevolution of Physics-Informed Neural Nets: Benchmark Problems and\n  Comparative Results",
+        "abstract": "  The potential of learned models for fundamental scientific research and\ndiscovery is drawing increasing attention worldwide. Physics-informed neural\nnetworks (PINNs), where the loss function directly embeds governing equations\nof scientific phenomena, is one of the key techniques at the forefront of\nrecent advances. PINNs are typically trained using stochastic gradient descent\nmethods, akin to their deep learning counterparts. However, analysis in this\npaper shows that PINNs' unique loss formulations lead to a high degree of\ncomplexity and ruggedness that may not be conducive for gradient descent.\nUnlike in standard deep learning, PINN training requires globally optimum\nparameter values that satisfy physical laws as closely as possible. Spurious\nlocal optimum, indicative of erroneous physics, must be avoided. Hence,\nneuroevolution algorithms, with their superior global search capacity, may be a\nbetter choice for PINNs relative to gradient descent methods. Here, we propose\na set of five benchmark problems, with open-source codes, spanning diverse\nphysical phenomena for novel neuroevolution algorithm development. Using this,\nwe compare two neuroevolution algorithms against the commonly used stochastic\ngradient descent, and our baseline results support the claim that\nneuroevolution can surpass gradient descent, ensuring better physics compliance\nin the predicted outputs. %Furthermore, implementing neuroevolution with JAX\nleads to orders of magnitude speedup relative to standard implementations.\n",
+        "published": "2022",
+        "authors": [
+            "Nicholas Sung Wei Yong",
+            "Jian Cheng Wong",
+            "Pao-Hsiung Chiu",
+            "Abhishek Gupta",
+            "Chinchun Ooi",
+            "Yew-Soon Ong"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2212.09030v1",
+        "title": "Contextually Enhanced ES-dRNN with Dynamic Attention for Short-Term Load\n  Forecasting",
+        "abstract": "  In this paper, we propose a new short-term load forecasting (STLF) model\nbased on contextually enhanced hybrid and hierarchical architecture combining\nexponential smoothing (ES) and a recurrent neural network (RNN). The model is\ncomposed of two simultaneously trained tracks: the context track and the main\ntrack. The context track introduces additional information to the main track.\nIt is extracted from representative series and dynamically modulated to adjust\nto the individual series forecasted by the main track. The RNN architecture\nconsists of multiple recurrent layers stacked with hierarchical dilations and\nequipped with recently proposed attentive dilated recurrent cells. These cells\nenable the model to capture short-term, long-term and seasonal dependencies\nacross time series as well as to weight dynamically the input information. The\nmodel produces both point forecasts and predictive intervals. The experimental\npart of the work performed on 35 forecasting problems shows that the proposed\nmodel outperforms in terms of accuracy its predecessor as well as standard\nstatistical models and state-of-the-art machine learning models.\n",
+        "published": "2022",
+        "authors": [
+            "Slawek Smyl",
+            "Grzegorz Dudek",
+            "Pawe\u0142 Pe\u0142ka"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2212.12866v1",
+        "title": "QuickNets: Saving Training and Preventing Overconfidence in Early-Exit\n  Neural Architectures",
+        "abstract": "  Deep neural networks have long training and processing times. Early exits\nadded to neural networks allow the network to make early predictions using\nintermediate activations in the network in time-sensitive applications.\nHowever, early exits increase the training time of the neural networks. We\nintroduce QuickNets: a novel cascaded training algorithm for faster training of\nneural networks. QuickNets are trained in a layer-wise manner such that each\nsuccessive layer is only trained on samples that could not be correctly\nclassified by the previous layers. We demonstrate that QuickNets can\ndynamically distribute learning and have a reduced training cost and inference\ncost compared to standard Backpropagation. Additionally, we introduce\ncommitment layers that significantly improve the early exits by identifying for\nover-confident predictions and demonstrate its success.\n",
+        "published": "2022",
+        "authors": [
+            "Devdhar Patel",
+            "Hava Siegelmann"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2212.14111v2",
+        "title": "Effectiveness of Deep Image Embedding Clustering Methods on Tabular Data",
+        "abstract": "  Deep learning methods in the literature are commonly benchmarked on image\ndata sets, which may not be suitable or effective baselines for non-image\ntabular data. In this paper, we take a data-centric view to perform one of the\nfirst studies on deep embedding clustering of tabular data. Eight clustering\nand state-of-the-art embedding clustering methods proposed for image data sets\nare tested on seven tabular data sets. Our results reveal that a traditional\nclustering method ranks second out of eight methods and is superior to most\ndeep embedding clustering baselines. Our observation aligns with the literature\nthat conventional machine learning of tabular data is still a robust approach\nagainst deep learning. Therefore, state-of-the-art embedding clustering methods\nshould consider data-centric customization of learning architectures to become\ncompetitive baselines for tabular data.\n",
+        "published": "2022",
+        "authors": [
+            "Sakib Abrar",
+            "Ali Sekmen",
+            "Manar D. Samad"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2301.04126v1",
+        "title": "Temporal Weights",
+        "abstract": "  In artificial neural networks, weights are a static representation of\nsynapses. However, synapses are not static, they have their own interacting\ndynamics over time. To instill weights with interacting dynamics, we use a\nmodel describing synchronization that is capable of capturing core mechanisms\nof a range of neural and general biological phenomena over time. An ideal fit\nfor these Temporal Weights (TW) are Neural ODEs, with continuous dynamics and a\ndependency on time. The resulting recurrent neural networks efficiently model\ntemporal dynamics by computing on the ordering of sequences, and the length and\nscale of time. By adding temporal weights to a model, we demonstrate better\nperformance, smaller models, and data efficiency on sparse, irregularly sampled\ntime series datasets.\n",
+        "published": "2022",
+        "authors": [
+            "Adam Kohan",
+            "Ed Rietman",
+            "Hava Siegelmann"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2301.05079v2",
+        "title": "Deep learning enhanced noise spectroscopy of a spin qubit environment",
+        "abstract": "  The undesired interaction of a quantum system with its environment generally\nleads to a coherence decay of superposition states in time. A precise knowledge\nof the spectral content of the noise induced by the environment is crucial to\nprotect qubit coherence and optimize its employment in quantum device\napplications. We experimentally show that the use of neural networks can highly\nincrease the accuracy of noise spectroscopy, by reconstructing the power\nspectral density that characterizes an ensemble of carbon impurities around a\nnitrogen-vacancy (NV) center in diamond. Neural networks are trained over spin\ncoherence functions of the NV center subjected to different Carr-Purcell\nsequences, typically used for dynamical decoupling (DD). As a result, we\ndetermine that deep learning models can be more accurate than standard DD\nnoise-spectroscopy techniques, by requiring at the same time a much smaller\nnumber of DD sequences.\n",
+        "published": "2023",
+        "authors": [
+            "Stefano Martina",
+            "Santiago Hern\u00e1ndez-G\u00f3mez",
+            "Stefano Gherardini",
+            "Filippo Caruso",
+            "Nicole Fabbri"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2301.06030v1",
+        "title": "Self-recovery of memory via generative replay",
+        "abstract": "  A remarkable capacity of the brain is its ability to autonomously reorganize\nmemories during offline periods. Memory replay, a mechanism hypothesized to\nunderlie biological offline learning, has inspired offline methods for reducing\nforgetting in artificial neural networks in continual learning settings. A\nmemory-efficient and neurally-plausible method is generative replay, which\nachieves state of the art performance on continual learning benchmarks.\nHowever, unlike the brain, standard generative replay does not self-reorganize\nmemories when trained offline on its own replay samples. We propose a novel\narchitecture that augments generative replay with an adaptive, brain-like\ncapacity to autonomously recover memories. We demonstrate this capacity of the\narchitecture across several continual learning tasks and environments.\n",
+        "published": "2023",
+        "authors": [
+            "Zhenglong Zhou",
+            "Geshi Yeung",
+            "Anna C. Schapiro"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2301.06047v1",
+        "title": "EvoAAA: An evolutionary methodology for automated \\neural autoencoder\n  architecture search",
+        "abstract": "  Machine learning models work better when curated features are provided to\nthem. Feature engineering methods have been usually used as a preprocessing\nstep to obtain or build a proper feature set. In late years, autoencoders (a\nspecific type of symmetrical neural network) have been widely used to perform\nrepresentation learning, proving their competitiveness against classical\nfeature engineering algorithms. The main obstacle in the use of autoencoders is\nfinding a good architecture, a process that most experts confront manually. An\nautomated autoencoder architecture search procedure, based on evolutionary\nmethods, is proposed in this paper. The methodology is tested against nine\nheterogeneous data sets. The obtained results show the ability of this approach\nto find better architectures, able to concentrate most of the useful\ninformation in a minimized coding, in a reduced time.\n",
+        "published": "2023",
+        "authors": [
+            "Francisco Charte",
+            "Antonio J. Rivera",
+            "Francisco Mart\u00ednez",
+            "Mar\u00eda J. del Jesus"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2301.07608v1",
+        "title": "Human-Timescale Adaptation in an Open-Ended Task Space",
+        "abstract": "  Foundation models have shown impressive adaptation and scalability in\nsupervised and self-supervised learning problems, but so far these successes\nhave not fully translated to reinforcement learning (RL). In this work, we\ndemonstrate that training an RL agent at scale leads to a general in-context\nlearning algorithm that can adapt to open-ended novel embodied 3D problems as\nquickly as humans. In a vast space of held-out environment dynamics, our\nadaptive agent (AdA) displays on-the-fly hypothesis-driven exploration,\nefficient exploitation of acquired knowledge, and can successfully be prompted\nwith first-person demonstrations. Adaptation emerges from three ingredients:\n(1) meta-reinforcement learning across a vast, smooth and diverse task\ndistribution, (2) a policy parameterised as a large-scale attention-based\nmemory architecture, and (3) an effective automated curriculum that prioritises\ntasks at the frontier of an agent's capabilities. We demonstrate characteristic\nscaling laws with respect to network size, memory length, and richness of the\ntraining task distribution. We believe our results lay the foundation for\nincreasingly general and adaptive RL agents that perform well across\never-larger open-ended domains.\n",
+        "published": "2023",
+        "authors": [
+            " Adaptive Agent Team",
+            "Jakob Bauer",
+            "Kate Baumli",
+            "Satinder Baveja",
+            "Feryal Behbahani",
+            "Avishkar Bhoopchand",
+            "Nathalie Bradley-Schmieg",
+            "Michael Chang",
+            "Natalie Clay",
+            "Adrian Collister",
+            "Vibhavari Dasagi",
+            "Lucy Gonzalez",
+            "Karol Gregor",
+            "Edward Hughes",
+            "Sheleem Kashem",
+            "Maria Loks-Thompson",
+            "Hannah Openshaw",
+            "Jack Parker-Holder",
+            "Shreya Pathak",
+            "Nicolas Perez-Nieves",
+            "Nemanja Rakicevic",
+            "Tim Rockt\u00e4schel",
+            "Yannick Schroecker",
+            "Jakub Sygnowski",
+            "Karl Tuyls",
+            "Sarah York",
+            "Alexander Zacherl",
+            "Lei Zhang"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2301.08379v1",
+        "title": "Asynchronously Trained Distributed Topographic Maps",
+        "abstract": "  Topographic feature maps are low dimensional representations of data, that\npreserve spatial dependencies. Current methods of training such maps (e.g. self\norganizing maps - SOM, generative topographic maps) require centralized control\nand synchronous execution, which restricts scalability. We present an algorithm\nthat uses $N$ autonomous units to generate a feature map by distributed\nasynchronous training. Unit autonomy is achieved by sparse interaction in time\n\\& space through the combination of a distributed heuristic search, and a\ncascade-driven weight updating scheme governed by two rules: a unit i) adapts\nwhen it receives either a sample, or the weight vector of a neighbor, and ii)\nbroadcasts its weight vector to its neighbors after adapting for a predefined\nnumber of times. Thus, a vector update can trigger an avalanche of adaptation.\nWe map avalanching to a statistical mechanics model, which allows us to\nparametrize the statistical properties of cascading. Using MNIST, we\nempirically investigate the effect of the heuristic search accuracy and the\ncascade parameters on map quality. We also provide empirical evidence that\nalgorithm complexity scales at most linearly with system size $N$. The proposed\napproach is found to perform comparably with similar methods in classification\ntasks across multiple datasets.\n",
+        "published": "2023",
+        "authors": [
+            "Abbas Siddiqui",
+            "Dionysios Georgiadis"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2301.11490v3",
+        "title": "Neural Episodic Control with State Abstraction",
+        "abstract": "  Existing Deep Reinforcement Learning (DRL) algorithms suffer from sample\ninefficiency. Generally, episodic control-based approaches are solutions that\nleverage highly-rewarded past experiences to improve sample efficiency of DRL\nalgorithms. However, previous episodic control-based approaches fail to utilize\nthe latent information from the historical behaviors (e.g., state transitions,\ntopological similarities, etc.) and lack scalability during DRL training. This\nwork introduces Neural Episodic Control with State Abstraction (NECSA), a\nsimple but effective state abstraction-based episodic control containing a more\ncomprehensive episodic memory, a novel state evaluation, and a multi-step state\nanalysis. We evaluate our approach to the MuJoCo and Atari tasks in OpenAI gym\ndomains. The experimental results indicate that NECSA achieves higher sample\nefficiency than the state-of-the-art episodic control-based approaches. Our\ndata and code are available at the project\nwebsite\\footnote{\\url{https://sites.google.com/view/drl-necsa}}.\n",
+        "published": "2023",
+        "authors": [
+            "Zhuo Li",
+            "Derui Zhu",
+            "Yujing Hu",
+            "Xiaofei Xie",
+            "Lei Ma",
+            "Yan Zheng",
+            "Yan Song",
+            "Yingfeng Chen",
+            "Jianjun Zhao"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2301.12313v3",
+        "title": "Adapting Neural Link Predictors for Data-Efficient Complex Query\n  Answering",
+        "abstract": "  Answering complex queries on incomplete knowledge graphs is a challenging\ntask where a model needs to answer complex logical queries in the presence of\nmissing knowledge. Prior work in the literature has proposed to address this\nproblem by designing architectures trained end-to-end for the complex query\nanswering task with a reasoning process that is hard to interpret while\nrequiring data and resource-intensive training. Other lines of research have\nproposed re-using simple neural link predictors to answer complex queries,\nreducing the amount of training data by orders of magnitude while providing\ninterpretable answers. The neural link predictor used in such approaches is not\nexplicitly optimised for the complex query answering task, implying that its\nscores are not calibrated to interact together. We propose to address these\nproblems via CQD$^{\\mathcal{A}}$, a parameter-efficient score \\emph{adaptation}\nmodel optimised to re-calibrate neural link prediction scores for the complex\nquery answering task. While the neural link predictor is frozen, the adaptation\ncomponent -- which only increases the number of model parameters by $0.03\\%$ --\nis trained on the downstream complex query answering task. Furthermore, the\ncalibration component enables us to support reasoning over queries that include\natomic negations, which was previously impossible with link predictors. In our\nexperiments, CQD$^{\\mathcal{A}}$ produces significantly more accurate results\nthan current state-of-the-art methods, improving from $34.4$ to $35.1$ Mean\nReciprocal Rank values averaged across all datasets and query types while using\n$\\leq 30\\%$ of the available training query types. We further show that\nCQD$^{\\mathcal{A}}$ is data-efficient, achieving competitive results with only\n$1\\%$ of the training complex queries, and robust in out-of-domain evaluations.\n",
+        "published": "2023",
+        "authors": [
+            "Erik Arakelyan",
+            "Pasquale Minervini",
+            "Daniel Daza",
+            "Michael Cochez",
+            "Isabelle Augenstein"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2301.13616v2",
+        "title": "Anti-Exploration by Random Network Distillation",
+        "abstract": "  Despite the success of Random Network Distillation (RND) in various domains,\nit was shown as not discriminative enough to be used as an uncertainty\nestimator for penalizing out-of-distribution actions in offline reinforcement\nlearning. In this paper, we revisit these results and show that, with a naive\nchoice of conditioning for the RND prior, it becomes infeasible for the actor\nto effectively minimize the anti-exploration bonus and discriminativity is not\nan issue. We show that this limitation can be avoided with conditioning based\non Feature-wise Linear Modulation (FiLM), resulting in a simple and efficient\nensemble-free algorithm based on Soft Actor-Critic. We evaluate it on the D4RL\nbenchmark, showing that it is capable of achieving performance comparable to\nensemble-based methods and outperforming ensemble-free approaches by a wide\nmargin.\n",
+        "published": "2023",
+        "authors": [
+            "Alexander Nikulin",
+            "Vladislav Kurenkov",
+            "Denis Tarasov",
+            "Sergey Kolesnikov"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2302.00152v1",
+        "title": "TwinExplainer: Explaining Predictions of an Automotive Digital Twin",
+        "abstract": "  Vehicles are complex Cyber Physical Systems (CPS) that operate in a variety\nof environments, and the likelihood of failure of one or more subsystems, such\nas the engine, transmission, brakes, and fuel, can result in unscheduled\ndowntime and incur high maintenance or repair costs. In order to prevent these\nissues, it is crucial to continuously monitor the health of various subsystems\nand identify abnormal sensor channel behavior. Data-driven Digital Twin (DT)\nsystems are capable of such a task. Current DT technologies utilize various\nDeep Learning (DL) techniques that are constrained by the lack of justification\nor explanation for their predictions. This inability of these opaque systems\ncan influence decision-making and raises user trust concerns. This paper\npresents a solution to this issue, where the TwinExplainer system, with its\nthree-layered architectural pipeline, explains the predictions of an automotive\nDT. Such a system can assist automotive stakeholders in understanding the\nglobal scale of the sensor channels and how they contribute towards generic DT\npredictions. TwinExplainer can also visualize explanations for both normal and\nabnormal local predictions computed by the DT.\n",
+        "published": "2023",
+        "authors": [
+            "Subash Neupane",
+            "Ivan A. Fernandez",
+            "Wilson Patterson",
+            "Sudip Mittal",
+            "Milan Parmar",
+            "Shahram Rahimi"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2302.00789v1",
+        "title": "Variational Autoencoder Learns Better Feature Representations for\n  EEG-based Obesity Classification",
+        "abstract": "  Obesity is a common issue in modern societies today that can lead to various\ndiseases and significantly reduced quality of life. Currently, research has\nbeen conducted to investigate resting state EEG (electroencephalogram) signals\nwith an aim to identify possible neurological characteristics associated with\nobesity. In this study, we propose a deep learning-based framework to extract\nthe resting state EEG features for obese and lean subject classification.\nSpecifically, a novel variational autoencoder framework is employed to extract\nsubject-invariant features from the raw EEG signals, which are then classified\nby a 1-D convolutional neural network. Comparing with conventional machine\nlearning and deep learning methods, we demonstrate the superiority of using VAE\nfor feature extraction, as reflected by the significantly improved\nclassification accuracies, better visualizations and reduced impurity measures\nin the feature representations. Future work can be directed to gaining an\nin-depth understanding regarding the spatial patterns that have been learned by\nthe proposed model from a neurological view, as well as improving the\ninterpretability of the proposed model by allowing it to uncover any\ntemporal-related information.\n",
+        "published": "2023",
+        "authors": [
+            "Yuan Yue",
+            "Jeremiah D. Deng",
+            "Dirk De Ridder",
+            "Patrick Manning",
+            "Divya Adhia"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2302.04181v2",
+        "title": "Attending to Graph Transformers",
+        "abstract": "  Recently, transformer architectures for graphs emerged as an alternative to\nestablished techniques for machine learning with graphs, such as\n(message-passing) graph neural networks. So far, they have shown promising\nempirical results, e.g., on molecular prediction datasets, often attributed to\ntheir ability to circumvent graph neural networks' shortcomings, such as\nover-smoothing and over-squashing. Here, we derive a taxonomy of graph\ntransformer architectures, bringing some order to this emerging field. We\noverview their theoretical properties, survey structural and positional\nencodings, and discuss extensions for important graph classes, e.g., 3D\nmolecular graphs. Empirically, we probe how well graph transformers can recover\nvarious graph properties, how well they can deal with heterophilic graphs, and\nto what extent they prevent over-squashing. Further, we outline open challenges\nand research direction to stimulate future work. Our code is available at\nhttps://github.com/luis-mueller/probing-graph-transformers.\n",
+        "published": "2023",
+        "authors": [
+            "Luis M\u00fcller",
+            "Mikhail Galkin",
+            "Christopher Morris",
+            "Ladislav Ramp\u00e1\u0161ek"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2302.07162v1",
+        "title": "Semiconductor Fab Scheduling with Self-Supervised and Reinforcement\n  Learning",
+        "abstract": "  Semiconductor manufacturing is a notoriously complex and costly multi-step\nprocess involving a long sequence of operations on expensive and\nquantity-limited equipment. Recent chip shortages and their impacts have\nhighlighted the importance of semiconductors in the global supply chains and\nhow reliant on those our daily lives are. Due to the investment cost,\nenvironmental impact, and time scale needed to build new factories, it is\ndifficult to ramp up production when demand spikes.\n  This work introduces a method to successfully learn to schedule a\nsemiconductor manufacturing facility more efficiently using deep reinforcement\nand self-supervised learning. We propose the first adaptive scheduling approach\nto handle complex, continuous, stochastic, dynamic, modern semiconductor\nmanufacturing models. Our method outperforms the traditional hierarchical\ndispatching strategies typically used in semiconductor manufacturing plants,\nsubstantially reducing each order's tardiness and time until completion. As a\nresult, our method yields a better allocation of resources in the semiconductor\nmanufacturing process.\n",
+        "published": "2023",
+        "authors": [
+            "Pierre Tassel",
+            "Benjamin Kov\u00e1cs",
+            "Martin Gebser",
+            "Konstantin Schekotihin",
+            "Patrick St\u00f6ckermann",
+            "Georg Seidel"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2302.07238v1",
+        "title": "Cauchy Loss Function: Robustness Under Gaussian and Cauchy Noise",
+        "abstract": "  In supervised machine learning, the choice of loss function implicitly\nassumes a particular noise distribution over the data. For example, the\nfrequently used mean squared error (MSE) loss assumes a Gaussian noise\ndistribution. The choice of loss function during training and testing affects\nthe performance of artificial neural networks (ANNs). It is known that MSE may\nyield substandard performance in the presence of outliers. The Cauchy loss\nfunction (CLF) assumes a Cauchy noise distribution, and is therefore\npotentially better suited for data with outliers. This papers aims to determine\nthe extent of robustness and generalisability of the CLF as compared to MSE.\nCLF and MSE are assessed on a few handcrafted regression problems, and a\nreal-world regression problem with artificially simulated outliers, in the\ncontext of ANN training. CLF yielded results that were either comparable to or\nbetter than the results yielded by MSE, with a few notable exceptions.\n",
+        "published": "2023",
+        "authors": [
+            "Thamsanqa Mlotshwa",
+            "Heinrich van Deventer",
+            "Anna Sergeevna Bosman"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2302.08623v1",
+        "title": "A Hybrid Chimp Optimization Algorithm and Generalized Normal\n  Distribution Algorithm with Opposition-Based Learning Strategy for Solving\n  Data Clustering Problems",
+        "abstract": "  This paper is concerned with data clustering to separate clusters based on\nthe connectivity principle for categorizing similar and dissimilar data into\ndifferent groups. Although classical clustering algorithms such as K-means are\nefficient techniques, they often trap in local optima and have a slow\nconvergence rate in solving high-dimensional problems. To address these issues,\nmany successful meta-heuristic optimization algorithms and intelligence-based\nmethods have been introduced to attain the optimal solution in a reasonable\ntime. They are designed to escape from a local optimum problem by allowing\nflexible movements or random behaviors. In this study, we attempt to\nconceptualize a powerful approach using the three main components: Chimp\nOptimization Algorithm (ChOA), Generalized Normal Distribution Algorithm\n(GNDA), and Opposition-Based Learning (OBL) method. Firstly, two versions of\nChOA with two different independent groups' strategies and seven chaotic maps,\nentitled ChOA(I) and ChOA(II), are presented to achieve the best possible\nresult for data clustering purposes. Secondly, a novel combination of ChOA and\nGNDA algorithms with the OBL strategy is devised to solve the major\nshortcomings of the original algorithms. Lastly, the proposed ChOAGNDA method\nis a Selective Opposition (SO) algorithm based on ChOA and GNDA, which can be\nused to tackle large and complex real-world optimization problems, particularly\ndata clustering applications. The results are evaluated against seven popular\nmeta-heuristic optimization algorithms and eight recent state-of-the-art\nclustering techniques. Experimental results illustrate that the proposed work\nsignificantly outperforms other existing methods in terms of the achievement in\nminimizing the Sum of Intra-Cluster Distances (SICD), obtaining the lowest\nError Rate (ER), accelerating the convergence speed, and finding the optimal\ncluster centers.\n",
+        "published": "2023",
+        "authors": [
+            "Sayed Pedram Haeri Boroujeni",
+            "Elnaz Pashaei"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2302.09075v1",
+        "title": "To Switch or not to Switch: Predicting the Benefit of Switching between\n  Algorithms based on Trajectory Features",
+        "abstract": "  Dynamic algorithm selection aims to exploit the complementarity of multiple\noptimization algorithms by switching between them during the search. While\nthese kinds of dynamic algorithms have been shown to have potential to\noutperform their component algorithms, it is still unclear how this potential\ncan best be realized. One promising approach is to make use of landscape\nfeatures to enable a per-run trajectory-based switch. Here, the samples seen by\nthe first algorithm are used to create a set of features which describe the\nlandscape from the perspective of the algorithm. These features are then used\nto predict what algorithm to switch to.\n  In this work, we extend this per-run trajectory-based approach to consider a\nwide variety of potential points at which to perform the switch. We show that\nusing a sliding window to capture the local landscape features contains\ninformation which can be used to predict whether a switch at that point would\nbe beneficial to future performance. By analyzing the resulting models, we\nidentify what features are most important to these predictions. Finally, by\nevaluating the importance of features and comparing these values between\nmultiple algorithms, we show clear differences in the way the second algorithm\ninteracts with the local landscape features found before the switch.\n",
+        "published": "2023",
+        "authors": [
+            "Diederick Vermetten",
+            "Hao Wang",
+            "Kevin Sim",
+            "Emma Hart"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2302.09248v2",
+        "title": "Machine Love",
+        "abstract": "  While ML generates much economic value, many of us have problematic\nrelationships with social media and other ML-powered applications. One reason\nis that ML often optimizes for what we want in the moment, which is easy to\nquantify but at odds with what is known scientifically about human flourishing.\nThus, through its impoverished models of us, ML currently falls far short of\nits exciting potential, which is for it to help us to reach ours. While there\nis no consensus on defining human flourishing, from diverse perspectives across\npsychology, philosophy, and spiritual traditions, love is understood to be one\nof its primary catalysts. Motivated by this view, this paper explores whether\nthere is a useful conception of love fitting for machines to embody, as\nhistorically it has been generative to explore whether a nebulous concept, such\nas life or intelligence, can be thoughtfully abstracted and reimagined, as in\nthe fields of machine intelligence or artificial life. This paper forwards a\ncandidate conception of machine love, inspired in particular by work in\npositive psychology and psychotherapy: to provide unconditional support\nenabling humans to autonomously pursue their own growth and development.\nThrough proof of concept experiments, this paper aims to highlight the need for\nricher models of human flourishing in ML, provide an example framework through\nwhich positive psychology can be combined with ML to realize a rough conception\nof machine love, and demonstrate that current language models begin to enable\nembodying qualitative humanistic principles. The conclusion is that though at\npresent ML may often serve to addict, distract, or divide us, an alternative\npath may be opening up: We may align ML to support our growth, through it\nhelping us to align ourselves towards our highest aspirations.\n",
+        "published": "2023",
+        "authors": [
+            "Joel Lehman"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2302.10197v2",
+        "title": "Growing Steerable Neural Cellular Automata",
+        "abstract": "  Neural Cellular Automata (NCA) models have shown remarkable capacity for\npattern formation and complex global behaviors stemming from local\ncoordination. However, in the original implementation of NCA, cells are\nincapable of adjusting their own orientation, and it is the responsibility of\nthe model designer to orient them externally. A recent isotropic variant of NCA\n(Growing Isotropic Neural Cellular Automata) makes the model\norientation-independent - cells can no longer tell up from down, nor left from\nright - by removing its dependency on perceiving the gradient of spatial states\nin its neighborhood. In this work, we revisit NCA with a different approach: we\nmake each cell responsible for its own orientation by allowing it to \"turn\" as\ndetermined by an adjustable internal state. The resulting Steerable NCA\ncontains cells of varying orientation embedded in the same pattern. We observe\nhow, while Isotropic NCA are orientation-agnostic, Steerable NCA have\nchirality: they have a predetermined left-right symmetry. We therefore show\nthat we can train Steerable NCA in similar but simpler ways than their\nIsotropic variant by: (1) breaking symmetries using only two seeds, or (2)\nintroducing a rotation-invariant training objective and relying on asynchronous\ncell updates to break the up-down symmetry of the system.\n",
+        "published": "2023",
+        "authors": [
+            "Ettore Randazzo",
+            "Alexander Mordvintsev",
+            "Craig Fouts"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2302.11007v2",
+        "title": "Unification of popular artificial neural network activation functions",
+        "abstract": "  We present a unified representation of the most popular neural network\nactivation functions. Adopting Mittag-Leffler functions of fractional calculus,\nwe propose a flexible and compact functional form that is able to interpolate\nbetween various activation functions and mitigate common problems in training\nneural networks such as vanishing and exploding gradients. The presented gated\nrepresentation extends the scope of fixed-shape activation functions to their\nadaptive counterparts whose shape can be learnt from the training data. The\nderivatives of the proposed functional form can also be expressed in terms of\nMittag-Leffler functions making it a suitable candidate for gradient-based\nbackpropagation algorithms. By training multiple neural networks of different\ncomplexities on various datasets with different sizes, we demonstrate that\nadopting a unified gated representation of activation functions offers a\npromising and affordable alternative to individual built-in implementations of\nactivation functions in conventional machine learning frameworks.\n",
+        "published": "2023",
+        "authors": [
+            "Mohammad Mostafanejad"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2302.11296v1",
+        "title": "Refining a $k$-nearest neighbor graph for a computationally efficient\n  spectral clustering",
+        "abstract": "  Spectral clustering became a popular choice for data clustering for its\nability of uncovering clusters of different shapes. However, it is not always\npreferable over other clustering methods due to its computational demands. One\nof the effective ways to bypass these computational demands is to perform\nspectral clustering on a subset of points (data representatives) then\ngeneralize the clustering outcome, this is known as approximate spectral\nclustering (ASC). ASC uses sampling or quantization to select data\nrepresentatives. This makes it vulnerable to 1) performance inconsistency\n(since these methods have a random step either in initialization or training),\n2) local statistics loss (because the pairwise similarities are extracted from\ndata representatives instead of data points). We proposed a refined version of\n$k$-nearest neighbor graph, in which we keep data points and aggressively\nreduce number of edges for computational efficiency. Local statistics were\nexploited to keep the edges that do not violate the intra-cluster distances and\nnullify all other edges in the $k$-nearest neighbor graph. We also introduced\nan optional step to automatically select the number of clusters $C$. The\nproposed method was tested on synthetic and real datasets. Compared to ASC\nmethods, the proposed method delivered a consistent performance despite\nsignificant reduction of edges.\n",
+        "published": "2023",
+        "authors": [
+            "Mashaan Alshammari",
+            "John Stavrakakis",
+            "Masahiro Takatsuka"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2302.11297v1",
+        "title": "Approximate spectral clustering with eigenvector selection and\n  self-tuned $k$",
+        "abstract": "  The recently emerged spectral clustering surpasses conventional clustering\nmethods by detecting clusters of any shape without the convexity assumption.\nUnfortunately, with a computational complexity of $O(n^3)$, it was infeasible\nfor multiple real applications, where $n$ could be large. This stimulates\nresearchers to propose the approximate spectral clustering (ASC). However, most\nof ASC methods assumed that the number of clusters $k$ was known. In practice,\nmanual setting of $k$ could be subjective or time consuming. The proposed\nalgorithm has two relevance metrics for estimating $k$ in two vital steps of\nASC. One for selecting the eigenvectors spanning the embedding space, and the\nother to discover the number of clusters in that space. The algorithm used a\ngrowing neural gas (GNG) approximation, GNG is superior in preserving input\ndata topology. The experimental setup demonstrates the efficiency of the\nproposed algorithm and its ability to compete with similar methods where $k$\nwas set manually.\n",
+        "published": "2023",
+        "authors": [
+            "Mashaan Alshammari",
+            "Masahiro Takatsuka"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2302.11298v1",
+        "title": "Approximate spectral clustering density-based similarity for noisy\n  datasets",
+        "abstract": "  Approximate spectral clustering (ASC) was developed to overcome heavy\ncomputational demands of spectral clustering (SC). It maintains SC ability in\npredicting non-convex clusters. Since it involves a preprocessing step, ASC\ndefines new similarity measures to assign weights on graph edges. Connectivity\nmatrix (CONN) is an efficient similarity measure to construct graphs for ASC.\nIt defines the weight between two vertices as the number of points assigned to\nthem during vector quantization training. However, this relationship is\nundirected, where it is not clear which of the vertices is contributing more to\nthat edge. Also, CONN could be tricked by noisy density between clusters. We\ndefined a directed version of CONN, named DCONN, to get insights on vertices\ncontributions to edges. Also, we provided filtering schemes to ensure CONN\nedges are highlighting potential clusters. Experiments reveal that the proposed\nfiltering was highly efficient when noise cannot be tolerated by CONN.\n",
+        "published": "2023",
+        "authors": [
+            "Mashaan Alshammari",
+            "Masahiro Takatsuka"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2302.12000v3",
+        "title": "Graph Construction using Principal Axis Trees for Simple Graph\n  Convolution",
+        "abstract": "  Graph Neural Networks (GNNs) are increasingly becoming the favorite method\nfor graph learning. They exploit the semi-supervised nature of deep learning,\nand they bypass computational bottlenecks associated with traditional graph\nlearning methods. In addition to the feature matrix $X$, GNNs need an adjacency\nmatrix $A$ to perform feature propagation. In many cases, the adjacency matrix\n$A$ is missing. We introduce a graph construction scheme that constructs the\nadjacency matrix $A$ using unsupervised and supervised information.\nUnsupervised information characterizes the neighborhood around points. We used\nPrincipal Axis trees (PA-trees) as a source for unsupervised information, where\nwe create edges between points falling onto the same leaf node. For supervised\ninformation, we used the concept of penalty and intrinsic graphs. A penalty\ngraph connects points with different class labels, whereas an intrinsic graph\nconnects points with the same class labels. We used the penalty and intrinsic\ngraphs to remove or add edges to the graph constructed via PA-tree. We tested\nthis graph construction scheme on two well-known GNNs: 1) Graph Convolutional\nNetwork (GCN) and 2) Simple Graph Convolution (SGC). The experiments show that\nit is better to use SGC because it is faster and delivers better or the same\nresults as GCN. We also test the effect of oversmoothing on both GCN and SGC.\nWe found out that the level of smoothing has to be carefully selected for SGC\nto avoid oversmoothing.\n",
+        "published": "2023",
+        "authors": [
+            "Mashaan Alshammari",
+            "John Stavrakakis",
+            "Adel F. Ahmed",
+            "Masahiro Takatsuka"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2302.12001v2",
+        "title": "Random Projection Forest Initialization for Graph Convolutional Networks",
+        "abstract": "  Graph convolutional networks (GCNs) were a great step towards extending deep\nlearning to unstructured data such as graphs. But GCNs still need a constructed\ngraph to work with. To solve this problem, classical graphs such as $k$-nearest\nneighbor are usually used to initialize the GCN. Although it is computationally\nefficient to construct $k$-nn graphs, the constructed graph might not be very\nuseful for learning. In a $k$-nn graph, points are restricted to have a fixed\nnumber of edges, and all edges in the graph have equal weights. We present a\nnew way to construct the graph and initialize the GCN. It is based on random\nprojection forest (rpForest). rpForest enables us to assign varying weights on\nedges indicating varying importance, which enhanced the learning. The number of\ntrees is a hyperparameter in rpForest. We performed spectral analysis to help\nus setting this parameter in the right range. In the experiments, initializing\nthe GCN using rpForest provides better results compared to $k$-nn\ninitialization.\n",
+        "published": "2023",
+        "authors": [
+            "Mashaan Alshammari",
+            "John Stavrakakis",
+            "Adel F. Ahmed",
+            "Masahiro Takatsuka"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2302.13165v1",
+        "title": "A parameter-free graph reduction for spectral clustering and SpectralNet",
+        "abstract": "  Graph-based clustering methods like spectral clustering and SpectralNet are\nvery efficient in detecting clusters of non-convex shapes. Unlike the popular\n$k$-means, graph-based clustering methods do not assume that each cluster has a\nsingle mean. However, these methods need a graph where vertices in the same\ncluster are connected by edges of large weights. To achieve this goal, many\nstudies have proposed graph reduction methods with parameters. Unfortunately,\nthese parameters have to be tuned for every dataset. We introduce a graph\nreduction method that does not require any parameters. First, the distances\nfrom every point $p$ to its neighbors are filtered using an adaptive threshold\nto only keep neighbors with similar surrounding density. Second, the\nsimilarities with close neighbors are computed and only high similarities are\nkept. The edges that survive these two filtering steps form the constructed\ngraph that was passed to spectral clustering and SpectralNet. The experiments\nshowed that our method provides a stable alternative, where other methods\nperformance fluctuated according to the setting of their parameters.\n",
+        "published": "2023",
+        "authors": [
+            "Mashaan Alshammari",
+            "John Stavrakakis",
+            "Masahiro Takatsuka"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2302.13168v1",
+        "title": "Random projection tree similarity metric for SpectralNet",
+        "abstract": "  SpectralNet is a graph clustering method that uses neural network to find an\nembedding that separates the data. So far it was only used with $k$-nn graphs,\nwhich are usually constructed using a distance metric (e.g., Euclidean\ndistance). $k$-nn graphs restrict the points to have a fixed number of\nneighbors regardless of the local statistics around them. We proposed a new\nSpectralNet similarity metric based on random projection trees (rpTrees). Our\nexperiments revealed that SpectralNet produces better clustering accuracy using\nrpTree similarity metric compared to $k$-nn graph with a distance metric. Also,\nwe found out that rpTree parameters do not affect the clustering accuracy.\nThese parameters include the leaf size and the selection of projection\ndirection. It is computationally efficient to keep the leaf size in order of\n$\\log(n)$, and project the points onto a random direction instead of trying to\nfind the direction with the maximum dispersion.\n",
+        "published": "2023",
+        "authors": [
+            "Mashaan Alshammari",
+            "John Stavrakakis",
+            "Adel F. Ahmed",
+            "Masahiro Takatsuka"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2302.13551v1",
+        "title": "Invariant Layers for Graphs with Nodes of Different Types",
+        "abstract": "  Neural networks that satisfy invariance with respect to input permutations\nhave been widely studied in machine learning literature. However, in many\napplications, only a subset of all input permutations is of interest. For\nheterogeneous graph data, one can focus on permutations that preserve node\ntypes. We fully characterize linear layers invariant to such permutations. We\nverify experimentally that implementing these layers in graph neural network\narchitectures allows learning important node interactions more effectively than\nexisting techniques. We show that the dimension of space of these layers is\ngiven by a generalization of Bell numbers, extending the work (Maron et al.,\n2019). We further narrow the invariant network design space by addressing a\nquestion about the sizes of tensor layers necessary for function approximation\non graph data. Our findings suggest that function approximation on a graph with\n$n$ nodes can be done with tensors of sizes $\\leq n$, which is tighter than the\nbest-known bound $\\leq n(n-1)/2$. For $d \\times d$ image data with translation\nsymmetry, our methods give a tight upper bound $2d - 1$ (instead of $d^{4}$) on\nsizes of invariant tensor generators via a surprising connection to Davenport\nconstants.\n",
+        "published": "2023",
+        "authors": [
+            "Dmitry Rybin",
+            "Ruoyu Sun",
+            "Zhi-Quan Luo"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2302.13696v2",
+        "title": "Moderate Adaptive Linear Units (MoLU)",
+        "abstract": "  We propose a new high-performance activation function, Moderate Adaptive\nLinear Units (MoLU), for the deep neural network. The MoLU is a simple,\nbeautiful and powerful activation function that can be a good main activation\nfunction among hundreds of activation functions. Because the MoLU is made up of\nthe elementary functions, not only it is a infinite diffeomorphism (i.e. smooth\nand infinitely differentiable over whole domains), but also it decreases\ntraining time.\n",
+        "published": "2023",
+        "authors": [
+            "Hankyul Koh",
+            "Joon-hyuk Ko",
+            "Wonho Jhe"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2302.14703v1",
+        "title": "Improving Expert Specialization in Mixture of Experts",
+        "abstract": "  Mixture of experts (MoE), introduced over 20 years ago, is the simplest gated\nmodular neural network architecture. There is renewed interest in MoE because\nthe conditional computation allows only parts of the network to be used during\neach inference, as was recently demonstrated in large scale natural language\nprocessing models. MoE is also of potential interest for continual learning, as\nexperts may be reused for new tasks, and new experts introduced. The gate in\nthe MoE architecture learns task decompositions and individual experts learn\nsimpler functions appropriate to the gate's decomposition. In this paper: (1)\nwe show that the original MoE architecture and its training method do not\nguarantee intuitive task decompositions and good expert utilization, indeed\nthey can fail spectacularly even for simple data such as MNIST and\nFashionMNIST; (2) we introduce a novel gating architecture, similar to\nattention, that improves performance and results in a lower entropy task\ndecomposition; and (3) we introduce a novel data-driven regularization that\nimproves expert specialization. We empirically validate our methods on MNIST,\nFashionMNIST and CIFAR-100 datasets.\n",
+        "published": "2023",
+        "authors": [
+            "Yamuna Krishnamurthy",
+            "Chris Watkins",
+            "Thomas Gaertner"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2303.02155v2",
+        "title": "ChatGPT and Other Large Language Models as Evolutionary Engines for\n  Online Interactive Collaborative Game Design",
+        "abstract": "  Large language models (LLMs) have taken the scientific world by storm,\nchanging the landscape of natural language processing and human-computer\ninteraction. These powerful tools can answer complex questions and,\nsurprisingly, perform challenging creative tasks (e.g., generate code and\napplications to solve problems, write stories, pieces of music, etc.). In this\npaper, we present a collaborative game design framework that combines\ninteractive evolution and large language models to simulate the typical human\ndesign process. We use the former to exploit users' feedback for selecting the\nmost promising ideas and large language models for a very complex creative task\n- the recombination and variation of ideas. In our framework, the process\nstarts with a brief and a set of candidate designs, either generated using a\nlanguage model or proposed by the users. Next, users collaborate on the design\nprocess by providing feedback to an interactive genetic algorithm that selects,\nrecombines, and mutates the most promising designs. We evaluated our framework\non three game design tasks with human designers who collaborated remotely.\n",
+        "published": "2023",
+        "authors": [
+            "Pier Luca Lanzi",
+            "Daniele Loiacono"
+        ]
+    }
+]

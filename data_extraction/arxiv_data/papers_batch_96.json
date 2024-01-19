@@ -1,0 +1,1207 @@
+[
+    {
+        "id": "http://arxiv.org/abs/2011.00441v1",
+        "title": "CL-MAPF: Multi-Agent Path Finding for Car-Like Robots with Kinematic and\n  Spatiotemporal Constraints",
+        "abstract": "  Multi-Agent Path Finding has been widely studied in the past few years due to\nits broad application in the field of robotics and AI. However, previous\nsolvers rely on several simplifying assumptions. They limit their applicability\nin numerous real-world domains that adopt nonholonomic car-like agents rather\nthan holonomic ones. In this paper, we give a mathematical formalization of\nMulti-Agent Path Finding for Car-Like robots (CL-MAPF) problem. For the first\ntime, we propose a novel hierarchical search-based solver called Car-like\nConflict-Based Search to address this problem. It applies a body conflict tree\nto address collisions considering shapes of the agents. We introduce a new\nalgorithm called Spatiotemporal Hybrid-State A* as the single-agent path\nplanner to generate path satisfying both kinematic and spatiotemporal\nconstraints. We also present a sequential planning version of our method for\nthe sake of efficiency. We compare our method with two baseline algorithms on a\ndedicated benchmark containing 3000 instances and validate it in real-world\nscenarios. The experiment results give clear evidence that our algorithm scales\nwell to a large number of agents and is able to produce solutions that can be\ndirectly applied to car-like robots in the real world. The benchmark and source\ncode are released in https://github.com/APRIL-ZJU/CL-CBS.\n",
+        "published": "2020",
+        "authors": [
+            "Licheng Wen",
+            "Zhen Zhang",
+            "Zhe Chen",
+            "Xiangrui Zhao",
+            "Yong Liu"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2011.02373v1",
+        "title": "Moving Forward in Formation: A Decentralized Hierarchical Learning\n  Approach to Multi-Agent Moving Together",
+        "abstract": "  Multi-agent path finding in formation has many potential real-world\napplications like mobile warehouse robots. However, previous multi-agent path\nfinding (MAPF) methods hardly take formation into consideration. Furthermore,\nthey are usually centralized planners and require the whole state of the\nenvironment. Other decentralized partially observable approaches to MAPF are\nreinforcement learning (RL) methods. However, these RL methods encounter\ndifficulties when learning path finding and formation problem at the same time.\nIn this paper, we propose a novel decentralized partially observable RL\nalgorithm that uses a hierarchical structure to decompose the multi objective\ntask into unrelated ones. It also calculates a theoretical weight that makes\nevery task reward has equal influence on the final RL value function.\nAdditionally, we introduce a communication method that helps agents cooperate\nwith each other. Experiments in simulation show that our method outperforms\nother end-to-end RL methods and our method can naturally scale to large world\nsizes where centralized planner struggles. We also deploy and validate our\nmethod in a real world scenario.\n",
+        "published": "2020",
+        "authors": [
+            "Shanqi Liu",
+            "Licheng Wen",
+            "Jinhao Cui",
+            "Xuemeng Yang",
+            "Junjie Cao",
+            "Yong Liu"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2011.06047v1",
+        "title": "Multi-Hypothesis Interactions in Game-Theoretic Motion Planning",
+        "abstract": "  We present a novel method for handling uncertainty about the intentions of\nnon-ego players in dynamic games, with application to motion planning for\nautonomous vehicles. Equilibria in these games explicitly account for\ninteraction among other agents in the environment, such as drivers and\npedestrians. Our method models the uncertainty about the intention of other\nagents by constructing multiple hypotheses about the objectives and constraints\nof other agents in the scene. For each candidate hypothesis, we associate a\nBernoulli random variable representing the probability of that hypothesis,\nwhich may or may not be independent of the probability of other hypotheses. We\nleverage constraint asymmetries and feedback information patterns to\nincorporate the probabilities of hypotheses in a natural way. Specifically,\nincreasing the probability associated with a given hypothesis from $0$ to $1$\nshifts the responsibility of collision avoidance from the hypothesized agent to\nthe ego agent. This method allows the generation of interactive trajectories\nfor the ego agent, where the level of assertiveness or caution that the ego\nexhibits is directly related to the easy-to-model uncertainty it maintains\nabout the scene.\n",
+        "published": "2020",
+        "authors": [
+            "Forrest Laine",
+            "David Fridovich-Keil",
+            "Chih-Yuan Chiu",
+            "Claire Tomlin"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2011.10034v1",
+        "title": "Decentralized Task and Path Planning for Multi-Robot Systems",
+        "abstract": "  We consider a multi-robot system with a team of collaborative robots and\nmultiple tasks that emerges over time. We propose a fully decentralized task\nand path planning (DTPP) framework consisting of a task allocation module and a\nlocalized path planning module. Each task is modeled as a Markov Decision\nProcess (MDP) or a Mixed Observed Markov Decision Process (MOMDP) depending on\nwhether full states or partial states are observable. The task allocation\nmodule then aims at maximizing the expected pure reward (reward minus cost) of\nthe robotic team. We fuse the Markov model into a factor graph formulation so\nthat the task allocation can be decentrally solved using the max-sum algorithm.\nEach robot agent follows the optimal policy synthesized for the Markov model\nand we propose a localized forward dynamic programming scheme that resolves\nconflicts between agents and avoids collisions. The proposed framework is\ndemonstrated with high fidelity ROS simulations and experiments with multiple\nground robots.\n",
+        "published": "2020",
+        "authors": [
+            "Yuxiao Chen",
+            "Ugo Rosolia",
+            "Aaron D. Ames"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2012.02340v1",
+        "title": "Decentralized Multi-target Tracking with Multiple Quadrotors using a PHD\n  Filter",
+        "abstract": "  We consider a scenario in which a group of quadrotors is tasked at tracking\nmultiple stationary targets in an unknown, bounded environment. The quadrotors\nsearch for targets along a spatial grid overlaid on the environment while\nperforming a random walk on this grid modeled by a discrete-time discrete-state\n(DTDS) Markov chain. The quadrotors can transmit their estimates of the target\nlocations to other quadrotors that occupy their current location on the grid;\nthus, their communication network is time-varying and not necessarily\nconnected. We model the search procedure as a renewal-reward process on the\nunderlying DTDS Markov chain. To accommodate changes in the set of targets\nobserved by each quadrotor as it explores the environment, along with\nuncertainties in the quadrotors' measurements of the targets, we formulate the\ntracking problem in terms of Random Finite Sets (RFS). The quadrotors use\nRFS-based Probability Hypothesis Density (PHD) filters to estimate the number\nof targets and their locations. We present a theoretical estimation framework,\nbased on the Gaussian Mixture formulation of the PHD filter, and preliminary\nsimulation results toward extending existing approaches for RFS-based\nmulti-target tracking to a decentralized multi-robot strategy for multi-target\ntracking. We validate this approach with simulations of multi-target tracking\nscenarios with different densities of robots and targets, and we evaluate the\naverage time required for the robots in each scenario to reach agreement on a\ncommon set of targets.\n",
+        "published": "2020",
+        "authors": [
+            "Aniket Shirsat",
+            "Spring Berman"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2012.04144v2",
+        "title": "Improved Swarm Engineering: Aligning Intuition and Analysis",
+        "abstract": "  We present a set of metrics intended to supplement designer intuitions when\ndesigning swarm-robotic systems, increase accuracy in extrapolating swarm\nbehavior from algorithmic descriptions and small test experiments, and lead to\nfaster and less costly design cycles. We build on previous works studying\nself-organizing behaviors in autonomous systems to derive a metric for swarm\nemergent self-organization. We utilize techniques from high performance\ncomputing, time series analysis, and queueing theory to derive metrics for\nswarm scalability, flexibility to changing external environments, and\nrobustness to internal system stimuli such as sensor and actuator noise and\nrobot failures. We demonstrate the utility of our metrics by analyzing four\ndifferent control algorithms in two scenarios: an indoor warehouse object\ntransport scenario with static objects and a spatially unconstrained outdoor\nsearch and rescue scenario with moving objects. In the spatially constrained\nwarehouse scenario, efficient use of space is key to success so algorithms that\nuse mechanisms for traffic regulation and congestion reduction are the most\nappropriate. In the search and rescue scenario, the same will happen with\nalgorithms which can cope well with object motion through dynamic task\nallocation and randomized search trajectories. We show that our intuitions\nabout comparative algorithm performance are well supported by the quantitative\nresults obtained using our metrics, and that our metrics can be synergistically\nused together to predict collective behaviors based on previous results in some\ncases.\n",
+        "published": "2020",
+        "authors": [
+            "John Harwell",
+            "Maria Gini"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2012.04174v5",
+        "title": "A wireless signal-based sensing framework for robotics",
+        "abstract": "  In this paper we develop the analytical framework for a novel Wireless\nsignal-based Sensing capability for Robotics (WSR) by leveraging robots'\nmobility. It allows robots to primarily measure relative direction, or\nAngle-of-Arrival (AOA), to other robots, while operating in non-line-of-sight\nunmapped environments and without requiring external infrastructure. We do so\nby capturing all of the paths that a wireless signal traverses as it travels\nfrom a transmitting to a receiving robot in the team, which we term as an AOA\nprofile. The key intuition behind our approach is to enable a robot to emulate\nantenna arrays as it moves freely in 2D and 3D space. The small differences in\nthe phase of the wireless signals are thus processed with knowledge of robots'\nlocal displacement to obtain the profile, via a method akin to Synthetic\nAperture Radar (SAR). The main contribution of this work is the development of\ni) a framework to accommodate arbitrary 2D and 3D motion, as well as continuous\nmobility of both signal transmitting and receiving robots, while computing AOA\nprofiles between them and ii) a Cramer-Rao Bound analysis, based on antenna\narray theory, that provides a lower bound on the variance in AOA estimation as\na function of the geometry of robot motion. We show that allowing robots to use\ntheir full mobility in 3D space while performing SAR, results in more accurate\nAOA profiles and thus better AOA estimation. All analytical developments are\nsubstantiated by extensive simulation and hardware experiments on air/ground\nrobot platforms using 5 GHz WiFi. Our experimental results bolster our\nanalytical findings, demonstrating that 3D motion provides enhanced and\nconsistent accuracy, with total AOA error of less than 10 degree for 95% of\ntrials. We also analytically characterize the impact of displacement estimation\nerrors on the measured AOA.\n",
+        "published": "2020",
+        "authors": [
+            "Ninad Jadhav",
+            "Weiying Wang",
+            "Diana Zhang",
+            "Oussama Khatib",
+            "Swarun Kumar",
+            "Stephanie Gil"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2012.09052v1",
+        "title": "Scalable and Safe Multi-Agent Motion Planning with Nonlinear Dynamics\n  and Bounded Disturbances",
+        "abstract": "  We present a scalable and effective multi-agent safe motion planner that\nenables a group of agents to move to their desired locations while avoiding\ncollisions with obstacles and other agents, with the presence of rich\nobstacles, high-dimensional, nonlinear, nonholonomic dynamics, actuation\nlimits, and disturbances. We address this problem by finding a piecewise linear\npath for each agent such that the actual trajectories following these paths are\nguaranteed to satisfy the reach-and-avoid requirement. We show that the spatial\ntracking error of the actual trajectories of the controlled agents can be\npre-computed for any qualified path that considers the minimum duration of each\npath segment due to actuation limits. Using these bounds, we find a\ncollision-free path for each agent by solving Mixed Integer-Linear Programs and\ncoordinate agents by using the priority-based search. We demonstrate our method\nby benchmarking in 2D and 3D scenarios with ground vehicles and quadrotors,\nrespectively, and show improvements over the solving time and the solution\nquality compared to two state-of-the-art multi-agent motion planners.\n",
+        "published": "2020",
+        "authors": [
+            "Jingkai Chen",
+            "Jiaoyang Li",
+            "Chuchu Fan",
+            "Brian Williams"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2012.09331v2",
+        "title": "Team Assignment for Heterogeneous Multi-Robot Sensor Coverage through\n  Graph Representation Learning",
+        "abstract": "  Sensor coverage is the critical multi-robot problem of maximizing the\ndetection of events in an environment through the deployment of multiple\nrobots. Large multi-robot systems are often composed of simple robots that are\ntypically not equipped with a complete set of sensors, so teams with\ncomprehensive sensing abilities are required to properly cover an area. Robots\nalso exhibit multiple forms of relationships (e.g., communication connections\nor spatial distribution) that need to be considered when assigning robot teams\nfor sensor coverage. To address this problem, in this paper we introduce a\nnovel formulation of sensor coverage by multi-robot systems with heterogeneous\nrelationships as a graph representation learning problem. We propose a\nprincipled approach based on the mathematical framework of regularized\noptimization to learn a unified representation of the multi-robot system from\nthe graphs describing the heterogeneous relationships and to identify the\nlearned representation's underlying structure in order to assign the robots to\nteams. To evaluate the proposed approach, we conduct extensive experiments on\nsimulated multi-robot systems and a physical multi-robot system as a case\nstudy, demonstrating that our approach is able to effectively assign teams for\nheterogeneous multi-robot sensor coverage.\n",
+        "published": "2020",
+        "authors": [
+            "Brian Reily",
+            "Hao Zhang"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2012.09334v2",
+        "title": "Adaptation to Team Composition Changes for Heterogeneous Multi-Robot\n  Sensor Coverage",
+        "abstract": "  We consider the problem of multi-robot sensor coverage, which deals with\ndeploying a multi-robot team in an environment and optimizing the sensing\nquality of the overall environment. As real-world environments involve a\nvariety of sensory information, and individual robots are limited in their\navailable number of sensors, successful multi-robot sensor coverage requires\nthe deployment of robots in such a way that each individual team member's\nsensing quality is maximized. Additionally, because individual robots have\nvarying complements of sensors and both robots and sensors can fail, robots\nmust be able to adapt and adjust how they value each sensing capability in\norder to obtain the most complete view of the environment, even through changes\nin team composition. We introduce a novel formulation for sensor coverage by\nmulti-robot teams with heterogeneous sensing capabilities that maximizes each\nrobot's sensing quality, balancing the varying sensing capabilities of\nindividual robots based on the overall team composition. We propose a solution\nbased on regularized optimization that uses sparsity-inducing terms to ensure a\nrobot team focuses on all possible event types, and which we show is proven to\nconverge to the optimal solution. Through extensive simulation, we show that\nour approach is able to effectively deploy a multi-robot team to maximize the\nsensing quality of an environment, responding to failures in the multi-robot\nteam more robustly than non-adaptive approaches.\n",
+        "published": "2020",
+        "authors": [
+            "Brian Reily",
+            "Terran Mott",
+            "Hao Zhang"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2012.12990v2",
+        "title": "Distributed Multi-object Tracking under Limited Field of View Sensors",
+        "abstract": "  We consider the challenging problem of tracking multiple objects using a\ndistributed network of sensors. In the practical setting of nodes with limited\nfield of views (FoVs), computing power and communication resources, we develop\na novel distributed multi-object tracking algorithm. To accomplish this, we\nfirst formalise the concept of label consistency, determine a sufficient\ncondition to achieve it and develop a novel \\textit{label consensus approach}\nthat reduces label inconsistency caused by objects' movements from one node's\nlimited FoV to another. Second, we develop a distributed multi-object fusion\nalgorithm that fuses local multi-object state estimates instead of local\nmulti-object densities. This algorithm: i) requires significantly less\nprocessing time than multi-object density fusion methods; ii) achieves better\ntracking accuracy by considering Optimal Sub-Pattern Assignment (OSPA) tracking\nerrors over several scans rather than a single scan; iii) is agnostic to local\nmulti-object tracking techniques, and only requires each node to provide a set\nof estimated tracks. Thus, it is not necessary to assume that the nodes\nmaintain multi-object densities, and hence the fusion outcomes do not modify\nlocal multi-object densities. Numerical experiments demonstrate our proposed\nsolution's real-time computational efficiency and accuracy compared to\nstate-of-the-art solutions in challenging scenarios. We also release source\ncode at https://github.com/AdelaideAuto-IDLab/Distributed-limitedFoV-MOT for\nour fusion method to foster developments in DMOT algorithms.\n",
+        "published": "2020",
+        "authors": [
+            "Hoa Van Nguyen",
+            "Hamid Rezatofighi",
+            "Ba-Ngu Vo",
+            "Damith C. Ranasinghe"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2012.14329v1",
+        "title": "Impact of Heterogeneity in Multi-Robot Systems on Collective Behaviors\n  Studied Using a Search and Rescue Problem",
+        "abstract": "  Many species in nature demonstrate symbiotic relationships leading to\nemergent behaviors through cooperation, which are sometimes beyond the scope of\nthe partnerships within the same species. These symbiotic relationships are\nclassified as mutualism, commensalism, and parasitism based on the benefit\nlevels involved. While these partnerships are ubiquitous in nature, it is\nimperative to understand the benefits of collective behaviors in designing\nheterogeneous multi-robot systems (HMRS). In this paper, we investigate the\nimpact of heterogeneity on the performance of HMRS applied to a search and\nrescue problem. The groups consisting of searchers and rescuers, varied in the\nindividual robot behaviors with multiple degrees of functionality overlap and\ngroup compositions, demonstrating various levels of heterogeneity. We propose a\nnew technique to measure heterogeneity in the agents through the use of\nBehavior Trees and use it to obtain heterogeneity informatics from our Monte\nCarlo simulations. The results show a positive correlation between the group's\nheterogeneity measure and the rescue efficiency demonstrating benefits in most\nof the scenarios. However, we also see cases where heterogeneity may hamper the\ngroup's abilities pointing to the need for determining the optimal\nheterogeneity in group required to maximally benefit from HMRS in real-world\napplications.\n",
+        "published": "2020",
+        "authors": [
+            "Sanjay Sarma O V",
+            "Ramviyas Parasuraman",
+            "Ramana Pidaparti"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2102.02351v1",
+        "title": "On Multi-Human Multi-Robot Remote Interaction: A Study of Transparency,\n  Inter-Human Communication, and Information Loss in Remote Interaction",
+        "abstract": "  In this paper, we investigate how to design an effective interface for remote\nmulti-human multi-robot interaction. While significant research exists on\ninterfaces for individual human operators, little research exists for the\nmulti-human case. Yet, this is a critical problem to solve to make complex,\nlarge-scale missions achievable in which direct human involvement is impossible\nor undesirable, and robot swarms act as a semi-autonomous agents. This paper's\ncontribution is twofold. The first contribution is an exploration of the design\nspace of computer-based interfaces for multi-human multi-robot operations. In\nparticular, we focus on information transparency and on the factors that affect\ninter-human communication in ideal conditions, i.e., without communication\nissues. Our second contribution concerns the same problem, but considering\nincreasing degrees of information loss, defined as intermittent reception of\ndata with noticeable gaps between individual receipts. We derived a set of\ndesign recommendations based on two user studies involving 48 participants.\n",
+        "published": "2021",
+        "authors": [
+            "Jayam Patel",
+            "Prajankya Sonar",
+            "Carlo Pinciroli"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2102.02439v1",
+        "title": "Towards Decentralized Human-Swarm Interaction by Means of Sequential\n  Hand Gesture Recognition",
+        "abstract": "  In this work, we present preliminary work on a novel method for Human-Swarm\nInteraction (HSI) that can be used to change the macroscopic behavior of a\nswarm of robots with decentralized sensing and control. By integrating a small\nyet capable hand gesture recognition convolutional neural network (CNN) with\nthe next-generation Robot Operating System \\emph{ros2}, which enables\ndecentralized implementation of robot software for multi-robot applications, we\ndemonstrate the feasibility of programming a swarm of robots to recognize and\nrespond to a sequence of hand gestures that capable of correspond to different\ntypes of swarm behaviors. We test our approach using a sequence of gestures\nthat modifies the target inter-robot distance in a group of three Turtlebot3\nBurger robots in order to prevent robot collisions with obstacles. The approach\nis validated in three different Gazebo simulation environments and in a\nphysical testbed that reproduces one of the simulated environments.\n",
+        "published": "2021",
+        "authors": [
+            "Zahi Kakish",
+            "Sritanay Vedartham",
+            "Spring Berman"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2102.03689v1",
+        "title": "Decentralized Ability-Aware Adaptive Control for Multi-robot\n  Collaborative Manipulation",
+        "abstract": "  Multi-robot teams can achieve more dexterous, complex and heavier payload\ntasks than a single robot, yet effective collaboration is required. Multi-robot\ncollaboration is extremely challenging due to the different kinematic and\ndynamics capabilities of the robots, the limited communication between them,\nand the uncertainty of the system parameters. In this paper, a Decentralized\nAbility-Aware Adaptive Control is proposed to address these challenges based on\ntwo key features. Firstly, the common manipulation task is represented by the\nproposed nominal task ellipsoid, which is used to maximize each robot force\ncapability online via optimizing its configuration. Secondly, a decentralized\nadaptive controller is designed to be Lyapunov stable in spite of heterogeneous\nactuation constraints of the robots and uncertain physical parameters of the\nobject and environment. In the proposed framework, decentralized coordination\nand load distribution between the robots is achieved without communication,\nwhile only the control deficiency is broadcast if any of the robots reaches its\nforce limits. In this case, the object reference trajectory is modified in a\ndecentralized manner to guarantee stable interaction. Finally, we perform\nseveral numerical and physical simulations to analyse and verify the proposed\nmethod with heterogeneous multi-robot teams in collaborative manipulation\ntasks.\n",
+        "published": "2021",
+        "authors": [
+            "Lei Yan",
+            "Theodoros Stouraitis",
+            "Sethu Vijayakumar"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2102.06265v2",
+        "title": "Fair Robust Assignment using Redundancy",
+        "abstract": "  We study the consideration of fairness in redundant assignment for\nmulti-agent task allocation. It has recently been shown that redundant\nassignment of agents to tasks provides robustness to uncertainty in task\nperformance. However, the question of how to fairly assign these redundant\nresources across tasks remains unaddressed. In this paper, we present a novel\nproblem formulation for fair redundant task allocation, which we cast as the\noptimization of worst-case task costs under a cardinality constraint. Solving\nthis problem optimally is NP-hard. We exploit properties of supermodularity to\npropose a polynomial-time, near-optimal solution. In supermodular redundant\nassignment, the use of additional agents always improves task costs. Therefore,\nwe provide a solution set that is $\\alpha$ times larger than the cardinality\nconstraint. This constraint relaxation enables our approach to achieve a\nsuper-optimal cost by using a sub-optimal assignment size. We derive the\nsub-optimality bound on this cardinality relaxation, $\\alpha$. Additionally, we\ndemonstrate that our algorithm performs near-optimally without the cardinality\nrelaxation. We show simulations of redundant assignments of robots to goal\nnodes on transport networks with uncertain travel times. Empirically, our\nalgorithm outperforms benchmarks, scales to large problems, and provides\nimprovements in both fairness and average utility.\n",
+        "published": "2021",
+        "authors": [
+            "Matthew Malencia",
+            "Vijay Kumar",
+            "George Pappas",
+            "Amanda Prorok"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2102.12748v1",
+        "title": "Active Modular Environment for Robot Navigation",
+        "abstract": "  This paper presents a novel robot-environment interaction in navigation tasks\nsuch that robots have neither a representation of their working space nor\nplanning function, instead, an active environment takes charge of these\naspects. This is realized by spatially deploying computing units, called cells,\nand making cells manage traffic in their respective physical region. Different\nfrom stigmegic approaches, cells interact with each other to manage\nenvironmental information and to construct instructions on how robots move.\n  As a proof-of-concept, we present an architecture called AFADA and its\nprototype, consisting of modular cells and robots moving on the cells. The\ninstructions from cells are based on a distributed routing algorithm and a\nreservation protocol. We demonstrate that AFADA achieves efficient robot moves\nfor single-robot navigation in a dynamic environment changing its topology with\na stochastic model, comparing to self-navigation by a robot itself. This is\nfollowed by several demos, including multi-robot navigation, highlighting the\npower of offloading both representation and planning from robots to the\nenvironment. We expect that the concept of AFADA contributes to developing the\ninfrastructure for multiple robots because it can engage online and lifelong\nplanning and execution.\n",
+        "published": "2021",
+        "authors": [
+            "Shota Kameyama",
+            "Keisuke Okumura",
+            "Yasumasa Tamura",
+            "Xavier D\u00e9fago"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2102.13281v1",
+        "title": "V-RVO: Decentralized Multi-Agent Collision Avoidance using Voronoi\n  Diagrams and Reciprocal Velocity Obstacles",
+        "abstract": "  We present a decentralized collision avoidance method for dense environments\nthat is based on buffered Voronoi cells (BVC) and reciprocal velocity obstacles\n(RVO). Our approach is designed for scenarios with large number of close\nproximity agents and provides passive-friendly collision avoidance guarantees.\nThe Voronoi cells are superimposed with RVO cones to compute a suitable\ndirection for each agent and we use that direction for computing a local\ncollision-free path. Our approach can satisfy double-integrator dynamics\nconstraints and we use the properties of the BVC to formulate a simple,\ndecentralized deadlock resolution strategy. We demonstrate the benefits of\nV-RVO in complex scenarios with tens of agents in close proximity. In practice,\nV-RVO's performance is comparable to prior velocity-obstacle methods and the\ncollision avoidance behavior is significantly less conservative than ORCA.\n",
+        "published": "2021",
+        "authors": [
+            "Senthil Hariharan Arul",
+            "Dinesh Manocha"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2103.02480v1",
+        "title": "Cellular Formation Maintenance and Collision Avoidance Using\n  Centroid-Based Point Set Registration in a Swarm of Drones",
+        "abstract": "  This work focuses on low-energy collision avoidance and formation maintenance\nin autonomous swarms of drones. Here, the two main problems are: 1) how to\navoid collisions by temporarily breaking the formation, i.e., collision\navoidance reformation, and 2) how do such reformation while minimizing the\ndeviation resulting in minimization of the overall time and energy consumption\nof the drones. To address the first question, we use cellular automata based\ntechnique to find an efficient formation that avoids the obstacle while\nminimizing the time and energy. Concerning the second question, a near-optimal\nreformation of the swarm after successful collision avoidance is achieved by\napplying a temperature function reduction technique, originally used in the\npoint set registration process. The goal of the reformation process is to\nremove the disturbance while minimizing the overall time it takes for the swarm\nto reach the destination and consequently reducing the energy consumption\nrequired by this operation. To measure the degree of formation disturbance due\nto collision avoidance, deviation of the centroid of the swarm formation is\nused, inspired by the concept of the center of mass in classical mechanics.\nExperimental results show the efficiency of the proposed technique, in terms of\nperformance and energy.\n",
+        "published": "2021",
+        "authors": [
+            "Jawad N. Yasin",
+            "Huma Mahboob",
+            "Mohammad-Hashem Haghbayan",
+            "Muhammad Mehboob Yasin",
+            "Juha Plosila"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2103.06113v3",
+        "title": "GRIT: Fast, Interpretable, and Verifiable Goal Recognition with Learned\n  Decision Trees for Autonomous Driving",
+        "abstract": "  It is important for autonomous vehicles to have the ability to infer the\ngoals of other vehicles (goal recognition), in order to safely interact with\nother vehicles and predict their future trajectories. This is a difficult\nproblem, especially in urban environments with interactions between many\nvehicles. Goal recognition methods must be fast to run in real time and make\naccurate inferences. As autonomous driving is safety-critical, it is important\nto have methods which are human interpretable and for which safety can be\nformally verified. Existing goal recognition methods for autonomous vehicles\nfail to satisfy all four objectives of being fast, accurate, interpretable and\nverifiable. We propose Goal Recognition with Interpretable Trees (GRIT), a goal\nrecognition system which achieves these objectives. GRIT makes use of decision\ntrees trained on vehicle trajectory data. We evaluate GRIT on two datasets,\nshowing that GRIT achieved fast inference speed and comparable accuracy to two\ndeep learning baselines, a planning-based goal recognition method, and an\nablation of GRIT. We show that the learned trees are human interpretable and\ndemonstrate how properties of GRIT can be formally verified using a\nsatisfiability modulo theories (SMT) solver.\n",
+        "published": "2021",
+        "authors": [
+            "Cillian Brewitt",
+            "Balint Gyevnar",
+            "Samuel Garcin",
+            "Stefano V. Albrecht"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2103.06359v2",
+        "title": "Hiding Leader's Identity in Leader-Follower Navigation through\n  Multi-Agent Reinforcement Learning",
+        "abstract": "  Leader-follower navigation is a popular class of multi-robot algorithms where\na leader robot leads the follower robots in a team. The leader has specialized\ncapabilities or mission-critical information (e.g. goal location) that the\nfollowers lack, and this makes the leader crucial for the mission's success.\nHowever, this also makes the leader a vulnerability - an external adversary who\nwishes to sabotage the robot team's mission can simply harm the leader and the\nwhole robot team's mission would be compromised. Since robot motion generated\nby traditional leader-follower navigation algorithms can reveal the identity of\nthe leader, we propose a defense mechanism of hiding the leader's identity by\nensuring the leader moves in a way that behaviorally camouflages it with the\nfollowers, making it difficult for an adversary to identify the leader. To\nachieve this, we combine Multi-Agent Reinforcement Learning, Graph Neural\nNetworks and adversarial training. Our approach enables the multi-robot team to\noptimize the primary task performance with leader motion similar to follower\nmotion, behaviorally camouflaging it with the followers. Our algorithm\noutperforms existing work that tries to hide the leader's identity in a\nmulti-robot team by tuning traditional leader-follower control parameters with\nClassical Genetic Algorithms. We also evaluated human performance in inferring\nthe leader's identity and found that humans had lower accuracy when the robot\nteam used our proposed navigation algorithm.\n",
+        "published": "2021",
+        "authors": [
+            "Ankur Deka",
+            "Wenhao Luo",
+            "Huao Li",
+            "Michael Lewis",
+            "Katia Sycara"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2103.10316v1",
+        "title": "A Quasi-centralized Collision-free Path Planning Approach for\n  Multi-Robot Systems",
+        "abstract": "  This paper presents a novel quasi-centralized approach for collision-free\npath planning of multi-robot systems (MRS) in obstacle-ridden environments. A\nnew formation potential fields (FPF) concept is proposed around a virtual\nagent, located at the center of the formation which ensures self-organization\nand maintenance of the formation. The path of the virtual agent is centrally\nplanned and the robots at the minima of the FPF are forced to move along with\nthe virtual agent. In the neighborhood of obstacles, individual robots\nselfishly avoid collisions, thus marginally deviating from the formation. The\nproposed quasi-centralized approach introduces formation flexibility into the\nMRS, which enables MRS to effectively navigate in an obstacle-ridden workspace.\nMethodical analysis of the proposed approach and guidelines for selecting the\nFPF are presented. Results using a candidate FPF are shown that ensure a\npentagonal formation effectively squeezes through a narrow passage avoiding any\ncollisions with the walls.\n",
+        "published": "2021",
+        "authors": [
+            "Rohith G",
+            "Madhu Vadali"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2103.11067v1",
+        "title": "Multi-Agent Algorithms for Collective Behavior: A structural and\n  application-focused atlas",
+        "abstract": "  The goal of this paper is to provide a survey and application-focused atlas\nof collective behavior coordination algorithms for multi-agent systems.\n  We survey the general family of collective behavior algorithms for\nmulti-agent systems and classify them according to their underlying\nmathematical structure. In doing so, we aim to capture fundamental mathematical\nproperties of algorithms (e.g., scalability with respect to the number of\nagents and bandwidth use) and to show how the same algorithm or family of\nalgorithms can be used for multiple tasks and applications.\n  Collectively, this paper provides an application-focused atlas of algorithms\nfor collective behavior of multi-agent systems, with three objectives:\n  1. to act as a tutorial guide to practitioners in the selection of\ncoordination algorithms for a given application;\n  2. to highlight how mathematically similar algorithms can be used for a\nvariety of tasks, ranging from low-level control to high-level coordination;\n  3. to explore the state-of-the-art in the field of control of multi-agent\nsystems and identify areas for future research.\n",
+        "published": "2021",
+        "authors": [
+            "Federico Rossi",
+            "Saptarshi Bandyopadhyay",
+            "Michael T. Wolf",
+            "Marco Pavone"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2103.11574v1",
+        "title": "Multi-agent Aerial Monitoring of Moving Convoys using Elliptical Orbits",
+        "abstract": "  We propose a novel scheme for surveillance of a dynamic ground convoy moving\nalong a non-linear trajectory, by aerial agents that maintain a uniformly\nspaced formation on a time-varying elliptical orbit encompassing the convoy.\nElliptical orbits are used as they are more economical than circular orbits for\ncircumnavigating the group of targets in the moving convoy. The proposed scheme\nincludes an algorithm for computing feasible elliptical orbits, a vector\nguidance law for agent motion along the desired orbit, and a cooperative\nstrategy to control the speeds of the aerial agents in order to quickly achieve\nand maintain the desired formation. It achieves mission objectives while\naccounting for linear and angular speed constraints on the aerial agents. The\nscheme is validated through simulations and actual experiments with a convoy of\nground robots and a team of quadrotors as the aerial agents, in a motion\ncapture environment.\n",
+        "published": "2021",
+        "authors": [
+            "Aseem Vivek Borkar",
+            "Girish Chowdhary"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2103.12553v1",
+        "title": "Safe Multi-Agent Reinforcement Learning through Decentralized Multiple\n  Control Barrier Functions",
+        "abstract": "  Multi-Agent Reinforcement Learning (MARL) algorithms show amazing performance\nin simulation in recent years, but placing MARL in real-world applications may\nsuffer safety problems. MARL with centralized shields was proposed and verified\nin safety games recently. However, centralized shielding approaches can be\ninfeasible in several real-world multi-agent applications that involve\nnon-cooperative agents or communication delay. Thus, we propose to combine MARL\nwith decentralized Control Barrier Function (CBF) shields based on available\nlocal information. We establish a safe MARL framework with decentralized\nmultiple CBFs and develop Multi-Agent Deep Deterministic Policy Gradient\n(MADDPG) to Multi-Agent Deep Deterministic Policy Gradient with decentralized\nmultiple Control Barrier Functions (MADDPG-CBF). Based on a collision-avoidance\nproblem that includes not only cooperative agents but obstacles, we demonstrate\nthe construction of multiple CBFs with safety guarantees in theory. Experiments\nare conducted and experiment results verify that the proposed safe MARL\nframework can guarantee the safety of agents included in MARL.\n",
+        "published": "2021",
+        "authors": [
+            "Zhiyuan Cai",
+            "Huanhui Cao",
+            "Wenjie Lu",
+            "Lin Zhang",
+            "Hao Xiong"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2103.14078v1",
+        "title": "Hastily Formed Knowledge Networks and Distributed Situation Awareness\n  for Collaborative Robotics",
+        "abstract": "  In the context of collaborative robotics, distributed situation awareness is\nessential for supporting collective intelligence in teams of robots and human\nagents where it can be used for both individual and collective decision\nsupport. This is particularly important in applications pertaining to emergency\nrescue and crisis management. During operational missions, data and knowledge\nis gathered incrementally and in different ways by heterogeneous robots and\nhumans. We describe this as the creation of \\emph{Hastily Formed Knowledge\nNetworks} (HFKNs). The focus of this paper is the specification and prototyping\nof a general distributed system architecture that supports the creation of\nHFKNs by teams of robots and humans. The information collected ranges from\nlow-level sensor data to high-level semantic knowledge, the latter represented\nin part as RDF Graphs. The framework includes a synchronization protocol and\nassociated algorithms that allow for the automatic distribution and sharing of\ndata and knowledge between agents. This is done through the distributed\nsynchronization of RDF Graphs shared between agents. High-level semantic\nqueries specified in SPARQL can be used by robots and humans alike to acquire\nboth knowledge and data content from team members. The system is empirically\nvalidated and complexity results of the proposed algorithms are provided.\nAdditionally, a field robotics case study is described, where a 3D mapping\nmission has been executed using several UAVs in a collaborative emergency\nrescue scenario while using the full HFKN Framework.\n",
+        "published": "2021",
+        "authors": [
+            "Cyrille Berger",
+            "Patrick Doherty",
+            "Piotr Rudol",
+            "Mariusz Wzorek"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2103.14709v1",
+        "title": "Scalable Coverage Path Planning of Multi-Robot Teams for Monitoring\n  Non-Convex Areas",
+        "abstract": "  This paper presents a novel multi-robot coverage path planning (CPP)\nalgorithm - aka SCoPP - that provides a time-efficient solution, with workload\nbalanced plans for each robot in a multi-robot system, based on their initial\nstates. This algorithm accounts for discontinuities (e.g., no-fly zones) in a\nspecified area of interest, and provides an optimized ordered list of\nway-points per robot using a discrete, computationally efficient, nearest\nneighbor path planning algorithm. This algorithm involves five main stages,\nwhich include the transformation of the user's input as a set of vertices in\ngeographical coordinates, discretization, load-balanced partitioning,\nauctioning of conflict cells in a discretized space, and a path planning\nprocedure. To evaluate the effectiveness of the primary algorithm, a\nmulti-unmanned aerial vehicle (UAV) post-flood assessment application is\nconsidered, and the performance of the algorithm is tested on three test maps\nof varying sizes. Additionally, our method is compared with a state-of-the-art\nmethod created by Guasella et al. Further analyses on scalability and\ncomputational time of SCoPP are conducted. The results show that SCoPP is\nsuperior in terms of mission completion time; its computing time is found to be\nunder 2 mins for a large map covered by a 150-robot team, thereby demonstrating\nits computationally scalability.\n",
+        "published": "2021",
+        "authors": [
+            "Leighton Collins",
+            "Payam Ghassemi",
+            "Ehsan T. Esfahani",
+            "David Doermann",
+            "Karthik Dantu",
+            "Souma Chowdhury"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2103.14805v1",
+        "title": "Multi-Robot Distributed Semantic Mapping in Unfamiliar Environments\n  through Online Matching of Learned Representations",
+        "abstract": "  We present a solution to multi-robot distributed semantic mapping of novel\nand unfamiliar environments. Most state-of-the-art semantic mapping systems are\nbased on supervised learning algorithms that cannot classify novel observations\nonline. While unsupervised learning algorithms can invent labels for novel\nobservations, approaches to detect when multiple robots have independently\ndeveloped their own labels for the same new class are prone to erroneous or\ninconsistent matches. These issues worsen as the number of robots in the system\nincreases and prevent fusing the local maps produced by each robot into a\nconsistent global map, which is crucial for cooperative planning and joint\nmission summarization. Our proposed solution overcomes these obstacles by\nhaving each robot learn an unsupervised semantic scene model online and use a\nmultiway matching algorithm to identify consistent sets of matches between\nlearned semantic labels belonging to different robots. Compared to the state of\nthe art, the proposed solution produces 20-60% higher quality global maps that\ndo not degrade even as many more local maps are fused.\n",
+        "published": "2021",
+        "authors": [
+            "Stewart Jamieson",
+            "Kaveh Fathian",
+            "Kasra Khosoussi",
+            "Jonathan P. How",
+            "Yogesh Girdhar"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2104.03151v2",
+        "title": "Synthesized Trust Learning from Limited Human Feedback for\n  Human-Load-Reduced Multi-Robot Deployments",
+        "abstract": "  Human multi-robot system (MRS) collaboration is demonstrating potentials in\nwide application scenarios due to the integration of human cognitive skills and\na robot team's powerful capability introduced by its multi-member structure.\nHowever, due to limited human cognitive capability, a human cannot\nsimultaneously monitor multiple robots and identify the abnormal ones, largely\nlimiting the efficiency of the human-MRS collaboration. There is an urgent need\nto proactively reduce unnecessary human engagements and further reduce human\ncognitive loads. Human trust in human MRS collaboration reveals human\nexpectations on robot performance. Based on trust estimation, the work between\na human and MRS will be reallocated that an MRS will self-monitor and only\nrequest human guidance in critical situations. Inspired by that, a novel\nSynthesized Trust Learning (STL) method was developed to model human trust in\nthe collaboration. STL explores two aspects of human trust (trust level and\ntrust preference), meanwhile accelerates the convergence speed by integrating\nactive learning to reduce human workload. To validate the effectiveness of the\nmethod, tasks \"searching victims in the context of city rescue\" were designed\nin an open-world simulation environment, and a user study with 10 volunteers\nwas conducted to generate real human trust feedback. The results showed that by\nmaximally utilizing human feedback, the STL achieved higher accuracy in trust\nmodeling with a few human feedback, effectively reducing human interventions\nneeded for modeling an accurate trust, therefore reducing human cognitive load\nin the collaboration.\n",
+        "published": "2021",
+        "authors": [
+            "Yijiang Pang",
+            "Chao Huang",
+            "Rui Liu"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2104.13630v1",
+        "title": "Shared Control of Robot-Robot Collaborative Lifting with Agent Postural\n  and Force Ergonomic Optimization",
+        "abstract": "  Humans show specialized strategies for efficient collaboration. Transferring\nsimilar strategies to humanoid robots can improve their capability to interact\nwith other agents, leading the way to complex collaborative scenarios with\nmultiple agents acting on a shared environment. In this paper we present a\ncontrol framework for robot-robot collaborative lifting. The proposed shared\ncontroller takes into account the joint action of both the robots thanks to a\ncentralized controller that communicates with them, and solves the whole-system\noptimization. Efficient collaboration is ensured by taking into account the\nergonomic requirements of the robots through the optimization of posture and\ncontact forces. The framework is validated in an experimental scenario with two\niCub humanoid robots performing different payload lifting sequences.\n",
+        "published": "2021",
+        "authors": [
+            "Lorenzo Rapetti",
+            "Yeshasvi Tirupachuri",
+            "Alberto Ranavolo",
+            "Tomohiro Kawakami",
+            "Takahide Yoshiike",
+            "Daniele Pucci"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2106.03132v1",
+        "title": "Collective transport via sequential caging",
+        "abstract": "  We propose a decentralized algorithm to collaboratively transport arbitrarily\nshaped objects using a swarm of robots. Our approach starts with a task\nallocation phase that sequentially distributes locations around the object to\nbe transported starting from a seed robot that makes first contact with the\nobject. Our approach does not require previous knowledge of the shape of the\nobject to ensure caging. To push the object to a goal location, we estimate the\nrobots required to apply force on the object based on the angular difference\nbetween the target and the object. During transport, the robots follow a\nsequence of intermediate goal locations specifying the required pose of the\nobject at that location. We evaluate our approach in a physics-based simulator\nwith up to 100 robots, using three generic paths. Experiments using a group of\nKheperaIV robots demonstrate the effectiveness of our approach in a real\nsetting.\n  Keywords: Collaborative transport, Task Allocation, Caging, Robot Swarms\n",
+        "published": "2021",
+        "authors": [
+            "Vivek Shankar Vardharajan",
+            "Karthik Soma",
+            "Giovanni Beltrame"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2106.03611v3",
+        "title": "Inferring Objectives in Continuous Dynamic Games from Noise-Corrupted\n  Partial State Observations",
+        "abstract": "  Robots and autonomous systems must interact with one another and their\nenvironment to provide high-quality services to their users. Dynamic game\ntheory provides an expressive theoretical framework for modeling scenarios\ninvolving multiple agents with differing objectives interacting over time. A\ncore challenge when formulating a dynamic game is designing objectives for each\nagent that capture desired behavior. In this paper, we propose a method for\ninferring parametric objective models of multiple agents based on observed\ninteractions. Our inverse game solver jointly optimizes player objectives and\ncontinuous-state estimates by coupling them through Nash equilibrium\nconstraints. Hence, our method is able to directly maximize the observation\nlikelihood rather than other non-probabilistic surrogate criteria. Our method\ndoes not require full observations of game states or player strategies to\nidentify player objectives. Instead, it robustly recovers this information from\nnoisy, partial state observations. As a byproduct of estimating player\nobjectives, our method computes a Nash equilibrium trajectory corresponding to\nthose objectives. Thus, it is suitable for downstream trajectory forecasting\ntasks. We demonstrate our method in several simulated traffic scenarios.\nResults show that it reliably estimates player objectives from a short sequence\nof noise-corrupted partial state observations. Furthermore, using the estimated\nobjectives, our method makes accurate predictions of each player's trajectory.\n",
+        "published": "2021",
+        "authors": [
+            "Lasse Peters",
+            "David Fridovich-Keil",
+            "Vicen\u00e7 Rubies-Royo",
+            "Claire J. Tomlin",
+            "Cyrill Stachniss"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2106.12079v1",
+        "title": "Active Exploitation of Redundancies in Reconfigurable Multi-Robot\n  Systems",
+        "abstract": "  While traditional robotic systems come with a monolithic system design,\nreconfigurable multi-robot systems can share and shift physical resources in an\non-demand fashion. Multi-robot operations can benefit from this flexibility by\nactively managing system redundancies depending on current tasks and having\nmore options to respond to failure events. To support this active exploitation\nof redundancies in robotic systems, this paper details an organization model as\nbasis for planning with reconfigurable multi-robot systems. The model allows to\nexploit redundancies when optimizing a multi-robot system's probability of\nsurvival with respect to a desired mission. The resulting planning approach\ntrades safety against efficiency in robotic operations and thereby offers a new\nperspective and tool to design and improve multi-robot missions. We use a\nsimulated multi-robot planetary exploration mission to evaluate this approach\nand highlight an exemplary performance landscape.\n",
+        "published": "2021",
+        "authors": [
+            "Thomas M. Roehr"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2106.12111v3",
+        "title": "Robust Task Scheduling for Heterogeneous Robot Teams under Capability\n  Uncertainty",
+        "abstract": "  This paper develops a stochastic programming framework for multi-agent\nsystems where task decomposition, assignment, and scheduling problems are\nsimultaneously optimized. The framework can be applied to heterogeneous mobile\nrobot teams with distributed sub-tasks. Examples include pandemic robotic\nservice coordination, explore and rescue, and delivery systems with\nheterogeneous vehicles. Due to their inherent flexibility and robustness,\nmulti-agent systems are applied in a growing range of real-world problems that\ninvolve heterogeneous tasks and uncertain information. Most previous works\nassume one fixed way to decompose a task into roles that can later be assigned\nto the agents. This assumption is not valid for a complex task where the roles\ncan vary and multiple decomposition structures exist. Meanwhile, it is unclear\nhow uncertainties in task requirements and agent capabilities can be\nsystematically quantified and optimized under a multi-agent system setting. A\nrepresentation for complex tasks is proposed: agent capabilities are\nrepresented as a vector of random distributions, and task requirements are\nverified by a generalizable binary function. The conditional value at risk\n(CVaR) is chosen as a metric in the objective function to generate robust\nplans. An efficient algorithm is described to solve the model, and the whole\nframework is evaluated in two different practical test cases: capture-the-flag\nand robotic service coordination during a pandemic (e.g., COVID-19). Results\ndemonstrate that the framework is generalizable, scalable up to 140 agents and\n40 tasks for the example test cases, and provides low-cost plans that ensure a\nhigh probability of success.\n",
+        "published": "2021",
+        "authors": [
+            "Bo Fu",
+            "William Smith",
+            "Denise Rizzo",
+            "Matthew Castanier",
+            "Maani Ghaffari",
+            "Kira Barton"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2108.00346v2",
+        "title": "Desperate Times Call for Desperate Measures: Towards Risk-Adaptive Task\n  Allocation",
+        "abstract": "  Multi-robot task allocation (MRTA) problems involve optimizing the allocation\nof robots to tasks. MRTA problems are known to be challenging when tasks\nrequire multiple robots and the team is composed of heterogeneous robots. These\nchallenges are further exacerbated when we need to account for uncertainties\nencountered in the real-world. In this work, we address coalition formation in\nheterogeneous multi-robot teams with uncertain capabilities. We specifically\nfocus on tasks that require coalitions to collectively satisfy certain minimum\nrequirements. Existing approaches to uncertainty-aware task allocation either\nmaximize expected pay-off (risk-neutral approaches) or improve worst-case or\nnear-worst-case outcomes (risk-averse approaches). Within the context of our\nproblem, we demonstrate the inherent limitations of unilaterally ignoring or\navoiding risk and show that these approaches can in fact reduce the probability\nof satisfying task requirements. Inspired by models that explain foraging\nbehaviors in animals, we develop a risk-adaptive approach to task allocation.\nOur approach adaptively switches between risk-averse and risk-seeking behavior\nin order to maximize the probability of satisfying task requirements.\nComprehensive numerical experiments conclusively demonstrate that our\nrisk-adaptive approach outperforms risk-neutral and risk-averse approaches. We\nalso demonstrate the effectiveness of our approach using a simulated\nmulti-robot emergency response scenario.\n",
+        "published": "2021",
+        "authors": [
+            "Max Rudolph",
+            "Sonia Chernova",
+            "Harish Ravichandar"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2108.07122v1",
+        "title": "Tracking Multiple Fast Targets With Swarms: Interplay Between Social\n  Interaction and Agent Memory",
+        "abstract": "  The task of searching for and tracking of multiple targets is a challenging\none. However, most works in this area do not consider evasive targets that move\nfaster than the agents comprising the multi-robot system. This is due to the\nassumption that the movement patterns of such targets, combined with their\nexcessive speed, would make the task nearly impossible to accomplish. In this\nwork, we show that this is not the case and we propose a decentralized search\nand tracking strategy in which the level of exploration and exploitation\ncarried out by the swarm is adjustable. By tuning a swarm's exploration and\nexploitation dynamics, we demonstrate that there exists an optimal balance\nbetween the level of exploration and exploitation performed. This optimum\nmaximizes its tracking performance and changes depending on the number of\ntargets and the targets' movement profiles. We also show that the use of\nagent-based memory is critical in enabling the tracking of an evasive target.\nThe obtained simulation results are validated through experimental tests with a\ndecentralized swarm of six robots tracking a virtual fast-moving target.\n",
+        "published": "2021",
+        "authors": [
+            "Hian Lee Kwa",
+            "Jabez Leong Kit",
+            "Roland Bouffanais"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2108.07445v1",
+        "title": "Encirclement Guaranteed Cooperative Pursuit with Robust Model Predictive\n  Control",
+        "abstract": "  This paper studies a novel encirclement guaranteed cooperative pursuit\nproblem involving $N$ pursuers and a single evader in an unbounded\ntwo-dimensional game domain. Throughout the game, the pursuers are required to\nmaintain encirclement of the evader, i.e., the evader should always stay inside\nthe convex hull generated by all the pursuers, in addition to achieving the\nclassical capture condition. To tackle this challenging cooperative pursuit\nproblem, a robust model predictive control (RMPC) based formulation framework\nis first introduced, which simultaneously accounts for the encirclement and\ncapture requirements under the assumption that the evader's action is\nunavailable to all pursuers. Despite the reformulation, the resulting RMPC\nproblem involves a bilinear constraint due to the encirclement requirement. To\nfurther handle such a bilinear constraint, a novel encirclement guaranteed\npartitioning scheme is devised that simplifies the original bilinear RMPC\nproblem to a number of linear tube MPC (TMPC) problems solvable in a\ndecentralized manner. Simulation experiments demonstrate the effectiveness of\nthe proposed solution framework. Furthermore, comparisons with existing\napproaches show that the explicit consideration of the encirclement condition\nsignificantly improves the chance of successful capture of the evader in\nvarious scenarios.\n",
+        "published": "2021",
+        "authors": [
+            "Chen Wang",
+            "Hua Chen",
+            "Jia Pan",
+            "Wei Zhang"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2109.04264v3",
+        "title": "Solving Simultaneous Target Assignment and Path Planning Efficiently\n  with Time-Independent Execution",
+        "abstract": "  Real-time planning for a combined problem of target assignment and path\nplanning for multiple agents, also known as the unlabeled version of\nMulti-Agent Path Finding (MAPF), is crucial for high-level coordination in\nmulti-agent systems, e.g., pattern formation by robot swarms. This paper\nstudies two aspects of unlabeled-MAPF: (1) offline scenario: solving large\ninstances by centralized approaches with small computation time, and (2) online\nscenario: executing unlabeled-MAPF despite timing uncertainties of real robots.\n  For this purpose, we propose TSWAP, a novel sub-optimal complete algorithm,\nwhich takes an arbitrary initial target assignment then repeats one-timestep\npath planning with target swapping. TSWAP can adapt to both offline and online\nscenarios. We empirically demonstrate that Offline TSWAP is highly scalable;\nproviding near-optimal solutions while reducing runtime by orders of magnitude\ncompared to existing approaches. In addition, we present the benefits of Online\nTSWAP, such as delay tolerance, through real-robot demos.\n",
+        "published": "2021",
+        "authors": [
+            "Keisuke Okumura",
+            "Xavier D\u00e9fago"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2109.04927v3",
+        "title": "Learning to Swarm with Knowledge-Based Neural Ordinary Differential\n  Equations",
+        "abstract": "  Understanding decentralized dynamics from collective behaviors in swarms is\ncrucial for informing robot controller designs in artificial swarms and\nmultiagent robotic systems. However, the complexity in agent-to-agent\ninteractions and the decentralized nature of most swarms pose a significant\nchallenge to the extraction of single-robot control laws from global behavior.\nIn this work, we consider the important task of learning decentralized\nsingle-robot controllers based solely on the state observations of a swarm's\ntrajectory. We present a general framework by adopting knowledge-based neural\nordinary differential equations (KNODE) -- a hybrid machine learning method\ncapable of combining artificial neural networks with known agent dynamics. Our\napproach distinguishes itself from most prior works in that we do not require\naction data for learning. We apply our framework to two different flocking\nswarms in 2D and 3D respectively, and demonstrate efficient training by\nleveraging the graphical structure of the swarms' information network. We\nfurther show that the learnt single-robot controllers can not only reproduce\nflocking behavior in the original swarm but also scale to swarms with more\nrobots.\n",
+        "published": "2021",
+        "authors": [
+            "Tom Z. Jiahao",
+            "Lishuo Pan",
+            "M. Ani Hsieh"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2109.05663v1",
+        "title": "Learning Robot Swarm Tactics over Complex Adversarial Environments",
+        "abstract": "  To accomplish complex swarm robotic missions in the real world, one needs to\nplan and execute a combination of single robot behaviors, group primitives such\nas task allocation, path planning, and formation control, and mission-specific\nobjectives such as target search and group coverage. Most such missions are\ndesigned manually by teams of robotics experts. Recent work in automated\napproaches to learning swarm behavior has been limited to individual primitives\nwith sparse work on learning complete missions. This paper presents a\nsystematic approach to learn tactical mission-specific policies that compose\nprimitives in a swarm to accomplish the mission efficiently using neural\nnetworks with special input and output encoding. To learn swarm tactics in an\nadversarial environment, we employ a combination of 1) map-to-graph\nabstraction, 2) input/output encoding via Pareto filtering of points of\ninterest and clustering of robots, and 3) learning via neuroevolution and\npolicy gradient approaches. We illustrate this combination as critical to\nproviding tractable learning, especially given the computational cost of\nsimulating swarm missions of this scale and complexity. Successful mission\ncompletion outcomes are demonstrated with up to 60 robots. In addition, a close\nmatch in the performance statistics in training and testing scenarios shows the\npotential generalizability of the proposed framework.\n",
+        "published": "2021",
+        "authors": [
+            "Amir Behjat",
+            "Hemanth Manjunatha",
+            "Prajit KrisshnaKumar",
+            "Apurv Jani",
+            "Leighton Collins",
+            "Payam Ghassemi",
+            "Joseph Distefano",
+            "David Doermann",
+            "Karthik Dantu",
+            "Ehsan Esfahani",
+            "Souma Chowdhury"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2109.13734v1",
+        "title": "Cooperative Object Transportation using Gibbs Random Fields",
+        "abstract": "  This paper presents a novel methodology that allows a swarm of robots to\nperform a cooperative transportation task. Our approach consists of modeling\nthe swarm as a {\\em Gibbs Random Field} (GRF), taking advantage of this\nframework's locality properties. By setting appropriate potential functions,\nrobots can dynamically navigate, form groups, and perform cooperative\ntransportation in a completely decentralized fashion. Moreover, these behaviors\nemerge from the local interactions without the need for explicit communication\nor coordination. To evaluate our methodology, we perform a series of\nsimulations and proof-of-concept experiments in different scenarios. Our\nresults show that the method is scalable, adaptable, and robust to failures and\nchanges in the environment.\n",
+        "published": "2021",
+        "authors": [
+            "Paulo Rezeck",
+            "Renato M. Assun\u00e7\u00e3o",
+            "Luiz Chaimowicz"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2109.14755v1",
+        "title": "Decentralized Role Assignment in Multi-Agent Teams via Empirical\n  Game-Theoretic Analysis",
+        "abstract": "  We propose a method, based on empirical game theory, for a robot operating as\npart of a team to choose its role within the team without explicitly\ncommunicating with team members, by leveraging its knowledge about the team\nstructure. To do this, we formulate the role assignment problem as a dynamic\ngame, and borrow tools from empirical game-theoretic analysis to analyze such\ngames. Based on this game-theoretic formulation, we propose a distributed\ncontroller for each robot to dynamically decide on the best role to take. We\ndemonstrate our method in simulations of a collaborative planar manipulation\nscenario in which each agent chooses from a set of feedback control policies at\neach instant. The agents can effectively collaborate without communication to\nmanipulate the object while also avoiding collisions using our method.\n",
+        "published": "2021",
+        "authors": [
+            "Fengjun Yang",
+            "Negar Mehr",
+            "Mac Schwager"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2109.15122v1",
+        "title": "Linear Differential Games for Cooperative Behavior Planning of\n  Autonomous Vehicles Using Mixed-Integer Programming",
+        "abstract": "  Cooperatively planning for multiple agents has been proposed as a promising\nmethod for strategic and motion planning for automated vehicles. By taking into\naccount the intent of every agent, the ego agent can incorporate future\ninteractions with human-driven vehicles into its planning. The problem is often\nformulated as a multi-agent game and solved using iterative algorithms\noperating on a discretized action or state space. Even if converging to a Nash\nequilibrium, the result will often be only sub-optimal. In this paper, we\ndefine a linear differential game for a set of interacting agents and solve it\nto optimality using mixed-integer programming. A disjunctive formulation of the\norientation allows us to formulate linear constraints to prevent agent-to-agent\ncollision while preserving the non-holonomic motion properties of the vehicle\nmodel. Soft constraints account for prediction errors. We then define a joint\ncost function, where a cooperation factor can adapt between altruistic,\ncooperative, and egoistic behavior. We study the influence of the cooperation\nfactor to solve scenarios, where interaction between the agents is necessary to\nsolve them successfully. The approach is then evaluated in a racing scenario,\nwhere we show the applicability of the formulation in a closed-loop receding\nhorizon replanning fashion. By accounting for inaccuracies in the cooperative\nassumption and the actual behavior, we can indeed successfully plan an optimal\ncontrol strategy interacting closely with other agents.\n",
+        "published": "2021",
+        "authors": [
+            "Tobias Kessler",
+            "Klemens Esterle",
+            "Alois Knoll"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2110.00760v1",
+        "title": "AB-Mapper: Attention and BicNet Based Multi-agent Path Finding for\n  Dynamic Crowded Environment",
+        "abstract": "  Multi-agent path finding in dynamic crowded environments is of great academic\nand practical value for multi-robot systems in the real world. To improve the\neffectiveness and efficiency of communication and learning process during path\nplanning in dynamic crowded environments, we introduce an algorithm called\nAttention and BicNet based Multi-agent path planning with effective\nreinforcement (AB-Mapper)under the actor-critic reinforcement learning\nframework. In this framework, on the one hand, we utilize the BicNet with\ncommunication function in the actor-network to achieve intra team coordination.\nOn the other hand, we propose a centralized critic network that can selectively\nallocate attention weights to surrounding agents. This attention mechanism\nallows an individual agent to automatically learn a better evaluation of\nactions by also considering the behaviours of its surrounding agents. Compared\nwith the state-of-the-art method Mapper,our AB-Mapper is more effective (85.86%\nvs. 81.56% in terms of success rate) in solving the general path finding\nproblems with dynamic obstacles. In addition, in crowded scenarios, our method\noutperforms the Mapper method by a large margin,reaching a stunning gap of more\nthan 40% for each experiment.\n",
+        "published": "2021",
+        "authors": [
+            "Huifeng Guan",
+            "Yuan Gao",
+            "Min Zhao",
+            "Yong Yang",
+            "Fuqin Deng",
+            "Tin Lun Lam"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2110.06342v2",
+        "title": "Decentralized Connectivity Maintenance for Multi-robot Systems Under\n  Motion and Sensing Uncertainties",
+        "abstract": "  Communication connectivity is desirable for safe and efficient operation of\nmulti-robot systems. While decentralized algorithms for connectivity\nmaintenance have been explored in recent literature, the majority of these\nworks do not account for robot motion and sensing uncertainties. These\nuncertainties are inherent in practical robots and result in robots deviating\nfrom their desired positions which could potentially result in a loss of\nconnectivity. In this paper we present a Decentralized Connectivity Maintenance\nalgorithm accounting for robot motion and sensing Uncertainties (DCMU). We\nfirst propose a novel weighted graph definition for the multi-robot system that\naccounts for the aforementioned uncertainties along with realistic connectivity\nconstraints such as line-of-sight connectivity and collision avoidance. Next we\ndesign a decentralized gradient-based controller for connectivity maintenance\nwhere we derive the gradients of our weighted graph edge weights required for\ncomputing the control. Finally, we perform multiple simulations to validate the\nconnectivity maintenance performance of our DCMU algorithm under robot motion\nand sensing uncertainties and show an improvement compared to previous work.\n",
+        "published": "2021",
+        "authors": [
+            "Akshay Shetty",
+            "Timmy Hussain",
+            "Grace Gao"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2110.08853v1",
+        "title": "On-line Optimal Ranging Sensor Deployment for Robotic Exploration",
+        "abstract": "  Navigation in an unknown environment without any preexisting positioning\ninfrastructure has always been hard for mobile robots. This paper presents a\nself-deployable ultra wideband UWB infrastructure by mobile agents, that\npermits a dynamic placement and runtime extension of UWB anchors infrastructure\nwhile the robot explores the new environment. We provide a detailed analysis of\nthe uncertainty of the positioning system while the UWB infrastructure grows.\nMoreover, we developed a genetic algorithm that minimizes the deployment of new\nanchors, saving energy and resources on the mobile robot and maximizing the\ntime of the mission. Although the presented approach is general for any class\nof mobile system, we run simulations and experiments with indoor drones.\nResults demonstrate that maximum positioning uncertainty is always controlled\nunder the user's threshold, using the Geometric Dilution of Precision (GDoP).\n",
+        "published": "2021",
+        "authors": [
+            "Luca Santoro",
+            "Davide Brunelli",
+            "Daniele Fontanelli"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2110.12307v2",
+        "title": "Characterizing The Limits of Linear Modeling of Non-Linear Swarm\n  Behaviors",
+        "abstract": "  We study the limits of linear modeling of swarm behavior by characterizing\nthe inflection point beyond which linear models of swarm collective behavior\nbreak down. The problem we consider is a central place object gathering task.\nWe design a linear model which strives to capture the underlying dynamics of\nobject gathering in robot swarms from first principles, rather than extensively\nrelying on post-hoc model fitting. We evaluate our model with swarms of up to\n8,000 robots in simulation, demonstrating that it accurately captures\nunderlying swarm behavioral dynamics when the swarm can be approximated using\nthe mean-field model, and when it cannot, and finite-size effects are present.\nWe further apply our model to swarms exhibiting non-linear behaviors, and show\nthat it still provides accurate predictions in some scenarios, thereby\nestablishing better practical limits on linear modeling of swarm behaviors.\n",
+        "published": "2021",
+        "authors": [
+            "John Harwell",
+            "Angel Sylvester",
+            "Maria Gini"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2110.14891v1",
+        "title": "Integrated Task Assignment and Path Planning for Capacitated Multi-Agent\n  Pickup and Delivery",
+        "abstract": "  Multi-agent Pickup and Delivery (MAPD) is a challenging industrial problem\nwhere a team of robots is tasked with transporting a set of tasks, each from an\ninitial location and each to a specified target location. Appearing in the\ncontext of automated warehouse logistics and automated mail sortation, MAPD\nrequires first deciding which robot is assigned what task (i.e., Task\nAssignment or TA) followed by a subsequent coordination problem where each\nrobot must be assigned collision-free paths so as to successfully complete its\nassignment (i.e., Multi-Agent Path Finding or MAPF). Leading methods in this\narea solve MAPD sequentially: first assigning tasks, then assigning paths. In\nthis work we propose a new coupled method where task assignment choices are\ninformed by actual delivery costs instead of by lower-bound estimates. The main\ningredients of our approach are a marginal-cost assignment heuristic and a\nmeta-heuristic improvement strategy based on Large Neighbourhood Search. As a\nfurther contribution, we also consider a variant of the MAPD problem where each\nrobot can carry multiple tasks instead of just one. Numerical simulations show\nthat our approach yields efficient and timely solutions and we report\nsignificant improvement compared with other recent methods from the literature.\n",
+        "published": "2021",
+        "authors": [
+            "Zhe Chen",
+            "Javier Alonso-Mora",
+            "Xiaoshan Bai",
+            "Daniel D. Harabor",
+            "Peter J. Stuckey"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2111.14295v2",
+        "title": "Frontier-led Swarming: Robust Multi-Robot Coverage of Unknown\n  Environments",
+        "abstract": "  This paper proposes a novel swarm-based control algorithm for exploration and\ncoverage of unknown environments, while maintaining a formation that permits\nshort-range communication. The algorithm combines two elements: swarm rules for\nmaintaining a close-knit formation and frontier search for driving exploration\nand coverage. Inspired by natural systems in which large numbers of simple\nagents (e.g., schooling fish, flocking birds, swarming insects) perform\ncomplicated collective behaviors for efficiency and safety, the first element\nuses three simple rules to maintain a swarm formation. The second element\nprovides a means to select promising regions to explore (and cover) by\nminimising a cost function involving robots' relative distance to frontier\ncells and the frontier's size. We tested the performance of our approach on\nheterogeneous and homogeneous groups of mobile robots in different\nenvironments. We measure both coverage performance and swarm formation\nstatistics as indicators of the robots' ability to explore effectively while\nmaintaining a formation conducive to short-range communication. Through a\nseries of comparison experiments, we demonstrate that our proposed strategy has\nsuperior performance to recently presented map coverage methodologies and\nconventional swarming methods.\n",
+        "published": "2021",
+        "authors": [
+            "Vu Phi Tran",
+            "Matthew A. Garratt",
+            "Kathryn Kasmarik",
+            "Sreenatha G. Anavatti"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2112.01107v1",
+        "title": "Control of over-redundant cooperative manipulation via sampled\n  communication",
+        "abstract": "  In this work we consider the problem of mobile robots that need to\nmanipulate/transport an object via cables or robotic arms. We consider the\nscenario where the number of manipulating robots is redundant, i.e. a desired\nobject configuration can be obtained by different configurations of the robots.\nThe objective of this work is to show that communication can be used to\nimplement cooperative local feedback controllers in the robots to improve\ndisturbance rejection and reduce structural stress in the object. In particular\nwe consider the realistic scenario where measurements are sampled and\ntransmitted over wireless, and the sampling period is comparable with the\nsystem dynamics time constants. We first propose a kinematic model which is\nconsistent with the overall systems dynamics under high-gain control and then\nwe provide sufficient conditions for the exponential stability and monotonic\ndecrease of the configuration error under different norms. Finally, we test the\nproposed controllers on the full dynamical systems showing the benefit of local\ncommunication.\n",
+        "published": "2021",
+        "authors": [
+            "Enrica Rossi",
+            "Marco Tognon",
+            "Ruggero Carli",
+            "Antonio Franchi",
+            "Luca Schenato"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2112.06879v1",
+        "title": "Multi-Robot On-site Shared Analytics Information and Computing",
+        "abstract": "  Computation load-sharing across a network of heterogeneous robots is a\npromising approach to increase robots capabilities and efficiency as a team in\nextreme environments. However, in such environments, communication links may be\nintermittent and connections to the cloud or internet may be nonexistent. In\nthis paper we introduce a communication-aware, computation task scheduling\nproblem for multi-robot systems and propose an integer linear program (ILP)\nthat optimizes the allocation of computational tasks across a network of\nheterogeneous robots, accounting for the networked robots' computational\ncapabilities and for available (and possibly time-varying) communication links.\nWe consider scheduling of a set of inter-dependent required and optional tasks\nmodeled by a dependency graph. We present a consensus-backed scheduling\narchitecture for shared-world, distributed systems. We validate the ILP\nformulation and the distributed implementation in different computation\nplatforms and in simulated scenarios with a bias towards lunar or planetary\nexploration scenarios. Our results show that the proposed implementation can\noptimize schedules to allow a threefold increase the amount of rewarding tasks\nperformed (e.g., science measurements) compared to an analogous system with no\ncomputational load-sharing.\n",
+        "published": "2021",
+        "authors": [
+            "Joshua Vander Hook",
+            "Federico Rossi",
+            "Tiago Vaquero",
+            "Martina Troesch",
+            "Marc Sanchez Net",
+            "Joshua Schoolcraft",
+            "Jean-Pierre de la Croix",
+            "Steve Chien"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2201.09335v3",
+        "title": "On the throughput of the common target area for robotic swarm strategies\n  -- extended version",
+        "abstract": "  A robotic swarm may encounter traffic congestion when many robots\nsimultaneously attempt to reach the same area. For solving that efficiently,\nrobots must execute decentralised traffic control algorithms. In this work, we\npropose a measure for evaluating the access efficiency of a common target area\nas the number of robots in the swarm rises: the common target area throughput.\nWe also employ here the target area asymptotic throughput -- that is, the\nthroughput of a target region with a limited area as the time tends to infinity\n-- because it is always finite as the number of robots grows, opposed to the\nrelation arrival time at the target per number of robots that tends to\ninfinity. Using this measure, we can analytically compare the effectiveness of\ndifferent algorithms. In particular, we propose and formally evaluate three\ndifferent theoretical strategies for getting to a circular target area: (i)\nforming parallel queues towards the target area, (ii) forming a hexagonal\npacking through a corridor going to the target, and (iii) making multiple\ncurved trajectories towards the boundary of the target area. We calculate the\nthroughput for a fixed time and the asymptotic throughput for these strategies.\nAdditionally, we corroborate these results by simulations, showing that when a\nstrategy has higher throughput, its arrival time per number of robots is lower.\nThus, we conclude that using throughput is well suited for comparing congestion\nalgorithms for a common target area in robotic swarms even if we do not have\ntheir closed asymptotic equation.\n",
+        "published": "2022",
+        "authors": [
+            "Yuri Tavares dos Passos",
+            "Xavier Duquesne",
+            "Leandro Soriano Marcolino"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2201.09337v3",
+        "title": "Congestion control algorithms for robotic swarms with a common target\n  based on the throughput of the target area",
+        "abstract": "  When a large number of robots try to reach a common area, congestions happen,\ncausing severe delays. To minimise congestion in a robotic swarm system,\ntraffic control algorithms must be employed in a decentralised manner. Based on\nstrategies aimed to maximise the throughput of the common target area, we\ndeveloped two novel algorithms for robots using artificial potential fields for\nobstacle avoidance and navigation. One algorithm is inspired by creating a\nqueue to get to the target area (Single Queue Former -- SQF), while the other\nmakes the robots touch the boundary of the circular area by using vector fields\n(Touch and Run Vector Fields -- TRVF). We performed simulation experiments to\nshow that the proposed algorithms are bounded by the throughput of their\ninspired theoretical strategies and compare the two novel algorithms with\nstate-of-art algorithms for the same problem (PCC, EE and PCC-EE). The SQF\nalgorithm significantly outperforms all other algorithms for a large number of\nrobots or when the circular target region radius is small. TRVF, on the other\nhand, is better than SQF only for a limited number of robots and outperforms\nonly PCC for numerous robots. However, it allows us to analyse the potential\nimpacts on the throughput when transferring an idea from a theoretical strategy\nto a concrete algorithm that considers changing linear speeds and distances\nbetween robots.\n",
+        "published": "2022",
+        "authors": [
+            "Yuri Tavares dos Passos",
+            "Xavier Duquesne",
+            "Leandro Soriano Marcolino"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2201.10150v2",
+        "title": "Multi-UAV Coverage Planning with Limited Endurance in Disaster\n  Environment",
+        "abstract": "  For scenes such as floods and earthquakes, the disaster area is large, and\nrescue time is tight. Multi-UAV exploration is more efficient than a single\nUAV. Existing UAV exploration work is modeled as a Coverage Path Planning (CPP)\ntask to achieve full coverage of the area in the presence of obstacles.\nHowever, the endurance capability of UAV is limited, and the rescue time is\nurgent. Thus, even using multiple UAVs cannot achieve complete disaster area\ncoverage in time. Therefore, in this paper we propose a multi-Agent\nEndurance-limited CPP (MAEl-CPP) problem based on a priori heatmap of the\ndisaster area, which requires the exploration of more valuable areas under\nlimited energy. Furthermore, we propose a path planning algorithm for the\nMAEl-CPP problem, by ranking the possible disaster areas according to their\nimportance through satellite or remote aerial images and completing path\nplanning according to the importance level. Experimental results show that our\nproposed algorithm is at least twice as effective as the existing method in\nterms of search efficiency.\n",
+        "published": "2022",
+        "authors": [
+            "Hongyu Song",
+            "Jincheng Yu",
+            "Jiantao Qiu",
+            "Zhixiao Sun",
+            "Kuijun Lang",
+            "Qing Luo",
+            "Yuan Shen",
+            "Yu Wang"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2201.10635v1",
+        "title": "Simultaneous Human-robot Matching and Routing for Multi-robot Tour\n  Guiding under Time Uncertainty",
+        "abstract": "  This work presents a framework for multi-robot tour guidance in a partially\nknown environment with uncertainty, such as a museum. In the proposed\ncentralized multi-robot planner, a simultaneous matching and routing problem\n(SMRP) is formulated to match the humans with robot guides according to their\nselected places of interest (POIs) and generate the routes and schedules for\nthe robots according to uncertain spatial and time estimation. A large\nneighborhood search algorithm is developed to efficiently find sub-optimal\nlow-cost solutions for the SMRP. The scalability and optimality of the\nmulti-robot planner are evaluated computationally under different numbers of\nhumans, robots, and POIs. The largest case tested involves 50 robots, 250\nhumans, and 50 POIs. Then, a photo-realistic multi-robot simulation platform\nwas developed based on Habitat-AI to verify the tour guiding performance in an\nuncertain indoor environment. Results demonstrate that the proposed centralized\ntour planner is scalable, makes a smooth trade-off in the plans under different\nenvironmental constraints, and can lead to robust performance with inaccurate\nuncertainty estimations (within a certain margin).\n",
+        "published": "2022",
+        "authors": [
+            "Bo Fu",
+            "Tribhi Kathuria",
+            "Denise Rizzo",
+            "Matthew Castanier",
+            "X. Jessie Yang",
+            "Maani Ghaffari",
+            "Kira Barton"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2201.12338v1",
+        "title": "Machine Learning Based Relative Orbit Transfer for Swarm Spacecraft\n  Motion Planning",
+        "abstract": "  In this paper we describe a machine learning based framework for spacecraft\nswarm trajectory planning. In particular, we focus on coordinating motions of\nmulti-spacecraft in formation flying through passive relative orbit(PRO)\ntransfers. Accounting for spacecraft dynamics while avoiding collisions between\nthe agents makes spacecraft swarm trajectory planning difficult. Centralized\napproaches can be used to solve this problem, but are computationally demanding\nand scale poorly with the number of agents in the swarm. As a result,\ncentralized algorithms are ill-suited for real time trajectory planning on\nboard small spacecraft (e.g. CubeSats) comprising the swarm. In our approach a\nneural network is used to approximate solutions of a centralized method. The\nnecessary training data is generated using a centralized convex optimization\nframework through which several instances of the n=10 spacecraft swarm\ntrajectory planning problem are solved. We are interested in answering the\nfollowing questions which will give insight on the potential utility of deep\nlearning-based approaches to the multi-spacecraft motion planning problem: 1)\nCan neural networks produce feasible trajectories that satisfy safety\nconstraints (e.g. collision avoidance) and low in fuel cost? 2) Can a neural\nnetwork trained using n spacecraft data be used to solve problems for\nspacecraft swarms of differing size?\n",
+        "published": "2022",
+        "authors": [
+            "Alex Sabol",
+            "Kyongsik Yun",
+            "Muhammad Adil",
+            "Changrak Choi",
+            "Ramtin Madani"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2203.00308v1",
+        "title": "Collaborative Robot Mapping using Spectral Graph Analysis",
+        "abstract": "  In this paper, we deal with the problem of creating globally consistent pose\ngraphs in a centralized multi-robot SLAM framework. For each robot to act\nautonomously, individual onboard pose estimates and maps are maintained, which\nare then communicated to a central server to build an optimized global map.\nHowever, inconsistencies between onboard and server estimates can occur due to\nonboard odometry drift or failure. Furthermore, robots do not benefit from the\ncollaborative map if the server provides no feedback in a computationally\ntractable and bandwidth-efficient manner. Motivated by this challenge, this\npaper proposes a novel collaborative mapping framework to enable accurate\nglobal mapping among robots and server. In particular, structural differences\nbetween robot and server graphs are exploited at different spatial scales using\ngraph spectral analysis to generate necessary constraints for the individual\nrobot pose graphs. The proposed approach is thoroughly analyzed and validated\nusing several real-world multi-robot field deployments where we show\nimprovements of the onboard system up to 90%.\n",
+        "published": "2022",
+        "authors": [
+            "Lukas Bernreiter",
+            "Shehryar Khattak",
+            "Lionel Ott",
+            "Roland Siegwart",
+            "Marco Hutter",
+            "Cesar Cadena"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2203.00315v3",
+        "title": "Quick Multi-Robot Motion Planning by Combining Sampling and Search",
+        "abstract": "  We propose a novel algorithm to solve multi-robot motion planning (MRMP)\nrapidly, called Simultaneous Sampling-and-Search Planning (SSSP). Conventional\nMRMP studies mostly take the form of two-phase planning that constructs\nroadmaps and then finds inter-robot collision-free paths on those roadmaps. In\ncontrast, SSSP simultaneously performs roadmap construction and collision-free\npathfinding. This is realized by uniting techniques of single-robot\nsampling-based motion planning and search techniques of multi-agent pathfinding\non discretized spaces. Doing so builds the small search space, leading to quick\nMRMP. SSSP ensures finding a solution eventually if exists. Our empirical\nevaluations in various scenarios demonstrate that SSSP significantly\noutperforms standard approaches to MRMP, i.e., solving more problem instances\nmuch faster. We also applied SSSP to planning for 32 ground robots in a dense\nsituation.\n",
+        "published": "2022",
+        "authors": [
+            "Keisuke Okumura",
+            "Xavier D\u00e9fago"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2203.07142v1",
+        "title": "Conservative Filtering for Heterogeneous Decentralized Data Fusion in\n  Dynamic Robotic Systems",
+        "abstract": "  This paper presents a method for Bayesian multi-robot peer-to-peer data\nfusion where any pair of autonomous robots hold non-identical, but overlapping\nparts of a global joint probability distribution, representing real world\ninference tasks (e.g., mapping, tracking). It is shown that in dynamic\nstochastic systems, filtering, which corresponds to marginalization of past\nvariables, results in direct and hidden dependencies between variables not\nmutually monitored by the robots, which might lead to an overconfident fused\nestimate. The paper makes both theoretical and practical contributions by\nproviding (i) a rigorous analysis of the origin of the dependencies and and\n(ii) a conservative filtering algorithm for heterogeneous data fusion in\ndynamic systems that can be integrated with existing fusion algorithms. This\nwork uses factor graphs as an analysis tool and an inference engine. Each robot\nin the network maintains a local factor graph and communicates only relevant\nparts of it (a sub-graph) to its neighboring robot. We discuss the\napplicability to various multi-robot robotic applications and demonstrate the\nperformance using a multi-robot multi-target tracking simulation, showing that\nthe proposed algorithm produces conservative estimates at each robot.\n",
+        "published": "2022",
+        "authors": [
+            "Ofer Dagan",
+            "Nisar R. Ahmed"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2203.11004v1",
+        "title": "Multi-Agent Relative Pose Estimation with UWB and Constrained\n  Communications",
+        "abstract": "  Inter-agent relative localization is critical for any multi-robot system\noperating in the absence of external positioning infrastructure or prior\nenvironmental knowledge. We propose a novel inter-agent relative 2D pose\nestimation system where each participating agent is equipped with several\nultra-wideband (UWB) ranging tags. Prior work typically supplements noisy UWB\nrange measurements with additional continuously transmitted data, such as\nodometry, making these approaches scale poorly with increased swarm size or\ndecreased communication throughput. This approach addresses these concerns by\nusing only locally collected UWB measurements with no additionally transmitted\ndata. By modeling observed ranging biases and systematic antenna obstructions\nin our proposed optimization solution, our experimental results demonstrate an\nimproved mean position error (while remaining competitive in other metrics)\nover a similar state-of-the-art approach that additionally relies on\ncontinuously transmitted odometry.\n",
+        "published": "2022",
+        "authors": [
+            "Andrew Fishberg",
+            "Jonathan P. How"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2203.12832v1",
+        "title": "Heterogeneous Ground-Air Autonomous Vehicle Networking in Austere\n  Environments: Practical Implementation of a Mesh Network in the DARPA\n  Subterranean Challenge",
+        "abstract": "  Implementing a wireless mesh network in a real-life scenario requires a\nsignificant systems engineering effort to turn a network concept into a\ncomplete system. This paper presents an evaluation of a fielded system within\nthe DARPA Subterranean (SubT) Challenge Final Event that contributed to a 3rd\nplace finish. Our system included a team of air and ground robots, deployable\nmesh extender nodes, and a human operator base station. This paper presents a\nreal-world evaluation of a stack optimized for air and ground robotic\nexploration in a RF-limited environment under practical system design\nlimitations. Our highly customizable solution utilizes a minimum of non-free\ncomponents with form factor options suited for UAV operations and provides\ninsight into network operations at all levels. We present performance metrics\nbased on our performance in the Final Event of the DARPA Subterranean\nChallenge, demonstrating the practical successes and limitations of our\napproach, as well as a set of lessons learned and suggestions for future\nimprovements.\n",
+        "published": "2022",
+        "authors": [
+            "Harel Biggie",
+            "Steve McGuire"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2203.16960v1",
+        "title": "Multi-Agent Spatial Predictive Control with Application to Drone\n  Flocking (Extended Version)",
+        "abstract": "  We introduce the novel concept of Spatial Predictive Control (SPC) to solve\nthe following problem: given a collection of agents (e.g., drones) with\npositional low-level controllers (LLCs) and a mission-specific distributed cost\nfunction, how can a distributed controller achieve and maintain cost-function\nminimization without a plant model and only positional observations of the\nenvironment? Our fully distributed SPC controller is based strictly on the\nposition of the agent itself and on those of its neighboring agents. This\ninformation is used in every time-step to compute the gradient of the cost\nfunction and to perform a spatial look-ahead to predict the best next target\nposition for the LLC. Using a high-fidelity simulation environment, we show\nthat SPC outperforms the most closely related class of controllers, Potential\nField Controllers, on the drone flocking problem. We also show that SPC is able\nto cope with a potential sim-to-real transfer gap by demonstrating its\nperformance on real hardware, namely our implementation of flocking using nine\nCrazyflie 2.1 drones.\n",
+        "published": "2022",
+        "authors": [
+            "Andreas Brandst\u00e4tter",
+            "Scott A. Smolka",
+            "Scott D. Stoller",
+            "Ashish Tiwari",
+            "Radu Grosu"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2204.08594v1",
+        "title": "Multi-UAV Collision Avoidance using Multi-Agent Reinforcement Learning\n  with Counterfactual Credit Assignment",
+        "abstract": "  Multi-UAV collision avoidance is a challenging task for UAV swarm\napplications due to the need of tight cooperation among swarm members for\ncollision-free path planning. Centralized Training with Decentralized Execution\n(CTDE) in Multi-Agent Reinforcement Learning is a promising method for\nmulti-UAV collision avoidance, in which the key challenge is to effectively\nlearn decentralized policies that can maximize a global reward cooperatively.\nWe propose a new multi-agent critic-actor learning scheme called MACA for UAV\nswarm collision avoidance. MACA uses a centralized critic to maximize the\ndiscounted global reward that considers both safety and energy efficiency, and\nan actor per UAV to find decentralized policies to avoid collisions. To solve\nthe credit assignment problem in CTDE, we design a counterfactual baseline that\nmarginalizes both an agent's state and action, enabling to evaluate the\nimportance of an agent in the joint observation-action space. To train and\nevaluate MACA, we design our own simulation environment MACAEnv to closely\nmimic the realistic behaviors of a UAV swarm. Simulation results show that MACA\nachieves more than 16% higher average reward than two state-of-the-art MARL\nalgorithms and reduces failure rate by 90% and response time by over 99%\ncompared to a conventional UAV swarm collision avoidance algorithm in all test\nscenarios.\n",
+        "published": "2022",
+        "authors": [
+            "Shuangyao Huang",
+            "Haibo Zhang",
+            "Zhiyi Huang"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2204.13926v1",
+        "title": "Cooperative Aerial-Ground Multi-Robot System for Automated Construction\n  Tasks",
+        "abstract": "  In this paper, we study a cooperative aerial-ground robotic team and its\napplication to the task of automated construction. We propose a solution for\nplanning and coordinating the mission of constructing a wall with a predefined\nstructure for a heterogeneous system consisting of one mobile robot and up to\nthree unmanned aerial vehicles. The wall consists of bricks of various weights\nand sizes, some of which need to be transported using multiple robots\nsimultaneously. To that end, we use hierarchical task representation to specify\ninterrelationships between mission subtasks and employ effective scheduling and\ncoordination mechanism, inspired by Generalized Partial Global Planning. We\nevaluate the performance of the method under different optimization criteria\nand validate the solution in the realistic Gazebo simulation environment.\n",
+        "published": "2022",
+        "authors": [
+            "Marko Krizmancic",
+            "Barbara Arbanas",
+            "Tamara Petrovic",
+            "Frano Petric",
+            "Stjepan Bogdan"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2205.00614v1",
+        "title": "Extracting Symbolic Models of Collective Behaviors with Graph Neural\n  Networks and Macro-Micro Evolution",
+        "abstract": "  Collective behaviors are typically hard to model. The scale of the swarm, the\nlarge number of interactions, and the richness and complexity of the behaviors\nare factors that make it difficult to distill a collective behavior into simple\nsymbolic expressions. In this paper, we propose a novel approach to symbolic\nregression designed to facilitate such modeling. Using raw and post-processed\ndata as an input, our approach produces viable symbolic expressions that\nclosely model the target behavior. Our approach is composed of two phases. In\nthe first, a graph neural network (GNN) is trained to extract an approximation\nof the target behavior. In the second phase, the GNN is used to produce data\nfor a nested evolutionary algorithm called macro-micro evolution (MME). The\nmacro layer of this algorithm selects candidate symbolic expressions, while the\nmicro layer tunes its parameters. Experimental evaluation shows that our\napproach outperforms competing solutions for symbolic regression, making it\npossible to extract compact expressions for complex swarm behaviors.\n",
+        "published": "2022",
+        "authors": [
+            "Stephen Powers",
+            "Carlo Pinciroli"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2205.02428v4",
+        "title": "HARL: A Novel Hierachical Adversary Reinforcement Learning for\n  Automoumous Intersection Management",
+        "abstract": "  As an emerging technology, Connected Autonomous Vehicles (CAVs) are believed\nto have the ability to move through intersections in a faster and safer manner,\nthrough effective Vehicle-to-Everything (V2X) communication and global\nobservation. Autonomous intersection management is a key path to efficient\ncrossing at intersections, which reduces unnecessary slowdowns and stops\nthrough adaptive decision process of each CAV, enabling fuller utilization of\nthe intersection space. Distributed reinforcement learning (DRL) offers a\nflexible, end-to-end model for AIM, adapting for many intersection scenarios.\nWhile DRL is prone to collisions as the actions of multiple sides in the\ncomplicated interactions are sampled from a generic policy, restricting the\napplication of DRL in realistic scenario. To address this, we propose a\nhierarchical RL framework where models at different levels vary in receptive\nscope, action step length, and feedback period of reward. The upper layer model\naccelerate CAVs to prevent them from being clashed, while the lower layer model\nadjust the trends from upper layer model to avoid the change of mobile state\ncausing new conflicts. And the real action of CAV at each step is co-determined\nby the trends from both levels, forming a real-time balance in the adversarial\nprocess. The proposed model is proven effective in the experiment undertaken in\na complicated intersection with 4 branches and 4 lanes each branch, and show\nbetter performance compared with baselines.\n",
+        "published": "2022",
+        "authors": [
+            "Guanzhou Li",
+            "Jianping Wu",
+            "Yujing He"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2205.03321v1",
+        "title": "Learning Scalable Policies over Graphs for Multi-Robot Task Allocation\n  using Capsule Attention Networks",
+        "abstract": "  This paper presents a novel graph reinforcement learning (RL) architecture to\nsolve multi-robot task allocation (MRTA) problems that involve tasks with\ndeadlines and workload, and robot constraints such as work capacity. While\ndrawing motivation from recent graph learning methods that learn to solve\ncombinatorial optimization (CO) problems such as multi-Traveling Salesman and\nVehicle Routing Problems using RL, this paper seeks to provide better\nperformance (compared to non-learning methods) and important scalability\n(compared to existing learning architectures) for the stated class of MRTA\nproblems. The proposed neural architecture, called Capsule Attention-based\nMechanism or CapAM acts as the policy network, and includes three main\ncomponents: 1) an encoder: a Capsule Network based node embedding model to\nrepresent each task as a learnable feature vector; 2) a decoder: an\nattention-based model to facilitate a sequential output; and 3) context: that\nencodes the states of the mission and the robots. To train the CapAM model, the\npolicy-gradient method based on REINFORCE is used. When evaluated over unseen\nscenarios, CapAM demonstrates better task completion performance and $>$10\ntimes faster decision-making compared to standard non-learning based online\nMRTA methods. CapAM's advantage in generalizability, and scalability to test\nproblems of size larger than those used in training, are also successfully\ndemonstrated in comparison to a popular approach for learning to solve CO\nproblems, namely the purely attention mechanism.\n",
+        "published": "2022",
+        "authors": [
+            "Steve Paul",
+            "Payam Ghassemi",
+            "Souma Chowdhury"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2205.13135v3",
+        "title": "LAMP 2.0: A Robust Multi-Robot SLAM System for Operation in Challenging\n  Large-Scale Underground Environments",
+        "abstract": "  Search and rescue with a team of heterogeneous mobile robots in unknown and\nlarge-scale underground environments requires high-precision localization and\nmapping. This crucial requirement is faced with many challenges in complex and\nperceptually-degraded subterranean environments, as the onboard perception\nsystem is required to operate in off-nominal conditions (poor visibility due to\ndarkness and dust, rugged and muddy terrain, and the presence of self-similar\nand ambiguous scenes). In a disaster response scenario and in the absence of\nprior information about the environment, robots must rely on noisy sensor data\nand perform Simultaneous Localization and Mapping (SLAM) to build a 3D map of\nthe environment and localize themselves and potential survivors. To that end,\nthis paper reports on a multi-robot SLAM system developed by team CoSTAR in the\ncontext of the DARPA Subterranean Challenge. We extend our previous work, LAMP,\nby incorporating a single-robot front-end interface that is adaptable to\ndifferent odometry sources and lidar configurations, a scalable multi-robot\nfront-end to support inter- and intra-robot loop closure detection for large\nscale environments and multi-robot teams, and a robust back-end equipped with\nan outlier-resilient pose graph optimization based on Graduated Non-Convexity.\nWe provide a detailed ablation study on the multi-robot front-end and back-end,\nand assess the overall system performance in challenging real-world datasets\ncollected across mines, power plants, and caves in the United States. We also\nrelease our multi-robot back-end datasets (and the corresponding ground truth),\nwhich can serve as challenging benchmarks for large-scale underground SLAM.\n",
+        "published": "2022",
+        "authors": [
+            "Yun Chang",
+            "Kamak Ebadi",
+            "Christopher E. Denniston",
+            "Muhammad Fadhil Ginting",
+            "Antoni Rosinol",
+            "Andrzej Reinke",
+            "Matteo Palieri",
+            "Jingnan Shi",
+            "Arghya Chatterjee",
+            "Benjamin Morrell",
+            "Ali-akbar Agha-mohammadi",
+            "Luca Carlone"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2206.00130v1",
+        "title": "CBS-Budget (CBSB): A Complete and Bounded Suboptimal Search for\n  Multi-Agent Path Finding",
+        "abstract": "  Multi-Agent Path Finding (MAPF) is the problem of finding a collection of\ncollision-free paths for a team of multiple agents while minimizing some global\ncost, such as the sum of the time travelled by all agents, or the time\ntravelled by the last agent. Conflict Based Search (CBS) is a leading complete\nand optimal MAPF solver which lazily explores the joint agent state space,\nusing an admissible heuristic joint plan. Such an admissible heuristic joint\nplan is computed by combining individual shortest paths found without\nconsidering inter-agent conflicts, and which becomes gradually more informed as\nconstraints are added to individual agents' path planning problems to avoid\ndiscovered conflicts. In this paper, we seek to speedup CBS by finding a more\ninformed heuristic joint plan which is bounded from above. We first propose the\nbudgeted Class-Ordered A* (bCOA*), a novel algorithm that finds the shortest\npath with minimal number of conflicts that is upper bounded in terms of length.\nThen, we propose a novel bounded-cost variant of CBS, called CBS-Budget (CBSB)\nby using a bCOA* search at the low-level search of the CBS and by using a\nmodified focal search at the high-level search of the CBS. We prove that CBSB\nis complete and bounded-suboptimal. In our numerical experiments, CBSB finds a\nnear optimal solution for hundreds of agents within a fraction of a second.\nCBSB shows state-of-the-art performance, comparable to Explicit Estimation CBS\n(EECBS), an enhanced recent version of CBS. On the other hand, CBSB is easier\nto implement than EECBS, since only two priority queues at the high-level\nsearch are needed as in Enhanced CBS (ECBS).\n",
+        "published": "2022",
+        "authors": [
+            "Jaein Lim",
+            "Panagiotis Tsiotras"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2206.01109v1",
+        "title": "Game-theoretic Utility Tree for Multi-Robot Cooperative Pursuit Strategy",
+        "abstract": "  Underlying relationships among multiagent systems (MAS) in hazardous\nscenarios can be represented as game-theoretic models. In adversarial\nenvironments, the adversaries can be intentional or unintentional based on\ntheir needs and motivations. Agents will adopt suitable decision-making\nstrategies to maximize their current needs and minimize their expected costs.\nThis paper proposes and extends the new hierarchical network-based model,\ntermed Game-theoretic Utility Tree (GUT), to arrive at a cooperative pursuit\nstrategy to catch an evader in the Pursuit-Evasion game domain. We verify and\ndemonstrate the performance of the proposed method using the Robotarium\nplatform compared to the conventional constant bearing (CB) and pure pursuit\n(PP) strategies. The experiments demonstrated the effectiveness of the GUT, and\nthe performances validated that the GUT could effectively organize cooperation\nstrategies, helping the group with fewer advantages achieve higher performance.\n",
+        "published": "2022",
+        "authors": [
+            "Qin Yang",
+            "Ramviyas Parasuraman"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2206.02245v1",
+        "title": "ACHORD: Communication-Aware Multi-Robot Coordination with Intermittent\n  Connectivity",
+        "abstract": "  Communication is an important capability for multi-robot exploration because\n(1) inter-robot communication (comms) improves coverage efficiency and (2)\nrobot-to-base comms improves situational awareness. Exploring comms-restricted\n(e.g., subterranean) environments requires a multi-robot system to tolerate and\nanticipate intermittent connectivity, and to carefully consider comms\nrequirements, otherwise mission-critical data may be lost. In this paper, we\ndescribe and analyze ACHORD (Autonomous & Collaborative High-Bandwidth\nOperations with Radio Droppables), a multi-layer networking solution which\ntightly co-designs the network architecture and high-level decision-making for\nimproved comms. ACHORD provides bandwidth prioritization and timely and\nreliable data transfer despite intermittent connectivity. Furthermore, it\nexposes low-layer networking metrics to the application layer to enable robots\nto autonomously monitor, map, and extend the network via droppable radios, as\nwell as restore connectivity to improve collaborative exploration. We evaluate\nour solution with respect to the comms performance in several challenging\nunderground environments including the DARPA SubT Finals competition\nenvironment. Our findings support the use of data stratification and flow\ncontrol to improve bandwidth-usage.\n",
+        "published": "2022",
+        "authors": [
+            "Maira Saboia",
+            "Lillian Clark",
+            "Vivek Thangavelu",
+            "Jeffrey A. Edlund",
+            "Kyohei Otsu",
+            "Gustavo J. Correa",
+            "Vivek Shankar Varadharajan",
+            "Angel Santamaria-Navarro",
+            "Thomas Touma",
+            "Amanda Bouman",
+            "Hovhannes Melikyan",
+            "Torkom Pailevanian",
+            "Sung-Kyun Kim",
+            "Avak Archanian",
+            "Tiago Stegun Vaquero",
+            "Giovanni Beltrame",
+            "Nils Napp",
+            "Gustavo Pessin",
+            "Ali-akbar Agha-mohammadi"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2206.03573v1",
+        "title": "Multi-Robot Synergistic Localization in Dynamic Environments",
+        "abstract": "  A mobile robot's precise location information is critical for navigation and\ntask processing, especially for a multi-robot system (MRS) to collaborate and\ncollect valuable data from the field. However, a robot in situations where it\ndoes not have access to GPS signals, such as in an environmentally controlled,\nindoor, or underground environment, finds it difficult to locate using its\nsensor alone. As a result, robots sharing their local information to improve\ntheir localization estimates benefit the entire MRS team. There have been\nseveral attempts to model-based multi-robot localization using Radio Signal\nStrength Indicator (RSSI) as a source to calculate bearing information. We also\nutilize the RSSI for wireless networks generated through the communication of\nmultiple robots in a system and aim to localize agents with high accuracy and\nefficiency in a dynamic environment for shared information fusion to refine the\nlocalization estimation. This estimator structure reduces one source of\nmeasurement correlation while appropriately incorporating others. This paper\nproposes a decentralized Multi-robot Synergistic Localization System (MRSL) for\na dense and dynamic environment. Robots update their position estimation\nwhenever new information receives from their neighbors. When the system senses\nthe presence of other robots in the region, it exchanges position estimates and\nmerges the received data to improve its localization accuracy. Our approach\nuses Bayesian rule-based integration, which has shown to be computationally\nefficient and applicable to asynchronous robotics communication. We have\nperformed extensive simulation experiments with a varying number of robots to\nanalyze the algorithm. MRSL's localization accuracy with RSSI outperformed\nother algorithms from the literature, showing a significant promise for future\ndevelopment.\n",
+        "published": "2022",
+        "authors": [
+            "Ehsan Latif",
+            "Ramviyas Parasuraman"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2206.09030v1",
+        "title": "Responsibility-associated Multi-agent Collision Avoidance with Social\n  Preferences",
+        "abstract": "  This paper introduces a novel social preference-aware decentralized safe\ncontrol framework to address the responsibility allocation problem in\nmulti-agent collision avoidance. Considering that agents do not necessarily\ncooperate in symmetric ways, this paper focuses on semi-cooperative behavior\namong heterogeneous agents with varying cooperation levels. Drawing upon the\nidea of Social Value Orientation (SVO) for quantifying the individual\nselfishness, we propose a novel concept of Responsibility-associated Social\nValue Orientation (R-SVO) to express the intended relative social implications\nbetween pairwise agents. This is used to redefine each agent's social\npreferences or personalities in terms of corresponding responsibility shares in\ncontributing to the coordination scenario, such as semi-cooperative collision\navoidance where all agents interact in an asymmetric way. By incorporating such\nrelative social implications through proposed Local Pairwise Responsibility\nWeights, we develop a Responsibility-associated Control Barrier Function-based\nsafe control framework for individual agents, and multi-agent collision\navoidance is achieved with formally provable safety guarantees. Simulations are\nprovided to demonstrate the effectiveness and efficiency of the proposed\nframework in several multi-agent navigation tasks, such as a position-swapping\ngame, a self-driving car highway ramp merging scenario, and a circular position\nswapping game.\n",
+        "published": "2022",
+        "authors": [
+            "Yiwei Lyu",
+            "Wenhao Luo",
+            "John M. Dolan"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2206.09484v1",
+        "title": "A Critical Review of Communications in Multi-Robot Systems",
+        "abstract": "  Purpose of Review. This review summarizes the broad roles that communication\nformats and technologies have played in enabling multi-robot systems. We\napproach this field from two perspectives: of robotic applications that need\ncommunication capabilities in order to accomplish tasks, and of networking\ntechnologies that have enabled newer and more advanced multi-robot systems.\n  Recent Findings. Through this review, we identify a dearth of work that\nholistically tackles the problem of co-design and co-optimization of robots and\nthe networks they employ. We also highlight the role that data-driven and\nmachine learning approaches play in evolving communication pipelines for\nmulti-robot systems. In particular, we refer to recent work that diverges from\nhand-designed communication patterns, and also discuss the \"sim-to-real\" gap in\nthis context.\n  Summary. We present a critical view of the way robotic algorithms and their\nnetworking systems have evolved, and make the case for a more synergistic\napproach. Finally, we also identify four broad Open Problems for research and\ndevelopment, while offering a data-driven perspective for solving some of them.\n",
+        "published": "2022",
+        "authors": [
+            "Jennifer Gielis",
+            "Ajay Shankar",
+            "Amanda Prorok"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2207.00198v2",
+        "title": "Comprehensive Reactive Safety: No Need For A Trajectory If You Have A\n  Strategy",
+        "abstract": "  Safety guarantees in motion planning for autonomous driving typically involve\ncertifying the trajectory to be collision-free under any motion of the\nuncontrollable participants in the environment, such as the human-driven\nvehicles on the road. As a result they usually employ a conservative bound on\nthe behavior of such participants, such as reachability analysis. We point out\nthat planning trajectories to rigorously avoid the entirety of the reachable\nregions is unnecessary and too restrictive, because observing the environment\nin the future will allow us to prune away most of them; disregarding this\nability to react to future updates could prohibit solutions to scenarios that\nare easily navigated by human drivers. We propose to account for the autonomous\nvehicle's reactions to future environment changes by a novel safety framework,\nComprehensive Reactive Safety. Validated in simulations in several urban\ndriving scenarios such as unprotected left turns and lane merging, the\nresulting planning algorithm called Reactive ILQR demonstrates strong\nnegotiation capabilities and better safety at the same time.\n",
+        "published": "2022",
+        "authors": [
+            "Fang Da"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2207.00576v1",
+        "title": "Conflict-based Search for Multi-Robot Motion Planning with Kinodynamic\n  Constraints",
+        "abstract": "  Multi-robot motion planning (MRMP) is the fundamental problem of finding\nnon-colliding trajectories for multiple robots acting in an environment, under\nkinodynamic constraints. Due to its complexity, existing algorithms either\nutilize simplifying assumptions or are incomplete. This work introduces\nkinodynamic conflict-based search (K-CBS), a decentralized (decoupled) MRMP\nalgorithm that is general, scalable, and probabilistically complete. The\nalgorithm takes inspiration from successful solutions to the discrete analogue\nof MRMP over finite graphs, known as multi-agent path finding (MAPF).\nSpecifically, we adapt ideas from conflict-based search (CBS) - a popular\ndecentralized MAPF algorithm - to the MRMP setting. The novelty in this\nadaptation is that we work directly in the continuous domain, without the need\nfor discretization. In particular, the kinodynamic constraints are treated\nnatively. K-CBS plans for each robot individually using a low-level planner and\nand grows a conflict tree to resolve collisions between robots by defining\nconstraints for individual robots. The low-level planner can be any\nsampling-based, tree-search algorithm for kinodynamic robots, thus lifting\nexisting planners for single robots to the multi-robot settings. We show that\nK-CBS inherits the (probabilistic) completeness of the low-level planner. We\nillustrate the generality and performance of K-CBS in several case studies and\nbenchmarks.\n",
+        "published": "2022",
+        "authors": [
+            "Justin Kottinger",
+            "Shaull Almagor",
+            "Morteza Lahijanian"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2207.02792v1",
+        "title": "RoVaR: Robust Multi-agent Tracking through Dual-layer Diversity in\n  Visual and RF Sensor Fusion",
+        "abstract": "  The plethora of sensors in our commodity devices provides a rich substrate\nfor sensor-fused tracking. Yet, today's solutions are unable to deliver robust\nand high tracking accuracies across multiple agents in practical, everyday\nenvironments - a feature central to the future of immersive and collaborative\napplications. This can be attributed to the limited scope of diversity\nleveraged by these fusion solutions, preventing them from catering to the\nmultiple dimensions of accuracy, robustness (diverse environmental conditions)\nand scalability (multiple agents) simultaneously. In this work, we take an\nimportant step towards this goal by introducing the notion of dual-layer\ndiversity to the problem of sensor fusion in multi-agent tracking. We\ndemonstrate that the fusion of complementary tracking modalities, -\npassive/relative (e.g., visual odometry) and active/absolute tracking (e.g.,\ninfrastructure-assisted RF localization) offer a key first layer of diversity\nthat brings scalability while the second layer of diversity lies in the\nmethodology of fusion, where we bring together the complementary strengths of\nalgorithmic (for robustness) and data-driven (for accuracy) approaches. RoVaR\nis an embodiment of such a dual-layer diversity approach that intelligently\nattends to cross-modal information using algorithmic and data-driven techniques\nthat jointly share the burden of accurately tracking multiple agents in the\nwild. Extensive evaluations reveal RoVaR's multi-dimensional benefits in terms\nof tracking accuracy (median of 15cm), robustness (in unseen environments),\nlight weight (runs in real-time on mobile platforms such as Jetson Nano/TX2),\nto enable practical multi-agent immersive applications in everyday\nenvironments.\n",
+        "published": "2022",
+        "authors": [
+            "Mallesham Dasari",
+            "Ramanujan K Sheshadri",
+            "Karthikeyan Sundaresan",
+            "Samir R. Das"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2207.07484v1",
+        "title": "Multi-AGV's Temporal Memory-based RRT Exploration in Unknown Environment",
+        "abstract": "  With the increasing need for multi-robot for exploring the unknown region in\na challenging environment, efficient collaborative exploration strategies are\nneeded for achieving such feat. A frontier-based Rapidly-Exploring Random Tree\n(RRT) exploration can be deployed to explore an unknown environment. However,\nits' greedy behavior causes multiple robots to explore the region with the\nhighest revenue, which leads to massive overlapping in exploration process. To\naddress this issue, we present a temporal memory-based RRT (TM-RRT) exploration\nstrategy for multi-robot to perform robust exploration in an unknown\nenvironment. It computes adaptive duration for each frontier assigned and\ncalculates the frontier's revenue based on the relative position of each robot.\nIn addition, each robot is equipped with a memory consisting of frontier\nassigned and share among fleets to prevent repeating assignment of same\nfrontier. Through both simulation and actual deployment, we have shown the\nrobustness of TM-RRT exploration strategy by completing the exploration in a\n25.0m x 54.0m (1350.0m2) area, while the conventional RRT exploration strategy\nfalls short.\n",
+        "published": "2022",
+        "authors": [
+            "Billy Pik Lik Lau",
+            "Brandon Jin Yang Ong",
+            "Leonard Kin Yung Loh",
+            "Ran Liu",
+            "Chau Yuen",
+            "Gim Song Soh",
+            "U-Xuan Tan"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2207.09564v1",
+        "title": "Collective Decision Making in Communication-Constrained Environments",
+        "abstract": "  One of the main tasks for autonomous robot swarms is to collectively decide\non the best available option. Achieving that requires a high quality\ncommunication between the agents that may not be always available in a real\nworld environment. In this paper we introduce the communication-constrained\ncollective decision-making problem where some areas of the environment limit\nthe agents' ability to communicate, either by reducing success rate or blocking\nthe communication channels. We propose a decentralised algorithm for mapping\nenvironmental features for robot swarms as well as improving collective\ndecision making in communication-limited environments without prior knowledge\nof the communication landscape. Our results show that making a collective aware\nof the communication environment can improve the speed of convergence in the\npresence of communication limitations, at least 3 times faster, without\nsacrificing accuracy.\n",
+        "published": "2022",
+        "authors": [
+            "Thomas G. Kelly",
+            "Mohammad Divband Soorati",
+            "Klaus-Peter Zauner",
+            "Sarvapali D. Ramchurn",
+            "Danesh Tarapore"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2207.13523v1",
+        "title": "Adapting the Exploration-Exploitation Balance in Heterogeneous Swarms:\n  Tracking Evasive Targets",
+        "abstract": "  There has been growing interest in the use of multi-robot systems in various\ntasks and scenarios. The main attractiveness of such systems is their\nflexibility, robustness, and scalability. An often overlooked yet promising\nfeature is system modularity, which offers the possibility to harness agent\nspecialization, while also enabling system-level upgrades. However, altering\nthe agents' capacities can change the exploration-exploitation balance required\nto maximize the system's performance. Here, we study the effect of a swarm's\nheterogeneity on its exploration-exploitation balance while tracking multiple\nfast-moving evasive targets under the Cooperative Multi-Robot Observation of\nMultiple Moving Targets framework. To this end, we use a decentralized search\nand tracking strategy with adjustable levels of exploration and exploitation.\nBy indirectly tuning the balance, we first confirm the presence of an optimal\nbalance between these two key competing actions. Next, by substituting slower\nmoving agents with faster ones, we show that the system exhibits a performance\nimprovement without any modifications to the original strategy. In addition,\nowing to the additional amount of exploitation carried out by the faster\nagents, we demonstrate that a heterogeneous system's performance can be further\nimproved by reducing an agent's level of connectivity, to favor the conduct of\nexploratory actions. Furthermore, in studying the influence of the density of\nswarming agents, we show that the addition of faster agents can counterbalance\na reduction in the overall number of agents while maintaining the level of\ntracking performance. Finally, we explore the challenges of using\ndifferentiated strategies to take advantage of the heterogeneous nature of the\nswarm.\n",
+        "published": "2022",
+        "authors": [
+            "Hian Lee Kwa",
+            "Victor Babineau",
+            "Julien Philippot",
+            "Roland Bouffanais"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2208.00096v1",
+        "title": "Perspectives on the System-level Design of a Safe Autonomous Driving\n  Stack",
+        "abstract": "  Achieving safe and robust autonomy is the key bottleneck on the path towards\nbroader adoption of autonomous vehicles technology. This motivates going beyond\nextrinsic metrics such as miles between disengagement, and calls for approaches\nthat embody safety by design. In this paper, we address some aspects of this\nchallenge, with emphasis on issues of motion planning and prediction. We do\nthis through description of novel approaches taken to solving selected\nsub-problems within an autonomous driving stack, in the process introducing the\ndesign philosophy being adopted within Five. This includes safe-by-design\nplanning, interpretable as well as verifiable prediction, and modelling of\nperception errors to enable effective sim-to-real and real-to-sim transfer\nwithin the testing pipeline of a realistic autonomous system.\n",
+        "published": "2022",
+        "authors": [
+            "Majd Hawasly",
+            "Jonathan Sadeghi",
+            "Morris Antonello",
+            "Stefano V. Albrecht",
+            "John Redford",
+            "Subramanian Ramamoorthy"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2208.01800v1",
+        "title": "Decentralized Learning With Limited Communications for Multi-robot\n  Coverage of Unknown Spatial Fields",
+        "abstract": "  This paper presents an algorithm for a team of mobile robots to\nsimultaneously learn a spatial field over a domain and spatially distribute\nthemselves to optimally cover it. Drawing from previous approaches that\nestimate the spatial field through a centralized Gaussian process, this work\nleverages the spatial structure of the coverage problem and presents a\ndecentralized strategy where samples are aggregated locally by establishing\ncommunications through the boundaries of a Voronoi partition. We present an\nalgorithm whereby each robot runs a local Gaussian process calculated from its\nown measurements and those provided by its Voronoi neighbors, which are\nincorporated into the individual robot's Gaussian process only if they provide\nsufficiently novel information. The performance of the algorithm is evaluated\nin simulation and compared with centralized approaches.\n",
+        "published": "2022",
+        "authors": [
+            "Kensuke Nakamura",
+            "Mar\u00eda Santos",
+            "Naomi Ehrich Leonard"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2208.10646v1",
+        "title": "The Robustness of Tether Friction in Non-idealized Terrains",
+        "abstract": "  Reduced traction limits the ability of mobile robotic systems to resist or\napply large external loads, such as tugging a massive payload. One simple and\nversatile solution is to wrap a tether around naturally occurring objects to\nleverage the capstan effect and create exponentially-amplified holding forces.\nExperiments show that an idealized capstan model explains force amplification\nexperienced on common irregular outdoor objects - trees, rocks, posts. Robust\nto variable environmental conditions, this exponential amplification method can\nharness single or multiple capstan objects, either in series or in parallel\nwith a team of robots. This adaptability allows for a range of potential\nconfigurations especially useful for when objects cannot be fully encircled or\ngripped. These principles are demonstrated with mobile platforms to (1) control\nthe lowering and arrest of a payload, (2) to achieve planar control of a\npayload, and (3) to act as an anchor point for a more massive platform to winch\ntowards. We show the simple addition of a tether, wrapped around shallow stones\nin sand, amplifies holding force of a low-traction platform by up to 774x.\n",
+        "published": "2022",
+        "authors": [
+            "Justin J. Page",
+            "Laura K. Treers",
+            "Steven Jens Jorgensen",
+            "Ronald S. Fearing",
+            "Hannah S. Stuart"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2209.03306v1",
+        "title": "Accurate Cooperative Sensor Fusion by Parameterized Covariance\n  Generation for Sensing and Localization Pipelines in CAVs",
+        "abstract": "  A major challenge in cooperative sensing is to weight the measurements taken\nfrom the various sources to get an accurate result. Ideally, the weights should\nbe inversely proportional to the error in the sensing information. However,\nprevious cooperative sensor fusion approaches for autonomous vehicles use a\nfixed error model, in which the covariance of a sensor and its recognizer\npipeline is just the mean of the measured covariance for all sensing scenarios.\nThe approach proposed in this paper estimates error using key predictor terms\nthat have high correlation with sensing and localization accuracy for accurate\ncovariance estimation of each sensor observation. We adopt a tiered fusion\nmodel consisting of local and global sensor fusion steps. At the local fusion\nlevel, we add in a covariance generation stage using the error model for each\nsensor and the measured distance to generate the expected covariance matrix for\neach observation. At the global sensor fusion stage we add an additional stage\nto generate the localization covariance matrix from the key predictor term\nvelocity and combines that with the covariance generated from the local fusion\nfor accurate cooperative sensing. To showcase our method, we built a set of\n1/10 scale model autonomous vehicles with scale accurate sensing capabilities\nand classified the error characteristics against a motion capture system.\nResults show an average and max improvement in RMSE when detecting vehicle\npositions of 1.42x and 1.78x respectively in a four-vehicle cooperative fusion\nscenario when using our error model versus a typical fixed error model.\n",
+        "published": "2022",
+        "authors": [
+            "Edward Andert",
+            "Aviral Shrivastava"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2209.04286v1",
+        "title": "Multi-Agent Path Finding on Strongly Connected Digraphs: feasibility and\n  solution algorithms",
+        "abstract": "  On an assigned graph, the problem of Multi-Agent Pathfinding (MAPF) consists\nin finding paths for multiple agents, avoiding collisions. Finding the\nminimum-length solution is known to be NP-hard, and computation times grows\nexponentially with the number of agents. However, in industrial applications,\nit is important to find feasible, suboptimal solutions, in a time that grows\npolynomially with the number of agents. Such algorithms exist for undirected\nand biconnected directed graphs. Our main contribution is to generalize these\nalgorithms to the more general case of strongly connected directed graphs. In\nparticular, given a MAPF problem with at least two holes, we present an\nalgorithm that checks the problem feasibility in linear time with respect to\nthe number of nodes, and provides a feasible solution in polynomial time.\n",
+        "published": "2022",
+        "authors": [
+            "Stefano Ardizzoni",
+            "Irene Saccani",
+            "Luca Consolini",
+            "Marco Locatelli"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2209.05284v1",
+        "title": "Solving the Job Shop Scheduling Problem with Ant Colony Optimization",
+        "abstract": "  The Job Shop Schedule Problem (JSSP) refers to the ability of an agent to\nallocate tasks that should be executed in a specified time in a machine from a\ncluster. The task allocation can be achieved from several methods, however,\nthis report it is explored the ability of the Ant Colony Optimization to\ngenerate feasible solutions for several JSSP instances. This proposal models\nthe JSSP as a complete graph since disjunct models can prevent the ACO from\nexploring all the search space. Several instances of the JSSP were used to\nevaluate the proposal. Results suggest that the algorithm can reach optimum\nsolutions for easy and harder instances with a selection of parameters.\n",
+        "published": "2022",
+        "authors": [
+            "Alysson Ribeiro da Silva"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2209.05738v2",
+        "title": "RTAW: An Attention Inspired Reinforcement Learning Method for\n  Multi-Robot Task Allocation in Warehouse Environments",
+        "abstract": "  We present a novel reinforcement learning based algorithm for multi-robot\ntask allocation problem in warehouse environments. We formulate it as a Markov\nDecision Process and solve via a novel deep multi-agent reinforcement learning\nmethod (called RTAW) with attention inspired policy architecture. Hence, our\nproposed policy network uses global embeddings that are independent of the\nnumber of robots/tasks. We utilize proximal policy optimization algorithm for\ntraining and use a carefully designed reward to obtain a converged policy. The\nconverged policy ensures cooperation among different robots to minimize total\ntravel delay (TTD) which ultimately improves the makespan for a sufficiently\nlarge task-list. In our extensive experiments, we compare the performance of\nour RTAW algorithm to state of the art methods such as myopic pickup distance\nminimization (greedy) and regret based baselines on different navigation\nschemes. We show an improvement of upto 14% (25-1000 seconds) in TTD on\nscenarios with hundreds or thousands of tasks for different challenging\nwarehouse layouts and task generation schemes. We also demonstrate the\nscalability of our approach by showing performance with up to $1000$ robots in\nsimulations.\n",
+        "published": "2022",
+        "authors": [
+            "Aakriti Agrawal",
+            "Amrit Singh Bedi",
+            "Dinesh Manocha"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2209.13092v2",
+        "title": "D-ITAGS: A Dynamic Interleaved Approach to Resilient Task Allocation,\n  Scheduling, and Motion Planning",
+        "abstract": "  Complex, multi-objective missions require the coordination of heterogeneous\nrobots at multiple inter-connected levels, such as coalition formation,\nscheduling, and motion planning. This challenge is exacerbated by dynamic\nchanges, such as sensor and actuator failures, communication loss, and\nunexpected delays.\n  We introduce Dynamic Iterative Task Allocation Graph Search (D-ITAGS) to\n\\textit{simultaneously} address coalition formation, scheduling, and motion\nplanning in dynamic settings involving heterogeneous teams. D-ITAGS achieves\nresilience via two key characteristics: i) interleaved execution, and ii)\ntargeted repair. \\textit{Interleaved execution} enables an effective search for\nsolutions at each layer while avoiding incompatibility with other layers.\n\\textit{Targeted repair} identifies and repairs parts of the existing solution\nimpacted by a given disruption, while conserving the rest. In addition to\nalgorithmic contributions, we provide theoretical insights into the inherent\ntrade-off between time and resource optimality in these settings and derive\nmeaningful bounds on schedule suboptimality.\n  Our experiments reveal that i) D-ITAGS is significantly faster than\nrecomputation from scratch in dynamic settings, with little to no loss in\nsolution quality, and ii) the theoretical suboptimality bounds consistently\nhold in practice.\n",
+        "published": "2022",
+        "authors": [
+            "Glen Neville",
+            "Sonia Chernova",
+            "Harish Ravichandar"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2209.14007v4",
+        "title": "OA-Bug: An Olfactory-Auditory Augmented Bug Algorithm for Swarm Robots\n  in a Denied Environment",
+        "abstract": "  Searching in a denied environment is challenging for swarm robots as no\nassistance from GNSS, mapping, data sharing, and central processing is allowed.\nHowever, using olfactory and auditory signals to cooperate like animals could\nbe an important way to improve the collaboration of swarm robots. In this\npaper, an Olfactory-Auditory augmented Bug algorithm (OA-Bug) is proposed for a\nswarm of autonomous robots to explore a denied environment. A simulation\nenvironment is built to measure the performance of OA-Bug. The coverage of the\nsearch task can reach 96.93% using OA-Bug, which is significantly improved\ncompared with a similar algorithm, SGBA. Furthermore, experiments are conducted\non real swarm robots to prove the validity of OA-Bug. Results show that OA-Bug\ncan improve the performance of swarm robots in a denied environment.\n",
+        "published": "2022",
+        "authors": [
+            "Siqi Tan",
+            "Xiaoya Zhang",
+            "Jingyao Li",
+            "Ruitao Jing",
+            "Mufan Zhao",
+            "Yang Liu",
+            "Quan Quan"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2210.01314v1",
+        "title": "Meta Navigation Functions: Adaptive Associations for Coordination of\n  Multi-Agent Systems",
+        "abstract": "  In this paper, we introduce a new class of potential fields, i.e., meta\nnavigation functions (MNFs) to coordinate multi-agent systems. Thanks to the\nMNF formulation, agents can contribute to each other's coordination via partial\nand/or total associations, contrary to traditional decentralized navigation\nfunctions (DNFs). In particular, agents may stimulate each other via their\nMNFs. Moreover, MNFs need to be confined which is a weaker condition compared\nto the Morse condition of DNFs. An MNF is composed of a confined function and\nan attraction kernel. The critical points of the former can be confined in a\nsafe region around a target critical point. The collision-free trajectory of an\nagent and its associations to its peers are governed by a confined function\nbefore reaching its safe region. Then, the attraction kernel drives the agent\nto its target in the safe region. MNFs provide faster coordination compared to\nDNFs. We illustrate how MNFs may exhibit some social behaviors in the course of\npartial and total associations among agents. Our simulations verify the\nefficiency of MNFs to coordinate complex swarms of agents.\n",
+        "published": "2022",
+        "authors": [
+            "Matin Macktoobian",
+            "Guillaume Ferdinand Duc"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2210.01662v1",
+        "title": "DGORL: Distributed Graph Optimization based Relative Localization of\n  Multi-Robot Systems",
+        "abstract": "  An optimization problem is at the heart of many robotics estimating,\nplanning, and optimum control problems. Several attempts have been made at\nmodel-based multi-robot localization, and few have formulated the multi-robot\ncollaborative localization problem as a factor graph problem to solve through\ngraph optimization. Here, the optimization objective is to minimize the errors\nof estimating the relative location estimates in a distributed manner. Our\nnovel graph-theoretic approach to solving this problem consists of three major\ncomponents; (connectivity) graph formation, expansion through transition model,\nand optimization of relative poses. First, we estimate the relative\npose-connectivity graph using the received signal strength between the\nconnected robots, indicating relative ranges between them. Then, we apply a\nmotion model to formulate graph expansion and optimize them using g$^2$o graph\noptimization as a distributed solver over dynamic networks. Finally, we\ntheoretically analyze the algorithm and numerically validate its optimality and\nperformance through extensive simulations. The results demonstrate the\npracticality of the proposed solution compared to a state-of-the-art algorithm\nfor collaborative localization in multi-robot systems.\n",
+        "published": "2022",
+        "authors": [
+            "Ehsan Latif",
+            "Ramviyas Parasuraman"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2210.03340v1",
+        "title": "A Novel Graph-based Motion Planner of Multi-Mobile Robot Systems with\n  Formation and Obstacle Constraints",
+        "abstract": "  Multi-mobile robot systems show great advantages over one single robot in\nmany applications. However, the robots are required to form desired\ntask-specified formations, making feasible motions decrease significantly.\nThus, it is challenging to determine whether the robots can pass through an\nobstructed environment under formation constraints, especially in an\nobstacle-rich environment. Furthermore, is there an optimal path for the\nrobots? To deal with the two problems, a novel graphbased motion planner is\nproposed in this paper. A mapping between workspace and configuration space of\nmulti-mobile robot systems is first built, where valid configurations can be\nacquired to satisfy both formation constraints and collision avoidance. Then,\nan undirected graph is generated by verifying connectivity between valid\nconfigurations. The breadth-first search method is employed to answer the\nquestion of whether there is a feasible path on the graph. Finally, an optimal\npath will be planned on the updated graph, considering the cost of path length\nand formation preference. Simulation results show that the planner can be\napplied to get optimal motions of robots under formation constraints in\nobstacle-rich environments. Additionally, different constraints are considered.\n",
+        "published": "2022",
+        "authors": [
+            "Wenhang Liu",
+            "Jiawei Hu",
+            "Heng Zhang",
+            "Michael Yu Wang",
+            "Zhenhua Xiong"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2210.03772v5",
+        "title": "Traffic-Aware Autonomous Driving with Differentiable Traffic Simulation",
+        "abstract": "  While there have been advancements in autonomous driving control and traffic\nsimulation, there have been little to no works exploring their unification with\ndeep learning. Works in both areas seem to focus on entirely different\nexclusive problems, yet traffic and driving are inherently related in the real\nworld. In this paper, we present Traffic-Aware Autonomous Driving (TrAAD), a\ngeneralizable distillation-style method for traffic-informed imitation learning\nthat directly optimizes for faster traffic flow and lower energy consumption.\nTrAAD focuses on the supervision of speed control in imitation learning\nsystems, as most driving research focuses on perception and steering. Moreover,\nour method addresses the lack of co-simulation between traffic and driving\nsimulators and provides a basis for directly involving traffic simulation with\nautonomous driving in future work. Our results show that, with information from\ntraffic simulation involved in the supervision of imitation learning methods,\nan autonomous vehicle can learn how to accelerate in a fashion that is\nbeneficial for traffic flow and overall energy consumption for all nearby\nvehicles.\n",
+        "published": "2022",
+        "authors": [
+            "Laura Zheng",
+            "Sanghyun Son",
+            "Ming C. Lin"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2210.17381v1",
+        "title": "Safe and Efficient Manoeuvring for Emergency Vehicles in Autonomous\n  Traffic using Multi-Agent Proximal Policy Optimisation",
+        "abstract": "  Manoeuvring in the presence of emergency vehicles is still a major issue for\nvehicle autonomy systems. Most studies that address this topic are based on\nrule-based methods, which cannot cover all possible scenarios that can take\nplace in autonomous traffic. Multi-Agent Proximal Policy Optimisation (MAPPO)\nhas recently emerged as a powerful method for autonomous systems because it\nallows for training in thousands of different situations. In this study, we\npresent an approach based on MAPPO to guarantee the safe and efficient\nmanoeuvring of autonomous vehicles in the presence of an emergency vehicle. We\nintroduce a risk metric that summarises the potential risk of collision in a\nsingle index. The proposed method generates cooperative policies allowing the\nemergency vehicle to go at $15 \\%$ higher average speed while maintaining high\nsafety distances. Moreover, we explore the trade-off between safety and traffic\nefficiency and assess the performance in a competitive scenario.\n",
+        "published": "2022",
+        "authors": [
+            "Leandro Parada",
+            "Eduardo Candela",
+            "Luis Marques",
+            "Panagiotis Angeloudis"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2211.03005v1",
+        "title": "Graph Reinforcement Learning Application to Co-operative Decision-Making\n  in Mixed Autonomy Traffic: Framework, Survey, and Challenges",
+        "abstract": "  Proper functioning of connected and automated vehicles (CAVs) is crucial for\nthe safety and efficiency of future intelligent transport systems. Meanwhile,\ntransitioning to fully autonomous driving requires a long period of mixed\nautonomy traffic, including both CAVs and human-driven vehicles. Thus,\ncollaboration decision-making for CAVs is essential to generate appropriate\ndriving behaviors to enhance the safety and efficiency of mixed autonomy\ntraffic. In recent years, deep reinforcement learning (DRL) has been widely\nused in solving decision-making problems. However, the existing DRL-based\nmethods have been mainly focused on solving the decision-making of a single\nCAV. Using the existing DRL-based methods in mixed autonomy traffic cannot\naccurately represent the mutual effects of vehicles and model dynamic traffic\nenvironments. To address these shortcomings, this article proposes a graph\nreinforcement learning (GRL) approach for multi-agent decision-making of CAVs\nin mixed autonomy traffic. First, a generic and modular GRL framework is\ndesigned. Then, a systematic review of DRL and GRL methods is presented,\nfocusing on the problems addressed in recent research. Moreover, a comparative\nstudy on different GRL methods is further proposed based on the designed\nframework to verify the effectiveness of GRL methods. Results show that the GRL\nmethods can well optimize the performance of multi-agent decision-making for\nCAVs in mixed autonomy traffic compared to the DRL methods. Finally, challenges\nand future research directions are summarized. This study can provide a\nvaluable research reference for solving the multi-agent decision-making\nproblems of CAVs in mixed autonomy traffic and can promote the implementation\nof GRL-based methods into intelligent transportation systems. The source code\nof our work can be found at https://github.com/Jacklinkk/Graph_CAVs.\n",
+        "published": "2022",
+        "authors": [
+            "Qi Liu",
+            "Xueyuan Li",
+            "Zirui Li",
+            "Jingda Wu",
+            "Guodong Du",
+            "Xin Gao",
+            "Fan Yang",
+            "Shihua Yuan"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2211.03286v2",
+        "title": "Learning Task Requirements and Agent Capabilities for Multi-agent Task\n  Allocation",
+        "abstract": "  This paper presents a learning framework to estimate an agent capability and\ntask requirement model for multi-agent task allocation. With a set of team\nconfigurations and the corresponding task performances as the training data,\nlinear task constraints can be learned to be embedded in many existing\noptimization-based task allocation frameworks. Comprehensive computational\nevaluations are conducted to test the scalability and prediction accuracy of\nthe learning framework with a limited number of team configurations and\nperformance pairs. A ROS and Gazebo-based simulation environment is developed\nto validate the proposed requirements learning and task allocation framework in\npractical multi-agent exploration and manipulation tasks. Results show that the\nlearning process for scenarios with 40 tasks and 6 types of agents uses around\n12 seconds, ending up with prediction errors in the range of 0.5-2%.\n",
+        "published": "2022",
+        "authors": [
+            "Bo Fu",
+            "William Smith",
+            "Denise Rizzo",
+            "Matthew Castanier",
+            "Maani Ghaffari",
+            "Kira Barton"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2211.04433v1",
+        "title": "A study on the ephemeral nature of knowledge shared within multiagent\n  systems",
+        "abstract": "  Achieving knowledge sharing within an artificial swarm system could lead to\nsignificant development in autonomous multiagent and robotic systems research\nand realize collective intelligence. However, this is difficult to achieve\nsince there is no generic framework to transfer skills between agents other\nthan a query-response-based approach. Moreover, natural living systems have a\n\"forgetfulness\" property for everything they learn. Analyzing such ephemeral\nnature (temporal memory properties of new knowledge gained) in artificial\nsystems has never been studied in the literature. We propose a behavior\ntree-based framework to realize a query-response mechanism for transferring\nskills encoded as the condition-action control sub-flow of that portion of the\nknowledge between agents to fill this gap. We simulate a multiagent group with\ndifferent initial knowledge on a foraging mission. While performing basic\noperations, each robot queries other robots to respond to an unknown condition.\nThe responding robot shares the control actions by sharing a portion of the\nbehavior tree that addresses the queries. Specifically, we investigate the\nephemeral nature of the new knowledge gained through such a framework, where\nthe knowledge gained by the agent is either limited due to memory or is\nforgotten over time. Our investigations show that knowledge grows\nproportionally with the duration of remembrance, which is trivial. However, we\nfound minimal impact on knowledge growth due to memory. We compare these cases\nagainst a baseline that involved full knowledge pre-coded on all agents. We\nfound that knowledge-sharing strived to match the baseline condition by sharing\nand achieving knowledge growth as a collective system.\n",
+        "published": "2022",
+        "authors": [
+            "Sanjay Sarma Oruganti Venkata",
+            "Ramviyas Parasuraman",
+            "Ramana Pidaparti"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2211.17077v1",
+        "title": "Dynamic and Distributed Optimization for the Allocation of Aerial Swarm\n  Vehicles",
+        "abstract": "  Optimal transport (OT) is a framework that can guide the design of efficient\nresource allocation strategies in a network of multiple sources and targets.\nThis paper applies discrete OT to a swarm of UAVs in a novel way to achieve\nappropriate task allocation and execution. Drone swarm deployments already\noperate in multiple domains where sensors are used to gain knowledge of an\nenvironment [1]. Use cases such as, chemical and radiation detection, and\nthermal and RGB imaging create a specific need for an algorithm that considers\nparameters on both the UAV and waypoint side and allows for updating the\nmatching scheme as the swarm gains information from the environment.\nAdditionally, the need for a centralized planner can be removed by using a\ndistributed algorithm that can dynamically update based on changes in the swarm\nnetwork or parameters. To this end, we develop a dynamic and distributed OT\nalgorithm that matches a UAV to the optimal waypoint based on one parameter at\nthe UAV and another parameter at the waypoint. We show the convergence and\nallocation of the algorithm through a case study and test the algorithm's\neffectiveness against a greedy assignment algorithm in simulation.\n",
+        "published": "2022",
+        "authors": [
+            "Jason Hughes",
+            "Dominic Larkin",
+            "Charles O'Donnell",
+            "Christopher Korpela"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2212.00844v3",
+        "title": "A Comparison of New Swarm Task Allocation Algorithms in Unknown\n  Environments with Varying Task Density",
+        "abstract": "  Task allocation is an important problem for robot swarms to solve, allowing\nagents to reduce task completion time by performing tasks in a distributed\nfashion. Existing task allocation algorithms often assume prior knowledge of\ntask location and demand or fail to consider the effects of the geometric\ndistribution of tasks on the completion time and communication cost of the\nalgorithms. In this paper, we examine an environment where agents must explore\nand discover tasks with positive demand and successfully assign themselves to\ncomplete all such tasks. We first provide a new discrete general model for\nmodeling swarms. Operating within this theoretical framework, we propose two\nnew task allocation algorithms for initially unknown environments -- one based\non N-site selection and the other on virtual pheromones. We analyze each\nalgorithm separately and also evaluate the effectiveness of the two algorithms\nin dense vs. sparse task distributions. Compared to the Levy walk, which has\nbeen theorized to be optimal for foraging, our virtual pheromone inspired\nalgorithm is much faster in sparse to medium task densities but is\ncommunication and agent intensive. Our site selection inspired algorithm also\noutperforms Levy walk in sparse task densities and is a less resource-intensive\noption than our virtual pheromone algorithm for this case. Because the\nperformance of both algorithms relative to random walk is dependent on task\ndensity, our results shed light on how task density is important in choosing a\ntask allocation algorithm in initially unknown environments.\n",
+        "published": "2022",
+        "authors": [
+            "Grace Cai",
+            "Noble Harasha",
+            "Nancy Lynch"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2212.05181v1",
+        "title": "Exploiting the Power of Human-Robot Collaboration: Coupling and Scale\n  Effects in Bricklaying",
+        "abstract": "  As an important contributor to GDP growth, the construction industry is\nsuffering from labor shortage due to population ageing, COVID-19 pandemic, and\nharsh environments. Considering the complexity and dynamics of construction\nenvironment, it is still challenging to develop fully automated robots. For a\nlong time in the future, workers and robots will coexist and collaborate with\neach other to build or maintain a facility efficiently. As an emerging field,\nhuman-robot collaboration (HRC) still faces various open problems. To this end,\nthis pioneer research introduces an agent-based modeling approach to\ninvestigate the coupling effect and scale effect of HRC in the bricklaying\nprocess. With multiple experiments based on simulation, the dynamic and complex\nnature of HRC is illustrated in two folds: 1) agents in HRC are interdependent\ndue to human factors of workers, features of robots, and their collaboration\nbehaviors; 2) different parameters of HRC are correlated and have significant\nimpacts on construction productivity (CP). Accidentally and interestingly, it\nis discovered that HRC has a scale effect on CP, which means increasing the\nnumber of collaborated human-robot teams will lead to higher CP even if the\nhuman-robot ratio keeps unchanged. Overall, it is argued that more\ninvestigations in HRC are needed for efficient construction, occupational\nsafety, etc.; and this research can be taken as a stepstone for developing and\nevaluating new robots, optimizing HRC processes, and even training future\nindustrial workers in the construction industry.\n",
+        "published": "2022",
+        "authors": [
+            "Jia-Rui Lin",
+            "Ming-Hui Wu"
+        ]
+    }
+]

@@ -1,0 +1,1160 @@
+[
+    {
+        "id": "http://arxiv.org/abs/2008.00829v1",
+        "title": "Deep Network Ensemble Learning applied to Image Classification using CNN\n  Trees",
+        "abstract": "  Traditional machine learning approaches may fail to perform satisfactorily\nwhen dealing with complex data. In this context, the importance of data mining\nevolves w.r.t. building an efficient knowledge discovery and mining framework.\nEnsemble learning is aimed at integration of fusion, modeling and mining of\ndata into a unified model. However, traditional ensemble learning methods are\ncomplex and have optimization or tuning problems. In this paper, we propose a\nsimple, sequential, efficient, ensemble learning approach using multiple deep\nnetworks. The deep network used in the ensembles is ResNet50. The model draws\ninspiration from binary decision/classification trees. The proposed approach is\ncompared against the baseline viz. the single classifier approach i.e. using a\nsingle multiclass ResNet50 on the ImageNet and Natural Images datasets. Our\napproach outperforms the baseline on all experiments on the ImageNet dataset.\nCode is available in https://github.com/mueedhafiz1982/CNNTreeEnsemble.git\n",
+        "published": "2020",
+        "authors": [
+            "Abdul Mueed Hafiz",
+            "Ghulam Mohiuddin Bhat"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2008.01380v2",
+        "title": "Neuromorphic Computing for Content-based Image Retrieval",
+        "abstract": "  Neuromorphic computing mimics the neural activity of the brain through\nemulating spiking neural networks. In numerous machine learning tasks,\nneuromorphic chips are expected to provide superior solutions in terms of cost\nand power efficiency. Here, we explore the application of Loihi, a neuromorphic\ncomputing chip developed by Intel, for the computer vision task of image\nretrieval. We evaluated the functionalities and the performance metrics that\nare critical in content-based visual search and recommender systems using\ndeep-learning embeddings. Our results show that the neuromorphic solution is\nabout 2.5 times more energy-efficient compared with an ARM Cortex-A72 CPU and\n12.5 times more energy-efficient compared with NVIDIA T4 GPU for inference by a\nlightweight convolutional neural network without batching while maintaining the\nsame level of matching accuracy. The study validates the potential of\nneuromorphic computing in low-power image retrieval, as a complementary\nparadigm to the existing von Neumann architectures.\n",
+        "published": "2020",
+        "authors": [
+            "Te-Yuan Liu",
+            "Ata Mahjoubfar",
+            "Daniel Prusinski",
+            "Luis Stevens"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2008.01438v1",
+        "title": "Controlling Information Capacity of Binary Neural Network",
+        "abstract": "  Despite the growing popularity of deep learning technologies, high memory\nrequirements and power consumption are essentially limiting their application\nin mobile and IoT areas. While binary convolutional networks can alleviate\nthese problems, the limited bitwidth of weights is often leading to significant\ndegradation of prediction accuracy. In this paper, we present a method for\ntraining binary networks that maintains a stable predefined level of their\ninformation capacity throughout the training process by applying Shannon\nentropy based penalty to convolutional filters. The results of experiments\nconducted on SVHN, CIFAR and ImageNet datasets demonstrate that the proposed\napproach can statistically significantly improve the accuracy of binary\nnetworks.\n",
+        "published": "2020",
+        "authors": [
+            "Dmitry Ignatov",
+            "Andrey Ignatov"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2008.02454v2",
+        "title": "Structured Convolutions for Efficient Neural Network Design",
+        "abstract": "  In this work, we tackle model efficiency by exploiting redundancy in the\n\\textit{implicit structure} of the building blocks of convolutional neural\nnetworks. We start our analysis by introducing a general definition of\nComposite Kernel structures that enable the execution of convolution operations\nin the form of efficient, scaled, sum-pooling components. As its special case,\nwe propose \\textit{Structured Convolutions} and show that these allow\ndecomposition of the convolution operation into a sum-pooling operation\nfollowed by a convolution with significantly lower complexity and fewer\nweights. We show how this decomposition can be applied to 2D and 3D kernels as\nwell as the fully-connected layers. Furthermore, we present a Structural\nRegularization loss that promotes neural network layers to leverage on this\ndesired structure in a way that, after training, they can be decomposed with\nnegligible performance loss. By applying our method to a wide range of CNN\narchitectures, we demonstrate \"structured\" versions of the ResNets that are up\nto 2$\\times$ smaller and a new Structured-MobileNetV2 that is more efficient\nwhile staying within an accuracy loss of 1% on ImageNet and CIFAR-10 datasets.\nWe also show similar structured versions of EfficientNet on ImageNet and HRNet\narchitecture for semantic segmentation on the Cityscapes dataset. Our method\nperforms equally well or superior in terms of the complexity reduction in\ncomparison to the existing tensor decomposition and channel pruning methods.\n",
+        "published": "2020",
+        "authors": [
+            "Yash Bhalgat",
+            "Yizhe Zhang",
+            "Jamie Lin",
+            "Fatih Porikli"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2008.06986v1",
+        "title": "False Detection (Positives and Negatives) in Object Detection",
+        "abstract": "  Object detection is a very important function of visual perception systems.\nSince the early days of classical object detection based on HOG to modern deep\nlearning based detectors, object detection has improved in accuracy. Two stage\ndetectors usually have higher accuracy than single stage ones. Both types of\ndetectors use some form of quantization of the search space of rectangular\nregions of image. There are far more of the quantized elements than true\nobjects. The way these bounding boxes are filtered out possibly results in the\nfalse positive and false negatives. This empirical experimental study explores\nways of reducing false positives and negatives with labelled data.. In the\nprocess also discovered insufficient labelling in Openimage 2019 Object\nDetection dataset.\n",
+        "published": "2020",
+        "authors": [
+            "Subrata Goswami"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2008.08072v1",
+        "title": "AssembleNet++: Assembling Modality Representations via Attention\n  Connections",
+        "abstract": "  We create a family of powerful video models which are able to: (i) learn\ninteractions between semantic object information and raw appearance and motion\nfeatures, and (ii) deploy attention in order to better learn the importance of\nfeatures at each convolutional block of the network. A new network component\nnamed peer-attention is introduced, which dynamically learns the attention\nweights using another block or input modality. Even without pre-training, our\nmodels outperform the previous work on standard public activity recognition\ndatasets with continuous videos, establishing new state-of-the-art. We also\nconfirm that our findings of having neural connections from the object modality\nand the use of peer-attention is generally applicable for different existing\narchitectures, improving their performances. We name our model explicitly as\nAssembleNet++. The code will be available at:\nhttps://sites.google.com/corp/view/assemblenet/\n",
+        "published": "2020",
+        "authors": [
+            "Michael S. Ryoo",
+            "AJ Piergiovanni",
+            "Juhana Kangaspunta",
+            "Anelia Angelova"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2008.10599v1",
+        "title": "The Hessian Penalty: A Weak Prior for Unsupervised Disentanglement",
+        "abstract": "  Existing disentanglement methods for deep generative models rely on\nhand-picked priors and complex encoder-based architectures. In this paper, we\npropose the Hessian Penalty, a simple regularization term that encourages the\nHessian of a generative model with respect to its input to be diagonal. We\nintroduce a model-agnostic, unbiased stochastic approximation of this term\nbased on Hutchinson's estimator to compute it efficiently during training. Our\nmethod can be applied to a wide range of deep generators with just a few lines\nof code. We show that training with the Hessian Penalty often causes\naxis-aligned disentanglement to emerge in latent space when applied to ProGAN\non several datasets. Additionally, we use our regularization term to identify\ninterpretable directions in BigGAN's latent space in an unsupervised fashion.\nFinally, we provide empirical evidence that the Hessian Penalty encourages\nsubstantial shrinkage when applied to over-parameterized latent spaces.\n",
+        "published": "2020",
+        "authors": [
+            "William Peebles",
+            "John Peebles",
+            "Jun-Yan Zhu",
+            "Alexei Efros",
+            "Antonio Torralba"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2008.11491v1",
+        "title": "Selective Particle Attention: Visual Feature-Based Attention in Deep\n  Reinforcement Learning",
+        "abstract": "  The human brain uses selective attention to filter perceptual input so that\nonly the components that are useful for behaviour are processed using its\nlimited computational resources. We focus on one particular form of visual\nattention known as feature-based attention, which is concerned with identifying\nfeatures of the visual input that are important for the current task regardless\nof their spatial location. Visual feature-based attention has been proposed to\nimprove the efficiency of Reinforcement Learning (RL) by reducing the\ndimensionality of state representations and guiding learning towards relevant\nfeatures. Despite achieving human level performance in complex perceptual-motor\ntasks, Deep RL algorithms have been consistently criticised for their poor\nefficiency and lack of flexibility. Visual feature-based attention therefore\nrepresents one option for addressing these criticisms. Nevertheless, it is\nstill an open question how the brain is able to learn which features to attend\nto during RL. To help answer this question we propose a novel algorithm, termed\nSelective Particle Attention (SPA), which imbues a Deep RL agent with the\nability to perform selective feature-based attention. SPA learns which\ncombinations of features to attend to based on their bottom-up saliency and how\naccurately they predict future reward. We evaluate SPA on a multiple choice\ntask and a 2D video game that both involve raw pixel input and dynamic changes\nto the task structure. We show various benefits of SPA over approaches that\nnaively attend to either all or random subsets of features. Our results\ndemonstrate (1) how visual feature-based attention in Deep RL models can\nimprove their learning efficiency and ability to deal with sudden changes in\ntask structure and (2) that particle filters may represent a viable\ncomputational account of how visual feature-based attention occurs in the\nbrain.\n",
+        "published": "2020",
+        "authors": [
+            "Sam Blakeman",
+            "Denis Mareschal"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2010.02634v1",
+        "title": "How Convolutional Neural Network Architecture Biases Learned Opponency\n  and Colour Tuning",
+        "abstract": "  Recent work suggests that changing Convolutional Neural Network (CNN)\narchitecture by introducing a bottleneck in the second layer can yield changes\nin learned function. To understand this relationship fully requires a way of\nquantitatively comparing trained networks. The fields of electrophysiology and\npsychophysics have developed a wealth of methods for characterising visual\nsystems which permit such comparisons. Inspired by these methods, we propose an\napproach to obtaining spatial and colour tuning curves for convolutional\nneurons, which can be used to classify cells in terms of their spatial and\ncolour opponency. We perform these classifications for a range of CNNs with\ndifferent depths and bottleneck widths. Our key finding is that networks with a\nbottleneck show a strong functional organisation: almost all cells in the\nbottleneck layer become both spatially and colour opponent, cells in the layer\nfollowing the bottleneck become non-opponent. The colour tuning data can\nfurther be used to form a rich understanding of how colour is encoded by a\nnetwork. As a concrete demonstration, we show that shallower networks without a\nbottleneck learn a complex non-linear colour system, whereas deeper networks\nwith tight bottlenecks learn a simple channel opponent code in the bottleneck\nlayer. We further develop a method of obtaining a hue sensitivity curve for a\ntrained CNN which enables high level insights that complement the low level\nfindings from the colour tuning data. We go on to train a series of networks\nunder different conditions to ascertain the robustness of the discussed\nresults. Ultimately, our methods and findings coalesce with prior art,\nstrengthening our ability to interpret trained CNNs and furthering our\nunderstanding of the connection between architecture and learned\nrepresentation. Code for all experiments is available at\nhttps://github.com/ecs-vlc/opponency.\n",
+        "published": "2020",
+        "authors": [
+            "Ethan Harris",
+            "Daniela Mihai",
+            "Jonathon Hare"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2010.08031v1",
+        "title": "QReLU and m-QReLU: Two novel quantum activation functions to aid medical\n  diagnostics",
+        "abstract": "  The ReLU activation function (AF) has been extensively applied in deep neural\nnetworks, in particular Convolutional Neural Networks (CNN), for image\nclassification despite its unresolved dying ReLU problem, which poses\nchallenges to reliable applications. This issue has obvious important\nimplications for critical applications, such as those in healthcare. Recent\napproaches are just proposing variations of the activation function within the\nsame unresolved dying ReLU challenge. This contribution reports a different\nresearch direction by investigating the development of an innovative quantum\napproach to the ReLU AF that avoids the dying ReLU problem by disruptive\ndesign. The Leaky ReLU was leveraged as a baseline on which the two quantum\nprinciples of entanglement and superposition were applied to derive the\nproposed Quantum ReLU (QReLU) and the modified-QReLU (m-QReLU) activation\nfunctions. Both QReLU and m-QReLU are implemented and made freely available in\nTensorFlow and Keras. This original approach is effective and validated\nextensively in case studies that facilitate the detection of COVID-19 and\nParkinson Disease (PD) from medical images. The two novel AFs were evaluated in\na two-layered CNN against nine ReLU-based AFs on seven benchmark datasets,\nincluding images of spiral drawings taken via graphic tablets from patients\nwith Parkinson Disease and healthy subjects, and point-of-care ultrasound\nimages on the lungs of patients with COVID-19, those with pneumonia and healthy\ncontrols. Despite a higher computational cost, results indicated an overall\nhigher classification accuracy, precision, recall and F1-score brought about by\neither quantum AFs on five of the seven bench-mark datasets, thus demonstrating\nits potential to be the new benchmark or gold standard AF in CNNs and aid image\nclassification tasks involved in critical applications, such as medical\ndiagnoses of COVID-19 and PD.\n",
+        "published": "2020",
+        "authors": [
+            "L. Parisi",
+            "D. Neagu",
+            "R. Ma",
+            "F. Campean"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2010.08219v2",
+        "title": "How Does Supernet Help in Neural Architecture Search?",
+        "abstract": "  Weight sharing, as an approach to speed up architecture performance\nestimation has received wide attention. Instead of training each architecture\nseparately, weight sharing builds a supernet that assembles all the\narchitectures as its submodels. However, there has been debate over whether the\nNAS process actually benefits from weight sharing, due to the gap between\nsupernet optimization and the objective of NAS. To further understand the\neffect of weight sharing on NAS, we conduct a comprehensive analysis on five\nsearch spaces, including NAS-Bench-101, NAS-Bench-201, DARTS-CIFAR10,\nDARTS-PTB, and ProxylessNAS. We find that weight sharing works well on some\nsearch spaces but fails on others. Taking a step forward, we further identified\nbiases accounting for such phenomenon and the capacity of weight sharing. Our\nwork is expected to inspire future NAS researchers to better leverage the power\nof weight sharing.\n",
+        "published": "2020",
+        "authors": [
+            "Yuge Zhang",
+            "Quanlu Zhang",
+            "Yaming Yang"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2010.11158v1",
+        "title": "Black-Box Ripper: Copying black-box models using generative evolutionary\n  algorithms",
+        "abstract": "  We study the task of replicating the functionality of black-box neural\nmodels, for which we only know the output class probabilities provided for a\nset of input images. We assume back-propagation through the black-box model is\nnot possible and its training images are not available, e.g. the model could be\nexposed only through an API. In this context, we present a teacher-student\nframework that can distill the black-box (teacher) model into a student model\nwith minimal accuracy loss. To generate useful data samples for training the\nstudent, our framework (i) learns to generate images on a proxy data set (with\nimages and classes different from those used to train the black-box) and (ii)\napplies an evolutionary strategy to make sure that each generated data sample\nexhibits a high response for a specific class when given as input to the black\nbox. Our framework is compared with several baseline and state-of-the-art\nmethods on three benchmark data sets. The empirical evidence indicates that our\nmodel is superior to the considered baselines. Although our method does not\nback-propagate through the black-box network, it generally surpasses\nstate-of-the-art methods that regard the teacher as a glass-box model. Our code\nis available at: https://github.com/antoniobarbalau/black-box-ripper.\n",
+        "published": "2020",
+        "authors": [
+            "Antonio Barbalau",
+            "Adrian Cosma",
+            "Radu Tudor Ionescu",
+            "Marius Popescu"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2010.11978v1",
+        "title": "Deep Convolutional Neural Networks Model-based Brain Tumor Detection in\n  Brain MRI Images",
+        "abstract": "  Diagnosing Brain Tumor with the aid of Magnetic Resonance Imaging (MRI) has\ngained enormous prominence over the years, primarily in the field of medical\nscience. Detection and/or partitioning of brain tumors solely with the aid of\nMR imaging is achieved at the cost of immense time and effort and demands a lot\nof expertise from engaged personnel. This substantiates the necessity of\nfabricating an autonomous model brain tumor diagnosis. Our work involves\nimplementing a deep convolutional neural network (DCNN) for diagnosing brain\ntumors from MR images. The dataset used in this paper consists of 253 brain MR\nimages where 155 images are reported to have tumors. Our model can single out\nthe MR images with tumors with an overall accuracy of 96%. The model\noutperformed the existing conventional methods for the diagnosis of brain tumor\nin the test dataset (Precision = 0.93, Sensitivity = 1.00, and F1-score =\n0.97). Moreover, the proposed model's average precision-recall score is 0.93,\nCohen's Kappa 0.91, and AUC 0.95. Therefore, the proposed model can help\nclinical experts verify whether the patient has a brain tumor and,\nconsequently, accelerate the treatment procedure.\n",
+        "published": "2020",
+        "authors": [
+            "Md. Abu Bakr Siddique",
+            "Shadman Sakib",
+            "Mohammad Mahmudur Rahman Khan",
+            "Abyaz Kader Tanzeem",
+            "Madiha Chowdhury",
+            "Nowrin Yasmin"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2010.14535v4",
+        "title": "Neural Architecture Search of SPD Manifold Networks",
+        "abstract": "  In this paper, we propose a new neural architecture search (NAS) problem of\nSymmetric Positive Definite (SPD) manifold networks, aiming to automate the\ndesign of SPD neural architectures. To address this problem, we first introduce\na geometrically rich and diverse SPD neural architecture search space for an\nefficient SPD cell design. Further, we model our new NAS problem with a\none-shot training process of a single supernet. Based on the supernet modeling,\nwe exploit a differentiable NAS algorithm on our relaxed continuous search\nspace for SPD neural architecture search. Statistical evaluation of our method\non drone, action, and emotion recognition tasks mostly provides better results\nthan the state-of-the-art SPD networks and traditional NAS algorithms.\nEmpirical results show that our algorithm excels in discovering better\nperforming SPD network design and provides models that are more than three\ntimes lighter than searched by the state-of-the-art NAS algorithms.\n",
+        "published": "2020",
+        "authors": [
+            "Rhea Sanjay Sukthanker",
+            "Zhiwu Huang",
+            "Suryansh Kumar",
+            "Erik Goron Endsjo",
+            "Yan Wu",
+            "Luc Van Gool"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2010.16165v2",
+        "title": "Fusion-Catalyzed Pruning for Optimizing Deep Learning on Intelligent\n  Edge Devices",
+        "abstract": "  The increasing computational cost of deep neural network models limits the\napplicability of intelligent applications on resource-constrained edge devices.\nWhile a number of neural network pruning methods have been proposed to compress\nthe models, prevailing approaches focus only on parametric operators (e.g.,\nconvolution), which may miss optimization opportunities. In this paper, we\npresent a novel fusion-catalyzed pruning approach, called FuPruner, which\nsimultaneously optimizes the parametric and non-parametric operators for\naccelerating neural networks. We introduce an aggressive fusion method to\nequivalently transform a model, which extends the optimization space of pruning\nand enables non-parametric operators to be pruned in a similar manner as\nparametric operators, and a dynamic filter pruning method is applied to\ndecrease the computational cost of models while retaining the accuracy\nrequirement. Moreover, FuPruner provides configurable optimization options for\ncontrolling fusion and pruning, allowing much more flexible\nperformance-accuracy trade-offs to be made. Evaluation with state-of-the-art\nresidual neural networks on five representative intelligent edge platforms,\nJetson TX2, Jetson Nano, Edge TPU, NCS, and NCS2, demonstrates the\neffectiveness of our approach, which can accelerate the inference of models on\nCIFAR-10 and ImageNet datasets.\n",
+        "published": "2020",
+        "authors": [
+            "Guangli Li",
+            "Xiu Ma",
+            "Xueying Wang",
+            "Lei Liu",
+            "Jingling Xue",
+            "Xiaobing Feng"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2010.16262v2",
+        "title": "Experimental design for MRI by greedy policy search",
+        "abstract": "  In today's clinical practice, magnetic resonance imaging (MRI) is routinely\naccelerated through subsampling of the associated Fourier domain. Currently,\nthe construction of these subsampling strategies - known as experimental design\n- relies primarily on heuristics. We propose to learn experimental design\nstrategies for accelerated MRI with policy gradient methods. Unexpectedly, our\nexperiments show that a simple greedy approximation of the objective leads to\nsolutions nearly on-par with the more general non-greedy approach. We offer a\npartial explanation for this phenomenon rooted in greater variance in the\nnon-greedy objective's gradient estimates, and experimentally verify that this\nvariance hampers non-greedy models in adapting their policies to individual MR\nimages. We empirically show that this adaptivity is key to improving\nsubsampling designs.\n",
+        "published": "2020",
+        "authors": [
+            "Tim Bakker",
+            "Herke van Hoof",
+            "Max Welling"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2101.02480v1",
+        "title": "Active learning for object detection in high-resolution satellite images",
+        "abstract": "  In machine learning, the term active learning regroups techniques that aim at\nselecting the most useful data to label from a large pool of unlabelled\nexamples. While supervised deep learning techniques have shown to be\nincreasingly efficient on many applications, they require a huge number of\nlabelled examples to reach operational performances. Therefore, the labelling\neffort linked to the creation of the datasets required is also increasing. When\nworking on defense-related remote sensing applications, labelling can be\nchallenging due to the large areas covered and often requires military experts\nwho are rare and whose time is primarily dedicated to operational needs.\nLimiting the labelling effort is thus of utmost importance. This study aims at\nreviewing the most relevant active learning techniques to be used for object\ndetection on very high resolution imagery and shows an example of the value of\nsuch techniques on a relevant operational use case: aircraft detection.\n",
+        "published": "2021",
+        "authors": [
+            "Alex Goupilleau",
+            "Tugdual Ceillier",
+            "Marie-Caroline Corbineau"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2101.06507v1",
+        "title": "Multi-objective Search of Robust Neural Architectures against Multiple\n  Types of Adversarial Attacks",
+        "abstract": "  Many existing deep learning models are vulnerable to adversarial examples\nthat are imperceptible to humans. To address this issue, various methods have\nbeen proposed to design network architectures that are robust to one particular\ntype of adversarial attacks. It is practically impossible, however, to predict\nbeforehand which type of attacks a machine learn model may suffer from. To\naddress this challenge, we propose to search for deep neural architectures that\nare robust to five types of well-known adversarial attacks using a\nmulti-objective evolutionary algorithm. To reduce the computational cost, a\nnormalized error rate of a randomly chosen attack is calculated as the\nrobustness for each newly generated neural architecture at each generation. All\nnon-dominated network architectures obtained by the proposed method are then\nfully trained against randomly chosen adversarial attacks and tested on two\nwidely used datasets. Our experimental results demonstrate the superiority of\noptimized neural architectures found by the proposed approach over\nstate-of-the-art networks that are widely used in the literature in terms of\nthe classification accuracy under different adversarial attacks.\n",
+        "published": "2021",
+        "authors": [
+            "Jia Liu",
+            "Yaochu Jin"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2105.02953v1",
+        "title": "Recognition of handwritten MNIST digits on low-memory 2 Kb RAM Arduino\n  board using LogNNet reservoir neural network",
+        "abstract": "  The presented compact algorithm for recognizing handwritten digits of the\nMNIST database, created on the LogNNet reservoir neural network, reaches the\nrecognition accuracy of 82%. The algorithm was tested on a low-memory Arduino\nboard with 2 Kb static RAM low-power microcontroller. The dependences of the\naccuracy and time of image recognition on the number of neurons in the\nreservoir have been investigated. The memory allocation demonstrates that the\nalgorithm stores all the necessary information in RAM without using additional\ndata storage, and operates with original images without preliminary processing.\nThe simple structure of the algorithm, with appropriate training, can be\nadapted for wide practical application, for example, for creating mobile\nbiosensors for early diagnosis of adverse events in medicine. The study results\nare important for the implementation of artificial intelligence on peripheral\nconstrained IoT devices and for edge computing.\n",
+        "published": "2021",
+        "authors": [
+            "Y. A. Izotov",
+            "A. A. Velichko",
+            "A. A. Ivshin",
+            "R. E. Novitskiy"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2105.05530v1",
+        "title": "Winograd Algorithm for AdderNet",
+        "abstract": "  Adder neural network (AdderNet) is a new kind of deep model that replaces the\noriginal massive multiplications in convolutions by additions while preserving\nthe high performance. Since the hardware complexity of additions is much lower\nthan that of multiplications, the overall energy consumption is thus reduced\nsignificantly. To further optimize the hardware overhead of using AdderNet,\nthis paper studies the winograd algorithm, which is a widely used fast\nalgorithm for accelerating convolution and saving the computational costs.\nUnfortunately, the conventional Winograd algorithm cannot be directly applied\nto AdderNets since the distributive law in multiplication is not valid for the\nl1-norm. Therefore, we replace the element-wise multiplication in the Winograd\nequation by additions and then develop a new set of transform matrixes that can\nenhance the representation ability of output features to maintain the\nperformance. Moreover, we propose the l2-to-l1 training strategy to mitigate\nthe negative impacts caused by formal inconsistency. Experimental results on\nboth FPGA and benchmarks show that the new method can further reduce the energy\nconsumption without affecting the accuracy of the original AdderNet.\n",
+        "published": "2021",
+        "authors": [
+            "Wenshuo Li",
+            "Hanting Chen",
+            "Mingqiang Huang",
+            "Xinghao Chen",
+            "Chunjing Xu",
+            "Yunhe Wang"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2105.07789v2",
+        "title": "Temporal Prediction and Evaluation of Brassica Growth in the Field using\n  Conditional Generative Adversarial Networks",
+        "abstract": "  Farmers frequently assess plant growth and performance as basis for making\ndecisions when to take action in the field, such as fertilization, weed\ncontrol, or harvesting. The prediction of plant growth is a major challenge, as\nit is affected by numerous and highly variable environmental factors. This\npaper proposes a novel monitoring approach that comprises high-throughput\nimaging sensor measurements and their automatic analysis to predict future\nplant growth. Our approach's core is a novel machine learning-based generative\ngrowth model based on conditional generative adversarial networks, which is\nable to predict the future appearance of individual plants. In experiments with\nRGB time-series images of laboratory-grown Arabidopsis thaliana and field-grown\ncauliflower plants, we show that our approach produces realistic, reliable, and\nreasonable images of future growth stages. The automatic interpretation of the\ngenerated images through neural network-based instance segmentation allows the\nderivation of various phenotypic traits that describe plant growth.\n",
+        "published": "2021",
+        "authors": [
+            "Lukas Drees",
+            "Laura Verena Junker-Frohn",
+            "Jana Kierdorf",
+            "Ribana Roscher"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2105.10325v1",
+        "title": "Behind the leaves -- Estimation of occluded grapevine berries with\n  conditional generative adversarial networks",
+        "abstract": "  The need for accurate yield estimates for viticulture is becoming more\nimportant due to increasing competition in the wine market worldwide. One of\nthe most promising methods to estimate the harvest is berry counting, as it can\nbe approached non-destructively, and its process can be automated. In this\narticle, we present a method that addresses the challenge of occluded berries\nwith leaves to obtain a more accurate estimate of the number of berries that\nwill enable a better estimate of the harvest. We use generative adversarial\nnetworks, a deep learning-based approach that generates a likely scenario\nbehind the leaves exploiting learned patterns from images with non-occluded\nberries. Our experiments show that the estimate of the number of berries after\napplying our method is closer to the manually counted reference. In contrast to\napplying a factor to the berry count, our approach better adapts to local\nconditions by directly involving the appearance of the visible berries.\nFurthermore, we show that our approach can identify which areas in the image\nshould be changed by adding new berries without explicitly requiring\ninformation about hidden areas.\n",
+        "published": "2021",
+        "authors": [
+            "Jana Kierdorf",
+            "Immanuel Weber",
+            "Anna Kicherer",
+            "Laura Zabawa",
+            "Lukas Drees",
+            "Ribana Roscher"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2105.10335v1",
+        "title": "Data-driven Weight Initialization with Sylvester Solvers",
+        "abstract": "  In this work, we propose a data-driven scheme to initialize the parameters of\na deep neural network. This is in contrast to traditional approaches which\nrandomly initialize parameters by sampling from transformed standard\ndistributions. Such methods do not use the training data to produce a more\ninformed initialization. Our method uses a sequential layer-wise approach where\neach layer is initialized using its input activations. The initialization is\ncast as an optimization problem where we minimize a combination of encoding and\ndecoding losses of the input activations, which is further constrained by a\nuser-defined latent code. The optimization problem is then restructured into\nthe well-known Sylvester equation, which has fast and efficient gradient-free\nsolutions. Our data-driven method achieves a boost in performance compared to\nrandom initialization methods, both before start of training and after training\nis over. We show that our proposed method is especially effective in few-shot\nand fine-tuning settings. We conclude this paper with analyses on time\ncomplexity and the effect of different latent codes on the recognition\nperformance.\n",
+        "published": "2021",
+        "authors": [
+            "Debasmit Das",
+            "Yash Bhalgat",
+            "Fatih Porikli"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2105.12210v1",
+        "title": "The Nonlinearity Coefficient - A Practical Guide to Neural Architecture\n  Design",
+        "abstract": "  In essence, a neural network is an arbitrary differentiable, parametrized\nfunction. Choosing a neural network architecture for any task is as complex as\nsearching the space of those functions. For the last few years, 'neural\narchitecture design' has been largely synonymous with 'neural architecture\nsearch' (NAS), i.e. brute-force, large-scale search. NAS has yielded\nsignificant gains on practical tasks. However, NAS methods end up searching for\na local optimum in architecture space in a small neighborhood around\narchitectures that often go back decades, based on CNN or LSTM.\n  In this work, we present a different and complementary approach to\narchitecture design, which we term 'zero-shot architecture design' (ZSAD). We\ndevelop methods that can predict, without any training, whether an architecture\nwill achieve a relatively high test or training error on a task after training.\nWe then go on to explain the error in terms of the architecture definition\nitself and develop tools for modifying the architecture based on this\nexplanation. This confers an unprecedented level of control on the deep\nlearning practitioner. They can make informed design decisions before the first\nline of code is written, even for tasks for which no prior art exists.\n  Our first major contribution is to show that the 'degree of nonlinearity' of\na neural architecture is a key causal driver behind its performance, and a\nprimary aspect of the architecture's model complexity. We introduce the\n'nonlinearity coefficient' (NLC), a scalar metric for measuring nonlinearity.\nVia extensive empirical study, we show that the value of the NLC in the\narchitecture's randomly initialized state before training is a powerful\npredictor of test error after training and that attaining a right-sized NLC is\nessential for attaining an optimal test error. The NLC is also conceptually\nsimple, well-defined for any feedforward network, easy and cheap to compute,\nhas extensive theoretical, empirical and conceptual grounding, follows\ninstructively from the architecture definition, and can be easily controlled\nvia our 'nonlinearity normalization' algorithm. We argue that the NLC is the\nmost powerful scalar statistic for architecture design specifically and neural\nnetwork analysis in general. Our analysis is fueled by mean field theory, which\nwe use to uncover the 'meta-distribution' of layers.\n  Beyond the NLC, we uncover and flesh out a range of metrics and properties\nthat have a significant explanatory influence on test and training error. We go\non to explain the majority of the error variation across a wide range of\nrandomly generated architectures with these metrics and properties. We compile\nour insights into a practical guide for architecture designers, which we argue\ncan significantly shorten the trial-and-error phase of deep learning\ndeployment.\n  Our results are grounded in an experimental protocol that exceeds that of the\nvast majority of other deep learning studies in terms of carefulness and rigor.\nWe study the impact of e.g. dataset, learning rate, floating-point precision,\nloss function, statistical estimation error and batch inter-dependency on\nperformance and other key properties. We promote research practices that we\nbelieve can significantly accelerate progress in architecture design research.\n",
+        "published": "2021",
+        "authors": [
+            "George Philipp"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2105.14753v1",
+        "title": "Bio-inspired visual attention for silicon retinas based on spiking\n  neural networks applied to pattern classification",
+        "abstract": "  Visual attention can be defined as the behavioral and cognitive process of\nselectively focusing on a discrete aspect of sensory cues while disregarding\nother perceivable information. This biological mechanism, more specifically\nsaliency detection, has long been used in multimedia indexing to drive the\nanalysis only on relevant parts of images or videos for further processing.\n  The recent advent of silicon retinas (or event cameras -- sensors that\nmeasure pixel-wise changes in brightness and output asynchronous events\naccordingly) raises the question of how to adapt attention and saliency to the\nunconventional type of such sensors' output. Silicon retina aims to reproduce\nthe biological retina behaviour. In that respect, they produce punctual events\nin time that can be construed as neural spikes and interpreted as such by a\nneural network.\n  In particular, Spiking Neural Networks (SNNs) represent an asynchronous type\nof artificial neural network closer to biology than traditional artificial\nnetworks, mainly because they seek to mimic the dynamics of neural membrane and\naction potentials over time. SNNs receive and process information in the form\nof spike trains. Therefore, they make for a suitable candidate for the\nefficient processing and classification of incoming event patterns measured by\nsilicon retinas. In this paper, we review the biological background behind the\nattentional mechanism, and introduce a case study of event videos\nclassification with SNNs, using a biology-grounded low-level computational\nattention mechanism, with interesting preliminary results.\n",
+        "published": "2021",
+        "authors": [
+            "Am\u00e9lie Gruel",
+            "Jean Martinet"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2107.00223v2",
+        "title": "Exponential Lower Bounds for Threshold Circuits of Sub-Linear Depth and\n  Energy",
+        "abstract": "  In this paper, we investigate computational power of threshold circuits and\nother theoretical models of neural networks in terms of the following four\ncomplexity measures: size (the number of gates), depth, weight and energy. Here\nthe energy complexity of a circuit measures sparsity of their computation, and\nis defined as the maximum number of gates outputting non-zero values taken over\nall the input assignments. As our main result, we prove that any threshold\ncircuit $C$ of size $s$, depth $d$, energy $e$ and weight $w$ satisfies $\\log\n(rk(M_C)) \\le ed (\\log s + \\log w + \\log n)$, where $rk(M_C)$ is the rank of\nthe communication matrix $M_C$ of a $2n$-variable Boolean function that $C$\ncomputes. Thus, such a threshold circuit $C$ is able to compute only a Boolean\nfunction of which communication matrix has rank bounded by a product of\nlogarithmic factors of $s,w$ and linear factors of $d,e$. This implies an\nexponential lower bound on the size of even sublinear-depth threshold circuit\nif energy and weight are sufficiently small. For other models of neural\nnetworks such as a discretized ReLE circuits and decretized sigmoid circuits,\nwe prove that a similar inequality also holds for a discretized circuit $C$:\n$rk(M_C) = O(ed(\\log s + \\log w + \\log n)^3)$.\n",
+        "published": "2021",
+        "authors": [
+            "Kei Uchizawa",
+            "Haruki Abe"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2202.00884v1",
+        "title": "Automotive Parts Assessment: Applying Real-time Instance-Segmentation\n  Models to Identify Vehicle Parts",
+        "abstract": "  The problem of automated car damage assessment presents a major challenge in\nthe auto repair and damage assessment industry. The domain has several\napplication areas ranging from car assessment companies such as car rentals and\nbody shops to accidental damage assessment for car insurance companies. In\nvehicle assessment, the damage can take any form including scratches, minor and\nmajor dents to missing parts. More often, the assessment area has a significant\nlevel of noise such as dirt, grease, oil or rush that makes an accurate\nidentification challenging. Moreover, the identification of a particular part\nis the first step in the repair industry to have an accurate labour and part\nassessment where the presence of different car models, shapes and sizes makes\nthe task even more challenging for a machine-learning model to perform well. To\naddress these challenges, this research explores and applies various instance\nsegmentation methodologies to evaluate the best performing models.\n  The scope of this work focusses on two genres of real-time instance\nsegmentation models due to their industrial significance, namely SipMask and\nYolact. These methodologies are evaluated against a previously reported car\nparts dataset (DSMLR) and an internally curated dataset extracted from local\ncar repair workshops. The Yolact-based part localization and segmentation\nmethod performed well when compared to other real-time instance mechanisms with\na mAP of 66.5. For the workshop repair dataset, SipMask++ reported better\naccuracies for object detection with a mAP of 57.0 with outcomes for\nAP_IoU=.50and AP_IoU=.75 reporting 72.0 and 67.0 respectively while Yolact was\nfound to be a better performer for AP_s with 44.0 and 2.6 for object detection\nand segmentation categories respectively.\n",
+        "published": "2022",
+        "authors": [
+            "Syed Adnan Yusuf",
+            "Abdulmalik Ali Aldawsari",
+            "Riad Souissi"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2202.01212v1",
+        "title": "Training Semantic Descriptors for Image-Based Localization",
+        "abstract": "  Vision based solutions for the localization of vehicles have become popular\nrecently. We employ an image retrieval based visual localization approach. The\ndatabase images are kept with GPS coordinates and the location of the retrieved\ndatabase image serves as an approximate position of the query image. We show\nthat localization can be performed via descriptors solely extracted from\nsemantically segmented images. It is reliable especially when the environment\nis subjected to severe illumination and seasonal changes. Our experiments\nreveal that the localization performance of a semantic descriptor can increase\nup to the level of state-of-the-art RGB image based methods.\n",
+        "published": "2022",
+        "authors": [
+            "Ibrahim Cinaroglu",
+            "Yalin Bastanlar"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2202.01440v1",
+        "title": "Optimized Potential Initialization for Low-latency Spiking Neural\n  Networks",
+        "abstract": "  Spiking Neural Networks (SNNs) have been attached great importance due to the\ndistinctive properties of low power consumption, biological plausibility, and\nadversarial robustness. The most effective way to train deep SNNs is through\nANN-to-SNN conversion, which have yielded the best performance in deep network\nstructure and large-scale datasets. However, there is a trade-off between\naccuracy and latency. In order to achieve high precision as original ANNs, a\nlong simulation time is needed to match the firing rate of a spiking neuron\nwith the activation value of an analog neuron, which impedes the practical\napplication of SNN. In this paper, we aim to achieve high-performance converted\nSNNs with extremely low latency (fewer than 32 time-steps). We start by\ntheoretically analyzing ANN-to-SNN conversion and show that scaling the\nthresholds does play a similar role as weight normalization. Instead of\nintroducing constraints that facilitate ANN-to-SNN conversion at the cost of\nmodel capacity, we applied a more direct way by optimizing the initial membrane\npotential to reduce the conversion loss in each layer. Besides, we demonstrate\nthat optimal initialization of membrane potentials can implement expected\nerror-free ANN-to-SNN conversion. We evaluate our algorithm on the CIFAR-10,\nCIFAR-100 and ImageNet datasets and achieve state-of-the-art accuracy, using\nfewer time-steps. For example, we reach top-1 accuracy of 93.38\\% on CIFAR-10\nwith 16 time-steps. Moreover, our method can be applied to other ANN-SNN\nconversion methodologies and remarkably promote performance when the time-steps\nis small.\n",
+        "published": "2022",
+        "authors": [
+            "Tong Bu",
+            "Jianhao Ding",
+            "Zhaofei Yu",
+            "Tiejun Huang"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1503.03167v4",
+        "title": "Deep Convolutional Inverse Graphics Network",
+        "abstract": "  This paper presents the Deep Convolution Inverse Graphics Network (DC-IGN), a\nmodel that learns an interpretable representation of images. This\nrepresentation is disentangled with respect to transformations such as\nout-of-plane rotations and lighting variations. The DC-IGN model is composed of\nmultiple layers of convolution and de-convolution operators and is trained\nusing the Stochastic Gradient Variational Bayes (SGVB) algorithm. We propose a\ntraining procedure to encourage neurons in the graphics code layer to represent\na specific transformation (e.g. pose or light). Given a single input image, our\nmodel can generate new images of the same object with variations in pose and\nlighting. We present qualitative and quantitative results of the model's\nefficacy at learning a 3D rendering engine.\n",
+        "published": "2015",
+        "authors": [
+            "Tejas D. Kulkarni",
+            "Will Whitney",
+            "Pushmeet Kohli",
+            "Joshua B. Tenenbaum"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1503.03562v3",
+        "title": "Training Binary Multilayer Neural Networks for Image Classification\n  using Expectation Backpropagation",
+        "abstract": "  Compared to Multilayer Neural Networks with real weights, Binary Multilayer\nNeural Networks (BMNNs) can be implemented more efficiently on dedicated\nhardware. BMNNs have been demonstrated to be effective on binary classification\ntasks with Expectation BackPropagation (EBP) algorithm on high dimensional text\ndatasets. In this paper, we investigate the capability of BMNNs using the EBP\nalgorithm on multiclass image classification tasks. The performances of binary\nneural networks with multiple hidden layers and different numbers of hidden\nunits are examined on MNIST. We also explore the effectiveness of image spatial\nfilters and the dropout technique in BMNNs. Experimental results on MNIST\ndataset show that EBP can obtain 2.12% test error with binary weights and 1.66%\ntest error with real weights, which is comparable to the results of standard\nBackPropagation algorithm on fully connected MNNs.\n",
+        "published": "2015",
+        "authors": [
+            "Zhiyong Cheng",
+            "Daniel Soudry",
+            "Zexi Mao",
+            "Zhenzhong Lan"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1503.04596v3",
+        "title": "Enhanced Image Classification With a Fast-Learning Shallow Convolutional\n  Neural Network",
+        "abstract": "  We present a neural network architecture and training method designed to\nenable very rapid training and low implementation complexity. Due to its\ntraining speed and very few tunable parameters, the method has strong potential\nfor applications requiring frequent retraining or online training. The approach\nis characterized by (a) convolutional filters based on biologically inspired\nvisual processing filters, (b) randomly-valued classifier-stage input weights,\n(c) use of least squares regression to train the classifier output weights in a\nsingle batch, and (d) linear classifier-stage output units. We demonstrate the\nefficacy of the method by applying it to image classification. Our results\nmatch existing state-of-the-art results on the MNIST (0.37% error) and\nNORB-small (2.2% error) image classification databases, but with very fast\ntraining times compared to standard deep network approaches. The network's\nperformance on the Google Street View House Number (SVHN) (4% error) database\nis also competitive with state-of-the art methods.\n",
+        "published": "2015",
+        "authors": [
+            "Mark D. McDonnell",
+            "Tony Vladusich"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1606.00611v2",
+        "title": "Recursive Autoconvolution for Unsupervised Learning of Convolutional\n  Neural Networks",
+        "abstract": "  In visual recognition tasks, such as image classification, unsupervised\nlearning exploits cheap unlabeled data and can help to solve these tasks more\nefficiently. We show that the recursive autoconvolution operator, adopted from\nphysics, boosts existing unsupervised methods by learning more discriminative\nfilters. We take well established convolutional neural networks and train their\nfilters layer-wise. In addition, based on previous works we design a network\nwhich extracts more than 600k features per sample, but with the total number of\ntrainable parameters greatly reduced by introducing shared filters in higher\nlayers. We evaluate our networks on the MNIST, CIFAR-10, CIFAR-100 and STL-10\nimage classification benchmarks and report several state of the art results\namong other unsupervised methods.\n",
+        "published": "2016",
+        "authors": [
+            "Boris Knyazev",
+            "Erhardt Barth",
+            "Thomas Martinetz"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1606.01166v4",
+        "title": "Generalizing the Convolution Operator to extend CNNs to Irregular\n  Domains",
+        "abstract": "  Convolutional Neural Networks (CNNs) have become the state-of-the-art in\nsupervised learning vision tasks. Their convolutional filters are of paramount\nimportance for they allow to learn patterns while disregarding their locations\nin input images. When facing highly irregular domains, generalized\nconvolutional operators based on an underlying graph structure have been\nproposed. However, these operators do not exactly match standard ones on grid\ngraphs, and introduce unwanted additional invariance (e.g. with regards to\nrotations). We propose a novel approach to generalize CNNs to irregular domains\nusing weight sharing and graph-based operators. Using experiments, we show that\nthese models resemble CNNs on regular domains and offer better performance than\nmultilayer perceptrons on distorded ones.\n",
+        "published": "2016",
+        "authors": [
+            "Jean-Charles Vialatte",
+            "Vincent Gripon",
+            "Gr\u00e9goire Mercier"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1606.01981v1",
+        "title": "Deep neural networks are robust to weight binarization and other\n  non-linear distortions",
+        "abstract": "  Recent results show that deep neural networks achieve excellent performance\neven when, during training, weights are quantized and projected to a binary\nrepresentation. Here, we show that this is just the tip of the iceberg: these\nsame networks, during testing, also exhibit a remarkable robustness to\ndistortions beyond quantization, including additive and multiplicative noise,\nand a class of non-linear projections where binarization is just a special\ncase. To quantify this robustness, we show that one such network achieves 11%\ntest error on CIFAR-10 even with 0.68 effective bits per weight. Furthermore,\nwe find that a common training heuristic--namely, projecting quantized weights\nduring backpropagation--can be altered (or even removed) and networks still\nachieve a base level of robustness during testing. Specifically, training with\nweight projections other than quantization also works, as does simply clipping\nthe weights, both of which have never been reported before. We confirm our\nresults for CIFAR-10 and ImageNet datasets. Finally, drawing from these ideas,\nwe propose a stochastic projection rule that leads to a new state of the art\nnetwork with 7.64% test error on CIFAR-10 using no data augmentation.\n",
+        "published": "2016",
+        "authors": [
+            "Paul Merolla",
+            "Rathinakumar Appuswamy",
+            "John Arthur",
+            "Steve K. Esser",
+            "Dharmendra Modha"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1606.02228v2",
+        "title": "Systematic evaluation of CNN advances on the ImageNet",
+        "abstract": "  The paper systematically studies the impact of a range of recent advances in\nCNN architectures and learning methods on the object categorization (ILSVRC)\nproblem. The evalution tests the influence of the following choices of the\narchitecture: non-linearity (ReLU, ELU, maxout, compatibility with batch\nnormalization), pooling variants (stochastic, max, average, mixed), network\nwidth, classifier design (convolutional, fully-connected, SPP), image\npre-processing, and of learning parameters: learning rate, batch size,\ncleanliness of the data, etc.\n  The performance gains of the proposed modifications are first tested\nindividually and then in combination. The sum of individual gains is bigger\nthan the observed improvement when all modifications are introduced, but the\n\"deficit\" is small suggesting independence of their benefits. We show that the\nuse of 128x128 pixel images is sufficient to make qualitative conclusions about\noptimal network structure that hold for the full size Caffe and VGG nets. The\nresults are obtained an order of magnitude faster than with the standard 224\npixel images.\n",
+        "published": "2016",
+        "authors": [
+            "Dmytro Mishkin",
+            "Nikolay Sergievskiy",
+            "Jiri Matas"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1606.02492v4",
+        "title": "Convolutional Neural Fabrics",
+        "abstract": "  Despite the success of CNNs, selecting the optimal architecture for a given\ntask remains an open problem. Instead of aiming to select a single optimal\narchitecture, we propose a \"fabric\" that embeds an exponentially large number\nof architectures. The fabric consists of a 3D trellis that connects response\nmaps at different layers, scales, and channels with a sparse homogeneous local\nconnectivity pattern. The only hyper-parameters of a fabric are the number of\nchannels and layers. While individual architectures can be recovered as paths,\nthe fabric can in addition ensemble all embedded architectures together,\nsharing their weights where their paths overlap. Parameters can be learned\nusing standard methods based on back-propagation, at a cost that scales\nlinearly in the fabric size. We present benchmark results competitive with the\nstate of the art for image classification on MNIST and CIFAR10, and for\nsemantic segmentation on the Part Labels dataset.\n",
+        "published": "2016",
+        "authors": [
+            "Shreyas Saxena",
+            "Jakob Verbeek"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1606.02580v1",
+        "title": "Convolution by Evolution: Differentiable Pattern Producing Networks",
+        "abstract": "  In this work we introduce a differentiable version of the Compositional\nPattern Producing Network, called the DPPN. Unlike a standard CPPN, the\ntopology of a DPPN is evolved but the weights are learned. A Lamarckian\nalgorithm, that combines evolution and learning, produces DPPNs to reconstruct\nan image. Our main result is that DPPNs can be evolved/trained to compress the\nweights of a denoising autoencoder from 157684 to roughly 200 parameters, while\nachieving a reconstruction accuracy comparable to a fully connected network\nwith more than two orders of magnitude more parameters. The regularization\nability of the DPPN allows it to rediscover (approximate) convolutional network\narchitectures embedded within a fully connected architecture. Such\nconvolutional architectures are the current state of the art for many computer\nvision applications, so it is satisfying that DPPNs are capable of discovering\nthis structure rather than having to build it in by design. DPPNs exhibit\nbetter generalization when tested on the Omniglot dataset after being trained\non MNIST, than directly encoded fully connected autoencoders. DPPNs are\ntherefore a new framework for integrating learning and evolution.\n",
+        "published": "2016",
+        "authors": [
+            "Chrisantha Fernando",
+            "Dylan Banarse",
+            "Malcolm Reynolds",
+            "Frederic Besse",
+            "David Pfau",
+            "Max Jaderberg",
+            "Marc Lanctot",
+            "Daan Wierstra"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1606.03498v1",
+        "title": "Improved Techniques for Training GANs",
+        "abstract": "  We present a variety of new architectural features and training procedures\nthat we apply to the generative adversarial networks (GANs) framework. We focus\non two applications of GANs: semi-supervised learning, and the generation of\nimages that humans find visually realistic. Unlike most work on generative\nmodels, our primary goal is not to train a model that assigns high likelihood\nto test data, nor do we require the model to be able to learn well without\nusing any labels. Using our new techniques, we achieve state-of-the-art results\nin semi-supervised classification on MNIST, CIFAR-10 and SVHN. The generated\nimages are of high quality as confirmed by a visual Turing test: our model\ngenerates MNIST samples that humans cannot distinguish from real data, and\nCIFAR-10 samples that yield a human error rate of 21.3%. We also present\nImageNet samples with unprecedented resolution and show that our methods enable\nthe model to learn recognizable features of ImageNet classes.\n",
+        "published": "2016",
+        "authors": [
+            "Tim Salimans",
+            "Ian Goodfellow",
+            "Wojciech Zaremba",
+            "Vicki Cheung",
+            "Alec Radford",
+            "Xi Chen"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1606.04189v2",
+        "title": "Inverting face embeddings with convolutional neural networks",
+        "abstract": "  Deep neural networks have dramatically advanced the state of the art for many\nareas of machine learning. Recently they have been shown to have a remarkable\nability to generate highly complex visual artifacts such as images and text\nrather than simply recognize them.\n  In this work we use neural networks to effectively invert low-dimensional\nface embeddings while producing realistically looking consistent images. Our\ncontribution is twofold, first we show that a gradient ascent style approaches\ncan be used to reproduce consistent images, with a help of a guiding image.\nSecond, we demonstrate that we can train a separate neural network to\neffectively solve the minimization problem in one pass, and generate images in\nreal-time. We then evaluate the loss imposed by using a neural network instead\nof the gradient descent by comparing the final values of the minimized loss\nfunction.\n",
+        "published": "2016",
+        "authors": [
+            "Andrey Zhmoginov",
+            "Mark Sandler"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1606.04801v2",
+        "title": "A Powerful Generative Model Using Random Weights for the Deep Image\n  Representation",
+        "abstract": "  To what extent is the success of deep visualization due to the training?\nCould we do deep visualization using untrained, random weight networks? To\naddress this issue, we explore new and powerful generative models for three\npopular deep visualization tasks using untrained, random weight convolutional\nneural networks. First we invert representations in feature spaces and\nreconstruct images from white noise inputs. The reconstruction quality is\nstatistically higher than that of the same method applied on well trained\nnetworks with the same architecture. Next we synthesize textures using scaled\ncorrelations of representations in multiple layers and our results are almost\nindistinguishable with the original natural texture and the synthesized\ntextures based on the trained network. Third, by recasting the content of an\nimage in the style of various artworks, we create artistic images with high\nperceptual quality, highly competitive to the prior work of Gatys et al. on\npretrained networks. To our knowledge this is the first demonstration of image\nrepresentations using untrained deep neural networks. Our work provides a new\nand fascinating tool to study the representation of deep network architecture\nand sheds light on new understandings on deep visualization.\n",
+        "published": "2016",
+        "authors": [
+            "Kun He",
+            "Yan Wang",
+            "John Hopcroft"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1607.03250v1",
+        "title": "Network Trimming: A Data-Driven Neuron Pruning Approach towards\n  Efficient Deep Architectures",
+        "abstract": "  State-of-the-art neural networks are getting deeper and wider. While their\nperformance increases with the increasing number of layers and neurons, it is\ncrucial to design an efficient deep architecture in order to reduce\ncomputational and memory costs. Designing an efficient neural network, however,\nis labor intensive requiring many experiments, and fine-tunings. In this paper,\nwe introduce network trimming which iteratively optimizes the network by\npruning unimportant neurons based on analysis of their outputs on a large\ndataset. Our algorithm is inspired by an observation that the outputs of a\nsignificant portion of neurons in a large network are mostly zero, regardless\nof what inputs the network received. These zero activation neurons are\nredundant, and can be removed without affecting the overall accuracy of the\nnetwork. After pruning the zero activation neurons, we retrain the network\nusing the weights before pruning as initialization. We alternate the pruning\nand retraining to further reduce zero activations in a network. Our experiments\non the LeNet and VGG-16 show that we can achieve high compression ratio of\nparameters without losing or even achieving higher accuracy than the original\nnetwork.\n",
+        "published": "2016",
+        "authors": [
+            "Hengyuan Hu",
+            "Rui Peng",
+            "Yu-Wing Tai",
+            "Chi-Keung Tang"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1607.06125v1",
+        "title": "Sequence to sequence learning for unconstrained scene text recognition",
+        "abstract": "  In this work we present a state-of-the-art approach for unconstrained natural\nscene text recognition. We propose a cascade approach that incorporates a\nconvolutional neural network (CNN) architecture followed by a long short term\nmemory model (LSTM). The CNN learns visual features for the characters and uses\nthem with a softmax layer to detect sequence of characters. While the CNN gives\nvery good recognition results, it does not model relation between characters,\nhence gives rise to false positive and false negative cases (confusing\ncharacters due to visual similarities like \"g\" and \"9\", or confusing background\npatches with characters; either removing existing characters or adding\nnon-existing ones) To alleviate these problems we leverage recent developments\nin LSTM architectures to encode contextual information. We show that the LSTM\ncan dramatically reduce such errors and achieve state-of-the-art accuracy in\nthe task of unconstrained natural scene text recognition. Moreover we manually\nremove all occurrences of the words that exist in the test set from our\ntraining set to test whether our approach will generalize to unseen data. We\nuse the ICDAR 13 test set for evaluation and compare the results with the state\nof the art approaches [11, 18]. We finally present an application of the work\nin the domain of for traffic monitoring.\n",
+        "published": "2016",
+        "authors": [
+            "Ahmed Mamdouh A. Hassanien"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1607.07695v2",
+        "title": "Hierarchical Multi-resolution Mesh Networks for Brain Decoding",
+        "abstract": "  We propose a new framework, called Hierarchical Multi-resolution Mesh\nNetworks (HMMNs), which establishes a set of brain networks at multiple time\nresolutions of fMRI signal to represent the underlying cognitive process. The\nsuggested framework, first, decomposes the fMRI signal into various frequency\nsubbands using wavelet transforms. Then, a brain network, called mesh network,\nis formed at each subband by ensembling a set of local meshes. The locality\naround each anatomic region is defined with respect to a neighborhood system\nbased on functional connectivity. The arc weights of a mesh are estimated by\nridge regression formed among the average region time series. In the final\nstep, the adjacency matrices of mesh networks obtained at different subbands\nare ensembled for brain decoding under a hierarchical learning architecture,\ncalled, fuzzy stacked generalization (FSG). Our results on Human Connectome\nProject task-fMRI dataset reflect that the suggested HMMN model can\nsuccessfully discriminate tasks by extracting complementary information\nobtained from mesh arc weights of multiple subbands. We study the topological\nproperties of the mesh networks at different resolutions using the network\nmeasures, namely, node degree, node strength, betweenness centrality and global\nefficiency; and investigate the connectivity of anatomic regions, during a\ncognitive task. We observe significant variations among the network topologies\nobtained for different subbands. We, also, analyze the diversity properties of\nclassifier ensemble, trained by the mesh networks in multiple subbands and\nobserve that the classifiers in the ensemble collaborate with each other to\nfuse the complementary information freed at each subband. We conclude that the\nfMRI data, recorded during a cognitive task, embed diverse information across\nthe anatomic regions at each resolution.\n",
+        "published": "2016",
+        "authors": [
+            "Itir Onal Ertugrul",
+            "Mete Ozay",
+            "Fatos Tunay Yarman Vural"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1607.08064v4",
+        "title": "CNN-based Patch Matching for Optical Flow with Thresholded Hinge\n  Embedding Loss",
+        "abstract": "  Learning based approaches have not yet achieved their full potential in\noptical flow estimation, where their performance still trails heuristic\napproaches. In this paper, we present a CNN based patch matching approach for\noptical flow estimation. An important contribution of our approach is a novel\nthresholded loss for Siamese networks. We demonstrate that our loss performs\nclearly better than existing losses. It also allows to speed up training by a\nfactor of 2 in our tests. Furthermore, we present a novel way for calculating\nCNN based features for different image scales, which performs better than\nexisting methods. We also discuss new ways of evaluating the robustness of\ntrained features for the application of patch matching for optical flow. An\ninteresting discovery in our paper is that low-pass filtering of feature maps\ncan increase the robustness of features created by CNNs. We proved the\ncompetitive performance of our approach by submitting it to the KITTI 2012,\nKITTI 2015 and MPI-Sintel evaluation portals where we obtained state-of-the-art\nresults on all three datasets.\n",
+        "published": "2016",
+        "authors": [
+            "Christian Bailer",
+            "Kiran Varanasi",
+            "Didier Stricker"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1610.02136v3",
+        "title": "A Baseline for Detecting Misclassified and Out-of-Distribution Examples\n  in Neural Networks",
+        "abstract": "  We consider the two related problems of detecting if an example is\nmisclassified or out-of-distribution. We present a simple baseline that\nutilizes probabilities from softmax distributions. Correctly classified\nexamples tend to have greater maximum softmax probabilities than erroneously\nclassified and out-of-distribution examples, allowing for their detection. We\nassess performance by defining several tasks in computer vision, natural\nlanguage processing, and automatic speech recognition, showing the\neffectiveness of this baseline across all. We then show the baseline can\nsometimes be surpassed, demonstrating the room for future research on these\nunderexplored detection tasks.\n",
+        "published": "2016",
+        "authors": [
+            "Dan Hendrycks",
+            "Kevin Gimpel"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1610.03628v1",
+        "title": "RetiNet: Automatic AMD identification in OCT volumetric data",
+        "abstract": "  Optical Coherence Tomography (OCT) provides a unique ability to image the eye\nretina in 3D at micrometer resolution and gives ophthalmologist the ability to\nvisualize retinal diseases such as Age-Related Macular Degeneration (AMD).\nWhile visual inspection of OCT volumes remains the main method for AMD\nidentification, doing so is time consuming as each cross-section within the\nvolume must be inspected individually by the clinician. In much the same way,\nacquiring ground truth information for each cross-section is expensive and time\nconsuming. This fact heavily limits the ability to acquire large amounts of\nground truth, which subsequently impacts the performance of learning-based\nmethods geared at automatic pathology identification. To avoid this burden, we\npropose a novel strategy for automatic analysis of OCT volumes where only\nvolume labels are needed. That is, we train a classifier in a semi-supervised\nmanner to conduct this task. Our approach uses a novel Convolutional Neural\nNetwork (CNN) architecture, that only needs volume-level labels to be trained\nto automatically asses whether an OCT volume is healthy or contains AMD. Our\narchitecture involves first learning a cross-section pathology classifier using\npseudo-labels that could be corrupted and then leverage these towards a more\naccurate volume-level classification. We then show that our approach provides\nexcellent performances on a publicly available dataset and outperforms a number\nof existing automatic techniques.\n",
+        "published": "2016",
+        "authors": [
+            "Stefanos Apostolopoulos",
+            "Carlos Ciller",
+            "Sandro I. De Zanet",
+            "Sebastian Wolf",
+            "Raphael Sznitman"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1610.06421v3",
+        "title": "Mixed Neural Network Approach for Temporal Sleep Stage Classification",
+        "abstract": "  This paper proposes a practical approach to addressing limitations posed by\nuse of single active electrodes in applications for sleep stage classification.\nElectroencephalography (EEG)-based characterizations of sleep stage progression\ncontribute the diagnosis and monitoring of the many pathologies of sleep.\nSeveral prior reports have explored ways of automating the analysis of sleep\nEEG and of reducing the complexity of the data needed for reliable\ndiscrimination of sleep stages in order to make it possible to perform sleep\nstudies at lower cost in the home (rather than only in specialized clinical\nfacilities). However, these reports have involved recordings from electrodes\nplaced on the cranial vertex or occiput, which can be uncomfortable or\ndifficult for subjects to position. Those that have utilized single EEG\nchannels which contain less sleep information, have showed poor classification\nperformance. We have taken advantage of Rectifier Neural Network for feature\ndetection and Long Short-Term Memory (LSTM) network for sequential data\nlearning to optimize classification performance with single electrode\nrecordings. After exploring alternative electrode placements, we found a\ncomfortable configuration of a single-channel EEG on the forehead and have\nshown that it can be integrated with additional electrodes for simultaneous\nrecording of the electroocuolgram (EOG). Evaluation of data from 62 people\n(with 494 hours sleep) demonstrated better performance of our analytical\nalgorithm for automated sleep classification than existing approaches using\nvertex or occipital electrode placements. Use of this recording configuration\nwith neural network deconvolution promises to make clinically indicated home\nsleep studies practical.\n",
+        "published": "2016",
+        "authors": [
+            "Hao Dong",
+            "Akara Supratak",
+            "Wei Pan",
+            "Chao Wu",
+            "Paul M. Matthews",
+            "Yike Guo"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1611.00591v1",
+        "title": "Deep Neural Networks for HDR imaging",
+        "abstract": "  We propose novel methods of solving two tasks using Convolutional Neural\nNetworks, firstly the task of generating HDR map of a static scene using\ndifferently exposed LDR images of the scene captured using conventional cameras\nand secondly the task of finding an optimal tone mapping operator that would\ngive a better score on the TMQI metric compared to the existing methods. We\nquantitatively show the performance of our networks and illustrate the cases\nwhere our networks performs good as well as bad.\n",
+        "published": "2016",
+        "authors": [
+            "Kshiteej Sheth"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1611.00847v3",
+        "title": "Deep Convolutional Neural Network Design Patterns",
+        "abstract": "  Recent research in the deep learning field has produced a plethora of new\narchitectures. At the same time, a growing number of groups are applying deep\nlearning to new applications. Some of these groups are likely to be composed of\ninexperienced deep learning practitioners who are baffled by the dizzying array\nof architecture choices and therefore opt to use an older architecture (i.e.,\nAlexnet). Here we attempt to bridge this gap by mining the collective knowledge\ncontained in recent deep learning research to discover underlying principles\nfor designing neural network architectures. In addition, we describe several\narchitectural innovations, including Fractal of FractalNet network, Stagewise\nBoosting Networks, and Taylor Series Networks (our Caffe code and prototxt\nfiles is available at https://github.com/iPhysicist/CNNDesignPatterns). We hope\nothers are inspired to build on our preliminary work.\n",
+        "published": "2016",
+        "authors": [
+            "Leslie N. Smith",
+            "Nicholay Topin"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1611.01639v7",
+        "title": "Robustly representing uncertainty in deep neural networks through\n  sampling",
+        "abstract": "  As deep neural networks (DNNs) are applied to increasingly challenging\nproblems, they will need to be able to represent their own uncertainty.\nModeling uncertainty is one of the key features of Bayesian methods. Using\nBernoulli dropout with sampling at prediction time has recently been proposed\nas an efficient and well performing variational inference method for DNNs.\nHowever, sampling from other multiplicative noise based variational\ndistributions has not been investigated in depth. We evaluated Bayesian DNNs\ntrained with Bernoulli or Gaussian multiplicative masking of either the units\n(dropout) or the weights (dropconnect). We tested the calibration of the\nprobabilistic predictions of Bayesian convolutional neural networks (CNNs) on\nMNIST and CIFAR-10. Sampling at prediction time increased the calibration of\nthe DNNs' probabalistic predictions. Sampling weights, whether Gaussian or\nBernoulli, led to more robust representation of uncertainty compared to\nsampling of units. However, using either Gaussian or Bernoulli dropout led to\nincreased test set classification accuracy. Based on these findings we used\nboth Bernoulli dropout and Gaussian dropconnect concurrently, which we show\napproximates the use of a spike-and-slab variational distribution without\nincreasing the number of learned parameters. We found that spike-and-slab\nsampling had higher test set performance than Gaussian dropconnect and more\nrobustly represented its uncertainty compared to Bernoulli dropout.\n",
+        "published": "2016",
+        "authors": [
+            "Patrick McClure",
+            "Nikolaus Kriegeskorte"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1611.02261v4",
+        "title": "Memory-augmented Attention Modelling for Videos",
+        "abstract": "  We present a method to improve video description generation by modeling\nhigher-order interactions between video frames and described concepts. By\nstoring past visual attention in the video associated to previously generated\nwords, the system is able to decide what to look at and describe in light of\nwhat it has already looked at and described. This enables not only more\neffective local attention, but tractable consideration of the video sequence\nwhile generating each word. Evaluation on the challenging and popular MSVD and\nCharades datasets demonstrates that the proposed architecture outperforms\nprevious video description approaches without requiring external temporal video\nfeatures.\n",
+        "published": "2016",
+        "authors": [
+            "Rasool Fakoor",
+            "Abdel-rahman Mohamed",
+            "Margaret Mitchell",
+            "Sing Bing Kang",
+            "Pushmeet Kohli"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1611.05552v5",
+        "title": "DelugeNets: Deep Networks with Efficient and Flexible Cross-layer\n  Information Inflows",
+        "abstract": "  Deluge Networks (DelugeNets) are deep neural networks which efficiently\nfacilitate massive cross-layer information inflows from preceding layers to\nsucceeding layers. The connections between layers in DelugeNets are established\nthrough cross-layer depthwise convolutional layers with learnable filters,\nacting as a flexible yet efficient selection mechanism. DelugeNets can\npropagate information across many layers with greater flexibility and utilize\nnetwork parameters more effectively compared to ResNets, whilst being more\nefficient than DenseNets. Remarkably, a DelugeNet model with just model\ncomplexity of 4.31 GigaFLOPs and 20.2M network parameters, achieve\nclassification errors of 3.76% and 19.02% on CIFAR-10 and CIFAR-100 dataset\nrespectively. Moreover, DelugeNet-122 performs competitively to ResNet-200 on\nImageNet dataset, despite costing merely half of the computations needed by the\nlatter.\n",
+        "published": "2016",
+        "authors": [
+            "Jason Kuen",
+            "Xiangfei Kong",
+            "Gang Wang",
+            "Yap-Peng Tan"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1611.06321v3",
+        "title": "Learning the Number of Neurons in Deep Networks",
+        "abstract": "  Nowadays, the number of layers and of neurons in each layer of a deep network\nare typically set manually. While very deep and wide networks have proven\neffective in general, they come at a high memory and computation cost, thus\nmaking them impractical for constrained platforms. These networks, however, are\nknown to have many redundant parameters, and could thus, in principle, be\nreplaced by more compact architectures. In this paper, we introduce an approach\nto automatically determining the number of neurons in each layer of a deep\nnetwork during learning. To this end, we propose to make use of structured\nsparsity during learning. More precisely, we use a group sparsity regularizer\non the parameters of the network, where each group is defined to act on a\nsingle neuron. Starting from an overcomplete network, we show that our approach\ncan reduce the number of parameters by up to 80\\% while retaining or even\nimproving the network accuracy.\n",
+        "published": "2016",
+        "authors": [
+            "Jose M Alvarez",
+            "Mathieu Salzmann"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1611.06453v2",
+        "title": "Fast Video Classification via Adaptive Cascading of Deep Models",
+        "abstract": "  Recent advances have enabled \"oracle\" classifiers that can classify across\nmany classes and input distributions with high accuracy without retraining.\nHowever, these classifiers are relatively heavyweight, so that applying them to\nclassify video is costly. We show that day-to-day video exhibits highly skewed\nclass distributions over the short term, and that these distributions can be\nclassified by much simpler models. We formulate the problem of detecting the\nshort-term skews online and exploiting models based on it as a new sequential\ndecision making problem dubbed the Online Bandit Problem, and present a new\nalgorithm to solve it. When applied to recognizing faces in TV shows and\nmovies, we realize end-to-end classification speedups of 2.4-7.8x/2.6-11.2x (on\nGPU/CPU) relative to a state-of-the-art convolutional neural network, at\ncompetitive accuracy.\n",
+        "published": "2016",
+        "authors": [
+            "Haichen Shen",
+            "Seungyeop Han",
+            "Matthai Philipose",
+            "Arvind Krishnamurthy"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1611.07571v2",
+        "title": "Quad-networks: unsupervised learning to rank for interest point\n  detection",
+        "abstract": "  Several machine learning tasks require to represent the data using only a\nsparse set of interest points. An ideal detector is able to find the\ncorresponding interest points even if the data undergo a transformation typical\nfor a given domain. Since the task is of high practical interest in computer\nvision, many hand-crafted solutions were proposed. In this paper, we ask a\nfundamental question: can we learn such detectors from scratch? Since it is\noften unclear what points are \"interesting\", human labelling cannot be used to\nfind a truly unbiased solution. Therefore, the task requires an unsupervised\nformulation. We are the first to propose such a formulation: training a neural\nnetwork to rank points in a transformation-invariant manner. Interest points\nare then extracted from the top/bottom quantiles of this ranking. We validate\nour approach on two tasks: standard RGB image interest point detection and\nchallenging cross-modal interest point detection between RGB and depth images.\nWe quantitatively show that our unsupervised method performs better or on-par\nwith baselines.\n",
+        "published": "2016",
+        "authors": [
+            "Nikolay Savinov",
+            "Akihito Seki",
+            "Lubor Ladicky",
+            "Torsten Sattler",
+            "Marc Pollefeys"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1611.07661v2",
+        "title": "Multigrid Neural Architectures",
+        "abstract": "  We propose a multigrid extension of convolutional neural networks (CNNs).\nRather than manipulating representations living on a single spatial grid, our\nnetwork layers operate across scale space, on a pyramid of grids. They consume\nmultigrid inputs and produce multigrid outputs; convolutional filters\nthemselves have both within-scale and cross-scale extent. This aspect is\ndistinct from simple multiscale designs, which only process the input at\ndifferent scales. Viewed in terms of information flow, a multigrid network\npasses messages across a spatial pyramid. As a consequence, receptive field\nsize grows exponentially with depth, facilitating rapid integration of context.\nMost critically, multigrid structure enables networks to learn internal\nattention and dynamic routing mechanisms, and use them to accomplish tasks on\nwhich modern CNNs fail.\n  Experiments demonstrate wide-ranging performance advantages of multigrid. On\nCIFAR and ImageNet classification tasks, flipping from a single grid to\nmultigrid within the standard CNN paradigm improves accuracy, while being\ncompute and parameter efficient. Multigrid is independent of other\narchitectural choices; we show synergy in combination with residual\nconnections. Multigrid yields dramatic improvement on a synthetic semantic\nsegmentation dataset. Most strikingly, relatively shallow multigrid networks\ncan learn to directly perform spatial transformation tasks, where, in contrast,\ncurrent CNNs fail. Together, our results suggest that continuous evolution of\nfeatures on a multigrid pyramid is a more powerful alternative to existing CNN\ndesigns on a flat grid.\n",
+        "published": "2016",
+        "authors": [
+            "Tsung-Wei Ke",
+            "Michael Maire",
+            "Stella X. Yu"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1612.00155v1",
+        "title": "Adversarial Images for Variational Autoencoders",
+        "abstract": "  We investigate adversarial attacks for autoencoders. We propose a procedure\nthat distorts the input image to mislead the autoencoder in reconstructing a\ncompletely different target image. We attack the internal latent\nrepresentations, attempting to make the adversarial input produce an internal\nrepresentation as similar as possible as the target's. We find that\nautoencoders are much more robust to the attack than classifiers: while some\nexamples have tolerably small input distortion, and reasonable similarity to\nthe target image, there is a quasi-linear trade-off between those aims. We\nreport results on MNIST and SVHN datasets, and also test regular deterministic\nautoencoders, reaching similar conclusions in all cases. Finally, we show that\nthe usual adversarial attack for classifiers, while being much easier, also\npresents a direct proportion between distortion on the input, and misdirection\non the output. That proportionality however is hidden by the normalization of\nthe output, which maps a linear layer into non-linear probabilities.\n",
+        "published": "2016",
+        "authors": [
+            "Pedro Tabacof",
+            "Julia Tavares",
+            "Eduardo Valle"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1612.00891v2",
+        "title": "Parameter Compression of Recurrent Neural Networks and Degradation of\n  Short-term Memory",
+        "abstract": "  The significant computational costs of deploying neural networks in\nlarge-scale or resource constrained environments, such as data centers and\nmobile devices, has spurred interest in model compression, which can achieve a\nreduction in both arithmetic operations and storage memory. Several techniques\nhave been proposed for reducing or compressing the parameters for feed-forward\nand convolutional neural networks, but less is understood about the effect of\nparameter compression on recurrent neural networks (RNN). In particular, the\nextent to which the recurrent parameters can be compressed and the impact on\nshort-term memory performance, is not well understood. In this paper, we study\nthe effect of complexity reduction, through singular value decomposition rank\nreduction, on RNN and minimal gated recurrent unit (MGRU) networks for several\ntasks. We show that considerable rank reduction is possible when compressing\nrecurrent weights, even without fine tuning. Furthermore, we propose a\nperturbation model for the effect of general perturbations, such as a\ncompression, on the recurrent parameters of RNNs. The model is tested against a\nnoiseless memorization experiment that elucidates the short-term memory\nperformance. In this way, we demonstrate that the effect of compression of\nrecurrent parameters is dependent on the degree of temporal coherence present\nin the data and task. This work can guide on-the-fly RNN compression for novel\nenvironments or tasks, and provides insight for applying RNN compression in\nlow-power devices, such as hearing aids.\n",
+        "published": "2016",
+        "authors": [
+            "Jonathan A. Cox"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1612.01543v2",
+        "title": "Towards the Limit of Network Quantization",
+        "abstract": "  Network quantization is one of network compression techniques to reduce the\nredundancy of deep neural networks. It reduces the number of distinct network\nparameter values by quantization in order to save the storage for them. In this\npaper, we design network quantization schemes that minimize the performance\nloss due to quantization given a compression ratio constraint. We analyze the\nquantitative relation of quantization errors to the neural network loss\nfunction and identify that the Hessian-weighted distortion measure is locally\nthe right objective function for the optimization of network quantization. As a\nresult, Hessian-weighted k-means clustering is proposed for clustering network\nparameters to quantize. When optimal variable-length binary codes, e.g.,\nHuffman codes, are employed for further compression, we derive that the network\nquantization problem can be related to the entropy-constrained scalar\nquantization (ECSQ) problem in information theory and consequently propose two\nsolutions of ECSQ for network quantization, i.e., uniform quantization and an\niterative solution similar to Lloyd's algorithm. Finally, using the simple\nuniform quantization followed by Huffman coding, we show from our experiments\nthat the compression ratios of 51.25, 22.17 and 40.65 are achievable for LeNet,\n32-layer ResNet and AlexNet, respectively.\n",
+        "published": "2016",
+        "authors": [
+            "Yoojin Choi",
+            "Mostafa El-Khamy",
+            "Jungwon Lee"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1612.03268v1",
+        "title": "Generalized Deep Image to Image Regression",
+        "abstract": "  We present a Deep Convolutional Neural Network architecture which serves as a\ngeneric image-to-image regressor that can be trained end-to-end without any\nfurther machinery. Our proposed architecture: the Recursively Branched\nDeconvolutional Network (RBDN) develops a cheap multi-context image\nrepresentation very early on using an efficient recursive branching scheme with\nextensive parameter sharing and learnable upsampling. This multi-context\nrepresentation is subjected to a highly non-linear locality preserving\ntransformation by the remainder of our network comprising of a series of\nconvolutions/deconvolutions without any spatial downsampling. The RBDN\narchitecture is fully convolutional and can handle variable sized images during\ninference. We provide qualitative/quantitative results on $3$ diverse tasks:\nrelighting, denoising and colorization and show that our proposed RBDN\narchitecture obtains comparable results to the state-of-the-art on each of\nthese tasks when used off-the-shelf without any post processing or\ntask-specific architectural modifications.\n",
+        "published": "2016",
+        "authors": [
+            "Venkataraman Santhanam",
+            "Vlad I. Morariu",
+            "Larry S. Davis"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1612.05836v1",
+        "title": "EgoTransfer: Transferring Motion Across Egocentric and Exocentric\n  Domains using Deep Neural Networks",
+        "abstract": "  Mirror neurons have been observed in the primary motor cortex of primate\nspecies, in particular in humans and monkeys. A mirror neuron fires when a\nperson performs a certain action, and also when he observes the same action\nbeing performed by another person. A crucial step towards building fully\nautonomous intelligent systems with human-like learning abilities is the\ncapability in modeling the mirror neuron. On one hand, the abundance of\negocentric cameras in the past few years has offered the opportunity to study a\nlot of vision problems from the first-person perspective. A great deal of\ninteresting research has been done during the past few years, trying to explore\nvarious computer vision tasks from the perspective of the self. On the other\nhand, videos recorded by traditional static cameras, capture humans performing\ndifferent actions from an exocentric third-person perspective. In this work, we\ntake the first step towards relating motion information across these two\nperspectives. We train models that predict motion in an egocentric view, by\nobserving it from an exocentric view, and vice versa. This allows models to\npredict how an egocentric motion would look like from outside. To do so, we\ntrain linear and nonlinear models and evaluate their performance in terms of\nretrieving the egocentric (exocentric) motion features, while having access to\nan exocentric (egocentric) motion feature. Our experimental results demonstrate\nthat motion information can be successfully transferred across the two views.\n",
+        "published": "2016",
+        "authors": [
+            "Shervin Ardeshir",
+            "Krishna Regmi",
+            "Ali Borji"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1612.06519v1",
+        "title": "Exploring the Design Space of Deep Convolutional Neural Networks at\n  Large Scale",
+        "abstract": "  In recent years, the research community has discovered that deep neural\nnetworks (DNNs) and convolutional neural networks (CNNs) can yield higher\naccuracy than all previous solutions to a broad array of machine learning\nproblems. To our knowledge, there is no single CNN/DNN architecture that solves\nall problems optimally. Instead, the \"right\" CNN/DNN architecture varies\ndepending on the application at hand. CNN/DNNs comprise an enormous design\nspace. Quantitatively, we find that a small region of the CNN design space\ncontains 30 billion different CNN architectures.\n  In this dissertation, we develop a methodology that enables systematic\nexploration of the design space of CNNs. Our methodology is comprised of the\nfollowing four themes.\n  1. Judiciously choosing benchmarks and metrics.\n  2. Rapidly training CNN models.\n  3. Defining and describing the CNN design space.\n  4. Exploring the design space of CNN architectures.\n  Taken together, these four themes comprise an effective methodology for\ndiscovering the \"right\" CNN architectures to meet the needs of practical\napplications.\n",
+        "published": "2016",
+        "authors": [
+            "Forrest Iandola"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1612.07828v2",
+        "title": "Learning from Simulated and Unsupervised Images through Adversarial\n  Training",
+        "abstract": "  With recent progress in graphics, it has become more tractable to train\nmodels on synthetic images, potentially avoiding the need for expensive\nannotations. However, learning from synthetic images may not achieve the\ndesired performance due to a gap between synthetic and real image\ndistributions. To reduce this gap, we propose Simulated+Unsupervised (S+U)\nlearning, where the task is to learn a model to improve the realism of a\nsimulator's output using unlabeled real data, while preserving the annotation\ninformation from the simulator. We develop a method for S+U learning that uses\nan adversarial network similar to Generative Adversarial Networks (GANs), but\nwith synthetic images as inputs instead of random vectors. We make several key\nmodifications to the standard GAN algorithm to preserve annotations, avoid\nartifacts, and stabilize training: (i) a 'self-regularization' term, (ii) a\nlocal adversarial loss, and (iii) updating the discriminator using a history of\nrefined images. We show that this enables generation of highly realistic\nimages, which we demonstrate both qualitatively and with a user study. We\nquantitatively evaluate the generated images by training models for gaze\nestimation and hand pose estimation. We show a significant improvement over\nusing synthetic images, and achieve state-of-the-art results on the MPIIGaze\ndataset without any labeled real data.\n",
+        "published": "2016",
+        "authors": [
+            "Ashish Shrivastava",
+            "Tomas Pfister",
+            "Oncel Tuzel",
+            "Josh Susskind",
+            "Wenda Wang",
+            "Russ Webb"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1704.01137v1",
+        "title": "DyVEDeep: Dynamic Variable Effort Deep Neural Networks",
+        "abstract": "  Deep Neural Networks (DNNs) have advanced the state-of-the-art in a variety\nof machine learning tasks and are deployed in increasing numbers of products\nand services. However, the computational requirements of training and\nevaluating large-scale DNNs are growing at a much faster pace than the\ncapabilities of the underlying hardware platforms that they are executed upon.\nIn this work, we propose Dynamic Variable Effort Deep Neural Networks\n(DyVEDeep) to reduce the computational requirements of DNNs during inference.\nPrevious efforts propose specialized hardware implementations for DNNs,\nstatically prune the network, or compress the weights. Complementary to these\napproaches, DyVEDeep is a dynamic approach that exploits the heterogeneity in\nthe inputs to DNNs to improve their compute efficiency with comparable\nclassification accuracy. DyVEDeep equips DNNs with dynamic effort mechanisms\nthat, in the course of processing an input, identify how critical a group of\ncomputations are to classify the input. DyVEDeep dynamically focuses its\ncompute effort only on the critical computa- tions, while skipping or\napproximating the rest. We propose 3 effort knobs that operate at different\nlevels of granularity viz. neuron, feature and layer levels. We build DyVEDeep\nversions for 5 popular image recognition benchmarks - one for CIFAR-10 and four\nfor ImageNet (AlexNet, OverFeat and VGG-16, weight-compressed AlexNet). Across\nall benchmarks, DyVEDeep achieves 2.1x-2.6x reduction in the number of scalar\noperations, which translates to 1.8x-2.3x performance improvement over a\nCaffe-based implementation, with < 0.5% loss in accuracy.\n",
+        "published": "2017",
+        "authors": [
+            "Sanjay Ganapathy",
+            "Swagath Venkataramani",
+            "Balaraman Ravindran",
+            "Anand Raghunathan"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1704.02685v2",
+        "title": "Learning Important Features Through Propagating Activation Differences",
+        "abstract": "  The purported \"black box\" nature of neural networks is a barrier to adoption\nin applications where interpretability is essential. Here we present DeepLIFT\n(Deep Learning Important FeaTures), a method for decomposing the output\nprediction of a neural network on a specific input by backpropagating the\ncontributions of all neurons in the network to every feature of the input.\nDeepLIFT compares the activation of each neuron to its 'reference activation'\nand assigns contribution scores according to the difference. By optionally\ngiving separate consideration to positive and negative contributions, DeepLIFT\ncan also reveal dependencies which are missed by other approaches. Scores can\nbe computed efficiently in a single backward pass. We apply DeepLIFT to models\ntrained on MNIST and simulated genomic data, and show significant advantages\nover gradient-based methods. Video tutorial: http://goo.gl/qKb7pL, ICML slides:\nbit.ly/deeplifticmlslides, ICML talk: https://vimeo.com/238275076, code:\nhttp://goo.gl/RM8jvH.\n",
+        "published": "2017",
+        "authors": [
+            "Avanti Shrikumar",
+            "Peyton Greenside",
+            "Anshul Kundaje"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1704.02901v3",
+        "title": "Dynamic Edge-Conditioned Filters in Convolutional Neural Networks on\n  Graphs",
+        "abstract": "  A number of problems can be formulated as prediction on graph-structured\ndata. In this work, we generalize the convolution operator from regular grids\nto arbitrary graphs while avoiding the spectral domain, which allows us to\nhandle graphs of varying size and connectivity. To move beyond a simple\ndiffusion, filter weights are conditioned on the specific edge labels in the\nneighborhood of a vertex. Together with the proper choice of graph coarsening,\nwe explore constructing deep neural networks for graph classification. In\nparticular, we demonstrate the generality of our formulation in point cloud\nclassification, where we set the new state of the art, and on a graph\nclassification dataset, where we outperform other deep learning approaches. The\nsource code is available at https://github.com/mys007/ecc\n",
+        "published": "2017",
+        "authors": [
+            "Martin Simonovsky",
+            "Nikos Komodakis"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1704.07816v2",
+        "title": "Introspective Classification with Convolutional Nets",
+        "abstract": "  We propose introspective convolutional networks (ICN) that emphasize the\nimportance of having convolutional neural networks empowered with generative\ncapabilities. We employ a reclassification-by-synthesis algorithm to perform\ntraining using a formulation stemmed from the Bayes theory. Our ICN tries to\niteratively: (1) synthesize pseudo-negative samples; and (2) enhance itself by\nimproving the classification. The single CNN classifier learned is at the same\ntime generative --- being able to directly synthesize new samples within its\nown discriminative model. We conduct experiments on benchmark datasets\nincluding MNIST, CIFAR-10, and SVHN using state-of-the-art CNN architectures,\nand observe improved classification results.\n",
+        "published": "2017",
+        "authors": [
+            "Long Jin",
+            "Justin Lazarow",
+            "Zhuowen Tu"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1704.07820v1",
+        "title": "Introspective Generative Modeling: Decide Discriminatively",
+        "abstract": "  We study unsupervised learning by developing introspective generative\nmodeling (IGM) that attains a generator using progressively learned deep\nconvolutional neural networks. The generator is itself a discriminator, capable\nof introspection: being able to self-evaluate the difference between its\ngenerated samples and the given training data. When followed by repeated\ndiscriminative learning, desirable properties of modern discriminative\nclassifiers are directly inherited by the generator. IGM learns a cascade of\nCNN classifiers using a synthesis-by-classification algorithm. In the\nexperiments, we observe encouraging results on a number of applications\nincluding texture modeling, artistic style transferring, face modeling, and\nsemi-supervised learning.\n",
+        "published": "2017",
+        "authors": [
+            "Justin Lazarow",
+            "Long Jin",
+            "Zhuowen Tu"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1710.02286v1",
+        "title": "Deep Convolutional Neural Networks as Generic Feature Extractors",
+        "abstract": "  Recognizing objects in natural images is an intricate problem involving\nmultiple conflicting objectives. Deep convolutional neural networks, trained on\nlarge datasets, achieve convincing results and are currently the\nstate-of-the-art approach for this task. However, the long time needed to train\nsuch deep networks is a major drawback. We tackled this problem by reusing a\npreviously trained network. For this purpose, we first trained a deep\nconvolutional network on the ILSVRC2012 dataset. We then maintained the learned\nconvolution kernels and only retrained the classification part on different\ndatasets. Using this approach, we achieved an accuracy of 67.68 % on CIFAR-100,\ncompared to the previous state-of-the-art result of 65.43 %. Furthermore, our\nfindings indicate that convolutional networks are able to learn generic feature\nextractors that can be used for different tasks.\n",
+        "published": "2017",
+        "authors": [
+            "Lars Hertel",
+            "Erhardt Barth",
+            "Thomas K\u00e4ster",
+            "Thomas Martinetz"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1710.05941v2",
+        "title": "Searching for Activation Functions",
+        "abstract": "  The choice of activation functions in deep networks has a significant effect\non the training dynamics and task performance. Currently, the most successful\nand widely-used activation function is the Rectified Linear Unit (ReLU).\nAlthough various hand-designed alternatives to ReLU have been proposed, none\nhave managed to replace it due to inconsistent gains. In this work, we propose\nto leverage automatic search techniques to discover new activation functions.\nUsing a combination of exhaustive and reinforcement learning-based search, we\ndiscover multiple novel activation functions. We verify the effectiveness of\nthe searches by conducting an empirical evaluation with the best discovered\nactivation function. Our experiments show that the best discovered activation\nfunction, $f(x) = x \\cdot \\text{sigmoid}(\\beta x)$, which we name Swish, tends\nto work better than ReLU on deeper models across a number of challenging\ndatasets. For example, simply replacing ReLUs with Swish units improves top-1\nclassification accuracy on ImageNet by 0.9\\% for Mobile NASNet-A and 0.6\\% for\nInception-ResNet-v2. The simplicity of Swish and its similarity to ReLU make it\neasy for practitioners to replace ReLUs with Swish units in any neural network.\n",
+        "published": "2017",
+        "authors": [
+            "Prajit Ramachandran",
+            "Barret Zoph",
+            "Quoc V. Le"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1710.09288v2",
+        "title": "Adversarial Deep Structured Nets for Mass Segmentation from Mammograms",
+        "abstract": "  Mass segmentation provides effective morphological features which are\nimportant for mass diagnosis. In this work, we propose a novel end-to-end\nnetwork for mammographic mass segmentation which employs a fully convolutional\nnetwork (FCN) to model a potential function, followed by a CRF to perform\nstructured learning. Because the mass distribution varies greatly with pixel\nposition, the FCN is combined with a position priori. Further, we employ\nadversarial training to eliminate over-fitting due to the small sizes of\nmammogram datasets. Multi-scale FCN is employed to improve the segmentation\nperformance. Experimental results on two public datasets, INbreast and\nDDSM-BCRP, demonstrate that our end-to-end network achieves better performance\nthan state-of-the-art approaches.\n\\footnote{https://github.com/wentaozhu/adversarial-deep-structural-networks.git}\n",
+        "published": "2017",
+        "authors": [
+            "Wentao Zhu",
+            "Xiang Xiang",
+            "Trac D. Tran",
+            "Gregory D. Hager",
+            "Xiaohui Xie"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1710.11573v3",
+        "title": "Deep Learning as a Mixed Convex-Combinatorial Optimization Problem",
+        "abstract": "  As neural networks grow deeper and wider, learning networks with\nhard-threshold activations is becoming increasingly important, both for network\nquantization, which can drastically reduce time and energy requirements, and\nfor creating large integrated systems of deep networks, which may have\nnon-differentiable components and must avoid vanishing and exploding gradients\nfor effective learning. However, since gradient descent is not applicable to\nhard-threshold functions, it is not clear how to learn networks of them in a\nprincipled way. We address this problem by observing that setting targets for\nhard-threshold hidden units in order to minimize loss is a discrete\noptimization problem, and can be solved as such. The discrete optimization goal\nis to find a set of targets such that each unit, including the output, has a\nlinearly separable problem to solve. Given these targets, the network\ndecomposes into individual perceptrons, which can then be learned with standard\nconvex approaches. Based on this, we develop a recursive mini-batch algorithm\nfor learning deep hard-threshold networks that includes the popular but poorly\njustified straight-through estimator as a special case. Empirically, we show\nthat our algorithm improves classification accuracy in a number of settings,\nincluding for AlexNet and ResNet-18 on ImageNet, when compared to the\nstraight-through estimator.\n",
+        "published": "2017",
+        "authors": [
+            "Abram L. Friesen",
+            "Pedro Domingos"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1804.03294v3",
+        "title": "A Systematic DNN Weight Pruning Framework using Alternating Direction\n  Method of Multipliers",
+        "abstract": "  Weight pruning methods for deep neural networks (DNNs) have been investigated\nrecently, but prior work in this area is mainly heuristic, iterative pruning,\nthereby lacking guarantees on the weight reduction ratio and convergence time.\nTo mitigate these limitations, we present a systematic weight pruning framework\nof DNNs using the alternating direction method of multipliers (ADMM). We first\nformulate the weight pruning problem of DNNs as a nonconvex optimization\nproblem with combinatorial constraints specifying the sparsity requirements,\nand then adopt the ADMM framework for systematic weight pruning. By using ADMM,\nthe original nonconvex optimization problem is decomposed into two subproblems\nthat are solved iteratively. One of these subproblems can be solved using\nstochastic gradient descent, the other can be solved analytically. Besides, our\nmethod achieves a fast convergence rate.\n  The weight pruning results are very promising and consistently outperform the\nprior work. On the LeNet-5 model for the MNIST data set, we achieve 71.2 times\nweight reduction without accuracy loss. On the AlexNet model for the ImageNet\ndata set, we achieve 21 times weight reduction without accuracy loss. When we\nfocus on the convolutional layer pruning for computation reductions, we can\nreduce the total computation by five times compared with the prior work\n(achieving a total of 13.4 times weight reduction in convolutional layers). Our\nmodels and codes are released at https://github.com/KaiqiZhang/admm-pruning\n",
+        "published": "2018",
+        "authors": [
+            "Tianyun Zhang",
+            "Shaokai Ye",
+            "Kaiqi Zhang",
+            "Jian Tang",
+            "Wujie Wen",
+            "Makan Fardad",
+            "Yanzhi Wang"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1804.03313v1",
+        "title": "Cortex Neural Network: learning with Neural Network groups",
+        "abstract": "  Neural Network has been successfully applied to many real-world problems,\nsuch as image recognition and machine translation. However, for the current\narchitecture of neural networks, it is hard to perform complex cognitive tasks,\nfor example, to process the image and audio inputs together. Cortex, as an\nimportant architecture in the brain, is important for animals to perform the\ncomplex cognitive task. We view the architecture of Cortex in the brain as a\nmissing part in the design of the current artificial neural network. In this\npaper, we purpose Cortex Neural Network (CrtxNN). The Cortex Neural Network is\nan upper architecture of neural networks which motivated from cerebral cortex\nin the brain to handle different tasks in the same learning system. It is able\nto identify different tasks and solve them with different methods. In our\nimplementation, the Cortex Neural Network is able to process different\ncognitive tasks and perform reflection to get a higher accuracy. We provide a\nseries of experiments to examine the capability of the cortex architecture on\ntraditional neural networks. Our experiments proved its ability on the Cortex\nNeural Network can reach accuracy by 98.32% on MNIST and 62% on CIFAR10 at the\nsame time, which can promisingly reduce the loss by 40%.\n",
+        "published": "2018",
+        "authors": [
+            "Liyao Gao"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1804.06964v2",
+        "title": "GNAS: A Greedy Neural Architecture Search Method for Multi-Attribute\n  Learning",
+        "abstract": "  A key problem in deep multi-attribute learning is to effectively discover the\ninter-attribute correlation structures. Typically, the conventional deep\nmulti-attribute learning approaches follow the pipeline of manually designing\nthe network architectures based on task-specific expertise prior knowledge and\ncareful network tunings, leading to the inflexibility for various complicated\nscenarios in practice. Motivated by addressing this problem, we propose an\nefficient greedy neural architecture search approach (GNAS) to automatically\ndiscover the optimal tree-like deep architecture for multi-attribute learning.\nIn a greedy manner, GNAS divides the optimization of global architecture into\nthe optimizations of individual connections step by step. By iteratively\nupdating the local architectures, the global tree-like architecture gets\nconverged where the bottom layers are shared across relevant attributes and the\nbranches in top layers more encode attribute-specific features. Experiments on\nthree benchmark multi-attribute datasets show the effectiveness and compactness\nof neural architectures derived by GNAS, and also demonstrate the efficiency of\nGNAS in searching neural architectures.\n",
+        "published": "2018",
+        "authors": [
+            "Siyu Huang",
+            "Xi Li",
+            "Zhi-Qi Cheng",
+            "Zhongfei Zhang",
+            "Alexander Hauptmann"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1805.01352v2",
+        "title": "Spiking Deep Residual Network",
+        "abstract": "  Spiking neural networks (SNNs) have received significant attention for their\nbiological plausibility. SNNs theoretically have at least the same\ncomputational power as traditional artificial neural networks (ANNs). They\npossess potential of achieving energy-efficiency while keeping comparable\nperformance to deep neural networks (DNNs). However, it is still a big\nchallenge to train a very deep SNN. In this paper, we propose an efficient\napproach to build a spiking version of deep residual network (ResNet). ResNet\nis considered as a kind of the state-of-the-art convolutional neural networks\n(CNNs). We employ the idea of converting a trained ResNet to a network of\nspiking neurons, named Spiking ResNet (S-ResNet). We propose a shortcut\nconversion model to appropriately scale continuous-valued activations to match\nfiring rates in SNN, and a compensation mechanism to reduce the error caused by\ndiscretisation. Experimental results demonstrate that, compared with the\nstate-of-the-art SNN approaches, the proposed Spiking ResNet achieves the best\nperformance on CIFAR-10, CIFAR-100, and ImageNet 2012. Our work is the first\ntime to build a SNN deeper than 40, with comparable performance to ANNs on a\nlarge-scale dataset.\n",
+        "published": "2018",
+        "authors": [
+            "Yangfan Hu",
+            "Huajin Tang",
+            "Gang Pan"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1805.05373v3",
+        "title": "DeepEM: Deep 3D ConvNets With EM For Weakly Supervised Pulmonary Nodule\n  Detection",
+        "abstract": "  Recently deep learning has been witnessing widespread adoption in various\nmedical image applications. However, training complex deep neural nets requires\nlarge-scale datasets labeled with ground truth, which are often unavailable in\nmany medical image domains. For instance, to train a deep neural net to detect\npulmonary nodules in lung computed tomography (CT) images, current practice is\nto manually label nodule locations and sizes in many CT images to construct a\nsufficiently large training dataset, which is costly and difficult to scale. On\nthe other hand, electronic medical records (EMR) contain plenty of partial\ninformation on the content of each medical image. In this work, we explore how\nto tap this vast, but currently unexplored data source to improve pulmonary\nnodule detection. We propose DeepEM, a novel deep 3D ConvNet framework\naugmented with expectation-maximization (EM), to mine weakly supervised labels\nin EMRs for pulmonary nodule detection. Experimental results show that DeepEM\ncan lead to 1.5\\% and 3.9\\% average improvement in free-response receiver\noperating characteristic (FROC) scores on LUNA16 and Tianchi datasets,\nrespectively, demonstrating the utility of incomplete information in EMRs for\nimproving deep learning\nalgorithms.\\footnote{https://github.com/uci-cbcl/DeepEM-for-Weakly-Supervised-Detection.git}\n",
+        "published": "2018",
+        "authors": [
+            "Wentao Zhu",
+            "Yeeleng S. Vang",
+            "Yufang Huang",
+            "Xiaohui Xie"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1805.08303v2",
+        "title": "Compression of Deep Convolutional Neural Networks under Joint Sparsity\n  Constraints",
+        "abstract": "  We consider the optimization of deep convolutional neural networks (CNNs)\nsuch that they provide good performance while having reduced complexity if\ndeployed on either conventional systems utilizing spatial-domain convolution or\nlower complexity systems designed for Winograd convolution. Furthermore, we\nexplore the universal quantization and compression of these networks. In\nparticular, the proposed framework produces one compressed model whose\nconvolutional filters can be made sparse either in the spatial domain or in the\nWinograd domain. Hence, one compressed model can be deployed universally on any\nplatform, without need for re-training on the deployed platform, and the\nsparsity of its convolutional filters can be exploited for further complexity\nreduction in either domain. To get a better compression ratio, the sparse model\nis compressed in the spatial domain which has a less number of parameters. From\nour experiments, we obtain $24.2\\times$, $47.7\\times$ and $35.4\\times$\ncompressed models for ResNet-18, AlexNet and CT-SRCNN, while their\ncomputational cost is also reduced by $4.5\\times$, $5.1\\times$ and\n$23.5\\times$, respectively.\n",
+        "published": "2018",
+        "authors": [
+            "Yoojin Choi",
+            "Mostafa El-Khamy",
+            "Jungwon Lee"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1805.09791v2",
+        "title": "Multi-Task Zipping via Layer-wise Neuron Sharing",
+        "abstract": "  Future mobile devices are anticipated to perceive, understand and react to\nthe world on their own by running multiple correlated deep neural networks\non-device. Yet the complexity of these neural networks needs to be trimmed down\nboth within-model and cross-model to fit in mobile storage and memory. Previous\nstudies focus on squeezing the redundancy within a single neural network. In\nthis work, we aim to reduce the redundancy across multiple models. We propose\nMulti-Task Zipping (MTZ), a framework to automatically merge correlated,\npre-trained deep neural networks for cross-model compression. Central in MTZ is\na layer-wise neuron sharing and incoming weight updating scheme that induces a\nminimal change in the error function. MTZ inherits information from each model\nand demands light retraining to re-boost the accuracy of individual tasks.\nEvaluations show that MTZ is able to fully merge the hidden layers of two\nVGG-16 networks with a 3.18% increase in the test error averaged on ImageNet\nand CelebA, or share 39.61% parameters between the two networks with <0.5%\nincrease in the test errors for both tasks. The number of iterations to retrain\nthe combined network is at least 17.8 times lower than that of training a\nsingle VGG-16 network. Moreover, experiments show that MTZ is also able to\neffectively merge multiple residual networks.\n",
+        "published": "2018",
+        "authors": [
+            "Xiaoxi He",
+            "Zimu Zhou",
+            "Lothar Thiele"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1808.00193v3",
+        "title": "Reinforced Evolutionary Neural Architecture Search",
+        "abstract": "  Neural Architecture Search (NAS) is an important yet challenging task in\nnetwork design due to its high computational consumption. To address this\nissue, we propose the Reinforced Evolutionary Neural Architecture Search (RE-\nNAS), which is an evolutionary method with the reinforced mutation for NAS. Our\nmethod integrates reinforced mutation into an evolution algorithm for neural\narchitecture exploration, in which a mutation controller is introduced to learn\nthe effects of slight modifications and make mutation actions. The reinforced\nmutation controller guides the model population to evolve efficiently.\nFurthermore, as child models can inherit parameters from their parents during\nevolution, our method requires very limited computational resources. In\nexperiments, we conduct the proposed search method on CIFAR-10 and obtain a\npowerful network architecture, RENASNet. This architecture achieves a\ncompetitive result on CIFAR-10. The explored network architecture is\ntransferable to ImageNet and achieves a new state-of-the-art accuracy, i.e.,\n75.7% top-1 accuracy with 5.36M parameters on mobile ImageNet. We further test\nits performance on semantic segmentation with DeepLabv3 on the PASCAL VOC.\nRENASNet outperforms MobileNet-v1, MobileNet-v2 and NASNet. It achieves 75.83%\nmIOU without being pre-trained on COCO.\n",
+        "published": "2018",
+        "authors": [
+            "Yukang Chen",
+            "Gaofeng Meng",
+            "Qian Zhang",
+            "Shiming Xiang",
+            "Chang Huang",
+            "Lisen Mu",
+            "Xinggang Wang"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1808.05238v2",
+        "title": "AnatomyNet: Deep Learning for Fast and Fully Automated Whole-volume\n  Segmentation of Head and Neck Anatomy",
+        "abstract": "  Methods: Our deep learning model, called AnatomyNet, segments OARs from head\nand neck CT images in an end-to-end fashion, receiving whole-volume HaN CT\nimages as input and generating masks of all OARs of interest in one shot.\nAnatomyNet is built upon the popular 3D U-net architecture, but extends it in\nthree important ways: 1) a new encoding scheme to allow auto-segmentation on\nwhole-volume CT images instead of local patches or subsets of slices, 2)\nincorporating 3D squeeze-and-excitation residual blocks in encoding layers for\nbetter feature representation, and 3) a new loss function combining Dice scores\nand focal loss to facilitate the training of the neural model. These features\nare designed to address two main challenges in deep-learning-based HaN\nsegmentation: a) segmenting small anatomies (i.e., optic chiasm and optic\nnerves) occupying only a few slices, and b) training with inconsistent data\nannotations with missing ground truth for some anatomical structures.\n  Results: We collected 261 HaN CT images to train AnatomyNet, and used MICCAI\nHead and Neck Auto Segmentation Challenge 2015 as a benchmark dataset to\nevaluate the performance of AnatomyNet. The objective is to segment nine\nanatomies: brain stem, chiasm, mandible, optic nerve left, optic nerve right,\nparotid gland left, parotid gland right, submandibular gland left, and\nsubmandibular gland right. Compared to previous state-of-the-art results from\nthe MICCAI 2015 competition, AnatomyNet increases Dice similarity coefficient\nby 3.3% on average. AnatomyNet takes about 0.12 seconds to fully segment a head\nand neck CT image of dimension 178 x 302 x 225, significantly faster than\nprevious methods. In addition, the model is able to process whole-volume CT\nimages and delineate all OARs in one pass, requiring little pre- or\npost-processing.\nhttps://github.com/wentaozhu/AnatomyNet-for-anatomical-segmentation.git.\n",
+        "published": "2018",
+        "authors": [
+            "Wentao Zhu",
+            "Yufang Huang",
+            "Liang Zeng",
+            "Xuming Chen",
+            "Yong Liu",
+            "Zhen Qian",
+            "Nan Du",
+            "Wei Fan",
+            "Xiaohui Xie"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1810.01185v2",
+        "title": "Adversarial Examples - A Complete Characterisation of the Phenomenon",
+        "abstract": "  We provide a complete characterisation of the phenomenon of adversarial\nexamples - inputs intentionally crafted to fool machine learning models. We aim\nto cover all the important concerns in this field of study: (1) the conjectures\non the existence of adversarial examples, (2) the security, safety and\nrobustness implications, (3) the methods used to generate and (4) protect\nagainst adversarial examples and (5) the ability of adversarial examples to\ntransfer between different machine learning models. We provide ample background\ninformation in an effort to make this document self-contained. Therefore, this\ndocument can be used as survey, tutorial or as a catalog of attacks and\ndefences using adversarial examples.\n",
+        "published": "2018",
+        "authors": [
+            "Alexandru Constantin Serban",
+            "Erik Poll",
+            "Joost Visser"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1810.03522v2",
+        "title": "NSGA-Net: Neural Architecture Search using Multi-Objective Genetic\n  Algorithm",
+        "abstract": "  This paper introduces NSGA-Net -- an evolutionary approach for neural\narchitecture search (NAS). NSGA-Net is designed with three goals in mind: (1) a\nprocedure considering multiple and conflicting objectives, (2) an efficient\nprocedure balancing exploration and exploitation of the space of potential\nneural network architectures, and (3) a procedure finding a diverse set of\ntrade-off network architectures achieved in a single run. NSGA-Net is a\npopulation-based search algorithm that explores a space of potential neural\nnetwork architectures in three steps, namely, a population initialization step\nthat is based on prior-knowledge from hand-crafted architectures, an\nexploration step comprising crossover and mutation of architectures, and\nfinally an exploitation step that utilizes the hidden useful knowledge stored\nin the entire history of evaluated neural architectures in the form of a\nBayesian Network. Experimental results suggest that combining the dual\nobjectives of minimizing an error metric and computational complexity, as\nmeasured by FLOPs, allows NSGA-Net to find competitive neural architectures.\nMoreover, NSGA-Net achieves error rate on the CIFAR-10 dataset on par with\nother state-of-the-art NAS methods while using orders of magnitude less\ncomputational resources. These results are encouraging and shows the promise to\nfurther use of EC methods in various deep-learning paradigms.\n",
+        "published": "2018",
+        "authors": [
+            "Zhichao Lu",
+            "Ian Whalen",
+            "Vishnu Boddeti",
+            "Yashesh Dhebar",
+            "Kalyanmoy Deb",
+            "Erik Goodman",
+            "Wolfgang Banzhaf"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1810.03946v1",
+        "title": "Convolutional Neural Networks In Convolution",
+        "abstract": "  Currently, increasingly deeper neural networks have been applied to improve\ntheir accuracy. In contrast, We propose a novel wider Convolutional Neural\nNetworks (CNN) architecture, motivated by the Multi-column Deep Neural Networks\nand the Network In Network(NIN), aiming for higher accuracy without input data\ntransmutation. In our architecture, namely \"CNN In Convolution\"(CNNIC), a small\nCNN, instead of the original generalized liner model(GLM) based filters, is\nconvoluted as kernel on the original image, serving as feature extracting layer\nof this networks. And further classifications are then carried out by a global\naverage pooling layer and a softmax layer. Dropout and orthonormal\ninitialization are applied to overcome training difficulties including slow\nconvergence and over-fitting. Persuasive classification performance is\ndemonstrated on MNIST.\n",
+        "published": "2018",
+        "authors": [
+            "Xiaobo Huang"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1904.03137v4",
+        "title": "Learning to Remember: A Synaptic Plasticity Driven Framework for\n  Continual Learning",
+        "abstract": "  Models trained in the context of continual learning (CL) should be able to\nlearn from a stream of data over an undefined period of time. The main\nchallenges herein are: 1) maintaining old knowledge while simultaneously\nbenefiting from it when learning new tasks, and 2) guaranteeing model\nscalability with a growing amount of data to learn from. In order to tackle\nthese challenges, we introduce Dynamic Generative Memory (DGM) - a synaptic\nplasticity driven framework for continual learning. DGM relies on conditional\ngenerative adversarial networks with learnable connection plasticity realized\nwith neural masking. Specifically, we evaluate two variants of neural masking:\napplied to (i) layer activations and (ii) to connection weights directly.\nFurthermore, we propose a dynamic network expansion mechanism that ensures\nsufficient model capacity to accommodate for continually incoming tasks. The\namount of added capacity is determined dynamically from the learned binary\nmask. We evaluate DGM in the continual class-incremental setup on visual\nclassification tasks.\n",
+        "published": "2019",
+        "authors": [
+            "Oleksiy Ostapenko",
+            "Mihai Puscas",
+            "Tassilo Klein",
+            "Patrick J\u00e4hnichen",
+            "Moin Nabi"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1904.09035v2",
+        "title": "Evolving Deep Neural Networks by Multi-objective Particle Swarm\n  Optimization for Image Classification",
+        "abstract": "  In recent years, convolutional neural networks (CNNs) have become deeper in\norder to achieve better classification accuracy in image classification.\nHowever, it is difficult to deploy the state-of-the-art deep CNNs for\nindustrial use due to the difficulty of manually fine-tuning the\nhyperparameters and the trade-off between classification accuracy and\ncomputational cost. This paper proposes a novel multi-objective optimization\nmethod for evolving state-of-the-art deep CNNs in real-life applications, which\nautomatically evolves the non-dominant solutions at the Pareto front. Three\nmajor contributions are made: Firstly, a new encoding strategy is designed to\nencode one of the best state-of-the-art CNNs; With the classification accuracy\nand the number of floating point operations as the two objectives, a\nmulti-objective particle swarm optimization method is developed to evolve the\nnon-dominant solutions; Last but not least, a new infrastructure is designed to\nboost the experiments by concurrently running the experiments on multiple GPUs\nacross multiple machines, and a Python library is developed and released to\nmanage the infrastructure. The experimental results demonstrate that the\nnon-dominant solutions found by the proposed algorithm form a clear Pareto\nfront, and the proposed infrastructure is able to almost linearly reduce the\nrunning time.\n",
+        "published": "2019",
+        "authors": [
+            "Bin Wang",
+            "Yanan Sun",
+            "Bing Xue",
+            "Mengjie Zhang"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1904.09105v4",
+        "title": "Deep Likelihood Network for Image Restoration with Multiple Degradation\n  Levels",
+        "abstract": "  Convolutional neural networks have been proven effective in a variety of\nimage restoration tasks. Most state-of-the-art solutions, however, are trained\nusing images with a single particular degradation level, and their performance\ndeteriorates drastically when applied to other degradation settings. In this\npaper, we propose deep likelihood network (DL-Net), aiming at generalizing\noff-the-shelf image restoration networks to succeed over a spectrum of\ndegradation levels. We slightly modify an off-the-shelf network by appending a\nsimple recursive module, which is derived from a fidelity term, for\ndisentangling the computation for multiple degradation levels. Extensive\nexperimental results on image inpainting, interpolation, and super-resolution\nshow the effectiveness of our DL-Net.\n",
+        "published": "2019",
+        "authors": [
+            "Yiwen Guo",
+            "Ming Lu",
+            "Wangmeng Zuo",
+            "Changshui Zhang",
+            "Yurong Chen"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1904.09872v4",
+        "title": "Towards Learning of Filter-Level Heterogeneous Compression of\n  Convolutional Neural Networks",
+        "abstract": "  Recently, deep learning has become a de facto standard in machine learning\nwith convolutional neural networks (CNNs) demonstrating spectacular success on\na wide variety of tasks. However, CNNs are typically very demanding\ncomputationally at inference time. One of the ways to alleviate this burden on\ncertain hardware platforms is quantization relying on the use of low-precision\narithmetic representation for the weights and the activations. Another popular\nmethod is the pruning of the number of filters in each layer. While mainstream\ndeep learning methods train the neural networks weights while keeping the\nnetwork architecture fixed, the emerging neural architecture search (NAS)\ntechniques make the latter also amenable to training. In this paper, we\nformulate optimal arithmetic bit length allocation and neural network pruning\nas a NAS problem, searching for the configurations satisfying a computational\ncomplexity budget while maximizing the accuracy. We use a differentiable search\nmethod based on the continuous relaxation of the search space proposed by Liu\net al. (arXiv:1806.09055). We show, by grid search, that heterogeneous\nquantized networks suffer from a high variance which renders the benefit of the\nsearch questionable. For pruning, improvement over homogeneous cases is\npossible, but it is still challenging to find those configurations with the\nproposed method. The code is publicly available at\nhttps://github.com/yochaiz/Slimmable and https://github.com/yochaiz/darts-UNIQ\n",
+        "published": "2019",
+        "authors": [
+            "Yochai Zur",
+            "Chaim Baskin",
+            "Evgenii Zheltonozhskii",
+            "Brian Chmiel",
+            "Itay Evron",
+            "Alex M. Bronstein",
+            "Avi Mendelson"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1904.10674v1",
+        "title": "Deep Learning for Classification of Hyperspectral Data: A Comparative\n  Review",
+        "abstract": "  In recent years, deep learning techniques revolutionized the way remote\nsensing data are processed. Classification of hyperspectral data is no\nexception to the rule, but has intrinsic specificities which make application\nof deep learning less straightforward than with other optical data. This\narticle presents a state of the art of previous machine learning approaches,\nreviews the various deep learning approaches currently proposed for\nhyperspectral classification, and identifies the problems and difficulties\nwhich arise to implement deep neural networks for this task. In particular, the\nissues of spatial and spectral resolution, data volume, and transfer of models\nfrom multimedia images to hyperspectral data are addressed. Additionally, a\ncomparative study of various families of network architectures is provided and\na software toolbox is publicly released to allow experimenting with these\nmethods. 1 This article is intended for both data scientists with interest in\nhyperspectral data and remote sensing experts eager to apply deep learning\ntechniques to their own dataset.\n",
+        "published": "2019",
+        "authors": [
+            "Nicolas Audebert",
+            "Bertrand Saux",
+            "S\u00e9bastien Lef\u00e8vre"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1904.12970v1",
+        "title": "A neural network based on SPD manifold learning for skeleton-based hand\n  gesture recognition",
+        "abstract": "  This paper proposes a new neural network based on SPD manifold learning for\nskeleton-based hand gesture recognition. Given the stream of hand's joint\npositions, our approach combines two aggregation processes on respectively\nspatial and temporal domains. The pipeline of our network architecture consists\nin three main stages. The first stage is based on a convolutional layer to\nincrease the discriminative power of learned features. The second stage relies\non different architectures for spatial and temporal Gaussian aggregation of\njoint features. The third stage learns a final SPD matrix from skeletal data. A\nnew type of layer is proposed for the third stage, based on a variant of\nstochastic gradient descent on Stiefel manifolds. The proposed network is\nvalidated on two challenging datasets and shows state-of-the-art accuracies on\nboth datasets.\n",
+        "published": "2019",
+        "authors": [
+            "Xuan Son Nguyen",
+            "Luc Brun",
+            "Olivier L\u00e9zoray",
+            "S\u00e9bastien Bougleux"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1905.02544v1",
+        "title": "Ocular Diseases Diagnosis in Fundus Images using a Deep Learning:\n  Approaches, tools and Performance evaluation",
+        "abstract": "  Ocular pathology detection from fundus images presents an important challenge\non health care. In fact, each pathology has different severity stages that may\nbe deduced by verifying the existence of specific lesions. Each lesion is\ncharacterized by morphological features. Moreover, several lesions of different\npathologies have similar features. We note that patient may be affected\nsimultaneously by several pathologies. Consequently, the ocular pathology\ndetection presents a multi-class classification with a complex resolution\nprinciple. Several detection methods of ocular pathologies from fundus images\nhave been proposed. The methods based on deep learning are distinguished by\nhigher performance detection, due to their capability to configure the network\nwith respect to the detection objective. This work proposes a survey of ocular\npathology detection methods based on deep learning. First, we study the\nexisting methods either for lesion segmentation or pathology classification.\nAfterwards, we extract the principle steps of processing and we analyze the\nproposed neural network structures. Subsequently, we identify the hardware and\nsoftware environment required to employ the deep learning architecture.\nThereafter, we investigate about the experimentation principles involved to\nevaluate the methods and the databases used either for training and testing\nphases. The detection performance ratios and execution times are also reported\nand discussed.\n",
+        "published": "2019",
+        "authors": [
+            "Yaroub Elloumi",
+            "Mohamed Akil",
+            "Henda Boudegga"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1905.03418v2",
+        "title": "Deep Learning Acceleration Techniques for Real Time Mobile Vision\n  Applications",
+        "abstract": "  Deep Learning (DL) has become a crucial technology for Artificial\nIntelligence (AI). It is a powerful technique to automatically extract\nhigh-level features from complex data which can be exploited for applications\nsuch as computer vision, natural language processing, cybersecurity,\ncommunications, and so on. For the particular case of computer vision, several\nalgorithms like object detection in real time videos have been proposed and\nthey work well on Desktop GPUs and distributed computing platforms. However\nthese algorithms are still heavy for mobile and embedded visual applications.\nThe rapid spreading of smart portable devices and the emerging 5G network are\nintroducing new smart multimedia applications in mobile environments. As a\nconsequence, the possibility of implementing deep neural networks to mobile\nenvironments has attracted a lot of researchers. This paper presents emerging\ndeep learning acceleration techniques that can enable the delivery of real time\nvisual recognition into the hands of end users, anytime and anywhere.\n",
+        "published": "2019",
+        "authors": [
+            "Gael Kamdem De Teyou"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1905.04392v1",
+        "title": "Large-Scale Spectrum Occupancy Learning via Tensor Decomposition and\n  LSTM Networks",
+        "abstract": "  A new paradigm for large-scale spectrum occupancy learning based on long\nshort-term memory (LSTM) recurrent neural networks is proposed. Studies have\nshown that spectrum usage is a highly correlated time series. Moreover, there\nis a correlation for occupancy of spectrum between different frequency\nchannels. Therefore, revealing all these correlations using learning and\nprediction of one-dimensional time series is not a trivial task. In this paper,\nwe introduce a new framework for representing the spectrum measurements in a\ntensor format. Next, a time-series prediction method based on CANDECOMP/PARFAC\n(CP) tensor decomposition and LSTM recurrent neural networks is proposed. The\nproposed method is computationally efficient and is able to capture different\ntypes of correlation within the measured spectrum. Moreover, it is robust\nagainst noise and missing entries of sensed spectrum. The superiority of the\nproposed method is evaluated over a large-scale synthetic dataset in terms of\nprediction accuracy and computational efficiency.\n",
+        "published": "2019",
+        "authors": [
+            "Mohsen Joneidi",
+            "Ismail Alkhouri",
+            "Nazanin Rahnavard"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1905.05300v1",
+        "title": "Affine Variational Autoencoders: An Efficient Approach for Improving\n  Generalization and Robustness to Distribution Shift",
+        "abstract": "  In this study, we propose the Affine Variational Autoencoder (AVAE), a\nvariant of Variational Autoencoder (VAE) designed to improve robustness by\novercoming the inability of VAEs to generalize to distributional shifts in the\nform of affine perturbations. By optimizing an affine transform to maximize\nELBO, the proposed AVAE transforms an input to the training distribution\nwithout the need to increase model complexity to model the full distribution of\naffine transforms. In addition, we introduce a training procedure to create an\nefficient model by learning a subset of the training distribution, and using\nthe AVAE to improve generalization and robustness to distributional shift at\ntest time. Experiments on affine perturbations demonstrate that the proposed\nAVAE significantly improves generalization and robustness to distributional\nshift in the form of affine perturbations without an increase in model\ncomplexity.\n",
+        "published": "2019",
+        "authors": [
+            "Rene Bidart",
+            "Alexander Wong"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1905.07529v3",
+        "title": "Multinomial Distribution Learning for Effective Neural Architecture\n  Search",
+        "abstract": "  Architectures obtained by Neural Architecture Search (NAS) have achieved\nhighly competitive performance in various computer vision tasks. However, the\nprohibitive computation demand of forward-backward propagation in deep neural\nnetworks and searching algorithms makes it difficult to apply NAS in practice.\nIn this paper, we propose a Multinomial Distribution Learning for extremely\neffective NAS,which considers the search space as a joint multinomial\ndistribution, i.e., the operation between two nodes is sampled from this\ndistribution, and the optimal network structure is obtained by the operations\nwith the most likely probability in this distribution. Therefore, NAS can be\ntransformed to a multinomial distribution learning problem, i.e., the\ndistribution is optimized to have a high expectation of the performance.\nBesides, a hypothesis that the performance ranking is consistent in every\ntraining epoch is proposed and demonstrated to further accelerate the learning\nprocess. Experiments on CIFAR10 and ImageNet demonstrate the effectiveness of\nour method. On CIFAR-10, the structure searched by our method achieves 2.55%\ntest error, while being 6.0x (only 4 GPU hours on GTX1080Ti) faster compared\nwith state-of-the-art NAS algorithms. On ImageNet, our model achieves 75.2%\ntop1 accuracy under MobileNet settings (MobileNet V1/V2), while being 1.2x\nfaster with measured GPU latency. Test code with pre-trained models are\navailable at https://github.com/tanglang96/MDENAS\n",
+        "published": "2019",
+        "authors": [
+            "Xiawu Zheng",
+            "Rongrong Ji",
+            "Lang Tang",
+            "Baochang Zhang",
+            "Jianzhuang Liu",
+            "Qi Tian"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1905.10698v2",
+        "title": "Efficient Neural Task Adaptation by Maximum Entropy Initialization",
+        "abstract": "  Transferring knowledge from one neural network to another has been shown to\nbe helpful for learning tasks with few training examples. Prevailing\nfine-tuning methods could potentially contaminate pre-trained features by\ncomparably high energy random noise. This noise is mainly delivered from a\ncareless replacement of task-specific parameters. We analyze theoretically such\nknowledge contamination for classification tasks and propose a practical and\neasy to apply method to trap and minimize the contaminant. In our approach, the\nentropy of the output estimates gets maximized initially and the first\nback-propagated error is stalled at the output of the last layer. Our proposed\nmethod not only outperforms the traditional fine-tuning, but also significantly\nspeeds up the convergence of the learner. It is robust to randomness and\nindependent of the choice of architecture. Overall, our experiments show that\nthe power of transfer learning has been substantially underestimated so far.\n",
+        "published": "2019",
+        "authors": [
+            "Farshid Varno",
+            "Behrouz Haji Soleimani",
+            "Marzie Saghayi",
+            "Lisa Di Jorio",
+            "Stan Matwin"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1905.10901v1",
+        "title": "Seeing Convolution Through the Eyes of Finite Transformation Semigroup\n  Theory: An Abstract Algebraic Interpretation of Convolutional Neural Networks",
+        "abstract": "  Researchers are actively trying to gain better insights into the\nrepresentational properties of convolutional neural networks for guiding better\nnetwork designs and for interpreting a network's computational nature. Gaining\nsuch insights can be an arduous task due to the number of parameters in a\nnetwork and the complexity of a network's architecture. Current approaches of\nneural network interpretation include Bayesian probabilistic interpretations\nand information theoretic interpretations. In this study, we take a different\napproach to studying convolutional neural networks by proposing an abstract\nalgebraic interpretation using finite transformation semigroup theory.\nSpecifically, convolutional layers are broken up and mapped to a finite space.\nThe state space of the proposed finite transformation semigroup is then defined\nas a single element within the convolutional layer, with the acting elements\ndefined by surrounding state elements combined with convolution kernel\nelements. Generators of the finite transformation semigroup are defined to\ncomplete the interpretation. We leverage this approach to analyze the basic\nproperties of the resulting finite transformation semigroup to gain insights on\nthe representational properties of convolutional neural networks, including\ninsights into quantized network representation. Such a finite transformation\nsemigroup interpretation can also enable better understanding outside of the\nconfines of fixed lattice data structures, thus useful for handling data that\nlie on irregular lattices. Furthermore, the proposed abstract algebraic\ninterpretation is shown to be viable for interpreting convolutional operations\nwithin a variety of convolutional neural network architectures.\n",
+        "published": "2019",
+        "authors": [
+            "Andrew Hryniowski",
+            "Alexander Wong"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1905.13209v4",
+        "title": "AssembleNet: Searching for Multi-Stream Neural Connectivity in Video\n  Architectures",
+        "abstract": "  Learning to represent videos is a very challenging task both algorithmically\nand computationally. Standard video CNN architectures have been designed by\ndirectly extending architectures devised for image understanding to include the\ntime dimension, using modules such as 3D convolutions, or by using two-stream\ndesign to capture both appearance and motion in videos. We interpret a video\nCNN as a collection of multi-stream convolutional blocks connected to each\nother, and propose the approach of automatically finding neural architectures\nwith better connectivity and spatio-temporal interactions for video\nunderstanding. This is done by evolving a population of overly-connected\narchitectures guided by connection weight learning. Architectures combining\nrepresentations that abstract different input types (i.e., RGB and optical\nflow) at multiple temporal resolutions are searched for, allowing different\ntypes or sources of information to interact with each other. Our method,\nreferred to as AssembleNet, outperforms prior approaches on public video\ndatasets, in some cases by a great margin. We obtain 58.6% mAP on Charades and\n34.27% accuracy on Moments-in-Time.\n",
+        "published": "2019",
+        "authors": [
+            "Michael S. Ryoo",
+            "AJ Piergiovanni",
+            "Mingxing Tan",
+            "Anelia Angelova"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1905.13308v2",
+        "title": "Hangul Fonts Dataset: a Hierarchical and Compositional Dataset for\n  Investigating Learned Representations",
+        "abstract": "  Hierarchy and compositionality are common latent properties in many natural\nand scientific datasets. Determining when a deep network's hidden activations\nrepresent hierarchy and compositionality is important both for understanding\ndeep representation learning and for applying deep networks in domains where\ninterpretability is crucial. However, current benchmark machine learning\ndatasets either have little hierarchical or compositional structure, or the\nstructure is not known. This gap impedes precise analysis of a network's\nrepresentations and thus hinders development of new methods that can learn such\nproperties. To address this gap, we developed a new benchmark dataset with\nknown hierarchical and compositional structure. The Hangul Fonts Dataset (HFD)\nis comprised of 35 fonts from the Korean writing system (Hangul), each with\n11,172 blocks (syllables) composed from the product of initial consonant,\nmedial vowel, and final consonant glyphs. All blocks can be grouped into a few\ngeometric types which induces a hierarchy across blocks. In addition, each\nblock is composed of individual glyphs with rotations, translations, scalings,\nand naturalistic style variation across fonts. We find that both shallow and\ndeep unsupervised methods only show modest evidence of hierarchy and\ncompositionality in their representations of the HFD compared to supervised\ndeep networks. Supervised deep network representations contain structure\nrelated to the geometrical hierarchy of the characters, but the compositional\nstructure of the data is not evident. Thus, HFD enables the identification of\nshortcomings in existing methods, a critical first step toward developing new\nmachine learning algorithms to extract hierarchical and compositional structure\nin the context of naturalistic variability.\n",
+        "published": "2019",
+        "authors": [
+            "Jesse A. Livezey",
+            "Ahyeon Hwang",
+            "Jacob Yeung",
+            "Kristofer E. Bouchard"
+        ]
+    }
+]

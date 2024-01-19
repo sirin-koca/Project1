@@ -1,0 +1,1215 @@
+[
+    {
+        "id": "http://arxiv.org/abs/2304.03638v1",
+        "title": "Compressed Regression over Adaptive Networks",
+        "abstract": "  In this work we derive the performance achievable by a network of distributed\nagents that solve, adaptively and in the presence of communication constraints,\na regression problem. Agents employ the recently proposed ACTC\n(adapt-compress-then-combine) diffusion strategy, where the signals exchanged\nlocally by neighboring agents are encoded with randomized differential\ncompression operators. We provide a detailed characterization of the\nmean-square estimation error, which is shown to comprise a term related to the\nerror that agents would achieve without communication constraints, plus a term\narising from compression. The analysis reveals quantitative relationships\nbetween the compression loss and fundamental attributes of the distributed\nregression problem, in particular, the stochastic approximation error caused by\nthe gradient noise and the network topology (through the Perron eigenvector).\nWe show that knowledge of such relationships is critical to allocate optimally\nthe communication resources across the agents, taking into account their\nindividual attributes, such as the quality of their data or their degree of\ncentrality in the network topology. We devise an optimized allocation strategy\nwhere the parameters necessary for the optimization can be learned online by\nthe agents. Illustrative examples show that a significant performance\nimprovement, as compared to a blind (i.e., uniform) resource allocation, can be\nachieved by optimizing the allocation by means of the provided\nmean-square-error formulas.\n",
+        "published": "2023",
+        "authors": [
+            "Marco Carpentiero",
+            "Vincenzo Matta",
+            "Ali H. Sayed"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2305.18784v1",
+        "title": "Collaborative Multi-Agent Heterogeneous Multi-Armed Bandits",
+        "abstract": "  The study of collaborative multi-agent bandits has attracted significant\nattention recently. In light of this, we initiate the study of a new\ncollaborative setting, consisting of $N$ agents such that each agent is\nlearning one of $M$ stochastic multi-armed bandits to minimize their group\ncumulative regret. We develop decentralized algorithms which facilitate\ncollaboration between the agents under two scenarios. We characterize the\nperformance of these algorithms by deriving the per agent cumulative regret and\ngroup regret upper bounds. We also prove lower bounds for the group regret in\nthis setting, which demonstrates the near-optimal behavior of the proposed\nalgorithms.\n",
+        "published": "2023",
+        "authors": [
+            "Ronshee Chawla",
+            "Daniel Vial",
+            "Sanjay Shakkottai",
+            "R. Srikant"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2312.15549v1",
+        "title": "Finite-Time Frequentist Regret Bounds of Multi-Agent Thompson Sampling\n  on Sparse Hypergraphs",
+        "abstract": "  We study the multi-agent multi-armed bandit (MAMAB) problem, where $m$ agents\nare factored into $\\rho$ overlapping groups. Each group represents a hyperedge,\nforming a hypergraph over the agents. At each round of interaction, the learner\npulls a joint arm (composed of individual arms for each agent) and receives a\nreward according to the hypergraph structure. Specifically, we assume there is\na local reward for each hyperedge, and the reward of the joint arm is the sum\nof these local rewards. Previous work introduced the multi-agent Thompson\nsampling (MATS) algorithm \\citep{verstraeten2020multiagent} and derived a\nBayesian regret bound. However, it remains an open problem how to derive a\nfrequentist regret bound for Thompson sampling in this multi-agent setting. To\naddress these issues, we propose an efficient variant of MATS, the\n$\\epsilon$-exploring Multi-Agent Thompson Sampling ($\\epsilon$-MATS) algorithm,\nwhich performs MATS exploration with probability $\\epsilon$ while adopts a\ngreedy policy otherwise. We prove that $\\epsilon$-MATS achieves a worst-case\nfrequentist regret bound that is sublinear in both the time horizon and the\nlocal arm size. We also derive a lower bound for this setting, which implies\nour frequentist regret upper bound is optimal up to constant and logarithm\nterms, when the hypergraph is sufficiently sparse. Thorough experiments on\nstandard MAMAB problems demonstrate the superior performance and the improved\ncomputational efficiency of $\\epsilon$-MATS compared with existing algorithms\nin the same setting.\n",
+        "published": "2023",
+        "authors": [
+            "Tianyuan Jin",
+            "Hao-Lun Hsu",
+            "William Chang",
+            "Pan Xu"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2312.16341v1",
+        "title": "Harnessing the Power of Federated Learning in Federated Contextual\n  Bandits",
+        "abstract": "  Federated learning (FL) has demonstrated great potential in revolutionizing\ndistributed machine learning, and tremendous efforts have been made to extend\nit beyond the original focus on supervised learning. Among many directions,\nfederated contextual bandits (FCB), a pivotal integration of FL and sequential\ndecision-making, has garnered significant attention in recent years. Despite\nsubstantial progress, existing FCB approaches have largely employed their\ntailored FL components, often deviating from the canonical FL framework.\nConsequently, even renowned algorithms like FedAvg remain under-utilized in\nFCB, let alone other FL advancements. Motivated by this disconnection, this\nwork takes one step towards building a tighter relationship between the\ncanonical FL study and the investigations on FCB. In particular, a novel FCB\ndesign, termed FedIGW, is proposed to leverage a regression-based CB algorithm,\ni.e., inverse gap weighting. Compared with existing FCB approaches, the\nproposed FedIGW design can better harness the entire spectrum of FL\ninnovations, which is concretely reflected as (1) flexible incorporation of\n(both existing and forthcoming) FL protocols; (2) modularized plug-in of FL\nanalyses in performance guarantees; (3) seamless integration of FL appendages\n(such as personalization, robustness, and privacy). We substantiate these\nclaims through rigorous theoretical analyses and empirical evaluations.\n",
+        "published": "2023",
+        "authors": [
+            "Chengshuai Shi",
+            "Ruida Zhou",
+            "Kun Yang",
+            "Cong Shen"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/cs/0507056v1",
+        "title": "Explorations in engagement for humans and robots",
+        "abstract": "  This paper explores the concept of engagement, the process by which\nindividuals in an interaction start, maintain and end their perceived\nconnection to one another. The paper reports on one aspect of engagement among\nhuman interactors--the effect of tracking faces during an interaction. It also\ndescribes the architecture of a robot that can participate in conversational,\ncollaborative interactions with engagement gestures. Finally, the paper reports\non findings of experiments with human participants who interacted with a robot\nwhen it either performed or did not perform engagement gestures. Results of the\nhuman-robot studies indicate that people become engaged with robots: they\ndirect their attention to the robot more often in interactions where engagement\ngestures are present, and they find interactions more appropriate when\nengagement gestures are present than when they are not.\n",
+        "published": "2005",
+        "authors": [
+            "Candace L. Sidner",
+            "Christopher Lee",
+            "Cory Kidd",
+            "Neal Lesh",
+            "Charles Rich"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1602.01208v3",
+        "title": "Spatial Concept Acquisition for a Mobile Robot that Integrates\n  Self-Localization and Unsupervised Word Discovery from Spoken Sentences",
+        "abstract": "  In this paper, we propose a novel unsupervised learning method for the\nlexical acquisition of words related to places visited by robots, from human\ncontinuous speech signals. We address the problem of learning novel words by a\nrobot that has no prior knowledge of these words except for a primitive\nacoustic model. Further, we propose a method that allows a robot to effectively\nuse the learned words and their meanings for self-localization tasks. The\nproposed method is nonparametric Bayesian spatial concept acquisition method\n(SpCoA) that integrates the generative model for self-localization and the\nunsupervised word segmentation in uttered sentences via latent variables\nrelated to the spatial concept. We implemented the proposed method SpCoA on\nSIGVerse, which is a simulation environment, and TurtleBot2, which is a mobile\nrobot in a real environment. Further, we conducted experiments for evaluating\nthe performance of SpCoA. The experimental results showed that SpCoA enabled\nthe robot to acquire the names of places from speech sentences. They also\nrevealed that the robot could effectively utilize the acquired spatial concepts\nand reduce the uncertainty in self-localization.\n",
+        "published": "2016",
+        "authors": [
+            "Akira Taniguchi",
+            "Tadahiro Taniguchi",
+            "Tetsunari Inamura"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1605.04072v1",
+        "title": "Towards Empathetic Human-Robot Interactions",
+        "abstract": "  Since the late 1990s when speech companies began providing their\ncustomer-service software in the market, people have gotten used to speaking to\nmachines. As people interact more often with voice and gesture controlled\nmachines, they expect the machines to recognize different emotions, and\nunderstand other high level communication features such as humor, sarcasm and\nintention. In order to make such communication possible, the machines need an\nempathy module in them which can extract emotions from human speech and\nbehavior and can decide the correct response of the robot. Although research on\nempathetic robots is still in the early stage, we described our approach using\nsignal processing techniques, sentiment analysis and machine learning\nalgorithms to make robots that can \"understand\" human emotion. We propose Zara\nthe Supergirl as a prototype system of empathetic robots. It is a software\nbased virtual android, with an animated cartoon character to present itself on\nthe screen. She will get \"smarter\" and more empathetic through its deep\nlearning algorithms, and by gathering more data and learning from it. In this\npaper, we present our work so far in the areas of deep learning of emotion and\nsentiment recognition, as well as humor recognition. We hope to explore the\nfuture direction of android development and how it can help improve people's\nlives.\n",
+        "published": "2016",
+        "authors": [
+            "Pascale Fung",
+            "Dario Bertero",
+            "Yan Wan",
+            "Anik Dey",
+            "Ricky Ho Yin Chan",
+            "Farhad Bin Siddique",
+            "Yang Yang",
+            "Chien-Sheng Wu",
+            "Ruixi Lin"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1701.08269v2",
+        "title": "Systems of natural-language-facilitated human-robot cooperation: A\n  review",
+        "abstract": "  Natural-language-facilitated human-robot cooperation (NLC), in which natural\nlanguage (NL) is used to share knowledge between a human and a robot for\nconducting intuitive human-robot cooperation (HRC), is continuously developing\nin the recent decade. Currently, NLC is used in several robotic domains such as\nmanufacturing, daily assistance and health caregiving. It is necessary to\nsummarize current NLC-based robotic systems and discuss the future developing\ntrends, providing helpful information for future NLC research. In this review,\nwe first analyzed the driving forces behind the NLC research. Regarding to a\nrobot s cognition level during the cooperation, the NLC implementations then\nwere categorized into four types {NL-based control, NL-based robot training,\nNL-based task execution, NL-based social companion} for comparison and\ndiscussion. Last based on our perspective and comprehensive paper review, the\nfuture research trends were discussed.\n",
+        "published": "2017",
+        "authors": [
+            "Rui Liu",
+            "Xiaoli Zhang"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1701.08756v3",
+        "title": "A Review of Methodologies for Natural-Language-Facilitated Human-Robot\n  Cooperation",
+        "abstract": "  Natural-language-facilitated human-robot cooperation (NLC) refers to using\nnatural language (NL) to facilitate interactive information sharing and task\nexecutions with a common goal constraint between robots and humans. Recently,\nNLC research has received increasing attention. Typical NLC scenarios include\nrobotic daily assistance, robotic health caregiving, intelligent manufacturing,\nautonomous navigation, and robot social accompany. However, a thorough review,\nthat can reveal latest methodologies to use NL to facilitate human-robot\ncooperation, is missing. In this review, a comprehensive summary about\nmethodologies for NLC is presented. NLC research includes three main research\nfocuses: NL instruction understanding, NL-based execution plan generation, and\nknowledge-world mapping. In-depth analyses on theoretical methods,\napplications, and model advantages and disadvantages are made. Based on our\npaper review and perspective, potential research directions of NLC are\nsummarized.\n",
+        "published": "2017",
+        "authors": [
+            "Rui Liu",
+            "Xiaoli Zhang"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1703.03714v1",
+        "title": "Applying the Wizard-of-Oz Technique to Multimodal Human-Robot Dialogue",
+        "abstract": "  Our overall program objective is to provide more natural ways for soldiers to\ninteract and communicate with robots, much like how soldiers communicate with\nother soldiers today. We describe how the Wizard-of-Oz (WOz) method can be\napplied to multimodal human-robot dialogue in a collaborative exploration task.\nWhile the WOz method can help design robot behaviors, traditional approaches\nplace the burden of decisions on a single wizard. In this work, we consider two\nwizards to stand in for robot navigation and dialogue management software\ncomponents. The scenario used to elicit data is one in which a human-robot team\nis tasked with exploring an unknown environment: a human gives verbal\ninstructions from a remote location and the robot follows them, clarifying\npossible misunderstandings as needed via dialogue. We found the division of\nlabor between wizards to be workable, which holds promise for future software\ndevelopment.\n",
+        "published": "2017",
+        "authors": [
+            "Matthew Marge",
+            "Claire Bonial",
+            "Brendan Byrne",
+            "Taylor Cassidy",
+            "A. William Evans",
+            "Susan G. Hill",
+            "Clare Voss"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1707.05720v1",
+        "title": "Grounding Spatio-Semantic Referring Expressions for Human-Robot\n  Interaction",
+        "abstract": "  The human language is one of the most natural interfaces for humans to\ninteract with robots. This paper presents a robot system that retrieves\neveryday objects with unconstrained natural language descriptions. A core issue\nfor the system is semantic and spatial grounding, which is to infer objects and\ntheir spatial relationships from images and natural language expressions. We\nintroduce a two-stage neural-network grounding pipeline that maps natural\nlanguage referring expressions directly to objects in the images. The first\nstage uses visual descriptions in the referring expressions to generate a\ncandidate set of relevant objects. The second stage examines all pairwise\nrelationships between the candidates and predicts the most likely referred\nobject according to the spatial descriptions in the referring expressions. A\nkey feature of our system is that by leveraging a large dataset of images\nlabeled with text descriptions, it allows unrestricted object types and natural\nlanguage referring expressions. Preliminary results indicate that our system\noutperforms a near state-of-the-art object comprehension system on standard\nbenchmark datasets. We also present a robot system that follows voice commands\nto pick and place previously unseen objects.\n",
+        "published": "2017",
+        "authors": [
+            "Mohit Shridhar",
+            "David Hsu"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1807.11838v1",
+        "title": "Extensible Grounding of Speech for Robot Instruction",
+        "abstract": "  Spoken language is a convenient interface for commanding a mobile robot. Yet\nfor this to work a number of base terms must be grounded in perceptual and\nmotor skills. We detail the language processing used on our robot ELI and\nexplain how this grounding is performed, how it interacts with user gestures,\nand how it handles phenomena such as anaphora. More importantly, however, there\nare certain concepts which the robot cannot be preprogrammed with, such as the\nnames of various objects in a household or the nature of specific tasks it may\nbe requested to perform. In these cases it is vital that there exist a method\nfor extending the grounding, essentially \"learning by being told\". We describe\nhow this was successfully implemented for learning new nouns and verbs in a\ntabletop setting. Creating this language learning kernel may be the last\nexplicit programming the robot ever needs - the core mechanism could eventually\nbe used for imparting a vast amount of knowledge, much as a child learns from\nits parents and teachers.\n",
+        "published": "2018",
+        "authors": [
+            "Jonathan Connell"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1811.10229v1",
+        "title": "Augmenting Robot Knowledge Consultants with Distributed Short Term\n  Memory",
+        "abstract": "  Human-robot communication in situated environments involves a complex\ninterplay between knowledge representations across a wide variety of\nmodalities. Crucially, linguistic information must be associated with\nrepresentations of objects, locations, people, and goals, which may be\nrepresented in very different ways. In previous work, we developed a Consultant\nFramework that facilitates modality-agnostic access to information distributed\nacross a set of heterogeneously represented knowledge sources. In this work, we\ndraw inspiration from cognitive science to augment these distributed knowledge\nsources with Short Term Memory Buffers to create an STM-augmented algorithm for\nreferring expression generation. We then discuss the potential performance\nbenefits of this approach and insights from cognitive science that may inform\nfuture refinements in the design of our approach.\n",
+        "published": "2018",
+        "authors": [
+            "Tom Williams",
+            "Ravenna Thielstrom",
+            "Evan Krause",
+            "Bradley Oosterveld",
+            "Matthias Scheutz"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1910.10034v1",
+        "title": "Language-guided Semantic Mapping and Mobile Manipulation in Partially\n  Observable Environments",
+        "abstract": "  Recent advances in data-driven models for grounded language understanding\nhave enabled robots to interpret increasingly complex instructions. Two\nfundamental limitations of these methods are that most require a full model of\nthe environment to be known a priori, and they attempt to reason over a world\nrepresentation that is flat and unnecessarily detailed, which limits\nscalability. Recent semantic mapping methods address partial observability by\nexploiting language as a sensor to infer a distribution over topological,\nmetric and semantic properties of the environment. However, maintaining a\ndistribution over highly detailed maps that can support grounding of diverse\ninstructions is computationally expensive and hinders real-time human-robot\ncollaboration. We propose a novel framework that learns to adapt perception\naccording to the task in order to maintain compact distributions over semantic\nmaps. Experiments with a mobile manipulator demonstrate more efficient\ninstruction following in a priori unknown environments.\n",
+        "published": "2019",
+        "authors": [
+            "Siddharth Patki",
+            "Ethan Fahnestock",
+            "Thomas M. Howard",
+            "Matthew R. Walter"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1709.09741v1",
+        "title": "WHY: Natural Explanations from a Robot Navigator",
+        "abstract": "  Effective collaboration between a robot and a person requires natural\ncommunication. When a robot travels with a human companion, the robot should be\nable to explain its navigation behavior in natural language. This paper\nexplains how a cognitively-based, autonomous robot navigation system produces\ninformative, intuitive explanations for its decisions. Language generation here\nis based upon the robot's commonsense, its qualitative reasoning, and its\nlearned spatial model. This approach produces natural explanations in real time\nfor a robot as it navigates in a large, complex indoor environment.\n",
+        "published": "2017",
+        "authors": [
+            "Raj Korpan",
+            "Susan L. Epstein",
+            "Anoop Aroor",
+            "Gil Dekel"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1907.05446v2",
+        "title": "General Evaluation for Instruction Conditioned Navigation using Dynamic\n  Time Warping",
+        "abstract": "  In instruction conditioned navigation, agents interpret natural language and\ntheir surroundings to navigate through an environment. Datasets for studying\nthis task typically contain pairs of these instructions and reference\ntrajectories. Yet, most evaluation metrics used thus far fail to properly\naccount for the latter, relying instead on insufficient similarity comparisons.\nWe address fundamental flaws in previously used metrics and show how Dynamic\nTime Warping (DTW), a long known method of measuring similarity between two\ntime series, can be used for evaluation of navigation agents. For such, we\ndefine the normalized Dynamic Time Warping (nDTW) metric, that softly penalizes\ndeviations from the reference path, is naturally sensitive to the order of the\nnodes composing each path, is suited for both continuous and graph-based\nevaluations, and can be efficiently calculated. Further, we define SDTW, which\nconstrains nDTW to only successful paths. We collect human similarity judgments\nfor simulated paths and find nDTW correlates better with human rankings than\nall other metrics. We also demonstrate that using nDTW as a reward signal for\nReinforcement Learning navigation agents improves their performance on both the\nRoom-to-Room (R2R) and Room-for-Room (R4R) datasets. The R4R results in\nparticular highlight the superiority of SDTW over previous success-constrained\nmetrics.\n",
+        "published": "2019",
+        "authors": [
+            "Gabriel Ilharco",
+            "Vihan Jain",
+            "Alexander Ku",
+            "Eugene Ie",
+            "Jason Baldridge"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1604.06721v1",
+        "title": "Exploiting Deep Semantics and Compositionality of Natural Language for\n  Human-Robot-Interaction",
+        "abstract": "  We develop a natural language interface for human robot interaction that\nimplements reasoning about deep semantics in natural language. To realize the\nrequired deep analysis, we employ methods from cognitive linguistics, namely\nthe modular and compositional framework of Embodied Construction Grammar (ECG)\n[Feldman, 2009]. Using ECG, robots are able to solve fine-grained reference\nresolution problems and other issues related to deep semantics and\ncompositionality of natural language. This also includes verbal interaction\nwith humans to clarify commands and queries that are too ambiguous to be\nexecuted safely. We implement our NLU framework as a ROS package and present\nproof-of-concept scenarios with different robots, as well as a survey on the\nstate of the art.\n",
+        "published": "2016",
+        "authors": [
+            "Manfred Eppe",
+            "Sean Trott",
+            "Jerome Feldman"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1809.07269v2",
+        "title": "Towards Dialogue-based Navigation with Multivariate Adaptation driven by\n  Intention and Politeness for Social Robots",
+        "abstract": "  Service robots need to show appropriate social behaviour in order to be\ndeployed in social environments such as healthcare, education, retail, etc.\nSome of the main capabilities that robots should have are navigation and\nconversational skills. If the person is impatient, the person might want a\nrobot to navigate faster and vice versa. Linguistic features that indicate\npoliteness can provide social cues about a person's patient and impatient\nbehaviour. The novelty presented in this paper is to dynamically incorporate\npoliteness in robotic dialogue systems for navigation. Understanding the\npoliteness in users' speech can be used to modulate the robot behaviour and\nresponses. Therefore, we developed a dialogue system to navigate in an indoor\nenvironment, which produces different robot behaviours and responses based on\nusers' intention and degree of politeness. We deploy and test our system with\nthe Pepper robot that adapts to the changes in user's politeness.\n",
+        "published": "2018",
+        "authors": [
+            "Chandrakant Bothe",
+            "Fernando Garcia",
+            "Arturo Cruz Maya",
+            "Amit Kumar Pandey",
+            "Stefan Wermter"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1912.00819v3",
+        "title": "EDA: Enriching Emotional Dialogue Acts using an Ensemble of Neural\n  Annotators",
+        "abstract": "  The recognition of emotion and dialogue acts enriches conversational analysis\nand help to build natural dialogue systems. Emotion interpretation makes us\nunderstand feelings and dialogue acts reflect the intentions and performative\nfunctions in the utterances. However, most of the textual and multi-modal\nconversational emotion corpora contain only emotion labels but not dialogue\nacts. To address this problem, we propose to use a pool of various recurrent\nneural models trained on a dialogue act corpus, with and without context. These\nneural models annotate the emotion corpora with dialogue act labels, and an\nensemble annotator extracts the final dialogue act label. We annotated two\naccessible multi-modal emotion corpora: IEMOCAP and MELD. We analyzed the\nco-occurrence of emotion and dialogue act labels and discovered specific\nrelations. For example, Accept/Agree dialogue acts often occur with the Joy\nemotion, Apology with Sadness, and Thanking with Joy. We make the Emotional\nDialogue Acts (EDA) corpus publicly available to the research community for\nfurther study and analysis.\n",
+        "published": "2019",
+        "authors": [
+            "Chandrakant Bothe",
+            "Cornelius Weber",
+            "Sven Magg",
+            "Stefan Wermter"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2007.08670v1",
+        "title": "Enabling Morally Sensitive Robotic Clarification Requests",
+        "abstract": "  The design of current natural language oriented robot architectures enables\ncertain architectural components to circumvent moral reasoning capabilities.\nOne example of this is reflexive generation of clarification requests as soon\nas referential ambiguity is detected in a human utterance. As shown in previous\nresearch, this can lead robots to (1) miscommunicate their moral dispositions\nand (2) weaken human perception or application of moral norms within their\ncurrent context. We present a solution to these problems by performing moral\nreasoning on each potential disambiguation of an ambiguous human utterance and\nresponding accordingly, rather than immediately and naively requesting\nclarification. We implement our solution in the DIARC robot architecture,\nwhich, to our knowledge, is the only current robot architecture with both moral\nreasoning and clarification request generation capabilities. We then evaluate\nour method with a human subjects experiment, the results of which indicate that\nour approach successfully ameliorates the two identified concerns.\n",
+        "published": "2020",
+        "authors": [
+            "Ryan Blake Jackson",
+            "Tom Williams"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2007.08672v1",
+        "title": "Toward Forgetting-Sensitive Referring Expression Generationfor\n  Integrated Robot Architectures",
+        "abstract": "  To engage in human-like dialogue, robots require the ability to describe the\nobjects, locations, and people in their environment, a capability known as\n\"Referring Expression Generation.\" As speakers repeatedly refer to similar\nobjects, they tend to re-use properties from previous descriptions, in part to\nhelp the listener, and in part due to cognitive availability of those\nproperties in working memory (WM). Because different theories of working memory\n\"forgetting\" necessarily lead to differences in cognitive availability, we\nhypothesize that they will similarly result in generation of different\nreferring expressions. To design effective intelligent agents, it is thus\nnecessary to determine how different models of forgetting may be differentially\neffective at producing natural human-like referring expressions. In this work,\nwe computationalize two candidate models of working memory forgetting within a\nrobot cognitive architecture, and demonstrate how they lead to cognitive\navailability-based differences in generated referring expressions.\n",
+        "published": "2020",
+        "authors": [
+            "Tom Williams",
+            "Torin Johnson",
+            "Will Culpepper",
+            "Kellyn Larson"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2007.09053v1",
+        "title": "Situated Multimodal Control of a Mobile Robot: Navigation through a\n  Virtual Environment",
+        "abstract": "  We present a new interface for controlling a navigation robot in novel\nenvironments using coordinated gesture and language. We use a TurtleBot3 robot\nwith a LIDAR and a camera, an embodied simulation of what the robot has\nencountered while exploring, and a cross-platform bridge facilitating generic\ncommunication. A human partner can deliver instructions to the robot using\nspoken English and gestures relative to the simulated environment, to guide the\nrobot through navigation tasks.\n",
+        "published": "2020",
+        "authors": [
+            "Katherine Krajovic",
+            "Nikhil Krishnaswamy",
+            "Nathaniel J. Dimick",
+            "R. Pito Salas",
+            "James Pustejovsky"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2008.02742v3",
+        "title": "Compositional Networks Enable Systematic Generalization for Grounded\n  Language Understanding",
+        "abstract": "  Humans are remarkably flexible when understanding new sentences that include\ncombinations of concepts they have never encountered before. Recent work has\nshown that while deep networks can mimic some human language abilities when\npresented with novel sentences, systematic variation uncovers the limitations\nin the language-understanding abilities of networks. We demonstrate that these\nlimitations can be overcome by addressing the generalization challenges in the\ngSCAN dataset, which explicitly measures how well an agent is able to interpret\nnovel linguistic commands grounded in vision, e.g., novel pairings of\nadjectives and nouns. The key principle we employ is compositionality: that the\ncompositional structure of networks should reflect the compositional structure\nof the problem domain they address, while allowing other parameters to be\nlearned end-to-end. We build a general-purpose mechanism that enables agents to\ngeneralize their language understanding to compositional domains. Crucially,\nour network has the same state-of-the-art performance as prior work while\ngeneralizing its knowledge when prior work does not. Our network also provides\na level of interpretability that enables users to inspect what each part of\nnetworks learns. Robust grounded language understanding without dramatic\nfailures and without corner cases is critical to building safe and fair robots;\nwe demonstrate the significant role that compositionality can play in achieving\nthat goal.\n",
+        "published": "2020",
+        "authors": [
+            "Yen-Ling Kuo",
+            "Boris Katz",
+            "Andrei Barbu"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2105.00403v1",
+        "title": "Intelligent Conversational Android ERICA Applied to Attentive Listening\n  and Job Interview",
+        "abstract": "  Following the success of spoken dialogue systems (SDS) in smartphone\nassistants and smart speakers, a number of communicative robots are developed\nand commercialized. Compared with the conventional SDSs designed as a\nhuman-machine interface, interaction with robots is expected to be in a closer\nmanner to talking to a human because of the anthropomorphism and physical\npresence. The goal or task of dialogue may not be information retrieval, but\nthe conversation itself. In order to realize human-level \"long and deep\"\nconversation, we have developed an intelligent conversational android ERICA. We\nset up several social interaction tasks for ERICA, including attentive\nlistening, job interview, and speed dating. To allow for spontaneous,\nincremental multiple utterances, a robust turn-taking model is implemented\nbased on TRP (transition-relevance place) prediction, and a variety of\nbackchannels are generated based on time frame-wise prediction instead of\nIPU-based prediction. We have realized an open-domain attentive listening\nsystem with partial repeats and elaborating questions on focus words as well as\nassessment responses. It has been evaluated with 40 senior people, engaged in\nconversation of 5-7 minutes without a conversation breakdown. It was also\ncompared against the WOZ setting. We have also realized a job interview system\nwith a set of base questions followed by dynamic generation of elaborating\nquestions. It has also been evaluated with student subjects, showing promising\nresults.\n",
+        "published": "2021",
+        "authors": [
+            "Tatsuya Kawahara",
+            "Koji Inoue",
+            "Divesh Lala"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1607.05174v1",
+        "title": "Is spoken language all-or-nothing? Implications for future speech-based\n  human-machine interaction",
+        "abstract": "  Recent years have seen significant market penetration for voice-based\npersonal assistants such as Apple's Siri. However, despite this success, user\ntake-up is frustratingly low. This position paper argues that there is a\nhabitability gap caused by the inevitable mismatch between the capabilities and\nexpectations of human users and the features and benefits provided by\ncontemporary technology. Suggestions are made as to how such problems might be\nmitigated, but a more worrisome question emerges: \"is spoken language\nall-or-nothing\"? The answer, based on contemporary views on the special nature\nof (spoken) language, is that there may indeed be a fundamental limit to the\ninteraction that can take place between mismatched interlocutors (such as\nhumans and machines). However, it is concluded that interactions between native\nand non-native speakers, or between adults and children, or even between humans\nand dogs, might provide critical inspiration for the design of future\nspeech-based human-machine interaction.\n",
+        "published": "2016",
+        "authors": [
+            "Roger K. Moore"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1607.06875v2",
+        "title": "Processing Natural Language About Ongoing Actions",
+        "abstract": "  Actions may not proceed as planned; they may be interrupted, resumed or\noverridden. This is a challenge to handle in a natural language understanding\nsystem. We describe extensions to an existing implementation for the control of\nautonomous systems by natural language, to enable such systems to handle\nincoming language requests regarding actions. Language Communication with\nAutonomous Systems (LCAS) has been extended with support for X-nets,\nparameterized executable schemas representing actions. X-nets enable the system\nto control actions at a desired level of granularity, while providing a\nmechanism for language requests to be processed asynchronously. Standard\nsemantics supported include requests to stop, continue, or override the\nexisting action. The specific domain demonstrated is the control of motion of a\nsimulated robot, but the approach is general, and could be applied to other\ndomains.\n",
+        "published": "2016",
+        "authors": [
+            "Steve Doubleday",
+            "Sean Trott",
+            "Jerome Feldman"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1611.05379v1",
+        "title": "PCT and Beyond: Towards a Computational Framework for `Intelligent'\n  Communicative Systems",
+        "abstract": "  Recent years have witnessed increasing interest in the potential benefits of\n`intelligent' autonomous machines such as robots. Honda's Asimo humanoid robot,\niRobot's Roomba robot vacuum cleaner and Google's driverless cars have fired\nthe imagination of the general public, and social media buzz with speculation\nabout a utopian world of helpful robot assistants or the coming robot\napocalypse! However, there is a long way to go before autonomous systems reach\nthe level of capabilities required for even the simplest of tasks involving\nhuman-robot interaction - especially if it involves communicative behaviour\nsuch as speech and language. Of course the field of Artificial Intelligence\n(AI) has made great strides in these areas, and has moved on from abstract\nhigh-level rule-based paradigms to embodied architectures whose operations are\ngrounded in real physical environments. What is still missing, however, is an\noverarching theory of intelligent communicative behaviour that informs\nsystem-level design decisions in order to provide a more coherent approach to\nsystem integration. This chapter introduces the beginnings of such a framework\ninspired by the principles of Perceptual Control Theory (PCT). In particular,\nit is observed that PCT has hitherto tended to view perceptual processes as a\nrelatively straightforward series of transformations from sensation to\nperception, and has overlooked the potential of powerful generative model-based\nsolutions that have emerged in practical fields such as visual or auditory\nscene analysis. Starting from first principles, a sequence of arguments is\npresented which not only shows how these ideas might be integrated into PCT,\nbut which also extend PCT towards a remarkably symmetric architecture for a\nneeds-driven communicative agent. It is concluded that, if behaviour is the\ncontrol of perception, then perception is the simulation of behaviour.\n",
+        "published": "2016",
+        "authors": [
+            "Prof. Roger K. Moore"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1611.06468v1",
+        "title": "Generating machine-executable plans from end-user's natural-language\n  instructions",
+        "abstract": "  It is critical for advanced manufacturing machines to autonomously execute a\ntask by following an end-user's natural language (NL) instructions. However, NL\ninstructions are usually ambiguous and abstract so that the machines may\nmisunderstand and incorrectly execute the task. To address this NL-based\nhuman-machine communication problem and enable the machines to appropriately\nexecute tasks by following the end-user's NL instructions, we developed a\nMachine-Executable-Plan-Generation (exePlan) method. The exePlan method\nconducts task-centered semantic analysis to extract task-related information\nfrom ambiguous NL instructions. In addition, the method specifies machine\nexecution parameters to generate a machine-executable plan by interpreting\nabstract NL instructions. To evaluate the exePlan method, an industrial robot\nBaxter was instructed by NL to perform three types of industrial tasks {'drill\na hole', 'clean a spot', 'install a screw'}. The experiment results proved that\nthe exePlan method was effective in generating machine-executable plans from\nthe end-user's NL instructions. Such a method has the promise to endow a\nmachine with the ability of NL-instructed task execution.\n",
+        "published": "2016",
+        "authors": [
+            "Rui Liu",
+            "Xiaoli Zhang"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1704.04664v2",
+        "title": "Online Spatial Concept and Lexical Acquisition with Simultaneous\n  Localization and Mapping",
+        "abstract": "  In this paper, we propose an online learning algorithm based on a\nRao-Blackwellized particle filter for spatial concept acquisition and mapping.\nWe have proposed a nonparametric Bayesian spatial concept acquisition model\n(SpCoA). We propose a novel method (SpCoSLAM) integrating SpCoA and FastSLAM in\nthe theoretical framework of the Bayesian generative model. The proposed method\ncan simultaneously learn place categories and lexicons while incrementally\ngenerating an environmental map. Furthermore, the proposed method has scene\nimage features and a language model added to SpCoA. In the experiments, we\ntested online learning of spatial concepts and environmental maps in a novel\nenvironment of which the robot did not have a map. Then, we evaluated the\nresults of online learning of spatial concepts and lexical acquisition. The\nexperimental results demonstrated that the robot was able to more accurately\nlearn the relationships between words and the place in the environmental map\nincrementally by using the proposed method.\n",
+        "published": "2017",
+        "authors": [
+            "Akira Taniguchi",
+            "Yoshinobu Hagiwara",
+            "Tadahiro Taniguchi",
+            "Tetsunari Inamura"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1710.06406v1",
+        "title": "Laying Down the Yellow Brick Road: Development of a Wizard-of-Oz\n  Interface for Collecting Human-Robot Dialogue",
+        "abstract": "  We describe the adaptation and refinement of a graphical user interface\ndesigned to facilitate a Wizard-of-Oz (WoZ) approach to collecting human-robot\ndialogue data. The data collected will be used to develop a dialogue system for\nrobot navigation. Building on an interface previously used in the development\nof dialogue systems for virtual agents and video playback, we add templates\nwith open parameters which allow the wizard to quickly produce a wide variety\nof utterances. Our research demonstrates that this approach to data collection\nis viable as an intermediate step in developing a dialogue system for physical\nrobots in remote locations from their users - a domain in which the human and\nrobot need to regularly verify and update a shared understanding of the\nphysical environment. We show that our WoZ interface and the fixed set of\nutterances and templates therein provide for a natural pace of dialogue with\ngood coverage of the navigation domain.\n",
+        "published": "2017",
+        "authors": [
+            "Claire Bonial",
+            "Matthew Marge",
+            "Ron artstein",
+            "Ashley Foots",
+            "Felix Gervits",
+            "Cory J. Hayes",
+            "Cassidy Henry",
+            "Susan G. Hill",
+            "Anton Leuski",
+            "Stephanie M. Lukin",
+            "Pooja Moolchandani",
+            "Kimberly A. Pollard",
+            "David Traum",
+            "Clare R. Voss"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1810.11804v1",
+        "title": "Robots Learning to Say `No': Prohibition and Rejective Mechanisms in\n  Acquisition of Linguistic Negation",
+        "abstract": "  `No' belongs to the first ten words used by children and embodies the first\nactive form of linguistic negation. Despite its early occurrence the details of\nits acquisition process remain largely unknown. The circumstance that `no'\ncannot be construed as a label for perceptible objects or events puts it\noutside of the scope of most modern accounts of language acquisition. Moreover,\nmost symbol grounding architectures will struggle to ground the word due to its\nnon-referential character. In an experimental study involving the child-like\nhumanoid robot iCub that was designed to illuminate the acquisition process of\nnegation words, the robot is deployed in several rounds of speech-wise\nunconstrained interaction with na\\\"ive participants acting as its language\nteachers. The results corroborate the hypothesis that affect or volition plays\na pivotal role in the socially distributed acquisition process. Negation words\nare prosodically salient within prohibitive utterances and negative intent\ninterpretations such that they can be easily isolated from the teacher's speech\nsignal. These words subsequently may be grounded in negative affective states.\nHowever, observations of the nature of prohibitive acts and the temporal\nrelationships between its linguistic and extra-linguistic components raise\nserious questions over the suitability of Hebbian-type algorithms for language\ngrounding.\n",
+        "published": "2018",
+        "authors": [
+            "Frank F\u00f6rster",
+            "Joe Saunders",
+            "Hagen Lehmann",
+            "Chrystopher L. Nehaniv"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1904.01650v2",
+        "title": "Improving Robot Success Detection using Static Object Data",
+        "abstract": "  We use static object data to improve success detection for stacking objects\non and nesting objects in one another. Such actions are necessary for certain\nrobotics tasks, e.g., clearing a dining table or packing a warehouse bin.\nHowever, using an RGB-D camera to detect success can be insufficient:\nsame-colored objects can be difficult to differentiate, and reflective\nsilverware cause noisy depth camera perception. We show that adding static data\nabout the objects themselves improves the performance of an end-to-end pipeline\nfor classifying action outcomes. Images of the objects, and language\nexpressions describing them, encode prior geometry, shape, and size information\nthat refine classification accuracy. We collect over 13 hours of egocentric\nmanipulation data for training a model to reason about whether a robot\nsuccessfully placed unseen objects in or on one another. The model achieves up\nto a 57% absolute gain over the task baseline on pairs of previously unseen\nobjects.\n",
+        "published": "2019",
+        "authors": [
+            "Rosario Scalise",
+            "Jesse Thomason",
+            "Yonatan Bisk",
+            "Siddhartha Srinivasa"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1904.12907v2",
+        "title": "Enabling Robots to Understand Incomplete Natural Language Instructions\n  Using Commonsense Reasoning",
+        "abstract": "  Enabling robots to understand instructions provided via spoken natural\nlanguage would facilitate interaction between robots and people in a variety of\nsettings in homes and workplaces. However, natural language instructions are\noften missing information that would be obvious to a human based on\nenvironmental context and common sense, and hence does not need to be\nexplicitly stated. In this paper, we introduce Language-Model-based Commonsense\nReasoning (LMCR), a new method which enables a robot to listen to a natural\nlanguage instruction from a human, observe the environment around it, and\nautomatically fill in information missing from the instruction using\nenvironmental context and a new commonsense reasoning approach. Our approach\nfirst converts an instruction provided as unconstrained natural language into a\nform that a robot can understand by parsing it into verb frames. Our approach\nthen fills in missing information in the instruction by observing objects in\nits vicinity and leveraging commonsense reasoning. To learn commonsense\nreasoning automatically, our approach distills knowledge from large\nunstructured textual corpora by training a language model. Our results show the\nfeasibility of a robot learning commonsense knowledge automatically from\nweb-based textual corpora, and the power of learned commonsense reasoning\nmodels in enabling a robot to autonomously perform tasks based on incomplete\nnatural language instructions.\n",
+        "published": "2019",
+        "authors": [
+            "Haonan Chen",
+            "Hao Tan",
+            "Alan Kuntz",
+            "Mohit Bansal",
+            "Ron Alterovitz"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1909.10838v2",
+        "title": "Talk2Car: Taking Control of Your Self-Driving Car",
+        "abstract": "  A long-term goal of artificial intelligence is to have an agent execute\ncommands communicated through natural language. In many cases the commands are\ngrounded in a visual environment shared by the human who gives the command and\nthe agent. Execution of the command then requires mapping the command into the\nphysical visual space, after which the appropriate action can be taken. In this\npaper we consider the former. Or more specifically, we consider the problem in\nan autonomous driving setting, where a passenger requests an action that can be\nassociated with an object found in a street scene. Our work presents the\nTalk2Car dataset, which is the first object referral dataset that contains\ncommands written in natural language for self-driving cars. We provide a\ndetailed comparison with related datasets such as ReferIt, RefCOCO, RefCOCO+,\nRefCOCOg, Cityscape-Ref and CLEVR-Ref. Additionally, we include a performance\nanalysis using strong state-of-the-art models. The results show that the\nproposed object referral task is a challenging one for which the models show\npromising results but still require additional research in natural language\nprocessing, computer vision and the intersection of these fields. The dataset\ncan be found on our website: http://macchina-ai.eu/\n",
+        "published": "2019",
+        "authors": [
+            "Thierry Deruyttere",
+            "Simon Vandenhende",
+            "Dusan Grujicic",
+            "Luc Van Gool",
+            "Marie-Francine Moens"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2005.11267v1",
+        "title": "Givenness Hierarchy Theoretic Cognitive Status Filtering",
+        "abstract": "  For language-capable interactive robots to be effectively introduced into\nhuman society, they must be able to naturally and efficiently communicate about\nthe objects, locations, and people found in human environments. An important\naspect of natural language communication is the use of pronouns. Ac-cording to\nthe linguistic theory of the Givenness Hierarchy(GH), humans use pronouns due\nto implicit assumptions about the cognitive statuses their referents have in\nthe minds of their conversational partners. In previous work, Williams et al.\npresented the first computational implementation of the full GH for the purpose\nof robot language understanding, leveraging a set of rules informed by the GH\nliterature. However, that approach was designed specifically for language\nunderstanding,oriented around GH-inspired memory structures used to assess what\nentities are candidate referents given a particular cognitive status. In\ncontrast, language generation requires a model in which cognitive status can be\nassessed for a given entity. We present and compare two such models of\ncognitive status: a rule-based Finite State Machine model directly informed by\nthe GH literature and a Cognitive Status Filter designed to more flexibly\nhandle uncertainty. The models are demonstrated and evaluated using a\nsilver-standard English subset of the OFAI Multimodal Task Description Corpus.\n",
+        "published": "2020",
+        "authors": [
+            "Poulomi Pal",
+            "Lixiao Zhu",
+            "Andrea Golden-Lasher",
+            "Akshay Swaminathan",
+            "Tom Williams"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2110.04441v1",
+        "title": "Natural Language for Human-Robot Collaboration: Problems Beyond Language\n  Grounding",
+        "abstract": "  To enable robots to instruct humans in collaborations, we identify several\naspects of language processing that are not commonly studied in this context.\nThese include location, planning, and generation. We suggest evaluations for\neach task, offer baselines for simple methods, and close by discussing\nchallenges and opportunities in studying language for collaboration.\n",
+        "published": "2021",
+        "authors": [
+            "Seth Pate",
+            "Wei Xu",
+            "Ziyi Yang",
+            "Maxwell Love",
+            "Siddarth Ganguri",
+            "Lawson L. S. Wong"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2110.15799v1",
+        "title": "Guided Policy Search for Parameterized Skills using Adverbs",
+        "abstract": "  We present a method for using adverb phrases to adjust skill parameters via\nlearned adverb-skill groundings. These groundings allow an agent to use adverb\nfeedback provided by a human to directly update a skill policy, in a manner\nsimilar to traditional local policy search methods. We show that our method can\nbe used as a drop-in replacement for these policy search methods when dense\nreward from the environment is not available but human language feedback is. We\ndemonstrate improved sample efficiency over modern policy search methods in two\nexperiments.\n",
+        "published": "2021",
+        "authors": [
+            "Benjamin A. Spiegel",
+            "George Konidaris"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2201.06786v2",
+        "title": "Unsupervised Multimodal Word Discovery based on Double Articulation\n  Analysis with Co-occurrence cues",
+        "abstract": "  Human infants acquire their verbal lexicon with minimal prior knowledge of\nlanguage based on the statistical properties of phonological distributions and\nthe co-occurrence of other sensory stimuli. This study proposes a novel fully\nunsupervised learning method for discovering speech units using phonological\ninformation as a distributional cue and object information as a co-occurrence\ncue. The proposed method can acquire words and phonemes from speech signals\nusing unsupervised learning and utilize object information based on multiple\nmodalities-vision, tactile, and auditory-simultaneously. The proposed method is\nbased on the nonparametric Bayesian double articulation analyzer (NPB-DAA)\ndiscovering phonemes and words from phonological features, and multimodal\nlatent Dirichlet allocation (MLDA) categorizing multimodal information obtained\nfrom objects. In an experiment, the proposed method showed higher word\ndiscovery performance than baseline methods. Words that expressed the\ncharacteristics of objects (i.e., words corresponding to nouns and adjectives)\nwere segmented accurately. Furthermore, we examined how learning performance is\naffected by differences in the importance of linguistic information. Increasing\nthe weight of the word modality further improved performance relative to that\nof the fixed condition.\n",
+        "published": "2022",
+        "authors": [
+            "Akira Taniguchi",
+            "Hiroaki Murakami",
+            "Ryo Ozaki",
+            "Tadahiro Taniguchi"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2206.10953v1",
+        "title": "Toward An Optimal Selection of Dialogue Strategies: A Target-Driven\n  Approach for Intelligent Outbound Robots",
+        "abstract": "  With the growth of the economy and society, enterprises, especially in the\nFinTech industry, have increasing demands of outbound calls for customers such\nas debt collection, marketing, anti-fraud calls, and so on. But a large amount\nof repetitive and mechanical work occupies most of the time of human agents, so\nthe cost of equipment and labor for enterprises is increasing accordingly. At\nthe same time, with the development of artificial intelligence technology in\nthe past few decades, it has become quite common for companies to use new\ntechnologies such as Big Data and artificial intelligence to empower outbound\ncall businesses. The intelligent outbound robot is a typical application of the\nartificial intelligence technology in the field of outbound call businesses. It\nis mainly used to communicate with customers in order to accomplish a certain\ntarget. It has the characteristics of low cost, high reuse, and easy\ncompliance, which has attracted more attention from the industry.\n  At present, there are two kinds of intelligent outbound robots in the\nindustry but both of them still leave large room for improvement. One kind of\nthem is based on a finite state machine relying on the configuration of jump\nconditions and corresponding nodes based on manual experience. This kind of\nintelligent outbound robot is also called a flow-based robot. For example, the\nschematic diagram of the working model of a flow-based robot for debt\ncollection is shown in Fig.\\ref{fig:label}. In each round, the robot will reply\nto the user with the words corresponding to each node.\n",
+        "published": "2022",
+        "authors": [
+            "Ruifeng Qian",
+            "Shijie Li",
+            "Mengjiao Bao",
+            "Huan Chen",
+            "Yu Che"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2210.04964v2",
+        "title": "Generating Executable Action Plans with Environmentally-Aware Language\n  Models",
+        "abstract": "  Large Language Models (LLMs) trained using massive text datasets have\nrecently shown promise in generating action plans for robotic agents from high\nlevel text queries. However, these models typically do not consider the robot's\nenvironment, resulting in generated plans that may not actually be executable,\ndue to ambiguities in the planned actions or environmental constraints. In this\npaper, we propose an approach to generate environmentally-aware action plans\nthat agents are better able to execute. Our approach involves integrating\nenvironmental objects and object relations as additional inputs into LLM action\nplan generation to provide the system with an awareness of its surroundings,\nresulting in plans where each generated action is mapped to objects present in\nthe scene. We also design a novel scoring function that, along with generating\nthe action steps and associating them with objects, helps the system\ndisambiguate among object instances and take into account their states. We\nevaluated our approach using the VirtualHome simulator and the ActivityPrograms\nknowledge base and found that action plans generated from our system had a 310%\nimprovement in executability and a 147% improvement in correctness over prior\nwork. The complete code and a demo of our method is publicly available at\nhttps://github.com/hri-ironlab/scene_aware_language_planner.\n",
+        "published": "2022",
+        "authors": [
+            "Maitrey Gramopadhye",
+            "Daniel Szafir"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2210.09518v1",
+        "title": "Team Flow at DRC2022: Pipeline System for Travel Destination\n  Recommendation Task in Spoken Dialogue",
+        "abstract": "  To improve the interactive capabilities of a dialogue system, e.g., to adapt\nto different customers, the Dialogue Robot Competition (DRC2022) was held. As\none of the teams, we built a dialogue system with a pipeline structure\ncontaining four modules. The natural language understanding (NLU) and natural\nlanguage generation (NLG) modules were GPT-2 based models, and the dialogue\nstate tracking (DST) and policy modules were designed on the basis of\nhand-crafted rules. After the preliminary round of the competition, we found\nthat the low variation in training examples for the NLU and failed\nrecommendation due to the policy used were probably the main reasons for the\nlimited performance of the system.\n",
+        "published": "2022",
+        "authors": [
+            "Ryu Hirai",
+            "Atsumoto Ohashi",
+            "Ao Guo",
+            "Hideki Shiroma",
+            "Xulin Zhou",
+            "Yukihiko Tone",
+            "Shinya Iizuka",
+            "Ryuichiro Higashinaka"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2210.12485v1",
+        "title": "DANLI: Deliberative Agent for Following Natural Language Instructions",
+        "abstract": "  Recent years have seen an increasing amount of work on embodied AI agents\nthat can perform tasks by following human language instructions. However, most\nof these agents are reactive, meaning that they simply learn and imitate\nbehaviors encountered in the training data. These reactive agents are\ninsufficient for long-horizon complex tasks. To address this limitation, we\npropose a neuro-symbolic deliberative agent that, while following language\ninstructions, proactively applies reasoning and planning based on its neural\nand symbolic representations acquired from past experience (e.g., natural\nlanguage and egocentric vision). We show that our deliberative agent achieves\ngreater than 70% improvement over reactive baselines on the challenging TEACh\nbenchmark. Moreover, the underlying reasoning and planning processes, together\nwith our modular framework, offer impressive transparency and explainability to\nthe behaviors of the agent. This enables an in-depth understanding of the\nagent's capabilities, which shed light on challenges and opportunities for\nfuture embodied agents for instruction following. The code is available at\nhttps://github.com/sled-group/DANLI.\n",
+        "published": "2022",
+        "authors": [
+            "Yichi Zhang",
+            "Jianing Yang",
+            "Jiayi Pan",
+            "Shane Storks",
+            "Nikhil Devraj",
+            "Ziqiao Ma",
+            "Keunwoo Peter Yu",
+            "Yuwei Bao",
+            "Joyce Chai"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2302.05128v1",
+        "title": "Translating Natural Language to Planning Goals with Large-Language\n  Models",
+        "abstract": "  Recent large language models (LLMs) have demonstrated remarkable performance\non a variety of natural language processing (NLP) tasks, leading to intense\nexcitement about their applicability across various domains. Unfortunately,\nrecent work has also shown that LLMs are unable to perform accurate reasoning\nnor solve planning problems, which may limit their usefulness for\nrobotics-related tasks. In this work, our central question is whether LLMs are\nable to translate goals specified in natural language to a structured planning\nlanguage. If so, LLM can act as a natural interface between the planner and\nhuman users; the translated goal can be handed to domain-independent AI\nplanners that are very effective at planning. Our empirical results on GPT 3.5\nvariants show that LLMs are much better suited towards translation rather than\nplanning. We find that LLMs are able to leverage commonsense knowledge and\nreasoning to furnish missing details from under-specified goals (as is often\nthe case in natural language). However, our experiments also reveal that LLMs\ncan fail to generate goals in tasks that involve numerical or physical (e.g.,\nspatial) reasoning, and that LLMs are sensitive to the prompts used. As such,\nthese models are promising for translation to structured planning languages,\nbut care should be taken in their use.\n",
+        "published": "2023",
+        "authors": [
+            "Yaqi Xie",
+            "Chen Yu",
+            "Tongyao Zhu",
+            "Jinbin Bai",
+            "Ze Gong",
+            "Harold Soh"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2302.11649v2",
+        "title": "Grounding Complex Natural Language Commands for Temporal Tasks in Unseen\n  Environments",
+        "abstract": "  Grounding navigational commands to linear temporal logic (LTL) leverages its\nunambiguous semantics for reasoning about long-horizon tasks and verifying the\nsatisfaction of temporal constraints. Existing approaches require training data\nfrom the specific environment and landmarks that will be used in natural\nlanguage to understand commands in those environments. We propose Lang2LTL, a\nmodular system and a software package that leverages large language models\n(LLMs) to ground temporal navigational commands to LTL specifications in\nenvironments without prior language data. We comprehensively evaluate Lang2LTL\nfor five well-defined generalization behaviors. Lang2LTL demonstrates the\nstate-of-the-art ability of a single model to ground navigational commands to\ndiverse temporal specifications in 21 city-scaled environments. Finally, we\ndemonstrate a physical robot using Lang2LTL can follow 52 semantically diverse\nnavigational commands in two indoor environments.\n",
+        "published": "2023",
+        "authors": [
+            "Jason Xinyu Liu",
+            "Ziyi Yang",
+            "Ifrah Idrees",
+            "Sam Liang",
+            "Benjamin Schornstein",
+            "Stefanie Tellex",
+            "Ankit Shah"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2302.12927v1",
+        "title": "Robot Behavior-Tree-Based Task Generation with Large Language Models",
+        "abstract": "  Nowadays, the behavior tree is gaining popularity as a representation for\nrobot tasks due to its modularity and reusability. Designing behavior-tree\ntasks manually is time-consuming for robot end-users, thus there is a need for\ninvestigating automatic behavior-tree-based task generation. Prior\nbehavior-tree-based task generation approaches focus on fixed primitive tasks\nand lack generalizability to new task domains. To cope with this issue, we\npropose a novel behavior-tree-based task generation approach that utilizes\nstate-of-the-art large language models. We propose a Phase-Step prompt design\nthat enables a hierarchical-structured robot task generation and further\nintegrate it with behavior-tree-embedding-based search to set up the\nappropriate prompt. In this way, we enable an automatic and cross-domain\nbehavior-tree task generation. Our behavior-tree-based task generation approach\ndoes not require a set of pre-defined primitive tasks. End-users only need to\ndescribe an abstract desired task and our proposed approach can swiftly\ngenerate the corresponding behavior tree. A full-process case study is provided\nto demonstrate our proposed approach. An ablation study is conducted to\nevaluate the effectiveness of our Phase-Step prompts. Assessment on Phase-Step\nprompts and the limitation of large language models are presented and\ndiscussed.\n",
+        "published": "2023",
+        "authors": [
+            "Yue Cao",
+            "C. S. George Lee"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2303.03480v2",
+        "title": "Can an Embodied Agent Find Your \"Cat-shaped Mug\"? LLM-Guided Exploration\n  for Zero-Shot Object Navigation",
+        "abstract": "  We present LGX (Language-guided Exploration), a novel algorithm for\nLanguage-Driven Zero-Shot Object Goal Navigation (L-ZSON), where an embodied\nagent navigates to a uniquely described target object in a previously unseen\nenvironment. Our approach makes use of Large Language Models (LLMs) for this\ntask by leveraging the LLM's commonsense reasoning capabilities for making\nsequential navigational decisions. Simultaneously, we perform generalized\ntarget object detection using a pre-trained Vision-Language grounding model. We\nachieve state-of-the-art zero-shot object navigation results on RoboTHOR with a\nsuccess rate (SR) improvement of over 27% over the current baseline of the\nOWL-ViT CLIP on Wheels (OWL CoW). Furthermore, we study the usage of LLMs for\nrobot navigation and present an analysis of various prompting strategies\naffecting the model output. Finally, we showcase the benefits of our approach\nvia \\textit{real-world} experiments that indicate the superior performance of\nLGX in detecting and navigating to visually unique objects.\n",
+        "published": "2023",
+        "authors": [
+            "Vishnu Sashank Dorbala",
+            "James F. Mullen Jr.",
+            "Dinesh Manocha"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2304.09349v4",
+        "title": "LLM as A Robotic Brain: Unifying Egocentric Memory and Control",
+        "abstract": "  Embodied AI focuses on the study and development of intelligent systems that\npossess a physical or virtual embodiment (i.e. robots) and are able to\ndynamically interact with their environment. Memory and control are the two\nessential parts of an embodied system and usually require separate frameworks\nto model each of them. In this paper, we propose a novel and generalizable\nframework called LLM-Brain: using Large-scale Language Model as a robotic brain\nto unify egocentric memory and control. The LLM-Brain framework integrates\nmultiple multimodal language models for robotic tasks, utilizing a zero-shot\nlearning approach. All components within LLM-Brain communicate using natural\nlanguage in closed-loop multi-round dialogues that encompass perception,\nplanning, control, and memory. The core of the system is an embodied LLM to\nmaintain egocentric memory and control the robot. We demonstrate LLM-Brain by\nexamining two downstream tasks: active exploration and embodied question\nanswering. The active exploration tasks require the robot to extensively\nexplore an unknown environment within a limited number of actions. Meanwhile,\nthe embodied question answering tasks necessitate that the robot answers\nquestions based on observations acquired during prior explorations.\n",
+        "published": "2023",
+        "authors": [
+            "Jinjie Mai",
+            "Jun Chen",
+            "Bing Li",
+            "Guocheng Qian",
+            "Mohamed Elhoseiny",
+            "Bernard Ghanem"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2305.06485v1",
+        "title": "Multimodal Contextualized Plan Prediction for Embodied Task Completion",
+        "abstract": "  Task planning is an important component of traditional robotics systems\nenabling robots to compose fine grained skills to perform more complex tasks.\nRecent work building systems for translating natural language to executable\nactions for task completion in simulated embodied agents is focused on directly\npredicting low level action sequences that would be expected to be directly\nexecutable by a physical robot. In this work, we instead focus on predicting a\nhigher level plan representation for one such embodied task completion dataset\n- TEACh, under the assumption that techniques for high-level plan prediction\nfrom natural language are expected to be more transferable to physical robot\nsystems. We demonstrate that better plans can be predicted using multimodal\ncontext, and that plan prediction and plan execution modules are likely\ndependent on each other and hence it may not be ideal to fully decouple them.\nFurther, we benchmark execution of oracle plans to quantify the scope for\nimprovement in plan prediction models.\n",
+        "published": "2023",
+        "authors": [
+            "Mert \u0130nan",
+            "Aishwarya Padmakumar",
+            "Spandana Gella",
+            "Patrick Lange",
+            "Dilek Hakkani-Tur"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2306.07012v1",
+        "title": "Generating Language Corrections for Teaching Physical Control Tasks",
+        "abstract": "  AI assistance continues to help advance applications in education, from\nlanguage learning to intelligent tutoring systems, yet current methods for\nproviding students feedback are still quite limited. Most automatic feedback\nsystems either provide binary correctness feedback, which may not help a\nstudent understand how to improve, or require hand-coding feedback templates,\nwhich may not generalize to new domains. This can be particularly challenging\nfor physical control tasks, where the rich diversity in student behavior and\nspecialized domains make it challenging to leverage general-purpose assistive\ntools for providing feedback. We design and build CORGI, a model trained to\ngenerate language corrections for physical control tasks, such as learning to\nride a bike. CORGI takes in as input a pair of student and expert trajectories,\nand then generates natural language corrections to help the student improve. We\ncollect and train CORGI over data from three diverse physical control tasks\n(drawing, steering, and joint movement). Through both automatic and human\nevaluations, we show that CORGI can (i) generate valid feedback for novel\nstudent trajectories, (ii) outperform baselines on domains with novel control\ndynamics, and (iii) improve student learning in an interactive drawing task.\n",
+        "published": "2023",
+        "authors": [
+            "Megha Srivastava",
+            "Noah Goodman",
+            "Dorsa Sadigh"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2306.16207v1",
+        "title": "Inferring the Goals of Communicating Agents from Actions and\n  Instructions",
+        "abstract": "  When humans cooperate, they frequently coordinate their activity through both\nverbal communication and non-verbal actions, using this information to infer a\nshared goal and plan. How can we model this inferential ability? In this paper,\nwe introduce a model of a cooperative team where one agent, the principal, may\ncommunicate natural language instructions about their shared plan to another\nagent, the assistant, using GPT-3 as a likelihood function for instruction\nutterances. We then show how a third person observer can infer the team's goal\nvia multi-modal Bayesian inverse planning from actions and instructions,\ncomputing the posterior distribution over goals under the assumption that\nagents will act and communicate rationally to achieve them. We evaluate this\napproach by comparing it with human goal inferences in a multi-agent gridworld,\nfinding that our model's inferences closely correlate with human judgments (R =\n0.96). When compared to inference from actions alone, we also find that\ninstructions lead to more rapid and less uncertain goal inference, highlighting\nthe importance of verbal communication for cooperative agents.\n",
+        "published": "2023",
+        "authors": [
+            "Lance Ying",
+            "Tan Zhi-Xuan",
+            "Vikash Mansinghka",
+            "Joshua B. Tenenbaum"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2307.04721v2",
+        "title": "Large Language Models as General Pattern Machines",
+        "abstract": "  We observe that pre-trained large language models (LLMs) are capable of\nautoregressively completing complex token sequences -- from arbitrary ones\nprocedurally generated by probabilistic context-free grammars (PCFG), to more\nrich spatial patterns found in the Abstraction and Reasoning Corpus (ARC), a\ngeneral AI benchmark, prompted in the style of ASCII art. Surprisingly, pattern\ncompletion proficiency can be partially retained even when the sequences are\nexpressed using tokens randomly sampled from the vocabulary. These results\nsuggest that without any additional training, LLMs can serve as general\nsequence modelers, driven by in-context learning. In this work, we investigate\nhow these zero-shot capabilities may be applied to problems in robotics -- from\nextrapolating sequences of numbers that represent states over time to complete\nsimple motions, to least-to-most prompting of reward-conditioned trajectories\nthat can discover and represent closed-loop policies (e.g., a stabilizing\ncontroller for CartPole). While difficult to deploy today for real systems due\nto latency, context size limitations, and compute costs, the approach of using\nLLMs to drive low-level control may provide an exciting glimpse into how the\npatterns among words could be transferred to actions.\n",
+        "published": "2023",
+        "authors": [
+            "Suvir Mirchandani",
+            "Fei Xia",
+            "Pete Florence",
+            "Brian Ichter",
+            "Danny Driess",
+            "Montserrat Gonzalez Arenas",
+            "Kanishka Rao",
+            "Dorsa Sadigh",
+            "Andy Zeng"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2307.09014v1",
+        "title": "Exploring acceptance of autonomous vehicle policies using KeyBERT and\n  SNA: Targeting engineering students",
+        "abstract": "  This study aims to explore user acceptance of Autonomous Vehicle (AV)\npolicies with improved text-mining methods. Recently, South Korean policymakers\nhave viewed Autonomous Driving Car (ADC) and Autonomous Driving Robot (ADR) as\nnext-generation means of transportation that will reduce the cost of\ntransporting passengers and goods. They support the construction of V2I and V2V\ncommunication infrastructures for ADC and recognize that ADR is equivalent to\npedestrians to promote its deployment into sidewalks. To fill the gap where\nend-user acceptance of these policies is not well considered, this study\napplied two text-mining methods to the comments of graduate students in the\nfields of Industrial, Mechanical, and Electronics-Electrical-Computer. One is\nthe Co-occurrence Network Analysis (CNA) based on TF-IWF and Dice coefficient,\nand the other is the Contextual Semantic Network Analysis (C-SNA) based on both\nKeyBERT, which extracts keywords that contextually represent the comments, and\ndouble cosine similarity. The reason for comparing these approaches is to\nbalance interest not only in the implications for the AV policies but also in\nthe need to apply quality text mining to this research domain. Significantly,\nthe limitation of frequency-based text mining, which does not reflect textual\ncontext, and the trade-off of adjusting thresholds in Semantic Network Analysis\n(SNA) were considered. As the results of comparing the two approaches, the\nC-SNA provided the information necessary to understand users' voices using\nfewer nodes and features than the CNA. The users who pre-emptively understood\nthe AV policies based on their engineering literacy and the given texts\nrevealed potential risks of the AV accident policies. This study adds\nsuggestions to manage these risks to support the successful deployment of AVs\non public roads.\n",
+        "published": "2023",
+        "authors": [
+            "Jinwoo Ha",
+            "Dongsoo Kim"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2308.13192v1",
+        "title": "Formalising Natural Language Quantifiers for Human-Robot Interactions",
+        "abstract": "  We present a method for formalising quantifiers in natural language in the\ncontext of human-robot interactions. The solution is based on first-order logic\nextended with capabilities to represent the cardinality of variables, operating\nsimilarly to generalised quantifiers. To demonstrate the method, we designed an\nend-to-end system able to receive input as natural language, convert it into a\nformal logical representation, evaluate it, and return a result or send a\ncommand to a simulated robot.\n",
+        "published": "2023",
+        "authors": [
+            "Stefan Morar",
+            "Adrian Groza",
+            "Mihai Pomarlan"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2308.15214v2",
+        "title": "FurChat: An Embodied Conversational Agent using LLMs, Combining Open and\n  Closed-Domain Dialogue with Facial Expressions",
+        "abstract": "  We demonstrate an embodied conversational agent that can function as a\nreceptionist and generate a mixture of open and closed-domain dialogue along\nwith facial expressions, by using a large language model (LLM) to develop an\nengaging conversation. We deployed the system onto a Furhat robot, which is\nhighly expressive and capable of using both verbal and nonverbal cues during\ninteraction. The system was designed specifically for the National Robotarium\nto interact with visitors through natural conversations, providing them with\ninformation about the facilities, research, news, upcoming events, etc. The\nsystem utilises the state-of-the-art GPT-3.5 model to generate such information\nalong with domain-general conversations and facial expressions based on prompt\nengineering.\n",
+        "published": "2023",
+        "authors": [
+            "Neeraj Cherakara",
+            "Finny Varghese",
+            "Sheena Shabana",
+            "Nivan Nelson",
+            "Abhiram Karukayil",
+            "Rohith Kulothungan",
+            "Mohammed Afil Farhan",
+            "Birthe Nesset",
+            "Meriam Moujahid",
+            "Tanvi Dinkar",
+            "Verena Rieser",
+            "Oliver Lemon"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2309.00743v1",
+        "title": "Language-Conditioned Change-point Detection to Identify Sub-Tasks in\n  Robotics Domains",
+        "abstract": "  In this work, we present an approach to identify sub-tasks within a\ndemonstrated robot trajectory using language instructions. We identify these\nsub-tasks using language provided during demonstrations as guidance to identify\nsub-segments of a longer robot trajectory. Given a sequence of natural language\ninstructions and a long trajectory consisting of image frames and discrete\nactions, we want to map an instruction to a smaller fragment of the trajectory.\nUnlike previous instruction following works which directly learn the mapping\nfrom language to a policy, we propose a language-conditioned change-point\ndetection method to identify sub-tasks in a problem. Our approach learns the\nrelationship between constituent segments of a long language command and\ncorresponding constituent segments of a trajectory. These constituent\ntrajectory segments can be used to learn subtasks or sub-goals for planning or\noptions as demonstrated by previous related work. Our insight in this work is\nthat the language-conditioned robot change-point detection problem is similar\nto the existing video moment retrieval works used to identify sub-segments\nwithin online videos. Through extensive experimentation, we demonstrate a\n$1.78_{\\pm 0.82}\\%$ improvement over a baseline approach in accurately\nidentifying sub-tasks within a trajectory using our proposed method. Moreover,\nwe present a comprehensive study investigating sample complexity requirements\non learning this mapping, between language and trajectory sub-segments, to\nunderstand if the video retrieval-based methods are realistic in real robot\nscenarios.\n",
+        "published": "2023",
+        "authors": [
+            "Divyanshu Raj",
+            "Chitta Baral",
+            "Nakul Gopalan"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2310.07018v1",
+        "title": "NEWTON: Are Large Language Models Capable of Physical Reasoning?",
+        "abstract": "  Large Language Models (LLMs), through their contextualized representations,\nhave been empirically proven to encapsulate syntactic, semantic, word sense,\nand common-sense knowledge. However, there has been limited exploration of\ntheir physical reasoning abilities, specifically concerning the crucial\nattributes for comprehending everyday objects. To address this gap, we\nintroduce NEWTON, a repository and benchmark for evaluating the physics\nreasoning skills of LLMs. Further, to enable domain-specific adaptation of this\nbenchmark, we present a pipeline to enable researchers to generate a variant of\nthis benchmark that has been customized to the objects and attributes relevant\nfor their application. The NEWTON repository comprises a collection of 2800\nobject-attribute pairs, providing the foundation for generating infinite-scale\nassessment templates. The NEWTON benchmark consists of 160K QA questions,\ncurated using the NEWTON repository to investigate the physical reasoning\ncapabilities of several mainstream language models across foundational,\nexplicit, and implicit reasoning tasks. Through extensive empirical analysis,\nour results highlight the capabilities of LLMs for physical reasoning. We find\nthat LLMs like GPT-4 demonstrate strong reasoning capabilities in\nscenario-based tasks but exhibit less consistency in object-attribute reasoning\ncompared to humans (50% vs. 84%). Furthermore, the NEWTON platform demonstrates\nits potential for evaluating and enhancing language models, paving the way for\ntheir integration into physically grounded settings, such as robotic\nmanipulation. Project site: https://newtonreasoning.github.io\n",
+        "published": "2023",
+        "authors": [
+            "Yi Ru Wang",
+            "Jiafei Duan",
+            "Dieter Fox",
+            "Siddhartha Srinivasa"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2310.10632v1",
+        "title": "BioPlanner: Automatic Evaluation of LLMs on Protocol Planning in Biology",
+        "abstract": "  The ability to automatically generate accurate protocols for scientific\nexperiments would represent a major step towards the automation of science.\nLarge Language Models (LLMs) have impressive capabilities on a wide range of\ntasks, such as question answering and the generation of coherent text and code.\nHowever, LLMs can struggle with multi-step problems and long-term planning,\nwhich are crucial for designing scientific experiments. Moreover, evaluation of\nthe accuracy of scientific protocols is challenging, because experiments can be\ndescribed correctly in many different ways, require expert knowledge to\nevaluate, and cannot usually be executed automatically. Here we present an\nautomatic evaluation framework for the task of planning experimental protocols,\nand we introduce BioProt: a dataset of biology protocols with corresponding\npseudocode representations. To measure performance on generating scientific\nprotocols, we use an LLM to convert a natural language protocol into\npseudocode, and then evaluate an LLM's ability to reconstruct the pseudocode\nfrom a high-level description and a list of admissible pseudocode functions. We\nevaluate GPT-3 and GPT-4 on this task and explore their robustness. We\nexternally validate the utility of pseudocode representations of text by\ngenerating accurate novel protocols using retrieved pseudocode, and we run a\ngenerated protocol successfully in our biological laboratory. Our framework is\nextensible to the evaluation and improvement of language model planning\nabilities in other areas of science or other areas that lack automatic\nevaluation.\n",
+        "published": "2023",
+        "authors": [
+            "Odhran O'Donoghue",
+            "Aleksandar Shtedritski",
+            "John Ginger",
+            "Ralph Abboud",
+            "Ali Essa Ghareeb",
+            "Justin Booth",
+            "Samuel G Rodriques"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2310.10645v1",
+        "title": "Interactive Task Planning with Language Models",
+        "abstract": "  An interactive robot framework accomplishes long-horizon task planning and\ncan easily generalize to new goals or distinct tasks, even during execution.\nHowever, most traditional methods require predefined module design, which makes\nit hard to generalize to different goals. Recent large language model based\napproaches can allow for more open-ended planning but often require heavy\nprompt engineering or domain-specific pretrained models. To tackle this, we\npropose a simple framework that achieves interactive task planning with\nlanguage models. Our system incorporates both high-level planning and low-level\nfunction execution via language. We verify the robustness of our system in\ngenerating novel high-level instructions for unseen objectives and its ease of\nadaptation to different tasks by merely substituting the task guidelines,\nwithout the need for additional complex prompt engineering. Furthermore, when\nthe user sends a new request, our system is able to replan accordingly with\nprecision based on the new request, task guidelines and previously executed\nsteps. Please check more details on our https://wuphilipp.github.io/itp_site\nand https://youtu.be/TrKLuyv26_g.\n",
+        "published": "2023",
+        "authors": [
+            "Boyi Li",
+            "Philipp Wu",
+            "Pieter Abbeel",
+            "Jitendra Malik"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2310.13377v1",
+        "title": "A Human-Robot Mutual Learning System with Affect-Grounded Language\n  Acquisition and Differential Outcomes Training",
+        "abstract": "  This paper presents a novel human-robot interaction setup for robot and human\nlearning of symbolic language for identifying robot homeostatic needs. The\nrobot and human learn to use and respond to the same language symbols that\nconvey homeostatic needs and the stimuli that satisfy the homeostatic needs,\nrespectively. We adopted a differential outcomes training (DOT) protocol\nwhereby the robot provides feedback specific (differential) to its internal\nneeds (e.g. `hunger') when satisfied by the correct stimulus (e.g. cookie). We\nfound evidence that DOT can enhance the human's learning efficiency, which in\nturn enables more efficient robot language acquisition. The robot used in the\nstudy has a vocabulary similar to that of a human infant in the linguistic\n``babbling'' phase. The robot software architecture is built upon a model for\naffect-grounded language acquisition where the robot associates vocabulary with\ninternal needs (hunger, thirst, curiosity) through interactions with the human.\nThe paper presents the results of an initial pilot study conducted with the\ninteractive setup, which reveal that the robot's language acquisition achieves\nhigher convergence rate in the DOT condition compared to the non-DOT control\ncondition. Additionally, participants reported positive affective experiences,\nfeeling of being in control, and an empathetic connection with the robot. This\nmutual learning (teacher-student learning) approach offers a potential\ncontribution of facilitating cognitive interventions with DOT (e.g. for people\nwith dementia) through increased therapy adherence as a result of engaging\nhumans more in training tasks by taking an active teaching-learning role. The\nhomeostatic motivational grounding of the robot's language acquisition has\npotential to contribute to more ecologically valid and social\n(collaborative/nurturing) interactions with robots.\n",
+        "published": "2023",
+        "authors": [
+            "Alva Markelius",
+            "Sofia Sj\u00f6berg",
+            "Zakaria Lemhauori",
+            "Laura Cohen",
+            "Martin Bergstr\u00f6m",
+            "Robert Lowe",
+            "Lola Ca\u00f1amero"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2310.17372v1",
+        "title": "Dialogue-based generation of self-driving simulation scenarios using\n  Large Language Models",
+        "abstract": "  Simulation is an invaluable tool for developing and evaluating controllers\nfor self-driving cars. Current simulation frameworks are driven by\nhighly-specialist domain specific languages, and so a natural language\ninterface would greatly enhance usability. But there is often a gap, consisting\nof tacit assumptions the user is making, between a concise English utterance\nand the executable code that captures the user's intent. In this paper we\ndescribe a system that addresses this issue by supporting an extended\nmultimodal interaction: the user can follow up prior instructions with\nrefinements or revisions, in reaction to the simulations that have been\ngenerated from their utterances so far. We use Large Language Models (LLMs) to\nmap the user's English utterances in this interaction into domain-specific\ncode, and so we explore the extent to which LLMs capture the context\nsensitivity that's necessary for computing the speaker's intended message in\ndiscourse.\n",
+        "published": "2023",
+        "authors": [
+            "Antonio Valerio Miceli-Barone",
+            "Alex Lascarides",
+            "Craig Innes"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2311.00967v1",
+        "title": "Vision-Language Interpreter for Robot Task Planning",
+        "abstract": "  Large language models (LLMs) are accelerating the development of\nlanguage-guided robot planners. Meanwhile, symbolic planners offer the\nadvantage of interpretability. This paper proposes a new task that bridges\nthese two trends, namely, multimodal planning problem specification. The aim is\nto generate a problem description (PD), a machine-readable file used by the\nplanners to find a plan. By generating PDs from language instruction and scene\nobservation, we can drive symbolic planners in a language-guided framework. We\npropose a Vision-Language Interpreter (ViLaIn), a new framework that generates\nPDs using state-of-the-art LLM and vision-language models. ViLaIn can refine\ngenerated PDs via error message feedback from the symbolic planner. Our aim is\nto answer the question: How accurately can ViLaIn and the symbolic planner\ngenerate valid robot plans? To evaluate ViLaIn, we introduce a novel dataset\ncalled the problem description generation (ProDG) dataset. The framework is\nevaluated with four new evaluation metrics. Experimental results show that\nViLaIn can generate syntactically correct problems with more than 99% accuracy\nand valid plans with more than 58% accuracy.\n",
+        "published": "2023",
+        "authors": [
+            "Keisuke Shirai",
+            "Cristian C. Beltran-Hernandez",
+            "Masashi Hamaya",
+            "Atsushi Hashimoto",
+            "Shohei Tanaka",
+            "Kento Kawaharazuka",
+            "Kazutoshi Tanaka",
+            "Yoshitaka Ushiku",
+            "Shinsuke Mori"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2311.02602v1",
+        "title": "Get the Ball Rolling: Alerting Autonomous Robots When to Help to Close\n  the Healthcare Loop",
+        "abstract": "  To facilitate the advancement of research in healthcare robots without human\nintervention or commands, we introduce the Autonomous Helping Challenge, along\nwith a crowd-sourcing large-scale dataset. The goal is to create healthcare\nrobots that possess the ability to determine when assistance is necessary,\ngenerate useful sub-tasks to aid in planning, carry out these plans through a\nphysical robot, and receive feedback from the environment in order to generate\nnew tasks and continue the process. Besides the general challenge in open-ended\nscenarios, Autonomous Helping focuses on three specific challenges: autonomous\ntask generation, the gap between the current scene and static commonsense, and\nthe gap between language instruction and the real world. Additionally, we\npropose Helpy, a potential approach to close the healthcare loop in the\nlearning-free setting.\n",
+        "published": "2023",
+        "authors": [
+            "Jiaxin Shen",
+            "Yanyao Liu",
+            "Ziming Wang",
+            "Ziyuan Jiao",
+            "Yufeng Chen",
+            "Wenjuan Han"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2311.08206v2",
+        "title": "Human-Centric Autonomous Systems With LLMs for User Command Reasoning",
+        "abstract": "  The evolution of autonomous driving has made remarkable advancements in\nrecent years, evolving into a tangible reality. However, a human-centric\nlarge-scale adoption hinges on meeting a variety of multifaceted requirements.\nTo ensure that the autonomous system meets the user's intent, it is essential\nto accurately discern and interpret user commands, especially in complex or\nemergency situations. To this end, we propose to leverage the reasoning\ncapabilities of Large Language Models (LLMs) to infer system requirements from\nin-cabin users' commands. Through a series of experiments that include\ndifferent LLM models and prompt designs, we explore the few-shot multivariate\nbinary classification accuracy of system requirements from natural language\ntextual commands. We confirm the general ability of LLMs to understand and\nreason about prompts but underline that their effectiveness is conditioned on\nthe quality of both the LLM model and the design of appropriate sequential\nprompts. Code and models are public with the link\n\\url{https://github.com/KTH-RPL/DriveCmd_LLM}.\n",
+        "published": "2023",
+        "authors": [
+            "Yi Yang",
+            "Qingwen Zhang",
+            "Ci Li",
+            "Daniel Sim\u00f5es Marta",
+            "Nazre Batool",
+            "John Folkesson"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2311.10751v2",
+        "title": "ProAgent: From Robotic Process Automation to Agentic Process Automation",
+        "abstract": "  From ancient water wheels to robotic process automation (RPA), automation\ntechnology has evolved throughout history to liberate human beings from arduous\ntasks. Yet, RPA struggles with tasks needing human-like intelligence,\nespecially in elaborate design of workflow construction and dynamic\ndecision-making in workflow execution. As Large Language Models (LLMs) have\nemerged human-like intelligence, this paper introduces Agentic Process\nAutomation (APA), a groundbreaking automation paradigm using LLM-based agents\nfor advanced automation by offloading the human labor to agents associated with\nconstruction and execution. We then instantiate ProAgent, an LLM-based agent\ndesigned to craft workflows from human instructions and make intricate\ndecisions by coordinating specialized agents. Empirical experiments are\nconducted to detail its construction and execution procedure of workflow,\nshowcasing the feasibility of APA, unveiling the possibility of a new paradigm\nof automation driven by agents. Our code is public at\nhttps://github.com/OpenBMB/ProAgent.\n",
+        "published": "2023",
+        "authors": [
+            "Yining Ye",
+            "Xin Cong",
+            "Shizuo Tian",
+            "Jiannan Cao",
+            "Hao Wang",
+            "Yujia Qin",
+            "Yaxi Lu",
+            "Heyang Yu",
+            "Huadong Wang",
+            "Yankai Lin",
+            "Zhiyuan Liu",
+            "Maosong Sun"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2311.14741v1",
+        "title": "@ve: A Chatbot for Latin",
+        "abstract": "  Dead, extinct, and endangered languages have been preserved primarily through\naudio conservation and the collection and digitization of scripts and have been\npromoted through targeted language acquisition efforts. Another possibility\nwould be to build conversational agents that can master these languages. This\nwould provide an artificial, active conversational partner which has knowledge\nof the vocabulary and grammar, and one learns with it in a different way. The\nchatbot @ve, with which one can communicate in Latin, was developed in\n2022/2023 based on GPT-3.0. It was additionally equipped with a manually\ncreated knowledge base. After conceptual groundwork, this paper presents the\npreparation and implementation of the project. In addition, it summarizes the\ntest that a Latin expert conducted with the chatbot. A critical discussion\nelaborates advantages and disadvantages. @ve could be a new tool for teaching\nLatin in a memorable and entertaining way through dialogue. However, the\npresent implementation is still too prone to glitches for stand-alone use -\ni.e., without the accompaniment of a teacher. The use of GPT-4 could be a\nsolution as well as the extension of the knowledge base. In conclusion, it can\nbe argued that conversational agents are an innovative approach to promoting\nand preserving languages.\n",
+        "published": "2023",
+        "authors": [
+            "Oliver Bendel",
+            "Karim N'diaye"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2312.01054v1",
+        "title": "Exploring and Improving the Spatial Reasoning Abilities of Large\n  Language Models",
+        "abstract": "  Large Language Models (LLMs) represent formidable tools for sequence\nmodeling, boasting an innate capacity for general pattern recognition.\nNevertheless, their broader spatial reasoning capabilities, especially applied\nto numerical trajectory data, remain insufficiently explored. In this paper, we\ninvestigate the out-of-the-box performance of ChatGPT-3.5, ChatGPT-4 and Llama\n2 7B models when confronted with 3D robotic trajectory data from the CALVIN\nbaseline and associated tasks, including 2D directional and shape labeling.\nAdditionally, we introduce a novel prefix-based prompting mechanism, which\nyields a 33% improvement on the 3D trajectory data and an increase of up to 10%\non SpartQA tasks over zero-shot prompting (with gains for other prompting types\nas well). The experimentation with 3D trajectory data offers an intriguing\nglimpse into the manner in which LLMs engage with numerical and spatial\ninformation, thus laying a solid foundation for the identification of target\nareas for future enhancements.\n",
+        "published": "2023",
+        "authors": [
+            "Manasi Sharma"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2312.08566v1",
+        "title": "Learning adaptive planning representations with natural language\n  guidance",
+        "abstract": "  Effective planning in the real world requires not only world knowledge, but\nthe ability to leverage that knowledge to build the right representation of the\ntask at hand. Decades of hierarchical planning techniques have used\ndomain-specific temporal action abstractions to support efficient and accurate\nplanning, almost always relying on human priors and domain knowledge to\ndecompose hard tasks into smaller subproblems appropriate for a goal or set of\ngoals. This paper describes Ada (Action Domain Acquisition), a framework for\nautomatically constructing task-specific planning representations using\ntask-general background knowledge from language models (LMs). Starting with a\ngeneral-purpose hierarchical planner and a low-level goal-conditioned policy,\nAda interactively learns a library of planner-compatible high-level action\nabstractions and low-level controllers adapted to a particular domain of\nplanning tasks. On two language-guided interactive planning benchmarks (Mini\nMinecraft and ALFRED Household Tasks), Ada strongly outperforms other\napproaches that use LMs for sequential decision-making, offering more accurate\nplans and better generalization to complex tasks.\n",
+        "published": "2023",
+        "authors": [
+            "Lionel Wong",
+            "Jiayuan Mao",
+            "Pratyusha Sharma",
+            "Zachary S. Siegel",
+            "Jiahai Feng",
+            "Noa Korneev",
+            "Joshua B. Tenenbaum",
+            "Jacob Andreas"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2312.13816v1",
+        "title": "Team Flow at DRC2023: Building Common Ground and Text-based Turn-taking\n  in a Travel Agent Spoken Dialogue System",
+        "abstract": "  At the Dialogue Robot Competition 2023 (DRC2023), which was held to improve\nthe capability of dialogue robots, our team developed a system that could build\ncommon ground and take more natural turns based on user utterance texts. Our\nsystem generated queries for sightseeing spot searches using the common ground\nand engaged in dialogue while waiting for user comprehension.\n",
+        "published": "2023",
+        "authors": [
+            "Ryu Hirai",
+            "Shinya Iizuka",
+            "Haruhisa Iseno",
+            "Ao Guo",
+            "Jingjing Jiang",
+            "Atsumoto Ohashi",
+            "Ryuichiro Higashinaka"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2401.04108v1",
+        "title": "Working with Trouble and Failures in Conversation between Humans and\n  Robots (WTF 2023) & Is CUI Design Ready Yet?",
+        "abstract": "  Workshop proceedings of two co-located workshops \"Working with Troubles and\nFailures in Conversation with Humans and Robots\" (WTF 2023) and \"Is CUI Design\nReady Yet?\", both of which were part of the ACM conference on conversational\nuser interfaces 2023.\n  WTF 23 aimed at bringing together researchers from human-robot interaction,\ndialogue systems, human-computer interaction, and conversation analysis.\nDespite all progress, robotic speech interfaces continue to be brittle in a\nnumber of ways and the experience of failure of such interfaces is commonplace\namongst roboticists. However, the technical literature is positively skewed\ntoward their good performance. The workshop aims to provide a platform for\ndiscussing communicative troubles and failures in human-robot interactions and\nrelated failures in non-robotic speech interfaces. Aims include a scrupulous\ninvestigation into communicative failures, to begin working on a taxonomy of\nsuch failures, and enable a preliminary discussion on possible mitigating\nstrategies. Workshop website: https://sites.google.com/view/wtf2023/overview\n  Is CUI Design Ready Yet? As CUIs become more prevalent in both academic\nresearch and the commercial market, it becomes more essential to design usable\nand adoptable CUIs. While research has been growing on the methods for\ndesigning CUIs for commercial use, there has been little discussion on the\noverall community practice of developing design resources to aid in practical\nCUI design. The aim of this workshop, therefore, is to bring the CUI community\ntogether to discuss the current practices for developing tools and resources\nfor practical CUI design, the adoption (or non-adoption) of these tools and\nresources, and how these resources are utilized in the training and education\nof new CUI designers entering the field. Workshop website:\nhttps://speech-interaction.org/cui2023_design_workshop/index.html\n",
+        "published": "2023",
+        "authors": [
+            "Frank F\u00f6rster",
+            "Marta Romeo",
+            "Patrick Holthaus",
+            "Maria Jose Galvez Trigo",
+            "Joel E. Fischer",
+            "Birthe Nesset",
+            "Christian Dondrup",
+            "Christine Murad",
+            "Cosmin Munteanu",
+            "Benjamin R. Cowan",
+            "Leigh Clark",
+            "Martin Porcheron",
+            "Heloisa Candello",
+            "Raina Langevin"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2401.07868v1",
+        "title": "Consolidating Trees of Robotic Plans Generated Using Large Language\n  Models to Improve Reliability",
+        "abstract": "  The inherent probabilistic nature of Large Language Models (LLMs) introduces\nan element of unpredictability, raising concerns about potential discrepancies\nin their output. This paper introduces an innovative approach aims to generate\ncorrect and optimal robotic task plans for diverse real-world demands and\nscenarios. LLMs have been used to generate task plans, but they are unreliable\nand may contain wrong, questionable, or high-cost steps. The proposed approach\nuses LLM to generate a number of task plans as trees and amalgamates them into\na graph by removing questionable paths. Then an optimal task tree can be\nretrieved to circumvent questionable and high-cost nodes, thereby improving\nplanning accuracy and execution efficiency. The approach is further improved by\nincorporating a large knowledge network. Leveraging GPT-4 further, the\nhigh-level task plan is converted into a low-level Planning Domain Definition\nLanguage (PDDL) plan executable by a robot. Evaluation results highlight the\nsuperior accuracy and efficiency of our approach compared to previous\nmethodologies in the field of task planning.\n",
+        "published": "2024",
+        "authors": [
+            "Md Sadman Sakib",
+            "Yu Sun"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2401.08089v1",
+        "title": "A Study on Training and Developing Large Language Models for Behavior\n  Tree Generation",
+        "abstract": "  This paper presents an innovative exploration of the application potential of\nlarge language models (LLM) in addressing the challenging task of automatically\ngenerating behavior trees (BTs) for complex tasks. The conventional manual BT\ngeneration method is inefficient and heavily reliant on domain expertise. On\nthe other hand, existing automatic BT generation technologies encounter\nbottlenecks related to task complexity, model adaptability, and reliability. In\norder to overcome these challenges, we propose a novel methodology that\nleverages the robust representation and reasoning abilities of LLMs. The core\ncontribution of this paper lies in the design of a BT generation framework\nbased on LLM, which encompasses the entire process, from data synthesis and\nmodel training to application developing and data verification. Synthetic data\nis introduced to train the BT generation model (BTGen model), enhancing its\nunderstanding and adaptability to various complex tasks, thereby significantly\nimproving its overall performance. In order to ensure the effectiveness and\nexecutability of the generated BTs, we emphasize the importance of data\nverification and introduce a multilevel verification strategy. Additionally, we\nexplore a range of agent design and development schemes with LLM as the central\nelement. We hope that the work in this paper may provide a reference for the\nresearchers who are interested in BT generation based on LLMs.\n",
+        "published": "2024",
+        "authors": [
+            "Fu Li",
+            "Xueying Wang",
+            "Bin Li",
+            "Yunlong Wu",
+            "Yanzhen Wang",
+            "Xiaodong Yi"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2010.05115v1",
+        "title": "Autonomous Vehicle Visual Signals for Pedestrians: Experiments and\n  Design Recommendations",
+        "abstract": "  Autonomous Vehicles (AV) will transform transportation, but also the\ninteraction between vehicles and pedestrians. In the absence of a driver, it is\nnot clear how an AV can communicate its intention to pedestrians. One option is\nto use visual signals. To advance their design, we conduct four\nhuman-participant experiments and evaluate six representative AV visual signals\nfor visibility, intuitiveness, persuasiveness, and usability at pedestrian\ncrossings. Based on the results, we distill twelve practical design\nrecommendations for AV visual signals, with focus on signal pattern design and\nplacement. Moreover, the paper advances the methodology for experimental\nevaluation of visual signals, including lab, closed-course, and public road\ntests using an autonomous vehicle. In addition, the paper also reports insights\non pedestrian crosswalk behaviours and the impacts of pedestrian trust towards\nAVs on the behaviors. We hope that this work will constitute valuable input to\nthe ongoing development of international standards for AV lamps, and thus help\nmature automated driving in general.\n",
+        "published": "2020",
+        "authors": [
+            "Henry Chen",
+            "Robin Cohen",
+            "Kerstin Dautenhahn",
+            "Edith Law",
+            "Krzysztof Czarnecki"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2204.07520v3",
+        "title": "Resource-Aware Distributed Submodular Maximization: A Paradigm for\n  Multi-Robot Decision-Making",
+        "abstract": "  Multi-robot decision-making is the process where multiple robots coordinate\nactions. In this paper, we aim for efficient and effective multi-robot\ndecision-making despite the robots' limited on-board resources and the often\nresource-demanding complexity of their tasks. We introduce the first algorithm\nenabling the robots to choose with which few other robots to coordinate and\nprovably balance the trade-off of centralized vs. decentralized coordination.\nParticularly, centralization favors globally near-optimal decision-making but\nat the cost of increased on-board resource requirements; whereas,\ndecentralization favors minimal resource requirements but at a global\nsuboptimality cost. All robots can thus afford our algorithm, irrespective of\ntheir resources. We are motivated by the future of autonomy that involves\nmultiple robots coordinating actions to complete resource-demanding tasks, such\nas target tracking, area coverage, and monitoring. To provide closed-form\nguarantees, we focus on maximization problems involving monotone and \"doubly\"\nsubmodular functions. To capture the cost of decentralization, we introduce the\nnotion of Centralization Of Information among non-Neighbors (COIN). We validate\nour algorithm in simulated scenarios of image covering.\n",
+        "published": "2022",
+        "authors": [
+            "Zirui Xu",
+            "Vasileios Tzoumas"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2209.12429v3",
+        "title": "Online Submodular Coordination with Bounded Tracking Regret: Theory,\n  Algorithm, and Applications to Multi-Robot Coordination",
+        "abstract": "  We enable efficient and effective coordination in unpredictable environments,\ni.e., in environments whose future evolution is unknown a priori and even\nadversarial. We are motivated by the future of autonomy that involves multiple\nrobots coordinating in dynamic, unstructured, and adversarial environments to\ncomplete complex tasks such as target tracking, environmental mapping, and area\nmonitoring. Such tasks are often modeled as submodular maximization\ncoordination problems. We introduce the first submodular coordination algorithm\nwith bounded tracking regret, i.e., with bounded suboptimality with respect to\noptimal time-varying actions that know the future a priori. The bound\ngracefully degrades with the environments' capacity to change adversarially. It\nalso quantifies how often the robots must re-select actions to \"learn\" to\ncoordinate as if they knew the future a priori. The algorithm requires the\nrobots to select actions sequentially based on the actions selected by the\nprevious robots in the sequence. Particularly, the algorithm generalizes the\nseminal Sequential Greedy algorithm by Fisher et al. to unpredictable\nenvironments, leveraging submodularity and algorithms for the problem of\ntracking the best expert. We validate our algorithm in simulated scenarios of\ntarget tracking.\n",
+        "published": "2022",
+        "authors": [
+            "Zirui Xu",
+            "Hongyu Zhou",
+            "Vasileios Tzoumas"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2305.00561v1",
+        "title": "Model-free Motion Planning of Autonomous Agents for Complex Tasks in\n  Partially Observable Environments",
+        "abstract": "  Motion planning of autonomous agents in partially known environments with\nincomplete information is a challenging problem, particularly for complex\ntasks. This paper proposes a model-free reinforcement learning approach to\naddress this problem. We formulate motion planning as a probabilistic-labeled\npartially observable Markov decision process (PL-POMDP) problem and use linear\ntemporal logic (LTL) to express the complex task. The LTL formula is then\nconverted to a limit-deterministic generalized B\\\"uchi automaton (LDGBA). The\nproblem is redefined as finding an optimal policy on the product of PL-POMDP\nwith LDGBA based on model-checking techniques to satisfy the complex task. We\nimplement deep Q learning with long short-term memory (LSTM) to process the\nobservation history and task recognition. Our contributions include the\nproposed method, the utilization of LTL and LDGBA, and the LSTM-enhanced deep Q\nlearning. We demonstrate the applicability of the proposed method by conducting\nsimulations in various environments, including grid worlds, a virtual office,\nand a multi-agent warehouse. The simulation results demonstrate that our\nproposed method effectively addresses environment, action, and observation\nuncertainties. This indicates its potential for real-world applications,\nincluding the control of unmanned aerial vehicles (UAVs).\n",
+        "published": "2023",
+        "authors": [
+            "Junchao Li",
+            "Mingyu Cai",
+            "Zhen Kan",
+            "Shaoping Xiao"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2305.12795v2",
+        "title": "Bandit Submodular Maximization for Multi-Robot Coordination in\n  Unpredictable and Partially Observable Environments",
+        "abstract": "  We study the problem of multi-agent coordination in unpredictable and\npartially observable environments, that is, environments whose future evolution\nis unknown a priori and that can only be partially observed. We are motivated\nby the future of autonomy that involves multiple robots coordinating actions in\ndynamic, unstructured, and partially observable environments to complete\ncomplex tasks such as target tracking, environmental mapping, and area\nmonitoring. Such tasks are often modeled as submodular maximization\ncoordination problems due to the information overlap among the robots. We\nintroduce the first submodular coordination algorithm with bandit feedback and\nbounded tracking regret -- bandit feedback is the robots' ability to compute in\nhindsight only the effect of their chosen actions, instead of all the\nalternative actions that they could have chosen instead, due to the partial\nobservability; and tracking regret is the algorithm's suboptimality with\nrespect to the optimal time-varying actions that fully know the future a\npriori. The bound gracefully degrades with the environments' capacity to change\nadversarially, quantifying how often the robots should re-select actions to\nlearn to coordinate as if they fully knew the future a priori. The algorithm\ngeneralizes the seminal Sequential Greedy algorithm by Fisher et al. to the\nbandit setting, by leveraging submodularity and algorithms for the problem of\ntracking the best action. We validate our algorithm in simulated scenarios of\nmulti-target tracking.\n",
+        "published": "2023",
+        "authors": [
+            "Zirui Xu",
+            "Xiaofeng Lin",
+            "Vasileios Tzoumas"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2309.16161v1",
+        "title": "Leveraging Untrustworthy Commands for Multi-Robot Coordination in\n  Unpredictable Environments: A Bandit Submodular Maximization Approach",
+        "abstract": "  We study the problem of multi-agent coordination in unpredictable and\npartially-observable environments with untrustworthy external commands. The\ncommands are actions suggested to the robots, and are untrustworthy in that\ntheir performance guarantees, if any, are unknown. Such commands may be\ngenerated by human operators or machine learning algorithms and, although\nuntrustworthy, can often increase the robots' performance in complex\nmulti-robot tasks. We are motivated by complex multi-robot tasks such as target\ntracking, environmental mapping, and area monitoring. Such tasks are often\nmodeled as submodular maximization problems due to the information overlap\namong the robots. We provide an algorithm, Meta Bandit Sequential Greedy\n(MetaBSG), which enjoys performance guarantees even when the external commands\nare arbitrarily bad. MetaBSG leverages a meta-algorithm to learn whether the\nrobots should follow the commands or a recently developed submodular\ncoordination algorithm, Bandit Sequential Greedy (BSG) [1], which has\nperformance guarantees even in unpredictable and partially-observable\nenvironments. Particularly, MetaBSG asymptotically can achieve the better\nperformance out of the commands and the BSG algorithm, quantifying its\nsuboptimality against the optimal time-varying multi-robot actions in\nhindsight. Thus, MetaBSG can be interpreted as robustifying the untrustworthy\ncommands. We validate our algorithm in simulated scenarios of multi-target\ntracking.\n",
+        "published": "2023",
+        "authors": [
+            "Zirui Xu",
+            "Xiaofeng Lin",
+            "Vasileios Tzoumas"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/cs/0308025v1",
+        "title": "Controlled hierarchical filtering: Model of neocortical sensory\n  processing",
+        "abstract": "  A model of sensory information processing is presented. The model assumes\nthat learning of internal (hidden) generative models, which can predict the\nfuture and evaluate the precision of that prediction, is of central importance\nfor information extraction. Furthermore, the model makes a bridge to\ngoal-oriented systems and builds upon the structural similarity between the\narchitecture of a robust controller and that of the hippocampal entorhinal\nloop. This generative control architecture is mapped to the neocortex and to\nthe hippocampal entorhinal loop. Implicit memory phenomena; priming and\nprototype learning are emerging features of the model. Mathematical theorems\nensure stability and attractive learning properties of the architecture.\nConnections to reinforcement learning are also established: both the control\nnetwork, and the network with a hidden model converge to (near) optimal policy\nunder suitable conditions. Falsifying predictions, including the role of the\nfeedback connections between neocortical areas are made.\n",
+        "published": "2003",
+        "authors": [
+            "Andras Lorincz"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/cs/0402032v1",
+        "title": "Fitness inheritance in the Bayesian optimization algorithm",
+        "abstract": "  This paper describes how fitness inheritance can be used to estimate fitness\nfor a proportion of newly sampled candidate solutions in the Bayesian\noptimization algorithm (BOA). The goal of estimating fitness for some candidate\nsolutions is to reduce the number of fitness evaluations for problems where\nfitness evaluation is expensive. Bayesian networks used in BOA to model\npromising solutions and generate the new ones are extended to allow not only\nfor modeling and sampling candidate solutions, but also for estimating their\nfitness. The results indicate that fitness inheritance is a promising concept\nin BOA, because population-sizing requirements for building appropriate models\nof promising solutions lead to good fitness estimates even if only a small\nproportion of candidate solutions is evaluated using the actual fitness\nfunction. This can lead to a reduction of the number of actual fitness\nevaluations by a factor of 30 or more.\n",
+        "published": "2004",
+        "authors": [
+            "Martin Pelikan",
+            "Kumara Sastry"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/cs/0404032v1",
+        "title": "When Do Differences Matter? On-Line Feature Extraction Through Cognitive\n  Economy",
+        "abstract": "  For an intelligent agent to be truly autonomous, it must be able to adapt its\nrepresentation to the requirements of its task as it interacts with the world.\nMost current approaches to on-line feature extraction are ad hoc; in contrast,\nthis paper presents an algorithm that bases judgments of state compatibility\nand state-space abstraction on principled criteria derived from the\npsychological principle of cognitive economy. The algorithm incorporates an\nactive form of Q-learning, and partitions continuous state-spaces by merging\nand splitting Voronoi regions. The experiments illustrate a new methodology for\ntesting and comparing representations by means of learning curves. Results from\nthe puck-on-a-hill task demonstrate the algorithm's ability to learn effective\nrepresentations, superior to those produced by some other, well-known, methods.\n",
+        "published": "2004",
+        "authors": [
+            "David J. Finton"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/cs/0410004v1",
+        "title": "Applying Policy Iteration for Training Recurrent Neural Networks",
+        "abstract": "  Recurrent neural networks are often used for learning time-series data. Based\non a few assumptions we model this learning task as a minimization problem of a\nnonlinear least-squares cost function. The special structure of the cost\nfunction allows us to build a connection to reinforcement learning. We exploit\nthis connection and derive a convergent, policy iteration-based algorithm.\nFurthermore, we argue that RNN training can be fit naturally into the\nreinforcement learning framework.\n",
+        "published": "2004",
+        "authors": [
+            "I. Szita",
+            "A. Lorincz"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/cs/0504069v1",
+        "title": "A Neural-Network Technique to Learn Concepts from Electroencephalograms",
+        "abstract": "  A new technique is presented developed to learn multi-class concepts from\nclinical electroencephalograms. A desired concept is represented as a neuronal\ncomputational model consisting of the input, hidden, and output neurons. In\nthis model the hidden neurons learn independently to classify the\nelectroencephalogram segments presented by spectral and statistical features.\nThis technique has been applied to the electroencephalogram data recorded from\n65 sleeping healthy newborns in order to learn a brain maturation concept of\nnewborns aged between 35 and 51 weeks. The 39399 and 19670 segments from these\ndata have been used for learning and testing the concept, respectively. As a\nresult, the concept has correctly classified 80.1% of the testing segments or\n87.7% of the 65 records.\n",
+        "published": "2005",
+        "authors": [
+            "Vitaly Schetinin",
+            "Joachim Schult"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/cs/0504070v1",
+        "title": "The Combined Technique for Detection of Artifacts in Clinical\n  Electroencephalograms of Sleeping Newborns",
+        "abstract": "  In this paper we describe a new method combining the polynomial neural\nnetwork and decision tree techniques in order to derive comprehensible\nclassification rules from clinical electroencephalograms (EEGs) recorded from\nsleeping newborns. These EEGs are heavily corrupted by cardiac, eye movement,\nmuscle and noise artifacts and as a consequence some EEG features are\nirrelevant to classification problems. Combining the polynomial network and\ndecision tree techniques, we discover comprehensible classification rules\nwhilst also attempting to keep their classification error down. This technique\nis shown to outperform a number of commonly used machine learning technique\napplied to automatically recognize artifacts in the sleep EEGs.\n",
+        "published": "2005",
+        "authors": [
+            "Vitaly Schetinin",
+            "Joachim Schult"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/0704.1028v1",
+        "title": "A neural network approach to ordinal regression",
+        "abstract": "  Ordinal regression is an important type of learning, which has properties of\nboth classification and regression. Here we describe a simple and effective\napproach to adapt a traditional neural network to learn ordinal categories. Our\napproach is a generalization of the perceptron method for ordinal regression.\nOn several benchmark datasets, our method (NNRank) outperforms a neural network\nclassification method. Compared with the ordinal regression methods using\nGaussian processes and support vector machines, NNRank achieves comparable\nperformance. Moreover, NNRank has the advantages of traditional neural\nnetworks: learning in both online and batch modes, handling very large training\ndatasets, and making rapid predictions. These features make NNRank a useful and\ncomplementary tool for large-scale data processing tasks such as information\nretrieval, web page ranking, collaborative filtering, and protein ranking in\nBioinformatics.\n",
+        "published": "2007",
+        "authors": [
+            "Jianlin Cheng"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/0709.3965v2",
+        "title": "Evolving Classifiers: Methods for Incremental Learning",
+        "abstract": "  The ability of a classifier to take on new information and classes by\nevolving the classifier without it having to be fully retrained is known as\nincremental learning. Incremental learning has been successfully applied to\nmany classification problems, where the data is changing and is not all\navailable at once. In this paper there is a comparison between Learn++, which\nis one of the most recent incremental learning algorithms, and the new proposed\nmethod of Incremental Learning Using Genetic Algorithm (ILUGA). Learn++ has\nshown good incremental learning capabilities on benchmark datasets on which the\nnew ILUGA method has been tested. ILUGA has also shown good incremental\nlearning ability using only a few classifiers and does not suffer from\ncatastrophic forgetting. The results obtained for ILUGA on the Optical\nCharacter Recognition (OCR) and Wine datasets are good, with an overall\naccuracy of 93% and 94% respectively showing a 4% improvement over Learn++.MT\nfor the difficult multi-class OCR dataset.\n",
+        "published": "2007",
+        "authors": [
+            "Greg Hulley",
+            "Tshilidzi Marwala"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/0712.0938v1",
+        "title": "Automatic Pattern Classification by Unsupervised Learning Using\n  Dimensionality Reduction of Data with Mirroring Neural Networks",
+        "abstract": "  This paper proposes an unsupervised learning technique by using Multi-layer\nMirroring Neural Network and Forgy's clustering algorithm. Multi-layer\nMirroring Neural Network is a neural network that can be trained with\ngeneralized data inputs (different categories of image patterns) to perform\nnon-linear dimensionality reduction and the resultant low-dimensional code is\nused for unsupervised pattern classification using Forgy's algorithm. By\nadapting the non-linear activation function (modified sigmoidal function) and\ninitializing the weights and bias terms to small random values, mirroring of\nthe input pattern is initiated. In training, the weights and bias terms are\nchanged in such a way that the input presented is reproduced at the output by\nback propagating the error. The mirroring neural network is capable of reducing\nthe input vector to a great degree (approximately 1/30th the original size) and\nalso able to reconstruct the input pattern at the output layer from this\nreduced code units. The feature set (output of central hidden layer) extracted\nfrom this network is fed to Forgy's algorithm, which classify input data\npatterns into distinguishable classes. In the implementation of Forgy's\nalgorithm, initial seed points are selected in such a way that they are distant\nenough to be perfectly grouped into different categories. Thus a new method of\nunsupervised learning is formulated and demonstrated in this paper. This method\ngave impressive results when applied to classification of different image\npatterns.\n",
+        "published": "2007",
+        "authors": [
+            "Dasika Ratna Deepthi",
+            "G. R. Aditya Krishna",
+            "K. Eswaran"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/0712.3654v1",
+        "title": "Improving the Performance of PieceWise Linear Separation Incremental\n  Algorithms for Practical Hardware Implementations",
+        "abstract": "  In this paper we shall review the common problems associated with Piecewise\nLinear Separation incremental algorithms. This kind of neural models yield poor\nperformances when dealing with some classification problems, due to the\nevolving schemes used to construct the resulting networks. So as to avoid this\nundesirable behavior we shall propose a modification criterion. It is based\nupon the definition of a function which will provide information about the\nquality of the network growth process during the learning phase. This function\nis evaluated periodically as the network structure evolves, and will permit, as\nwe shall show through exhaustive benchmarks, to considerably improve the\nperformance(measured in terms of network complexity and generalization\ncapabilities) offered by the networks generated by these incremental models.\n",
+        "published": "2007",
+        "authors": [
+            "Alejandro Chinea Manrique De Lara",
+            "Juan Manuel Moreno",
+            "Arostegui Jordi Madrenas",
+            "Joan Cabestany"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1005.5556v2",
+        "title": "Empirical learning aided by weak domain knowledge in the form of feature\n  importance",
+        "abstract": "  Standard hybrid learners that use domain knowledge require stronger knowledge\nthat is hard and expensive to acquire. However, weaker domain knowledge can\nbenefit from prior knowledge while being cost effective. Weak knowledge in the\nform of feature relative importance (FRI) is presented and explained. Feature\nrelative importance is a real valued approximation of a feature's importance\nprovided by experts. Advantage of using this knowledge is demonstrated by IANN,\na modified multilayer neural network algorithm. IANN is a very simple\nmodification of standard neural network algorithm but attains significant\nperformance gains. Experimental results in the field of molecular biology show\nhigher performance over other empirical learning algorithms including standard\nbackpropagation and support vector machines. IANN performance is even\ncomparable to a theory refinement system KBANN that uses stronger domain\nknowledge. This shows Feature relative importance can improve performance of\nexisting empirical learning algorithms significantly with minimal effort.\n",
+        "published": "2010",
+        "authors": [
+            "Ridwan Al Iqbal"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1006.4540v1",
+        "title": "A Novel Rough Set Reduct Algorithm for Medical Domain Based on Bee\n  Colony Optimization",
+        "abstract": "  Feature selection refers to the problem of selecting relevant features which\nproduce the most predictive outcome. In particular, feature selection task is\ninvolved in datasets containing huge number of features. Rough set theory has\nbeen one of the most successful methods used for feature selection. However,\nthis method is still not able to find optimal subsets. This paper proposes a\nnew feature selection method based on Rough set theory hybrid with Bee Colony\nOptimization (BCO) in an attempt to combat this. This proposed work is applied\nin the medical domain to find the minimal reducts and experimentally compared\nwith the Quick Reduct, Entropy Based Reduct, and other hybrid Rough Set methods\nsuch as Genetic Algorithm (GA), Ant Colony Optimization (ACO) and Particle\nSwarm Optimization (PSO).\n",
+        "published": "2010",
+        "authors": [
+            "N. Suguna",
+            "K. Thanushkodi"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1007.0546v4",
+        "title": "Computational Model of Music Sight Reading: A Reinforcement Learning\n  Approach",
+        "abstract": "  Although the Music Sight Reading process has been studied from the cognitive\npsychology view points, but the computational learning methods like the\nReinforcement Learning have not yet been used to modeling of such processes. In\nthis paper, with regards to essential properties of our specific problem, we\nconsider the value function concept and will indicate that the optimum policy\ncan be obtained by the method we offer without to be getting involved with\ncomputing of the complex value functions. Also, we will offer a normative\nbehavioral model for the interaction of the agent with the musical pitch\nenvironment and by using a slightly different version of Partially observable\nMarkov decision processes we will show that our method helps for faster\nlearning of state-action pairs in our implemented agents.\n",
+        "published": "2010",
+        "authors": [
+            "Keyvan Yahya",
+            "Pouyan Rafiei Fard"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1012.0841v1",
+        "title": "Automated Query Learning with Wikipedia and Genetic Programming",
+        "abstract": "  Most of the existing information retrieval systems are based on bag of words\nmodel and are not equipped with common world knowledge. Work has been done\ntowards improving the efficiency of such systems by using intelligent\nalgorithms to generate search queries, however, not much research has been done\nin the direction of incorporating human-and-society level knowledge in the\nqueries. This paper is one of the first attempts where such information is\nincorporated into the search queries using Wikipedia semantics. The paper\npresents an essential shift from conventional token based queries to concept\nbased queries, leading to an enhanced efficiency of information retrieval\nsystems. To efficiently handle the automated query learning problem, we propose\nWikipedia-based Evolutionary Semantics (Wiki-ES) framework where concept based\nqueries are learnt using a co-evolving evolutionary procedure. Learning concept\nbased queries using an intelligent evolutionary procedure yields significant\nimprovement in performance which is shown through an extensive study using\nReuters newswire documents. Comparison of the proposed framework is performed\nwith other information retrieval systems. Concept based approach has also been\nimplemented on other information retrieval systems to justify the effectiveness\nof a transition from token based queries to concept based queries.\n",
+        "published": "2010",
+        "authors": [
+            "Pekka Malo",
+            "Pyry Siitari",
+            "Ankur Sinha"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1106.0221v1",
+        "title": "Evolutionary Algorithms for Reinforcement Learning",
+        "abstract": "  There are two distinct approaches to solving reinforcement learning problems,\nnamely, searching in value function space and searching in policy space.\nTemporal difference methods and evolutionary algorithms are well-known examples\nof these approaches. Kaelbling, Littman and Moore recently provided an\ninformative survey of temporal difference methods. This article focuses on the\napplication of evolutionary algorithms to the reinforcement learning problem,\nemphasizing alternative policy representations, credit assignment methods, and\nproblem-specific genetic operators. Strengths and weaknesses of the\nevolutionary approach to reinforcement learning are presented, along with a\nsurvey of representative applications.\n",
+        "published": "2011",
+        "authors": [
+            "J. J. Grefenstette",
+            "D. E. Moriarty",
+            "A. C. Schultz"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1109.4609v1",
+        "title": "Memristive fuzzy edge detector",
+        "abstract": "  Fuzzy inference systems always suffer from the lack of efficient structures\nor platforms for their hardware implementation. In this paper, we tried to\novercome this problem by proposing new method for the implementation of those\nfuzzy inference systems which use fuzzy rule base to make inference. To achieve\nthis goal, we have designed a multi-layer neuro-fuzzy computing system based on\nthe memristor crossbar structure by introducing some new concepts like fuzzy\nminterms. Although many applications can be realized through the use of our\nproposed system, in this study we show how the fuzzy XOR function can be\nconstructed and how it can be used to extract edges from grayscale images. Our\nmemristive fuzzy edge detector (implemented in analog form) compared with other\ncommon edge detectors has this advantage that it can extract edges of any given\nimage all at once in real-time.\n",
+        "published": "2011",
+        "authors": [
+            "Farnood Merrikh-Bayat",
+            "Saeed Bagheri Shouraki"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1111.2221v1",
+        "title": "Scaling Up Estimation of Distribution Algorithms For Continuous\n  Optimization",
+        "abstract": "  Since Estimation of Distribution Algorithms (EDA) were proposed, many\nattempts have been made to improve EDAs' performance in the context of global\noptimization. So far, the studies or applications of multivariate probabilistic\nmodel based continuous EDAs are still restricted to rather low dimensional\nproblems (smaller than 100D). Traditional EDAs have difficulties in solving\nhigher dimensional problems because of the curse of dimensionality and their\nrapidly increasing computational cost. However, scaling up continuous EDAs for\nhigher dimensional optimization is still necessary, which is supported by the\ndistinctive feature of EDAs: Because a probabilistic model is explicitly\nestimated, from the learnt model one can discover useful properties or features\nof the problem. Besides obtaining a good solution, understanding of the problem\nstructure can be of great benefit, especially for black box optimization. We\npropose a novel EDA framework with Model Complexity Control (EDA-MCC) to scale\nup EDAs. By using Weakly dependent variable Identification (WI) and Subspace\nModeling (SM), EDA-MCC shows significantly better performance than traditional\nEDAs on high dimensional problems. Moreover, the computational cost and the\nrequirement of large population sizes can be reduced in EDA-MCC. In addition to\nbeing able to find a good solution, EDA-MCC can also produce a useful problem\nstructure characterization. EDA-MCC is the first successful instance of\nmultivariate model based EDAs that can be effectively applied a general class\nof up to 500D problems. It also outperforms some newly developed algorithms\ndesigned specifically for large scale optimization. In order to understand the\nstrength and weakness of EDA-MCC, we have carried out extensive computational\nstudies of EDA-MCC. Our results have revealed when EDA-MCC is likely to\noutperform others on what kind of benchmark functions.\n",
+        "published": "2011",
+        "authors": [
+            "Weishan Dong",
+            "Tianshi Chen",
+            "Peter Tino",
+            "Xin Yao"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1112.4628v1",
+        "title": "Using Artificial Bee Colony Algorithm for MLP Training on Earthquake\n  Time Series Data Prediction",
+        "abstract": "  Nowadays, computer scientists have shown the interest in the study of social\ninsect's behaviour in neural networks area for solving different combinatorial\nand statistical problems. Chief among these is the Artificial Bee Colony (ABC)\nalgorithm. This paper investigates the use of ABC algorithm that simulates the\nintelligent foraging behaviour of a honey bee swarm. Multilayer Perceptron\n(MLP) trained with the standard back propagation algorithm normally utilises\ncomputationally intensive training algorithms. One of the crucial problems with\nthe backpropagation (BP) algorithm is that it can sometimes yield the networks\nwith suboptimal weights because of the presence of many local optima in the\nsolution space. To overcome ABC algorithm used in this work to train MLP\nlearning the complex behaviour of earthquake time series data trained by BP,\nthe performance of MLP-ABC is benchmarked against MLP training with the\nstandard BP. The experimental result shows that MLP-ABC performance is better\nthan MLP-BP for time series data.\n",
+        "published": "2011",
+        "authors": [
+            "Habib Shah",
+            "Rozaida Ghazali",
+            "Nazri Mohd Nawi"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1203.4416v1",
+        "title": "On Training Deep Boltzmann Machines",
+        "abstract": "  The deep Boltzmann machine (DBM) has been an important development in the\nquest for powerful \"deep\" probabilistic models. To date, simultaneous or joint\ntraining of all layers of the DBM has been largely unsuccessful with existing\ntraining methods. We introduce a simple regularization scheme that encourages\nthe weight vectors associated with each hidden unit to have similar norms. We\ndemonstrate that this regularization can be easily combined with standard\nstochastic maximum likelihood to yield an effective training strategy for the\nsimultaneous training of all layers of the deep Boltzmann machine.\n",
+        "published": "2012",
+        "authors": [
+            "Guillaume Desjardins",
+            "Aaron Courville",
+            "Yoshua Bengio"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1203.5443v2",
+        "title": "Transfer Learning, Soft Distance-Based Bias, and the Hierarchical BOA",
+        "abstract": "  An automated technique has recently been proposed to transfer learning in the\nhierarchical Bayesian optimization algorithm (hBOA) based on distance-based\nstatistics. The technique enables practitioners to improve hBOA efficiency by\ncollecting statistics from probabilistic models obtained in previous hBOA runs\nand using the obtained statistics to bias future hBOA runs on similar problems.\nThe purpose of this paper is threefold: (1) test the technique on several\nclasses of NP-complete problems, including MAXSAT, spin glasses and minimum\nvertex cover; (2) demonstrate that the technique is effective even when\nprevious runs were done on problems of different size; (3) provide empirical\nevidence that combining transfer learning with other efficiency enhancement\ntechniques can often yield nearly multiplicative speedups.\n",
+        "published": "2012",
+        "authors": [
+            "Martin Pelikan",
+            "Mark W. Hauschild",
+            "Pier Luca Lanzi"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1204.4200v2",
+        "title": "Discrete Dynamical Genetic Programming in XCS",
+        "abstract": "  A number of representation schemes have been presented for use within\nLearning Classifier Systems, ranging from binary encodings to neural networks.\nThis paper presents results from an investigation into using a discrete\ndynamical system representation within the XCS Learning Classifier System. In\nparticular, asynchronous random Boolean networks are used to represent the\ntraditional condition-action production system rules. It is shown possible to\nuse self-adaptive, open-ended evolution to design an ensemble of such discrete\ndynamical systems within XCS to solve a number of well-known test problems.\n",
+        "published": "2012",
+        "authors": [
+            "Richard J. Preen",
+            "Larry Bull"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1204.4202v1",
+        "title": "Fuzzy Dynamical Genetic Programming in XCSF",
+        "abstract": "  A number of representation schemes have been presented for use within\nLearning Classifier Systems, ranging from binary encodings to Neural Networks,\nand more recently Dynamical Genetic Programming (DGP). This paper presents\nresults from an investigation into using a fuzzy DGP representation within the\nXCSF Learning Classifier System. In particular, asynchronous Fuzzy Logic\nNetworks are used to represent the traditional condition-action production\nsystem rules. It is shown possible to use self-adaptive, open-ended evolution\nto design an ensemble of such fuzzy dynamical systems within XCSF to solve\nseveral well-known continuous-valued test problems.\n",
+        "published": "2012",
+        "authors": [
+            "Richard J. Preen",
+            "Larry Bull"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1207.3760v1",
+        "title": "Towards a Self-Organized Agent-Based Simulation Model for Exploration of\n  Human Synaptic Connections",
+        "abstract": "  In this paper, the early design of our self-organized agent-based simulation\nmodel for exploration of synaptic connections that faithfully generates what is\nobserved in natural situation is given. While we take inspiration from\nneuroscience, our intent is not to create a veridical model of processes in\nneurodevelopmental biology, nor to represent a real biological system. Instead,\nour goal is to design a simulation model that learns acting in the same way of\nhuman nervous system by using findings on human subjects using reflex\nmethodologies in order to estimate unknown connections.\n",
+        "published": "2012",
+        "authors": [
+            "\u00d6nder G\u00fcrcan",
+            "Carole Bernon",
+            "Kemal S. T\u00fcrker"
+        ]
+    }
+]

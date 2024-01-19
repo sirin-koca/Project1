@@ -1,0 +1,1288 @@
+[
+    {
+        "id": "http://arxiv.org/abs/2301.11174v1",
+        "title": "Semi-Supervised Image Captioning by Adversarially Propagating Labeled\n  Data",
+        "abstract": "  We present a novel data-efficient semi-supervised framework to improve the\ngeneralization of image captioning models. Constructing a large-scale labeled\nimage captioning dataset is an expensive task in terms of labor, time, and\ncost. In contrast to manually annotating all the training samples, separately\ncollecting uni-modal datasets is immensely easier, e.g., a large-scale image\ndataset and a sentence dataset. We leverage such massive unpaired image and\ncaption data upon standard paired data by learning to associate them. To this\nend, our proposed semi-supervised learning method assigns pseudo-labels to\nunpaired samples in an adversarial learning fashion, where the joint\ndistribution of image and caption is learned. Our method trains a captioner to\nlearn from a paired data and to progressively associate unpaired data. This\napproach shows noticeable performance improvement even in challenging scenarios\nincluding out-of-task data (i.e., relational captioning, where the target task\nis different from the unpaired data) and web-crawled data. We also show that\nour proposed method is theoretically well-motivated and has a favorable global\noptimal property. Our extensive and comprehensive empirical results both on (1)\nimage-based and (2) dense region-based captioning datasets followed by\ncomprehensive analysis on the scarcely-paired COCO dataset demonstrate the\nconsistent effectiveness of our semisupervised learning method with unpaired\ndata compared to competing methods.\n",
+        "published": "2023",
+        "authors": [
+            "Dong-Jin Kim",
+            "Tae-Hyun Oh",
+            "Jinsoo Choi",
+            "In So Kweon"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2302.08374v3",
+        "title": "Efficiency 360: Efficient Vision Transformers",
+        "abstract": "  Transformers are widely used for solving tasks in natural language\nprocessing, computer vision, speech, and music domains. In this paper, we talk\nabout the efficiency of transformers in terms of memory (the number of\nparameters), computation cost (number of floating points operations), and\nperformance of models, including accuracy, the robustness of the model, and\nfair \\& bias-free features. We mainly discuss the vision transformer for the\nimage classification task. Our contribution is to introduce an efficient 360\nframework, which includes various aspects of the vision transformer, to make it\nmore efficient for industrial applications. By considering those applications,\nwe categorize them into multiple dimensions such as privacy, robustness,\ntransparency, fairness, inclusiveness, continual learning, probabilistic\nmodels, approximation, computational complexity, and spectral complexity. We\ncompare various vision transformer models based on their performance, the\nnumber of parameters, and the number of floating point operations (FLOPs) on\nmultiple datasets.\n",
+        "published": "2023",
+        "authors": [
+            "Badri N. Patro",
+            "Vijay Srinivas Agneeswaran"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2302.10282v1",
+        "title": "Paparazzi: A Deep Dive into the Capabilities of Language and Vision\n  Models for Grounding Viewpoint Descriptions",
+        "abstract": "  Existing language and vision models achieve impressive performance in\nimage-text understanding. Yet, it is an open question to what extent they can\nbe used for language understanding in 3D environments and whether they\nimplicitly acquire 3D object knowledge, e.g. about different views of an\nobject. In this paper, we investigate whether a state-of-the-art language and\nvision model, CLIP, is able to ground perspective descriptions of a 3D object\nand identify canonical views of common objects based on text queries. We\npresent an evaluation framework that uses a circling camera around a 3D object\nto generate images from different viewpoints and evaluate them in terms of\ntheir similarity to natural language descriptions. We find that a pre-trained\nCLIP model performs poorly on most canonical views and that fine-tuning using\nhard negative sampling and random contrasting yields good results even under\nconditions with little available training data.\n",
+        "published": "2023",
+        "authors": [
+            "Henrik Voigt",
+            "Jan Hombeck",
+            "Monique Meuschke",
+            "Kai Lawonn",
+            "Sina Zarrie\u00df"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2304.06446v2",
+        "title": "SpectFormer: Frequency and Attention is what you need in a Vision\n  Transformer",
+        "abstract": "  Vision transformers have been applied successfully for image recognition\ntasks. There have been either multi-headed self-attention based (ViT\n\\cite{dosovitskiy2020image}, DeIT, \\cite{touvron2021training}) similar to the\noriginal work in textual models or more recently based on spectral layers\n(Fnet\\cite{lee2021fnet}, GFNet\\cite{rao2021global},\nAFNO\\cite{guibas2021efficient}). We hypothesize that both spectral and\nmulti-headed attention plays a major role. We investigate this hypothesis\nthrough this work and observe that indeed combining spectral and multi-headed\nattention layers provides a better transformer architecture. We thus propose\nthe novel Spectformer architecture for transformers that combines spectral and\nmulti-headed attention layers. We believe that the resulting representation\nallows the transformer to capture the feature representation appropriately and\nit yields improved performance over other transformer representations. For\ninstance, it improves the top-1 accuracy by 2\\% on ImageNet compared to both\nGFNet-H and LiT. SpectFormer-S reaches 84.25\\% top-1 accuracy on ImageNet-1K\n(state of the art for small version). Further, Spectformer-L achieves 85.7\\%\nthat is the state of the art for the comparable base version of the\ntransformers. We further ensure that we obtain reasonable results in other\nscenarios such as transfer learning on standard datasets such as CIFAR-10,\nCIFAR-100, Oxford-IIIT-flower, and Standford Car datasets. We then investigate\nits use in downstream tasks such of object detection and instance segmentation\non the MS-COCO dataset and observe that Spectformer shows consistent\nperformance that is comparable to the best backbones and can be further\noptimized and improved. Hence, we believe that combined spectral and attention\nlayers are what are needed for vision transformers.\n",
+        "published": "2023",
+        "authors": [
+            "Badri N. Patro",
+            "Vinay P. Namboodiri",
+            "Vijay Srinivas Agneeswaran"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2304.06671v2",
+        "title": "Diagnostic Benchmark and Iterative Inpainting for Layout-Guided Image\n  Generation",
+        "abstract": "  Spatial control is a core capability in controllable image generation.\nAdvancements in layout-guided image generation have shown promising results on\nin-distribution (ID) datasets with similar spatial configurations. However, it\nis unclear how these models perform when facing out-of-distribution (OOD)\nsamples with arbitrary, unseen layouts. In this paper, we propose LayoutBench,\na diagnostic benchmark for layout-guided image generation that examines four\ncategories of spatial control skills: number, position, size, and shape. We\nbenchmark two recent representative layout-guided image generation methods and\nobserve that the good ID layout control may not generalize well to arbitrary\nlayouts in the wild (e.g., objects at the boundary). Next, we propose\nIterInpaint, a new baseline that generates foreground and background regions in\na step-by-step manner via inpainting, demonstrating stronger generalizability\nthan existing models on OOD layouts in LayoutBench. We perform quantitative and\nqualitative evaluation and fine-grained analysis on the four LayoutBench skills\nto pinpoint the weaknesses of existing models. Lastly, we show comprehensive\nablation studies on IterInpaint, including training task ratio, crop&paste vs.\nrepaint, and generation order. Project website: https://layoutbench.github.io\n",
+        "published": "2023",
+        "authors": [
+            "Jaemin Cho",
+            "Linjie Li",
+            "Zhengyuan Yang",
+            "Zhe Gan",
+            "Lijuan Wang",
+            "Mohit Bansal"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2304.08466v1",
+        "title": "Synthetic Data from Diffusion Models Improves ImageNet Classification",
+        "abstract": "  Deep generative models are becoming increasingly powerful, now generating\ndiverse high fidelity photo-realistic samples given text prompts. Have they\nreached the point where models of natural images can be used for generative\ndata augmentation, helping to improve challenging discriminative tasks? We show\nthat large-scale text-to image diffusion models can be fine-tuned to produce\nclass conditional models with SOTA FID (1.76 at 256x256 resolution) and\nInception Score (239 at 256x256). The model also yields a new SOTA in\nClassification Accuracy Scores (64.96 for 256x256 generative samples, improving\nto 69.24 for 1024x1024 samples). Augmenting the ImageNet training set with\nsamples from the resulting models yields significant improvements in ImageNet\nclassification accuracy over strong ResNet and Vision Transformer baselines.\n",
+        "published": "2023",
+        "authors": [
+            "Shekoofeh Azizi",
+            "Simon Kornblith",
+            "Chitwan Saharia",
+            "Mohammad Norouzi",
+            "David J. Fleet"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2304.08485v2",
+        "title": "Visual Instruction Tuning",
+        "abstract": "  Instruction tuning large language models (LLMs) using machine-generated\ninstruction-following data has improved zero-shot capabilities on new tasks,\nbut the idea is less explored in the multimodal field. In this paper, we\npresent the first attempt to use language-only GPT-4 to generate multimodal\nlanguage-image instruction-following data. By instruction tuning on such\ngenerated data, we introduce LLaVA: Large Language and Vision Assistant, an\nend-to-end trained large multimodal model that connects a vision encoder and\nLLM for general-purpose visual and language understanding.Our early experiments\nshow that LLaVA demonstrates impressive multimodel chat abilities, sometimes\nexhibiting the behaviors of multimodal GPT-4 on unseen images/instructions, and\nyields a 85.1% relative score compared with GPT-4 on a synthetic multimodal\ninstruction-following dataset. When fine-tuned on Science QA, the synergy of\nLLaVA and GPT-4 achieves a new state-of-the-art accuracy of 92.53%. We make\nGPT-4 generated visual instruction tuning data, our model and code base\npublicly available.\n",
+        "published": "2023",
+        "authors": [
+            "Haotian Liu",
+            "Chunyuan Li",
+            "Qingyang Wu",
+            "Yong Jae Lee"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2305.09900v2",
+        "title": "Efficient Equivariant Transfer Learning from Pretrained Models",
+        "abstract": "  Efficient transfer learning algorithms are key to the success of foundation\nmodels on diverse downstream tasks even with limited data. Recent works of Basu\net al. (2023) and Kaba et al. (2022) propose group averaging (equitune) and\noptimization-based methods, respectively, over features from group-transformed\ninputs to obtain equivariant outputs from non-equivariant neural networks.\nWhile Kaba et al. (2022) are only concerned with training from scratch, we find\nthat equitune performs poorly on equivariant zero-shot tasks despite good\nfinetuning results. We hypothesize that this is because pretrained models\nprovide better quality features for certain transformations than others and\nsimply averaging them is deleterious. Hence, we propose {\\lambda}-equitune that\naverages the features using importance weights, {\\lambda}s. These weights are\nlearned directly from the data using a small neural network, leading to\nexcellent zero-shot and finetuned results that outperform equitune. Further, we\nprove that {\\lambda}-equitune is equivariant and a universal approximator of\nequivariant functions. Additionally, we show that the method of Kaba et al.\n(2022) used with appropriate loss functions, which we call equizero, also gives\nexcellent zero-shot and finetuned performance. Both equitune and equizero are\nspecial cases of {\\lambda}-equitune. To show the simplicity and generality of\nour method, we validate on a wide range of diverse applications and models such\nas 1) image classification using CLIP, 2) deep Q-learning, 3) fairness in\nnatural language generation (NLG), 4) compositional generalization in\nlanguages, and 5) image classification using pretrained CNNs such as Resnet and\nAlexnet.\n",
+        "published": "2023",
+        "authors": [
+            "Sourya Basu",
+            "Pulkit Katdare",
+            "Prasanna Sattigeri",
+            "Vijil Chenthamarakshan",
+            "Katherine Driggs-Campbell",
+            "Payel Das",
+            "Lav R. Varshney"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2305.11271v1",
+        "title": "Towards Collaborative Plan Acquisition through Theory of Mind Modeling\n  in Situated Dialogue",
+        "abstract": "  Collaborative tasks often begin with partial task knowledge and incomplete\ninitial plans from each partner. To complete these tasks, agents need to engage\nin situated communication with their partners and coordinate their partial\nplans towards a complete plan to achieve a joint task goal. While such\ncollaboration seems effortless in a human-human team, it is highly challenging\nfor human-AI collaboration. To address this limitation, this paper takes a step\ntowards collaborative plan acquisition, where humans and agents strive to learn\nand communicate with each other to acquire a complete plan for joint tasks.\nSpecifically, we formulate a novel problem for agents to predict the missing\ntask knowledge for themselves and for their partners based on rich perceptual\nand dialogue history. We extend a situated dialogue benchmark for symmetric\ncollaborative tasks in a 3D blocks world and investigate computational\nstrategies for plan acquisition. Our empirical results suggest that predicting\nthe partner's missing knowledge is a more viable approach than predicting one's\nown. We show that explicit modeling of the partner's dialogue moves and mental\nstates produces improved and more stable results than without. These results\nprovide insight for future AI agents that can predict what knowledge their\npartner is missing and, therefore, can proactively communicate such information\nto help their partner acquire such missing knowledge toward a common\nunderstanding of joint tasks.\n",
+        "published": "2023",
+        "authors": [
+            "Cristian-Paul Bara",
+            "Ziqiao Ma",
+            "Yingzhuo Yu",
+            "Julie Shah",
+            "Joyce Chai"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2305.11490v4",
+        "title": "LLM-CXR: Instruction-Finetuned LLM for CXR Image Understanding and\n  Generation",
+        "abstract": "  Following the impressive development of LLMs, vision-language alignment in\nLLMs is actively being researched to enable multimodal reasoning and visual IO.\nThis direction of research is particularly relevant to medical imaging because\nmedical image analysis and generation consist of reasoning based on a\ncombination of visual features and prior knowledge. Many recent works have\nfocused on training adapter networks that serve as an information bridge\nbetween image processing networks and LLMs; but presumably, in order to achieve\nmaximum reasoning potential of LLMs on visual information as well, visual and\nlanguage features should be allowed to interact more freely. This is especially\nimportant in the medical domain because understanding and generating medical\nimages such as chest X-rays (CXR) require not only accurate visual and\nlanguage-based reasoning but also a more intimate mapping between the two\nmodalities. Thus, taking inspiration from previous work on the transformer and\nVQ-GAN combination for bidirectional image and text generation, we build upon\nthis approach and develop a method for instruction-tuning an LLM pre-trained\nonly on text to gain vision-language capabilities for medical images.\nSpecifically, we leverage a pretrained LLM's existing question-answering and\ninstruction-following abilities to teach it to understand visual inputs by\ninstructing it to answer questions about image inputs and, symmetrically,\noutput both text and image responses appropriate to a given query by tuning the\nLLM with diverse tasks that encompass image-based text-generation and\ntext-based image-generation. We show that our model, LLM-CXR, trained in this\napproach shows better image-text alignment in both CXR understanding and\ngeneration tasks while being smaller in size compared to previously developed\nmodels that perform a narrower range of tasks. The code is at\nhttps://github.com/hyn2028/llm-cxr.\n",
+        "published": "2023",
+        "authors": [
+            "Suhyeon Lee",
+            "Won Jun Kim",
+            "Jinho Chang",
+            "Jong Chul Ye"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2305.14998v1",
+        "title": "An Examination of the Robustness of Reference-Free Image Captioning\n  Evaluation Metrics",
+        "abstract": "  Recently, reference-free metrics such as CLIPScore (Hessel et al., 2021) and\nUMIC (Lee et al., 2021) have been proposed for automatic evaluation of image\ncaptions, demonstrating a high correlation with human judgment. In this work,\nour focus lies in evaluating the robustness of these metrics in scenarios that\nrequire distinguishing between two captions with high lexical overlap but very\ndifferent meanings. Our findings reveal that despite their high correlation\nwith human judgment, both CLIPScore and UMIC struggle to identify fine-grained\nerrors in captions. However, when comparing different types of fine-grained\nerrors, both metrics exhibit limited sensitivity to implausibility of captions\nand strong sensitivity to lack of sufficient visual grounding. Probing further\ninto the visual grounding aspect, we found that both CLIPScore and UMIC are\nimpacted by the size of image-relevant objects mentioned in the caption, and\nthat CLIPScore is also sensitive to the number of mentions of image-relevant\nobjects in the caption. In terms of linguistic aspects of a caption, we found\nthat both metrics lack the ability to comprehend negation, UMIC is sensitive to\ncaption lengths, and CLIPScore is insensitive to the structure of the sentence.\nWe hope our findings will serve as a valuable guide towards improving\nreference-free evaluation in image captioning.\n",
+        "published": "2023",
+        "authors": [
+            "Saba Ahmadi",
+            "Aishwarya Agrawal"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2305.15328v2",
+        "title": "Visual Programming for Text-to-Image Generation and Evaluation",
+        "abstract": "  As large language models have demonstrated impressive performance in many\ndomains, recent works have adopted language models (LMs) as controllers of\nvisual modules for vision-and-language tasks. While existing work focuses on\nequipping LMs with visual understanding, we propose two novel\ninterpretable/explainable visual programming frameworks for text-to-image (T2I)\ngeneration and evaluation. First, we introduce VPGen, an interpretable\nstep-by-step T2I generation framework that decomposes T2I generation into three\nsteps: object/count generation, layout generation, and image generation. We\nemploy an LM to handle the first two steps (object/count generation and layout\ngeneration), by finetuning it on text-layout pairs. Our step-by-step T2I\ngeneration framework provides stronger spatial control than end-to-end models,\nthe dominant approach for this task. Furthermore, we leverage the world\nknowledge of pretrained LMs, overcoming the limitation of previous\nlayout-guided T2I works that can only handle predefined object classes. We\ndemonstrate that our VPGen has improved control in counts/spatial\nrelations/scales of objects than state-of-the-art T2I generation models.\nSecond, we introduce VPEval, an interpretable and explainable evaluation\nframework for T2I generation based on visual programming. Unlike previous T2I\nevaluations with a single scoring model that is accurate in some skills but\nunreliable in others, VPEval produces evaluation programs that invoke a set of\nvisual modules that are experts in different skills, and also provides\nvisual+textual explanations of the evaluation results. Our analysis shows that\nVPEval provides a more human-correlated evaluation for skill-specific and\nopen-ended prompts than widely used single model-based evaluation. We hope that\nour work encourages future progress on interpretable/explainable generation and\nevaluation for T2I models.\n",
+        "published": "2023",
+        "authors": [
+            "Jaemin Cho",
+            "Abhay Zala",
+            "Mohit Bansal"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2306.04047v2",
+        "title": "CAVEN: An Embodied Conversational Agent for Efficient Audio-Visual\n  Navigation in Noisy Environments",
+        "abstract": "  Audio-visual navigation of an agent towards locating an audio goal is a\nchallenging task especially when the audio is sporadic or the environment is\nnoisy. In this paper, we present CAVEN, a Conversation-based Audio-Visual\nEmbodied Navigation framework in which the agent may interact with a\nhuman/oracle for solving the task of navigating to an audio goal. Specifically,\nCAVEN is modeled as a budget-aware partially observable semi-Markov decision\nprocess that implicitly learns the uncertainty in the audio-based navigation\npolicy to decide when and how the agent may interact with the oracle. Our CAVEN\nagent can engage in fully-bidirectional natural language conversations by\nproducing relevant questions and interpret free-form, potentially noisy\nresponses from the oracle based on the audio-visual context. To enable such a\ncapability, CAVEN is equipped with: (i) a trajectory forecasting network that\nis grounded in audio-visual cues to produce a potential trajectory to the\nestimated goal, and (ii) a natural language based question generation and\nreasoning network to pose an interactive question to the oracle or interpret\nthe oracle's response to produce navigation instructions. To train the\ninteractive modules, we present a large scale dataset: AVN-Instruct, based on\nthe Landmark-RxR dataset. To substantiate the usefulness of conversations, we\npresent experiments on the benchmark audio-goal task using the SoundSpaces\nsimulator under various noisy settings. Our results reveal that our\nfully-conversational approach leads to nearly an order-of-magnitude improvement\nin success rate, especially in localizing new sound sources and against methods\nthat only use uni-directional interaction.\n",
+        "published": "2023",
+        "authors": [
+            "Xiulong Liu",
+            "Sudipta Paul",
+            "Moitreya Chatterjee",
+            "Anoop Cherian"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2307.10864v2",
+        "title": "Divide & Bind Your Attention for Improved Generative Semantic Nursing",
+        "abstract": "  Emerging large-scale text-to-image generative models, e.g., Stable Diffusion\n(SD), have exhibited overwhelming results with high fidelity. Despite the\nmagnificent progress, current state-of-the-art models still struggle to\ngenerate images fully adhering to the input prompt. Prior work, Attend &\nExcite, has introduced the concept of Generative Semantic Nursing (GSN), aiming\nto optimize cross-attention during inference time to better incorporate the\nsemantics. It demonstrates promising results in generating simple prompts,\ne.g., ``a cat and a dog''. However, its efficacy declines when dealing with\nmore complex prompts, and it does not explicitly address the problem of\nimproper attribute binding. To address the challenges posed by complex prompts\nor scenarios involving multiple entities and to achieve improved attribute\nbinding, we propose Divide & Bind. We introduce two novel loss objectives for\nGSN: a novel attendance loss and a binding loss. Our approach stands out in its\nability to faithfully synthesize desired objects with improved attribute\nalignment from complex prompts and exhibits superior performance across\nmultiple evaluation benchmarks.\n",
+        "published": "2023",
+        "authors": [
+            "Yumeng Li",
+            "Margret Keuper",
+            "Dan Zhang",
+            "Anna Khoreva"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2307.15644v2",
+        "title": "Scaling Data Generation in Vision-and-Language Navigation",
+        "abstract": "  Recent research in language-guided visual navigation has demonstrated a\nsignificant demand for the diversity of traversable environments and the\nquantity of supervision for training generalizable agents. To tackle the common\ndata scarcity issue in existing vision-and-language navigation datasets, we\npropose an effective paradigm for generating large-scale data for learning,\nwhich applies 1200+ photo-realistic environments from HM3D and Gibson datasets\nand synthesizes 4.9 million instruction trajectory pairs using fully-accessible\nresources on the web. Importantly, we investigate the influence of each\ncomponent in this paradigm on the agent's performance and study how to\nadequately apply the augmented data to pre-train and fine-tune an agent. Thanks\nto our large-scale dataset, the performance of an existing agent can be pushed\nup (+11% absolute with regard to previous SoTA) to a significantly new best of\n80% single-run success rate on the R2R test split by simple imitation learning.\nThe long-lasting generalization gap between navigating in seen and unseen\nenvironments is also reduced to less than 1% (versus 8% in the previous best\nmethod). Moreover, our paradigm also facilitates different models to achieve\nnew state-of-the-art navigation results on CVDN, REVERIE, and R2R in continuous\nenvironments.\n",
+        "published": "2023",
+        "authors": [
+            "Zun Wang",
+            "Jialu Li",
+            "Yicong Hong",
+            "Yi Wang",
+            "Qi Wu",
+            "Mohit Bansal",
+            "Stephen Gould",
+            "Hao Tan",
+            "Yu Qiao"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2307.16395v1",
+        "title": "Bridging the Gap: Exploring the Capabilities of Bridge-Architectures for\n  Complex Visual Reasoning Tasks",
+        "abstract": "  In recent times there has been a surge of multi-modal architectures based on\nLarge Language Models, which leverage the zero shot generation capabilities of\nLLMs and project image embeddings into the text space and then use the\nauto-regressive capacity to solve tasks such as VQA, captioning, and image\nretrieval. We name these architectures as \"bridge-architectures\" as they\nproject from the image space to the text space. These models deviate from the\ntraditional recipe of training transformer based multi-modal models, which\ninvolve using large-scale pre-training and complex multi-modal interactions\nthrough co or cross attention. However, the capabilities of bridge\narchitectures have not been tested on complex visual reasoning tasks which\nrequire fine grained analysis about the image. In this project, we investigate\nthe performance of these bridge-architectures on the NLVR2 dataset, and compare\nit to state-of-the-art transformer based architectures. We first extend the\ntraditional bridge architectures for the NLVR2 dataset, by adding object level\nfeatures to faciliate fine-grained object reasoning. Our analysis shows that\nadding object level features to bridge architectures does not help, and that\npre-training on multi-modal data is key for good performance on complex\nreasoning tasks such as NLVR2. We also demonstrate some initial results on a\nrecently bridge-architecture, LLaVA, in the zero shot setting and analyze its\nperformance.\n",
+        "published": "2023",
+        "authors": [
+            "Kousik Rajesh",
+            "Mrigank Raman",
+            "Mohammed Asad Karim",
+            "Pranit Chawla"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2308.02490v3",
+        "title": "MM-Vet: Evaluating Large Multimodal Models for Integrated Capabilities",
+        "abstract": "  We propose MM-Vet, an evaluation benchmark that examines large multimodal\nmodels (LMMs) on complicated multimodal tasks. Recent LMMs have shown various\nintriguing abilities, such as solving math problems written on the blackboard,\nreasoning about events and celebrities in news images, and explaining visual\njokes. Rapid model advancements pose challenges to evaluation benchmark\ndevelopment. Problems include: (1) How to systematically structure and evaluate\nthe complicated multimodal tasks; (2) How to design evaluation metrics that\nwork well across question and answer types; and (3) How to give model insights\nbeyond a simple performance ranking. To this end, we present MM-Vet, designed\nbased on the insight that the intriguing ability to solve complicated tasks is\noften achieved by a generalist model being able to integrate different core\nvision-language (VL) capabilities. MM-Vet defines 6 core VL capabilities and\nexamines the 16 integrations of interest derived from the capability\ncombination. For evaluation metrics, we propose an LLM-based evaluator for\nopen-ended outputs. The evaluator enables the evaluation across different\nquestion types and answer styles, resulting in a unified scoring metric. We\nevaluate representative LMMs on MM-Vet, providing insights into the\ncapabilities of different LMM system paradigms and models. Code and data are\navailable at https://github.com/yuweihao/MM-Vet.\n",
+        "published": "2023",
+        "authors": [
+            "Weihao Yu",
+            "Zhengyuan Yang",
+            "Linjie Li",
+            "Jianfeng Wang",
+            "Kevin Lin",
+            "Zicheng Liu",
+            "Xinchao Wang",
+            "Lijuan Wang"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2308.12067v2",
+        "title": "InstructionGPT-4: A 200-Instruction Paradigm for Fine-Tuning MiniGPT-4",
+        "abstract": "  Multimodal large language models are typically trained in two stages: first\npre-training on image-text pairs, and then fine-tuning using supervised\nvision-language instruction data. Recent studies have shown that large language\nmodels can achieve satisfactory results even with a limited amount of\nhigh-quality instruction-following data. In this paper, we introduce\nInstructionGPT-4, which is fine-tuned on a small dataset comprising only 200\nexamples, amounting to approximately 6\\% of the instruction-following data used\nin the alignment dataset for MiniGPT-4. To achieve this, we first propose\nseveral metrics to access the quality of multimodal instruction data. Based on\nthese metrics, we present an effective and trainable data selector to\nautomatically identify and filter low-quality vision-language data. By\nemploying this method, InstructionGPT-4 outperforms the original MiniGPT-4 on\nvarious evaluations. Overall, our findings demonstrate that less but\nhigh-quality instruction tuning data is efficient in enabling multimodal large\nlanguage models to generate better output. Our code is available at\nhttps://github.com/waltonfuture/InstructionGPT-4.\n",
+        "published": "2023",
+        "authors": [
+            "Lai Wei",
+            "Zihao Jiang",
+            "Weiran Huang",
+            "Lichao Sun"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2308.15126v3",
+        "title": "Evaluation and Analysis of Hallucination in Large Vision-Language Models",
+        "abstract": "  Large Vision-Language Models (LVLMs) have recently achieved remarkable\nsuccess. However, LVLMs are still plagued by the hallucination problem, which\nlimits the practicality in many scenarios. Hallucination refers to the\ninformation of LVLMs' responses that does not exist in the visual input, which\nposes potential risks of substantial consequences. There has been limited work\nstudying hallucination evaluation in LVLMs. In this paper, we propose\nHallucination Evaluation based on Large Language Models (HaELM), an LLM-based\nhallucination evaluation framework. HaELM achieves an approximate 95%\nperformance comparable to ChatGPT and has additional advantages including low\ncost, reproducibility, privacy preservation and local deployment. Leveraging\nthe HaELM, we evaluate the hallucination in current LVLMs. Furthermore, we\nanalyze the factors contributing to hallucination in LVLMs and offer helpful\nsuggestions to mitigate the hallucination problem. Our training data and human\nannotation hallucination data will be made public soon.\n",
+        "published": "2023",
+        "authors": [
+            "Junyang Wang",
+            "Yiyang Zhou",
+            "Guohai Xu",
+            "Pengcheng Shi",
+            "Chenlin Zhao",
+            "Haiyang Xu",
+            "Qinghao Ye",
+            "Ming Yan",
+            "Ji Zhang",
+            "Jihua Zhu",
+            "Jitao Sang",
+            "Haoyu Tang"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2310.02998v1",
+        "title": "ECoFLaP: Efficient Coarse-to-Fine Layer-Wise Pruning for Vision-Language\n  Models",
+        "abstract": "  Large Vision-Language Models (LVLMs) can understand the world comprehensively\nby integrating rich information from different modalities, achieving remarkable\nperformance improvements on various multimodal downstream tasks. However,\ndeploying LVLMs is often problematic due to their massive computational/energy\ncosts and carbon consumption. Such issues make it infeasible to adopt\nconventional iterative global pruning, which is costly due to computing the\nHessian matrix of the entire large model for sparsification. Alternatively,\nseveral studies have recently proposed layer-wise pruning approaches to avoid\nthe expensive computation of global pruning and efficiently compress model\nweights according to their importance within a layer. However, these methods\noften suffer from suboptimal model compression due to their lack of a global\nperspective. To address this limitation in recent efficient pruning methods for\nlarge models, we propose Efficient Coarse-to-Fine Layer-Wise Pruning (ECoFLaP),\na two-stage coarse-to-fine weight pruning approach for LVLMs. We first\ndetermine the sparsity ratios of different layers or blocks by leveraging the\nglobal importance score, which is efficiently computed based on the\nzeroth-order approximation of the global model gradients. Then, the multimodal\nmodel performs local layer-wise unstructured weight pruning based on\nglobally-informed sparsity ratios. We validate our proposed method across\nvarious multimodal and unimodal models and datasets, demonstrating significant\nperformance improvements over prevalent pruning techniques in the high-sparsity\nregime.\n",
+        "published": "2023",
+        "authors": [
+            "Yi-Lin Sung",
+            "Jaehong Yoon",
+            "Mohit Bansal"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2310.03731v1",
+        "title": "MathCoder: Seamless Code Integration in LLMs for Enhanced Mathematical\n  Reasoning",
+        "abstract": "  The recently released GPT-4 Code Interpreter has demonstrated remarkable\nproficiency in solving challenging math problems, primarily attributed to its\nability to seamlessly reason with natural language, generate code, execute\ncode, and continue reasoning based on the execution output. In this paper, we\npresent a method to fine-tune open-source language models, enabling them to use\ncode for modeling and deriving math equations and, consequently, enhancing\ntheir mathematical reasoning abilities. We propose a method of generating novel\nand high-quality datasets with math problems and their code-based solutions,\nreferred to as MathCodeInstruct. Each solution interleaves natural language,\ncode, and execution results. We also introduce a customized supervised\nfine-tuning and inference approach. This approach yields the MathCoder models,\na family of models capable of generating code-based solutions for solving\nchallenging math problems. Impressively, the MathCoder models achieve\nstate-of-the-art scores among open-source LLMs on the MATH (45.2%) and GSM8K\n(83.9%) datasets, substantially outperforming other open-source alternatives.\nNotably, the MathCoder model not only surpasses ChatGPT-3.5 and PaLM-2 on GSM8K\nand MATH but also outperforms GPT-4 on the competition-level MATH dataset. The\ndataset and models will be released at https://github.com/mathllm/MathCoder.\n",
+        "published": "2023",
+        "authors": [
+            "Ke Wang",
+            "Houxing Ren",
+            "Aojun Zhou",
+            "Zimu Lu",
+            "Sichun Luo",
+            "Weikang Shi",
+            "Renrui Zhang",
+            "Linqi Song",
+            "Mingjie Zhan",
+            "Hongsheng Li"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2310.07931v1",
+        "title": "D2 Pruning: Message Passing for Balancing Diversity and Difficulty in\n  Data Pruning",
+        "abstract": "  Analytical theories suggest that higher-quality data can lead to lower test\nerrors in models trained on a fixed data budget. Moreover, a model can be\ntrained on a lower compute budget without compromising performance if a dataset\ncan be stripped of its redundancies. Coreset selection (or data pruning) seeks\nto select a subset of the training data so as to maximize the performance of\nmodels trained on this subset, also referred to as coreset. There are two\ndominant approaches: (1) geometry-based data selection for maximizing data\ndiversity in the coreset, and (2) functions that assign difficulty scores to\nsamples based on training dynamics. Optimizing for data diversity leads to a\ncoreset that is biased towards easier samples, whereas, selection by difficulty\nranking omits easy samples that are necessary for the training of deep learning\nmodels. This demonstrates that data diversity and importance scores are two\ncomplementary factors that need to be jointly considered during coreset\nselection. We represent a dataset as an undirected graph and propose a novel\npruning algorithm, D2 Pruning, that uses forward and reverse message passing\nover this dataset graph for coreset selection. D2 Pruning updates the\ndifficulty scores of each example by incorporating the difficulty of its\nneighboring examples in the dataset graph. Then, these updated difficulty\nscores direct a graph-based sampling method to select a coreset that\nencapsulates both diverse and difficult regions of the dataset space. We\nevaluate supervised and self-supervised versions of our method on various\nvision and language datasets. Results show that D2 Pruning improves coreset\nselection over previous state-of-the-art methods for up to 70% pruning rates.\nAdditionally, we find that using D2 Pruning for filtering large multimodal\ndatasets leads to increased diversity in the dataset and improved\ngeneralization of pretrained models.\n",
+        "published": "2023",
+        "authors": [
+            "Adyasha Maharana",
+            "Prateek Yadav",
+            "Mohit Bansal"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2310.08367v1",
+        "title": "MCU: A Task-centric Framework for Open-ended Agent Evaluation in\n  Minecraft",
+        "abstract": "  To pursue the goal of creating an open-ended agent in Minecraft, an\nopen-ended game environment with unlimited possibilities, this paper introduces\na task-centric framework named MCU for Minecraft agent evaluation. The MCU\nframework leverages the concept of atom tasks as fundamental building blocks,\nenabling the generation of diverse or even arbitrary tasks. Within the MCU\nframework, each task is measured with six distinct difficulty scores (time\nconsumption, operational effort, planning complexity, intricacy, creativity,\nnovelty). These scores offer a multi-dimensional assessment of a task from\ndifferent angles, and thus can reveal an agent's capability on specific facets.\nThe difficulty scores also serve as the feature of each task, which creates a\nmeaningful task space and unveils the relationship between tasks. For efficient\nevaluation of Minecraft agents employing the MCU framework, we maintain a\nunified benchmark, namely SkillForge, which comprises representative tasks with\ndiverse categories and difficulty distribution. We also provide convenient\nfilters for users to select tasks to assess specific capabilities of agents. We\nshow that MCU has the high expressivity to cover all tasks used in recent\nliterature on Minecraft agent, and underscores the need for advancements in\nareas such as creativity, precise control, and out-of-distribution\ngeneralization under the goal of open-ended Minecraft agent development.\n",
+        "published": "2023",
+        "authors": [
+            "Haowei Lin",
+            "Zihao Wang",
+            "Jianzhu Ma",
+            "Yitao Liang"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2310.16045v1",
+        "title": "Woodpecker: Hallucination Correction for Multimodal Large Language\n  Models",
+        "abstract": "  Hallucination is a big shadow hanging over the rapidly evolving Multimodal\nLarge Language Models (MLLMs), referring to the phenomenon that the generated\ntext is inconsistent with the image content. In order to mitigate\nhallucinations, existing studies mainly resort to an instruction-tuning manner\nthat requires retraining the models with specific data. In this paper, we pave\na different way, introducing a training-free method named Woodpecker. Like a\nwoodpecker heals trees, it picks out and corrects hallucinations from the\ngenerated text. Concretely, Woodpecker consists of five stages: key concept\nextraction, question formulation, visual knowledge validation, visual claim\ngeneration, and hallucination correction. Implemented in a post-remedy manner,\nWoodpecker can easily serve different MLLMs, while being interpretable by\naccessing intermediate outputs of the five stages. We evaluate Woodpecker both\nquantitatively and qualitatively and show the huge potential of this new\nparadigm. On the POPE benchmark, our method obtains a 30.66%/24.33% improvement\nin accuracy over the baseline MiniGPT-4/mPLUG-Owl. The source code is released\nat https://github.com/BradyFU/Woodpecker.\n",
+        "published": "2023",
+        "authors": [
+            "Shukang Yin",
+            "Chaoyou Fu",
+            "Sirui Zhao",
+            "Tong Xu",
+            "Hao Wang",
+            "Dianbo Sui",
+            "Yunhang Shen",
+            "Ke Li",
+            "Xing Sun",
+            "Enhong Chen"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2310.18235v2",
+        "title": "Davidsonian Scene Graph: Improving Reliability in Fine-grained\n  Evaluation for Text-to-Image Generation",
+        "abstract": "  Evaluating text-to-image models is notoriously difficult. A strong recent\napproach for assessing text-image faithfulness is based on QG/A (question\ngeneration and answering), which uses pre-trained foundational models to\nautomatically generate a set of questions and answers from the prompt, and\noutput images are scored based on whether these answers extracted with a visual\nquestion answering model are consistent with the prompt-based answers. This\nkind of evaluation is naturally dependent on the quality of the underlying QG\nand QA models. We identify and address several reliability challenges in\nexisting QG/A work: (a) QG questions should respect the prompt (avoiding\nhallucinations, duplications, and omissions) and (b) VQA answers should be\nconsistent (not asserting that there is no motorcycle in an image while also\nclaiming the motorcycle is blue). We address these issues with Davidsonian\nScene Graph (DSG), an empirically grounded evaluation framework inspired by\nformal semantics. DSG is an automatic, graph-based QG/A that is modularly\nimplemented to be adaptable to any QG/A module. DSG produces atomic and unique\nquestions organized in dependency graphs, which (i) ensure appropriate semantic\ncoverage and (ii) sidestep inconsistent answers. With extensive experimentation\nand human evaluation on a range of model configurations (LLM, VQA, and T2I), we\nempirically demonstrate that DSG addresses the challenges noted above. Finally,\nwe present DSG-1k, an open-sourced evaluation benchmark that includes 1,060\nprompts, covering a wide range of fine-grained semantic categories with a\nbalanced distribution. We release the DSG-1k prompts and the corresponding DSG\nquestions.\n",
+        "published": "2023",
+        "authors": [
+            "Jaemin Cho",
+            "Yushi Hu",
+            "Roopal Garg",
+            "Peter Anderson",
+            "Ranjay Krishna",
+            "Jason Baldridge",
+            "Mohit Bansal",
+            "Jordi Pont-Tuset",
+            "Su Wang"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2310.18348v3",
+        "title": "Meaning Representations from Trajectories in Autoregressive Models",
+        "abstract": "  We propose to extract meaning representations from autoregressive language\nmodels by considering the distribution of all possible trajectories extending\nan input text. This strategy is prompt-free, does not require fine-tuning, and\nis applicable to any pre-trained autoregressive model. Moreover, unlike\nvector-based representations, distribution-based representations can also model\nasymmetric relations (e.g., direction of logical entailment, hypernym/hyponym\nrelations) by using algebraic operations between likelihood functions. These\nideas are grounded in distributional perspectives on semantics and are\nconnected to standard constructions in automata theory, but to our knowledge\nthey have not been applied to modern language models. We empirically show that\nthe representations obtained from large models align well with human\nannotations, outperform other zero-shot and prompt-free methods on semantic\nsimilarity tasks, and can be used to solve more complex entailment and\ncontainment tasks that standard embeddings cannot handle. Finally, we extend\nour method to represent data from different modalities (e.g., image and text)\nusing multimodal autoregressive models. Our code is available at:\nhttps://github.com/tianyu139/meaning-as-trajectories\n",
+        "published": "2023",
+        "authors": [
+            "Tian Yu Liu",
+            "Matthew Trager",
+            "Alessandro Achille",
+            "Pramuditha Perera",
+            "Luca Zancato",
+            "Stefano Soatto"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2311.12871v1",
+        "title": "An Embodied Generalist Agent in 3D World",
+        "abstract": "  Leveraging massive knowledge and learning schemes from large language models\n(LLMs), recent machine learning models show notable successes in building\ngeneralist agents that exhibit the capability of general-purpose task solving\nin diverse domains, including natural language processing, computer vision, and\nrobotics. However, a significant challenge remains as these models exhibit\nlimited ability in understanding and interacting with the 3D world. We argue\nthis limitation significantly hinders the current models from performing\nreal-world tasks and further achieving general intelligence. To this end, we\nintroduce an embodied multi-modal and multi-task generalist agent that excels\nin perceiving, grounding, reasoning, planning, and acting in the 3D world. Our\nproposed agent, referred to as LEO, is trained with shared LLM-based model\narchitectures, objectives, and weights in two stages: (i) 3D vision-language\nalignment and (ii) 3D vision-language-action instruction tuning. To facilitate\nthe training, we meticulously curate and generate an extensive dataset\ncomprising object-level and scene-level multi-modal tasks with exceeding scale\nand complexity, necessitating a deep understanding of and interaction with the\n3D world. Through rigorous experiments, we demonstrate LEO's remarkable\nproficiency across a wide spectrum of tasks, including 3D captioning, question\nanswering, embodied reasoning, embodied navigation, and robotic manipulation.\nOur ablation results further provide valuable insights for the development of\nfuture embodied generalist agents.\n",
+        "published": "2023",
+        "authors": [
+            "Jiangyong Huang",
+            "Silong Yong",
+            "Xiaojian Ma",
+            "Xiongkun Linghu",
+            "Puhao Li",
+            "Yan Wang",
+            "Qing Li",
+            "Song-Chun Zhu",
+            "Baoxiong Jia",
+            "Siyuan Huang"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2311.15964v1",
+        "title": "Efficient Pre-training for Localized Instruction Generation of Videos",
+        "abstract": "  Procedural videos show step-by-step demonstrations of tasks like recipe\npreparation. Understanding such videos is challenging, involving the precise\nlocalization of steps and the generation of textual instructions. Manually\nannotating steps and writing instructions is costly, which limits the size of\ncurrent datasets and hinders effective learning. Leveraging large but noisy\nvideo-transcript datasets for pre-training can boost performance, but demands\nsignificant computational resources. Furthermore, transcripts contain\nirrelevant content and exhibit style variation compared to instructions written\nby human annotators. To mitigate both issues, we propose a technique,\nSieve-&-Swap, to automatically curate a smaller dataset: (i) Sieve filters\nirrelevant transcripts and (ii) Swap enhances the quality of the text\ninstruction by automatically replacing the transcripts with human-written\ninstructions from a text-only recipe dataset. The curated dataset, three orders\nof magnitude smaller than current web-scale datasets, enables efficient\ntraining of large-scale models with competitive performance. We complement our\nSieve-\\&-Swap approach with a Procedure Transformer (ProcX) for end-to-end step\nlocalization and instruction generation for procedural videos. When this model\nis pre-trained on our curated dataset, it achieves state-of-the-art performance\nin zero-shot and finetuning settings on YouCook2 and Tasty, while using a\nfraction of the computational resources.\n",
+        "published": "2023",
+        "authors": [
+            "Anil Batra",
+            "Davide Moltisanti",
+            "Laura Sevilla-Lara",
+            "Marcus Rohrbach",
+            "Frank Keller"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2312.03025v1",
+        "title": "Training on Synthetic Data Beats Real Data in Multimodal Relation\n  Extraction",
+        "abstract": "  The task of multimodal relation extraction has attracted significant research\nattention, but progress is constrained by the scarcity of available training\ndata. One natural thought is to extend existing datasets with cross-modal\ngenerative models. In this paper, we consider a novel problem setting, where\nonly unimodal data, either text or image, are available during training. We aim\nto train a multimodal classifier from synthetic data that perform well on real\nmultimodal test data. However, training with synthetic data suffers from two\nobstacles: lack of data diversity and label information loss. To alleviate the\nissues, we propose Mutual Information-aware Multimodal Iterated Relational dAta\nGEneration (MI2RAGE), which applies Chained Cross-modal Generation (CCG) to\npromote diversity in the generated data and exploits a teacher network to\nselect valuable training samples with high mutual information with the\nground-truth labels. Comparing our method to direct training on synthetic data,\nwe observed a significant improvement of 24.06% F1 with synthetic text and\n26.42% F1 with synthetic images. Notably, our best model trained on completely\nsynthetic images outperforms prior state-of-the-art models trained on real\nmultimodal data by a margin of 3.76% in F1. Our codebase will be made available\nupon acceptance.\n",
+        "published": "2023",
+        "authors": [
+            "Zilin Du",
+            "Haoxin Li",
+            "Xu Guo",
+            "Boyang Li"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2312.06742v1",
+        "title": "Honeybee: Locality-enhanced Projector for Multimodal LLM",
+        "abstract": "  In Multimodal Large Language Models (MLLMs), a visual projector plays a\ncrucial role in bridging pre-trained vision encoders with LLMs, enabling\nprofound visual understanding while harnessing the LLMs' robust capabilities.\nDespite the importance of the visual projector, it has been relatively less\nexplored. In this study, we first identify two essential projector properties:\n(i) flexibility in managing the number of visual tokens, crucial for MLLMs'\noverall efficiency, and (ii) preservation of local context from visual\nfeatures, vital for spatial understanding. Based on these findings, we propose\na novel projector design that is both flexible and locality-enhanced,\neffectively satisfying the two desirable properties. Additionally, we present\ncomprehensive strategies to effectively utilize multiple and multifaceted\ninstruction datasets. Through extensive experiments, we examine the impact of\nindividual design choices. Finally, our proposed MLLM, Honeybee, remarkably\noutperforms previous state-of-the-art methods across various benchmarks,\nincluding MME, MMBench, SEED-Bench, and LLaVA-Bench, achieving significantly\nhigher efficiency. Code and models are available at\nhttps://github.com/kakaobrain/honeybee.\n",
+        "published": "2023",
+        "authors": [
+            "Junbum Cha",
+            "Wooyoung Kang",
+            "Jonghwan Mun",
+            "Byungseok Roh"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2312.09411v1",
+        "title": "OTOv3: Automatic Architecture-Agnostic Neural Network Training and\n  Compression from Structured Pruning to Erasing Operators",
+        "abstract": "  Compressing a predefined deep neural network (DNN) into a compact sub-network\nwith competitive performance is crucial in the efficient machine learning\nrealm. This topic spans various techniques, from structured pruning to neural\narchitecture search, encompassing both pruning and erasing operators\nperspectives. Despite advancements, existing methods suffers from complex,\nmulti-stage processes that demand substantial engineering and domain knowledge,\nlimiting their broader applications. We introduce the third-generation\nOnly-Train-Once (OTOv3), which first automatically trains and compresses a\ngeneral DNN through pruning and erasing operations, creating a compact and\ncompetitive sub-network without the need of fine-tuning. OTOv3 simplifies and\nautomates the training and compression process, minimizes the engineering\nefforts required from users. It offers key technological advancements: (i)\nautomatic search space construction for general DNNs based on dependency graph\nanalysis; (ii) Dual Half-Space Projected Gradient (DHSPG) and its enhanced\nversion with hierarchical search (H2SPG) to reliably solve (hierarchical)\nstructured sparsity problems and ensure sub-network validity; and (iii)\nautomated sub-network construction using solutions from DHSPG/H2SPG and\ndependency graphs. Our empirical results demonstrate the efficacy of OTOv3\nacross various benchmarks in structured pruning and neural architecture search.\nOTOv3 produces sub-networks that match or exceed the state-of-the-arts. The\nsource code will be available at https://github.com/tianyic/only_train_once.\n",
+        "published": "2023",
+        "authors": [
+            "Tianyi Chen",
+            "Tianyu Ding",
+            "Zhihui Zhu",
+            "Zeyu Chen",
+            "HsiangTao Wu",
+            "Ilya Zharkov",
+            "Luming Liang"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2312.11562v4",
+        "title": "A Survey of Reasoning with Foundation Models",
+        "abstract": "  Reasoning, a crucial ability for complex problem-solving, plays a pivotal\nrole in various real-world settings such as negotiation, medical diagnosis, and\ncriminal investigation. It serves as a fundamental methodology in the field of\nArtificial General Intelligence (AGI). With the ongoing development of\nfoundation models, there is a growing interest in exploring their abilities in\nreasoning tasks. In this paper, we introduce seminal foundation models proposed\nor adaptable for reasoning, highlighting the latest advancements in various\nreasoning tasks, methods, and benchmarks. We then delve into the potential\nfuture directions behind the emergence of reasoning abilities within foundation\nmodels. We also discuss the relevance of multimodal learning, autonomous\nagents, and super alignment in the context of reasoning. By discussing these\nfuture research directions, we hope to inspire researchers in their exploration\nof this field, stimulate further advancements in reasoning with foundation\nmodels, and contribute to the development of AGI.\n",
+        "published": "2023",
+        "authors": [
+            "Jiankai Sun",
+            "Chuanyang Zheng",
+            "Enze Xie",
+            "Zhengying Liu",
+            "Ruihang Chu",
+            "Jianing Qiu",
+            "Jiaqi Xu",
+            "Mingyu Ding",
+            "Hongyang Li",
+            "Mengzhe Geng",
+            "Yue Wu",
+            "Wenhai Wang",
+            "Junsong Chen",
+            "Zhangyue Yin",
+            "Xiaozhe Ren",
+            "Jie Fu",
+            "Junxian He",
+            "Wu Yuan",
+            "Qi Liu",
+            "Xihui Liu",
+            "Yu Li",
+            "Hao Dong",
+            "Yu Cheng",
+            "Ming Zhang",
+            "Pheng Ann Heng",
+            "Jifeng Dai",
+            "Ping Luo",
+            "Jingdong Wang",
+            "Ji-Rong Wen",
+            "Xipeng Qiu",
+            "Yike Guo",
+            "Hui Xiong",
+            "Qun Liu",
+            "Zhenguo Li"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2312.13558v1",
+        "title": "The Truth is in There: Improving Reasoning in Language Models with\n  Layer-Selective Rank Reduction",
+        "abstract": "  Transformer-based Large Language Models (LLMs) have become a fixture in\nmodern machine learning. Correspondingly, significant resources are allocated\ntowards research that aims to further advance this technology, typically\nresulting in models of increasing size that are trained on increasing amounts\nof data. This work, however, demonstrates the surprising result that it is\noften possible to significantly improve the performance of LLMs by selectively\nremoving higher-order components of their weight matrices. This simple\nintervention, which we call LAyer-SElective Rank reduction (LASER), can be done\non a model after training has completed, and requires no additional parameters\nor data. We show extensive experiments demonstrating the generality of this\nfinding across language models and datasets, and provide in-depth analyses\noffering insights into both when LASER is effective and the mechanism by which\nit operates.\n",
+        "published": "2023",
+        "authors": [
+            "Pratyusha Sharma",
+            "Jordan T. Ash",
+            "Dipendra Misra"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2401.05224v1",
+        "title": "Do Vision and Language Encoders Represent the World Similarly?",
+        "abstract": "  Aligned text-image encoders such as CLIP have become the de facto model for\nvision-language tasks. Furthermore, modality-specific encoders achieve\nimpressive performances in their respective domains. This raises a central\nquestion: does an alignment exist between uni-modal vision and language\nencoders since they fundamentally represent the same physical world? Analyzing\nthe latent spaces structure of vision and language models on image-caption\nbenchmarks using the Centered Kernel Alignment (CKA), we find that the\nrepresentation spaces of unaligned and aligned encoders are semantically\nsimilar. In the absence of statistical similarity in aligned encoders like\nCLIP, we show that a possible matching of unaligned encoders exists without any\ntraining. We frame this as a seeded graph-matching problem exploiting the\nsemantic similarity between graphs and propose two methods - a Fast Quadratic\nAssignment Problem optimization, and a novel localized CKA metric-based\nmatching/retrieval. We demonstrate the effectiveness of this on several\ndownstream tasks including cross-lingual, cross-domain caption matching and\nimage classification.\n",
+        "published": "2024",
+        "authors": [
+            "Mayug Maniparambil",
+            "Raiymbek Akshulakov",
+            "Yasser Abdelaziz Dahou Djilali",
+            "Sanath Narayan",
+            "Mohamed El Amine Seddik",
+            "Karttikeya Mangalam",
+            "Noel E. O'Connor"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1501.03302v2",
+        "title": "Hard to Cheat: A Turing Test based on Answering Questions about Images",
+        "abstract": "  Progress in language and image understanding by machines has sparkled the\ninterest of the research community in more open-ended, holistic tasks, and\nrefueled an old AI dream of building intelligent machines. We discuss a few\nprominent challenges that characterize such holistic tasks and argue for\n\"question answering about images\" as a particular appealing instance of such a\nholistic task. In particular, we point out that it is a version of a Turing\nTest that is likely to be more robust to over-interpretations and contrast it\nwith tasks like grounding and generation of descriptions. Finally, we discuss\ntools to measure progress in this field.\n",
+        "published": "2015",
+        "authors": [
+            "Mateusz Malinowski",
+            "Mario Fritz"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1505.01809v3",
+        "title": "Language Models for Image Captioning: The Quirks and What Works",
+        "abstract": "  Two recent approaches have achieved state-of-the-art results in image\ncaptioning. The first uses a pipelined process where a set of candidate words\nis generated by a convolutional neural network (CNN) trained on images, and\nthen a maximum entropy (ME) language model is used to arrange these words into\na coherent sentence. The second uses the penultimate activation layer of the\nCNN as input to a recurrent neural network (RNN) that then generates the\ncaption sequence. In this paper, we compare the merits of these different\nlanguage modeling approaches for the first time by using the same\nstate-of-the-art CNN as input. We examine issues in the different approaches,\nincluding linguistic irregularities, caption repetition, and data set overlap.\nBy combining key aspects of the ME and RNN methods, we achieve a new record\nperformance over previously published results on the benchmark COCO dataset.\nHowever, the gains we see in BLEU do not translate to human judgments.\n",
+        "published": "2015",
+        "authors": [
+            "Jacob Devlin",
+            "Hao Cheng",
+            "Hao Fang",
+            "Saurabh Gupta",
+            "Li Deng",
+            "Xiaodong He",
+            "Geoffrey Zweig",
+            "Margaret Mitchell"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1505.02074v4",
+        "title": "Exploring Models and Data for Image Question Answering",
+        "abstract": "  This work aims to address the problem of image-based question-answering (QA)\nwith new models and datasets. In our work, we propose to use neural networks\nand visual semantic embeddings, without intermediate stages such as object\ndetection and image segmentation, to predict answers to simple questions about\nimages. Our model performs 1.8 times better than the only published results on\nan existing image QA dataset. We also present a question generation algorithm\nthat converts image descriptions, which are widely available, into QA form. We\nused this algorithm to produce an order-of-magnitude larger dataset, with more\nevenly distributed answers. A suite of baseline results on this new dataset are\nalso presented.\n",
+        "published": "2015",
+        "authors": [
+            "Mengye Ren",
+            "Ryan Kiros",
+            "Richard Zemel"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1608.02717v1",
+        "title": "Mean Box Pooling: A Rich Image Representation and Output Embedding for\n  the Visual Madlibs Task",
+        "abstract": "  We present Mean Box Pooling, a novel visual representation that pools over\nCNN representations of a large number, highly overlapping object proposals. We\nshow that such representation together with nCCA, a successful multimodal\nembedding technique, achieves state-of-the-art performance on the Visual\nMadlibs task. Moreover, inspired by the nCCA's objective function, we extend\nclassical CNN+LSTM approach to train the network by directly maximizing the\nsimilarity between the internal representation of the deep learning\narchitecture and candidate answers. Again, such approach achieves a significant\nimprovement over the prior work that also uses CNN+LSTM approach on Visual\nMadlibs.\n",
+        "published": "2016",
+        "authors": [
+            "Ashkan Mokarian",
+            "Mateusz Malinowski",
+            "Mario Fritz"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1608.07639v1",
+        "title": "Learning to generalize to new compositions in image understanding",
+        "abstract": "  Recurrent neural networks have recently been used for learning to describe\nimages using natural language. However, it has been observed that these models\ngeneralize poorly to scenes that were not observed during training, possibly\ndepending too strongly on the statistics of the text in the training data. Here\nwe propose to describe images using short structured representations, aiming to\ncapture the crux of a description. These structured representations allow us to\ntease-out and evaluate separately two types of generalization: standard\ngeneralization to new images with similar scenes, and generalization to new\ncombinations of known entities. We compare two learning approaches on the\nMS-COCO dataset: a state-of-the-art recurrent network based on an LSTM (Show,\nAttend and Tell), and a simple structured prediction model on top of a deep\nnetwork. We find that the structured model generalizes to new compositions\nsubstantially better than the LSTM, ~7 times the accuracy of predicting\nstructured representations. By providing a concrete method to quantify\ngeneralization for unseen combinations, we argue that structured\nrepresentations and compositional splits are a useful benchmark for image\ncaptioning, and advocate compositional models that capture linguistic and\nvisual structure.\n",
+        "published": "2016",
+        "authors": [
+            "Yuval Atzmon",
+            "Jonathan Berant",
+            "Vahid Kezami",
+            "Amir Globerson",
+            "Gal Chechik"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1608.08716v1",
+        "title": "Measuring Machine Intelligence Through Visual Question Answering",
+        "abstract": "  As machines have become more intelligent, there has been a renewed interest\nin methods for measuring their intelligence. A common approach is to propose\ntasks for which a human excels, but one which machines find difficult. However,\nan ideal task should also be easy to evaluate and not be easily gameable. We\nbegin with a case study exploring the recently popular task of image captioning\nand its limitations as a task for measuring machine intelligence. An\nalternative and more promising task is Visual Question Answering that tests a\nmachine's ability to reason about language and vision. We describe a dataset\nunprecedented in size created for the task that contains over 760,000 human\ngenerated questions about images. Using around 10 million human generated\nanswers, machines may be easily evaluated.\n",
+        "published": "2016",
+        "authors": [
+            "C. Lawrence Zitnick",
+            "Aishwarya Agrawal",
+            "Stanislaw Antol",
+            "Margaret Mitchell",
+            "Dhruv Batra",
+            "Devi Parikh"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1608.08974v2",
+        "title": "Towards Transparent AI Systems: Interpreting Visual Question Answering\n  Models",
+        "abstract": "  Deep neural networks have shown striking progress and obtained\nstate-of-the-art results in many AI research fields in the recent years.\nHowever, it is often unsatisfying to not know why they predict what they do. In\nthis paper, we address the problem of interpreting Visual Question Answering\n(VQA) models. Specifically, we are interested in finding what part of the input\n(pixels in images or words in questions) the VQA model focuses on while\nanswering the question. To tackle this problem, we use two visualization\ntechniques -- guided backpropagation and occlusion -- to find important words\nin the question and important regions in the image. We then present qualitative\nand quantitative analyses of these importance maps. We found that even without\nexplicit attention mechanisms, VQA models may sometimes be implicitly attending\nto relevant regions in the image, and often to appropriate words in the\nquestion.\n",
+        "published": "2016",
+        "authors": [
+            "Yash Goyal",
+            "Akrit Mohapatra",
+            "Devi Parikh",
+            "Dhruv Batra"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1706.01322v2",
+        "title": "Deep learning evaluation using deep linguistic processing",
+        "abstract": "  We discuss problems with the standard approaches to evaluation for tasks like\nvisual question answering, and argue that artificial data can be used to\naddress these as a complement to current practice. We demonstrate that with the\nhelp of existing 'deep' linguistic processing technology we are able to create\nchallenging abstract datasets, which enable us to investigate the language\nunderstanding abilities of multimodal deep learning models in detail, as\ncompared to a single performance value on a static and monolithic dataset.\n",
+        "published": "2017",
+        "authors": [
+            "Alexander Kuhnle",
+            "Ann Copestake"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1707.02812v1",
+        "title": "Towards Crafting Text Adversarial Samples",
+        "abstract": "  Adversarial samples are strategically modified samples, which are crafted\nwith the purpose of fooling a classifier at hand. An attacker introduces\nspecially crafted adversarial samples to a deployed classifier, which are being\nmis-classified by the classifier. However, the samples are perceived to be\ndrawn from entirely different classes and thus it becomes hard to detect the\nadversarial samples. Most of the prior works have been focused on synthesizing\nadversarial samples in the image domain. In this paper, we propose a new method\nof crafting adversarial text samples by modification of the original samples.\nModifications of the original text samples are done by deleting or replacing\nthe important or salient words in the text or by introducing new words in the\ntext sample. Our algorithm works best for the datasets which have\nsub-categories within each of the classes of examples. While crafting\nadversarial samples, one of the key constraint is to generate meaningful\nsentences which can at pass off as legitimate from language (English)\nviewpoint. Experimental results on IMDB movie review dataset for sentiment\nanalysis and Twitter dataset for gender detection show the efficiency of our\nproposed method.\n",
+        "published": "2017",
+        "authors": [
+            "Suranjana Samanta",
+            "Sameep Mehta"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1711.11543v2",
+        "title": "Embodied Question Answering",
+        "abstract": "  We present a new AI task -- Embodied Question Answering (EmbodiedQA) -- where\nan agent is spawned at a random location in a 3D environment and asked a\nquestion (\"What color is the car?\"). In order to answer, the agent must first\nintelligently navigate to explore the environment, gather information through\nfirst-person (egocentric) vision, and then answer the question (\"orange\").\n  This challenging task requires a range of AI skills -- active perception,\nlanguage understanding, goal-driven navigation, commonsense reasoning, and\ngrounding of language into actions. In this work, we develop the environments,\nend-to-end-trained reinforcement learning agents, and evaluation protocols for\nEmbodiedQA.\n",
+        "published": "2017",
+        "authors": [
+            "Abhishek Das",
+            "Samyak Datta",
+            "Georgia Gkioxari",
+            "Stefan Lee",
+            "Devi Parikh",
+            "Dhruv Batra"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1802.03881v3",
+        "title": "Answerer in Questioner's Mind: Information Theoretic Approach to\n  Goal-Oriented Visual Dialog",
+        "abstract": "  Goal-oriented dialog has been given attention due to its numerous\napplications in artificial intelligence. Goal-oriented dialogue tasks occur\nwhen a questioner asks an action-oriented question and an answerer responds\nwith the intent of letting the questioner know a correct action to take. To ask\nthe adequate question, deep learning and reinforcement learning have been\nrecently applied. However, these approaches struggle to find a competent\nrecurrent neural questioner, owing to the complexity of learning a series of\nsentences. Motivated by theory of mind, we propose \"Answerer in Questioner's\nMind\" (AQM), a novel information theoretic algorithm for goal-oriented dialog.\nWith AQM, a questioner asks and infers based on an approximated probabilistic\nmodel of the answerer. The questioner figures out the answerer's intention via\nselecting a plausible question by explicitly calculating the information gain\nof the candidate intentions and possible answers to each question. We test our\nframework on two goal-oriented visual dialog tasks: \"MNIST Counting Dialog\" and\n\"GuessWhat?!\". In our experiments, AQM outperforms comparative algorithms by a\nlarge margin.\n",
+        "published": "2018",
+        "authors": [
+            "Sang-Woo Lee",
+            "Yu-Jung Heo",
+            "Byoung-Tak Zhang"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1806.00738v1",
+        "title": "Contextualize, Show and Tell: A Neural Visual Storyteller",
+        "abstract": "  We present a neural model for generating short stories from image sequences,\nwhich extends the image description model by Vinyals et al. (Vinyals et al.,\n2015). This extension relies on an encoder LSTM to compute a context vector of\neach story from the image sequence. This context vector is used as the first\nstate of multiple independent decoder LSTMs, each of which generates the\nportion of the story corresponding to each image in the sequence by taking the\nimage embedding as the first input. Our model showed competitive results with\nthe METEOR metric and human ratings in the internal track of the Visual\nStorytelling Challenge 2018.\n",
+        "published": "2018",
+        "authors": [
+            "Diana Gonzalez-Rico",
+            "Gibran Fuentes-Pineda"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1807.01670v2",
+        "title": "Encoding Spatial Relations from Natural Language",
+        "abstract": "  Natural language processing has made significant inroads into learning the\nsemantics of words through distributional approaches, however representations\nlearnt via these methods fail to capture certain kinds of information implicit\nin the real world. In particular, spatial relations are encoded in a way that\nis inconsistent with human spatial reasoning and lacking invariance to\nviewpoint changes. We present a system capable of capturing the semantics of\nspatial relations such as behind, left of, etc from natural language. Our key\ncontributions are a novel multi-modal objective based on generating images of\nscenes from their textual descriptions, and a new dataset on which to train it.\nWe demonstrate that internal representations are robust to meaning preserving\ntransformations of descriptions (paraphrase invariance), while viewpoint\ninvariance is an emergent property of the system.\n",
+        "published": "2018",
+        "authors": [
+            "Tiago Ramalho",
+            "Tom\u00e1\u0161 Ko\u010disk\u00fd",
+            "Frederic Besse",
+            "S. M. Ali Eslami",
+            "G\u00e1bor Melis",
+            "Fabio Viola",
+            "Phil Blunsom",
+            "Karl Moritz Hermann"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1811.05013v1",
+        "title": "Blindfold Baselines for Embodied QA",
+        "abstract": "  We explore blindfold (question-only) baselines for Embodied Question\nAnswering. The EmbodiedQA task requires an agent to answer a question by\nintelligently navigating in a simulated environment, gathering necessary visual\ninformation only through first-person vision before finally answering.\nConsequently, a blindfold baseline which ignores the environment and visual\ninformation is a degenerate solution, yet we show through our experiments on\nthe EQAv1 dataset that a simple question-only baseline achieves\nstate-of-the-art results on the EmbodiedQA task in all cases except when the\nagent is spawned extremely close to the object.\n",
+        "published": "2018",
+        "authors": [
+            "Ankesh Anand",
+            "Eugene Belilovsky",
+            "Kyle Kastner",
+            "Hugo Larochelle",
+            "Aaron Courville"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1811.12354v7",
+        "title": "Touchdown: Natural Language Navigation and Spatial Reasoning in Visual\n  Street Environments",
+        "abstract": "  We study the problem of jointly reasoning about language and vision through a\nnavigation and spatial reasoning task. We introduce the Touchdown task and\ndataset, where an agent must first follow navigation instructions in a\nreal-life visual urban environment, and then identify a location described in\nnatural language to find a hidden object at the goal position. The data\ncontains 9,326 examples of English instructions and spatial descriptions paired\nwith demonstrations. Empirical analysis shows the data presents an open\nchallenge to existing methods, and qualitative linguistic analysis shows that\nthe data displays richer use of spatial reasoning compared to related\nresources.\n",
+        "published": "2018",
+        "authors": [
+            "Howard Chen",
+            "Alane Suhr",
+            "Dipendra Misra",
+            "Noah Snavely",
+            "Yoav Artzi"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1902.03570v1",
+        "title": "EvalAI: Towards Better Evaluation Systems for AI Agents",
+        "abstract": "  We introduce EvalAI, an open source platform for evaluating and comparing\nmachine learning (ML) and artificial intelligence algorithms (AI) at scale.\nEvalAI is built to provide a scalable solution to the research community to\nfulfill the critical need of evaluating machine learning models and agents\nacting in an environment against annotations or with a human-in-the-loop. This\nwill help researchers, students, and data scientists to create, collaborate,\nand participate in AI challenges organized around the globe. By simplifying and\nstandardizing the process of benchmarking these models, EvalAI seeks to lower\nthe barrier to entry for participating in the global scientific effort to push\nthe frontiers of machine learning and artificial intelligence, thereby\nincreasing the rate of measurable progress in this domain.\n",
+        "published": "2019",
+        "authors": [
+            "Deshraj Yadav",
+            "Rishabh Jain",
+            "Harsh Agrawal",
+            "Prithvijit Chattopadhyay",
+            "Taranjeet Singh",
+            "Akash Jain",
+            "Shiv Baran Singh",
+            "Stefan Lee",
+            "Dhruv Batra"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1902.09506v3",
+        "title": "GQA: A New Dataset for Real-World Visual Reasoning and Compositional\n  Question Answering",
+        "abstract": "  We introduce GQA, a new dataset for real-world visual reasoning and\ncompositional question answering, seeking to address key shortcomings of\nprevious VQA datasets. We have developed a strong and robust question engine\nthat leverages scene graph structures to create 22M diverse reasoning\nquestions, all come with functional programs that represent their semantics. We\nuse the programs to gain tight control over the answer distribution and present\na new tunable smoothing technique to mitigate question biases. Accompanying the\ndataset is a suite of new metrics that evaluate essential qualities such as\nconsistency, grounding and plausibility. An extensive analysis is performed for\nbaselines as well as state-of-the-art models, providing fine-grained results\nfor different question types and topologies. Whereas a blind LSTM obtains mere\n42.1%, and strong VQA models achieve 54.1%, human performance tops at 89.3%,\noffering ample opportunity for new research to explore. We strongly hope GQA\nwill provide an enabling resource for the next generation of models with\nenhanced robustness, improved consistency, and deeper semantic understanding\nfor images and language.\n",
+        "published": "2019",
+        "authors": [
+            "Drew A. Hudson",
+            "Christopher D. Manning"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1910.01442v2",
+        "title": "CLEVRER: CoLlision Events for Video REpresentation and Reasoning",
+        "abstract": "  The ability to reason about temporal and causal events from videos lies at\nthe core of human intelligence. Most video reasoning benchmarks, however, focus\non pattern recognition from complex visual and language input, instead of on\ncausal structure. We study the complementary problem, exploring the temporal\nand causal structures behind videos of objects with simple visual appearance.\nTo this end, we introduce the CoLlision Events for Video REpresentation and\nReasoning (CLEVRER), a diagnostic video dataset for systematic evaluation of\ncomputational models on a wide range of reasoning tasks. Motivated by the\ntheory of human casual judgment, CLEVRER includes four types of questions:\ndescriptive (e.g., \"what color\"), explanatory (\"what is responsible for\"),\npredictive (\"what will happen next\"), and counterfactual (\"what if\"). We\nevaluate various state-of-the-art models for visual reasoning on our benchmark.\nWhile these models thrive on the perception-based task (descriptive), they\nperform poorly on the causal tasks (explanatory, predictive and\ncounterfactual), suggesting that a principled approach for causal reasoning\nshould incorporate the capability of both perceiving complex visual and\nlanguage inputs, and understanding the underlying dynamics and causal\nrelations. We also study an oracle model that explicitly combines these\ncomponents via symbolic representations.\n",
+        "published": "2019",
+        "authors": [
+            "Kexin Yi",
+            "Chuang Gan",
+            "Yunzhu Li",
+            "Pushmeet Kohli",
+            "Jiajun Wu",
+            "Antonio Torralba",
+            "Joshua B. Tenenbaum"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1910.11124v2",
+        "title": "Enforcing Reasoning in Visual Commonsense Reasoning",
+        "abstract": "  The task of Visual Commonsense Reasoning is extremely challenging in the\nsense that the model has to not only be able to answer a question given an\nimage, but also be able to learn to reason. The baselines introduced in this\ntask are quite limiting because two networks are trained for predicting answers\nand rationales separately. Question and image is used as input to train answer\nprediction network while question, image and correct answer are used as input\nin the rationale prediction network. As rationale is conditioned on the correct\nanswer, it is based on the assumption that we can solve Visual Question\nAnswering task without any error - which is over ambitious. Moreover, such an\napproach makes both answer and rationale prediction two completely independent\nVQA tasks rendering cognition task meaningless. In this paper, we seek to\naddress these issues by proposing an end-to-end trainable model which considers\nboth answers and their reasons jointly. Specifically, we first predict the\nanswer for the question and then use the chosen answer to predict the\nrationale. However, a trivial design of such a model becomes non-differentiable\nwhich makes it difficult to train. We solve this issue by proposing four\napproaches - softmax, gumbel-softmax, reinforcement learning based sampling and\ndirect cross entropy against all pairs of answers and rationales. We\ndemonstrate through experiments that our model performs competitively against\ncurrent state-of-the-art. We conclude with an analysis of presented approaches\nand discuss avenues for further work.\n",
+        "published": "2019",
+        "authors": [
+            "Hammad A. Ayyubi",
+            "Md. Mehrab Tanjim",
+            "David J. Kriegman"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2004.14973v2",
+        "title": "Improving Vision-and-Language Navigation with Image-Text Pairs from the\n  Web",
+        "abstract": "  Following a navigation instruction such as 'Walk down the stairs and stop at\nthe brown sofa' requires embodied AI agents to ground scene elements referenced\nvia language (e.g. 'stairs') to visual content in the environment (pixels\ncorresponding to 'stairs').\n  We ask the following question -- can we leverage abundant 'disembodied'\nweb-scraped vision-and-language corpora (e.g. Conceptual Captions) to learn\nvisual groundings (what do 'stairs' look like?) that improve performance on a\nrelatively data-starved embodied perception task (Vision-and-Language\nNavigation)? Specifically, we develop VLN-BERT, a visiolinguistic\ntransformer-based model for scoring the compatibility between an instruction\n('...stop at the brown sofa') and a sequence of panoramic RGB images captured\nby the agent. We demonstrate that pretraining VLN-BERT on image-text pairs from\nthe web before fine-tuning on embodied path-instruction data significantly\nimproves performance on VLN -- outperforming the prior state-of-the-art in the\nfully-observed setting by 4 absolute percentage points on success rate.\nAblations of our pretraining curriculum show each stage to be impactful -- with\ntheir combination resulting in further positive synergistic effects.\n",
+        "published": "2020",
+        "authors": [
+            "Arjun Majumdar",
+            "Ayush Shrivastava",
+            "Stefan Lee",
+            "Peter Anderson",
+            "Devi Parikh",
+            "Dhruv Batra"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1907.03950v4",
+        "title": "Learning by Abstraction: The Neural State Machine",
+        "abstract": "  We introduce the Neural State Machine, seeking to bridge the gap between the\nneural and symbolic views of AI and integrate their complementary strengths for\nthe task of visual reasoning. Given an image, we first predict a probabilistic\ngraph that represents its underlying semantics and serves as a structured world\nmodel. Then, we perform sequential reasoning over the graph, iteratively\ntraversing its nodes to answer a given question or draw a new inference. In\ncontrast to most neural architectures that are designed to closely interact\nwith the raw sensory data, our model operates instead in an abstract latent\nspace, by transforming both the visual and linguistic modalities into semantic\nconcept-based representations, thereby achieving enhanced transparency and\nmodularity. We evaluate our model on VQA-CP and GQA, two recent VQA datasets\nthat involve compositionality, multi-step inference and diverse reasoning\nskills, achieving state-of-the-art results in both cases. We provide further\nexperiments that illustrate the model's strong generalization capacity across\nmultiple dimensions, including novel compositions of concepts, changes in the\nanswer distribution, and unseen linguistic structures, demonstrating the\nqualities and efficacy of our approach.\n",
+        "published": "2019",
+        "authors": [
+            "Drew A. Hudson",
+            "Christopher D. Manning"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1908.04950v1",
+        "title": "VideoNavQA: Bridging the Gap between Visual and Embodied Question\n  Answering",
+        "abstract": "  Embodied Question Answering (EQA) is a recently proposed task, where an agent\nis placed in a rich 3D environment and must act based solely on its egocentric\ninput to answer a given question. The desired outcome is that the agent learns\nto combine capabilities such as scene understanding, navigation and language\nunderstanding in order to perform complex reasoning in the visual world.\nHowever, initial advancements combining standard vision and language methods\nwith imitation and reinforcement learning algorithms have shown EQA might be\ntoo complex and challenging for these techniques. In order to investigate the\nfeasibility of EQA-type tasks, we build the VideoNavQA dataset that contains\npairs of questions and videos generated in the House3D environment. The goal of\nthis dataset is to assess question-answering performance from nearly-ideal\nnavigation paths, while considering a much more complete variety of questions\nthan current instantiations of the EQA task. We investigate several models,\nadapted from popular VQA methods, on this new benchmark. This establishes an\ninitial understanding of how well VQA-style methods can perform within this\nnovel EQA paradigm.\n",
+        "published": "2019",
+        "authors": [
+            "C\u0103t\u0103lina Cangea",
+            "Eugene Belilovsky",
+            "Pietro Li\u00f2",
+            "Aaron Courville"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1908.06336v2",
+        "title": "What is needed for simple spatial language capabilities in VQA?",
+        "abstract": "  Visual question answering (VQA) comprises a variety of language capabilities.\nThe diagnostic benchmark dataset CLEVR has fueled progress by helping to better\nassess and distinguish models in basic abilities like counting, comparing and\nspatial reasoning in vitro. Following this approach, we focus on spatial\nlanguage capabilities and investigate the question: what are the key\ningredients to handle simple visual-spatial relations? We look at the SAN,\nRelNet, FiLM and MC models and evaluate their learning behavior on diagnostic\ndata which is solely focused on spatial relations. Via comparative analysis and\ntargeted model modification we identify what really is required to\nsubstantially improve upon the CNN-LSTM baseline.\n",
+        "published": "2019",
+        "authors": [
+            "Alexander Kuhnle",
+            "Ann Copestake"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1908.07846v3",
+        "title": "Representing text as abstract images enables image classifiers to also\n  simultaneously classify text",
+        "abstract": "  We introduce a novel method for converting text data into abstract image\nrepresentations, which allows image-based processing techniques (e.g. image\nclassification networks) to be applied to text-based comparison problems. We\napply the technique to entity disambiguation of inventor names in US patents.\nThe method involves converting text from each pairwise comparison between two\ninventor name records into a 2D RGB (stacked) image representation. We then\ntrain an image classification neural network to discriminate between such\npairwise comparison images, and use the trained network to label each pair of\nrecords as either matched (same inventor) or non-matched (different inventors),\nobtaining highly accurate results. Our new text-to-image representation method\ncould also be used more broadly for other NLP comparison problems, such as\ndisambiguation of academic publications, or for problems that require\nsimultaneous classification of both text and image datasets.\n",
+        "published": "2019",
+        "authors": [
+            "Stephen M. Petrie",
+            "T'Mir D. Julius"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1712.00377v2",
+        "title": "Don't Just Assume; Look and Answer: Overcoming Priors for Visual\n  Question Answering",
+        "abstract": "  A number of studies have found that today's Visual Question Answering (VQA)\nmodels are heavily driven by superficial correlations in the training data and\nlack sufficient image grounding. To encourage development of models geared\ntowards the latter, we propose a new setting for VQA where for every question\ntype, train and test sets have different prior distributions of answers.\nSpecifically, we present new splits of the VQA v1 and VQA v2 datasets, which we\ncall Visual Question Answering under Changing Priors (VQA-CP v1 and VQA-CP v2\nrespectively). First, we evaluate several existing VQA models under this new\nsetting and show that their performance degrades significantly compared to the\noriginal VQA setting. Second, we propose a novel Grounded Visual Question\nAnswering model (GVQA) that contains inductive biases and restrictions in the\narchitecture specifically designed to prevent the model from 'cheating' by\nprimarily relying on priors in the training data. Specifically, GVQA explicitly\ndisentangles the recognition of visual concepts present in the image from the\nidentification of plausible answer space for a given question, enabling the\nmodel to more robustly generalize across different distributions of answers.\nGVQA is built off an existing VQA model -- Stacked Attention Networks (SAN).\nOur experiments demonstrate that GVQA significantly outperforms SAN on both\nVQA-CP v1 and VQA-CP v2 datasets. Interestingly, it also outperforms more\npowerful VQA models such as Multimodal Compact Bilinear Pooling (MCB) in\nseveral cases. GVQA offers strengths complementary to SAN when trained and\nevaluated on the original VQA v1 and VQA v2 datasets. Finally, GVQA is more\ntransparent and interpretable than existing VQA models.\n",
+        "published": "2017",
+        "authors": [
+            "Aishwarya Agrawal",
+            "Dhruv Batra",
+            "Devi Parikh",
+            "Aniruddha Kembhavi"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1712.05558v3",
+        "title": "CoDraw: Collaborative Drawing as a Testbed for Grounded Goal-driven\n  Communication",
+        "abstract": "  In this work, we propose a goal-driven collaborative task that combines\nlanguage, perception, and action. Specifically, we develop a Collaborative\nimage-Drawing game between two agents, called CoDraw. Our game is grounded in a\nvirtual world that contains movable clip art objects. The game involves two\nplayers: a Teller and a Drawer. The Teller sees an abstract scene containing\nmultiple clip art pieces in a semantically meaningful configuration, while the\nDrawer tries to reconstruct the scene on an empty canvas using available clip\nart pieces. The two players communicate with each other using natural language.\nWe collect the CoDraw dataset of ~10K dialogs consisting of ~138K messages\nexchanged between human players. We define protocols and metrics to evaluate\nlearned agents in this testbed, highlighting the need for a novel \"crosstalk\"\nevaluation condition which pairs agents trained independently on disjoint\nsubsets of the training data. We present models for our task and benchmark them\nusing both fully automated evaluation and by having them play the game live\nwith humans.\n",
+        "published": "2017",
+        "authors": [
+            "Jin-Hwa Kim",
+            "Nikita Kitaev",
+            "Xinlei Chen",
+            "Marcus Rohrbach",
+            "Byoung-Tak Zhang",
+            "Yuandong Tian",
+            "Dhruv Batra",
+            "Devi Parikh"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1809.03044v1",
+        "title": "How clever is the FiLM model, and how clever can it be?",
+        "abstract": "  The FiLM model achieves close-to-perfect performance on the diagnostic CLEVR\ndataset and is distinguished from other such models by having a comparatively\nsimple and easily transferable architecture. In this paper, we investigate in\nmore detail the ability of FiLM to learn various linguistic constructions. Our\nmain results show that (a) FiLM is not able to learn relational statements\nstraight away except for very simple instances, (b) training on a broader set\nof instances as well as pretraining on simpler instance types can help\nalleviate these learning difficulties, (c) mixing is less robust than\npretraining and very sensitive to the compositional structure of the dataset.\nOverall, our results suggest that the approach of big all-encompassing datasets\nand the paradigm of \"the effectiveness of data\" may have fundamental\nlimitations.\n",
+        "published": "2018",
+        "authors": [
+            "Alexander Kuhnle",
+            "Huiyuan Xie",
+            "Ann Copestake"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1812.11737v2",
+        "title": "The meaning of \"most\" for visual question answering models",
+        "abstract": "  The correct interpretation of quantifier statements in the context of a\nvisual scene requires non-trivial inference mechanisms. For the example of\n\"most\", we discuss two strategies which rely on fundamentally different\ncognitive concepts. Our aim is to identify what strategy deep learning models\nfor visual question answering learn when trained on such questions. To this\nend, we carefully design data to replicate experiments from psycholinguistics\nwhere the same question was investigated for humans. Focusing on the FiLM\nvisual question answering model, our experiments indicate that a form of\napproximate number system emerges whose performance declines with more\ndifficult scenes as predicted by Weber's law. Moreover, we identify confounding\nfactors, like spatial arrangement of the scene, which impede the effectiveness\nof this system.\n",
+        "published": "2018",
+        "authors": [
+            "Alexander Kuhnle",
+            "Ann Copestake"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1903.03166v2",
+        "title": "CLEVR-Dialog: A Diagnostic Dataset for Multi-Round Reasoning in Visual\n  Dialog",
+        "abstract": "  Visual Dialog is a multimodal task of answering a sequence of questions\ngrounded in an image, using the conversation history as context. It entails\nchallenges in vision, language, reasoning, and grounding. However, studying\nthese subtasks in isolation on large, real datasets is infeasible as it\nrequires prohibitively-expensive complete annotation of the 'state' of all\nimages and dialogs.\n  We develop CLEVR-Dialog, a large diagnostic dataset for studying multi-round\nreasoning in visual dialog. Specifically, we construct a dialog grammar that is\ngrounded in the scene graphs of the images from the CLEVR dataset. This\ncombination results in a dataset where all aspects of the visual dialog are\nfully annotated. In total, CLEVR-Dialog contains 5 instances of 10-round\ndialogs for about 85k CLEVR images, totaling to 4.25M question-answer pairs.\n  We use CLEVR-Dialog to benchmark performance of standard visual dialog\nmodels; in particular, on visual coreference resolution (as a function of the\ncoreference distance). This is the first analysis of its kind for visual dialog\nmodels that was not possible without this dataset. We hope the findings from\nCLEVR-Dialog will help inform the development of future models for visual\ndialog. Our dataset and code are publicly available.\n",
+        "published": "2019",
+        "authors": [
+            "Satwik Kottur",
+            "Jos\u00e9 M. F. Moura",
+            "Devi Parikh",
+            "Dhruv Batra",
+            "Marcus Rohrbach"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1912.09551v1",
+        "title": "Deep Exemplar Networks for VQA and VQG",
+        "abstract": "  In this paper, we consider the problem of solving semantic tasks such as\n`Visual Question Answering' (VQA), where one aims to answers related to an\nimage and `Visual Question Generation' (VQG), where one aims to generate a\nnatural question pertaining to an image. Solutions for VQA and VQG tasks have\nbeen proposed using variants of encoder-decoder deep learning based frameworks\nthat have shown impressive performance. Humans however often show\ngeneralization by relying on exemplar based approaches. For instance, the work\nby Tversky and Kahneman suggests that humans use exemplars when making\ncategorizations and decisions. In this work, we propose the incorporation of\nexemplar based approaches towards solving these problems. Specifically, we\nincorporate exemplar based approaches and show that an exemplar based module\ncan be incorporated in almost any of the deep learning architectures proposed\nin the literature and the addition of such a block results in improved\nperformance for solving these tasks. Thus, just as the incorporation of\nattention is now considered de facto useful for solving these tasks, similarly,\nincorporating exemplars also can be considered to improve any proposed\narchitecture for solving this task. We provide extensive empirical analysis for\nthe same through various architectures, ablations, and state of the art\ncomparisons.\n",
+        "published": "2019",
+        "authors": [
+            "Badri N. Patro",
+            "Vinay P. Namboodiri"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2001.03671v1",
+        "title": "Retouchdown: Adding Touchdown to StreetLearn as a Shareable Resource for\n  Language Grounding Tasks in Street View",
+        "abstract": "  The Touchdown dataset (Chen et al., 2019) provides instructions by human\nannotators for navigation through New York City streets and for resolving\nspatial descriptions at a given location. To enable the wider research\ncommunity to work effectively with the Touchdown tasks, we are publicly\nreleasing the 29k raw Street View panoramas needed for Touchdown. We follow the\nprocess used for the StreetLearn data release (Mirowski et al., 2019) to check\npanoramas for personally identifiable information and blur them as necessary.\nThese have been added to the StreetLearn dataset and can be obtained via the\nsame process as used previously for StreetLearn. We also provide a reference\nimplementation for both of the Touchdown tasks: vision and language navigation\n(VLN) and spatial description resolution (SDR). We compare our model results to\nthose given in Chen et al. (2019) and show that the panoramas we have added to\nStreetLearn fully support both Touchdown tasks and can be used effectively for\nfurther research and comparison.\n",
+        "published": "2020",
+        "authors": [
+            "Harsh Mehta",
+            "Yoav Artzi",
+            "Jason Baldridge",
+            "Eugene Ie",
+            "Piotr Mirowski"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2001.06927v2",
+        "title": "SQuINTing at VQA Models: Introspecting VQA Models with Sub-Questions",
+        "abstract": "  Existing VQA datasets contain questions with varying levels of complexity.\nWhile the majority of questions in these datasets require perception for\nrecognizing existence, properties, and spatial relationships of entities, a\nsignificant portion of questions pose challenges that correspond to reasoning\ntasks - tasks that can only be answered through a synthesis of perception and\nknowledge about the world, logic and / or reasoning. Analyzing performance\nacross this distinction allows us to notice when existing VQA models have\nconsistency issues; they answer the reasoning questions correctly but fail on\nassociated low-level perception questions. For example, in Figure 1, models\nanswer the complex reasoning question \"Is the banana ripe enough to eat?\"\ncorrectly, but fail on the associated perception question \"Are the bananas\nmostly green or yellow?\" indicating that the model likely answered the\nreasoning question correctly but for the wrong reason. We quantify the extent\nto which this phenomenon occurs by creating a new Reasoning split of the VQA\ndataset and collecting VQA-introspect, a new dataset1 which consists of 238K\nnew perception questions which serve as sub questions corresponding to the set\nof perceptual tasks needed to effectively answer the complex reasoning\nquestions in the Reasoning split. Our evaluation shows that state-of-the-art\nVQA models have comparable performance in answering perception and reasoning\nquestions, but suffer from consistency problems. To address this shortcoming,\nwe propose an approach called Sub-Question Importance-aware Network Tuning\n(SQuINT), which encourages the model to attend to the same parts of the image\nwhen answering the reasoning question and the perception sub question. We show\nthat SQuINT improves model consistency by ~5%, also marginally improving\nperformance on the Reasoning questions in VQA, while also displaying better\nattention maps.\n",
+        "published": "2020",
+        "authors": [
+            "Ramprasaath R. Selvaraju",
+            "Purva Tendulkar",
+            "Devi Parikh",
+            "Eric Horvitz",
+            "Marco Ribeiro",
+            "Besmira Nushi",
+            "Ece Kamar"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2001.11673v1",
+        "title": "Augmenting Visual Question Answering with Semantic Frame Information in\n  a Multitask Learning Approach",
+        "abstract": "  Visual Question Answering (VQA) concerns providing answers to Natural\nLanguage questions about images. Several deep neural network approaches have\nbeen proposed to model the task in an end-to-end fashion. Whereas the task is\ngrounded in visual processing, if the question focuses on events described by\nverbs, the language understanding component becomes crucial. Our hypothesis is\nthat models should be aware of verb semantics, as expressed via semantic role\nlabels, argument types, and/or frame elements. Unfortunately, no VQA dataset\nexists that includes verb semantic information. Our first contribution is a new\nVQA dataset (imSituVQA) that we built by taking advantage of the imSitu\nannotations. The imSitu dataset consists of images manually labeled with\nsemantic frame elements, mostly taken from FrameNet. Second, we propose a\nmultitask CNN-LSTM VQA model that learns to classify the answers as well as the\nsemantic frame elements. Our experiments show that semantic frame element\nclassification helps the VQA system avoid inconsistent responses and improves\nperformance.\n",
+        "published": "2020",
+        "authors": [
+            "Mehrdad Alizadeh",
+            "Barbara Di Eugenio"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2006.09073v3",
+        "title": "Mucko: Multi-Layer Cross-Modal Knowledge Reasoning for Fact-based Visual\n  Question Answering",
+        "abstract": "  Fact-based Visual Question Answering (FVQA) requires external knowledge\nbeyond visible content to answer questions about an image, which is challenging\nbut indispensable to achieve general VQA. One limitation of existing FVQA\nsolutions is that they jointly embed all kinds of information without\nfine-grained selection, which introduces unexpected noises for reasoning the\nfinal answer. How to capture the question-oriented and\ninformation-complementary evidence remains a key challenge to solve the\nproblem. In this paper, we depict an image by a multi-modal heterogeneous\ngraph, which contains multiple layers of information corresponding to the\nvisual, semantic and factual features. On top of the multi-layer graph\nrepresentations, we propose a modality-aware heterogeneous graph convolutional\nnetwork to capture evidence from different layers that is most relevant to the\ngiven question. Specifically, the intra-modal graph convolution selects\nevidence from each modality and cross-modal graph convolution aggregates\nrelevant information across different modalities. By stacking this process\nmultiple times, our model performs iterative reasoning and predicts the optimal\nanswer by analyzing all question-oriented evidence. We achieve a new\nstate-of-the-art performance on the FVQA task and demonstrate the effectiveness\nand interpretability of our model with extensive experiments.\n",
+        "published": "2020",
+        "authors": [
+            "Zihao Zhu",
+            "Jing Yu",
+            "Yujing Wang",
+            "Yajing Sun",
+            "Yue Hu",
+            "Qi Wu"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2008.05221v4",
+        "title": "Compression of Deep Learning Models for Text: A Survey",
+        "abstract": "  In recent years, the fields of natural language processing (NLP) and\ninformation retrieval (IR) have made tremendous progress thanksto deep learning\nmodels like Recurrent Neural Networks (RNNs), Gated Recurrent Units (GRUs) and\nLong Short-Term Memory (LSTMs)networks, and Transformer [120] based models like\nBidirectional Encoder Representations from Transformers (BERT) [24],\nGenerativePre-training Transformer (GPT-2) [94], Multi-task Deep Neural Network\n(MT-DNN) [73], Extra-Long Network (XLNet) [134], Text-to-text transfer\ntransformer (T5) [95], T-NLG [98] and GShard [63]. But these models are\nhumongous in size. On the other hand,real world applications demand small model\nsize, low response times and low computational power wattage. In this survey,\nwediscuss six different types of methods (Pruning, Quantization, Knowledge\nDistillation, Parameter Sharing, Tensor Decomposition, andSub-quadratic\nTransformer based methods) for compression of such models to enable their\ndeployment in real industry NLP projects.Given the critical need of building\napplications with efficient and small models, and the large amount of recently\npublished work inthis area, we believe that this survey organizes the plethora\nof work done by the 'deep learning for NLP' community in the past fewyears and\npresents it as a coherent story.\n",
+        "published": "2020",
+        "authors": [
+            "Manish Gupta",
+            "Puneet Agrawal"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2010.06775v1",
+        "title": "Vokenization: Improving Language Understanding with Contextualized,\n  Visual-Grounded Supervision",
+        "abstract": "  Humans learn language by listening, speaking, writing, reading, and also, via\ninteraction with the multimodal real world. Existing language pre-training\nframeworks show the effectiveness of text-only self-supervision while we\nexplore the idea of a visually-supervised language model in this paper. We find\nthat the main reason hindering this exploration is the large divergence in\nmagnitude and distributions between the visually-grounded language datasets and\npure-language corpora. Therefore, we develop a technique named \"vokenization\"\nthat extrapolates multimodal alignments to language-only data by contextually\nmapping language tokens to their related images (which we call \"vokens\"). The\n\"vokenizer\" is trained on relatively small image captioning datasets and we\nthen apply it to generate vokens for large language corpora. Trained with these\ncontextually generated vokens, our visually-supervised language models show\nconsistent improvements over self-supervised alternatives on multiple\npure-language tasks such as GLUE, SQuAD, and SWAG. Code and pre-trained models\npublicly available at https://github.com/airsplay/vokenization\n",
+        "published": "2020",
+        "authors": [
+            "Hao Tan",
+            "Mohit Bansal"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2010.15251v2",
+        "title": "Fusion Models for Improved Visual Captioning",
+        "abstract": "  Visual captioning aims to generate textual descriptions given images or\nvideos. Traditionally, image captioning models are trained on human annotated\ndatasets such as Flickr30k and MS-COCO, which are limited in size and\ndiversity. This limitation hinders the generalization capabilities of these\nmodels while also rendering them liable to making mistakes. Language models\ncan, however, be trained on vast amounts of freely available unlabelled data\nand have recently emerged as successful language encoders and coherent text\ngenerators. Meanwhile, several unimodal and multimodal fusion techniques have\nbeen proven to work well for natural language generation and automatic speech\nrecognition. Building on these recent developments, and with the aim of\nimproving the quality of generated captions, the contribution of our work in\nthis paper is two-fold: First, we propose a generic multimodal model fusion\nframework for caption generation as well as emendation where we utilize\ndifferent fusion strategies to integrate a pretrained Auxiliary Language Model\n(AuxLM) within the traditional encoder-decoder visual captioning frameworks.\nNext, we employ the same fusion strategies to integrate a pretrained Masked\nLanguage Model (MLM), namely BERT, with a visual captioning model, viz. Show,\nAttend, and Tell, for emending both syntactic and semantic errors in captions.\nOur caption emendation experiments on three benchmark image captioning\ndatasets, viz. Flickr8k, Flickr30k, and MSCOCO, show improvements over the\nbaseline, indicating the usefulness of our proposed multimodal fusion\nstrategies. Further, we perform a preliminary qualitative analysis on the\nemended captions and identify error categories based on the type of\ncorrections.\n",
+        "published": "2020",
+        "authors": [
+            "Marimuthu Kalimuthu",
+            "Aditya Mogadala",
+            "Marius Mosbach",
+            "Dietrich Klakow"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2101.00529v2",
+        "title": "VinVL: Revisiting Visual Representations in Vision-Language Models",
+        "abstract": "  This paper presents a detailed study of improving visual representations for\nvision language (VL) tasks and develops an improved object detection model to\nprovide object-centric representations of images. Compared to the most widely\nused \\emph{bottom-up and top-down} model \\cite{anderson2018bottom}, the new\nmodel is bigger, better-designed for VL tasks, and pre-trained on much larger\ntraining corpora that combine multiple public annotated object detection\ndatasets. Therefore, it can generate representations of a richer collection of\nvisual objects and concepts. While previous VL research focuses mainly on\nimproving the vision-language fusion model and leaves the object detection\nmodel improvement untouched, we show that visual features matter significantly\nin VL models. In our experiments we feed the visual features generated by the\nnew object detection model into a Transformer-based VL fusion model \\oscar\n\\cite{li2020oscar}, and utilize an improved approach \\short\\ to pre-train the\nVL model and fine-tune it on a wide range of downstream VL tasks. Our results\nshow that the new visual features significantly improve the performance across\nall VL tasks, creating new state-of-the-art results on seven public benchmarks.\nWe will release the new object detection model to public.\n",
+        "published": "2021",
+        "authors": [
+            "Pengchuan Zhang",
+            "Xiujun Li",
+            "Xiaowei Hu",
+            "Jianwei Yang",
+            "Lei Zhang",
+            "Lijuan Wang",
+            "Yejin Choi",
+            "Jianfeng Gao"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2101.01761v1",
+        "title": "AutoDropout: Learning Dropout Patterns to Regularize Deep Networks",
+        "abstract": "  Neural networks are often over-parameterized and hence benefit from\naggressive regularization. Conventional regularization methods, such as Dropout\nor weight decay, do not leverage the structures of the network's inputs and\nhidden states. As a result, these conventional methods are less effective than\nmethods that leverage the structures, such as SpatialDropout and DropBlock,\nwhich randomly drop the values at certain contiguous areas in the hidden states\nand setting them to zero. Although the locations of dropout areas random, the\npatterns of SpatialDropout and DropBlock are manually designed and fixed. Here\nwe propose to learn the dropout patterns. In our method, a controller learns to\ngenerate a dropout pattern at every channel and layer of a target network, such\nas a ConvNet or a Transformer. The target network is then trained with the\ndropout pattern, and its resulting validation performance is used as a signal\nfor the controller to learn from. We show that this method works well for both\nimage recognition on CIFAR-10 and ImageNet, as well as language modeling on\nPenn Treebank and WikiText-2. The learned dropout patterns also transfers to\ndifferent tasks and datasets, such as from language model on Penn Treebank to\nEngligh-French translation on WMT 2014. Our code will be available.\n",
+        "published": "2021",
+        "authors": [
+            "Hieu Pham",
+            "Quoc V. Le"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2105.02626v1",
+        "title": "A First Look: Towards Explainable TextVQA Models via Visual and Textual\n  Explanations",
+        "abstract": "  Explainable deep learning models are advantageous in many situations. Prior\nwork mostly provide unimodal explanations through post-hoc approaches not part\nof the original system design. Explanation mechanisms also ignore useful\ntextual information present in images. In this paper, we propose MTXNet, an\nend-to-end trainable multimodal architecture to generate multimodal\nexplanations, which focuses on the text in the image. We curate a novel dataset\nTextVQA-X, containing ground truth visual and multi-reference textual\nexplanations that can be leveraged during both training and evaluation. We then\nquantitatively show that training with multimodal explanations complements\nmodel performance and surpasses unimodal baselines by up to 7% in CIDEr scores\nand 2% in IoU. More importantly, we demonstrate that the multimodal\nexplanations are consistent with human interpretations, help justify the\nmodels' decision, and provide useful insights to help diagnose an incorrect\nprediction. Finally, we describe a real-world e-commerce application for using\nthe generated multimodal explanations.\n",
+        "published": "2021",
+        "authors": [
+            "Varun Nagaraj Rao",
+            "Xingjian Zhen",
+            "Karen Hovsepian",
+            "Mingwei Shen"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2105.12628v1",
+        "title": "Predict then Interpolate: A Simple Algorithm to Learn Stable Classifiers",
+        "abstract": "  We propose Predict then Interpolate (PI), a simple algorithm for learning\ncorrelations that are stable across environments. The algorithm follows from\nthe intuition that when using a classifier trained on one environment to make\npredictions on examples from another environment, its mistakes are informative\nas to which correlations are unstable. In this work, we prove that by\ninterpolating the distributions of the correct predictions and the wrong\npredictions, we can uncover an oracle distribution where the unstable\ncorrelation vanishes. Since the oracle interpolation coefficients are not\naccessible, we use group distributionally robust optimization to minimize the\nworst-case risk across all such interpolations. We evaluate our method on both\ntext classification and image classification. Empirical results demonstrate\nthat our algorithm is able to learn robust classifiers (outperforms IRM by\n23.85% on synthetic environments and 12.41% on natural environments). Our code\nand data are available at https://github.com/YujiaBao/Predict-then-Interpolate.\n",
+        "published": "2021",
+        "authors": [
+            "Yujia Bao",
+            "Shiyu Chang",
+            "Regina Barzilay"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2107.00315v1",
+        "title": "Interviewer-Candidate Role Play: Towards Developing Real-World NLP\n  Systems",
+        "abstract": "  Standard NLP tasks do not incorporate several common real-world scenarios\nsuch as seeking clarifications about the question, taking advantage of clues,\nabstaining in order to avoid incorrect answers, etc. This difference in task\nformulation hinders the adoption of NLP systems in real-world settings. In this\nwork, we take a step towards bridging this gap and present a multi-stage task\nthat simulates a typical human-human questioner-responder interaction such as\nan interview. Specifically, the system is provided with question\nsimplifications, knowledge statements, examples, etc. at various stages to\nimprove its prediction when it is not sufficiently confident. We instantiate\nthe proposed task in Natural Language Inference setting where a system is\nevaluated on both in-domain and out-of-domain (OOD) inputs. We conduct\ncomprehensive experiments and find that the multi-stage formulation of our task\nleads to OOD generalization performance improvement up to 2.29% in Stage 1,\n1.91% in Stage 2, 54.88% in Stage 3, and 72.02% in Stage 4 over the standard\nunguided prediction. However, our task leaves a significant challenge for NLP\nresearchers to further improve OOD performance at each stage.\n",
+        "published": "2021",
+        "authors": [
+            "Neeraj Varshney",
+            "Swaroop Mishra",
+            "Chitta Baral"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2107.02331v1",
+        "title": "Mind Your Outliers! Investigating the Negative Impact of Outliers on\n  Active Learning for Visual Question Answering",
+        "abstract": "  Active learning promises to alleviate the massive data needs of supervised\nmachine learning: it has successfully improved sample efficiency by an order of\nmagnitude on traditional tasks like topic classification and object\nrecognition. However, we uncover a striking contrast to this promise: across 5\nmodels and 4 datasets on the task of visual question answering, a wide variety\nof active learning approaches fail to outperform random selection. To\nunderstand this discrepancy, we profile 8 active learning methods on a\nper-example basis, and identify the problem as collective outliers -- groups of\nexamples that active learning methods prefer to acquire but models fail to\nlearn (e.g., questions that ask about text in images or require external\nknowledge). Through systematic ablation experiments and qualitative\nvisualizations, we verify that collective outliers are a general phenomenon\nresponsible for degrading pool-based active learning. Notably, we show that\nactive learning sample efficiency increases significantly as the number of\ncollective outliers in the active learning pool decreases. We conclude with a\ndiscussion and prescriptive recommendations for mitigating the effects of these\noutliers in future work.\n",
+        "published": "2021",
+        "authors": [
+            "Siddharth Karamcheti",
+            "Ranjay Krishna",
+            "Li Fei-Fei",
+            "Christopher D. Manning"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2107.02681v2",
+        "title": "VidLanKD: Improving Language Understanding via Video-Distilled Knowledge\n  Transfer",
+        "abstract": "  Since visual perception can give rich information beyond text descriptions\nfor world understanding, there has been increasing interest in leveraging\nvisual grounding for language learning. Recently, vokenization (Tan and Bansal,\n2020) has attracted attention by using the predictions of a text-to-image\nretrieval model as labels for language model supervision. Despite its success,\nthe method suffers from approximation error of using finite image labels and\nthe lack of vocabulary diversity of a small image-text dataset. To overcome\nthese limitations, we present VidLanKD, a video-language knowledge distillation\nmethod for improving language understanding. We train a multi-modal teacher\nmodel on a video-text dataset, and then transfer its knowledge to a student\nlanguage model with a text dataset. To avoid approximation error, we propose to\nuse different knowledge distillation objectives. In addition, the use of a\nlarge-scale video-text dataset helps learn diverse and richer vocabularies. In\nour experiments, VidLanKD achieves consistent improvements over text-only\nlanguage models and vokenization models, on several downstream language\nunderstanding tasks including GLUE, SQuAD, and SWAG. We also demonstrate the\nimproved world knowledge, physical reasoning, and temporal reasoning\ncapabilities of our model by evaluating on the GLUE-diagnostics, PIQA, and\nTRACIE datasets. Lastly, we present comprehensive ablation studies as well as\nvisualizations of the learned text-to-video grounding results of our teacher\nand student language models. Our code and models are available at:\nhttps://github.com/zinengtang/VidLanKD\n",
+        "published": "2021",
+        "authors": [
+            "Zineng Tang",
+            "Jaemin Cho",
+            "Hao Tan",
+            "Mohit Bansal"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2107.03006v3",
+        "title": "Structured Denoising Diffusion Models in Discrete State-Spaces",
+        "abstract": "  Denoising diffusion probabilistic models (DDPMs) (Ho et al. 2020) have shown\nimpressive results on image and waveform generation in continuous state spaces.\nHere, we introduce Discrete Denoising Diffusion Probabilistic Models (D3PMs),\ndiffusion-like generative models for discrete data that generalize the\nmultinomial diffusion model of Hoogeboom et al. 2021, by going beyond\ncorruption processes with uniform transition probabilities. This includes\ncorruption with transition matrices that mimic Gaussian kernels in continuous\nspace, matrices based on nearest neighbors in embedding space, and matrices\nthat introduce absorbing states. The third allows us to draw a connection\nbetween diffusion models and autoregressive and mask-based generative models.\nWe show that the choice of transition matrix is an important design decision\nthat leads to improved results in image and text domains. We also introduce a\nnew loss function that combines the variational lower bound with an auxiliary\ncross entropy loss. For text, this model class achieves strong results on\ncharacter-level text generation while scaling to large vocabularies on LM1B. On\nthe image dataset CIFAR-10, our models approach the sample quality and exceed\nthe log-likelihood of the continuous-space DDPM model.\n",
+        "published": "2021",
+        "authors": [
+            "Jacob Austin",
+            "Daniel D. Johnson",
+            "Jonathan Ho",
+            "Daniel Tarlow",
+            "Rianne van den Berg"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2107.06383v1",
+        "title": "How Much Can CLIP Benefit Vision-and-Language Tasks?",
+        "abstract": "  Most existing Vision-and-Language (V&L) models rely on pre-trained visual\nencoders, using a relatively small set of manually-annotated data (as compared\nto web-crawled data), to perceive the visual world. However, it has been\nobserved that large-scale pretraining usually can result in better\ngeneralization performance, e.g., CLIP (Contrastive Language-Image\nPre-training), trained on a massive amount of image-caption pairs, has shown a\nstrong zero-shot capability on various vision tasks. To further study the\nadvantage brought by CLIP, we propose to use CLIP as the visual encoder in\nvarious V&L models in two typical scenarios: 1) plugging CLIP into\ntask-specific fine-tuning; 2) combining CLIP with V&L pre-training and\ntransferring to downstream tasks. We show that CLIP significantly outperforms\nwidely-used visual encoders trained with in-domain annotated data, such as\nBottomUp-TopDown. We achieve competitive or better results on diverse V&L\ntasks, while establishing new state-of-the-art results on Visual Question\nAnswering, Visual Entailment, and V&L Navigation tasks. We release our code at\nhttps://github.com/clip-vil/CLIP-ViL.\n",
+        "published": "2021",
+        "authors": [
+            "Sheng Shen",
+            "Liunian Harold Li",
+            "Hao Tan",
+            "Mohit Bansal",
+            "Anna Rohrbach",
+            "Kai-Wei Chang",
+            "Zhewei Yao",
+            "Kurt Keutzer"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2107.12220v2",
+        "title": "Thought Flow Nets: From Single Predictions to Trains of Model Thought",
+        "abstract": "  When humans solve complex problems, they typically create a sequence of ideas\n(involving an intuitive decision, reflection, error correction, etc.) in order\nto reach a conclusive decision. Contrary to this, today's models are mostly\ntrained to map an input to one single and fixed output. In this paper, we\ninvestigate how we can give models the opportunity of a second, third and\n$k$-th thought. Taking inspiration from Hegel's dialectics, we propose the\nconcept of a thought flow which creates a sequence of predictions. We present a\nself-correction mechanism that is trained to estimate the model's correctness\nand performs iterative prediction updates based on the correctness prediction's\ngradient. We introduce our method at the example of question answering and\nconduct extensive experiments that demonstrate (i) our method's ability to\ncorrect its own predictions and (ii) its potential to notably improve model\nperformances. In addition, we conduct a qualitative analysis of thought flow\ncorrection patterns and explore how thought flow predictions affect human users\nwithin a crowdsourcing study. We find that (iii) thought flows enable improved\nuser performance and are perceived as more natural, correct, and intelligent as\nsingle and/or top-3 predictions.\n",
+        "published": "2021",
+        "authors": [
+            "Hendrik Schuff",
+            "Heike Adel",
+            "Ngoc Thang Vu"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2107.13054v1",
+        "title": "Exceeding the Limits of Visual-Linguistic Multi-Task Learning",
+        "abstract": "  By leveraging large amounts of product data collected across hundreds of live\ne-commerce websites, we construct 1000 unique classification tasks that share\nsimilarly-structured input data, comprised of both text and images. These\nclassification tasks focus on learning the product hierarchy of different\ne-commerce websites, causing many of them to be correlated. Adopting a\nmulti-modal transformer model, we solve these tasks in unison using multi-task\nlearning (MTL). Extensive experiments are presented over an initial 100-task\ndataset to reveal best practices for \"large-scale MTL\" (i.e., MTL with more\nthan 100 tasks). From these experiments, a final, unified methodology is\nderived, which is composed of both best practices and new proposals such as\nDyPa, a simple heuristic for automatically allocating task-specific parameters\nto tasks that could benefit from extra capacity. Using our large-scale MTL\nmethodology, we successfully train a single model across all 1000 tasks in our\ndataset while using minimal task specific parameters, thereby showing that it\nis possible to extend several orders of magnitude beyond current efforts in\nMTL.\n",
+        "published": "2021",
+        "authors": [
+            "Cameron R. Wolfe",
+            "Keld T. Lundgaard"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2202.06523v1",
+        "title": "MetaShift: A Dataset of Datasets for Evaluating Contextual Distribution\n  Shifts and Training Conflicts",
+        "abstract": "  Understanding the performance of machine learning models across diverse data\ndistributions is critically important for reliable applications. Motivated by\nthis, there is a growing focus on curating benchmark datasets that capture\ndistribution shifts. While valuable, the existing benchmarks are limited in\nthat many of them only contain a small number of shifts and they lack\nsystematic annotation about what is different across different shifts. We\npresent MetaShift--a collection of 12,868 sets of natural images across 410\nclasses--to address this challenge. We leverage the natural heterogeneity of\nVisual Genome and its annotations to construct MetaShift. The key construction\nidea is to cluster images using its metadata, which provides context for each\nimage (e.g. \"cats with cars\" or \"cats in bathroom\") that represent distinct\ndata distributions. MetaShift has two important benefits: first, it contains\norders of magnitude more natural data shifts than previously available. Second,\nit provides explicit explanations of what is unique about each of its data sets\nand a distance score that measures the amount of distribution shift between any\ntwo of its data sets. We demonstrate the utility of MetaShift in benchmarking\nseveral recent proposals for training models to be robust to data shifts. We\nfind that the simple empirical risk minimization performs the best when shifts\nare moderate and no method had a systematic advantage for large shifts. We also\nshow how MetaShift can help to visualize conflicts between data subsets during\nmodel training.\n",
+        "published": "2022",
+        "authors": [
+            "Weixin Liang",
+            "James Zou"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2202.08806v2",
+        "title": "Grammar-Based Grounded Lexicon Learning",
+        "abstract": "  We present Grammar-Based Grounded Lexicon Learning (G2L2), a lexicalist\napproach toward learning a compositional and grounded meaning representation of\nlanguage from grounded data, such as paired images and texts. At the core of\nG2L2 is a collection of lexicon entries, which map each word to a tuple of a\nsyntactic type and a neuro-symbolic semantic program. For example, the word\nshiny has a syntactic type of adjective; its neuro-symbolic semantic program\nhas the symbolic form {\\lambda}x. filter(x, SHINY), where the concept SHINY is\nassociated with a neural network embedding, which will be used to classify\nshiny objects. Given an input sentence, G2L2 first looks up the lexicon entries\nassociated with each token. It then derives the meaning of the sentence as an\nexecutable neuro-symbolic program by composing lexical meanings based on\nsyntax. The recovered meaning programs can be executed on grounded inputs. To\nfacilitate learning in an exponentially-growing compositional space, we\nintroduce a joint parsing and expected execution algorithm, which does local\nmarginalization over derivations to reduce the training time. We evaluate G2L2\non two domains: visual reasoning and language-driven navigation. Results show\nthat G2L2 can generalize from small amounts of data to novel compositions of\nwords.\n",
+        "published": "2022",
+        "authors": [
+            "Jiayuan Mao",
+            "Haoyue Shi",
+            "Jiajun Wu",
+            "Roger P. Levy",
+            "Joshua B. Tenenbaum"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1606.07356v2",
+        "title": "Analyzing the Behavior of Visual Question Answering Models",
+        "abstract": "  Recently, a number of deep-learning based models have been proposed for the\ntask of Visual Question Answering (VQA). The performance of most models is\nclustered around 60-70%. In this paper we propose systematic methods to analyze\nthe behavior of these models as a first step towards recognizing their\nstrengths and weaknesses, and identifying the most fruitful directions for\nprogress. We analyze two models, one each from two major classes of VQA models\n-- with-attention and without-attention and show the similarities and\ndifferences in the behavior of these models. We also analyze the winning entry\nof the VQA Challenge 2016.\n  Our behavior analysis reveals that despite recent progress, today's VQA\nmodels are \"myopic\" (tend to fail on sufficiently novel instances), often \"jump\nto conclusions\" (converge on a predicted answer after 'listening' to just half\nthe question), and are \"stubborn\" (do not change their answers across images).\n",
+        "published": "2016",
+        "authors": [
+            "Aishwarya Agrawal",
+            "Dhruv Batra",
+            "Devi Parikh"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1611.08669v5",
+        "title": "Visual Dialog",
+        "abstract": "  We introduce the task of Visual Dialog, which requires an AI agent to hold a\nmeaningful dialog with humans in natural, conversational language about visual\ncontent. Specifically, given an image, a dialog history, and a question about\nthe image, the agent has to ground the question in image, infer context from\nhistory, and answer the question accurately. Visual Dialog is disentangled\nenough from a specific downstream task so as to serve as a general test of\nmachine intelligence, while being grounded in vision enough to allow objective\nevaluation of individual responses and benchmark progress. We develop a novel\ntwo-person chat data-collection protocol to curate a large-scale Visual Dialog\ndataset (VisDial). VisDial v0.9 has been released and contains 1 dialog with 10\nquestion-answer pairs on ~120k images from COCO, with a total of ~1.2M dialog\nquestion-answer pairs.\n  We introduce a family of neural encoder-decoder models for Visual Dialog with\n3 encoders -- Late Fusion, Hierarchical Recurrent Encoder and Memory Network --\nand 2 decoders (generative and discriminative), which outperform a number of\nsophisticated baselines. We propose a retrieval-based evaluation protocol for\nVisual Dialog where the AI agent is asked to sort a set of candidate answers\nand evaluated on metrics such as mean-reciprocal-rank of human response. We\nquantify gap between machine and human performance on the Visual Dialog task\nvia human studies. Putting it all together, we demonstrate the first 'visual\nchatbot'! Our dataset, code, trained models and visual chatbot are available on\nhttps://visualdialog.org\n",
+        "published": "2016",
+        "authors": [
+            "Abhishek Das",
+            "Satwik Kottur",
+            "Khushi Gupta",
+            "Avi Singh",
+            "Deshraj Yadav",
+            "Jos\u00e9 M. F. Moura",
+            "Devi Parikh",
+            "Dhruv Batra"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1612.00837v3",
+        "title": "Making the V in VQA Matter: Elevating the Role of Image Understanding in\n  Visual Question Answering",
+        "abstract": "  Problems at the intersection of vision and language are of significant\nimportance both as challenging research questions and for the rich set of\napplications they enable. However, inherent structure in our world and bias in\nour language tend to be a simpler signal for learning than visual modalities,\nresulting in models that ignore visual information, leading to an inflated\nsense of their capability.\n  We propose to counter these language priors for the task of Visual Question\nAnswering (VQA) and make vision (the V in VQA) matter! Specifically, we balance\nthe popular VQA dataset by collecting complementary images such that every\nquestion in our balanced dataset is associated with not just a single image,\nbut rather a pair of similar images that result in two different answers to the\nquestion. Our dataset is by construction more balanced than the original VQA\ndataset and has approximately twice the number of image-question pairs. Our\ncomplete balanced dataset is publicly available at www.visualqa.org as part of\nthe 2nd iteration of the Visual Question Answering Dataset and Challenge (VQA\nv2.0).\n  We further benchmark a number of state-of-art VQA models on our balanced\ndataset. All models perform significantly worse on our balanced dataset,\nsuggesting that these models have indeed learned to exploit language priors.\nThis finding provides the first concrete empirical evidence for what seems to\nbe a qualitative sense among practitioners.\n  Finally, our data collection protocol for identifying complementary images\nenables us to develop a novel interpretable model, which in addition to\nproviding an answer to the given (image, question) pair, also provides a\ncounter-example based explanation. Specifically, it identifies an image that is\nsimilar to the original image, but it believes has a different answer to the\nsame question. This can help in building trust for machines among their users.\n",
+        "published": "2016",
+        "authors": [
+            "Yash Goyal",
+            "Tejas Khot",
+            "Douglas Summers-Stay",
+            "Dhruv Batra",
+            "Devi Parikh"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1704.07121v2",
+        "title": "Being Negative but Constructively: Lessons Learnt from Creating Better\n  Visual Question Answering Datasets",
+        "abstract": "  Visual question answering (Visual QA) has attracted a lot of attention\nlately, seen essentially as a form of (visual) Turing test that artificial\nintelligence should strive to achieve. In this paper, we study a crucial\ncomponent of this task: how can we design good datasets for the task? We focus\non the design of multiple-choice based datasets where the learner has to select\nthe right answer from a set of candidate ones including the target (\\ie the\ncorrect one) and the decoys (\\ie the incorrect ones). Through careful analysis\nof the results attained by state-of-the-art learning models and human\nannotators on existing datasets, we show that the design of the decoy answers\nhas a significant impact on how and what the learning models learn from the\ndatasets. In particular, the resulting learner can ignore the visual\ninformation, the question, or both while still doing well on the task. Inspired\nby this, we propose automatic procedures to remedy such design deficiencies. We\napply the procedures to re-construct decoy answers for two popular Visual QA\ndatasets as well as to create a new Visual QA dataset from the Visual Genome\nproject, resulting in the largest dataset for this task. Extensive empirical\nstudies show that the design deficiencies have been alleviated in the remedied\ndatasets and the performance on them is likely a more faithful indicator of the\ndifference among learning models. The datasets are released and publicly\navailable via http://www.teds.usc.edu/website_vqa/.\n",
+        "published": "2017",
+        "authors": [
+            "Wei-Lun Chao",
+            "Hexiang Hu",
+            "Fei Sha"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1704.08243v1",
+        "title": "C-VQA: A Compositional Split of the Visual Question Answering (VQA) v1.0\n  Dataset",
+        "abstract": "  Visual Question Answering (VQA) has received a lot of attention over the past\ncouple of years. A number of deep learning models have been proposed for this\ntask. However, it has been shown that these models are heavily driven by\nsuperficial correlations in the training data and lack compositionality -- the\nability to answer questions about unseen compositions of seen concepts. This\ncompositionality is desirable and central to intelligence. In this paper, we\npropose a new setting for Visual Question Answering where the test\nquestion-answer pairs are compositionally novel compared to training\nquestion-answer pairs. To facilitate developing models under this setting, we\npresent a new compositional split of the VQA v1.0 dataset, which we call\nCompositional VQA (C-VQA). We analyze the distribution of questions and answers\nin the C-VQA splits. Finally, we evaluate several existing VQA models under\nthis new setting and show that the performances of these models degrade by a\nsignificant amount compared to the original VQA setting.\n",
+        "published": "2017",
+        "authors": [
+            "Aishwarya Agrawal",
+            "Aniruddha Kembhavi",
+            "Dhruv Batra",
+            "Devi Parikh"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1708.02300v1",
+        "title": "Reinforced Video Captioning with Entailment Rewards",
+        "abstract": "  Sequence-to-sequence models have shown promising improvements on the temporal\ntask of video captioning, but they optimize word-level cross-entropy loss\nduring training. First, using policy gradient and mixed-loss methods for\nreinforcement learning, we directly optimize sentence-level task-based metrics\n(as rewards), achieving significant improvements over the baseline, based on\nboth automatic metrics and human evaluation on multiple datasets. Next, we\npropose a novel entailment-enhanced reward (CIDEnt) that corrects\nphrase-matching based metrics (such as CIDEr) to only allow for\nlogically-implied partial matches and avoid contradictions, achieving further\nsignificant improvements over the CIDEr-reward model. Overall, our\nCIDEnt-reward model achieves the new state-of-the-art on the MSR-VTT dataset.\n",
+        "published": "2017",
+        "authors": [
+            "Ramakanth Pasunuru",
+            "Mohit Bansal"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1708.02977v1",
+        "title": "Hierarchically-Attentive RNN for Album Summarization and Storytelling",
+        "abstract": "  We address the problem of end-to-end visual storytelling. Given a photo\nalbum, our model first selects the most representative (summary) photos, and\nthen composes a natural language story for the album. For this task, we make\nuse of the Visual Storytelling dataset and a model composed of three\nhierarchically-attentive Recurrent Neural Nets (RNNs) to: encode the album\nphotos, select representative (summary) photos, and compose the story.\nAutomatic and human evaluations show our model achieves better performance on\nselection, generation, and retrieval than baselines.\n",
+        "published": "2017",
+        "authors": [
+            "Licheng Yu",
+            "Mohit Bansal",
+            "Tamara L. Berg"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1710.11342v2",
+        "title": "Generating Natural Adversarial Examples",
+        "abstract": "  Due to their complex nature, it is hard to characterize the ways in which\nmachine learning models can misbehave or be exploited when deployed. Recent\nwork on adversarial examples, i.e. inputs with minor perturbations that result\nin substantially different model predictions, is helpful in evaluating the\nrobustness of these models by exposing the adversarial scenarios where they\nfail. However, these malicious perturbations are often unnatural, not\nsemantically meaningful, and not applicable to complicated domains such as\nlanguage. In this paper, we propose a framework to generate natural and legible\nadversarial examples that lie on the data manifold, by searching in semantic\nspace of dense and continuous data representation, utilizing the recent\nadvances in generative adversarial networks. We present generated adversaries\nto demonstrate the potential of the proposed approach for black-box classifiers\nfor a wide range of applications such as image classification, textual\nentailment, and machine translation. We include experiments to show that the\ngenerated adversaries are natural, legible to humans, and useful in evaluating\nand analyzing black-box classifiers.\n",
+        "published": "2017",
+        "authors": [
+            "Zhengli Zhao",
+            "Dheeru Dua",
+            "Sameer Singh"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1804.08454v2",
+        "title": "Attention Based Natural Language Grounding by Navigating Virtual\n  Environment",
+        "abstract": "  In this work, we focus on the problem of grounding language by training an\nagent to follow a set of natural language instructions and navigate to a target\nobject in an environment. The agent receives visual information through raw\npixels and a natural language instruction telling what task needs to be\nachieved and is trained in an end-to-end way. We develop an attention mechanism\nfor multi-modal fusion of visual and textual modalities that allows the agent\nto learn to complete the task and achieve language grounding. Our experimental\nresults show that our attention mechanism outperforms the existing multi-modal\nfusion mechanisms proposed for both 2D and 3D environments in order to solve\nthe above-mentioned task in terms of both speed and success rate. We show that\nthe learnt textual representations are semantically meaningful as they follow\nvector arithmetic in the embedding space. The effectiveness of our attention\napproach over the contemporary fusion mechanisms is also highlighted from the\ntextual embeddings learnt by the different approaches. We also show that our\nmodel generalizes effectively to unseen scenarios and exhibit zero-shot\ngeneralization capabilities both in 2D and 3D environments. The code for our 2D\nenvironment as well as the models that we developed for both 2D and 3D are\navailable at https://github.com/rl-lang-grounding/rl-lang-ground.\n",
+        "published": "2018",
+        "authors": [
+            "Akilesh B",
+            "Abhishek Sinha",
+            "Mausoom Sarkar",
+            "Balaji Krishnamurthy"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1804.09160v2",
+        "title": "No Metrics Are Perfect: Adversarial Reward Learning for Visual\n  Storytelling",
+        "abstract": "  Though impressive results have been achieved in visual captioning, the task\nof generating abstract stories from photo streams is still a little-tapped\nproblem. Different from captions, stories have more expressive language styles\nand contain many imaginary concepts that do not appear in the images. Thus it\nposes challenges to behavioral cloning algorithms. Furthermore, due to the\nlimitations of automatic metrics on evaluating story quality, reinforcement\nlearning methods with hand-crafted rewards also face difficulties in gaining an\noverall performance boost. Therefore, we propose an Adversarial REward Learning\n(AREL) framework to learn an implicit reward function from human\ndemonstrations, and then optimize policy search with the learned reward\nfunction. Though automatic eval- uation indicates slight performance boost over\nstate-of-the-art (SOTA) methods in cloning expert behaviors, human evaluation\nshows that our approach achieves significant improvement in generating more\nhuman-like stories than SOTA systems.\n",
+        "published": "2018",
+        "authors": [
+            "Xin Wang",
+            "Wenhu Chen",
+            "Yuan-Fang Wang",
+            "William Yang Wang"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1808.00265v1",
+        "title": "Interpretable Visual Question Answering by Visual Grounding from\n  Attention Supervision Mining",
+        "abstract": "  A key aspect of VQA models that are interpretable is their ability to ground\ntheir answers to relevant regions in the image. Current approaches with this\ncapability rely on supervised learning and human annotated groundings to train\nattention mechanisms inside the VQA architecture. Unfortunately, obtaining\nhuman annotations specific for visual grounding is difficult and expensive. In\nthis work, we demonstrate that we can effectively train a VQA architecture with\ngrounding supervision that can be automatically obtained from available region\ndescriptions and object annotations. We also show that our model trained with\nthis mined supervision generates visual groundings that achieve a higher\ncorrelation with respect to manually-annotated groundings, meanwhile achieving\nstate-of-the-art VQA accuracy.\n",
+        "published": "2018",
+        "authors": [
+            "Yundong Zhang",
+            "Juan Carlos Niebles",
+            "Alvaro Soto"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1808.10009v1",
+        "title": "Learning a Policy for Opportunistic Active Learning",
+        "abstract": "  Active learning identifies data points to label that are expected to be the\nmost useful in improving a supervised model. Opportunistic active learning\nincorporates active learning into interactive tasks that constrain possible\nqueries during interactions. Prior work has shown that opportunistic active\nlearning can be used to improve grounding of natural language descriptions in\nan interactive object retrieval task. In this work, we use reinforcement\nlearning for such an object retrieval task, to learn a policy that effectively\ntrades off task completion with model improvement that would benefit future\ntasks.\n",
+        "published": "2018",
+        "authors": [
+            "Aishwarya Padmakumar",
+            "Peter Stone",
+            "Raymond J. Mooney"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1810.02338v2",
+        "title": "Neural-Symbolic VQA: Disentangling Reasoning from Vision and Language\n  Understanding",
+        "abstract": "  We marry two powerful ideas: deep representation learning for visual\nrecognition and language understanding, and symbolic program execution for\nreasoning. Our neural-symbolic visual question answering (NS-VQA) system first\nrecovers a structural scene representation from the image and a program trace\nfrom the question. It then executes the program on the scene representation to\nobtain an answer. Incorporating symbolic structure as prior knowledge offers\nthree unique advantages. First, executing programs on a symbolic space is more\nrobust to long program traces; our model can solve complex reasoning tasks\nbetter, achieving an accuracy of 99.8% on the CLEVR dataset. Second, the model\nis more data- and memory-efficient: it performs well after learning on a small\nnumber of training data; it can also encode an image into a compact\nrepresentation, requiring less storage than existing methods for offline\nquestion answering. Third, symbolic program execution offers full transparency\nto the reasoning process; we are thus able to interpret and diagnose each\nexecution step.\n",
+        "published": "2018",
+        "authors": [
+            "Kexin Yi",
+            "Jiajun Wu",
+            "Chuang Gan",
+            "Antonio Torralba",
+            "Pushmeet Kohli",
+            "Joshua B. Tenenbaum"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1810.11181v2",
+        "title": "Neural Modular Control for Embodied Question Answering",
+        "abstract": "  We present a modular approach for learning policies for navigation over long\nplanning horizons from language input. Our hierarchical policy operates at\nmultiple timescales, where the higher-level master policy proposes subgoals to\nbe executed by specialized sub-policies. Our choice of subgoals is\ncompositional and semantic, i.e. they can be sequentially combined in arbitrary\norderings, and assume human-interpretable descriptions (e.g. 'exit room', 'find\nkitchen', 'find refrigerator', etc.).\n  We use imitation learning to warm-start policies at each level of the\nhierarchy, dramatically increasing sample efficiency, followed by reinforcement\nlearning. Independent reinforcement learning at each level of hierarchy enables\nsub-policies to adapt to consequences of their actions and recover from errors.\nSubsequent joint hierarchical training enables the master policy to adapt to\nthe sub-policies.\n  On the challenging EQA (Das et al., 2018) benchmark in House3D (Wu et al.,\n2018), requiring navigating diverse realistic indoor environments, our approach\noutperforms prior work by a significant margin, both in terms of navigation and\nquestion answering.\n",
+        "published": "2018",
+        "authors": [
+            "Abhishek Das",
+            "Georgia Gkioxari",
+            "Stefan Lee",
+            "Devi Parikh",
+            "Dhruv Batra"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1904.12584v1",
+        "title": "The Neuro-Symbolic Concept Learner: Interpreting Scenes, Words, and\n  Sentences From Natural Supervision",
+        "abstract": "  We propose the Neuro-Symbolic Concept Learner (NS-CL), a model that learns\nvisual concepts, words, and semantic parsing of sentences without explicit\nsupervision on any of them; instead, our model learns by simply looking at\nimages and reading paired questions and answers. Our model builds an\nobject-based scene representation and translates sentences into executable,\nsymbolic programs. To bridge the learning of two modules, we use a\nneuro-symbolic reasoning module that executes these programs on the latent\nscene representation. Analogical to human concept learning, the perception\nmodule learns visual concepts based on the language description of the object\nbeing referred to. Meanwhile, the learned visual concepts facilitate learning\nnew words and parsing new sentences. We use curriculum learning to guide the\nsearching over the large compositional space of images and language. Extensive\nexperiments demonstrate the accuracy and efficiency of our model on learning\nvisual concepts, word representations, and semantic parsing of sentences.\nFurther, our method allows easy generalization to new object attributes,\ncompositions, language concepts, scenes and questions, and even new program\ndomains. It also empowers applications including visual question answering and\nbidirectional image-text retrieval.\n",
+        "published": "2019",
+        "authors": [
+            "Jiayuan Mao",
+            "Chuang Gan",
+            "Pushmeet Kohli",
+            "Joshua B. Tenenbaum",
+            "Jiajun Wu"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1905.12008v1",
+        "title": "Leveraging Medical Visual Question Answering with Supporting Facts",
+        "abstract": "  In this working notes paper, we describe IBM Research AI (Almaden) team's\nparticipation in the ImageCLEF 2019 VQA-Med competition. The challenge consists\nof four question-answering tasks based on radiology images. The diversity of\nimaging modalities, organs and disease types combined with a small imbalanced\ntraining set made this a highly complex problem. To overcome these\ndifficulties, we implemented a modular pipeline architecture that utilized\ntransfer learning and multi-task learning. Our findings led to the development\nof a novel model called Supporting Facts Network (SFN). The main idea behind\nSFN is to cross-utilize information from upstream tasks to improve the accuracy\non harder downstream ones. This approach significantly improved the scores\nachieved in the validation set (18 point improvement in F-1 score). Finally, we\nsubmitted four runs to the competition and were ranked seventh.\n",
+        "published": "2019",
+        "authors": [
+            "Tomasz Kornuta",
+            "Deepta Rajan",
+            "Chaitanya Shivade",
+            "Alexis Asseman",
+            "Ahmet S. Ozcan"
+        ]
+    }
+]

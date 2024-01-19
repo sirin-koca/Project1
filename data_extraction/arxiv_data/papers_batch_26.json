@@ -1,0 +1,1201 @@
+[
+    {
+        "id": "http://arxiv.org/abs/1908.08351v2",
+        "title": "Compositionality decomposed: how do neural networks generalise?",
+        "abstract": "  Despite a multitude of empirical studies, little consensus exists on whether\nneural networks are able to generalise compositionally, a controversy that, in\npart, stems from a lack of agreement about what it means for a neural model to\nbe compositional. As a response to this controversy, we present a set of tests\nthat provide a bridge between, on the one hand, the vast amount of linguistic\nand philosophical theory about compositionality of language and, on the other,\nthe successful neural models of language. We collect different interpretations\nof compositionality and translate them into five theoretically grounded tests\nfor models that are formulated on a task-independent level. In particular, we\nprovide tests to investigate (i) if models systematically recombine known parts\nand rules (ii) if models can extend their predictions beyond the length they\nhave seen in the training data (iii) if models' composition operations are\nlocal or global (iv) if models' predictions are robust to synonym substitutions\nand (v) if models favour rules or exceptions during training. To demonstrate\nthe usefulness of this evaluation paradigm, we instantiate these five tests on\na highly compositional data set which we dub PCFG SET and apply the resulting\ntests to three popular sequence-to-sequence models: a recurrent, a\nconvolution-based and a transformer model. We provide an in-depth analysis of\nthe results, which uncover the strengths and weaknesses of these three\narchitectures and point to potential areas of improvement.\n",
+        "published": "2019",
+        "authors": [
+            "Dieuwke Hupkes",
+            "Verna Dankers",
+            "Mathijs Mul",
+            "Elia Bruni"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1908.09756v3",
+        "title": "Differentiable Product Quantization for End-to-End Embedding Compression",
+        "abstract": "  Embedding layers are commonly used to map discrete symbols into continuous\nembedding vectors that reflect their semantic meanings. Despite their\neffectiveness, the number of parameters in an embedding layer increases\nlinearly with the number of symbols and poses a critical challenge on memory\nand storage constraints. In this work, we propose a generic and end-to-end\nlearnable compression framework termed differentiable product quantization\n(DPQ). We present two instantiations of DPQ that leverage different\napproximation techniques to enable differentiability in end-to-end learning.\nOur method can readily serve as a drop-in alternative for any existing\nembedding layer. Empirically, DPQ offers significant compression ratios\n(14-238$\\times$) at negligible or no performance cost on 10 datasets across\nthree different language tasks.\n",
+        "published": "2019",
+        "authors": [
+            "Ting Chen",
+            "Lala Li",
+            "Yizhou Sun"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1712.02034v2",
+        "title": "SMILES2Vec: An Interpretable General-Purpose Deep Neural Network for\n  Predicting Chemical Properties",
+        "abstract": "  Chemical databases store information in text representations, and the SMILES\nformat is a universal standard used in many cheminformatics software. Encoded\nin each SMILES string is structural information that can be used to predict\ncomplex chemical properties. In this work, we develop SMILES2vec, a deep RNN\nthat automatically learns features from SMILES to predict chemical properties,\nwithout the need for additional explicit feature engineering. Using Bayesian\noptimization methods to tune the network architecture, we show that an\noptimized SMILES2vec model can serve as a general-purpose neural network for\npredicting distinct chemical properties including toxicity, activity,\nsolubility and solvation energy, while also outperforming contemporary MLP\nneural networks that uses engineered features. Furthermore, we demonstrate\nproof-of-concept of interpretability by developing an explanation mask that\nlocalizes on the most important characters used in making a prediction. When\ntested on the solubility dataset, it identified specific parts of a chemical\nthat is consistent with established first-principles knowledge with an accuracy\nof 88%. Our work demonstrates that neural networks can learn technically\naccurate chemical concept and provide state-of-the-art accuracy, making\ninterpretable deep neural networks a useful tool of relevance to the chemical\nindustry.\n",
+        "published": "2017",
+        "authors": [
+            "Garrett B. Goh",
+            "Nathan O. Hodas",
+            "Charles Siegel",
+            "Abhinav Vishnu"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1809.00832v1",
+        "title": "Improving the Expressiveness of Deep Learning Frameworks with Recursion",
+        "abstract": "  Recursive neural networks have widely been used by researchers to handle\napplications with recursively or hierarchically structured data. However,\nembedded control flow deep learning frameworks such as TensorFlow, Theano,\nCaffe2, and MXNet fail to efficiently represent and execute such neural\nnetworks, due to lack of support for recursion. In this paper, we add recursion\nto the programming model of existing frameworks by complementing their design\nwith recursive execution of dataflow graphs as well as additional APIs for\nrecursive definitions. Unlike iterative implementations, which can only\nunderstand the topological index of each node in recursive data structures, our\nrecursive implementation is able to exploit the recursive relationships between\nnodes for efficient execution based on parallel computation. We present an\nimplementation on TensorFlow and evaluation results with various recursive\nneural network models, showing that our recursive implementation not only\nconveys the recursive nature of recursive neural networks better than other\nimplementations, but also uses given resources more effectively to reduce\ntraining and inference time.\n",
+        "published": "2018",
+        "authors": [
+            "Eunji Jeong",
+            "Joo Seong Jeong",
+            "Soojeong Kim",
+            "Gyeong-In Yu",
+            "Byung-Gon Chun"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1809.01498v2",
+        "title": "Skip-gram word embeddings in hyperbolic space",
+        "abstract": "  Recent work has demonstrated that embeddings of tree-like graphs in\nhyperbolic space surpass their Euclidean counterparts in performance by a large\nmargin. Inspired by these results and scale-free structure in the word\nco-occurrence graph, we present an algorithm for learning word embeddings in\nhyperbolic space from free text. An objective function based on the hyperbolic\ndistance is derived and included in the skip-gram negative-sampling\narchitecture of word2vec. The hyperbolic word embeddings are then evaluated on\nword similarity and analogy benchmarks. The results demonstrate the potential\nof hyperbolic word embeddings, particularly in low dimensions, though without\nclear superiority over their Euclidean counterparts. We further discuss\nsubtleties in the formulation of the analogy task in curved spaces.\n",
+        "published": "2018",
+        "authors": [
+            "Matthias Leimeister",
+            "Benjamin J. Wilson"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1903.05168v1",
+        "title": "On the Pitfalls of Measuring Emergent Communication",
+        "abstract": "  How do we know if communication is emerging in a multi-agent system? The vast\nmajority of recent papers on emergent communication show that adding a\ncommunication channel leads to an increase in reward or task success. This is a\nuseful indicator, but provides only a coarse measure of the agent's learned\ncommunication abilities. As we move towards more complex environments, it\nbecomes imperative to have a set of finer tools that allow qualitative and\nquantitative insights into the emergence of communication. This may be\nespecially useful to allow humans to monitor agents' behaviour, whether for\nfault detection, assessing performance, or even building trust. In this paper,\nwe examine a few intuitive existing metrics for measuring communication, and\nshow that they can be misleading. Specifically, by training deep reinforcement\nlearning agents to play simple matrix games augmented with a communication\nchannel, we find a scenario where agents appear to communicate (their messages\nprovide information about their subsequent action), and yet the messages do not\nimpact the environment or other agent in any way. We explain this phenomenon\nusing ablation studies and by visualizing the representations of the learned\npolicies. We also survey some commonly used metrics for measuring emergent\ncommunication, and provide recommendations as to when these metrics should be\nused.\n",
+        "published": "2019",
+        "authors": [
+            "Ryan Lowe",
+            "Jakob Foerster",
+            "Y-Lan Boureau",
+            "Joelle Pineau",
+            "Yann Dauphin"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1903.10630v1",
+        "title": "Diversifying Reply Suggestions using a Matching-Conditional Variational\n  Autoencoder",
+        "abstract": "  We consider the problem of diversifying automated reply suggestions for a\ncommercial instant-messaging (IM) system (Skype). Our conversation model is a\nstandard matching based information retrieval architecture, which consists of\ntwo parallel encoders to project messages and replies into a common feature\nrepresentation. During inference, we select replies from a fixed response set\nusing nearest neighbors in the feature space. To diversify responses, we\nformulate the model as a generative latent variable model with Conditional\nVariational Auto-Encoder (M-CVAE). We propose a constrained-sampling approach\nto make the variational inference in M-CVAE efficient for our production\nsystem. In offline experiments, M-CVAE consistently increased diversity by\n~30-40% without significant impact on relevance. This translated to a 5% gain\nin click-rate in our online production system.\n",
+        "published": "2019",
+        "authors": [
+            "Budhaditya Deb",
+            "Peter Bailey",
+            "Milad Shokouhi"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1912.05238v1",
+        "title": "BERT has a Moral Compass: Improvements of ethical and moral values of\n  machines",
+        "abstract": "  Allowing machines to choose whether to kill humans would be devastating for\nworld peace and security. But how do we equip machines with the ability to\nlearn ethical or even moral choices? Jentzsch et al.(2019) showed that applying\nmachine learning to human texts can extract deontological ethical reasoning\nabout \"right\" and \"wrong\" conduct by calculating a moral bias score on a\nsentence level using sentence embeddings. The machine learned that it is\nobjectionable to kill living beings, but it is fine to kill time; It is\nessential to eat, yet one might not eat dirt; it is important to spread\ninformation, yet one should not spread misinformation. However, the evaluated\nmoral bias was restricted to simple actions -- one verb -- and a ranking of\nactions with surrounding context. Recently BERT ---and variants such as RoBERTa\nand SBERT--- has set a new state-of-the-art performance for a wide range of NLP\ntasks. But has BERT also a better moral compass? In this paper, we discuss and\nshow that this is indeed the case. Thus, recent improvements of language\nrepresentations also improve the representation of the underlying ethical and\nmoral values of the machine. We argue that through an advanced semantic\nrepresentation of text, BERT allows one to get better insights of moral and\nethical values implicitly represented in text. This enables the Moral Choice\nMachine (MCM) to extract more accurate imprints of moral choices and ethical\nvalues.\n",
+        "published": "2019",
+        "authors": [
+            "Patrick Schramowski",
+            "Cigdem Turan",
+            "Sophie Jentzsch",
+            "Constantin Rothkopf",
+            "Kristian Kersting"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1912.10160v1",
+        "title": "AMUSED: A Multi-Stream Vector Representation Method for Use in Natural\n  Dialogue",
+        "abstract": "  The problem of building a coherent and non-monotonous conversational agent\nwith proper discourse and coverage is still an area of open research. Current\narchitectures only take care of semantic and contextual information for a given\nquery and fail to completely account for syntactic and external knowledge which\nare crucial for generating responses in a chit-chat system. To overcome this\nproblem, we propose an end to end multi-stream deep learning architecture which\nlearns unified embeddings for query-response pairs by leveraging contextual\ninformation from memory networks and syntactic information by incorporating\nGraph Convolution Networks (GCN) over their dependency parse. A stream of this\nnetwork also utilizes transfer learning by pre-training a bidirectional\ntransformer to extract semantic representation for each input sentence and\nincorporates external knowledge through the the neighborhood of the entities\nfrom a Knowledge Base (KB). We benchmark these embeddings on next sentence\nprediction task and significantly improve upon the existing techniques.\nFurthermore, we use AMUSED to represent query and responses along with its\ncontext to develop a retrieval based conversational agent which has been\nvalidated by expert linguists to have comprehensive engagement with humans.\n",
+        "published": "2019",
+        "authors": [
+            "Gaurav Kumar",
+            "Rishabh Joshi",
+            "Jaspreet Singh",
+            "Promod Yenigalla"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2001.03436v1",
+        "title": "Debate Dynamics for Human-comprehensible Fact-checking on Knowledge\n  Graphs",
+        "abstract": "  We propose a novel method for fact-checking on knowledge graphs based on\ndebate dynamics. The underlying idea is to frame the task of triple\nclassification as a debate game between two reinforcement learning agents which\nextract arguments -- paths in the knowledge graph -- with the goal to justify\nthe fact being true (thesis) or the fact being false (antithesis),\nrespectively. Based on these arguments, a binary classifier, referred to as the\njudge, decides whether the fact is true or false. The two agents can be\nconsidered as sparse feature extractors that present interpretable evidence for\neither the thesis or the antithesis. In contrast to black-box methods, the\narguments enable the user to gain an understanding for the decision of the\njudge. Moreover, our method allows for interactive reasoning on knowledge\ngraphs where the users can raise additional arguments or evaluate the debate\ntaking common sense reasoning and external information into account. Such\ninteractive systems can increase the acceptance of various AI applications\nbased on knowledge graphs and can further lead to higher efficiency,\nrobustness, and fairness.\n",
+        "published": "2020",
+        "authors": [
+            "Marcel Hildebrandt",
+            "Jorge Andres Quintero Serna",
+            "Yunpu Ma",
+            "Martin Ringsquandl",
+            "Mitchell Joblin",
+            "Volker Tresp"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2001.08837v1",
+        "title": "Graph Constrained Reinforcement Learning for Natural Language Action\n  Spaces",
+        "abstract": "  Interactive Fiction games are text-based simulations in which an agent\ninteracts with the world purely through natural language. They are ideal\nenvironments for studying how to extend reinforcement learning agents to meet\nthe challenges of natural language understanding, partial observability, and\naction generation in combinatorially-large text-based action spaces. We present\nKG-A2C, an agent that builds a dynamic knowledge graph while exploring and\ngenerates actions using a template-based action space. We contend that the dual\nuses of the knowledge graph to reason about game state and to constrain natural\nlanguage generation are the keys to scalable exploration of combinatorially\nlarge natural language actions. Results across a wide variety of IF games show\nthat KG-A2C outperforms current IF agents despite the exponential increase in\naction space size.\n",
+        "published": "2020",
+        "authors": [
+            "Prithviraj Ammanabrolu",
+            "Matthew Hausknecht"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2003.04980v1",
+        "title": "Improving Reliability of Latent Dirichlet Allocation by Assessing Its\n  Stability Using Clustering Techniques on Replicated Runs",
+        "abstract": "  For organizing large text corpora topic modeling provides useful tools. A\nwidely used method is Latent Dirichlet Allocation (LDA), a generative\nprobabilistic model which models single texts in a collection of texts as\nmixtures of latent topics. The assignments of words to topics rely on initial\nvalues such that generally the outcome of LDA is not fully reproducible. In\naddition, the reassignment via Gibbs Sampling is based on conditional\ndistributions, leading to different results in replicated runs on the same text\ndata. This fact is often neglected in everyday practice. We aim to improve the\nreliability of LDA results. Therefore, we study the stability of LDA by\ncomparing assignments from replicated runs. We propose to quantify the\nsimilarity of two generated topics by a modified Jaccard coefficient. Using\nsuch similarities, topics can be clustered. A new pruning algorithm for\nhierarchical clustering results based on the idea that two LDA runs create\npairs of similar topics is proposed. This approach leads to the new measure\nS-CLOP ({\\bf S}imilarity of multiple sets by {\\bf C}lustering with {\\bf LO}cal\n{\\bf P}runing) for quantifying the stability of LDA models. We discuss some\ncharacteristics of this measure and illustrate it with an application to real\ndata consisting of newspaper articles from \\textit{USA Today}. Our results show\nthat the measure S-CLOP is useful for assessing the stability of LDA models or\nany other topic modeling procedure that characterize its topics by word\ndistributions. Based on the newly proposed measure for LDA stability, we\npropose a method to increase the reliability and hence to improve the\nreproducibility of empirical findings based on topic modeling. This increase in\nreliability is obtained by running the LDA several times and taking as\nprototype the most representative run, that is the LDA run with highest average\nsimilarity to all other runs.\n",
+        "published": "2020",
+        "authors": [
+            "Jonas Rieger",
+            "Lars Koppers",
+            "Carsten Jentsch",
+            "J\u00f6rg Rahnenf\u00fchrer"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2003.09772v1",
+        "title": "Invariant Rationalization",
+        "abstract": "  Selective rationalization improves neural network interpretability by\nidentifying a small subset of input features -- the rationale -- that best\nexplains or supports the prediction. A typical rationalization criterion, i.e.\nmaximum mutual information (MMI), finds the rationale that maximizes the\nprediction performance based only on the rationale. However, MMI can be\nproblematic because it picks up spurious correlations between the input\nfeatures and the output. Instead, we introduce a game-theoretic invariant\nrationalization criterion where the rationales are constrained to enable the\nsame predictor to be optimal across different environments. We show both\ntheoretically and empirically that the proposed rationales can rule out\nspurious correlations, generalize better to different test scenarios, and align\nbetter with human judgments. Our data and code are available.\n",
+        "published": "2020",
+        "authors": [
+            "Shiyu Chang",
+            "Yang Zhang",
+            "Mo Yu",
+            "Tommi S. Jaakkola"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2006.07043v1",
+        "title": "Language-Conditioned Goal Generation: a New Approach to Language\n  Grounding for RL",
+        "abstract": "  In the real world, linguistic agents are also embodied agents: they perceive\nand act in the physical world. The notion of Language Grounding questions the\ninteractions between language and embodiment: how do learning agents connect or\nground linguistic representations to the physical world ? This question has\nrecently been approached by the Reinforcement Learning community under the\nframework of instruction-following agents. In these agents, behavioral policies\nor reward functions are conditioned on the embedding of an instruction\nexpressed in natural language. This paper proposes another approach: using\nlanguage to condition goal generators. Given any goal-conditioned policy, one\ncould train a language-conditioned goal generator to generate language-agnostic\ngoals for the agent. This method allows to decouple sensorimotor learning from\nlanguage acquisition and enable agents to demonstrate a diversity of behaviors\nfor any given instruction. We propose a particular instantiation of this\napproach and demonstrate its benefits.\n",
+        "published": "2020",
+        "authors": [
+            "C\u00e9dric Colas",
+            "Ahmed Akakzia",
+            "Pierre-Yves Oudeyer",
+            "Mohamed Chetouani",
+            "Olivier Sigaud"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2006.07409v1",
+        "title": "How to Avoid Being Eaten by a Grue: Structured Exploration Strategies\n  for Textual Worlds",
+        "abstract": "  Text-based games are long puzzles or quests, characterized by a sequence of\nsparse and potentially deceptive rewards. They provide an ideal platform to\ndevelop agents that perceive and act upon the world using a combinatorially\nsized natural language state-action space. Standard Reinforcement Learning\nagents are poorly equipped to effectively explore such spaces and often\nstruggle to overcome bottlenecks---states that agents are unable to pass\nthrough simply because they do not see the right action sequence enough times\nto be sufficiently reinforced. We introduce Q*BERT, an agent that learns to\nbuild a knowledge graph of the world by answering questions, which leads to\ngreater sample efficiency. To overcome bottlenecks, we further introduce\nMC!Q*BERT an agent that uses an knowledge-graph-based intrinsic motivation to\ndetect bottlenecks and a novel exploration strategy to efficiently learn a\nchain of policy modules to overcome them. We present an ablation study and\nresults demonstrating how our method outperforms the current state-of-the-art\non nine text games, including the popular game, Zork, where, for the first\ntime, a learning agent gets past the bottleneck where the player is eaten by a\nGrue.\n",
+        "published": "2020",
+        "authors": [
+            "Prithviraj Ammanabrolu",
+            "Ethan Tien",
+            "Matthew Hausknecht",
+            "Mark O. Riedl"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2006.08331v1",
+        "title": "Probing Neural Dialog Models for Conversational Understanding",
+        "abstract": "  The predominant approach to open-domain dialog generation relies on\nend-to-end training of neural models on chat datasets. However, this approach\nprovides little insight as to what these models learn (or do not learn) about\nengaging in dialog. In this study, we analyze the internal representations\nlearned by neural open-domain dialog systems and evaluate the quality of these\nrepresentations for learning basic conversational skills. Our results suggest\nthat standard open-domain dialog systems struggle with answering questions,\ninferring contradiction, and determining the topic of conversation, among other\ntasks. We also find that the dyadic, turn-taking nature of dialog is not fully\nleveraged by these models. By exploring these limitations, we highlight the\nneed for additional research into architectures and training methods that can\nbetter capture high-level information about dialog.\n",
+        "published": "2020",
+        "authors": [
+            "Abdelrhman Saleh",
+            "Tovly Deutsch",
+            "Stephen Casper",
+            "Yonatan Belinkov",
+            "Stuart Shieber"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2006.10022v3",
+        "title": "Conversational Neuro-Symbolic Commonsense Reasoning",
+        "abstract": "  In order for conversational AI systems to hold more natural and broad-ranging\nconversations, they will require much more commonsense, including the ability\nto identify unstated presumptions of their conversational partners. For\nexample, in the command \"If it snows at night then wake me up early because I\ndon't want to be late for work\" the speaker relies on commonsense reasoning of\nthe listener to infer the implicit presumption that they wish to be woken only\nif it snows enough to cause traffic slowdowns. We consider here the problem of\nunderstanding such imprecisely stated natural language commands given in the\nform of \"if-(state), then-(action), because-(goal)\" statements. More precisely,\nwe consider the problem of identifying the unstated presumptions of the speaker\nthat allow the requested action to achieve the desired goal from the given\nstate (perhaps elaborated by making the implicit presumptions explicit). We\nrelease a benchmark data set for this task, collected from humans and annotated\nwith commonsense presumptions. We present a neuro-symbolic theorem prover that\nextracts multi-hop reasoning chains, and apply it to this problem. Furthermore,\nto accommodate the reality that current AI commonsense systems lack full\ncoverage, we also present an interactive conversational framework built on our\nneuro-symbolic system, that conversationally evokes commonsense knowledge from\nhumans to complete its reasoning chains.\n",
+        "published": "2020",
+        "authors": [
+            "Forough Arabshahi",
+            "Jennifer Lee",
+            "Mikayla Gawarecki",
+            "Kathryn Mazaitis",
+            "Amos Azaria",
+            "Tom Mitchell"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2006.16365v2",
+        "title": "Multi-Partition Embedding Interaction with Block Term Format for\n  Knowledge Graph Completion",
+        "abstract": "  Knowledge graph completion is an important task that aims to predict the\nmissing relational link between entities. Knowledge graph embedding methods\nperform this task by representing entities and relations as embedding vectors\nand modeling their interactions to compute the matching score of each triple.\nPrevious work has usually treated each embedding as a whole and has modeled the\ninteractions between these whole embeddings, potentially making the model\nexcessively expensive or requiring specially designed interaction mechanisms.\nIn this work, we propose the multi-partition embedding interaction (MEI) model\nwith block term format to systematically address this problem. MEI divides each\nembedding into a multi-partition vector to efficiently restrict the\ninteractions. Each local interaction is modeled with the Tucker tensor format\nand the full interaction is modeled with the block term tensor format, enabling\nMEI to control the trade-off between expressiveness and computational cost,\nlearn the interaction mechanisms from data automatically, and achieve\nstate-of-the-art performance on the link prediction task. In addition, we\ntheoretically study the parameter efficiency problem and derive a simple\nempirically verified criterion for optimal parameter trade-off. We also apply\nthe framework of MEI to provide a new generalized explanation for several\nspecially designed interaction mechanisms in previous models. The source code\nis released at https://github.com/tranhungnghiep/MEI-KGE.\n",
+        "published": "2020",
+        "authors": [
+            "Hung Nghiep Tran",
+            "Atsuhiro Takasu"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2010.01986v1",
+        "title": "A Spherical Hidden Markov Model for Semantics-Rich Human Mobility\n  Modeling",
+        "abstract": "  We study the problem of modeling human mobility from semantic trace data,\nwherein each GPS record in a trace is associated with a text message that\ndescribes the user's activity. Existing methods fall short in unveiling human\nmovement regularities, because they either do not model the text data at all or\nsuffer from text sparsity severely. We propose SHMM, a multi-modal spherical\nhidden Markov model for semantics-rich human mobility modeling. Under the\nhidden Markov assumption, SHMM models the generation process of a given trace\nby jointly considering the observed location, time, and text at each step of\nthe trace. The distinguishing characteristic of SHMM is the text modeling part.\nWe use fixed-size vector representations to encode the semantics of the text\nmessages, and model the generation of the l2-normalized text embeddings on a\nunit sphere with the von Mises-Fisher (vMF) distribution. Compared with other\nalternatives like multi-variate Gaussian, our choice of the vMF distribution\nnot only incurs much fewer parameters, but also better leverages the\ndiscriminative power of text embeddings in a directional metric space. The\nparameter inference for the vMF distribution is non-trivial since it involves\nfunctional inversion of ratios of Bessel functions. We theoretically prove\nthat: 1) the classical Expectation-Maximization algorithm can work with vMF\ndistributions; and 2) while closed-form solutions are hard to be obtained for\nthe M-step, Newton's method is guaranteed to converge to the optimal solution\nwith quadratic convergence rate. We have performed extensive experiments on\nboth synthetic and real-life data. The results on synthetic data verify our\ntheoretical analysis; while the results on real-life data demonstrate that SHMM\nlearns meaningful semantics-rich mobility models, outperforms state-of-the-art\nmobility models for next location prediction, and incurs lower training cost.\n",
+        "published": "2020",
+        "authors": [
+            "Wanzheng Zhu",
+            "Chao Zhang",
+            "Shuochao Yao",
+            "Xiaobin Gao",
+            "Jiawei Han"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2010.02114v4",
+        "title": "Explaining The Efficacy of Counterfactually Augmented Data",
+        "abstract": "  In attempts to produce ML models less reliant on spurious patterns in NLP\ndatasets, researchers have recently proposed curating counterfactually\naugmented data (CAD) via a human-in-the-loop process in which given some\ndocuments and their (initial) labels, humans must revise the text to make a\ncounterfactual label applicable. Importantly, edits that are not necessary to\nflip the applicable label are prohibited. Models trained on the augmented data\nappear, empirically, to rely less on semantically irrelevant words and to\ngeneralize better out of domain. While this work draws loosely on causal\nthinking, the underlying causal model (even at an abstract level) and the\nprinciples underlying the observed out-of-domain improvements remain unclear.\nIn this paper, we introduce a toy analog based on linear Gaussian models,\nobserving interesting relationships between causal models, measurement noise,\nout-of-domain generalization, and reliance on spurious signals. Our analysis\nprovides some insights that help to explain the efficacy of CAD. Moreover, we\ndevelop the hypothesis that while adding noise to causal features should\ndegrade both in-domain and out-of-domain performance, adding noise to\nnon-causal features should lead to relative improvements in out-of-domain\nperformance. This idea inspires a speculative test for determining whether a\nfeature attribution technique has identified the causal spans. If adding noise\n(e.g., by random word flips) to the highlighted spans degrades both in-domain\nand out-of-domain performance on a battery of challenge datasets, but adding\nnoise to the complement gives improvements out-of-domain, it suggests we have\nidentified causal spans. We present a large-scale empirical study comparing\nspans edited to create CAD to those selected by attention and saliency maps.\nAcross numerous domains and models, we find that the hypothesized phenomenon is\npronounced for CAD.\n",
+        "published": "2020",
+        "authors": [
+            "Divyansh Kaushik",
+            "Amrith Setlur",
+            "Eduard Hovy",
+            "Zachary C. Lipton"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2010.03648v2",
+        "title": "A Mathematical Exploration of Why Language Models Help Solve Downstream\n  Tasks",
+        "abstract": "  Autoregressive language models, pretrained using large text corpora to do\nwell on next word prediction, have been successful at solving many downstream\ntasks, even with zero-shot usage. However, there is little theoretical\nunderstanding of this success. This paper initiates a mathematical study of\nthis phenomenon for the downstream task of text classification by considering\nthe following questions: (1) What is the intuitive connection between the\npretraining task of next word prediction and text classification? (2) How can\nwe mathematically formalize this connection and quantify the benefit of\nlanguage modeling? For (1), we hypothesize, and verify empirically, that\nclassification tasks of interest can be reformulated as sentence completion\ntasks, thus making language modeling a meaningful pretraining task. With a\nmathematical formalization of this hypothesis, we make progress towards (2) and\nshow that language models that are $\\epsilon$-optimal in cross-entropy\n(log-perplexity) learn features that can linearly solve such classification\ntasks with $\\mathcal{O}(\\sqrt{\\epsilon})$ error, thus demonstrating that doing\nwell on language modeling can be beneficial for downstream tasks. We\nexperimentally verify various assumptions and theoretical findings, and also\nuse insights from the analysis to design a new objective function that performs\nwell on some classification tasks.\n",
+        "published": "2020",
+        "authors": [
+            "Nikunj Saunshi",
+            "Sadhika Malladi",
+            "Sanjeev Arora"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2010.16228v2",
+        "title": "\"Thy algorithm shalt not bear false witness\": An Evaluation of\n  Multiclass Debiasing Methods on Word Embeddings",
+        "abstract": "  With the vast development and employment of artificial intelligence\napplications, research into the fairness of these algorithms has been\nincreased. Specifically, in the natural language processing domain, it has been\nshown that social biases persist in word embeddings and are thus in danger of\namplifying these biases when used. As an example of social bias, religious\nbiases are shown to persist in word embeddings and the need for its removal is\nhighlighted. This paper investigates the state-of-the-art multiclass debiasing\ntechniques: Hard debiasing, SoftWEAT debiasing and Conceptor debiasing. It\nevaluates their performance when removing religious bias on a common basis by\nquantifying bias removal via the Word Embedding Association Test (WEAT), Mean\nAverage Cosine Similarity (MAC) and the Relative Negative Sentiment Bias\n(RNSB). By investigating the religious bias removal on three widely used word\nembeddings, namely: Word2Vec, GloVe, and ConceptNet, it is shown that the\npreferred method is ConceptorDebiasing. Specifically, this technique manages to\ndecrease the measured religious bias on average by 82,42%, 96,78% and 54,76%\nfor the three word embedding sets respectively.\n",
+        "published": "2020",
+        "authors": [
+            "Thalea Schlender",
+            "Gerasimos Spanakis"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2101.00563v1",
+        "title": "Learning Neural Networks on SVD Boosted Latent Spaces for Semantic\n  Classification",
+        "abstract": "  The availability of large amounts of data and compelling computation power\nhave made deep learning models much popular for text classification and\nsentiment analysis. Deep neural networks have achieved competitive performance\non the above tasks when trained on naive text representations such as word\ncount, term frequency, and binary matrix embeddings. However, many of the above\nrepresentations result in the input space having a dimension of the order of\nthe vocabulary size, which is enormous. This leads to a blow-up in the number\nof parameters to be learned, and the computational cost becomes infeasible when\nscaling to domains that require retaining a colossal vocabulary. This work\nproposes using singular value decomposition to transform the high dimensional\ninput space to a lower-dimensional latent space. We show that neural networks\ntrained on this lower-dimensional space are not only able to retain performance\nwhile savoring significant reduction in the computational complexity but, in\nmany situations, also outperforms the classical neural networks trained on the\nnative input space.\n",
+        "published": "2021",
+        "authors": [
+            "Sahil Sidheekh"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1607.06520v1",
+        "title": "Man is to Computer Programmer as Woman is to Homemaker? Debiasing Word\n  Embeddings",
+        "abstract": "  The blind application of machine learning runs the risk of amplifying biases\npresent in data. Such a danger is facing us with word embedding, a popular\nframework to represent text data as vectors which has been used in many machine\nlearning and natural language processing tasks. We show that even word\nembeddings trained on Google News articles exhibit female/male gender\nstereotypes to a disturbing extent. This raises concerns because their\nwidespread use, as we describe, often tends to amplify these biases.\nGeometrically, gender bias is first shown to be captured by a direction in the\nword embedding. Second, gender neutral words are shown to be linearly separable\nfrom gender definition words in the word embedding. Using these properties, we\nprovide a methodology for modifying an embedding to remove gender stereotypes,\nsuch as the association between between the words receptionist and female,\nwhile maintaining desired associations such as between the words queen and\nfemale. We define metrics to quantify both direct and indirect gender biases in\nembeddings, and develop algorithms to \"debias\" the embedding. Using\ncrowd-worker evaluation as well as standard benchmarks, we empirically\ndemonstrate that our algorithms significantly reduce gender bias in embeddings\nwhile preserving the its useful properties such as the ability to cluster\nrelated concepts and to solve analogy tasks. The resulting embeddings can be\nused in applications without amplifying gender bias.\n",
+        "published": "2016",
+        "authors": [
+            "Tolga Bolukbasi",
+            "Kai-Wei Chang",
+            "James Zou",
+            "Venkatesh Saligrama",
+            "Adam Kalai"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1611.01702v2",
+        "title": "TopicRNN: A Recurrent Neural Network with Long-Range Semantic Dependency",
+        "abstract": "  In this paper, we propose TopicRNN, a recurrent neural network (RNN)-based\nlanguage model designed to directly capture the global semantic meaning\nrelating words in a document via latent topics. Because of their sequential\nnature, RNNs are good at capturing the local structure of a word sequence -\nboth semantic and syntactic - but might face difficulty remembering long-range\ndependencies. Intuitively, these long-range dependencies are of semantic\nnature. In contrast, latent topic models are able to capture the global\nunderlying semantic structure of a document but do not account for word\nordering. The proposed TopicRNN model integrates the merits of RNNs and latent\ntopic models: it captures local (syntactic) dependencies using an RNN and\nglobal (semantic) dependencies using latent topics. Unlike previous work on\ncontextual RNN language modeling, our model is learned end-to-end. Empirical\nresults on word prediction show that TopicRNN outperforms existing contextual\nRNN baselines. In addition, TopicRNN can be used as an unsupervised feature\nextractor for documents. We do this for sentiment analysis on the IMDB movie\nreview dataset and report an error rate of $6.28\\%$. This is comparable to the\nstate-of-the-art $5.91\\%$ resulting from a semi-supervised approach. Finally,\nTopicRNN also yields sensible topics, making it a useful alternative to\ndocument models such as latent Dirichlet allocation.\n",
+        "published": "2016",
+        "authors": [
+            "Adji B. Dieng",
+            "Chong Wang",
+            "Jianfeng Gao",
+            "John Paisley"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1611.02266v2",
+        "title": "Gaussian Attention Model and Its Application to Knowledge Base Embedding\n  and Question Answering",
+        "abstract": "  We propose the Gaussian attention model for content-based neural memory\naccess. With the proposed attention model, a neural network has the additional\ndegree of freedom to control the focus of its attention from a laser sharp\nattention to a broad attention. It is applicable whenever we can assume that\nthe distance in the latent space reflects some notion of semantics. We use the\nproposed attention model as a scoring function for the embedding of a knowledge\nbase into a continuous vector space and then train a model that performs\nquestion answering about the entities in the knowledge base. The proposed\nattention model can handle both the propagation of uncertainty when following a\nseries of relations and also the conjunction of conditions in a natural way. On\na dataset of soccer players who participated in the FIFA World Cup 2014, we\ndemonstrate that our model can handle both path queries and conjunctive queries\nwell.\n",
+        "published": "2016",
+        "authors": [
+            "Liwen Zhang",
+            "John Winn",
+            "Ryota Tomioka"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1611.06188v2",
+        "title": "Variable Computation in Recurrent Neural Networks",
+        "abstract": "  Recurrent neural networks (RNNs) have been used extensively and with\nincreasing success to model various types of sequential data. Much of this\nprogress has been achieved through devising recurrent units and architectures\nwith the flexibility to capture complex statistics in the data, such as long\nrange dependency or localized attention phenomena. However, while many\nsequential data (such as video, speech or language) can have highly variable\ninformation flow, most recurrent models still consume input features at a\nconstant rate and perform a constant number of computations per time step,\nwhich can be detrimental to both speed and model capacity. In this paper, we\nexplore a modification to existing recurrent units which allows them to learn\nto vary the amount of computation they perform at each step, without prior\nknowledge of the sequence's time structure. We show experimentally that not\nonly do our models require fewer operations, they also lead to better\nperformance overall on evaluation tasks.\n",
+        "published": "2016",
+        "authors": [
+            "Yacine Jernite",
+            "Edouard Grave",
+            "Armand Joulin",
+            "Tomas Mikolov"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1704.07535v1",
+        "title": "Abstract Syntax Networks for Code Generation and Semantic Parsing",
+        "abstract": "  Tasks like code generation and semantic parsing require mapping unstructured\n(or partially structured) inputs to well-formed, executable outputs. We\nintroduce abstract syntax networks, a modeling framework for these problems.\nThe outputs are represented as abstract syntax trees (ASTs) and constructed by\na decoder with a dynamically-determined modular structure paralleling the\nstructure of the output tree. On the benchmark Hearthstone dataset for code\ngeneration, our model obtains 79.2 BLEU and 22.7% exact match accuracy,\ncompared to previous state-of-the-art values of 67.1 and 6.1%. Furthermore, we\nperform competitively on the Atis, Jobs, and Geo semantic parsing datasets with\nno task-specific engineering.\n",
+        "published": "2017",
+        "authors": [
+            "Maxim Rabinovich",
+            "Mitchell Stern",
+            "Dan Klein"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1708.03995v1",
+        "title": "Sentiment Analysis by Joint Learning of Word Embeddings and Classifier",
+        "abstract": "  Word embeddings are representations of individual words of a text document in\na vector space and they are often use- ful for performing natural language pro-\ncessing tasks. Current state of the art al- gorithms for learning word\nembeddings learn vector representations from large corpora of text documents in\nan unsu- pervised fashion. This paper introduces SWESA (Supervised Word\nEmbeddings for Sentiment Analysis), an algorithm for sentiment analysis via\nword embeddings. SWESA leverages document label infor- mation to learn vector\nrepresentations of words from a modest corpus of text doc- uments by solving an\noptimization prob- lem that minimizes a cost function with respect to both word\nembeddings as well as classification accuracy. Analysis re- veals that SWESA\nprovides an efficient way of estimating the dimension of the word embeddings\nthat are to be learned. Experiments on several real world data sets show that\nSWESA has superior per- formance when compared to previously suggested\napproaches to word embeddings and sentiment analysis tasks.\n",
+        "published": "2017",
+        "authors": [
+            "Prathusha Kameswara Sarma",
+            "Bill Sethares"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1804.03782v3",
+        "title": "CoT: Cooperative Training for Generative Modeling of Discrete Data",
+        "abstract": "  In this paper, we study the generative models of sequential discrete data. To\ntackle the exposure bias problem inherent in maximum likelihood estimation\n(MLE), generative adversarial networks (GANs) are introduced to penalize the\nunrealistic generated samples. To exploit the supervision signal from the\ndiscriminator, most previous models leverage REINFORCE to address the\nnon-differentiable problem of sequential discrete data. However, because of the\nunstable property of the training signal during the dynamic process of\nadversarial training, the effectiveness of REINFORCE, in this case, is hardly\nguaranteed. To deal with such a problem, we propose a novel approach called\nCooperative Training (CoT) to improve the training of sequence generative\nmodels. CoT transforms the min-max game of GANs into a joint maximization\nframework and manages to explicitly estimate and optimize Jensen-Shannon\ndivergence. Moreover, CoT works without the necessity of pre-training via MLE,\nwhich is crucial to the success of previous methods. In the experiments,\ncompared to existing state-of-the-art methods, CoT shows superior or at least\ncompetitive performance on sample quality, diversity, as well as training\nstability.\n",
+        "published": "2018",
+        "authors": [
+            "Sidi Lu",
+            "Lantao Yu",
+            "Siyuan Feng",
+            "Yaoming Zhu",
+            "Weinan Zhang",
+            "Yong Yu"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1804.09843v1",
+        "title": "Hierarchical Density Order Embeddings",
+        "abstract": "  By representing words with probability densities rather than point vectors,\nprobabilistic word embeddings can capture rich and interpretable semantic\ninformation and uncertainty. The uncertainty information can be particularly\nmeaningful in capturing entailment relationships -- whereby general words such\nas \"entity\" correspond to broad distributions that encompass more specific\nwords such as \"animal\" or \"instrument\". We introduce density order embeddings,\nwhich learn hierarchical representations through encapsulation of probability\ndensities. In particular, we propose simple yet effective loss functions and\ndistance metrics, as well as graph-based schemes to select negative samples to\nbetter learn hierarchical density representations. Our approach provides\nstate-of-the-art performance on the WordNet hypernym relationship prediction\ntask and the challenging HyperLex lexical entailment dataset -- while retaining\na rich and interpretable density representation.\n",
+        "published": "2018",
+        "authors": [
+            "Ben Athiwaratkun",
+            "Andrew Gordon Wilson"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1804.11067v1",
+        "title": "Staircase Network: structural language identification via hierarchical\n  attentive units",
+        "abstract": "  Language recognition system is typically trained directly to optimize\nclassification error on the target language labels, without using the external,\nor meta-information in the estimation of the model parameters. However labels\nare not independent of each other, there is a dependency enforced by, for\nexample, the language family, which affects negatively on classification. The\nother external information sources (e.g. audio encoding, telephony or video\nspeech) can also decrease classification accuracy. In this paper, we attempt to\nsolve these issues by constructing a deep hierarchical neural network, where\ndifferent levels of meta-information are encapsulated by attentive prediction\nunits and also embedded into the training progress. The proposed method learns\nauxiliary tasks to obtain robust internal representation and to construct a\nvariant of attentive units within the hierarchical model. The final result is\nthe structural prediction of the target language and a closely related language\nfamily. The algorithm reflects a \"staircase\" way of learning in both its\narchitecture and training, advancing from the fundamental audio encoding to the\nlanguage family level and finally to the target language level. This process\nnot only improves generalization but also tackles the issues of imbalanced\nclass priors and channel variability in the deep neural network model. Our\nexperimental findings show that the proposed architecture outperforms the\nstate-of-the-art i-vector approaches on both small and big language corpora by\na significant margin.\n",
+        "published": "2018",
+        "authors": [
+            "Trung Ngo Trong",
+            "Ville Hautam\u00e4ki",
+            "Kristiina Jokinen"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1805.03716v1",
+        "title": "Long Short-Term Memory as a Dynamically Computed Element-wise Weighted\n  Sum",
+        "abstract": "  LSTMs were introduced to combat vanishing gradients in simple RNNs by\naugmenting them with gated additive recurrent connections. We present an\nalternative view to explain the success of LSTMs: the gates themselves are\nversatile recurrent models that provide more representational power than\npreviously appreciated. We do this by decoupling the LSTM's gates from the\nembedded simple RNN, producing a new class of RNNs where the recurrence\ncomputes an element-wise weighted sum of context-independent functions of the\ninput. Ablations on a range of problems demonstrate that the gating mechanism\nalone performs as well as an LSTM in most settings, strongly suggesting that\nthe gates are doing much more in practice than just alleviating vanishing\ngradients.\n",
+        "published": "2018",
+        "authors": [
+            "Omer Levy",
+            "Kenton Lee",
+            "Nicholas FitzGerald",
+            "Luke Zettlemoyer"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1805.07340v2",
+        "title": "Improved Sentence Modeling using Suffix Bidirectional LSTM",
+        "abstract": "  Recurrent neural networks have become ubiquitous in computing representations\nof sequential data, especially textual data in natural language processing. In\nparticular, Bidirectional LSTMs are at the heart of several neural models\nachieving state-of-the-art performance in a wide variety of tasks in NLP.\nHowever, BiLSTMs are known to suffer from sequential bias - the contextual\nrepresentation of a token is heavily influenced by tokens close to it in a\nsentence. We propose a general and effective improvement to the BiLSTM model\nwhich encodes each suffix and prefix of a sequence of tokens in both forward\nand reverse directions. We call our model Suffix Bidirectional LSTM or\nSuBiLSTM. This introduces an alternate bias that favors long range\ndependencies. We apply SuBiLSTMs to several tasks that require sentence\nmodeling. We demonstrate that using SuBiLSTM instead of a BiLSTM in existing\nmodels leads to improvements in performance in learning general sentence\nrepresentations, text classification, textual entailment and paraphrase\ndetection. Using SuBiLSTM we achieve new state-of-the-art results for\nfine-grained sentiment classification and question classification.\n",
+        "published": "2018",
+        "authors": [
+            "Siddhartha Brahma"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1805.12393v1",
+        "title": "KG^2: Learning to Reason Science Exam Questions with Contextual\n  Knowledge Graph Embeddings",
+        "abstract": "  The AI2 Reasoning Challenge (ARC), a new benchmark dataset for question\nanswering (QA) has been recently released. ARC only contains natural science\nquestions authored for human exams, which are hard to answer and require\nadvanced logic reasoning. On the ARC Challenge Set, existing state-of-the-art\nQA systems fail to significantly outperform random baseline, reflecting the\ndifficult nature of this task. In this paper, we propose a novel framework for\nanswering science exam questions, which mimics human solving process in an\nopen-book exam. To address the reasoning challenge, we construct contextual\nknowledge graphs respectively for the question itself and supporting sentences.\nOur model learns to reason with neural embeddings of both knowledge graphs.\nExperiments on the ARC Challenge Set show that our model outperforms the\nprevious state-of-the-art QA systems.\n",
+        "published": "2018",
+        "authors": [
+            "Yuyu Zhang",
+            "Hanjun Dai",
+            "Kamil Toraman",
+            "Le Song"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1808.04444v2",
+        "title": "Character-Level Language Modeling with Deeper Self-Attention",
+        "abstract": "  LSTMs and other RNN variants have shown strong performance on character-level\nlanguage modeling. These models are typically trained using truncated\nbackpropagation through time, and it is common to assume that their success\nstems from their ability to remember long-term contexts. In this paper, we show\nthat a deep (64-layer) transformer model with fixed context outperforms RNN\nvariants by a large margin, achieving state of the art on two popular\nbenchmarks: 1.13 bits per character on text8 and 1.06 on enwik8. To get good\nresults at this depth, we show that it is important to add auxiliary losses,\nboth at intermediate network layers and intermediate sequence positions.\n",
+        "published": "2018",
+        "authors": [
+            "Rami Al-Rfou",
+            "Dokook Choe",
+            "Noah Constant",
+            "Mandy Guo",
+            "Llion Jones"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1808.04926v2",
+        "title": "How Much Reading Does Reading Comprehension Require? A Critical\n  Investigation of Popular Benchmarks",
+        "abstract": "  Many recent papers address reading comprehension, where examples consist of\n(question, passage, answer) tuples. Presumably, a model must combine\ninformation from both questions and passages to predict corresponding answers.\nHowever, despite intense interest in the topic, with hundreds of published\npapers vying for leaderboard dominance, basic questions about the difficulty of\nmany popular benchmarks remain unanswered. In this paper, we establish sensible\nbaselines for the bAbI, SQuAD, CBT, CNN, and Who-did-What datasets, finding\nthat question- and passage-only models often perform surprisingly well. On $14$\nout of $20$ bAbI tasks, passage-only models achieve greater than $50\\%$\naccuracy, sometimes matching the full model. Interestingly, while CBT provides\n$20$-sentence stories only the last is needed for comparably accurate\nprediction. By comparison, SQuAD and CNN appear better-constructed.\n",
+        "published": "2018",
+        "authors": [
+            "Divyansh Kaushik",
+            "Zachary C. Lipton"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1808.08720v1",
+        "title": "Predefined Sparseness in Recurrent Sequence Models",
+        "abstract": "  Inducing sparseness while training neural networks has been shown to yield\nmodels with a lower memory footprint but similar effectiveness to dense models.\nHowever, sparseness is typically induced starting from a dense model, and thus\nthis advantage does not hold during training. We propose techniques to enforce\nsparseness upfront in recurrent sequence models for NLP applications, to also\nbenefit training. First, in language modeling, we show how to increase hidden\nstate sizes in recurrent layers without increasing the number of parameters,\nleading to more expressive models. Second, for sequence labeling, we show that\nword embeddings with predefined sparseness lead to similar performance as dense\nembeddings, at a fraction of the number of trainable parameters.\n",
+        "published": "2018",
+        "authors": [
+            "Thomas Demeester",
+            "Johannes Deleu",
+            "Fr\u00e9deric Godin",
+            "Chris Develder"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1808.08773v3",
+        "title": "Learning Multilingual Word Embeddings in Latent Metric Space: A\n  Geometric Approach",
+        "abstract": "  We propose a novel geometric approach for learning bilingual mappings given\nmonolingual embeddings and a bilingual dictionary. Our approach decouples\nlearning the transformation from the source language to the target language\ninto (a) learning rotations for language-specific embeddings to align them to a\ncommon space, and (b) learning a similarity metric in the common space to model\nsimilarities between the embeddings. We model the bilingual mapping problem as\nan optimization problem on smooth Riemannian manifolds. We show that our\napproach outperforms previous approaches on the bilingual lexicon induction and\ncross-lingual word similarity tasks. We also generalize our framework to\nrepresent multiple languages in a common latent space. In particular, the\nlatent space representations for several languages are learned jointly, given\nbilingual dictionaries for multiple language pairs. We illustrate the\neffectiveness of joint learning for multiple languages in zero-shot word\ntranslation setting. Our implementation is available at\nhttps://github.com/anoopkunchukuttan/geomm .\n",
+        "published": "2018",
+        "authors": [
+            "Pratik Jawanpuria",
+            "Arjun Balgovind",
+            "Anoop Kunchukuttan",
+            "Bamdev Mishra"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1810.00428v1",
+        "title": "Efficient Sequence Labeling with Actor-Critic Training",
+        "abstract": "  Neural approaches to sequence labeling often use a Conditional Random Field\n(CRF) to model their output dependencies, while Recurrent Neural Networks (RNN)\nare used for the same purpose in other tasks. We set out to establish RNNs as\nan attractive alternative to CRFs for sequence labeling. To do so, we address\none of the RNN's most prominent shortcomings, the fact that it is not exposed\nto its own errors with the maximum-likelihood training. We frame the prediction\nof the output sequence as a sequential decision-making process, where we train\nthe network with an adjusted actor-critic algorithm (AC-RNN). We\ncomprehensively compare this strategy with maximum-likelihood training for both\nRNNs and CRFs on three structured-output tasks. The proposed AC-RNN efficiently\nmatches the performance of the CRF on NER and CCG tagging, and outperforms it\non Machine Transliteration. We also show that our training strategy is\nsignificantly better than other techniques for addressing RNN's exposure bias,\nsuch as Scheduled Sampling, and Self-Critical policy training.\n",
+        "published": "2018",
+        "authors": [
+            "Saeed Najafi",
+            "Colin Cherry",
+            "Grzegorz Kondrak"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1810.06673v1",
+        "title": "Named-Entity Linking Using Deep Learning For Legal Documents: A Transfer\n  Learning Approach",
+        "abstract": "  In the legal domain it is important to differentiate between words in\ngeneral, and afterwards to link the occurrences of the same entities. The topic\nto solve these challenges is called Named-Entity Linking (NEL). Current\nsupervised neural networks designed for NEL use publicly available datasets for\ntraining and testing. However, this paper focuses especially on the aspect of\napplying transfer learning approach using networks trained for NEL to legal\ndocuments. Experiments show consistent improvement in the legal datasets that\nwere created from the European Union law in the scope of this research. Using\ntransfer learning approach, we reached F1-score of 98.90\\% and 98.01\\% on the\nlegal small and large test dataset.\n",
+        "published": "2018",
+        "authors": [
+            "Ahmed Elnaggar",
+            "Robin Otto",
+            "Florian Matthes"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1810.06682v2",
+        "title": "Trellis Networks for Sequence Modeling",
+        "abstract": "  We present trellis networks, a new architecture for sequence modeling. On the\none hand, a trellis network is a temporal convolutional network with special\nstructure, characterized by weight tying across depth and direct injection of\nthe input into deep layers. On the other hand, we show that truncated recurrent\nnetworks are equivalent to trellis networks with special sparsity structure in\ntheir weight matrices. Thus trellis networks with general weight matrices\ngeneralize truncated recurrent networks. We leverage these connections to\ndesign high-performing trellis networks that absorb structural and algorithmic\nelements from both recurrent and convolutional models. Experiments demonstrate\nthat trellis networks outperform the current state of the art methods on a\nvariety of challenging benchmarks, including word-level language modeling and\ncharacter-level language modeling tasks, and stress tests designed to evaluate\nlong-term memory retention. The code is available at\nhttps://github.com/locuslab/trellisnet .\n",
+        "published": "2018",
+        "authors": [
+            "Shaojie Bai",
+            "J. Zico Kolter",
+            "Vladlen Koltun"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1810.10126v7",
+        "title": "Area Attention",
+        "abstract": "  Existing attention mechanisms are trained to attend to individual items in a\ncollection (the memory) with a predefined, fixed granularity, e.g., a word\ntoken or an image grid. We propose area attention: a way to attend to areas in\nthe memory, where each area contains a group of items that are structurally\nadjacent, e.g., spatially for a 2D memory such as images, or temporally for a\n1D memory such as natural language sentences. Importantly, the shape and the\nsize of an area are dynamically determined via learning, which enables a model\nto attend to information with varying granularity. Area attention can easily\nwork with existing model architectures such as multi-head attention for\nsimultaneously attending to multiple areas in the memory. We evaluate area\nattention on two tasks: neural machine translation (both character and\ntoken-level) and image captioning, and improve upon strong (state-of-the-art)\nbaselines in all the cases. These improvements are obtainable with a basic form\nof area attention that is parameter free.\n",
+        "published": "2018",
+        "authors": [
+            "Yang Li",
+            "Lukasz Kaiser",
+            "Samy Bengio",
+            "Si Si"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1810.10147v2",
+        "title": "FewRel: A Large-Scale Supervised Few-Shot Relation Classification\n  Dataset with State-of-the-Art Evaluation",
+        "abstract": "  We present a Few-Shot Relation Classification Dataset (FewRel), consisting of\n70, 000 sentences on 100 relations derived from Wikipedia and annotated by\ncrowdworkers. The relation of each sentence is first recognized by distant\nsupervision methods, and then filtered by crowdworkers. We adapt the most\nrecent state-of-the-art few-shot learning methods for relation classification\nand conduct a thorough evaluation of these methods. Empirical results show that\neven the most competitive few-shot learning models struggle on this task,\nespecially as compared with humans. We also show that a range of different\nreasoning skills are needed to solve our task. These results indicate that\nfew-shot relation classification remains an open problem and still requires\nfurther research. Our detailed analysis points multiple directions for future\nresearch. All details and resources about the dataset and baselines are\nreleased on http://zhuhao.me/fewrel.\n",
+        "published": "2018",
+        "authors": [
+            "Xu Han",
+            "Hao Zhu",
+            "Pengfei Yu",
+            "Ziyun Wang",
+            "Yuan Yao",
+            "Zhiyuan Liu",
+            "Maosong Sun"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1810.12698v1",
+        "title": "Compositional Attention Networks for Interpretability in Natural\n  Language Question Answering",
+        "abstract": "  MAC Net is a compositional attention network designed for Visual Question\nAnswering. We propose a modified MAC net architecture for Natural Language\nQuestion Answering. Question Answering typically requires Language\nUnderstanding and multi-step Reasoning. MAC net's unique architecture - the\nseparation between memory and control, facilitates data-driven iterative\nreasoning. This makes it an ideal candidate for solving tasks that involve\nlogical reasoning. Our experiments with 20 bAbI tasks demonstrate the value of\nMAC net as a data-efficient and interpretable architecture for Natural Language\nQuestion Answering. The transparent nature of MAC net provides a highly\ngranular view of the reasoning steps taken by the network in answering a query.\n",
+        "published": "2018",
+        "authors": [
+            "Muru Selvakumar",
+            "Suriyadeepan Ramamoorthy",
+            "Vaidheeswaran Archana",
+            "Malaikannan Sankarasubbu"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1904.05530v4",
+        "title": "Recurrent Event Network: Autoregressive Structure Inference over\n  Temporal Knowledge Graphs",
+        "abstract": "  Knowledge graph reasoning is a critical task in natural language processing.\nThe task becomes more challenging on temporal knowledge graphs, where each fact\nis associated with a timestamp. Most existing methods focus on reasoning at\npast timestamps and they are not able to predict facts happening in the future.\nThis paper proposes Recurrent Event Network (RE-NET), a novel autoregressive\narchitecture for predicting future interactions. The occurrence of a fact\n(event) is modeled as a probability distribution conditioned on temporal\nsequences of past knowledge graphs. Specifically, our RE-NET employs a\nrecurrent event encoder to encode past facts and uses a neighborhood aggregator\nto model the connection of facts at the same timestamp. Future facts can then\nbe inferred in a sequential manner based on the two modules. We evaluate our\nproposed method via link prediction at future times on five public datasets.\nThrough extensive experiments, we demonstrate the strength of RENET, especially\non multi-step inference over future timestamps, and achieve state-of-the-art\nperformance on all five datasets. Code and data can be found at\nhttps://github.com/INK-USC/RE-Net.\n",
+        "published": "2019",
+        "authors": [
+            "Woojeong Jin",
+            "Meng Qu",
+            "Xisen Jin",
+            "Xiang Ren"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1904.09067v2",
+        "title": "Emergence of Compositional Language with Deep Generational Transmission",
+        "abstract": "  Recent work has studied the emergence of language among deep reinforcement\nlearning agents that must collaborate to solve a task. Of particular interest\nare the factors that cause language to be compositional -- i.e., express\nmeaning by combining words which themselves have meaning. Evolutionary\nlinguists have found that in addition to structural priors like those already\nstudied in deep learning, the dynamics of transmitting language from generation\nto generation contribute significantly to the emergence of compositionality. In\nthis paper, we introduce these cultural evolutionary dynamics into language\nemergence by periodically replacing agents in a population to create a\nknowledge gap, implicitly inducing cultural transmission of language. We show\nthat this implicit cultural transmission encourages the resulting languages to\nexhibit better compositional generalization.\n",
+        "published": "2019",
+        "authors": [
+            "Michael Cogswell",
+            "Jiasen Lu",
+            "Stefan Lee",
+            "Devi Parikh",
+            "Dhruv Batra"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1904.09324v2",
+        "title": "Mask-Predict: Parallel Decoding of Conditional Masked Language Models",
+        "abstract": "  Most machine translation systems generate text autoregressively from left to\nright. We, instead, use a masked language modeling objective to train a model\nto predict any subset of the target words, conditioned on both the input text\nand a partially masked target translation. This approach allows for efficient\niterative decoding, where we first predict all of the target words\nnon-autoregressively, and then repeatedly mask out and regenerate the subset of\nwords that the model is least confident about. By applying this strategy for a\nconstant number of iterations, our model improves state-of-the-art performance\nlevels for non-autoregressive and parallel decoding translation models by over\n4 BLEU on average. It is also able to reach within about 1 BLEU point of a\ntypical left-to-right transformer model, while decoding significantly faster.\n",
+        "published": "2019",
+        "authors": [
+            "Marjan Ghazvininejad",
+            "Omer Levy",
+            "Yinhan Liu",
+            "Luke Zettlemoyer"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1904.09585v2",
+        "title": "Obfuscation for Privacy-preserving Syntactic Parsing",
+        "abstract": "  The goal of homomorphic encryption is to encrypt data such that another party\ncan operate on it without being explicitly exposed to the content of the\noriginal data. We introduce an idea for a privacy-preserving transformation on\nnatural language data, inspired by homomorphic encryption. Our primary tool is\n{\\em obfuscation}, relying on the properties of natural language. Specifically,\na given English text is obfuscated using a neural model that aims to preserve\nthe syntactic relationships of the original sentence so that the obfuscated\nsentence can be parsed instead of the original one. The model works at the word\nlevel, and learns to obfuscate each word separately by changing it into a new\nword that has a similar syntactic role. The text obfuscated by our model leads\nto better performance on three syntactic parsers (two dependency and one\nconstituency parsers) in comparison to an upper-bound random substitution\nbaseline. More specifically, the results demonstrate that as more terms are\nobfuscated (by their part of speech), the substitution upper bound\nsignificantly degrades, while the neural model maintains a relatively high\nperforming parser. All of this is done without much sacrifice of privacy\ncompared to the random substitution upper bound. We also further analyze the\nresults, and discover that the substituted words have similar syntactic\nproperties, but different semantic content, compared to the original words.\n",
+        "published": "2019",
+        "authors": [
+            "Zhifeng Hu",
+            "Serhii Havrylov",
+            "Ivan Titov",
+            "Shay B. Cohen"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1905.01959v1",
+        "title": "Relation Discovery with Out-of-Relation Knowledge Base as Supervision",
+        "abstract": "  Unsupervised relation discovery aims to discover new relations from a given\ntext corpus without annotated data. However, it does not consider existing\nhuman annotated knowledge bases even when they are relevant to the relations to\nbe discovered. In this paper, we study the problem of how to use\nout-of-relation knowledge bases to supervise the discovery of unseen relations,\nwhere out-of-relation means that relations to discover from the text corpus and\nthose in knowledge bases are not overlapped. We construct a set of constraints\nbetween entity pairs based on the knowledge base embedding and then incorporate\nconstraints into the relation discovery by a variational auto-encoder based\nalgorithm. Experiments show that our new approach can improve the\nstate-of-the-art relation discovery performance by a large margin.\n",
+        "published": "2019",
+        "authors": [
+            "Yan Liang",
+            "Xin Liu",
+            "Jianwen Zhang",
+            "Yangqiu Song"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1905.05700v1",
+        "title": "Learning meters of Arabic and English poems with Recurrent Neural\n  Networks: a step forward for language understanding and synthesis",
+        "abstract": "  Recognizing a piece of writing as a poem or prose is usually easy for the\nmajority of people; however, only specialists can determine which meter a poem\nbelongs to. In this paper, we build Recurrent Neural Network (RNN) models that\ncan classify poems according to their meters from plain text. The input text is\nencoded at the character level and directly fed to the models without feature\nhandcrafting. This is a step forward for machine understanding and synthesis of\nlanguages in general, and Arabic language in particular. Among the 16 poem\nmeters of Arabic and the 4 meters of English the networks were able to\ncorrectly classify poem with an overall accuracy of 96.38\\% and 82.31\\%\nrespectively. The poem datasets used to conduct this research were massive,\nover 1.5 million of verses, and were crawled from different nontechnical\nsources, almost Arabic and English literature sites, and in different\nheterogeneous and unstructured formats. These datasets are now made publicly\navailable in clean, structured, and documented format for other future\nresearch. To the best of the authors' knowledge, this research is the first to\naddress classifying poem meters in a machine learning approach, in general, and\nin RNN featureless based approach, in particular. In addition, the dataset is\nthe first publicly available dataset ready for the purpose of future\ncomputational research.\n",
+        "published": "2019",
+        "authors": [
+            "Waleed A. Yousef",
+            "Omar M. Ibrahime",
+            "Taha M. Madbouly",
+            "Moustafa A. Mahmoud"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1905.05701v2",
+        "title": "Modeling user context for valence prediction from narratives",
+        "abstract": "  Automated prediction of valence, one key feature of a person's emotional\nstate, from individuals' personal narratives may provide crucial information\nfor mental healthcare (e.g. early diagnosis of mental diseases, supervision of\ndisease course, etc.). In the Interspeech 2018 ComParE Self-Assessed Affect\nchallenge, the task of valence prediction was framed as a three-class\nclassification problem using 8 seconds fragments from individuals' narratives.\nAs such, the task did not allow for exploring contextual information of the\nnarratives. In this work, we investigate the intrinsic information from\nmultiple narratives recounted by the same individual in order to predict their\ncurrent state-of-mind. Furthermore, with generalizability in mind, we decided\nto focus our experiments exclusively on textual information as the public\navailability of audio narratives is limited compared to text. Our hypothesis\nis, that context modeling might provide insights about emotion triggering\nconcepts (e.g. events, people, places) mentioned in the narratives that are\nlinked to an individual's state of mind. We explore multiple machine learning\ntechniques to model narratives. We find that the models are able to capture\ninter-individual differences, leading to more accurate predictions of an\nindividual's emotional state, as compared to single narratives.\n",
+        "published": "2019",
+        "authors": [
+            "Aniruddha Tammewar",
+            "Alessandra Cervone",
+            "Eva-Maria Messner",
+            "Giuseppe Riccardi"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1905.05778v3",
+        "title": "Misleading Failures of Partial-input Baselines",
+        "abstract": "  Recent work establishes dataset difficulty and removes annotation artifacts\nvia partial-input baselines (e.g., hypothesis-only models for SNLI or\nquestion-only models for VQA). When a partial-input baseline gets high\naccuracy, a dataset is cheatable. However, the converse is not necessarily\ntrue: the failure of a partial-input baseline does not mean a dataset is free\nof artifacts. To illustrate this, we first design artificial datasets which\ncontain trivial patterns in the full input that are undetectable by any\npartial-input model. Next, we identify such artifacts in the SNLI dataset - a\nhypothesis-only model augmented with trivial patterns in the premise can solve\n15% of the examples that are previously considered \"hard\". Our work provides a\ncaveat for the use of partial-input baselines for dataset verification and\ncreation.\n",
+        "published": "2019",
+        "authors": [
+            "Shi Feng",
+            "Eric Wallace",
+            "Jordan Boyd-Graber"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1905.10417v1",
+        "title": "Differentiable Representations For Multihop Inference Rules",
+        "abstract": "  We present efficient differentiable implementations of second-order multi-hop\nreasoning using a large symbolic knowledge base (KB). We introduce a new\noperation which can be used to compositionally construct second-order multi-hop\ntemplates in a neural model, and evaluate a number of alternative\nimplementations, with different time and memory trade offs. These techniques\nscale to KBs with millions of entities and tens of millions of triples, and\nlead to simple models with competitive performance on several learning tasks\nrequiring multi-hop reasoning.\n",
+        "published": "2019",
+        "authors": [
+            "William W. Cohen",
+            "Haitian Sun",
+            "R. Alex Hofer",
+            "Matthew Siegler"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1906.03926v1",
+        "title": "A Survey of Reinforcement Learning Informed by Natural Language",
+        "abstract": "  To be successful in real-world tasks, Reinforcement Learning (RL) needs to\nexploit the compositional, relational, and hierarchical structure of the world,\nand learn to transfer it to the task at hand. Recent advances in representation\nlearning for language make it possible to build models that acquire world\nknowledge from text corpora and integrate this knowledge into downstream\ndecision making problems. We thus argue that the time is right to investigate a\ntight integration of natural language understanding into RL in particular. We\nsurvey the state of the field, including work on instruction following, text\ngames, and learning from textual domain knowledge. Finally, we call for the\ndevelopment of new environments as well as further investigation into the\npotential uses of recent Natural Language Processing (NLP) techniques for such\ntasks.\n",
+        "published": "2019",
+        "authors": [
+            "Jelena Luketina",
+            "Nantas Nardelli",
+            "Gregory Farquhar",
+            "Jakob Foerster",
+            "Jacob Andreas",
+            "Edward Grefenstette",
+            "Shimon Whiteson",
+            "Tim Rockt\u00e4schel"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1906.07343v2",
+        "title": "Language as an Abstraction for Hierarchical Deep Reinforcement Learning",
+        "abstract": "  Solving complex, temporally-extended tasks is a long-standing problem in\nreinforcement learning (RL). We hypothesize that one critical element of\nsolving such problems is the notion of compositionality. With the ability to\nlearn concepts and sub-skills that can be composed to solve longer tasks, i.e.\nhierarchical RL, we can acquire temporally-extended behaviors. However,\nacquiring effective yet general abstractions for hierarchical RL is remarkably\nchallenging. In this paper, we propose to use language as the abstraction, as\nit provides unique compositional structure, enabling fast learning and\ncombinatorial generalization, while retaining tremendous flexibility, making it\nsuitable for a variety of problems. Our approach learns an\ninstruction-following low-level policy and a high-level policy that can reuse\nabstractions across tasks, in essence, permitting agents to reason using\nstructured language. To study compositional task learning, we introduce an\nopen-source object interaction environment built using the MuJoCo physics\nengine and the CLEVR engine. We find that, using our approach, agents can learn\nto solve to diverse, temporally-extended tasks such as object sorting and\nmulti-object rearrangement, including from raw pixel observations. Our analysis\nreveals that the compositional nature of language is critical for learning\ndiverse sub-skills and systematically generalizing to new sub-skills in\ncomparison to non-compositional abstractions that use the same supervision.\n",
+        "published": "2019",
+        "authors": [
+            "Yiding Jiang",
+            "Shixiang Gu",
+            "Kevin Murphy",
+            "Chelsea Finn"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1906.09308v2",
+        "title": "Approximating Interactive Human Evaluation with Self-Play for\n  Open-Domain Dialog Systems",
+        "abstract": "  Building an open-domain conversational agent is a challenging problem.\nCurrent evaluation methods, mostly post-hoc judgments of static conversation,\ndo not capture conversation quality in a realistic interactive context. In this\npaper, we investigate interactive human evaluation and provide evidence for its\nnecessity; we then introduce a novel, model-agnostic, and dataset-agnostic\nmethod to approximate it. In particular, we propose a self-play scenario where\nthe dialog system talks to itself and we calculate a combination of proxies\nsuch as sentiment and semantic coherence on the conversation trajectory. We\nshow that this metric is capable of capturing the human-rated quality of a\ndialog model better than any automated metric known to-date, achieving a\nsignificant Pearson correlation (r>.7, p<.05). To investigate the strengths of\nthis novel metric and interactive evaluation in comparison to state-of-the-art\nmetrics and human evaluation of static conversations, we perform extended\nexperiments with a set of models, including several that make novel\nimprovements to recent hierarchical dialog generation architectures through\nsentiment and semantic knowledge distillation on the utterance level. Finally,\nwe open-source the interactive evaluation platform we built and the dataset we\ncollected to allow researchers to efficiently deploy and evaluate dialog\nmodels.\n",
+        "published": "2019",
+        "authors": [
+            "Asma Ghandeharioun",
+            "Judy Hanwen Shen",
+            "Natasha Jaques",
+            "Craig Ferguson",
+            "Noah Jones",
+            "Agata Lapedriza",
+            "Rosalind Picard"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1909.00215v1",
+        "title": "QAInfomax: Learning Robust Question Answering System by Mutual\n  Information Maximization",
+        "abstract": "  Standard accuracy metrics indicate that modern reading comprehension systems\nhave achieved strong performance in many question answering datasets. However,\nthe extent these systems truly understand language remains unknown, and\nexisting systems are not good at distinguishing distractor sentences, which\nlook related but do not actually answer the question. To address this problem,\nwe propose QAInfomax as a regularizer in reading comprehension systems by\nmaximizing mutual information among passages, a question, and its answer.\nQAInfomax helps regularize the model to not simply learn the superficial\ncorrelation for answering questions. The experiments show that our proposed\nQAInfomax achieves the state-of-the-art performance on the benchmark\nAdversarial-SQuAD dataset.\n",
+        "published": "2019",
+        "authors": [
+            "Yi-Ting Yeh",
+            "Yun-Nung Chen"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1909.05356v2",
+        "title": "Entity Projection via Machine Translation for Cross-Lingual NER",
+        "abstract": "  Although over 100 languages are supported by strong off-the-shelf machine\ntranslation systems, only a subset of them possess large annotated corpora for\nnamed entity recognition. Motivated by this fact, we leverage machine\ntranslation to improve annotation-projection approaches to cross-lingual named\nentity recognition. We propose a system that improves over prior\nentity-projection methods by: (a) leveraging machine translation systems twice:\nfirst for translating sentences and subsequently for translating entities; (b)\nmatching entities based on orthographic and phonetic similarity; and (c)\nidentifying matches based on distributional statistics derived from the\ndataset. Our approach improves upon current state-of-the-art methods for\ncross-lingual named entity recognition on 5 diverse languages by an average of\n4.1 points. Further, our method achieves state-of-the-art F_1 scores for\nArmenian, outperforming even a monolingual model trained on Armenian source\ndata.\n",
+        "published": "2019",
+        "authors": [
+            "Alankar Jain",
+            "Bhargavi Paranjape",
+            "Zachary C. Lipton"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1909.07063v2",
+        "title": "Global Autoregressive Models for Data-Efficient Sequence Learning",
+        "abstract": "  Standard autoregressive seq2seq models are easily trained by max-likelihood,\nbut tend to show poor results under small-data conditions. We introduce a class\nof seq2seq models, GAMs (Global Autoregressive Models), which combine an\nautoregressive component with a log-linear component, allowing the use of\nglobal \\textit{a priori} features to compensate for lack of data. We train\nthese models in two steps. In the first step, we obtain an \\emph{unnormalized}\nGAM that maximizes the likelihood of the data, but is improper for fast\ninference or evaluation. In the second step, we use this GAM to train (by\ndistillation) a second autoregressive model that approximates the\n\\emph{normalized} distribution associated with the GAM, and can be used for\nfast inference and evaluation. Our experiments focus on language modelling\nunder synthetic conditions and show a strong perplexity reduction of using the\nsecond autoregressive model over the standard one.\n",
+        "published": "2019",
+        "authors": [
+            "Tetiana Parshakova",
+            "Jean-Marc Andreoli",
+            "Marc Dymetman"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1909.09690v2",
+        "title": "A Deep Learning-Based Approach for Measuring the Domain Similarity of\n  Persian Texts",
+        "abstract": "  In this paper, we propose a novel approach for measuring the degree of\nsimilarity between categories of two pieces of Persian text, which were\npublished as descriptions of two separate advertisements. We built an\nappropriate dataset for this work using a dataset which consists of\nadvertisements posted on an e-commerce website. We generated a significant\nnumber of paired texts from this dataset and assigned each pair a score from 0\nto 3, which demonstrates the degree of similarity between the domains of the\npair. In this work, we represent words with word embedding vectors derived from\nword2vec. Then deep neural network models are used to represent texts.\nEventually, we employ concatenation of absolute difference and bit-wise\nmultiplication and a fully-connected neural network to produce a probability\ndistribution vector for the score of the pairs. Through a supervised learning\napproach, we trained our model on a GPU, and our best model achieved an F1\nscore of 0.9865.\n",
+        "published": "2019",
+        "authors": [
+            "Hossein Keshavarz",
+            "Shohreh Tabatabayi Seifi",
+            "Mohammad Izadi"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1909.12434v2",
+        "title": "Learning the Difference that Makes a Difference with\n  Counterfactually-Augmented Data",
+        "abstract": "  Despite alarm over the reliance of machine learning systems on so-called\nspurious patterns, the term lacks coherent meaning in standard statistical\nframeworks. However, the language of causality offers clarity: spurious\nassociations are due to confounding (e.g., a common cause), but not direct or\nindirect causal effects. In this paper, we focus on natural language\nprocessing, introducing methods and resources for training models less\nsensitive to spurious patterns. Given documents and their initial labels, we\ntask humans with revising each document so that it (i) accords with a\ncounterfactual target label; (ii) retains internal coherence; and (iii) avoids\nunnecessary changes. Interestingly, on sentiment analysis and natural language\ninference tasks, classifiers trained on original data fail on their\ncounterfactually-revised counterparts and vice versa. Classifiers trained on\ncombined datasets perform remarkably well, just shy of those specialized to\neither domain. While classifiers trained on either original or manipulated data\nalone are sensitive to spurious features (e.g., mentions of genre), models\ntrained on the combined data are less sensitive to this signal. Both datasets\nare publicly available.\n",
+        "published": "2019",
+        "authors": [
+            "Divyansh Kaushik",
+            "Eduard Hovy",
+            "Zachary C. Lipton"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1911.06192v2",
+        "title": "Multi-domain Dialogue State Tracking as Dynamic Knowledge Graph Enhanced\n  Question Answering",
+        "abstract": "  Multi-domain dialogue state tracking (DST) is a critical component for\nconversational AI systems. The domain ontology (i.e., specification of domains,\nslots, and values) of a conversational AI system is generally incomplete,\nmaking the capability for DST models to generalize to new slots, values, and\ndomains during inference imperative. In this paper, we propose to model\nmulti-domain DST as a question answering problem, referred to as Dialogue State\nTracking via Question Answering (DSTQA). Within DSTQA, each turn generates a\nquestion asking for the value of a (domain, slot) pair, thus making it\nnaturally extensible to unseen domains, slots, and values. Additionally, we use\na dynamically-evolving knowledge graph to explicitly learn relationships\nbetween (domain, slot) pairs. Our model has a 5.80% and 12.21% relative\nimprovement over the current state-of-the-art model on MultiWOZ 2.0 and\nMultiWOZ 2.1 datasets, respectively. Additionally, our model consistently\noutperforms the state-of-the-art model in domain adaptation settings. (Code is\nreleased at https://github.com/alexa/dstqa )\n",
+        "published": "2019",
+        "authors": [
+            "Li Zhou",
+            "Kevin Small"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1911.07629v1",
+        "title": "Selection-based Question Answering of an MOOC",
+        "abstract": "  e-Yantra Robotics Competition (eYRC) is a unique Robotics Competition hosted\nby IIT Bombay that is actually an Embedded Systems and Robotics MOOC.\nRegistrations have been growing exponentially in each year from 4500 in 2012 to\nover 34000 in 2019. In this 5-month long competition students learn complex\nskills under severe time pressure and have access to a discussion forum to post\ndoubts about the learning material. Responding to questions in real-time is a\nchallenge for project staff. Here, we illustrate the advantage of Deep Learning\nfor real-time question answering in the eYRC discussion forum. We illustrate\nthe advantage of Transformer based contextual embedding mechanisms such as\nBidirectional Encoder Representation From Transformer (BERT) over word\nembedding mechanisms such as Word2Vec. We propose a weighted similarity metric\nas a measure of matching and find it more reliable than Content-Content or\nTitle-Title similarities alone. The automation of replying to questions has\nbrought the turn around response time(TART) down from a minimum of 21 mins to a\nminimum of 0.3 secs.\n",
+        "published": "2019",
+        "authors": [
+            "Atul Sahay",
+            "Smita Gholkar",
+            "Kavi Arya"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1911.08437v1",
+        "title": "Towards unstructured mortality prediction with free-text clinical notes",
+        "abstract": "  Healthcare data continues to flourish yet a relatively small portion, mostly\nstructured, is being utilized effectively for predicting clinical outcomes. The\nrich subjective information available in unstructured clinical notes can\npossibly facilitate higher discrimination but tends to be under-utilized in\nmortality prediction. This work attempts to assess the gain in performance when\nmultiple notes that have been minimally preprocessed are used as an input for\nprediction. A hierarchical architecture consisting of both convolutional and\nrecurrent layers is used to concurrently model the different notes compiled in\nan individual hospital stay. This approach is evaluated on predicting\nin-hospital mortality on the MIMIC-III dataset. On comparison to approaches\nutilizing structured data, it achieved higher metrics despite requiring less\ncleaning and preprocessing. This demonstrates the potential of unstructured\ndata in enhancing mortality prediction and signifies the need to incorporate\nmore raw unstructured data into current clinical prediction methods.\n",
+        "published": "2019",
+        "authors": [
+            "Mohammad Hashir",
+            "Rapinder Sawhney"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1911.11668v2",
+        "title": "Biology and Compositionality: Empirical Considerations for\n  Emergent-Communication Protocols",
+        "abstract": "  Significant advances have been made in artificial systems by using biological\nsystems as a guide. However, there is often little interaction between\ncomputational models for emergent communication and biological models of the\nemergence of language. Many researchers in language origins and emergent\ncommunication take compositionality as their primary target for explaining how\nsimple communication systems can become more like natural language. However,\nthere is reason to think that compositionality is the wrong target on the\nbiological side, and so too the wrong target on the machine-learning side. As\nsuch, the purpose of this paper is to explore this claim. This has theoretical\nimplications for language origins research more generally, but the focus here\nwill be the implications for research on emergent communication in computer\nscience and machine learning---specifically regarding the types of programmes\nthat might be expected to work and those which will not. I further suggest an\nalternative approach for future research which focuses on reflexivity, rather\nthan compositionality, as a target for explaining how simple communication\nsystems may become more like natural language. I end by providing some\nreference to the language origins literature that may be of some use to\nresearchers in machine learning.\n",
+        "published": "2019",
+        "authors": [
+            "Travis LaCroix"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2002.00557v2",
+        "title": "Bertrand-DR: Improving Text-to-SQL using a Discriminative Re-ranker",
+        "abstract": "  To access data stored in relational databases, users need to understand the\ndatabase schema and write a query using a query language such as SQL. To\nsimplify this task, text-to-SQL models attempt to translate a user's natural\nlanguage question to corresponding SQL query. Recently, several generative\ntext-to-SQL models have been developed. We propose a novel discriminative\nre-ranker to improve the performance of generative text-to-SQL models by\nextracting the best SQL query from the beam output predicted by the text-to-SQL\ngenerator, resulting in improved performance in the cases where the best query\nwas in the candidate list, but not at the top of the list. We build the\nre-ranker as a schema agnostic BERT fine-tuned classifier. We analyze relative\nstrengths of the text-to-SQL and re-ranker models across different query\nhardness levels, and suggest how to combine the two models for optimal\nperformance. We demonstrate the effectiveness of the re-ranker by applying it\nto two state-of-the-art text-to-SQL models, and achieve top 4 score on the\nSpider leaderboard at the time of writing this article.\n",
+        "published": "2020",
+        "authors": [
+            "Amol Kelkar",
+            "Rohan Relan",
+            "Vaishali Bhardwaj",
+            "Saurabh Vaichal",
+            "Chandra Khatri",
+            "Peter Relan"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2002.00733v1",
+        "title": "Generation-Distillation for Efficient Natural Language Understanding in\n  Low-Data Settings",
+        "abstract": "  Over the past year, the emergence of transfer learning with large-scale\nlanguage models (LM) has led to dramatic performance improvements across a\nbroad range of natural language understanding tasks. However, the size and\nmemory footprint of these large LMs makes them difficult to deploy in many\nscenarios (e.g. on mobile phones). Recent research points to knowledge\ndistillation as a potential solution, showing that when training data for a\ngiven task is abundant, it is possible to distill a large (teacher) LM into a\nsmall task-specific (student) network with minimal loss of performance.\nHowever, when such data is scarce, there remains a significant performance gap\nbetween large pretrained LMs and smaller task-specific models, even when\ntraining via distillation. In this paper, we bridge this gap with a novel\ntraining approach, called generation-distillation, that leverages large\nfinetuned LMs in two ways: (1) to generate new (unlabeled) training examples,\nand (2) to distill their knowledge into a small network using these examples.\nAcross three low-resource text classification datsets, we achieve comparable\nperformance to BERT while using 300x fewer parameters, and we outperform prior\napproaches to distillation for text classification while using 3x fewer\nparameters.\n",
+        "published": "2020",
+        "authors": [
+            "Luke Melas-Kyriazi",
+            "George Han",
+            "Celine Liang"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2002.08898v1",
+        "title": "MA-DST: Multi-Attention Based Scalable Dialog State Tracking",
+        "abstract": "  Task oriented dialog agents provide a natural language interface for users to\ncomplete their goal. Dialog State Tracking (DST), which is often a core\ncomponent of these systems, tracks the system's understanding of the user's\ngoal throughout the conversation. To enable accurate multi-domain DST, the\nmodel needs to encode dependencies between past utterances and slot semantics\nand understand the dialog context, including long-range cross-domain\nreferences. We introduce a novel architecture for this task to encode the\nconversation history and slot semantics more robustly by using attention\nmechanisms at multiple granularities. In particular, we use cross-attention to\nmodel relationships between the context and slots at different semantic levels\nand self-attention to resolve cross-domain coreferences. In addition, our\nproposed architecture does not rely on knowing the domain ontologies beforehand\nand can also be used in a zero-shot setting for new domains or unseen slot\nvalues. Our model improves the joint goal accuracy by 5% (absolute) in the\nfull-data setting and by up to 2% (absolute) in the zero-shot setting over the\npresent state-of-the-art on the MultiWoZ 2.1 dataset.\n",
+        "published": "2020",
+        "authors": [
+            "Adarsh Kumar",
+            "Peter Ku",
+            "Anuj Kumar Goyal",
+            "Angeliki Metallinou",
+            "Dilek Hakkani-Tur"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2005.00545v1",
+        "title": "Low-Dimensional Hyperbolic Knowledge Graph Embeddings",
+        "abstract": "  Knowledge graph (KG) embeddings learn low-dimensional representations of\nentities and relations to predict missing facts. KGs often exhibit hierarchical\nand logical patterns which must be preserved in the embedding space. For\nhierarchical data, hyperbolic embedding methods have shown promise for\nhigh-fidelity and parsimonious representations. However, existing hyperbolic\nembedding methods do not account for the rich logical patterns in KGs. In this\nwork, we introduce a class of hyperbolic KG embedding models that\nsimultaneously capture hierarchical and logical patterns. Our approach combines\nhyperbolic reflections and rotations with attention to model complex relational\npatterns. Experimental results on standard KG benchmarks show that our method\nimproves over previous Euclidean- and hyperbolic-based efforts by up to 6.1% in\nmean reciprocal rank (MRR) in low dimensions. Furthermore, we observe that\ndifferent geometric transformations capture different types of relations while\nattention-based transformations generalize to multiple relations. In high\ndimensions, our approach yields new state-of-the-art MRRs of 49.6% on WN18RR\nand 57.7% on YAGO3-10.\n",
+        "published": "2020",
+        "authors": [
+            "Ines Chami",
+            "Adva Wolf",
+            "Da-Cheng Juan",
+            "Frederic Sala",
+            "Sujith Ravi",
+            "Christopher R\u00e9"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2005.01795v3",
+        "title": "Generating SOAP Notes from Doctor-Patient Conversations Using Modular\n  Summarization Techniques",
+        "abstract": "  Following each patient visit, physicians draft long semi-structured clinical\nsummaries called SOAP notes. While invaluable to clinicians and researchers,\ncreating digital SOAP notes is burdensome, contributing to physician burnout.\nIn this paper, we introduce the first complete pipelines to leverage deep\nsummarization models to generate these notes based on transcripts of\nconversations between physicians and patients. After exploring a spectrum of\nmethods across the extractive-abstractive spectrum, we propose Cluster2Sent, an\nalgorithm that (i) extracts important utterances relevant to each summary\nsection; (ii) clusters together related utterances; and then (iii) generates\none summary sentence per cluster. Cluster2Sent outperforms its purely\nabstractive counterpart by 8 ROUGE-1 points, and produces significantly more\nfactual and coherent sentences as assessed by expert human evaluators. For\nreproducibility, we demonstrate similar benefits on the publicly available AMI\ndataset. Our results speak to the benefits of structuring summaries into\nsections and annotating supporting evidence when constructing summarization\ncorpora.\n",
+        "published": "2020",
+        "authors": [
+            "Kundan Krishna",
+            "Sopan Khosla",
+            "Jeffrey P. Bigham",
+            "Zachary C. Lipton"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2005.09198v1",
+        "title": "Quantifying the Uncertainty of Precision Estimates for Rule based Text\n  Classifiers",
+        "abstract": "  Rule based classifiers that use the presence and absence of key sub-strings\nto make classification decisions have a natural mechanism for quantifying the\nuncertainty of their precision. For a binary classifier, the key insight is to\ntreat partitions of the sub-string set induced by the documents as Bernoulli\nrandom variables. The mean value of each random variable is an estimate of the\nclassifier's precision when presented with a document inducing that partition.\nThese means can be compared, using standard statistical tests, to a desired or\nexpected classifier precision. A set of binary classifiers can be combined into\na single, multi-label classifier by an application of the Dempster-Shafer\ntheory of evidence. The utility of this approach is demonstrated with a\nbenchmark problem.\n",
+        "published": "2020",
+        "authors": [
+            "James Nutaro",
+            "Ozgur Ozmen"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2005.12801v1",
+        "title": "Active Imitation Learning with Noisy Guidance",
+        "abstract": "  Imitation learning algorithms provide state-of-the-art results on many\nstructured prediction tasks by learning near-optimal search policies. Such\nalgorithms assume training-time access to an expert that can provide the\noptimal action at any queried state; unfortunately, the number of such queries\nis often prohibitive, frequently rendering these approaches impractical. To\ncombat this query complexity, we consider an active learning setting in which\nthe learning algorithm has additional access to a much cheaper noisy heuristic\nthat provides noisy guidance. Our algorithm, LEAQI, learns a difference\nclassifier that predicts when the expert is likely to disagree with the\nheuristic, and queries the expert only when necessary. We apply LEAQI to three\nsequence labeling tasks, demonstrating significantly fewer queries to the\nexpert and comparable (or better) accuracies over a passive approach.\n",
+        "published": "2020",
+        "authors": [
+            "Kiant\u00e9 Brantley",
+            "Amr Sharaf",
+            "Hal Daum\u00e9 III"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2009.03393v1",
+        "title": "Generative Language Modeling for Automated Theorem Proving",
+        "abstract": "  We explore the application of transformer-based language models to automated\ntheorem proving. This work is motivated by the possibility that a major\nlimitation of automated theorem provers compared to humans -- the generation of\noriginal mathematical terms -- might be addressable via generation from\nlanguage models. We present an automated prover and proof assistant, GPT-f, for\nthe Metamath formalization language, and analyze its performance. GPT-f found\nnew short proofs that were accepted into the main Metamath library, which is to\nour knowledge, the first time a deep-learning based system has contributed\nproofs that were adopted by a formal mathematics community.\n",
+        "published": "2020",
+        "authors": [
+            "Stanislas Polu",
+            "Ilya Sutskever"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2009.08801v1",
+        "title": "SciBERT-based Semantification of Bioassays in the Open Research\n  Knowledge Graph",
+        "abstract": "  As a novel contribution to the problem of semantifying biological assays, in\nthis paper, we propose a neural-network-based approach to automatically\nsemantify, thereby structure, unstructured bioassay text descriptions.\nExperimental evaluations, to this end, show promise as the neural-based\nsemantification significantly outperforms a naive frequency-based baseline\napproach. Specifically, the neural method attains 72% F1 versus 47% F1 from the\nfrequency-based method.\n",
+        "published": "2020",
+        "authors": [
+            "Marco Anteghini",
+            "Jennifer D'Souza",
+            "Vitor A. P. Martins dos Santos",
+            "S\u00f6ren Auer"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2009.10847v1",
+        "title": "Message Passing for Hyper-Relational Knowledge Graphs",
+        "abstract": "  Hyper-relational knowledge graphs (KGs) (e.g., Wikidata) enable associating\nadditional key-value pairs along with the main triple to disambiguate, or\nrestrict the validity of a fact. In this work, we propose a message passing\nbased graph encoder - StarE capable of modeling such hyper-relational KGs.\nUnlike existing approaches, StarE can encode an arbitrary number of additional\ninformation (qualifiers) along with the main triple while keeping the semantic\nroles of qualifiers and triples intact. We also demonstrate that existing\nbenchmarks for evaluating link prediction (LP) performance on hyper-relational\nKGs suffer from fundamental flaws and thus develop a new Wikidata-based dataset\n- WD50K. Our experiments demonstrate that StarE based LP model outperforms\nexisting approaches across multiple benchmarks. We also confirm that leveraging\nqualifiers is vital for link prediction with gains up to 25 MRR points compared\nto triple-based representations.\n",
+        "published": "2020",
+        "authors": [
+            "Mikhail Galkin",
+            "Priyansh Trivedi",
+            "Gaurav Maheshwari",
+            "Ricardo Usbeck",
+            "Jens Lehmann"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2009.14786v2",
+        "title": "Measuring Systematic Generalization in Neural Proof Generation with\n  Transformers",
+        "abstract": "  We are interested in understanding how well Transformer language models\n(TLMs) can perform reasoning tasks when trained on knowledge encoded in the\nform of natural language. We investigate their systematic generalization\nabilities on a logical reasoning task in natural language, which involves\nreasoning over relationships between entities grounded in first-order logical\nproofs. Specifically, we perform soft theorem-proving by leveraging TLMs to\ngenerate natural language proofs. We test the generated proofs for logical\nconsistency, along with the accuracy of the final inference. We observe\nlength-generalization issues when evaluated on longer-than-trained sequences.\nHowever, we observe TLMs improve their generalization performance after being\nexposed to longer, exhaustive proofs. In addition, we discover that TLMs are\nable to generalize better using backward-chaining proofs compared to their\nforward-chaining counterparts, while they find it easier to generate forward\nchaining proofs. We observe that models that are not trained to generate proofs\nare better at generalizing to problems based on longer proofs. This suggests\nthat Transformers have efficient internal reasoning strategies that are harder\nto interpret. These results highlight the systematic generalization behavior of\nTLMs in the context of logical reasoning, and we believe this work motivates\ndeeper inspection of their underlying reasoning strategies.\n",
+        "published": "2020",
+        "authors": [
+            "Nicolas Gontier",
+            "Koustuv Sinha",
+            "Siva Reddy",
+            "Christopher Pal"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2103.01242v2",
+        "title": "Cryptonite: A Cryptic Crossword Benchmark for Extreme Ambiguity in\n  Language",
+        "abstract": "  Current NLP datasets targeting ambiguity can be solved by a native speaker\nwith relative ease. We present Cryptonite, a large-scale dataset based on\ncryptic crosswords, which is both linguistically complex and naturally sourced.\nEach example in Cryptonite is a cryptic clue, a short phrase or sentence with a\nmisleading surface reading, whose solving requires disambiguating semantic,\nsyntactic, and phonetic wordplays, as well as world knowledge. Cryptic clues\npose a challenge even for experienced solvers, though top-tier experts can\nsolve them with almost 100% accuracy. Cryptonite is a challenging task for\ncurrent models; fine-tuning T5-Large on 470k cryptic clues achieves only 7.6%\naccuracy, on par with the accuracy of a rule-based clue solver (8.6%).\n",
+        "published": "2021",
+        "authors": [
+            "Avia Efrat",
+            "Uri Shaham",
+            "Dan Kilman",
+            "Omer Levy"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2103.03872v1",
+        "title": "Rissanen Data Analysis: Examining Dataset Characteristics via\n  Description Length",
+        "abstract": "  We introduce a method to determine if a certain capability helps to achieve\nan accurate model of given data. We view labels as being generated from the\ninputs by a program composed of subroutines with different capabilities, and we\nposit that a subroutine is useful if and only if the minimal program that\ninvokes it is shorter than the one that does not. Since minimum program length\nis uncomputable, we instead estimate the labels' minimum description length\n(MDL) as a proxy, giving us a theoretically-grounded method for analyzing\ndataset characteristics. We call the method Rissanen Data Analysis (RDA) after\nthe father of MDL, and we showcase its applicability on a wide variety of\nsettings in NLP, ranging from evaluating the utility of generating subquestions\nbefore answering a question, to analyzing the value of rationales and\nexplanations, to investigating the importance of different parts of speech, and\nuncovering dataset gender bias.\n",
+        "published": "2021",
+        "authors": [
+            "Ethan Perez",
+            "Douwe Kiela",
+            "Kyunghyun Cho"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2104.04676v2",
+        "title": "Highly Efficient Knowledge Graph Embedding Learning with Orthogonal\n  Procrustes Analysis",
+        "abstract": "  Knowledge Graph Embeddings (KGEs) have been intensively explored in recent\nyears due to their promise for a wide range of applications. However, existing\nstudies focus on improving the final model performance without acknowledging\nthe computational cost of the proposed approaches, in terms of execution time\nand environmental impact. This paper proposes a simple yet effective KGE\nframework which can reduce the training time and carbon footprint by orders of\nmagnitudes compared with state-of-the-art approaches, while producing\ncompetitive performance. We highlight three technical innovations: full batch\nlearning via relational matrices, closed-form Orthogonal Procrustes Analysis\nfor KGEs, and non-negative-sampling training. In addition, as the first KGE\nmethod whose entity embeddings also store full relation information, our\ntrained models encode rich semantics and are highly interpretable.\nComprehensive experiments and ablation studies involving 13 strong baselines\nand two standard datasets verify the effectiveness and efficiency of our\nalgorithm.\n",
+        "published": "2021",
+        "authors": [
+            "Xutan Peng",
+            "Guanyi Chen",
+            "Chenghua Lin",
+            "Mark Stevenson"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2109.11377v2",
+        "title": "WRENCH: A Comprehensive Benchmark for Weak Supervision",
+        "abstract": "  Recent Weak Supervision (WS) approaches have had widespread success in easing\nthe bottleneck of labeling training data for machine learning by synthesizing\nlabels from multiple potentially noisy supervision sources. However, proper\nmeasurement and analysis of these approaches remain a challenge. First,\ndatasets used in existing works are often private and/or custom, limiting\nstandardization. Second, WS datasets with the same name and base data often\nvary in terms of the labels and weak supervision sources used, a significant\n\"hidden\" source of evaluation variance. Finally, WS studies often diverge in\nterms of the evaluation protocol and ablations used. To address these problems,\nwe introduce a benchmark platform, WRENCH, for thorough and standardized\nevaluation of WS approaches. It consists of 22 varied real-world datasets for\nclassification and sequence tagging; a range of real, synthetic, and\nprocedurally-generated weak supervision sources; and a modular, extensible\nframework for WS evaluation, including implementations for popular WS methods.\nWe use WRENCH to conduct extensive comparisons over more than 120 method\nvariants to demonstrate its efficacy as a benchmark platform. The code is\navailable at https://github.com/JieyuZ2/wrench.\n",
+        "published": "2021",
+        "authors": [
+            "Jieyu Zhang",
+            "Yue Yu",
+            "Yinghao Li",
+            "Yujing Wang",
+            "Yaming Yang",
+            "Mao Yang",
+            "Alexander Ratner"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2201.03533v2",
+        "title": "SCROLLS: Standardized CompaRison Over Long Language Sequences",
+        "abstract": "  NLP benchmarks have largely focused on short texts, such as sentences and\nparagraphs, even though long texts comprise a considerable amount of natural\nlanguage in the wild. We introduce SCROLLS, a suite of tasks that require\nreasoning over long texts. We examine existing long-text datasets, and handpick\nones where the text is naturally long, while prioritizing tasks that involve\nsynthesizing information across the input. SCROLLS contains summarization,\nquestion answering, and natural language inference tasks, covering multiple\ndomains, including literature, science, business, and entertainment. Initial\nbaselines, including Longformer Encoder-Decoder, indicate that there is ample\nroom for improvement on SCROLLS. We make all datasets available in a unified\ntext-to-text format and host a live leaderboard to facilitate research on model\narchitecture and pretraining methods.\n",
+        "published": "2022",
+        "authors": [
+            "Uri Shaham",
+            "Elad Segal",
+            "Maor Ivgi",
+            "Avia Efrat",
+            "Ori Yoran",
+            "Adi Haviv",
+            "Ankit Gupta",
+            "Wenhan Xiong",
+            "Mor Geva",
+            "Jonathan Berant",
+            "Omer Levy"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2201.09119v1",
+        "title": "A Causal Lens for Controllable Text Generation",
+        "abstract": "  Controllable text generation concerns two fundamental tasks of wide\napplications, namely generating text of given attributes (i.e.,\nattribute-conditional generation), and minimally editing existing text to\npossess desired attributes (i.e., text attribute transfer). Extensive prior\nwork has largely studied the two problems separately, and developed different\nconditional models which, however, are prone to producing biased text (e.g.,\nvarious gender stereotypes). This paper proposes to formulate controllable text\ngeneration from a principled causal perspective which models the two tasks with\na unified framework. A direct advantage of the causal formulation is the use of\nrich causality tools to mitigate generation biases and improve control. We\ntreat the two tasks as interventional and counterfactual causal inference based\non a structural causal model, respectively. We then apply the framework to the\nchallenging practical setting where confounding factors (that induce spurious\ncorrelations) are observable only on a small fraction of data. Experiments show\nsignificant superiority of the causal approach over previous conditional models\nfor improved control accuracy and reduced bias.\n",
+        "published": "2022",
+        "authors": [
+            "Zhiting Hu",
+            "Li Erran Li"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2203.10378v1",
+        "title": "On Robust Prefix-Tuning for Text Classification",
+        "abstract": "  Recently, prefix-tuning has gained increasing attention as a\nparameter-efficient finetuning method for large-scale pretrained language\nmodels. The method keeps the pretrained models fixed and only updates the\nprefix token parameters for each downstream task. Despite being lightweight and\nmodular, prefix-tuning still lacks robustness to textual adversarial attacks.\nHowever, most currently developed defense techniques necessitate auxiliary\nmodel update and storage, which inevitably hamper the modularity and low\nstorage of prefix-tuning. In this work, we propose a robust prefix-tuning\nframework that preserves the efficiency and modularity of prefix-tuning. The\ncore idea of our framework is leveraging the layerwise activations of the\nlanguage model by correctly-classified training data as the standard for\nadditional prefix finetuning. During the test phase, an extra batch-level\nprefix is tuned for each batch and added to the original prefix for robustness\nenhancement. Extensive experiments on three text classification benchmarks show\nthat our framework substantially improves robustness over several strong\nbaselines against five textual attacks of different types while maintaining\ncomparable accuracy on clean texts. We also interpret our robust prefix-tuning\nframework from the optimal control perspective and pose several directions for\nfuture research.\n",
+        "published": "2022",
+        "authors": [
+            "Zonghan Yang",
+            "Yang Liu"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2205.13789v2",
+        "title": "A Sea of Words: An In-Depth Analysis of Anchors for Text Data",
+        "abstract": "  Anchors (Ribeiro et al., 2018) is a post-hoc, rule-based interpretability\nmethod. For text data, it proposes to explain a decision by highlighting a\nsmall set of words (an anchor) such that the model to explain has similar\noutputs when they are present in a document. In this paper, we present the\nfirst theoretical analysis of Anchors, considering that the search for the best\nanchor is exhaustive. After formalizing the algorithm for text classification,\nwe present explicit results on different classes of models when the\nvectorization step is TF-IDF, and words are replaced by a fixed\nout-of-dictionary token when removed. Our inquiry covers models such as\nelementary if-then rules and linear classifiers. We then leverage this analysis\nto gain insights on the behavior of Anchors for any differentiable classifiers.\nFor neural networks, we empirically show that the words corresponding to the\nhighest partial derivatives of the model with respect to the input, reweighted\nby the inverse document frequencies, are selected by Anchors.\n",
+        "published": "2022",
+        "authors": [
+            "Gianluigi Lopardo",
+            "Frederic Precioso",
+            "Damien Garreau"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2210.03826v1",
+        "title": "An Analysis of the Effects of Decoding Algorithms on Fairness in\n  Open-Ended Language Generation",
+        "abstract": "  Several prior works have shown that language models (LMs) can generate text\ncontaining harmful social biases and stereotypes. While decoding algorithms\nplay a central role in determining properties of LM generated text, their\nimpact on the fairness of the generations has not been studied. We present a\nsystematic analysis of the impact of decoding algorithms on LM fairness, and\nanalyze the trade-off between fairness, diversity and quality. Our experiments\nwith top-$p$, top-$k$ and temperature decoding algorithms, in open-ended\nlanguage generation, show that fairness across demographic groups changes\nsignificantly with change in decoding algorithm's hyper-parameters. Notably,\ndecoding algorithms that output more diverse text also output more texts with\nnegative sentiment and regard. We present several findings and provide\nrecommendations on standardized reporting of decoding details in fairness\nevaluations and optimization of decoding algorithms for fairness alongside\nquality and diversity.\n",
+        "published": "2022",
+        "authors": [
+            "Jwala Dhamala",
+            "Varun Kumar",
+            "Rahul Gupta",
+            "Kai-Wei Chang",
+            "Aram Galstyan"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2210.14177v1",
+        "title": "Influence Functions for Sequence Tagging Models",
+        "abstract": "  Many language tasks (e.g., Named Entity Recognition, Part-of-Speech tagging,\nand Semantic Role Labeling) are naturally framed as sequence tagging problems.\nHowever, there has been comparatively little work on interpretability methods\nfor sequence tagging models. In this paper, we extend influence functions -\nwhich aim to trace predictions back to the training points that informed them -\nto sequence tagging tasks. We define the influence of a training instance\nsegment as the effect that perturbing the labels within this segment has on a\ntest segment level prediction. We provide an efficient approximation to compute\nthis, and show that it tracks with the true segment influence, measured\nempirically. We show the practical utility of segment influence by using the\nmethod to identify systematic annotation errors in two named entity recognition\ncorpora. Code to reproduce our results is available at\nhttps://github.com/successar/Segment_Influence_Functions.\n",
+        "published": "2022",
+        "authors": [
+            "Sarthak Jain",
+            "Varun Manjunatha",
+            "Byron C. Wallace",
+            "Ani Nenkova"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2211.02255v1",
+        "title": "Spectral Regularization: an Inductive Bias for Sequence Modeling",
+        "abstract": "  Various forms of regularization in learning tasks strive for different\nnotions of simplicity. This paper presents a spectral regularization technique,\nwhich attaches a unique inductive bias to sequence modeling based on an\nintuitive concept of simplicity defined in the Chomsky hierarchy. From\nfundamental connections between Hankel matrices and regular grammars, we\npropose to use the trace norm of the Hankel matrix, the tightest convex\nrelaxation of its rank, as the spectral regularizer. To cope with the fact that\nthe Hankel matrix is bi-infinite, we propose an unbiased stochastic estimator\nfor its trace norm. Ultimately, we demonstrate experimental results on Tomita\ngrammars, which exhibit the potential benefits of spectral regularization and\nvalidate the proposed stochastic estimator.\n",
+        "published": "2022",
+        "authors": [
+            "Kaiwen Hou",
+            "Guillaume Rabusseau"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2211.11052v1",
+        "title": "Convexifying Transformers: Improving optimization and understanding of\n  transformer networks",
+        "abstract": "  Understanding the fundamental mechanism behind the success of transformer\nnetworks is still an open problem in the deep learning literature. Although\ntheir remarkable performance has been mostly attributed to the self-attention\nmechanism, the literature still lacks a solid analysis of these networks and\ninterpretation of the functions learned by them. To this end, we study the\ntraining problem of attention/transformer networks and introduce a novel convex\nanalytic approach to improve the understanding and optimization of these\nnetworks. Particularly, we first introduce a convex alternative to the\nself-attention mechanism and reformulate the regularized training problem of\ntransformer networks with our alternative convex attention. Then, we cast the\nreformulation as a convex optimization problem that is interpretable and easier\nto optimize. Moreover, as a byproduct of our convex analysis, we reveal an\nimplicit regularization mechanism, which promotes sparsity across tokens.\nTherefore, we not only improve the optimization of attention/transformer\nnetworks but also provide a solid theoretical understanding of the functions\nlearned by them. We also demonstrate the effectiveness of our theory through\nseveral numerical experiments.\n",
+        "published": "2022",
+        "authors": [
+            "Tolga Ergen",
+            "Behnam Neyshabur",
+            "Harsh Mehta"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2302.10322v1",
+        "title": "Deep Transformers without Shortcuts: Modifying Self-attention for\n  Faithful Signal Propagation",
+        "abstract": "  Skip connections and normalisation layers form two standard architectural\ncomponents that are ubiquitous for the training of Deep Neural Networks (DNNs),\nbut whose precise roles are poorly understood. Recent approaches such as Deep\nKernel Shaping have made progress towards reducing our reliance on them, using\ninsights from wide NN kernel theory to improve signal propagation in vanilla\nDNNs (which we define as networks without skips or normalisation). However,\nthese approaches are incompatible with the self-attention layers present in\ntransformers, whose kernels are intrinsically more complicated to analyse and\ncontrol. And so the question remains: is it possible to train deep vanilla\ntransformers? We answer this question in the affirmative by designing several\napproaches that use combinations of parameter initialisations, bias matrices\nand location-dependent rescaling to achieve faithful signal propagation in\nvanilla transformers. Our methods address various intricacies specific to\nsignal propagation in transformers, including the interaction with positional\nencoding and causal masking. In experiments on WikiText-103 and C4, our\napproaches enable deep transformers without normalisation to train at speeds\nmatching their standard counterparts, and deep vanilla transformers to reach\nthe same performance as standard ones after about 5 times more iterations.\n",
+        "published": "2023",
+        "authors": [
+            "Bobby He",
+            "James Martens",
+            "Guodong Zhang",
+            "Aleksandar Botev",
+            "Andrew Brock",
+            "Samuel L Smith",
+            "Yee Whye Teh"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2302.11269v1",
+        "title": "Learning from Multiple Sources for Data-to-Text and Text-to-Data",
+        "abstract": "  Data-to-text (D2T) and text-to-data (T2D) are dual tasks that convert\nstructured data, such as graphs or tables into fluent text, and vice versa.\nThese tasks are usually handled separately and use corpora extracted from a\nsingle source. Current systems leverage pre-trained language models fine-tuned\non D2T or T2D tasks. This approach has two main limitations: first, a separate\nsystem has to be tuned for each task and source; second, learning is limited by\nthe scarcity of available corpora. This paper considers a more general scenario\nwhere data are available from multiple heterogeneous sources. Each source, with\nits specific data format and semantic domain, provides a non-parallel corpus of\ntext and structured data. We introduce a variational auto-encoder model with\ndisentangled style and content variables that allows us to represent the\ndiversity that stems from multiple sources of text and data. Our model is\ndesigned to handle the tasks of D2T and T2D jointly. We evaluate our model on\nseveral datasets, and show that by learning from multiple sources, our model\ncloses the performance gap with its supervised single-source counterpart and\noutperforms it in some cases.\n",
+        "published": "2023",
+        "authors": [
+            "Song Duong",
+            "Alberto Lumbreras",
+            "Mike Gartrell",
+            "Patrick Gallinari"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2303.14582v2",
+        "title": "Identification of Negative Transfers in Multitask Learning Using\n  Surrogate Models",
+        "abstract": "  Multitask learning is widely used in practice to train a low-resource target\ntask by augmenting it with multiple related source tasks. Yet, naively\ncombining all the source tasks with a target task does not always improve the\nprediction performance for the target task due to negative transfers. Thus, a\ncritical problem in multitask learning is identifying subsets of source tasks\nthat would benefit the target task. This problem is computationally challenging\nsince the number of subsets grows exponentially with the number of source\ntasks; efficient heuristics for subset selection do not always capture the\nrelationship between task subsets and multitask learning performances. In this\npaper, we introduce an efficient procedure to address this problem via\nsurrogate modeling. In surrogate modeling, we sample (random) subsets of source\ntasks and precompute their multitask learning performances. Then, we\napproximate the precomputed performances with a linear regression model that\ncan also predict the multitask performance of unseen task subsets. We show\ntheoretically and empirically that fitting this model only requires sampling\nlinearly many subsets in the number of source tasks. The fitted model provides\na relevance score between each source and target task. We use the relevance\nscores to perform subset selection for multitask learning by thresholding.\nThrough extensive experiments, we show that our approach predicts negative\ntransfers from multiple source tasks to target tasks much more accurately than\nexisting task affinity measures. Additionally, we demonstrate that for several\nweak supervision datasets, our approach consistently improves upon existing\noptimization methods for multitask learning.\n",
+        "published": "2023",
+        "authors": [
+            "Dongyue Li",
+            "Huy L. Nguyen",
+            "Hongyang R. Zhang"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2305.05759v1",
+        "title": "Ranking & Reweighting Improves Group Distributional Robustness",
+        "abstract": "  Recent work has shown that standard training via empirical risk minimization\n(ERM) can produce models that achieve high accuracy on average but low accuracy\non underrepresented groups due to the prevalence of spurious features. A\npredominant approach to tackle this group robustness problem minimizes the\nworst group error (akin to a minimax strategy) on the training data, hoping it\nwill generalize well on the testing data. However, this is often suboptimal,\nespecially when the out-of-distribution (OOD) test data contains previously\nunseen groups. Inspired by ideas from the information retrieval and\nlearning-to-rank literature, this paper first proposes to use Discounted\nCumulative Gain (DCG) as a metric of model quality for facilitating better\nhyperparameter tuning and model selection. Being a ranking-based metric, DCG\nweights multiple poorly-performing groups (instead of considering just the\ngroup with the worst performance). As a natural next step, we build on our\nresults to propose a ranking-based training method called Discounted Rank\nUpweighting (DRU), which differentially reweights a ranked list of\npoorly-performing groups in the training data to learn models that exhibit\nstrong OOD performance on the test data. Results on several synthetic and\nreal-world datasets highlight the superior generalization ability of our\ngroup-ranking-based (akin to soft-minimax) approach in selecting and learning\nmodels that are robust to group distributional shifts.\n",
+        "published": "2023",
+        "authors": [
+            "Yachuan Liu",
+            "Bohan Zhang",
+            "Qiaozhu Mei",
+            "Paramveer Dhillon"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2305.16843v1",
+        "title": "Randomized Positional Encodings Boost Length Generalization of\n  Transformers",
+        "abstract": "  Transformers have impressive generalization capabilities on tasks with a\nfixed context length. However, they fail to generalize to sequences of\narbitrary length, even for seemingly simple tasks such as duplicating a string.\nMoreover, simply training on longer sequences is inefficient due to the\nquadratic computation complexity of the global attention mechanism. In this\nwork, we demonstrate that this failure mode is linked to positional encodings\nbeing out-of-distribution for longer sequences (even for relative encodings)\nand introduce a novel family of positional encodings that can overcome this\nproblem. Concretely, our randomized positional encoding scheme simulates the\npositions of longer sequences and randomly selects an ordered subset to fit the\nsequence's length. Our large-scale empirical evaluation of 6000 models across\n15 algorithmic reasoning tasks shows that our method allows Transformers to\ngeneralize to sequences of unseen length (increasing test accuracy by 12.0% on\naverage).\n",
+        "published": "2023",
+        "authors": [
+            "Anian Ruoss",
+            "Gr\u00e9goire Del\u00e9tang",
+            "Tim Genewein",
+            "Jordi Grau-Moya",
+            "R\u00f3bert Csord\u00e1s",
+            "Mehdi Bennani",
+            "Shane Legg",
+            "Joel Veness"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2305.17126v1",
+        "title": "Large Language Models as Tool Makers",
+        "abstract": "  Recent research shows the potential of enhancing the problem-solving ability\nof large language models (LLMs) through the use of external tools. However,\nprior work along this line depends on the availability of existing tools. In\nthis work, we take an initial step towards removing this dependency by\nproposing a closed-loop framework, referred to as LLMs As Tool Makers (LATM),\nwhere LLMs create their own reusable tools for problem-solving. Our approach\nconsists of two key phases: 1) tool making: an LLM acts as the tool maker that\ncrafts tools for given tasks, where a tool is implemented as a Python utility\nfunction. 2) tool using: an LLM acts as the tool user, which applies the tool\nbuilt by the tool maker for problem-solving. The tool user can be either the\nsame or a different LLM from the tool maker. Tool-making enables an LLM to\ncontinually generate tools that can be applied to different requests so that\nfuture requests can call the corresponding APIs when beneficial for solving the\ntasks. Furthermore, the division of labor among LLMs for tool-making and\ntool-using phases introduces the opportunity to achieve cost effectiveness\nwithout degrading the quality of generated tools and problem solutions. For\nexample, recognizing that tool-making demands more sophisticated capabilities\nthan tool-using, we can apply a powerful yet resource-intensive model as the\ntool maker, and a lightweight while cost-effective model as the tool user. We\nvalidate the effectiveness of our approach across a variety of complex\nreasoning tasks, including Big-Bench tasks. With GPT-4 as the tool maker and\nGPT-3.5 as the tool user, LATM can achieve performance that is on par with\nusing GPT-4 for both tool making and tool using, while the inference cost is\nsignificantly reduced.\n",
+        "published": "2023",
+        "authors": [
+            "Tianle Cai",
+            "Xuezhi Wang",
+            "Tengyu Ma",
+            "Xinyun Chen",
+            "Denny Zhou"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2306.09927v3",
+        "title": "Trained Transformers Learn Linear Models In-Context",
+        "abstract": "  Attention-based neural networks such as transformers have demonstrated a\nremarkable ability to exhibit in-context learning (ICL): Given a short prompt\nsequence of tokens from an unseen task, they can formulate relevant per-token\nand next-token predictions without any parameter updates. By embedding a\nsequence of labeled training data and unlabeled test data as a prompt, this\nallows for transformers to behave like supervised learning algorithms. Indeed,\nrecent work has shown that when training transformer architectures over random\ninstances of linear regression problems, these models' predictions mimic those\nof ordinary least squares.\n  Towards understanding the mechanisms underlying this phenomenon, we\ninvestigate the dynamics of ICL in transformers with a single linear\nself-attention layer trained by gradient flow on linear regression tasks. We\nshow that despite non-convexity, gradient flow with a suitable random\ninitialization finds a global minimum of the objective function. At this global\nminimum, when given a test prompt of labeled examples from a new prediction\ntask, the transformer achieves prediction error competitive with the best\nlinear predictor over the test prompt distribution. We additionally\ncharacterize the robustness of the trained transformer to a variety of\ndistribution shifts and show that although a number of shifts are tolerated,\nshifts in the covariate distribution of the prompts are not. Motivated by this,\nwe consider a generalized ICL setting where the covariate distributions can\nvary across prompts. We show that although gradient flow succeeds at finding a\nglobal minimum in this setting, the trained transformer is still brittle under\nmild covariate shifts. We complement this finding with experiments on large,\nnonlinear transformer architectures which we show are more robust under\ncovariate shifts.\n",
+        "published": "2023",
+        "authors": [
+            "Ruiqi Zhang",
+            "Spencer Frei",
+            "Peter L. Bartlett"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2307.15936v2",
+        "title": "A Theory for Emergence of Complex Skills in Language Models",
+        "abstract": "  A major driver of AI products today is the fact that new skills emerge in\nlanguage models when their parameter set and training corpora are scaled up.\nThis phenomenon is poorly understood, and a mechanistic explanation via\nmathematical analysis of gradient-based training seems difficult. The current\npaper takes a different approach, analysing emergence using the famous (and\nempirical) Scaling Laws of LLMs and a simple statistical framework.\nContributions include: (a) A statistical framework that relates cross-entropy\nloss of LLMs to competence on the basic skills that underlie language tasks.\n(b) Mathematical analysis showing that the Scaling Laws imply a strong form of\ninductive bias that allows the pre-trained model to learn very efficiently. We\ninformally call this {\\em slingshot generalization} since naively viewed it\nappears to give competence levels at skills that violate usual generalization\ntheory. (c) A key example of slingshot generalization, that competence at\nexecuting tasks involving $k$-tuples of skills emerges essentially at the same\nscaling and same rate as competence on the elementary skills themselves.\n",
+        "published": "2023",
+        "authors": [
+            "Sanjeev Arora",
+            "Anirudh Goyal"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2309.03748v1",
+        "title": "Enhancing Pipeline-Based Conversational Agents with Large Language\n  Models",
+        "abstract": "  The latest advancements in AI and deep learning have led to a breakthrough in\nlarge language model (LLM)-based agents such as GPT-4. However, many commercial\nconversational agent development tools are pipeline-based and have limitations\nin holding a human-like conversation. This paper investigates the capabilities\nof LLMs to enhance pipeline-based conversational agents during two phases: 1)\nin the design and development phase and 2) during operations. In 1) LLMs can\naid in generating training data, extracting entities and synonyms,\nlocalization, and persona design. In 2) LLMs can assist in contextualization,\nintent classification to prevent conversational breakdown and handle\nout-of-scope questions, auto-correcting utterances, rephrasing responses,\nformulating disambiguation questions, summarization, and enabling closed\nquestion-answering capabilities. We conducted informal experiments with GPT-4\nin the private banking domain to demonstrate the scenarios above with a\npractical example. Companies may be hesitant to replace their pipeline-based\nagents with LLMs entirely due to privacy concerns and the need for deep\nintegration within their existing ecosystems. A hybrid approach in which LLMs'\nare integrated into the pipeline-based agents allows them to save time and\ncosts of building and running agents by capitalizing on the capabilities of\nLLMs while retaining the integration and privacy safeguards of their existing\nsystems.\n",
+        "published": "2023",
+        "authors": [
+            "Mina Foosherian",
+            "Hendrik Purwins",
+            "Purna Rathnayake",
+            "Touhidul Alam",
+            "Rui Teimao",
+            "Klaus-Dieter Thoben"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2310.02304v1",
+        "title": "Self-Taught Optimizer (STOP): Recursively Self-Improving Code Generation",
+        "abstract": "  Several recent advances in AI systems (e.g., Tree-of-Thoughts and\nProgram-Aided Language Models) solve problems by providing a \"scaffolding\"\nprogram that structures multiple calls to language models to generate better\noutputs. A scaffolding program is written in a programming language such as\nPython. In this work, we use a language-model-infused scaffolding program to\nimprove itself. We start with a seed \"improver\" that improves an input program\naccording to a given utility function by querying a language model several\ntimes and returning the best solution. We then run this seed improver to\nimprove itself. Across a small set of downstream tasks, the resulting improved\nimprover generates programs with significantly better performance than its seed\nimprover. Afterward, we analyze the variety of self-improvement strategies\nproposed by the language model, including beam search, genetic algorithms, and\nsimulated annealing. Since the language models themselves are not altered, this\nis not full recursive self-improvement. Nonetheless, it demonstrates that a\nmodern language model, GPT-4 in our proof-of-concept experiments, is capable of\nwriting code that can call itself to improve itself. We critically consider\nconcerns around the development of self-improving technologies and evaluate the\nfrequency with which the generated code bypasses a sandbox.\n",
+        "published": "2023",
+        "authors": [
+            "Eric Zelikman",
+            "Eliana Lorch",
+            "Lester Mackey",
+            "Adam Tauman Kalai"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2310.02989v1",
+        "title": "xVal: A Continuous Number Encoding for Large Language Models",
+        "abstract": "  Large Language Models have not yet been broadly adapted for the analysis of\nscientific datasets due in part to the unique difficulties of tokenizing\nnumbers. We propose xVal, a numerical encoding scheme that represents any real\nnumber using just a single token. xVal represents a given real number by\nscaling a dedicated embedding vector by the number value. Combined with a\nmodified number-inference approach, this strategy renders the model end-to-end\ncontinuous when considered as a map from the numbers of the input string to\nthose of the output string. This leads to an inductive bias that is generally\nmore suitable for applications in scientific domains. We empirically evaluate\nour proposal on a number of synthetic and real-world datasets. Compared with\nexisting number encoding schemes, we find that xVal is more token-efficient and\ndemonstrates improved generalization.\n",
+        "published": "2023",
+        "authors": [
+            "Siavash Golkar",
+            "Mariel Pettee",
+            "Michael Eickenberg",
+            "Alberto Bietti",
+            "Miles Cranmer",
+            "Geraud Krawezik",
+            "Francois Lanusse",
+            "Michael McCabe",
+            "Ruben Ohana",
+            "Liam Parker",
+            "Bruno R\u00e9galdo-Saint Blancard",
+            "Tiberiu Tesileanu",
+            "Kyunghyun Cho",
+            "Shirley Ho"
+        ]
+    }
+]
