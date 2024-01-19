@@ -1,0 +1,1246 @@
+[
+    {
+        "id": "http://arxiv.org/abs/1903.11524v1",
+        "title": "Autoregressive Policies for Continuous Control Deep Reinforcement\n  Learning",
+        "abstract": "  Reinforcement learning algorithms rely on exploration to discover new\nbehaviors, which is typically achieved by following a stochastic policy. In\ncontinuous control tasks, policies with a Gaussian distribution have been\nwidely adopted. Gaussian exploration however does not result in smooth\ntrajectories that generally correspond to safe and rewarding behaviors in\npractical tasks. In addition, Gaussian policies do not result in an effective\nexploration of an environment and become increasingly inefficient as the action\nrate increases. This contributes to a low sample efficiency often observed in\nlearning continuous control tasks. We introduce a family of stationary\nautoregressive (AR) stochastic processes to facilitate exploration in\ncontinuous control domains. We show that proposed processes possess two\ndesirable features: subsequent process observations are temporally coherent\nwith continuously adjustable degree of coherence, and the process stationary\ndistribution is standard normal. We derive an autoregressive policy (ARP) that\nimplements such processes maintaining the standard agent-environment interface.\nWe show how ARPs can be easily used with the existing off-the-shelf learning\nalgorithms. Empirically we demonstrate that using ARPs results in improved\nexploration and sample efficiency in both simulated and real world domains,\nand, furthermore, provides smooth exploration trajectories that enable safe\noperation of robotic hardware.\n",
+        "published": "2019",
+        "authors": [
+            "Dmytro Korenkevych",
+            "A. Rupam Mahmood",
+            "Gautham Vasan",
+            "James Bergstra"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1912.01188v2",
+        "title": "Adaptive Online Planning for Continual Lifelong Learning",
+        "abstract": "  We study learning control in an online reset-free lifelong learning scenario,\nwhere mistakes can compound catastrophically into the future and the underlying\ndynamics of the environment may change. Traditional model-free policy learning\nmethods have achieved successes in difficult tasks due to their broad\nflexibility, but struggle in this setting, as they can activate failure modes\nearly in their lifetimes which are difficult to recover from and face\nperformance degradation as dynamics change. On the other hand, model-based\nplanning methods learn and adapt quickly, but require prohibitive levels of\ncomputational resources. We present a new algorithm, Adaptive Online Planning\n(AOP), that achieves strong performance in this setting by combining\nmodel-based planning with model-free learning. By approximating the uncertainty\nof the model-free components and the planner performance, AOP is able to call\nupon more extensive planning only when necessary, leading to reduced\ncomputation times, while still gracefully adapting behaviors in the face of\nunpredictable changes in the world -- even when traditional RL fails.\n",
+        "published": "2019",
+        "authors": [
+            "Kevin Lu",
+            "Igor Mordatch",
+            "Pieter Abbeel"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1912.07544v2",
+        "title": "Planning with Abstract Learned Models While Learning Transferable\n  Subtasks",
+        "abstract": "  We introduce an algorithm for model-based hierarchical reinforcement learning\nto acquire self-contained transition and reward models suitable for\nprobabilistic planning at multiple levels of abstraction. We call this\nframework Planning with Abstract Learned Models (PALM). By representing\nsubtasks symbolically using a new formal structure, the lifted abstract Markov\ndecision process (L-AMDP), PALM learns models that are independent and modular.\nThrough our experiments, we show how PALM integrates planning and execution,\nfacilitating a rapid and efficient learning of abstract, hierarchical models.\nWe also demonstrate the increased potential for learned models to be\ntransferred to new and related tasks.\n",
+        "published": "2019",
+        "authors": [
+            "John Winder",
+            "Stephanie Milani",
+            "Matthew Landen",
+            "Erebus Oh",
+            "Shane Parr",
+            "Shawn Squire",
+            "Marie desJardins",
+            "Cynthia Matuszek"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1912.11912v1",
+        "title": "Quasi-Newton Trust Region Policy Optimization",
+        "abstract": "  We propose a trust region method for policy optimization that employs\nQuasi-Newton approximation for the Hessian, called Quasi-Newton Trust Region\nPolicy Optimization QNTRPO. Gradient descent is the de facto algorithm for\nreinforcement learning tasks with continuous controls. The algorithm has\nachieved state-of-the-art performance when used in reinforcement learning\nacross a wide range of tasks. However, the algorithm suffers from a number of\ndrawbacks including: lack of stepsize selection criterion, and slow\nconvergence. We investigate the use of a trust region method using dogleg step\nand a Quasi-Newton approximation for the Hessian for policy optimization. We\ndemonstrate through numerical experiments over a wide range of challenging\ncontinuous control tasks that our particular choice is efficient in terms of\nnumber of samples and improves performance\n",
+        "published": "2019",
+        "authors": [
+            "Devesh Jha",
+            "Arvind Raghunathan",
+            "Diego Romeres"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2001.00503v3",
+        "title": "Joint Goal and Strategy Inference across Heterogeneous Demonstrators via\n  Reward Network Distillation",
+        "abstract": "  Reinforcement learning (RL) has achieved tremendous success as a general\nframework for learning how to make decisions. However, this success relies on\nthe interactive hand-tuning of a reward function by RL experts. On the other\nhand, inverse reinforcement learning (IRL) seeks to learn a reward function\nfrom readily-obtained human demonstrations. Yet, IRL suffers from two major\nlimitations: 1) reward ambiguity - there are an infinite number of possible\nreward functions that could explain an expert's demonstration and 2)\nheterogeneity - human experts adopt varying strategies and preferences, which\nmakes learning from multiple demonstrators difficult due to the common\nassumption that demonstrators seeks to maximize the same reward. In this work,\nwe propose a method to jointly infer a task goal and humans' strategic\npreferences via network distillation. This approach enables us to distill a\nrobust task reward (addressing reward ambiguity) and to model each strategy's\nobjective (handling heterogeneity). We demonstrate our algorithm can better\nrecover task reward and strategy rewards and imitate the strategies in two\nsimulated tasks and a real-world table tennis task.\n",
+        "published": "2020",
+        "authors": [
+            "Letian Chen",
+            "Rohan Paleja",
+            "Muyleng Ghuy",
+            "Matthew Gombolay"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2001.09467v2",
+        "title": "Tractable Reinforcement Learning of Signal Temporal Logic Objectives",
+        "abstract": "  Signal temporal logic (STL) is an expressive language to specify time-bound\nreal-world robotic tasks and safety specifications. Recently, there has been an\ninterest in learning optimal policies to satisfy STL specifications via\nreinforcement learning (RL). Learning to satisfy STL specifications often needs\na sufficient length of state history to compute reward and the next action. The\nneed for history results in exponential state-space growth for the learning\nproblem. Thus the learning problem becomes computationally intractable for most\nreal-world applications. In this paper, we propose a compact means to capture\nstate history in a new augmented state-space representation. An approximation\nto the objective (maximizing probability of satisfaction) is proposed and\nsolved for in the new augmented state-space. We show the performance bound of\nthe approximate solution and compare it with the solution of an existing\ntechnique via simulations.\n",
+        "published": "2020",
+        "authors": [
+            "Harish Venkataraman",
+            "Derya Aksaray",
+            "Peter Seiler"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2001.11628v2",
+        "title": "Domain-Adversarial and Conditional State Space Model for Imitation\n  Learning",
+        "abstract": "  State representation learning (SRL) in partially observable Markov decision\nprocesses has been studied to learn abstract features of data useful for robot\ncontrol tasks. For SRL, acquiring domain-agnostic states is essential for\nachieving efficient imitation learning. Without these states, imitation\nlearning is hampered by domain-dependent information useless for control.\nHowever, existing methods fail to remove such disturbances from the states when\nthe data from experts and agents show large domain shifts. To overcome this\nissue, we propose a domain-adversarial and conditional state space model\n(DAC-SSM) that enables control systems to obtain domain-agnostic and task- and\ndynamics-aware states. DAC-SSM jointly optimizes the state inference,\nobservation reconstruction, forward dynamics, and reward models. To remove\ndomain-dependent information from the states, the model is trained with domain\ndiscriminators in an adversarial manner, and the reconstruction is conditioned\non domain labels. We experimentally evaluated the model predictive control\nperformance via imitation learning for continuous control of sparse reward\ntasks in simulators and compared it with the performance of the existing SRL\nmethod. The agents from DAC-SSM achieved performance comparable to experts and\nmore than twice the baselines. We conclude domain-agnostic states are essential\nfor imitation learning that has large domain shifts and can be obtained using\nDAC-SSM.\n",
+        "published": "2020",
+        "authors": [
+            "Ryo Okumura",
+            "Masashi Okada",
+            "Tadahiro Taniguchi"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2003.01709v2",
+        "title": "Hierarchically Decoupled Imitation for Morphological Transfer",
+        "abstract": "  Learning long-range behaviors on complex high-dimensional agents is a\nfundamental problem in robot learning. For such tasks, we argue that\ntransferring learned information from a morphologically simpler agent can\nmassively improve the sample efficiency of a more complex one. To this end, we\npropose a hierarchical decoupling of policies into two parts: an independently\nlearned low-level policy and a transferable high-level policy. To remedy poor\ntransfer performance due to mismatch in morphologies, we contribute two key\nideas. First, we show that incentivizing a complex agent's low-level to imitate\na simpler agent's low-level significantly improves zero-shot high-level\ntransfer. Second, we show that KL-regularized training of the high level\nstabilizes learning and prevents mode-collapse. Finally, on a suite of publicly\nreleased navigation and manipulation environments, we demonstrate the\napplicability of hierarchical transfer on long-range tasks across morphologies.\nOur code and videos can be found at\nhttps://sites.google.com/berkeley.edu/morphology-transfer.\n",
+        "published": "2020",
+        "authors": [
+            "Donald J. Hejna III",
+            "Pieter Abbeel",
+            "Lerrel Pinto"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2003.08876v3",
+        "title": "Learning to Fly via Deep Model-Based Reinforcement Learning",
+        "abstract": "  Learning to control robots without requiring engineered models has been a\nlong-term goal, promising diverse and novel applications. Yet, reinforcement\nlearning has only achieved limited impact on real-time robot control due to its\nhigh demand of real-world interactions. In this work, by leveraging a learnt\nprobabilistic model of drone dynamics, we learn a thrust-attitude controller\nfor a quadrotor through model-based reinforcement learning. No prior knowledge\nof the flight dynamics is assumed; instead, a sequential latent variable model,\nused generatively and as an online filter, is learnt from raw sensory input.\nThe controller and value function are optimised entirely by propagating\nstochastic analytic gradients through generated latent trajectories. We show\nthat \"learning to fly\" can be achieved with less than 30 minutes of experience\nwith a single drone, and can be deployed solely using onboard computational\nresources and sensors, on a self-built drone.\n",
+        "published": "2020",
+        "authors": [
+            "Philip Becker-Ehmck",
+            "Maximilian Karl",
+            "Jan Peters",
+            "Patrick van der Smagt"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2003.11102v1",
+        "title": "Learning to Play Soccer by Reinforcement and Applying Sim-to-Real to\n  Compete in the Real World",
+        "abstract": "  This work presents an application of Reinforcement Learning (RL) for the\ncomplete control of real soccer robots of the IEEE Very Small Size Soccer\n(VSSS), a traditional league in the Latin American Robotics Competition (LARC).\nIn the VSSS league, two teams of three small robots play against each other. We\npropose a simulated environment in which continuous or discrete control\npolicies can be trained, and a Sim-to-Real method to allow using the obtained\npolicies to control a robot in the real world. The results show that the\nlearned policies display a broad repertoire of behaviors that are difficult to\nspecify by hand. This approach, called VSSS-RL, was able to beat the\nhuman-designed policy for the striker of the team ranked 3rd place in the 2018\nLARC, in 1-vs-1 matches.\n",
+        "published": "2020",
+        "authors": [
+            "Hansenclever F. Bassani",
+            "Renie A. Delgado",
+            "Jose Nilton de O. Lima Junior",
+            "Heitor R. Medeiros",
+            "Pedro H. M. Braga",
+            "Alain Tapp"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2003.11919v3",
+        "title": "Counterfactual Policy Evaluation for Decision-Making in Autonomous\n  Driving",
+        "abstract": "  Learning-based approaches, such as reinforcement and imitation learning are\ngaining popularity in decision-making for autonomous driving. However, learned\npolicies often fail to generalize and cannot handle novel situations well.\nAsking and answering questions in the form of \"Would a policy perform well if\nthe other agents had behaved differently?\" can shed light on whether a policy\nhas seen similar situations during training and generalizes well. In this work,\na counterfactual policy evaluation is introduced that makes use of\ncounterfactual worlds - worlds in which the behaviors of others are non-actual.\nIf a policy can handle all counterfactual worlds well, it either has seen\nsimilar situations during training or it generalizes well and is deemed to be\nfit enough to be executed in the actual world. Additionally, by performing the\ncounterfactual policy evaluation, causal relations and the influence of\nchanging vehicle's behaviors on the surrounding vehicles becomes evident. To\nvalidate the proposed method, we learn a policy using reinforcement learning\nfor a lane merging scenario. In the application-phase, the policy is only\nexecuted after the counterfactual policy evaluation has been performed and if\nthe policy is found to be safe enough. We show that the proposed approach\nsignificantly decreases the collision-rate whilst maintaining a high\nsuccess-rate.\n",
+        "published": "2020",
+        "authors": [
+            "Patrick Hart",
+            "Alois Knoll"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2003.13661v2",
+        "title": "Multi-Task Reinforcement Learning with Soft Modularization",
+        "abstract": "  Multi-task learning is a very challenging problem in reinforcement learning.\nWhile training multiple tasks jointly allow the policies to share parameters\nacross different tasks, the optimization problem becomes non-trivial: It\nremains unclear what parameters in the network should be reused across tasks,\nand how the gradients from different tasks may interfere with each other. Thus,\ninstead of naively sharing parameters across tasks, we introduce an explicit\nmodularization technique on policy representation to alleviate this\noptimization issue. Given a base policy network, we design a routing network\nwhich estimates different routing strategies to reconfigure the base network\nfor each task. Instead of directly selecting routes for each task, our\ntask-specific policy uses a method called soft modularization to softly combine\nall the possible routes, which makes it suitable for sequential tasks. We\nexperiment with various robotics manipulation tasks in simulation and show our\nmethod improves both sample efficiency and performance over strong baselines by\na large margin.\n",
+        "published": "2020",
+        "authors": [
+            "Ruihan Yang",
+            "Huazhe Xu",
+            "Yi Wu",
+            "Xiaolong Wang"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2006.01096v3",
+        "title": "Invariant Policy Optimization: Towards Stronger Generalization in\n  Reinforcement Learning",
+        "abstract": "  A fundamental challenge in reinforcement learning is to learn policies that\ngeneralize beyond the operating domains experienced during training. In this\npaper, we approach this challenge through the following invariance principle:\nan agent must find a representation such that there exists an action-predictor\nbuilt on top of this representation that is simultaneously optimal across all\ntraining domains. Intuitively, the resulting invariant policy enhances\ngeneralization by finding causes of successful actions. We propose a novel\nlearning algorithm, Invariant Policy Optimization (IPO), that implements this\nprinciple and learns an invariant policy during training. We compare our\napproach with standard policy gradient methods and demonstrate significant\nimprovements in generalization performance on unseen domains for linear\nquadratic regulator and grid-world problems, and an example where a robot must\nlearn to open doors with varying physical properties.\n",
+        "published": "2020",
+        "authors": [
+            "Anoopkumar Sonar",
+            "Vincent Pacelli",
+            "Anirudha Majumdar"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2006.06861v1",
+        "title": "Robustness to Adversarial Attacks in Learning-Enabled Controllers",
+        "abstract": "  Learning-enabled controllers used in cyber-physical systems (CPS) are known\nto be susceptible to adversarial attacks. Such attacks manifest as\nperturbations to the states generated by the controller's environment in\nresponse to its actions. We consider state perturbations that encompass a wide\nvariety of adversarial attacks and describe an attack scheme for discovering\nadversarial states. To be useful, these attacks need to be natural, yielding\nstates in which the controller can be reasonably expected to generate a\nmeaningful response. We consider shield-based defenses as a means to improve\ncontroller robustness in the face of such perturbations. Our defense strategy\nallows us to treat the controller and environment as black-boxes with unknown\ndynamics. We provide a two-stage approach to construct this defense and show\nits effectiveness through a range of experiments on realistic continuous\ncontrol domains such as the navigation control-loop of an F16 aircraft and the\nmotion control system of humanoid robots.\n",
+        "published": "2020",
+        "authors": [
+            "Zikang Xiong",
+            "Joe Eappen",
+            "He Zhu",
+            "Suresh Jagannathan"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2006.09436v1",
+        "title": "SAMBA: Safe Model-Based & Active Reinforcement Learning",
+        "abstract": "  In this paper, we propose SAMBA, a novel framework for safe reinforcement\nlearning that combines aspects from probabilistic modelling, information\ntheory, and statistics. Our method builds upon PILCO to enable active\nexploration using novel(semi-)metrics for out-of-sample Gaussian process\nevaluation optimised through a multi-objective problem that supports\nconditional-value-at-risk constraints. We evaluate our algorithm on a variety\nof safe dynamical system benchmarks involving both low and high-dimensional\nstate representations. Our results show orders of magnitude reductions in\nsamples and violations compared to state-of-the-art methods. Lastly, we provide\nintuition as to the effectiveness of the framework by a detailed analysis of\nour active metrics and safety constraints.\n",
+        "published": "2020",
+        "authors": [
+            "Alexander I. Cowen-Rivers",
+            "Daniel Palenicek",
+            "Vincent Moens",
+            "Mohammed Abdullah",
+            "Aivar Sootla",
+            "Jun Wang",
+            "Haitham Ammar"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2006.09641v1",
+        "title": "Automatic Curriculum Learning through Value Disagreement",
+        "abstract": "  Continually solving new, unsolved tasks is the key to learning diverse\nbehaviors. Through reinforcement learning (RL), we have made massive strides\ntowards solving tasks that have a single goal. However, in the multi-task\ndomain, where an agent needs to reach multiple goals, the choice of training\ngoals can largely affect sample efficiency. When biological agents learn, there\nis often an organized and meaningful order to which learning happens. Inspired\nby this, we propose setting up an automatic curriculum for goals that the agent\nneeds to solve. Our key insight is that if we can sample goals at the frontier\nof the set of goals that an agent is able to reach, it will provide a\nsignificantly stronger learning signal compared to randomly sampled goals. To\noperationalize this idea, we introduce a goal proposal module that prioritizes\ngoals that maximize the epistemic uncertainty of the Q-function of the policy.\nThis simple technique samples goals that are neither too hard nor too easy for\nthe agent to solve, hence enabling continual improvement. We evaluate our\nmethod across 13 multi-goal robotic tasks and 5 navigation tasks, and\ndemonstrate performance gains over current state-of-the-art methods.\n",
+        "published": "2020",
+        "authors": [
+            "Yunzhi Zhang",
+            "Pieter Abbeel",
+            "Lerrel Pinto"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2006.10701v1",
+        "title": "Deep Reinforcement Learning amidst Lifelong Non-Stationarity",
+        "abstract": "  As humans, our goals and our environment are persistently changing throughout\nour lifetime based on our experiences, actions, and internal and external\ndrives. In contrast, typical reinforcement learning problem set-ups consider\ndecision processes that are stationary across episodes. Can we develop\nreinforcement learning algorithms that can cope with the persistent change in\nthe former, more realistic problem settings? While on-policy algorithms such as\npolicy gradients in principle can be extended to non-stationary settings, the\nsame cannot be said for more efficient off-policy algorithms that replay past\nexperiences when learning. In this work, we formalize this problem setting, and\ndraw upon ideas from the online learning and probabilistic inference literature\nto derive an off-policy RL algorithm that can reason about and tackle such\nlifelong non-stationarity. Our method leverages latent variable models to learn\na representation of the environment from current and past experiences, and\nperforms off-policy RL with this representation. We further introduce several\nsimulation environments that exhibit lifelong non-stationarity, and empirically\nfind that our approach substantially outperforms approaches that do not reason\nabout environment shift.\n",
+        "published": "2020",
+        "authors": [
+            "Annie Xie",
+            "James Harrison",
+            "Chelsea Finn"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2006.11441v3",
+        "title": "Task-Agnostic Online Reinforcement Learning with an Infinite Mixture of\n  Gaussian Processes",
+        "abstract": "  Continuously learning to solve unseen tasks with limited experience has been\nextensively pursued in meta-learning and continual learning, but with\nrestricted assumptions such as accessible task distributions, independently and\nidentically distributed tasks, and clear task delineations. However, real-world\nphysical tasks frequently violate these assumptions, resulting in performance\ndegradation. This paper proposes a continual online model-based reinforcement\nlearning approach that does not require pre-training to solve task-agnostic\nproblems with unknown task boundaries. We maintain a mixture of experts to\nhandle nonstationarity, and represent each different type of dynamics with a\nGaussian Process to efficiently leverage collected data and expressively model\nuncertainty. We propose a transition prior to account for the temporal\ndependencies in streaming data and update the mixture online via sequential\nvariational inference. Our approach reliably handles the task distribution\nshift by generating new models for never-before-seen dynamics and reusing old\nmodels for previously seen dynamics. In experiments, our approach outperforms\nalternative methods in non-stationary tasks, including classic control with\nchanging dynamics and decision making in different driving scenarios.\n",
+        "published": "2020",
+        "authors": [
+            "Mengdi Xu",
+            "Wenhao Ding",
+            "Jiacheng Zhu",
+            "Zuxin Liu",
+            "Baiming Chen",
+            "Ding Zhao"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2006.11645v3",
+        "title": "Accelerating Safe Reinforcement Learning with Constraint-mismatched\n  Policies",
+        "abstract": "  We consider the problem of reinforcement learning when provided with (1) a\nbaseline control policy and (2) a set of constraints that the learner must\nsatisfy. The baseline policy can arise from demonstration data or a teacher\nagent and may provide useful cues for learning, but it might also be\nsub-optimal for the task at hand, and is not guaranteed to satisfy the\nspecified constraints, which might encode safety, fairness or other\napplication-specific requirements. In order to safely learn from baseline\npolicies, we propose an iterative policy optimization algorithm that alternates\nbetween maximizing expected return on the task, minimizing distance to the\nbaseline policy, and projecting the policy onto the constraint-satisfying set.\nWe analyze our algorithm theoretically and provide a finite-time convergence\nguarantee. In our experiments on five different control tasks, our algorithm\nconsistently outperforms several state-of-the-art baselines, achieving 10 times\nfewer constraint violations and 40% higher reward on average.\n",
+        "published": "2020",
+        "authors": [
+            "Tsung-Yen Yang",
+            "Justinian Rosca",
+            "Karthik Narasimhan",
+            "Peter J. Ramadge"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2006.13916v2",
+        "title": "Off-Dynamics Reinforcement Learning: Training for Transfer with Domain\n  Classifiers",
+        "abstract": "  We propose a simple, practical, and intuitive approach for domain adaptation\nin reinforcement learning. Our approach stems from the idea that the agent's\nexperience in the source domain should look similar to its experience in the\ntarget domain. Building off of a probabilistic view of RL, we formally show\nthat we can achieve this goal by compensating for the difference in dynamics by\nmodifying the reward function. This modified reward function is simple to\nestimate by learning auxiliary classifiers that distinguish source-domain\ntransitions from target-domain transitions. Intuitively, the modified reward\nfunction penalizes the agent for visiting states and taking actions in the\nsource domain which are not possible in the target domain. Said another way,\nthe agent is penalized for transitions that would indicate that the agent is\ninteracting with the source domain, rather than the target domain. Our approach\nis applicable to domains with continuous states and actions and does not\nrequire learning an explicit model of the dynamics. On discrete and continuous\ncontrol tasks, we illustrate the mechanics of our approach and demonstrate its\nscalability to high-dimensional tasks.\n",
+        "published": "2020",
+        "authors": [
+            "Benjamin Eysenbach",
+            "Swapnil Asawa",
+            "Shreyas Chaudhari",
+            "Sergey Levine",
+            "Ruslan Salakhutdinov"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2006.15009v4",
+        "title": "A Unifying Framework for Reinforcement Learning and Planning",
+        "abstract": "  Sequential decision making, commonly formalized as optimization of a Markov\nDecision Process, is a key challenge in artificial intelligence. Two successful\napproaches to MDP optimization are reinforcement learning and planning, which\nboth largely have their own research communities. However, if both research\nfields solve the same problem, then we might be able to disentangle the common\nfactors in their solution approaches. Therefore, this paper presents a unifying\nalgorithmic framework for reinforcement learning and planning (FRAP), which\nidentifies underlying dimensions on which MDP planning and learning algorithms\nhave to decide. At the end of the paper, we compare a variety of well-known\nplanning, model-free and model-based RL algorithms along these dimensions.\nAltogether, the framework may help provide deeper insight in the algorithmic\ndesign space of planning and reinforcement learning.\n",
+        "published": "2020",
+        "authors": [
+            "Thomas M. Moerland",
+            "Joost Broekens",
+            "Aske Plaat",
+            "Catholijn M. Jonker"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2007.02832v1",
+        "title": "Maximum Entropy Gain Exploration for Long Horizon Multi-goal\n  Reinforcement Learning",
+        "abstract": "  What goals should a multi-goal reinforcement learning agent pursue during\ntraining in long-horizon tasks? When the desired (test time) goal distribution\nis too distant to offer a useful learning signal, we argue that the agent\nshould not pursue unobtainable goals. Instead, it should set its own intrinsic\ngoals that maximize the entropy of the historical achieved goal distribution.\nWe propose to optimize this objective by having the agent pursue past achieved\ngoals in sparsely explored areas of the goal space, which focuses exploration\non the frontier of the achievable goal set. We show that our strategy achieves\nan order of magnitude better sample efficiency than the prior state of the art\non long-horizon multi-goal tasks including maze navigation and block stacking.\n",
+        "published": "2020",
+        "authors": [
+            "Silviu Pitis",
+            "Harris Chan",
+            "Stephen Zhao",
+            "Bradly Stadie",
+            "Jimmy Ba"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2007.02863v2",
+        "title": "Counterfactual Data Augmentation using Locally Factored Dynamics",
+        "abstract": "  Many dynamic processes, including common scenarios in robotic control and\nreinforcement learning (RL), involve a set of interacting subprocesses. Though\nthe subprocesses are not independent, their interactions are often sparse, and\nthe dynamics at any given time step can often be decomposed into locally\nindependent causal mechanisms. Such local causal structures can be leveraged to\nimprove the sample efficiency of sequence prediction and off-policy\nreinforcement learning. We formalize this by introducing local causal models\n(LCMs), which are induced from a global causal model by conditioning on a\nsubset of the state space. We propose an approach to inferring these structures\ngiven an object-oriented state representation, as well as a novel algorithm for\nCounterfactual Data Augmentation (CoDA). CoDA uses local structures and an\nexperience replay to generate counterfactual experiences that are causally\nvalid in the global model. We find that CoDA significantly improves the\nperformance of RL agents in locally factored tasks, including the\nbatch-constrained and goal-conditioned settings.\n",
+        "published": "2020",
+        "authors": [
+            "Silviu Pitis",
+            "Elliot Creager",
+            "Animesh Garg"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2007.05577v1",
+        "title": "Vizarel: A System to Help Better Understand RL Agents",
+        "abstract": "  Visualization tools for supervised learning have allowed users to interpret,\nintrospect, and gain intuition for the successes and failures of their models.\nWhile reinforcement learning practitioners ask many of the same questions,\nexisting tools are not applicable to the RL setting. In this work, we describe\nour initial attempt at constructing a prototype of these ideas, through\nidentifying possible features that such a system should encapsulate. Our design\nis motivated by envisioning the system to be a platform on which to experiment\nwith interpretable reinforcement learning.\n",
+        "published": "2020",
+        "authors": [
+            "Shuby Deshpande",
+            "Jeff Schneider"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2007.07170v2",
+        "title": "Goal-Aware Prediction: Learning to Model What Matters",
+        "abstract": "  Learned dynamics models combined with both planning and policy learning\nalgorithms have shown promise in enabling artificial agents to learn to perform\nmany diverse tasks with limited supervision. However, one of the fundamental\nchallenges in using a learned forward dynamics model is the mismatch between\nthe objective of the learned model (future state reconstruction), and that of\nthe downstream planner or policy (completing a specified task). This issue is\nexacerbated by vision-based control tasks in diverse real-world environments,\nwhere the complexity of the real world dwarfs model capacity. In this paper, we\npropose to direct prediction towards task relevant information, enabling the\nmodel to be aware of the current task and encouraging it to only model relevant\nquantities of the state space, resulting in a learning objective that more\nclosely matches the downstream task. Further, we do so in an entirely\nself-supervised manner, without the need for a reward function or image labels.\nWe find that our method more effectively models the relevant parts of the scene\nconditioned on the goal, and as a result outperforms standard task-agnostic\ndynamics models and model-free reinforcement learning.\n",
+        "published": "2020",
+        "authors": [
+            "Suraj Nair",
+            "Silvio Savarese",
+            "Chelsea Finn"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2007.08616v1",
+        "title": "Collision Avoidance Robotics Via Meta-Learning (CARML)",
+        "abstract": "  This paper presents an approach to exploring a multi-objective reinforcement\nlearning problem with Model-Agnostic Meta-Learning. The environment we used\nconsists of a 2D vehicle equipped with a LIDAR sensor. The goal of the\nenvironment is to reach some pre-determined target location but also\neffectively avoid any obstacles it may find along its path. We also compare\nthis approach against a baseline TD3 solution that attempts to solve the same\nproblem.\n",
+        "published": "2020",
+        "authors": [
+            "Abhiram Iyer",
+            "Aravind Mahadevan"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2007.15588v2",
+        "title": "Data-efficient Hindsight Off-policy Option Learning",
+        "abstract": "  We introduce Hindsight Off-policy Options (HO2), a data-efficient option\nlearning algorithm. Given any trajectory, HO2 infers likely option choices and\nbackpropagates through the dynamic programming inference procedure to robustly\ntrain all policy components off-policy and end-to-end. The approach outperforms\nexisting option learning methods on common benchmarks. To better understand the\noption framework and disentangle benefits from both temporal and action\nabstraction, we evaluate ablations with flat policies and mixture policies with\ncomparable optimization. The results highlight the importance of both types of\nabstraction as well as off-policy training and trust-region constraints,\nparticularly in challenging, simulated 3D robot manipulation tasks from raw\npixel inputs. Finally, we intuitively adapt the inference step to investigate\nthe effect of increased temporal abstraction on training with pre-trained\noptions and from scratch.\n",
+        "published": "2020",
+        "authors": [
+            "Markus Wulfmeier",
+            "Dushyant Rao",
+            "Roland Hafner",
+            "Thomas Lampe",
+            "Abbas Abdolmaleki",
+            "Tim Hertweck",
+            "Michael Neunert",
+            "Dhruva Tirumala",
+            "Noah Siegel",
+            "Nicolas Heess",
+            "Martin Riedmiller"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2008.02066v2",
+        "title": "Follow the Object: Curriculum Learning for Manipulation Tasks with\n  Imagined Goals",
+        "abstract": "  Learning robot manipulation through deep reinforcement learning in\nenvironments with sparse rewards is a challenging task. In this paper we\naddress this problem by introducing a notion of imaginary object goals. For a\ngiven manipulation task, the object of interest is first trained to reach a\ndesired target position on its own, without being manipulated, through\nphysically realistic simulations. The object policy is then leveraged to build\na predictive model of plausible object trajectories providing the robot with a\ncurriculum of incrementally more difficult object goals to reach during\ntraining. The proposed algorithm, Follow the Object (FO), has been evaluated on\n7 MuJoCo environments requiring increasing degree of exploration, and has\nachieved higher success rates compared to alternative algorithms. In\nparticularly challenging learning scenarios, e.g. where the object's initial\nand target positions are far apart, our approach can still learn a policy\nwhereas competing methods currently fail.\n",
+        "published": "2020",
+        "authors": [
+            "Ozsel Kilinc",
+            "Giovanni Montana"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2008.04388v3",
+        "title": "GRIMGEP: Learning Progress for Robust Goal Sampling in Visual Deep\n  Reinforcement Learning",
+        "abstract": "  Designing agents, capable of learning autonomously a wide range of skills is\ncritical in order to increase the scope of reinforcement learning. It will both\nincrease the diversity of learned skills and reduce the burden of manually\ndesigning reward functions for each skill. Self-supervised agents, setting\ntheir own goals, and trying to maximize the diversity of those goals have shown\ngreat promise towards this end. However, a currently known limitation of agents\ntrying to maximize the diversity of sampled goals is that they tend to get\nattracted to noise or more generally to parts of the environments that cannot\nbe controlled (distractors). When agents have access to predefined goal\nfeatures or expert knowledge, absolute Learning Progress (ALP) provides a way\nto distinguish between regions that can be controlled and those that cannot.\nHowever, those methods often fall short when the agents are only provided with\nraw sensory inputs such as images. In this work we extend those concepts to\nunsupervised image-based goal exploration. We propose a framework that allows\nagents to autonomously identify and ignore noisy distracting regions while\nsearching for novelty in the learnable regions to both improve overall\nperformance and avoid catastrophic forgetting. Our framework can be combined\nwith any state-of-the-art novelty seeking goal exploration approaches. We\nconstruct a rich 3D image based environment with distractors. Experiments on\nthis environment show that agents using our framework successfully identify\ninteresting regions of the environment, resulting in drastically improved\nperformances. The source code is available at\nhttps://sites.google.com/view/grimgep.\n",
+        "published": "2020",
+        "authors": [
+            "Grgur Kova\u010d",
+            "Adrien Laversanne-Finot",
+            "Pierre-Yves Oudeyer"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2008.12228v1",
+        "title": "Towards General and Autonomous Learning of Core Skills: A Case Study in\n  Locomotion",
+        "abstract": "  Modern Reinforcement Learning (RL) algorithms promise to solve difficult\nmotor control problems directly from raw sensory inputs. Their attraction is\ndue in part to the fact that they can represent a general class of methods that\nallow to learn a solution with a reasonably set reward and minimal prior\nknowledge, even in situations where it is difficult or expensive for a human\nexpert. For RL to truly make good on this promise, however, we need algorithms\nand learning setups that can work across a broad range of problems with minimal\nproblem specific adjustments or engineering. In this paper, we study this idea\nof generality in the locomotion domain. We develop a learning framework that\ncan learn sophisticated locomotion behavior for a wide spectrum of legged\nrobots, such as bipeds, tripeds, quadrupeds and hexapods, including wheeled\nvariants. Our learning framework relies on a data-efficient, off-policy\nmulti-task RL algorithm and a small set of reward functions that are\nsemantically identical across robots. To underline the general applicability of\nthe method, we keep the hyper-parameter settings and reward definitions\nconstant across experiments and rely exclusively on on-board sensing. For nine\ndifferent types of robots, including a real-world quadruped robot, we\ndemonstrate that the same algorithm can rapidly learn diverse and reusable\nlocomotion skills without any platform specific adjustments or additional\ninstrumentation of the learning setup.\n",
+        "published": "2020",
+        "authors": [
+            "Roland Hafner",
+            "Tim Hertweck",
+            "Philipp Kl\u00f6ppner",
+            "Michael Bloesch",
+            "Michael Neunert",
+            "Markus Wulfmeier",
+            "Saran Tunyasuvunakool",
+            "Nicolas Heess",
+            "Martin Riedmiller"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2008.12775v3",
+        "title": "On the model-based stochastic value gradient for continuous\n  reinforcement learning",
+        "abstract": "  For over a decade, model-based reinforcement learning has been seen as a way\nto leverage control-based domain knowledge to improve the sample-efficiency of\nreinforcement learning agents. While model-based agents are conceptually\nappealing, their policies tend to lag behind those of model-free agents in\nterms of final reward, especially in non-trivial environments. In response,\nresearchers have proposed model-based agents with increasingly complex\ncomponents, from ensembles of probabilistic dynamics models, to heuristics for\nmitigating model error. In a reversal of this trend, we show that simple\nmodel-based agents can be derived from existing ideas that not only match, but\noutperform state-of-the-art model-free agents in terms of both\nsample-efficiency and final reward. We find that a model-free soft value\nestimate for policy evaluation and a model-based stochastic value gradient for\npolicy improvement is an effective combination, achieving state-of-the-art\nresults on a high-dimensional humanoid control task, which most model-based\nagents are unable to solve. Our findings suggest that model-based policy\nevaluation deserves closer attention.\n",
+        "published": "2020",
+        "authors": [
+            "Brandon Amos",
+            "Samuel Stanton",
+            "Denis Yarats",
+            "Andrew Gordon Wilson"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1606.04753v2",
+        "title": "Safe Exploration in Finite Markov Decision Processes with Gaussian\n  Processes",
+        "abstract": "  In classical reinforcement learning, when exploring an environment, agents\naccept arbitrary short term loss for long term gain. This is infeasible for\nsafety critical applications, such as robotics, where even a single unsafe\naction may cause system failure. In this paper, we address the problem of\nsafely exploring finite Markov decision processes (MDP). We define safety in\nterms of an, a priori unknown, safety constraint that depends on states and\nactions. We aim to explore the MDP under this constraint, assuming that the\nunknown function satisfies regularity conditions expressed via a Gaussian\nprocess prior. We develop a novel algorithm for this task and prove that it is\nable to completely explore the safely reachable part of the MDP without\nviolating the safety constraint. To achieve this, it cautiously explores safe\nstates and actions in order to gain statistical confidence about the safety of\nunvisited state-action pairs from noisy observations collected while navigating\nthe environment. Moreover, the algorithm explicitly considers reachability when\nexploring the MDP, ensuring that it does not get stuck in any state with no\nsafe way out. We demonstrate our method on digital terrain models for the task\nof exploring an unknown map with a rover.\n",
+        "published": "2016",
+        "authors": [
+            "Matteo Turchetta",
+            "Felix Berkenkamp",
+            "Andreas Krause"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1611.07343v1",
+        "title": "Limbo: A Fast and Flexible Library for Bayesian Optimization",
+        "abstract": "  Limbo is an open-source C++11 library for Bayesian optimization which is\ndesigned to be both highly flexible and very fast. It can be used to optimize\nfunctions for which the gradient is unknown, evaluations are expensive, and\nruntime cost matters (e.g., on embedded systems or robots). Benchmarks on\nstandard functions show that Limbo is about 2 times faster than BayesOpt\n(another C++ library) for a similar accuracy.\n",
+        "published": "2016",
+        "authors": [
+            "Antoine Cully",
+            "Konstantinos Chatzilygeroudis",
+            "Federico Allocati",
+            "Jean-Baptiste Mouret"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1612.01746v2",
+        "title": "Factored Contextual Policy Search with Bayesian Optimization",
+        "abstract": "  Scarce data is a major challenge to scaling robot learning to truly complex\ntasks, as we need to generalize locally learned policies over different\n\"contexts\". Bayesian optimization approaches to contextual policy search (CPS)\noffer data-efficient policy learning that generalize over a context space. We\npropose to improve data-efficiency by factoring typically considered contexts\ninto two components: target-type contexts that correspond to a desired outcome\nof the learned behavior, e.g. target position for throwing a ball; and\nenvironment type contexts that correspond to some state of the environment,\ne.g. initial ball position or wind speed. Our key observation is that\nexperience can be directly generalized over target-type contexts. Based on that\nwe introduce Factored Contextual Policy Search with Bayesian Optimization for\nboth passive and active learning settings. Preliminary results show faster\npolicy generalization on a simulated toy problem. A full paper extension is\navailable at arXiv:1904.11761\n",
+        "published": "2016",
+        "authors": [
+            "Peter Karkus",
+            "Andras Kupcsik",
+            "David Hsu",
+            "Wee Sun Lee"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1612.03981v1",
+        "title": "Hybrid Repeat/Multi-point Sampling for Highly Volatile Objective\n  Functions",
+        "abstract": "  A key drawback of the current generation of artificial decision-makers is\nthat they do not adapt well to changes in unexpected situations. This paper\naddresses the situation in which an AI for aerial dog fighting, with tunable\nparameters that govern its behavior, will optimize behavior with respect to an\nobjective function that must be evaluated and learned through simulations. Once\nthis objective function has been modeled, the agent can then choose its desired\nbehavior in different situations. Bayesian optimization with a Gaussian Process\nsurrogate is used as the method for investigating the objective function. One\nkey benefit is that during optimization the Gaussian Process learns a global\nestimate of the true objective function, with predicted outcomes and a\nstatistical measure of confidence in areas that haven't been investigated yet.\nHowever, standard Bayesian optimization does not perform consistently or\nprovide an accurate Gaussian Process surrogate function for highly volatile\nobjective functions. We treat these problems by introducing a novel sampling\ntechnique called Hybrid Repeat/Multi-point Sampling. This technique gives the\nAI ability to learn optimum behaviors in a highly uncertain environment. More\nimportantly, it not only improves the reliability of the optimization, but also\ncreates a better model of the entire objective surface. With this improved\nmodel the agent is equipped to better adapt behaviors.\n",
+        "published": "2016",
+        "authors": [
+            "Brett Israelsen",
+            "Nisar Ahmed"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1612.04315v1",
+        "title": "Towards Adaptive Training of Agent-based Sparring Partners for Fighter\n  Pilots",
+        "abstract": "  A key requirement for the current generation of artificial decision-makers is\nthat they should adapt well to changes in unexpected situations. This paper\naddresses the situation in which an AI for aerial dog fighting, with tunable\nparameters that govern its behavior, must optimize behavior with respect to an\nobjective function that is evaluated and learned through simulations. Bayesian\noptimization with a Gaussian Process surrogate is used as the method for\ninvestigating the objective function. One key benefit is that during\noptimization, the Gaussian Process learns a global estimate of the true\nobjective function, with predicted outcomes and a statistical measure of\nconfidence in areas that haven't been investigated yet. Having a model of the\nobjective function is important for being able to understand possible outcomes\nin the decision space; for example this is crucial for training and providing\nfeedback to human pilots. However, standard Bayesian optimization does not\nperform consistently or provide an accurate Gaussian Process surrogate function\nfor highly volatile objective functions. We treat these problems by introducing\na novel sampling technique called Hybrid Repeat/Multi-point Sampling. This\ntechnique gives the AI ability to learn optimum behaviors in a highly uncertain\nenvironment. More importantly, it not only improves the reliability of the\noptimization, but also creates a better model of the entire objective surface.\nWith this improved model the agent is equipped to more accurately/efficiently\npredict performance in unexplored scenarios.\n",
+        "published": "2016",
+        "authors": [
+            "Brett W. Israelsen",
+            "Nisar Ahmed",
+            "Kenneth Center",
+            "Roderick Green",
+            "Winston Bennett Jr"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1804.08219v2",
+        "title": "Adaptive Performance Assessment For Drivers Through Behavioral Advantage",
+        "abstract": "  The potential positive impact of autonomous driving and driver assistance\ntechnolo- gies have been a major impetus over the last decade. On the flip\nside, it has been a challenging problem to analyze the performance of human\ndrivers or autonomous driving agents quantitatively. In this work, we propose a\ngeneric method that compares the performance of drivers or autonomous driving\nagents even if the environmental conditions are different, by using the driver\nbehavioral advantage instead of absolute metrics, which efficiently removes the\nenvironmental factors. A concrete application of the method is also presented,\nwhere the performance of more than 100 truck drivers was evaluated and ranked\nin terms of fuel efficiency, covering more than 90,000 trips spanning an\naverage of 300 miles in a variety of driving conditions and environments.\n",
+        "published": "2018",
+        "authors": [
+            "Dicong Qiu",
+            "Karthik Paga"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1804.10544v1",
+        "title": "Persistent Monitoring of Stochastic Spatio-temporal Phenomena with a\n  Small Team of Robots",
+        "abstract": "  This paper presents a solution for persistent monitoring of real-world\nstochastic phenomena, where the underlying covariance structure changes sharply\nacross time, using a small number of mobile robot sensors. We propose an\nadaptive solution for the problem where stochastic real-world dynamics are\nmodeled as a Gaussian Process (GP). The belief on the underlying covariance\nstructure is learned from recently observed dynamics as a Gaussian Mixture (GM)\nin the low-dimensional hyper-parameters space of the GP and adapted across time\nusing Sequential Monte Carlo methods. Each robot samples a belief point from\nthe GM and locally optimizes a set of informative regions by greedy\nmaximization of the submodular entropy function. The key contributions of this\npaper are threefold: adapting the belief on the covariance using Markov Chain\nMonte Carlo (MCMC) sampling such that particles survive even under sharp\ncovariance changes across time; exploiting the belief to transform the problem\nof entropy maximization into a decentralized one; and developing an\napproximation algorithm to maximize entropy on a set of informative regions in\nthe continuous space. We illustrate the application of the proposed solution\nthrough extensive simulations using an artificial dataset and multiple real\ndatasets from fixed sensor deployments, and compare it to three competing\nstate-of-the-art approaches.\n",
+        "published": "2018",
+        "authors": [
+            "Sahil Garg",
+            "Nora Ayanian"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1805.00909v3",
+        "title": "Reinforcement Learning and Control as Probabilistic Inference: Tutorial\n  and Review",
+        "abstract": "  The framework of reinforcement learning or optimal control provides a\nmathematical formalization of intelligent decision making that is powerful and\nbroadly applicable. While the general form of the reinforcement learning\nproblem enables effective reasoning about uncertainty, the connection between\nreinforcement learning and inference in probabilistic models is not immediately\nobvious. However, such a connection has considerable value when it comes to\nalgorithm design: formalizing a problem as probabilistic inference in principle\nallows us to bring to bear a wide array of approximate inference tools, extend\nthe model in flexible and powerful ways, and reason about compositionality and\npartial observability. In this article, we will discuss how a generalization of\nthe reinforcement learning or optimal control problem, which is sometimes\ntermed maximum entropy reinforcement learning, is equivalent to exact\nprobabilistic inference in the case of deterministic dynamics, and variational\ninference in the case of stochastic dynamics. We will present a detailed\nderivation of this framework, overview prior work that has drawn on this and\nrelated ideas to propose new reinforcement learning and control algorithms, and\ndescribe perspectives on future research.\n",
+        "published": "2018",
+        "authors": [
+            "Sergey Levine"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1805.11122v2",
+        "title": "Differentiable Particle Filters: End-to-End Learning with Algorithmic\n  Priors",
+        "abstract": "  We present differentiable particle filters (DPFs): a differentiable\nimplementation of the particle filter algorithm with learnable motion and\nmeasurement models. Since DPFs are end-to-end differentiable, we can\nefficiently train their models by optimizing end-to-end state estimation\nperformance, rather than proxy objectives such as model accuracy. DPFs encode\nthe structure of recursive state estimation with prediction and measurement\nupdate that operate on a probability distribution over states. This structure\nrepresents an algorithmic prior that improves learning performance in state\nestimation problems while enabling explainability of the learned model. Our\nexperiments on simulated and real data show substantial benefits from end-to-\nend learning with algorithmic priors, e.g. reducing error rates by ~80%. Our\nexperiments also show that, unlike long short-term memory networks, DPFs learn\nlocalization in a policy-agnostic way and thus greatly improve generalization.\nSource code is available at\nhttps://github.com/tu-rbo/differentiable-particle-filters .\n",
+        "published": "2018",
+        "authors": [
+            "Rico Jonschkowski",
+            "Divyam Rastogi",
+            "Oliver Brock"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1805.12114v2",
+        "title": "Deep Reinforcement Learning in a Handful of Trials using Probabilistic\n  Dynamics Models",
+        "abstract": "  Model-based reinforcement learning (RL) algorithms can attain excellent\nsample efficiency, but often lag behind the best model-free algorithms in terms\nof asymptotic performance. This is especially true with high-capacity\nparametric function approximators, such as deep networks. In this paper, we\nstudy how to bridge this gap, by employing uncertainty-aware dynamics models.\nWe propose a new algorithm called probabilistic ensembles with trajectory\nsampling (PETS) that combines uncertainty-aware deep network dynamics models\nwith sampling-based uncertainty propagation. Our comparison to state-of-the-art\nmodel-based and model-free deep RL algorithms shows that our approach matches\nthe asymptotic performance of model-free algorithms on several challenging\nbenchmark tasks, while requiring significantly fewer samples (e.g., 8 and 125\ntimes fewer samples than Soft Actor Critic and Proximal Policy Optimization\nrespectively on the half-cheetah task).\n",
+        "published": "2018",
+        "authors": [
+            "Kurtland Chua",
+            "Roberto Calandra",
+            "Rowan McAllister",
+            "Sergey Levine"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1808.00177v5",
+        "title": "Learning Dexterous In-Hand Manipulation",
+        "abstract": "  We use reinforcement learning (RL) to learn dexterous in-hand manipulation\npolicies which can perform vision-based object reorientation on a physical\nShadow Dexterous Hand. The training is performed in a simulated environment in\nwhich we randomize many of the physical properties of the system like friction\ncoefficients and an object's appearance. Our policies transfer to the physical\nrobot despite being trained entirely in simulation. Our method does not rely on\nany human demonstrations, but many behaviors found in human manipulation emerge\nnaturally, including finger gaiting, multi-finger coordination, and the\ncontrolled use of gravity. Our results were obtained using the same distributed\nRL system that was used to train OpenAI Five. We also include a video of our\nresults: https://youtu.be/jwSbzNHGflM\n",
+        "published": "2018",
+        "authors": [
+            " OpenAI",
+            "Marcin Andrychowicz",
+            "Bowen Baker",
+            "Maciek Chociej",
+            "Rafal Jozefowicz",
+            "Bob McGrew",
+            "Jakub Pachocki",
+            "Arthur Petron",
+            "Matthias Plappert",
+            "Glenn Powell",
+            "Alex Ray",
+            "Jonas Schneider",
+            "Szymon Sidor",
+            "Josh Tobin",
+            "Peter Welinder",
+            "Lilian Weng",
+            "Wojciech Zaremba"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1810.01870v1",
+        "title": "Grounding Perception: A Developmental Approach to Sensorimotor\n  Contingencies",
+        "abstract": "  Sensorimotor contingency theory offers a promising account of the nature of\nperception, a topic rarely addressed in the robotics community. We propose a\ndevelopmental framework to address the problem of the autonomous acquisition of\nsensorimotor contingencies by a naive robot. While exploring the world, the\nrobot internally encodes contingencies as predictive models that capture the\nstructure they imply in its sensorimotor experience. Three preliminary\napplications are presented to illustrate our approach to the acquisition of\nperceptive abilities: discovering the environment, discovering objects, and\ndiscovering a visual field.\n",
+        "published": "2018",
+        "authors": [
+            "Alban Laflaqui\u00e8re",
+            "Nikolas Hemion",
+            "Micha\u00ebl Garcia Ortiz",
+            "Jean-Christophe Baillie"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1810.01871v1",
+        "title": "Grounding the Experience of a Visual Field through Sensorimotor\n  Contingencies",
+        "abstract": "  Artificial perception is traditionally handled by hand-designing task\nspecific algorithms. However, a truly autonomous robot should develop\nperceptive abilities on its own, by interacting with its environment, and\nadapting to new situations. The sensorimotor contingencies theory proposes to\nground the development of those perceptive abilities in the way the agent can\nactively transform its sensory inputs. We propose a sensorimotor approach,\ninspired by this theory, in which the agent explores the world and discovers\nits properties by capturing the sensorimotor regularities they induce. This\nwork presents an application of this approach to the discovery of a so-called\nvisual field as the set of regularities that a visual sensor imposes on a naive\nagent's experience. A formalism is proposed to describe how those regularities\ncan be captured in a sensorimotor predictive model. Finally, the approach is\nevaluated on a simulated system coarsely inspired from the human retina.\n",
+        "published": "2018",
+        "authors": [
+            "Alban Laflaqui\u00e8re"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1810.04303v1",
+        "title": "Batch Active Preference-Based Learning of Reward Functions",
+        "abstract": "  Data generation and labeling are usually an expensive part of learning for\nrobotics. While active learning methods are commonly used to tackle the former\nproblem, preference-based learning is a concept that attempts to solve the\nlatter by querying users with preference questions. In this paper, we will\ndevelop a new algorithm, batch active preference-based learning, that enables\nefficient learning of reward functions using as few data samples as possible\nwhile still having short query generation times. We introduce several\napproximations to the batch active learning problem, and provide theoretical\nguarantees for the convergence of our algorithms. Finally, we present our\nexperimental results for a variety of robotics tasks in simulation. Our results\nsuggest that our batch active learning algorithm requires only a few queries\nthat are computed in a short amount of time. We then showcase our algorithm in\na study to learn human users' preferences.\n",
+        "published": "2018",
+        "authors": [
+            "Erdem B\u0131y\u0131k",
+            "Dorsa Sadigh"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1810.04535v1",
+        "title": "Investigating Enactive Learning for Autonomous Intelligent Agents",
+        "abstract": "  The enactive approach to cognition is typically proposed as a viable\nalternative to traditional cognitive science. Enactive cognition displaces the\nexplanatory focus from the internal representations of the agent to the direct\nsensorimotor interaction with its environment. In this paper, we investigate\nenactive learning through means of artificial agent simulations. We compare the\nperformances of the enactive agent to an agent operating on classical\nreinforcement learning in foraging tasks within maze environments. The\ncharacteristics of the agents are analysed in terms of the accessibility of the\nenvironmental states, goals, and exploration/exploitation tradeoffs. We confirm\nthat the enactive agent can successfully interact with its environment and\nlearn to avoid unfavourable interactions using intrinsically defined goals. The\nperformance of the enactive agent is shown to be limited by the number of\naffordable actions.\n",
+        "published": "2018",
+        "authors": [
+            "Rafik Hadfi"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1810.05057v1",
+        "title": "Identification of Invariant Sensorimotor Structures as a Prerequisite\n  for the Discovery of Objects",
+        "abstract": "  Perceiving the surrounding environment in terms of objects is useful for any\ngeneral purpose intelligent agent. In this paper, we investigate a fundamental\nmechanism making object perception possible, namely the identification of\nspatio-temporally invariant structures in the sensorimotor experience of an\nagent. We take inspiration from the Sensorimotor Contingencies Theory to define\na computational model of this mechanism through a sensorimotor, unsupervised\nand predictive approach. Our model is based on processing the unsupervised\ninteraction of an artificial agent with its environment. We show how\nspatio-temporally invariant structures in the environment induce regularities\nin the sensorimotor experience of an agent, and how this agent, while building\na predictive model of its sensorimotor experience, can capture them as densely\nconnected subgraphs in a graph of sensory states connected by motor commands.\nOur approach is focused on elementary mechanisms, and is illustrated with a set\nof simple experiments in which an agent interacts with an environment. We show\nhow the agent can build an internal model of moving but spatio-temporally\ninvariant structures by performing a Spectral Clustering of the graph modeling\nits overall sensorimotor experiences. We systematically examine properties of\nthe model, shedding light more globally on the specificities of the paradigm\nwith respect to methods based on the supervised processing of collections of\nstatic images.\n",
+        "published": "2018",
+        "authors": [
+            "Nicolas Le Hir",
+            "Olivier Sigaud",
+            "Alban Laflaqui\u00e8re"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1904.00231v2",
+        "title": "Lane Change Decision-making through Deep Reinforcement Learning with\n  Rule-based Constraints",
+        "abstract": "  Autonomous driving decision-making is a great challenge due to the complexity\nand uncertainty of the traffic environment. Combined with the rule-based\nconstraints, a Deep Q-Network (DQN) based method is applied for autonomous\ndriving lane change decision-making task in this study. Through the combination\nof high-level lateral decision-making and low-level rule-based trajectory\nmodification, a safe and efficient lane change behavior can be achieved. With\nthe setting of our state representation and reward function, the trained agent\nis able to take appropriate actions in a real-world-like simulator. The\ngenerated policy is evaluated on the simulator for 10 times, and the results\ndemonstrate that the proposed rule-based DQN method outperforms the rule-based\napproach and the DQN method.\n",
+        "published": "2019",
+        "authors": [
+            "Junjie Wang",
+            "Qichao Zhang",
+            "Dongbin Zhao",
+            "Yaran Chen"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1904.00956v2",
+        "title": "Guided Meta-Policy Search",
+        "abstract": "  Reinforcement learning (RL) algorithms have demonstrated promising results on\ncomplex tasks, yet often require impractical numbers of samples since they\nlearn from scratch. Meta-RL aims to address this challenge by leveraging\nexperience from previous tasks so as to more quickly solve new tasks. However,\nin practice, these algorithms generally also require large amounts of on-policy\nexperience during the meta-training process, making them impractical for use in\nmany problems. To this end, we propose to learn a reinforcement learning\nprocedure in a federated way, where individual off-policy learners can solve\nthe individual meta-training tasks, and then consolidate these solutions into a\nsingle meta-learner. Since the central meta-learner learns by imitating the\nsolutions to the individual tasks, it can accommodate either the standard\nmeta-RL problem setting or a hybrid setting where some or all tasks are\nprovided with example demonstrations. The former results in an approach that\ncan leverage policies learned for previous tasks without significant amounts of\non-policy data during meta-training, whereas the latter is particularly useful\nin cases where demonstrations are easy for a person to provide. Across a number\nof continuous control meta-RL problems, we demonstrate significant improvements\nin meta-RL sample efficiency in comparison to prior work as well as the ability\nto scale to domains with visual observations.\n",
+        "published": "2019",
+        "authors": [
+            "Russell Mendonca",
+            "Abhishek Gupta",
+            "Rosen Kralev",
+            "Pieter Abbeel",
+            "Sergey Levine",
+            "Chelsea Finn"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1904.06025v2",
+        "title": "Interaction-aware Decision Making with Adaptive Strategies under Merging\n  Scenarios",
+        "abstract": "  In order to drive safely and efficiently under merging scenarios, autonomous\nvehicles should be aware of their surroundings and make decisions by\ninteracting with other road participants. Moreover, different strategies should\nbe made when the autonomous vehicle is interacting with drivers having\ndifferent level of cooperativeness. Whether the vehicle is on the merge-lane or\nmain-lane will also influence the driving maneuvers since drivers will behave\ndifferently when they have the right-of-way than otherwise. Many traditional\nmethods have been proposed to solve decision making problems under merging\nscenarios. However, these works either are incapable of modeling complicated\ninteractions or require implementing hand-designed rules which cannot properly\nhandle the uncertainties in real-world scenarios. In this paper, we proposed an\ninteraction-aware decision making with adaptive strategies (IDAS) approach that\ncan let the autonomous vehicle negotiate the road with other drivers by\nleveraging their cooperativeness under merging scenarios. A single policy is\nlearned under the multi-agent reinforcement learning (MARL) setting via the\ncurriculum learning strategy, which enables the agent to automatically infer\nother drivers' various behaviors and make decisions strategically. A masking\nmechanism is also proposed to prevent the agent from exploring states that\nviolate common sense of human judgment and increase the learning efficiency. An\nexemplar merging scenario was used to implement and examine the proposed\nmethod.\n",
+        "published": "2019",
+        "authors": [
+            "Yeping Hu",
+            "Alireza Nakhaei",
+            "Masayoshi Tomizuka",
+            "Kikuo Fujimura"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1904.06703v2",
+        "title": "Dot-to-Dot: Explainable Hierarchical Reinforcement Learning for Robotic\n  Manipulation",
+        "abstract": "  Robotic systems are ever more capable of automation and fulfilment of complex\ntasks, particularly with reliance on recent advances in intelligent systems,\ndeep learning and artificial intelligence. However, as robots and humans come\ncloser in their interactions, the matter of interpretability, or explainability\nof robot decision-making processes for the human grows in importance. A\nsuccessful interaction and collaboration will only take place through mutual\nunderstanding of underlying representations of the environment and the task at\nhand. This is currently a challenge in deep learning systems. We present a\nhierarchical deep reinforcement learning system, consisting of a low-level\nagent handling the large actions/states space of a robotic system efficiently,\nby following the directives of a high-level agent which is learning the\nhigh-level dynamics of the environment and task. This high-level agent forms a\nrepresentation of the world and task at hand that is interpretable for a human\noperator. The method, which we call Dot-to-Dot, is tested on a MuJoCo-based\nmodel of the Fetch Robotics Manipulator, as well as a Shadow Hand, to test its\nperformance. Results show efficient learning of complex actions/states spaces\nby the low-level agent, and an interpretable representation of the task and\ndecision-making process learned by the high-level agent.\n",
+        "published": "2019",
+        "authors": [
+            "Benjamin Beyret",
+            "Ali Shafti",
+            "A. Aldo Faisal"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1904.07346v1",
+        "title": "Efficient Supervision for Robot Learning via Imitation, Simulation, and\n  Adaptation",
+        "abstract": "  Recent successes in machine learning have led to a shift in the design of\nautonomous systems, improving performance on existing tasks and rendering new\napplications possible. Data-focused approaches gain relevance across diverse,\nintricate applications when developing data collection and curation pipelines\nbecomes more effective than manual behaviour design. The following work aims at\nincreasing the efficiency of this pipeline in two principal ways: by utilising\nmore powerful sources of informative data and by extracting additional\ninformation from existing data. In particular, we target three orthogonal\nfronts: imitation learning, domain adaptation, and transfer from simulation.\n",
+        "published": "2019",
+        "authors": [
+            "Markus Wulfmeier"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1904.12901v1",
+        "title": "Challenges of Real-World Reinforcement Learning",
+        "abstract": "  Reinforcement learning (RL) has proven its worth in a series of artificial\ndomains, and is beginning to show some successes in real-world scenarios.\nHowever, much of the research advances in RL are often hard to leverage in\nreal-world systems due to a series of assumptions that are rarely satisfied in\npractice. We present a set of nine unique challenges that must be addressed to\nproductionize RL to real world problems. For each of these challenges, we\nspecify the exact meaning of the challenge, present some approaches from the\nliterature, and specify some metrics for evaluating that challenge. An approach\nthat addresses all nine challenges would be applicable to a large number of\nreal world problems. We also present an example domain that has been modified\nto present these challenges as a testbed for practical RL research.\n",
+        "published": "2019",
+        "authors": [
+            "Gabriel Dulac-Arnold",
+            "Daniel Mankowitz",
+            "Todd Hester"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1905.00587v1",
+        "title": "Coordination and Trajectory Prediction for Vehicle Interactions via\n  Bayesian Generative Modeling",
+        "abstract": "  Coordination recognition and subtle pattern prediction of future trajectories\nplay a significant role when modeling interactive behaviors of multiple agents.\nDue to the essential property of uncertainty in the future evolution,\ndeterministic predictors are not sufficiently safe and robust. In order to\ntackle the task of probabilistic prediction for multiple, interactive entities,\nwe propose a coordination and trajectory prediction system (CTPS), which has a\nhierarchical structure including a macro-level coordination recognition module\nand a micro-level subtle pattern prediction module which solves a probabilistic\ngeneration task. We illustrate two types of representation of the coordination\nvariable: categorized and real-valued, and compare their effects and advantages\nbased on empirical studies. We also bring the ideas of Bayesian deep learning\ninto deep generative models to generate diversified prediction hypotheses. The\nproposed system is tested on multiple driving datasets in various traffic\nscenarios, which achieves better performance than baseline approaches in terms\nof a set of evaluation metrics. The results also show that using categorized\ncoordination can better capture multi-modality and generate more diversified\nsamples than the real-valued coordination, while the latter can generate\nprediction hypotheses with smaller errors with a sacrifice of sample diversity.\nMoreover, employing neural networks with weight uncertainty is able to generate\nsamples with larger variance and diversity.\n",
+        "published": "2019",
+        "authors": [
+            "Jiachen Li",
+            "Hengbo Ma",
+            "Wei Zhan",
+            "Masayoshi Tomizuka"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1905.01718v1",
+        "title": "Curious Meta-Controller: Adaptive Alternation between Model-Based and\n  Model-Free Control in Deep Reinforcement Learning",
+        "abstract": "  Recent success in deep reinforcement learning for continuous control has been\ndominated by model-free approaches which, unlike model-based approaches, do not\nsuffer from representational limitations in making assumptions about the world\ndynamics and model errors inevitable in complex domains. However, they require\na lot of experiences compared to model-based approaches that are typically more\nsample-efficient. We propose to combine the benefits of the two approaches by\npresenting an integrated approach called Curious Meta-Controller. Our approach\nalternates adaptively between model-based and model-free control using a\ncuriosity feedback based on the learning progress of a neural model of the\ndynamics in a learned latent space. We demonstrate that our approach can\nsignificantly improve the sample efficiency and achieve near-optimal\nperformance on learning robotic reaching and grasping tasks from raw-pixel\ninput in both dense and sparse reward settings.\n",
+        "published": "2019",
+        "authors": [
+            "Muhammad Burhan Hafez",
+            "Cornelius Weber",
+            "Matthias Kerzel",
+            "Stefan Wermter"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1905.07193v1",
+        "title": "MaMiC: Macro and Micro Curriculum for Robotic Reinforcement Learning",
+        "abstract": "  Shaping in humans and animals has been shown to be a powerful tool for\nlearning complex tasks as compared to learning in a randomized fashion. This\nmakes the problem less complex and enables one to solve the easier sub task at\nhand first. Generating a curriculum for such guided learning involves\nsubjecting the agent to easier goals first, and then gradually increasing their\ndifficulty. This paper takes a similar direction and proposes a dual curriculum\nscheme for solving robotic manipulation tasks with sparse rewards, called\nMaMiC. It includes a macro curriculum scheme which divides the task into\nmultiple sub-tasks followed by a micro curriculum scheme which enables the\nagent to learn between such discovered sub-tasks. We show how combining macro\nand micro curriculum strategies help in overcoming major exploratory\nconstraints considered in robot manipulation tasks without having to engineer\nany complex rewards. We also illustrate the meaning of the individual curricula\nand how they can be used independently based on the task. The performance of\nsuch a dual curriculum scheme is analyzed on the Fetch environments.\n",
+        "published": "2019",
+        "authors": [
+            "Manan Tomar",
+            "Akhil Sathuluri",
+            "Balaraman Ravindran"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1905.13402v8",
+        "title": "Safety Augmented Value Estimation from Demonstrations (SAVED): Safe Deep\n  Model-Based RL for Sparse Cost Robotic Tasks",
+        "abstract": "  Reinforcement learning (RL) for robotics is challenging due to the difficulty\nin hand-engineering a dense cost function, which can lead to unintended\nbehavior, and dynamical uncertainty, which makes exploration and constraint\nsatisfaction challenging. We address these issues with a new model-based\nreinforcement learning algorithm, Safety Augmented Value Estimation from\nDemonstrations (SAVED), which uses supervision that only identifies task\ncompletion and a modest set of suboptimal demonstrations to constrain\nexploration and learn efficiently while handling complex constraints. We then\ncompare SAVED with 3 state-of-the-art model-based and model-free RL algorithms\non 6 standard simulation benchmarks involving navigation and manipulation and a\nphysical knot-tying task on the da Vinci surgical robot. Results suggest that\nSAVED outperforms prior methods in terms of success rate, constraint\nsatisfaction, and sample efficiency, making it feasible to safely learn a\ncontrol policy directly on a real robot in less than an hour. For tasks on the\nrobot, baselines succeed less than 5% of the time while SAVED has a success\nrate of over 75% in the first 50 training iterations. Code and supplementary\nmaterial is available at https://tinyurl.com/saved-rl.\n",
+        "published": "2019",
+        "authors": [
+            "Brijen Thananjeyan",
+            "Ashwin Balakrishna",
+            "Ugo Rosolia",
+            "Felix Li",
+            "Rowan McAllister",
+            "Joseph E. Gonzalez",
+            "Sergey Levine",
+            "Francesco Borrelli",
+            "Ken Goldberg"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1906.01401v3",
+        "title": "Unsupervised Emergence of Egocentric Spatial Structure from Sensorimotor\n  Prediction",
+        "abstract": "  Despite its omnipresence in robotics application, the nature of spatial\nknowledge and the mechanisms that underlie its emergence in autonomous agents\nare still poorly understood. Recent theoretical works suggest that the\nEuclidean structure of space induces invariants in an agent's raw sensorimotor\nexperience. We hypothesize that capturing these invariants is beneficial for\nsensorimotor prediction and that, under certain exploratory conditions, a motor\nrepresentation capturing the structure of the external space should emerge as a\nbyproduct of learning to predict future sensory experiences. We propose a\nsimple sensorimotor predictive scheme, apply it to different agents and types\nof exploration, and evaluate the pertinence of these hypotheses. We show that a\nnaive agent can capture the topology and metric regularity of its sensor's\nposition in an egocentric spatial frame without any a priori knowledge, nor\nextraneous supervision.\n",
+        "published": "2019",
+        "authors": [
+            "Alban Laflaqui\u00e8re",
+            "Michael Garcia Ortiz"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1906.01624v3",
+        "title": "Off-Policy Evaluation via Off-Policy Classification",
+        "abstract": "  In this work, we consider the problem of model selection for deep\nreinforcement learning (RL) in real-world environments. Typically, the\nperformance of deep RL algorithms is evaluated via on-policy interactions with\nthe target environment. However, comparing models in a real-world environment\nfor the purposes of early stopping or hyperparameter tuning is costly and often\npractically infeasible. This leads us to examine off-policy policy evaluation\n(OPE) in such settings. We focus on OPE for value-based methods, which are of\nparticular interest in deep RL, with applications like robotics, where\noff-policy algorithms based on Q-function estimation can often attain better\nsample complexity than direct policy optimization. Existing OPE metrics either\nrely on a model of the environment, or the use of importance sampling (IS) to\ncorrect for the data being off-policy. However, for high-dimensional\nobservations, such as images, models of the environment can be difficult to fit\nand value-based methods can make IS hard to use or even ill-conditioned,\nespecially when dealing with continuous action spaces. In this paper, we focus\non the specific case of MDPs with continuous action spaces and sparse binary\nrewards, which is representative of many important real-world applications. We\npropose an alternative metric that relies on neither models nor IS, by framing\nOPE as a positive-unlabeled (PU) classification problem with the Q-function as\nthe decision function. We experimentally show that this metric outperforms\nbaselines on a number of tasks. Most importantly, it can reliably predict the\nrelative performance of different policies in a number of generalization\nscenarios, including the transfer to the real-world of policies trained in\nsimulation for an image-based robotic manipulation task.\n",
+        "published": "2019",
+        "authors": [
+            "Alex Irpan",
+            "Kanishka Rao",
+            "Konstantinos Bousmalis",
+            "Chris Harris",
+            "Julian Ibarz",
+            "Sergey Levine"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1906.03710v1",
+        "title": "Curiosity-Driven Multi-Criteria Hindsight Experience Replay",
+        "abstract": "  Dealing with sparse rewards is a longstanding challenge in reinforcement\nlearning. The recent use of hindsight methods have achieved success on a\nvariety of sparse-reward tasks, but they fail on complex tasks such as stacking\nmultiple blocks with a robot arm in simulation. Curiosity-driven exploration\nusing the prediction error of a learned dynamics model as an intrinsic reward\nhas been shown to be effective for exploring a number of sparse-reward\nenvironments. We present a method that combines hindsight with curiosity-driven\nexploration and curriculum learning in order to solve the challenging\nsparse-reward block stacking task. We are the first to stack more than two\nblocks using only sparse reward without human demonstrations.\n",
+        "published": "2019",
+        "authors": [
+            "John B. Lanier",
+            "Stephen McAleer",
+            "Pierre Baldi"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1906.05274v3",
+        "title": "Efficient Exploration via State Marginal Matching",
+        "abstract": "  Exploration is critical to a reinforcement learning agent's performance in\nits given environment. Prior exploration methods are often based on using\nheuristic auxiliary predictions to guide policy behavior, lacking a\nmathematically-grounded objective with clear properties. In contrast, we recast\nexploration as a problem of State Marginal Matching (SMM), where we aim to\nlearn a policy for which the state marginal distribution matches a given target\nstate distribution. The target distribution is a uniform distribution in most\ncases, but can incorporate prior knowledge if available. In effect, SMM\namortizes the cost of learning to explore in a given environment. The SMM\nobjective can be viewed as a two-player, zero-sum game between a state density\nmodel and a parametric policy, an idea that we use to build an algorithm for\noptimizing the SMM objective. Using this formalism, we further demonstrate that\nprior work approximately maximizes the SMM objective, offering an explanation\nfor the success of these methods. On both simulated and real-world tasks, we\ndemonstrate that agents that directly optimize the SMM objective explore faster\nand adapt more quickly to new tasks as compared to prior exploration methods.\n",
+        "published": "2019",
+        "authors": [
+            "Lisa Lee",
+            "Benjamin Eysenbach",
+            "Emilio Parisotto",
+            "Eric Xing",
+            "Sergey Levine",
+            "Ruslan Salakhutdinov"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1906.05374v4",
+        "title": "Meta-Learning via Learned Loss",
+        "abstract": "  Typically, loss functions, regularization mechanisms and other important\naspects of training parametric models are chosen heuristically from a limited\nset of options. In this paper, we take the first step towards automating this\nprocess, with the view of producing models which train faster and more\nrobustly. Concretely, we present a meta-learning method for learning parametric\nloss functions that can generalize across different tasks and model\narchitectures. We develop a pipeline for meta-training such loss functions,\ntargeted at maximizing the performance of the model trained under them. The\nloss landscape produced by our learned losses significantly improves upon the\noriginal task-specific losses in both supervised and reinforcement learning\ntasks. Furthermore, we show that our meta-learning framework is flexible enough\nto incorporate additional information at meta-train time. This information\nshapes the learned loss function such that the environment does not need to\nprovide this information during meta-test time. We make our code available at\nhttps://sites.google.com/view/mlthree.\n",
+        "published": "2019",
+        "authors": [
+            "Sarah Bechtle",
+            "Artem Molchanov",
+            "Yevgen Chebotar",
+            "Edward Grefenstette",
+            "Ludovic Righetti",
+            "Gaurav Sukhatme",
+            "Franziska Meier"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1906.07838v1",
+        "title": "RadGrad: Active learning with loss gradients",
+        "abstract": "  Solving sequential decision prediction problems, including those in imitation\nlearning settings, requires mitigating the problem of covariate shift. The\nstandard approach, DAgger, relies on capturing expert behaviour in all states\nthat the agent reaches. In real-world settings, querying an expert is costly.\nWe propose a new active learning algorithm that selectively queries the expert,\nbased on both a prediction of agent error and a proxy for agent risk, that\nmaintains the performance of unrestrained expert querying systems while\nsubstantially reducing the number of expert queries made. We show that our\napproach, RadGrad, has the potential to improve upon existing safety-aware\nalgorithms, and matches or exceeds the performance of DAgger and variants\n(i.e., SafeDAgger) in one simulated environment. However, we also find that a\nmore complex environment poses challenges not only to our proposed method, but\nalso to existing safety-aware algorithms, which do not match the performance of\nDAgger in our experiments.\n",
+        "published": "2019",
+        "authors": [
+            "Paul Budnarain",
+            "Renato Ferreira Pinto Junior",
+            "Ilan Kogan"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1906.08649v1",
+        "title": "Exploring Model-based Planning with Policy Networks",
+        "abstract": "  Model-based reinforcement learning (MBRL) with model-predictive control or\nonline planning has shown great potential for locomotion control tasks in terms\nof both sample efficiency and asymptotic performance. Despite their initial\nsuccesses, the existing planning methods search from candidate sequences\nrandomly generated in the action space, which is inefficient in complex\nhigh-dimensional environments. In this paper, we propose a novel MBRL\nalgorithm, model-based policy planning (POPLIN), that combines policy networks\nwith online planning. More specifically, we formulate action planning at each\ntime-step as an optimization problem using neural networks. We experiment with\nboth optimization w.r.t. the action sequences initialized from the policy\nnetwork, and also online optimization directly w.r.t. the parameters of the\npolicy network. We show that POPLIN obtains state-of-the-art performance in the\nMuJoCo benchmarking environments, being about 3x more sample efficient than the\nstate-of-the-art algorithms, such as PETS, TD3 and SAC. To explain the\neffectiveness of our algorithm, we show that the optimization surface in\nparameter space is smoother than in action space. Further more, we found the\ndistilled policy network can be effectively applied without the expansive model\npredictive control during test time for some environments such as Cheetah. Code\nis released in https://github.com/WilsonWangTHU/POPLIN.\n",
+        "published": "2019",
+        "authors": [
+            "Tingwu Wang",
+            "Jimmy Ba"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1906.11228v3",
+        "title": "Compositional Transfer in Hierarchical Reinforcement Learning",
+        "abstract": "  The successful application of general reinforcement learning algorithms to\nreal-world robotics applications is often limited by their high data\nrequirements. We introduce Regularized Hierarchical Policy Optimization (RHPO)\nto improve data-efficiency for domains with multiple dominant tasks and\nultimately reduce required platform time. To this end, we employ compositional\ninductive biases on multiple levels and corresponding mechanisms for sharing\noff-policy transition data across low-level controllers and tasks as well as\nscheduling of tasks. The presented algorithm enables stable and fast learning\nfor complex, real-world domains in the parallel multitask and sequential\ntransfer case. We show that the investigated types of hierarchy enable positive\ntransfer while partially mitigating negative interference and evaluate the\nbenefits of additional incentives for efficient, compositional task solutions\nin single task domains. Finally, we demonstrate substantial data-efficiency and\nfinal performance gains over competitive baselines in a week-long, physical\nrobot stacking experiment.\n",
+        "published": "2019",
+        "authors": [
+            "Markus Wulfmeier",
+            "Abbas Abdolmaleki",
+            "Roland Hafner",
+            "Jost Tobias Springenberg",
+            "Michael Neunert",
+            "Tim Hertweck",
+            "Thomas Lampe",
+            "Noah Siegel",
+            "Nicolas Heess",
+            "Martin Riedmiller"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1909.01331v2",
+        "title": "Generalization in Transfer Learning",
+        "abstract": "  Agents trained with deep reinforcement learning algorithms are capable of\nperforming highly complex tasks including locomotion in continuous\nenvironments. We investigate transferring the learning acquired in one task to\na set of previously unseen tasks. Generalization and overfitting in deep\nreinforcement learning are not commonly addressed in current transfer learning\nresearch. Conducting a comparative analysis without an intermediate\nregularization step results in underperforming benchmarks and inaccurate\nalgorithm comparisons due to rudimentary assessments. In this study, we propose\nregularization techniques in deep reinforcement learning for continuous control\nthrough the application of sample elimination, early stopping and maximum\nentropy regularized adversarial learning. First, the importance of the\ninclusion of training iteration number to the hyperparameters in deep transfer\nreinforcement learning will be discussed. Because source task performance is\nnot indicative of the generalization capacity of the algorithm, we start by\nacknowledging the training iteration number as a hyperparameter. In line with\nthis, we introduce an additional step of resorting to earlier snapshots of\npolicy parameters to prevent overfitting to the source task. Then, to generate\nrobust policies, we discard the samples that lead to overfitting via a method\nwe call strict clipping. Furthermore, we increase the generalization capacity\nin widely used transfer learning benchmarks by using maximum entropy\nregularization, different critic methods, and curriculum learning in an\nadversarial setup. Subsequently, we propose maximum entropy adversarial\nreinforcement learning to increase the domain randomization. Finally, we\nevaluate the robustness of these methods on simulated robots in target\nenvironments where the morphology of the robot, gravity, and tangential\nfriction coefficient of the environment are altered.\n",
+        "published": "2019",
+        "authors": [
+            "Suzan Ece Ada",
+            "Emre Ugur",
+            "H. Levent Akin"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1909.03772v2",
+        "title": "A Survey on Reproducibility by Evaluating Deep Reinforcement Learning\n  Algorithms on Real-World Robots",
+        "abstract": "  As reinforcement learning (RL) achieves more success in solving complex\ntasks, more care is needed to ensure that RL research is reproducible and that\nalgorithms herein can be compared easily and fairly with minimal bias. RL\nresults are, however, notoriously hard to reproduce due to the algorithms'\nintrinsic variance, the environments' stochasticity, and numerous (potentially\nunreported) hyper-parameters. In this work we investigate the many issues\nleading to irreproducible research and how to manage those. We further show how\nto utilise a rigorous and standardised evaluation approach for easing the\nprocess of documentation, evaluation and fair comparison of different\nalgorithms, where we emphasise the importance of choosing the right measurement\nmetrics and conducting proper statistics on the results, for unbiased reporting\nof the results.\n",
+        "published": "2019",
+        "authors": [
+            "Nicolai A. Lynnerup",
+            "Laura Nolling",
+            "Rasmus Hasle",
+            "John Hallam"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1909.13003v4",
+        "title": "DualSMC: Tunneling Differentiable Filtering and Planning under\n  Continuous POMDPs",
+        "abstract": "  A major difficulty of solving continuous POMDPs is to infer the multi-modal\ndistribution of the unobserved true states and to make the planning algorithm\ndependent on the perceived uncertainty. We cast POMDP filtering and planning\nproblems as two closely related Sequential Monte Carlo (SMC) processes, one\nover the real states and the other over the future optimal trajectories, and\ncombine the merits of these two parts in a new model named the DualSMC network.\nIn particular, we first introduce an adversarial particle filter that leverages\nthe adversarial relationship between its internal components. Based on the\nfiltering results, we then propose a planning algorithm that extends the\nprevious SMC planning approach [Piche et al., 2018] to continuous POMDPs with\nan uncertainty-dependent policy. Crucially, not only can DualSMC handle complex\nobservations such as image input but also it remains highly interpretable. It\nis shown to be effective in three continuous POMDP domains: the floor\npositioning domain, the 3D light-dark navigation domain, and a modified Reacher\ndomain.\n",
+        "published": "2019",
+        "authors": [
+            "Yunbo Wang",
+            "Bo Liu",
+            "Jiajun Wu",
+            "Yuke Zhu",
+            "Simon S. Du",
+            "Li Fei-Fei",
+            "Joshua B. Tenenbaum"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1909.13582v1",
+        "title": "Dynamic Interaction-Aware Scene Understanding for Reinforcement Learning\n  in Autonomous Driving",
+        "abstract": "  The common pipeline in autonomous driving systems is highly modular and\nincludes a perception component which extracts lists of surrounding objects and\npasses these lists to a high-level decision component. In this case, leveraging\nthe benefits of deep reinforcement learning for high-level decision making\nrequires special architectures to deal with multiple variable-length sequences\nof different object types, such as vehicles, lanes or traffic signs. At the\nsame time, the architecture has to be able to cover interactions between\ntraffic participants in order to find the optimal action to be taken. In this\nwork, we propose the novel Deep Scenes architecture, that can learn complex\ninteraction-aware scene representations based on extensions of either 1) Deep\nSets or 2) Graph Convolutional Networks. We present the Graph-Q and DeepScene-Q\noff-policy reinforcement learning algorithms, both outperforming\nstate-of-the-art methods in evaluations with the publicly available traffic\nsimulator SUMO.\n",
+        "published": "2019",
+        "authors": [
+            "Maria Huegle",
+            "Gabriel Kalweit",
+            "Moritz Werling",
+            "Joschka Boedecker"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1911.03594v2",
+        "title": "Robo-PlaNet: Learning to Poke in a Day",
+        "abstract": "  Recently, the Deep Planning Network (PlaNet) approach was introduced as a\nmodel-based reinforcement learning method that learns environment dynamics\ndirectly from pixel observations. This architecture is useful for learning\ntasks in which either the agent does not have access to meaningful states (like\nposition/velocity of robotic joints) or where the observed states significantly\ndeviate from the physical state of the agent (which is commonly the case in\nlow-cost robots in the form of backlash or noisy joint readings). PlaNet, by\ndesign, interleaves phases of training the dynamics model with phases of\ncollecting more data on the target environment, leading to long training times.\nIn this work, we introduce Robo-PlaNet, an asynchronous version of PlaNet. This\nalgorithm consistently reaches higher performance in the same amount of time,\nwhich we demonstrate in both a simulated and a real robotic experiment.\n",
+        "published": "2019",
+        "authors": [
+            "Maxime Chevalier-Boisvert",
+            "Guillaume Alain",
+            "Florian Golemo",
+            "Derek Nowrouzezahrai"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1911.04024v1",
+        "title": "MAME : Model-Agnostic Meta-Exploration",
+        "abstract": "  Meta-Reinforcement learning approaches aim to develop learning procedures\nthat can adapt quickly to a distribution of tasks with the help of a few\nexamples. Developing efficient exploration strategies capable of finding the\nmost useful samples becomes critical in such settings. Existing approaches\ntowards finding efficient exploration strategies add auxiliary objectives to\npromote exploration by the pre-update policy, however, this makes the\nadaptation using a few gradient steps difficult as the pre-update (exploration)\nand post-update (exploitation) policies are often quite different. Instead, we\npropose to explicitly model a separate exploration policy for the task\ndistribution. Having two different policies gives more flexibility in training\nthe exploration policy and also makes adaptation to any specific task easier.\nWe show that using self-supervised or supervised learning objectives for\nadaptation allows for more efficient inner-loop updates and also demonstrate\nthe superior performance of our model compared to prior works in this domain.\n",
+        "published": "2019",
+        "authors": [
+            "Swaminathan Gurumurthy",
+            "Sumit Kumar",
+            "Katia Sycara"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1911.06854v3",
+        "title": "Empirical Study of Off-Policy Policy Evaluation for Reinforcement\n  Learning",
+        "abstract": "  We offer an experimental benchmark and empirical study for off-policy policy\nevaluation (OPE) in reinforcement learning, which is a key problem in many\nsafety critical applications. Given the increasing interest in deploying\nlearning-based methods, there has been a flurry of recent proposals for OPE\nmethod, leading to a need for standardized empirical analyses. Our work takes a\nstrong focus on diversity of experimental design to enable stress testing of\nOPE methods. We provide a comprehensive benchmarking suite to study the\ninterplay of different attributes on method performance. We distill the results\ninto a summarized set of guidelines for OPE in practice. Our software package,\nthe Caltech OPE Benchmarking Suite (COBS), is open-sourced and we invite\ninterested researchers to further contribute to the benchmark.\n",
+        "published": "2019",
+        "authors": [
+            "Cameron Voloshin",
+            "Hoang M. Le",
+            "Nan Jiang",
+            "Yisong Yue"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1911.07109v2",
+        "title": "Reinforcement Learning from Imperfect Demonstrations under Soft Expert\n  Guidance",
+        "abstract": "  In this paper, we study Reinforcement Learning from Demonstrations (RLfD)\nthat improves the exploration efficiency of Reinforcement Learning (RL) by\nproviding expert demonstrations. Most of existing RLfD methods require\ndemonstrations to be perfect and sufficient, which yet is unrealistic to meet\nin practice. To work on imperfect demonstrations, we first define an imperfect\nexpert setting for RLfD in a formal way, and then point out that previous\nmethods suffer from two issues in terms of optimality and convergence,\nrespectively. Upon the theoretical findings we have derived, we tackle these\ntwo issues by regarding the expert guidance as a soft constraint on regulating\nthe policy exploration of the agent, which eventually leads to a constrained\noptimization problem. We further demonstrate that such problem is able to be\naddressed efficiently by performing a local linear search on its dual form.\nConsiderable empirical evaluations on a comprehensive collection of benchmarks\nindicate our method attains consistent improvement over other RLfD\ncounterparts.\n",
+        "published": "2019",
+        "authors": [
+            "Mingxuan Jing",
+            "Xiaojian Ma",
+            "Wenbing Huang",
+            "Fuchun Sun",
+            "Chao Yang",
+            "Bin Fang",
+            "Huaping Liu"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1911.08453v1",
+        "title": "Planning with Goal-Conditioned Policies",
+        "abstract": "  Planning methods can solve temporally extended sequential decision making\nproblems by composing simple behaviors. However, planning requires suitable\nabstractions for the states and transitions, which typically need to be\ndesigned by hand. In contrast, model-free reinforcement learning (RL) can\nacquire behaviors from low-level inputs directly, but often struggles with\ntemporally extended tasks. Can we utilize reinforcement learning to\nautomatically form the abstractions needed for planning, thus obtaining the\nbest of both approaches? We show that goal-conditioned policies learned with RL\ncan be incorporated into planning, so that a planner can focus on which states\nto reach, rather than how those states are reached. However, with complex state\nobservations such as images, not all inputs represent valid states. We\ntherefore also propose using a latent variable model to compactly represent the\nset of valid states for the planner, so that the policies provide an\nabstraction of actions, and the latent variable model provides an abstraction\nof states. We compare our method with planning-based and model-free methods and\nfind that our method significantly outperforms prior work when evaluated on\nimage-based robot navigation and manipulation tasks that require non-greedy,\nmulti-staged behavior.\n",
+        "published": "2019",
+        "authors": [
+            "Soroush Nasiriany",
+            "Vitchyr H. Pong",
+            "Steven Lin",
+            "Sergey Levine"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1911.09391v1",
+        "title": "Accelerating Reinforcement Learning with Suboptimal Guidance",
+        "abstract": "  Reinforcement Learning in domains with sparse rewards is a difficult problem,\nand a large part of the training process is often spent searching the state\nspace in a more or less random fashion for any learning signals. For control\nproblems, we often have some controller readily available which might be\nsuboptimal but nevertheless solves the problem to some degree. This controller\ncan be used to guide the initial exploration phase of the learning controller\ntowards reward yielding states, reducing the time before refinement of a viable\npolicy can be initiated. In our work, the agent is guided through an auxiliary\nbehaviour cloning loss which is made conditional on a Q-filter, i.e. it is only\napplied in situations where the critic deems the guiding controller to be\nbetter than the agent. The Q-filter provides a natural way to adjust the\nguidance throughout the training process, allowing the agent to exceed the\nguiding controller in a manner that is adaptive to the task at hand and the\nproficiency of the guiding controller. The contribution of this paper lies in\nidentifying shortcomings in previously proposed implementations of the Q-filter\nconcept, and in suggesting some ways these issues can be mitigated. These\nmodifications are tested on the OpenAI Gym Fetch environments, showing clear\nimprovements in adaptivity and yielding increased performance in all robotic\nenvironments tested.\n",
+        "published": "2019",
+        "authors": [
+            "Eivind B\u00f8hn",
+            "Signe Moe",
+            "Tor Arne Johansen"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2002.05954v4",
+        "title": "Learning Functionally Decomposed Hierarchies for Continuous Control\n  Tasks with Path Planning",
+        "abstract": "  We present HiDe, a novel hierarchical reinforcement learning architecture\nthat successfully solves long horizon control tasks and generalizes to unseen\ntest scenarios. Functional decomposition between planning and low-level control\nis achieved by explicitly separating the state-action spaces across the\nhierarchy, which allows the integration of task-relevant knowledge per layer.\nWe propose an RL-based planner to efficiently leverage the information in the\nplanning layer of the hierarchy, while the control layer learns a\ngoal-conditioned control policy. The hierarchy is trained jointly but allows\nfor the modular transfer of policy layers across hierarchies of different\nagents. We experimentally show that our method generalizes across unseen test\nenvironments and can scale to 3x horizon length compared to both learning and\nnon-learning based methods. We evaluate on complex continuous control tasks\nwith sparse rewards, including navigation and robot manipulation.\n",
+        "published": "2020",
+        "authors": [
+            "Sammy Christen",
+            "Lukas Jendele",
+            "Emre Aksan",
+            "Otmar Hilliges"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2002.07911v2",
+        "title": "Generating Automatic Curricula via Self-Supervised Active Domain\n  Randomization",
+        "abstract": "  Goal-directed Reinforcement Learning (RL) traditionally considers an agent\ninteracting with an environment, prescribing a real-valued reward to an agent\nproportional to the completion of some goal. Goal-directed RL has seen large\ngains in sample efficiency, due to the ease of reusing or generating new\nexperience by proposing goals. One approach,self-play, allows an agent to\n\"play\" against itself by alternatively setting and accomplishing goals,\ncreating a learned curriculum through which an agent can learn to accomplish\nprogressively more difficult goals. However, self-play has been limited to goal\ncurriculum learning or learning progressively harder goals within a single\nenvironment. Recent work on robotic agents has shown that varying the\nenvironment during training, for example with domain randomization, leads to\nmore robust transfer. As a result, we extend the self-play framework to jointly\nlearn a goal and environment curriculum, leading to an approach that learns the\nmost fruitful domain randomization strategy with self-play. Our method,\nSelf-Supervised Active Domain Randomization(SS-ADR), generates a coupled\ngoal-task curriculum, where agents learn through progressively more difficult\ntasks and environment variations. By encouraging the agent to try tasks that\nare just outside of its current capabilities, SS-ADR builds a domain\nrandomization curriculum that enables state-of-the-art results on\nvarioussim2real transfer tasks. Our results show that a curriculum of\nco-evolving the environment difficulty together with the difficulty of goals\nset in each environment provides practical benefits in the goal-directed tasks\ntested.\n",
+        "published": "2020",
+        "authors": [
+            "Sharath Chandra Raparthy",
+            "Bhairav Mehta",
+            "Florian Golemo",
+            "Liam Paull"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2002.11089v1",
+        "title": "Rewriting History with Inverse RL: Hindsight Inference for Policy\n  Improvement",
+        "abstract": "  Multi-task reinforcement learning (RL) aims to simultaneously learn policies\nfor solving many tasks. Several prior works have found that relabeling past\nexperience with different reward functions can improve sample efficiency.\nRelabeling methods typically ask: if, in hindsight, we assume that our\nexperience was optimal for some task, for what task was it optimal? In this\npaper, we show that hindsight relabeling is inverse RL, an observation that\nsuggests that we can use inverse RL in tandem for RL algorithms to efficiently\nsolve many tasks. We use this idea to generalize goal-relabeling techniques\nfrom prior work to arbitrary classes of tasks. Our experiments confirm that\nrelabeling data using inverse RL accelerates learning in general multi-task\nsettings, including goal-reaching, domains with discrete sets of rewards, and\nthose with linear reward functions.\n",
+        "published": "2020",
+        "authors": [
+            "Benjamin Eysenbach",
+            "Xinyang Geng",
+            "Sergey Levine",
+            "Ruslan Salakhutdinov"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2005.01138v1",
+        "title": "Off-Policy Adversarial Inverse Reinforcement Learning",
+        "abstract": "  Adversarial Imitation Learning (AIL) is a class of algorithms in\nReinforcement learning (RL), which tries to imitate an expert without taking\nany reward from the environment and does not provide expert behavior directly\nto the policy training. Rather, an agent learns a policy distribution that\nminimizes the difference from expert behavior in an adversarial setting.\nAdversarial Inverse Reinforcement Learning (AIRL) leverages the idea of AIL,\nintegrates a reward function approximation along with learning the policy, and\nshows the utility of IRL in the transfer learning setting. But the reward\nfunction approximator that enables transfer learning does not perform well in\nimitation tasks. We propose an Off-Policy Adversarial Inverse Reinforcement\nLearning (Off-policy-AIRL) algorithm which is sample efficient as well as gives\ngood imitation performance compared to the state-of-the-art AIL algorithm in\nthe continuous control tasks. For the same reward function approximator, we\nshow the utility of learning our algorithm over AIL by using the learned reward\nfunction to retrain the policy over a task under significant variation where\nexpert demonstrations are absent.\n",
+        "published": "2020",
+        "authors": [
+            "Samin Yeasar Arnob"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2005.07513v1",
+        "title": "A Distributional View on Multi-Objective Policy Optimization",
+        "abstract": "  Many real-world problems require trading off multiple competing objectives.\nHowever, these objectives are often in different units and/or scales, which can\nmake it challenging for practitioners to express numerical preferences over\nobjectives in their native units. In this paper we propose a novel algorithm\nfor multi-objective reinforcement learning that enables setting desired\npreferences for objectives in a scale-invariant way. We propose to learn an\naction distribution for each objective, and we use supervised learning to fit a\nparametric policy to a combination of these distributions. We demonstrate the\neffectiveness of our approach on challenging high-dimensional real and\nsimulated robotics tasks, and show that setting different preferences in our\nframework allows us to trace out the space of nondominated solutions.\n",
+        "published": "2020",
+        "authors": [
+            "Abbas Abdolmaleki",
+            "Sandy H. Huang",
+            "Leonard Hasenclever",
+            "Michael Neunert",
+            "H. Francis Song",
+            "Martina Zambelli",
+            "Murilo F. Martins",
+            "Nicolas Heess",
+            "Raia Hadsell",
+            "Martin Riedmiller"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2005.07541v1",
+        "title": "Simple Sensor Intentions for Exploration",
+        "abstract": "  Modern reinforcement learning algorithms can learn solutions to increasingly\ndifficult control problems while at the same time reduce the amount of prior\nknowledge needed for their application. One of the remaining challenges is the\ndefinition of reward schemes that appropriately facilitate exploration without\nbiasing the solution in undesirable ways, and that can be implemented on real\nrobotic systems without expensive instrumentation. In this paper we focus on a\nsetting in which goal tasks are defined via simple sparse rewards, and\nexploration is facilitated via agent-internal auxiliary tasks. We introduce the\nidea of simple sensor intentions (SSIs) as a generic way to define auxiliary\ntasks. SSIs reduce the amount of prior knowledge that is required to define\nsuitable rewards. They can further be computed directly from raw sensor streams\nand thus do not require expensive and possibly brittle state estimation on real\nsystems. We demonstrate that a learning system based on these rewards can solve\ncomplex robotic tasks in simulation and in real world settings. In particular,\nwe show that a real robotic arm can learn to grasp and lift and solve a\nBall-in-a-Cup task from scratch, when only raw sensor streams are used for both\ncontroller input and in the auxiliary reward definition.\n",
+        "published": "2020",
+        "authors": [
+            "Tim Hertweck",
+            "Martin Riedmiller",
+            "Michael Bloesch",
+            "Jost Tobias Springenberg",
+            "Noah Siegel",
+            "Markus Wulfmeier",
+            "Roland Hafner",
+            "Nicolas Heess"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2005.10622v2",
+        "title": "Triple-GAIL: A Multi-Modal Imitation Learning Framework with Generative\n  Adversarial Nets",
+        "abstract": "  Generative adversarial imitation learning (GAIL) has shown promising results\nby taking advantage of generative adversarial nets, especially in the field of\nrobot learning. However, the requirement of isolated single modal\ndemonstrations limits the scalability of the approach to real world scenarios\nsuch as autonomous vehicles' demand for a proper understanding of human\ndrivers' behavior. In this paper, we propose a novel multi-modal GAIL\nframework, named Triple-GAIL, that is able to learn skill selection and\nimitation jointly from both expert demonstrations and continuously generated\nexperiences with data augmentation purpose by introducing an auxiliary skill\nselector. We provide theoretical guarantees on the convergence to optima for\nboth of the generator and the selector respectively. Experiments on real driver\ntrajectories and real-time strategy game datasets demonstrate that Triple-GAIL\ncan better fit multi-modal behaviors close to the demonstrators and outperforms\nstate-of-the-art methods.\n",
+        "published": "2020",
+        "authors": [
+            "Cong Fei",
+            "Bin Wang",
+            "Yuzheng Zhuang",
+            "Zongzhang Zhang",
+            "Jianye Hao",
+            "Hongbo Zhang",
+            "Xuewu Ji",
+            "Wulong Liu"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2011.01758v2",
+        "title": "Representation Matters: Improving Perception and Exploration for\n  Robotics",
+        "abstract": "  Projecting high-dimensional environment observations into lower-dimensional\nstructured representations can considerably improve data-efficiency for\nreinforcement learning in domains with limited data such as robotics. Can a\nsingle generally useful representation be found? In order to answer this\nquestion, it is important to understand how the representation will be used by\nthe agent and what properties such a 'good' representation should have. In this\npaper we systematically evaluate a number of common learnt and hand-engineered\nrepresentations in the context of three robotics tasks: lifting, stacking and\npushing of 3D blocks. The representations are evaluated in two use-cases: as\ninput to the agent, or as a source of auxiliary tasks. Furthermore, the value\nof each representation is evaluated in terms of three properties:\ndimensionality, observability and disentanglement. We can significantly improve\nperformance in both use-cases and demonstrate that some representations can\nperform commensurate to simulator states as agent inputs. Finally, our results\nchallenge common intuitions by demonstrating that: 1) dimensionality strongly\nmatters for task generation, but is negligible for inputs, 2) observability of\ntask-relevant aspects mostly affects the input representation use-case, and 3)\ndisentanglement leads to better auxiliary tasks, but has only limited benefits\nfor input representations. This work serves as a step towards a more systematic\nunderstanding of what makes a 'good' representation for control in robotics,\nenabling practitioners to make more informed choices for developing new learned\nor hand-engineered representations.\n",
+        "published": "2020",
+        "authors": [
+            "Markus Wulfmeier",
+            "Arunkumar Byravan",
+            "Tim Hertweck",
+            "Irina Higgins",
+            "Ankush Gupta",
+            "Tejas Kulkarni",
+            "Malcolm Reynolds",
+            "Denis Teplyashin",
+            "Roland Hafner",
+            "Thomas Lampe",
+            "Martin Riedmiller"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2011.01928v1",
+        "title": "Generalization to New Actions in Reinforcement Learning",
+        "abstract": "  A fundamental trait of intelligence is the ability to achieve goals in the\nface of novel circumstances, such as making decisions from new action choices.\nHowever, standard reinforcement learning assumes a fixed set of actions and\nrequires expensive retraining when given a new action set. To make learning\nagents more adaptable, we introduce the problem of zero-shot generalization to\nnew actions. We propose a two-stage framework where the agent first infers\naction representations from action information acquired separately from the\ntask. A policy flexible to varying action sets is then trained with\ngeneralization objectives. We benchmark generalization on sequential tasks,\nsuch as selecting from an unseen tool-set to solve physical reasoning puzzles\nand stacking towers with novel 3D shapes. Videos and code are available at\nhttps://sites.google.com/view/action-generalization\n",
+        "published": "2020",
+        "authors": [
+            "Ayush Jain",
+            "Andrew Szot",
+            "Joseph J. Lim"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2011.13885v1",
+        "title": "Offline Learning from Demonstrations and Unlabeled Experience",
+        "abstract": "  Behavior cloning (BC) is often practical for robot learning because it allows\na policy to be trained offline without rewards, by supervised learning on\nexpert demonstrations. However, BC does not effectively leverage what we will\nrefer to as unlabeled experience: data of mixed and unknown quality without\nreward annotations. This unlabeled data can be generated by a variety of\nsources such as human teleoperation, scripted policies and other agents on the\nsame robot. Towards data-driven offline robot learning that can use this\nunlabeled experience, we introduce Offline Reinforced Imitation Learning\n(ORIL). ORIL first learns a reward function by contrasting observations from\ndemonstrator and unlabeled trajectories, then annotates all data with the\nlearned reward, and finally trains an agent via offline reinforcement learning.\nAcross a diverse set of continuous control and simulated robotic manipulation\ntasks, we show that ORIL consistently outperforms comparable BC agents by\neffectively leveraging unlabeled experience.\n",
+        "published": "2020",
+        "authors": [
+            "Konrad Zolna",
+            "Alexander Novikov",
+            "Ksenia Konyushkova",
+            "Caglar Gulcehre",
+            "Ziyu Wang",
+            "Yusuf Aytar",
+            "Misha Denil",
+            "Nando de Freitas",
+            "Scott Reed"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2011.13897v2",
+        "title": "Latent Skill Planning for Exploration and Transfer",
+        "abstract": "  To quickly solve new tasks in complex environments, intelligent agents need\nto build up reusable knowledge. For example, a learned world model captures\nknowledge about the environment that applies to new tasks. Similarly, skills\ncapture general behaviors that can apply to new tasks. In this paper, we\ninvestigate how these two approaches can be integrated into a single\nreinforcement learning agent. Specifically, we leverage the idea of partial\namortization for fast adaptation at test time. For this, actions are produced\nby a policy that is learned over time while the skills it conditions on are\nchosen using online planning. We demonstrate the benefits of our design\ndecisions across a suite of challenging locomotion tasks and demonstrate\nimproved sample efficiency in single tasks as well as in transfer from one task\nto another, as compared to competitive baselines. Videos are available at:\nhttps://sites.google.com/view/latent-skill-planning/\n",
+        "published": "2020",
+        "authors": [
+            "Kevin Xie",
+            "Homanga Bharadhwaj",
+            "Danijar Hafner",
+            "Animesh Garg",
+            "Florian Shkurti"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2102.05602v2",
+        "title": "Systematic Generalization in Neural Networks-based Multivariate Time\n  Series Forecasting Models",
+        "abstract": "  Systematic generalization aims to evaluate reasoning about novel combinations\nfrom known components, an intrinsic property of human cognition. In this work,\nwe study systematic generalization of NNs in forecasting future time series of\ndependent variables in a dynamical system, conditioned on past time series of\ndependent variables, and past and future control variables. We focus on\nsystematic generalization wherein the NN-based forecasting model should perform\nwell on previously unseen combinations or regimes of control variables after\nbeing trained on a limited set of the possible regimes. For NNs to depict such\nout-of-distribution generalization, they should be able to disentangle the\nvarious dependencies between control variables and dependent variables. We\nhypothesize that a modular NN architecture guided by the readily-available\nknowledge of independence of control variables as a potentially useful\ninductive bias to this end. Through extensive empirical evaluation on a toy\ndataset and a simulated electric motor dataset, we show that our proposed\nmodular NN architecture serves as a simple yet highly effective inductive bias\nthat enabling better forecasting of the dependent variables up to large\nhorizons in contrast to standard NNs, and indeed capture the true dependency\nrelations between the dependent and the control variables.\n",
+        "published": "2021",
+        "authors": [
+            "Hritik Bansal",
+            "Gantavya Bhatt",
+            "Pankaj Malhotra",
+            "Prathosh A. P"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2102.07266v1",
+        "title": "Sparse Attention Guided Dynamic Value Estimation for Single-Task\n  Multi-Scene Reinforcement Learning",
+        "abstract": "  Training deep reinforcement learning agents on environments with multiple\nlevels / scenes from the same task, has become essential for many applications\naiming to achieve generalization and domain transfer from simulation to the\nreal world. While such a strategy is helpful with generalization, the use of\nmultiple scenes significantly increases the variance of samples collected for\npolicy gradient computations. Current methods, effectively continue to view\nthis collection of scenes as a single Markov decision process (MDP), and thus\nlearn a scene-generic value function V(s). However, we argue that the sample\nvariance for a multi-scene environment is best minimized by treating each scene\nas a distinct MDP, and then learning a joint value function V(s,M) dependent on\nboth state s and MDP M. We further demonstrate that the true joint value\nfunction for a multi-scene environment, follows a multi-modal distribution\nwhich is not captured by traditional CNN / LSTM based critic networks. To this\nend, we propose a dynamic value estimation (DVE) technique, which approximates\nthe true joint value function through a sparse attention mechanism over\nmultiple value function hypothesis / modes. The resulting agent not only shows\nsignificant improvements in the final reward score across a range of OpenAI\nProcGen environments, but also exhibits enhanced navigation efficiency and\nprovides an implicit mechanism for unsupervised state-space skill\ndecomposition.\n",
+        "published": "2021",
+        "authors": [
+            "Jaskirat Singh",
+            "Liang Zheng"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2110.03684v3",
+        "title": "Cross-Domain Imitation Learning via Optimal Transport",
+        "abstract": "  Cross-domain imitation learning studies how to leverage expert demonstrations\nof one agent to train an imitation agent with a different embodiment or\nmorphology. Comparing trajectories and stationary distributions between the\nexpert and imitation agents is challenging because they live on different\nsystems that may not even have the same dimensionality. We propose\nGromov-Wasserstein Imitation Learning (GWIL), a method for cross-domain\nimitation that uses the Gromov-Wasserstein distance to align and compare states\nbetween the different spaces of the agents. Our theory formally characterizes\nthe scenarios where GWIL preserves optimality, revealing its possibilities and\nlimitations. We demonstrate the effectiveness of GWIL in non-trivial continuous\ncontrol domains ranging from simple rigid transformation of the expert domain\nto arbitrary transformation of the state-action space.\n",
+        "published": "2021",
+        "authors": [
+            "Arnaud Fickinger",
+            "Samuel Cohen",
+            "Stuart Russell",
+            "Brandon Amos"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2110.13523v2",
+        "title": "Automating Control of Overestimation Bias for Reinforcement Learning",
+        "abstract": "  Overestimation bias control techniques are used by the majority of\nhigh-performing off-policy reinforcement learning algorithms. However, most of\nthese techniques rely on pre-defined bias correction policies that are either\nnot flexible enough or require environment-specific tuning of hyperparameters.\nIn this work, we present a general data-driven approach for the automatic\nselection of bias control hyperparameters. We demonstrate its effectiveness on\nthree algorithms: Truncated Quantile Critics, Weighted Delayed DDPG, and Maxmin\nQ-learning. The proposed technique eliminates the need for an extensive\nhyperparameter search. We show that it leads to a significant reduction of the\nactual number of interactions while preserving the performance.\n",
+        "published": "2021",
+        "authors": [
+            "Arsenii Kuznetsov",
+            "Alexander Grishin",
+            "Artem Tsypin",
+            "Arsenii Ashukha",
+            "Artur Kadurin",
+            "Dmitry Vetrov"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2201.08115v2",
+        "title": "Priors, Hierarchy, and Information Asymmetry for Skill Transfer in\n  Reinforcement Learning",
+        "abstract": "  The ability to discover behaviours from past experience and transfer them to\nnew tasks is a hallmark of intelligent agents acting sample-efficiently in the\nreal world. Equipping embodied reinforcement learners with the same ability may\nbe crucial for their successful deployment in robotics. While hierarchical and\nKL-regularized reinforcement learning individually hold promise here, arguably\na hybrid approach could combine their respective benefits. Key to these fields\nis the use of information asymmetry across architectural modules to bias which\nskills are learnt. While asymmetry choice has a large influence on\ntransferability, existing methods base their choice primarily on intuition in a\ndomain-independent, potentially sub-optimal, manner. In this paper, we\ntheoretically and empirically show the crucial expressivity-transferability\ntrade-off of skills across sequential tasks, controlled by information\nasymmetry. Given this insight, we introduce Attentive Priors for Expressive and\nTransferable Skills (APES), a hierarchical KL-regularized method, heavily\nbenefiting from both priors and hierarchy. Unlike existing approaches, APES\nautomates the choice of asymmetry by learning it in a data-driven,\ndomain-dependent, way based on our expressivity-transferability theorems.\nExperiments over complex transfer domains of varying levels of extrapolation\nand sparsity, such as robot block stacking, demonstrate the criticality of the\ncorrect asymmetric choice, with APES drastically outperforming previous\nmethods.\n",
+        "published": "2022",
+        "authors": [
+            "Sasha Salter",
+            "Kristian Hartikainen",
+            "Walter Goodwin",
+            "Ingmar Posner"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2206.04114v1",
+        "title": "Deep Hierarchical Planning from Pixels",
+        "abstract": "  Intelligent agents need to select long sequences of actions to solve complex\ntasks. While humans easily break down tasks into subgoals and reach them\nthrough millions of muscle commands, current artificial intelligence is limited\nto tasks with horizons of a few hundred decisions, despite large compute\nbudgets. Research on hierarchical reinforcement learning aims to overcome this\nlimitation but has proven to be challenging, current methods rely on manually\nspecified goal spaces or subtasks, and no general solution exists. We introduce\nDirector, a practical method for learning hierarchical behaviors directly from\npixels by planning inside the latent space of a learned world model. The\nhigh-level policy maximizes task and exploration rewards by selecting latent\ngoals and the low-level policy learns to achieve the goals. Despite operating\nin latent space, the decisions are interpretable because the world model can\ndecode goals into images for visualization. Director outperforms exploration\nmethods on tasks with sparse rewards, including 3D maze traversal with a\nquadruped robot from an egocentric camera and proprioception, without access to\nthe global position or top-down view that was used by prior work. Director also\nlearns successful behaviors across a wide range of environments, including\nvisual control, Atari games, and DMLab levels.\n",
+        "published": "2022",
+        "authors": [
+            "Danijar Hafner",
+            "Kuang-Huei Lee",
+            "Ian Fischer",
+            "Pieter Abbeel"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2209.01947v1",
+        "title": "MO2: Model-Based Offline Options",
+        "abstract": "  The ability to discover useful behaviours from past experience and transfer\nthem to new tasks is considered a core component of natural embodied\nintelligence. Inspired by neuroscience, discovering behaviours that switch at\nbottleneck states have been long sought after for inducing plans of minimum\ndescription length across tasks. Prior approaches have either only supported\nonline, on-policy, bottleneck state discovery, limiting sample-efficiency, or\ndiscrete state-action domains, restricting applicability. To address this, we\nintroduce Model-Based Offline Options (MO2), an offline hindsight framework\nsupporting sample-efficient bottleneck option discovery over continuous\nstate-action spaces. Once bottleneck options are learnt offline over source\ndomains, they are transferred online to improve exploration and value\nestimation on the transfer domain. Our experiments show that on complex\nlong-horizon continuous control tasks with sparse, delayed rewards, MO2's\nproperties are essential and lead to performance exceeding recent option\nlearning methods. Additional ablations further demonstrate the impact on option\npredictability and credit assignment.\n",
+        "published": "2022",
+        "authors": [
+            "Sasha Salter",
+            "Markus Wulfmeier",
+            "Dhruva Tirumala",
+            "Nicolas Heess",
+            "Martin Riedmiller",
+            "Raia Hadsell",
+            "Dushyant Rao"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2210.00762v3",
+        "title": "Meta-Learning Priors for Safe Bayesian Optimization",
+        "abstract": "  In robotics, optimizing controller parameters under safety constraints is an\nimportant challenge. Safe Bayesian optimization (BO) quantifies uncertainty in\nthe objective and constraints to safely guide exploration in such settings.\nHand-designing a suitable probabilistic model can be challenging, however. In\nthe presence of unknown safety constraints, it is crucial to choose reliable\nmodel hyper-parameters to avoid safety violations. Here, we propose a\ndata-driven approach to this problem by meta-learning priors for safe BO from\noffline data. We build on a meta-learning algorithm, F-PACOH, capable of\nproviding reliable uncertainty quantification in settings of data scarcity. As\ncore contribution, we develop a novel framework for choosing safety-compliant\npriors in a data-riven manner via empirical uncertainty metrics and a frontier\nsearch algorithm. On benchmark functions and a high-precision motion system, we\ndemonstrate that our meta-learned priors accelerate the convergence of safe BO\napproaches while maintaining safety.\n",
+        "published": "2022",
+        "authors": [
+            "Jonas Rothfuss",
+            "Christopher Koenig",
+            "Alisa Rupenyan",
+            "Andreas Krause"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2210.04642v1",
+        "title": "Exploration via Planning for Information about the Optimal Trajectory",
+        "abstract": "  Many potential applications of reinforcement learning (RL) are stymied by the\nlarge numbers of samples required to learn an effective policy. This is\nespecially true when applying RL to real-world control tasks, e.g. in the\nsciences or robotics, where executing a policy in the environment is costly. In\npopular RL algorithms, agents typically explore either by adding stochasticity\nto a reward-maximizing policy or by attempting to gather maximal information\nabout environment dynamics without taking the given task into account. In this\nwork, we develop a method that allows us to plan for exploration while taking\nboth the task and the current knowledge about the dynamics into account. The\nkey insight to our approach is to plan an action sequence that maximizes the\nexpected information gain about the optimal trajectory for the task at hand. We\ndemonstrate that our method learns strong policies with 2x fewer samples than\nstrong exploration baselines and 200x fewer samples than model free methods on\na diverse set of low-to-medium dimensional control tasks in both the open-loop\nand closed-loop control settings.\n",
+        "published": "2022",
+        "authors": [
+            "Viraj Mehta",
+            "Ian Char",
+            "Joseph Abbate",
+            "Rory Conlin",
+            "Mark D. Boyer",
+            "Stefano Ermon",
+            "Jeff Schneider",
+            "Willie Neiswanger"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2210.08642v2",
+        "title": "Data-Efficient Pipeline for Offline Reinforcement Learning with Limited\n  Data",
+        "abstract": "  Offline reinforcement learning (RL) can be used to improve future performance\nby leveraging historical data. There exist many different algorithms for\noffline RL, and it is well recognized that these algorithms, and their\nhyperparameter settings, can lead to decision policies with substantially\ndiffering performance. This prompts the need for pipelines that allow\npractitioners to systematically perform algorithm-hyperparameter selection for\ntheir setting. Critically, in most real-world settings, this pipeline must only\ninvolve the use of historical data. Inspired by statistical model selection\nmethods for supervised learning, we introduce a task- and method-agnostic\npipeline for automatically training, comparing, selecting, and deploying the\nbest policy when the provided dataset is limited in size. In particular, our\nwork highlights the importance of performing multiple data splits to produce\nmore reliable algorithm-hyperparameter selection. While this is a common\napproach in supervised learning, to our knowledge, this has not been discussed\nin detail in the offline RL setting. We show it can have substantial impacts\nwhen the dataset is small. Compared to alternate approaches, our proposed\npipeline outputs higher-performing deployed policies from a broad range of\noffline policy learning algorithms and across various simulation domains in\nhealthcare, education, and robotics. This work contributes toward the\ndevelopment of a general-purpose meta-algorithm for automatic\nalgorithm-hyperparameter selection for offline RL.\n",
+        "published": "2022",
+        "authors": [
+            "Allen Nie",
+            "Yannis Flet-Berliac",
+            "Deon R. Jordan",
+            "William Steenbergen",
+            "Emma Brunskill"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2210.10899v1",
+        "title": "Learning Preferences for Interactive Autonomy",
+        "abstract": "  When robots enter everyday human environments, they need to understand their\ntasks and how they should perform those tasks. To encode these, reward\nfunctions, which specify the objective of a robot, are employed. However,\ndesigning reward functions can be extremely challenging for complex tasks and\nenvironments. A promising approach is to learn reward functions from humans.\nRecently, several robot learning works embrace this approach and leverage human\ndemonstrations to learn the reward functions. Known as inverse reinforcement\nlearning, this approach relies on a fundamental assumption: humans can provide\nnear-optimal demonstrations to the robot. Unfortunately, this is rarely the\ncase: human demonstrations to the robot are often suboptimal due to various\nreasons, e.g., difficulty of teleoperation, robot having high degrees of\nfreedom, or humans' cognitive limitations.\n  This thesis is an attempt towards learning reward functions from human users\nby using other, more reliable data modalities. Specifically, we study how\nreward functions can be learned using comparative feedback, in which the human\nuser compares multiple robot trajectories instead of (or in addition to)\nproviding demonstrations. To this end, we first propose various forms of\ncomparative feedback, e.g., pairwise comparisons, best-of-many choices,\nrankings, scaled comparisons; and describe how a robot can use these various\nforms of human feedback to infer a reward function, which may be parametric or\nnon-parametric. Next, we propose active learning techniques to enable the robot\nto ask for comparison feedback that optimizes for the expected information that\nwill be gained from that user feedback. Finally, we demonstrate the\napplicability of our methods in a wide variety of domains, ranging from\nautonomous driving simulations to home robotics, from standard reinforcement\nlearning benchmarks to lower-body exoskeletons.\n",
+        "published": "2022",
+        "authors": [
+            "Erdem B\u0131y\u0131k"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2210.17366v1",
+        "title": "Guided Conditional Diffusion for Controllable Traffic Simulation",
+        "abstract": "  Controllable and realistic traffic simulation is critical for developing and\nverifying autonomous vehicles. Typical heuristic-based traffic models offer\nflexible control to make vehicles follow specific trajectories and traffic\nrules. On the other hand, data-driven approaches generate realistic and\nhuman-like behaviors, improving transfer from simulated to real-world traffic.\nHowever, to the best of our knowledge, no traffic model offers both\ncontrollability and realism. In this work, we develop a conditional diffusion\nmodel for controllable traffic generation (CTG) that allows users to control\ndesired properties of trajectories at test time (e.g., reach a goal or follow a\nspeed limit) while maintaining realism and physical feasibility through\nenforced dynamics. The key technical idea is to leverage recent advances from\ndiffusion modeling and differentiable logic to guide generated trajectories to\nmeet rules defined using signal temporal logic (STL). We further extend\nguidance to multi-agent settings and enable interaction-based rules like\ncollision avoidance. CTG is extensively evaluated on the nuScenes dataset for\ndiverse and composite rules, demonstrating improvement over strong baselines in\nterms of the controllability-realism tradeoff.\n",
+        "published": "2022",
+        "authors": [
+            "Ziyuan Zhong",
+            "Davis Rempe",
+            "Danfei Xu",
+            "Yuxiao Chen",
+            "Sushant Veer",
+            "Tong Che",
+            "Baishakhi Ray",
+            "Marco Pavone"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2211.14296v2",
+        "title": "A System for Morphology-Task Generalization via Unified Representation\n  and Behavior Distillation",
+        "abstract": "  The rise of generalist large-scale models in natural language and vision has\nmade us expect that a massive data-driven approach could achieve broader\ngeneralization in other domains such as continuous control. In this work, we\nexplore a method for learning a single policy that manipulates various forms of\nagents to solve various tasks by distilling a large amount of proficient\nbehavioral data. In order to align input-output (IO) interface among multiple\ntasks and diverse agent morphologies while preserving essential 3D geometric\nrelations, we introduce morphology-task graph, which treats observations,\nactions and goals/task in a unified graph representation. We also develop\nMxT-Bench for fast large-scale behavior generation, which supports procedural\ngeneration of diverse morphology-task combinations with a minimal blueprint and\nhardware-accelerated simulator. Through efficient representation and\narchitecture selection on MxT-Bench, we find out that a morphology-task graph\nrepresentation coupled with Transformer architecture improves the multi-task\nperformances compared to other baselines including recent discrete\ntokenization, and provides better prior knowledge for zero-shot transfer or\nsample efficiency in downstream multi-task imitation learning. Our work\nsuggests large diverse offline datasets, unified IO representation, and policy\nrepresentation and architecture selection through supervised learning form a\npromising approach for studying and advancing morphology-task generalization.\n",
+        "published": "2022",
+        "authors": [
+            "Hiroki Furuta",
+            "Yusuke Iwasawa",
+            "Yutaka Matsuo",
+            "Shixiang Shane Gu"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2302.12604v2",
+        "title": "Neural Laplace Control for Continuous-time Delayed Systems",
+        "abstract": "  Many real-world offline reinforcement learning (RL) problems involve\ncontinuous-time environments with delays. Such environments are characterized\nby two distinctive features: firstly, the state x(t) is observed at irregular\ntime intervals, and secondly, the current action a(t) only affects the future\nstate x(t + g) with an unknown delay g > 0. A prime example of such an\nenvironment is satellite control where the communication link between earth and\na satellite causes irregular observations and delays. Existing offline RL\nalgorithms have achieved success in environments with irregularly observed\nstates in time or known delays. However, environments involving both irregular\nobservations in time and unknown delays remains an open and challenging\nproblem. To this end, we propose Neural Laplace Control, a continuous-time\nmodel-based offline RL method that combines a Neural Laplace dynamics model\nwith a model predictive control (MPC) planner--and is able to learn from an\noffline dataset sampled with irregular time intervals from an environment that\nhas a inherent unknown constant delay. We show experimentally on\ncontinuous-time delayed environments it is able to achieve near expert policy\nperformance.\n",
+        "published": "2023",
+        "authors": [
+            "Samuel Holt",
+            "Alihan H\u00fcy\u00fck",
+            "Zhaozhi Qian",
+            "Hao Sun",
+            "Mihaela van der Schaar"
+        ]
+    }
+]

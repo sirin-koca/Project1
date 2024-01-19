@@ -1,0 +1,1301 @@
+[
+    {
+        "id": "http://arxiv.org/abs/2106.13415v1",
+        "title": "Building Intelligent Autonomous Navigation Agents",
+        "abstract": "  Breakthroughs in machine learning in the last decade have led to `digital\nintelligence', i.e. machine learning models capable of learning from vast\namounts of labeled data to perform several digital tasks such as speech\nrecognition, face recognition, machine translation and so on. The goal of this\nthesis is to make progress towards designing algorithms capable of `physical\nintelligence', i.e. building intelligent autonomous navigation agents capable\nof learning to perform complex navigation tasks in the physical world involving\nvisual perception, natural language understanding, reasoning, planning, and\nsequential decision making. Despite several advances in classical navigation\nmethods in the last few decades, current navigation agents struggle at\nlong-term semantic navigation tasks. In the first part of the thesis, we\ndiscuss our work on short-term navigation using end-to-end reinforcement\nlearning to tackle challenges such as obstacle avoidance, semantic perception,\nlanguage grounding, and reasoning. In the second part, we present a new class\nof navigation methods based on modular learning and structured explicit map\nrepresentations, which leverage the strengths of both classical and end-to-end\nlearning methods, to tackle long-term navigation tasks. We show that these\nmethods are able to effectively tackle challenges such as localization,\nmapping, long-term planning, exploration and learning semantic priors. These\nmodular learning methods are capable of long-term spatial and semantic\nunderstanding and achieve state-of-the-art results on various navigation tasks.\n",
+        "published": "2021",
+        "authors": [
+            "Devendra Singh Chaplot"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2108.03272v4",
+        "title": "iGibson 2.0: Object-Centric Simulation for Robot Learning of Everyday\n  Household Tasks",
+        "abstract": "  Recent research in embodied AI has been boosted by the use of simulation\nenvironments to develop and train robot learning approaches. However, the use\nof simulation has skewed the attention to tasks that only require what robotics\nsimulators can simulate: motion and physical contact. We present iGibson 2.0,\nan open-source simulation environment that supports the simulation of a more\ndiverse set of household tasks through three key innovations. First, iGibson\n2.0 supports object states, including temperature, wetness level, cleanliness\nlevel, and toggled and sliced states, necessary to cover a wider range of\ntasks. Second, iGibson 2.0 implements a set of predicate logic functions that\nmap the simulator states to logic states like Cooked or Soaked. Additionally,\ngiven a logic state, iGibson 2.0 can sample valid physical states that satisfy\nit. This functionality can generate potentially infinite instances of tasks\nwith minimal effort from the users. The sampling mechanism allows our scenes to\nbe more densely populated with small objects in semantically meaningful\nlocations. Third, iGibson 2.0 includes a virtual reality (VR) interface to\nimmerse humans in its scenes to collect demonstrations. As a result, we can\ncollect demonstrations from humans on these new types of tasks, and use them\nfor imitation learning. We evaluate the new capabilities of iGibson 2.0 to\nenable robot learning of novel tasks, in the hope of demonstrating the\npotential of this new simulator to support new research in embodied AI. iGibson\n2.0 and its new dataset are publicly available at\nhttp://svl.stanford.edu/igibson/.\n",
+        "published": "2021",
+        "authors": [
+            "Chengshu Li",
+            "Fei Xia",
+            "Roberto Mart\u00edn-Mart\u00edn",
+            "Michael Lingelbach",
+            "Sanjana Srivastava",
+            "Bokui Shen",
+            "Kent Vainio",
+            "Cem Gokmen",
+            "Gokul Dharan",
+            "Tanish Jain",
+            "Andrey Kurenkov",
+            "C. Karen Liu",
+            "Hyowon Gweon",
+            "Jiajun Wu",
+            "Li Fei-Fei",
+            "Silvio Savarese"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2108.05713v2",
+        "title": "Towards real-world navigation with deep differentiable planners",
+        "abstract": "  We train embodied neural networks to plan and navigate unseen complex 3D\nenvironments, emphasising real-world deployment. Rather than requiring prior\nknowledge of the agent or environment, the planner learns to model the state\ntransitions and rewards. To avoid the potentially hazardous trial-and-error of\nreinforcement learning, we focus on differentiable planners such as Value\nIteration Networks (VIN), which are trained offline from safe expert\ndemonstrations. Although they work well in small simulations, we address two\nmajor limitations that hinder their deployment. First, we observed that current\ndifferentiable planners struggle to plan long-term in environments with a high\nbranching complexity. While they should ideally learn to assign low rewards to\nobstacles to avoid collisions, we posit that the constraints imposed on the\nnetwork are not strong enough to guarantee the network to learn sufficiently\nlarge penalties for every possible collision. We thus impose a structural\nconstraint on the value iteration, which explicitly learns to model any\nimpossible actions. Secondly, we extend the model to work with a limited\nperspective camera under translation and rotation, which is crucial for real\nrobot deployment. Many VIN-like planners assume a 360 degrees or overhead view\nwithout rotation. In contrast, our method uses a memory-efficient lattice map\nto aggregate CNN embeddings of partial observations, and models the rotational\ndynamics explicitly using a 3D state-space grid (translation and rotation). Our\nproposals significantly improve semantic navigation and exploration on several\n2D and 3D environments, succeeding in settings that are otherwise challenging\nfor this class of methods. As far as we know, we are the first to successfully\nperform differentiable planning on the difficult Active Vision Dataset,\nconsisting of real images captured from a robot.\n",
+        "published": "2021",
+        "authors": [
+            "Shu Ishida",
+            "Jo\u00e3o F. Henriques"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2108.08876v2",
+        "title": "Deep Learning-based Spacecraft Relative Navigation Methods: A Survey",
+        "abstract": "  Autonomous spacecraft relative navigation technology has been planned for and\napplied to many famous space missions. The development of on-board electronics\nsystems has enabled the use of vision-based and LiDAR-based methods to achieve\nbetter performances. Meanwhile, deep learning has reached great success in\ndifferent areas, especially in computer vision, which has also attracted the\nattention of space researchers. However, spacecraft navigation differs from\nground tasks due to high reliability requirements but lack of large datasets.\nThis survey aims to systematically investigate the current deep learning-based\nautonomous spacecraft relative navigation methods, focusing on concrete orbital\napplications such as spacecraft rendezvous and landing on small bodies or the\nMoon. The fundamental characteristics, primary motivations, and contributions\nof deep learning-based relative navigation algorithms are first summarised from\nthree perspectives of spacecraft rendezvous, asteroid exploration, and terrain\nnavigation. Furthermore, popular visual tracking benchmarks and their\nrespective properties are compared and summarised. Finally, potential\napplications are discussed, along with expected impediments.\n",
+        "published": "2021",
+        "authors": [
+            "Jianing Song",
+            "Duarte Rondao",
+            "Nabil Aouf"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2108.10367v1",
+        "title": "Marine vessel tracking using a monocular camera",
+        "abstract": "  In this paper, a new technique for camera calibration using only GPS data is\npresented. A new way of tracking objects that move on a plane in a video is\nachieved by using the location and size of the bounding box to estimate the\ndistance, achieving an average prediction error of 5.55m per 100m distance from\nthe camera. This solution can be run in real-time at the edge, achieving\nefficient inference in a low-powered IoT environment while also being able to\ntrack multiple different vessels.\n",
+        "published": "2021",
+        "authors": [
+            "Tobias Jacob",
+            "Raffaele Galliera",
+            "Muddasar Ali",
+            "Sikha Bagui"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2108.12375v1",
+        "title": "A Pedestrian Detection and Tracking Framework for Autonomous Cars:\n  Efficient Fusion of Camera and LiDAR Data",
+        "abstract": "  This paper presents a novel method for pedestrian detection and tracking by\nfusing camera and LiDAR sensor data. To deal with the challenges associated\nwith the autonomous driving scenarios, an integrated tracking and detection\nframework is proposed. The detection phase is performed by converting LiDAR\nstreams to computationally tractable depth images, and then, a deep neural\nnetwork is developed to identify pedestrian candidates both in RGB and depth\nimages. To provide accurate information, the detection phase is further\nenhanced by fusing multi-modal sensor information using the Kalman filter. The\ntracking phase is a combination of the Kalman filter prediction and an optical\nflow algorithm to track multiple pedestrians in a scene. We evaluate our\nframework on a real public driving dataset. Experimental results demonstrate\nthat the proposed method achieves significant performance improvement over a\nbaseline method that solely uses image-based pedestrian detection.\n",
+        "published": "2021",
+        "authors": [
+            "Muhammad Mobaidul Islam",
+            "Abdullah Al Redwan Newaz",
+            "Ali Karimoddini"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2108.13865v2",
+        "title": "InSeGAN: A Generative Approach to Segmenting Identical Instances in\n  Depth Images",
+        "abstract": "  In this paper, we present InSeGAN, an unsupervised 3D generative adversarial\nnetwork (GAN) for segmenting (nearly) identical instances of rigid objects in\ndepth images. Using an analysis-by-synthesis approach, we design a novel GAN\narchitecture to synthesize a multiple-instance depth image with independent\ncontrol over each instance. InSeGAN takes in a set of code vectors (e.g.,\nrandom noise vectors), each encoding the 3D pose of an object that is\nrepresented by a learned implicit object template. The generator has two\ndistinct modules. The first module, the instance feature generator, uses each\nencoded pose to transform the implicit template into a feature map\nrepresentation of each object instance. The second module, the depth image\nrenderer, aggregates all of the single-instance feature maps output by the\nfirst module and generates a multiple-instance depth image. A discriminator\ndistinguishes the generated multiple-instance depth images from the\ndistribution of true depth images. To use our model for instance segmentation,\nwe propose an instance pose encoder that learns to take in a generated depth\nimage and reproduce the pose code vectors for all of the object instances. To\nevaluate our approach, we introduce a new synthetic dataset, \"Insta-10\",\nconsisting of 100,000 depth images, each with 5 instances of an object from one\nof 10 classes. Our experiments on Insta-10, as well as on real-world noisy\ndepth images, show that InSeGAN achieves state-of-the-art performance, often\noutperforming prior methods by large margins.\n",
+        "published": "2021",
+        "authors": [
+            "Anoop Cherian",
+            "Goncalo Dias Pais",
+            "Siddarth Jain",
+            "Tim K. Marks",
+            "Alan Sullivan"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2109.02711v1",
+        "title": "Graph Attention Layer Evolves Semantic Segmentation for Road Pothole\n  Detection: A Benchmark and Algorithms",
+        "abstract": "  Existing road pothole detection approaches can be classified as computer\nvision-based or machine learning-based. The former approaches typically employ\n2-D image analysis/understanding or 3-D point cloud modeling and segmentation\nalgorithms to detect road potholes from vision sensor data. The latter\napproaches generally address road pothole detection using convolutional neural\nnetworks (CNNs) in an end-to-end manner. However, road potholes are not\nnecessarily ubiquitous and it is challenging to prepare a large well-annotated\ndataset for CNN training. In this regard, while computer vision-based methods\nwere the mainstream research trend in the past decade, machine learning-based\nmethods were merely discussed. Recently, we published the first stereo\nvision-based road pothole detection dataset and a novel disparity\ntransformation algorithm, whereby the damaged and undamaged road areas can be\nhighly distinguished. However, there are no benchmarks currently available for\nstate-of-the-art (SoTA) CNNs trained using either disparity images or\ntransformed disparity images. Therefore, in this paper, we first discuss the\nSoTA CNNs designed for semantic segmentation and evaluate their performance for\nroad pothole detection with extensive experiments. Additionally, inspired by\ngraph neural network (GNN), we propose a novel CNN layer, referred to as graph\nattention layer (GAL), which can be easily deployed in any existing CNN to\noptimize image feature representations for semantic segmentation. Our\nexperiments compare GAL-DeepLabv3+, our best-performing implementation, with\nnine SoTA CNNs on three modalities of training data: RGB images, disparity\nimages, and transformed disparity images. The experimental results suggest that\nour proposed GAL-DeepLabv3+ achieves the best overall pothole detection\naccuracy on all training data modalities.\n",
+        "published": "2021",
+        "authors": [
+            "Rui Fan",
+            "Hengli Wang",
+            "Yuan Wang",
+            "Ming Liu",
+            "Ioannis Pitas"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2109.03615v1",
+        "title": "Tactile Image-to-Image Disentanglement of Contact Geometry from\n  Motion-Induced Shear",
+        "abstract": "  Robotic touch, particularly when using soft optical tactile sensors, suffers\nfrom distortion caused by motion-dependent shear. The manner in which the\nsensor contacts a stimulus is entangled with the tactile information about the\ngeometry of the stimulus. In this work, we propose a supervised convolutional\ndeep neural network model that learns to disentangle, in the latent space, the\ncomponents of sensor deformations caused by contact geometry from those due to\nsliding-induced shear. The approach is validated by reconstructing unsheared\ntactile images from sheared images and showing they match unsheared tactile\nimages collected with no sliding motion. In addition, the unsheared tactile\nimages give a faithful reconstruction of the contact geometry that is not\npossible from the sheared data, and robust estimation of the contact pose that\ncan be used for servo control sliding around various 2D shapes. Finally, the\ncontact geometry reconstruction in conjunction with servo control sliding were\nused for faithful full object reconstruction of various 2D shapes. The methods\nhave broad applicability to deep learning models for robots with a\nshear-sensitive sense of touch.\n",
+        "published": "2021",
+        "authors": [
+            "Anupam K. Gupta",
+            "Laurence Aitchison",
+            "Nathan F. Lepora"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2109.03805v3",
+        "title": "Panoptic nuScenes: A Large-Scale Benchmark for LiDAR Panoptic\n  Segmentation and Tracking",
+        "abstract": "  Panoptic scene understanding and tracking of dynamic agents are essential for\nrobots and automated vehicles to navigate in urban environments. As LiDARs\nprovide accurate illumination-independent geometric depictions of the scene,\nperforming these tasks using LiDAR point clouds provides reliable predictions.\nHowever, existing datasets lack diversity in the type of urban scenes and have\na limited number of dynamic object instances which hinders both learning of\nthese tasks as well as credible benchmarking of the developed methods. In this\npaper, we introduce the large-scale Panoptic nuScenes benchmark dataset that\nextends our popular nuScenes dataset with point-wise groundtruth annotations\nfor semantic segmentation, panoptic segmentation, and panoptic tracking tasks.\nTo facilitate comparison, we provide several strong baselines for each of these\ntasks on our proposed dataset. Moreover, we analyze the drawbacks of the\nexisting metrics for panoptic tracking and propose the novel instance-centric\nPAT metric that addresses the concerns. We present exhaustive experiments that\ndemonstrate the utility of Panoptic nuScenes compared to existing datasets and\nmake the online evaluation server available at nuScenes.org. We believe that\nthis extension will accelerate the research of novel methods for scene\nunderstanding of dynamic urban environments.\n",
+        "published": "2021",
+        "authors": [
+            "Whye Kit Fong",
+            "Rohit Mohan",
+            "Juana Valeria Hurtado",
+            "Lubing Zhou",
+            "Holger Caesar",
+            "Oscar Beijbom",
+            "Abhinav Valada"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2109.04378v1",
+        "title": "Dynamic Modeling of Hand-Object Interactions via Tactile Sensing",
+        "abstract": "  Tactile sensing is critical for humans to perform everyday tasks. While\nsignificant progress has been made in analyzing object grasping from vision, it\nremains unclear how we can utilize tactile sensing to reason about and model\nthe dynamics of hand-object interactions. In this work, we employ a\nhigh-resolution tactile glove to perform four different interactive activities\non a diversified set of objects. We build our model on a cross-modal learning\nframework and generate the labels using a visual processing pipeline to\nsupervise the tactile model, which can then be used on its own during the test\ntime. The tactile model aims to predict the 3d locations of both the hand and\nthe object purely from the touch data by combining a predictive model and a\ncontrastive learning module. This framework can reason about the interaction\npatterns from the tactile data, hallucinate the changes in the environment,\nestimate the uncertainty of the prediction, and generalize to unseen objects.\nWe also provide detailed ablation studies regarding different system designs as\nwell as visualizations of the predicted trajectories. This work takes a step on\ndynamics modeling in hand-object interactions from dense tactile sensing, which\nopens the door for future applications in activity learning, human-computer\ninteractions, and imitation learning for robotics.\n",
+        "published": "2021",
+        "authors": [
+            "Qiang Zhang",
+            "Yunzhu Li",
+            "Yiyue Luo",
+            "Wan Shou",
+            "Michael Foshey",
+            "Junchi Yan",
+            "Joshua B. Tenenbaum",
+            "Wojciech Matusik",
+            "Antonio Torralba"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2109.04456v1",
+        "title": "NEAT: Neural Attention Fields for End-to-End Autonomous Driving",
+        "abstract": "  Efficient reasoning about the semantic, spatial, and temporal structure of a\nscene is a crucial prerequisite for autonomous driving. We present NEural\nATtention fields (NEAT), a novel representation that enables such reasoning for\nend-to-end imitation learning models. NEAT is a continuous function which maps\nlocations in Bird's Eye View (BEV) scene coordinates to waypoints and\nsemantics, using intermediate attention maps to iteratively compress\nhigh-dimensional 2D image features into a compact representation. This allows\nour model to selectively attend to relevant regions in the input while ignoring\ninformation irrelevant to the driving task, effectively associating the images\nwith the BEV representation. In a new evaluation setting involving adverse\nenvironmental conditions and challenging scenarios, NEAT outperforms several\nstrong baselines and achieves driving scores on par with the privileged CARLA\nexpert used to generate its training data. Furthermore, visualizing the\nattention maps for models with NEAT intermediate representations provides\nimproved interpretability.\n",
+        "published": "2021",
+        "authors": [
+            "Kashyap Chitta",
+            "Aditya Prakash",
+            "Andreas Geiger"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2109.04468v3",
+        "title": "Leveraging Local Domains for Image-to-Image Translation",
+        "abstract": "  Image-to-image (i2i) networks struggle to capture local changes because they\ndo not affect the global scene structure. For example, translating from highway\nscenes to offroad, i2i networks easily focus on global color features but\nignore obvious traits for humans like the absence of lane markings. In this\npaper, we leverage human knowledge about spatial domain characteristics which\nwe refer to as 'local domains' and demonstrate its benefit for image-to-image\ntranslation. Relying on a simple geometrical guidance, we train a patch-based\nGAN on few source data and hallucinate a new unseen domain which subsequently\neases transfer learning to target. We experiment on three tasks ranging from\nunstructured environments to adverse weather. Our comprehensive evaluation\nsetting shows we are able to generate realistic translations, with minimal\npriors, and training only on a few images. Furthermore, when trained on our\ntranslations images we show that all tested proxy tasks are significantly\nimproved, without ever seeing target domain at training.\n",
+        "published": "2021",
+        "authors": [
+            "Anthony Dell'Eva",
+            "Fabio Pizzati",
+            "Massimo Bertozzi",
+            "Raoul de Charette"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2109.07703v3",
+        "title": "ROS-X-Habitat: Bridging the ROS Ecosystem with Embodied AI",
+        "abstract": "  We introduce ROS-X-Habitat, a software interface that bridges the AI Habitat\nplatform for embodied learning-based agents with other robotics resources via\nROS. This interface not only offers standardized communication protocols\nbetween embodied agents and simulators, but also enables physically and\nphotorealistic simulation that benefits the training and/or testing of\nvision-based embodied agents. With this interface, roboticists can evaluate\ntheir own Habitat RL agents in another ROS-based simulator or use Habitat Sim\nv2 as the test bed for their own robotic algorithms. Through in silico\nexperiments, we demonstrate that ROS-X-Habitat has minimal impact on the\nnavigation performance and simulation speed of a Habitat RGBD agent; that a\nstandard set of ROS mapping, planning and navigation tools can run in Habitat\nSim v2; and that a Habitat agent can run in the standard ROS simulator Gazebo.\n",
+        "published": "2021",
+        "authors": [
+            "Guanxiong Chen",
+            "Haoyu Yang",
+            "Ian M. Mitchell"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2109.08817v2",
+        "title": "Learning to Regrasp by Learning to Place",
+        "abstract": "  In this paper, we explore whether a robot can learn to regrasp a diverse set\nof objects to achieve various desired grasp poses. Regrasping is needed\nwhenever a robot's current grasp pose fails to perform desired manipulation\ntasks. Endowing robots with such an ability has applications in many domains\nsuch as manufacturing or domestic services. Yet, it is a challenging task due\nto the large diversity of geometry in everyday objects and the high\ndimensionality of the state and action space. In this paper, we propose a\nsystem for robots to take partial point clouds of an object and the supporting\nenvironment as inputs and output a sequence of pick-and-place operations to\ntransform an initial object grasp pose to the desired object grasp poses. The\nkey technique includes a neural stable placement predictor and a regrasp\ngraph-based solution through leveraging and changing the surrounding\nenvironment. We introduce a new and challenging synthetic dataset for learning\nand evaluating the proposed approach. We demonstrate the effectiveness of our\nproposed system with both simulator and real-world experiments. More videos and\nvisualization examples are available on our project webpage.\n",
+        "published": "2021",
+        "authors": [
+            "Shuo Cheng",
+            "Kaichun Mo",
+            "Lin Shao"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2109.09690v2",
+        "title": "Trust Your Robots! Predictive Uncertainty Estimation of Neural Networks\n  with Sparse Gaussian Processes",
+        "abstract": "  This paper presents a probabilistic framework to obtain both reliable and\nfast uncertainty estimates for predictions with Deep Neural Networks (DNNs).\nOur main contribution is a practical and principled combination of DNNs with\nsparse Gaussian Processes (GPs). We prove theoretically that DNNs can be seen\nas a special case of sparse GPs, namely mixtures of GP experts (MoE-GP), and we\ndevise a learning algorithm that brings the derived theory into practice. In\nexperiments from two different robotic tasks -- inverse dynamics of a\nmanipulator and object detection on a micro-aerial vehicle (MAV) -- we show the\neffectiveness of our approach in terms of predictive uncertainty, improved\nscalability, and run-time efficiency on a Jetson TX2. We thus argue that our\napproach can pave the way towards reliable and fast robot learning systems with\nuncertainty awareness.\n",
+        "published": "2021",
+        "authors": [
+            "Jongseok Lee",
+            "Jianxiang Feng",
+            "Matthias Humt",
+            "Marcus G. M\u00fcller",
+            "Rudolph Triebel"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2109.10322v1",
+        "title": "CondNet: Conditional Classifier for Scene Segmentation",
+        "abstract": "  The fully convolutional network (FCN) has achieved tremendous success in\ndense visual recognition tasks, such as scene segmentation. The last layer of\nFCN is typically a global classifier (1x1 convolution) to recognize each pixel\nto a semantic label. We empirically show that this global classifier, ignoring\nthe intra-class distinction, may lead to sub-optimal results.\n  In this work, we present a conditional classifier to replace the traditional\nglobal classifier, where the kernels of the classifier are generated\ndynamically conditioned on the input. The main advantages of the new classifier\nconsist of: (i) it attends on the intra-class distinction, leading to stronger\ndense recognition capability; (ii) the conditional classifier is simple and\nflexible to be integrated into almost arbitrary FCN architectures to improve\nthe prediction. Extensive experiments demonstrate that the proposed classifier\nperforms favourably against the traditional classifier on the FCN architecture.\nThe framework equipped with the conditional classifier (called CondNet)\nachieves new state-of-the-art performances on two datasets. The code and models\nare available at https://git.io/CondNet.\n",
+        "published": "2021",
+        "authors": [
+            "Changqian Yu",
+            "Yuanjie Shao",
+            "Changxin Gao",
+            "Nong Sang"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2109.11644v1",
+        "title": "A Learned Stereo Depth System for Robotic Manipulation in Homes",
+        "abstract": "  We present a passive stereo depth system that produces dense and accurate\npoint clouds optimized for human environments, including dark, textureless,\nthin, reflective and specular surfaces and objects, at 2560x2048 resolution,\nwith 384 disparities, in 30 ms. The system consists of an algorithm combining\nlearned stereo matching with engineered filtering, a training and data-mixing\nmethodology, and a sensor hardware design. Our architecture is 15x faster than\napproaches that perform similarly on the Middlebury and Flying Things Stereo\nBenchmarks. To effectively supervise the training of this model, we combine\nreal data labelled using off-the-shelf depth sensors, as well as a number of\ndifferent rendered, simulated labeled datasets. We demonstrate the efficacy of\nour system by presenting a large number of qualitative results in the form of\ndepth maps and point-clouds, experiments validating the metric accuracy of our\nsystem and comparisons to other sensors on challenging objects and scenes. We\nalso show the competitiveness of our algorithm compared to state-of-the-art\nlearned models using the Middlebury and FlyingThings datasets.\n",
+        "published": "2021",
+        "authors": [
+            "Krishna Shankar",
+            "Mark Tjersland",
+            "Jeremy Ma",
+            "Kevin Stone",
+            "Max Bajracharya"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2109.12109v3",
+        "title": "Autonomy and Perception for Space Mining",
+        "abstract": "  Future Moon bases will likely be constructed using resources mined from the\nsurface of the Moon. The difficulty of maintaining a human workforce on the\nMoon and communications lag with Earth means that mining will need to be\nconducted using collaborative robots with a high degree of autonomy. In this\npaper, we describe our solution for Phase 2 of the NASA Space Robotics\nChallenge, which provided a simulated lunar environment in which teams were\ntasked to develop software systems to achieve autonomous collaborative robots\nfor mining on the Moon. Our 3rd place and innovation award winning solution\nshows how machine learning-enabled vision could alleviate major challenges\nposed by the lunar environment towards autonomous space mining, chiefly the\nlack of satellite positioning systems, hazardous terrain, and delicate robot\ninteractions. A robust multi-robot coordinator was also developed to achieve\nlong-term operation and effective collaboration between robots.\n",
+        "published": "2021",
+        "authors": [
+            "Ragav Sachdeva",
+            "Ravi Hammond",
+            "James Bockman",
+            "Alec Arthur",
+            "Brandon Smart",
+            "Dustin Craggs",
+            "Anh-Dzung Doan",
+            "Thomas Rowntree",
+            "Elijah Schutz",
+            "Adrian Orenstein",
+            "Andy Yu",
+            "Tat-Jun Chin",
+            "Ian Reid"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2109.13333v1",
+        "title": "Urban Driver: Learning to Drive from Real-world Demonstrations Using\n  Policy Gradients",
+        "abstract": "  In this work we are the first to present an offline policy gradient method\nfor learning imitative policies for complex urban driving from a large corpus\nof real-world demonstrations. This is achieved by building a differentiable\ndata-driven simulator on top of perception outputs and high-fidelity HD maps of\nthe area. It allows us to synthesize new driving experiences from existing\ndemonstrations using mid-level representations. Using this simulator we then\ntrain a policy network in closed-loop employing policy gradients. We train our\nproposed method on 100 hours of expert demonstrations on urban roads and show\nthat it learns complex driving policies that generalize well and can perform a\nvariety of driving maneuvers. We demonstrate this in simulation as well as\ndeploy our model to self-driving vehicles in the real-world. Our method\noutperforms previously demonstrated state-of-the-art for urban driving\nscenarios -- all this without the need for complex state perturbations or\ncollecting additional on-policy data during training. We make code and data\npublicly available.\n",
+        "published": "2021",
+        "authors": [
+            "Oliver Scheel",
+            "Luca Bergamini",
+            "Maciej Wo\u0142czyk",
+            "B\u0142a\u017cej Osi\u0144ski",
+            "Peter Ondruska"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2109.13602v1",
+        "title": "SafetyNet: Safe planning for real-world self-driving vehicles using\n  machine-learned policies",
+        "abstract": "  In this paper we present the first safe system for full control of\nself-driving vehicles trained from human demonstrations and deployed in\nchallenging, real-world, urban environments. Current industry-standard\nsolutions use rule-based systems for planning. Although they perform reasonably\nwell in common scenarios, the engineering complexity renders this approach\nincompatible with human-level performance. On the other hand, the performance\nof machine-learned (ML) planning solutions can be improved by simply adding\nmore exemplar data. However, ML methods cannot offer safety guarantees and\nsometimes behave unpredictably. To combat this, our approach uses a simple yet\neffective rule-based fallback layer that performs sanity checks on an ML\nplanner's decisions (e.g. avoiding collision, assuring physical feasibility).\nThis allows us to leverage ML to handle complex situations while still assuring\nthe safety, reducing ML planner-only collisions by 95%. We train our ML planner\non 300 hours of expert driving demonstrations using imitation learning and\ndeploy it along with the fallback layer in downtown San Francisco, where it\ntakes complete control of a real vehicle and navigates a wide variety of\nchallenging urban driving scenarios.\n",
+        "published": "2021",
+        "authors": [
+            "Matt Vitelli",
+            "Yan Chang",
+            "Yawei Ye",
+            "Maciej Wo\u0142czyk",
+            "B\u0142a\u017cej Osi\u0144ski",
+            "Moritz Niendorf",
+            "Hugo Grimmett",
+            "Qiangui Huang",
+            "Ashesh Jain",
+            "Peter Ondruska"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2110.00087v1",
+        "title": "Seeing Glass: Joint Point Cloud and Depth Completion for Transparent\n  Objects",
+        "abstract": "  The basis of many object manipulation algorithms is RGB-D input. Yet,\ncommodity RGB-D sensors can only provide distorted depth maps for a wide range\nof transparent objects due light refraction and absorption. To tackle the\nperception challenges posed by transparent objects, we propose TranspareNet, a\njoint point cloud and depth completion method, with the ability to complete the\ndepth of transparent objects in cluttered and complex scenes, even with\npartially filled fluid contents within the vessels. To address the shortcomings\nof existing transparent object data collection schemes in literature, we also\npropose an automated dataset creation workflow that consists of\nrobot-controlled image collection and vision-based automatic annotation.\nThrough this automated workflow, we created Toronto Transparent Objects Depth\nDataset (TODD), which consists of nearly 15000 RGB-D images. Our experimental\nevaluation demonstrates that TranspareNet outperforms existing state-of-the-art\ndepth completion methods on multiple datasets, including ClearGrasp, and that\nit also handles cluttered scenes when trained on TODD. Code and dataset will be\nreleased at https://www.pair.toronto.edu/TranspareNet/\n",
+        "published": "2021",
+        "authors": [
+            "Haoping Xu",
+            "Yi Ru Wang",
+            "Sagi Eppel",
+            "Al\u00e0n Aspuru-Guzik",
+            "Florian Shkurti",
+            "Animesh Garg"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2110.00784v1",
+        "title": "Seeking Visual Discomfort: Curiosity-driven Representations for\n  Reinforcement Learning",
+        "abstract": "  Vision-based reinforcement learning (RL) is a promising approach to solve\ncontrol tasks involving images as the main observation. State-of-the-art RL\nalgorithms still struggle in terms of sample efficiency, especially when using\nimage observations. This has led to increased attention on integrating state\nrepresentation learning (SRL) techniques into the RL pipeline. Work in this\nfield demonstrates a substantial improvement in sample efficiency among other\nbenefits. However, to take full advantage of this paradigm, the quality of\nsamples used for training plays a crucial role. More importantly, the diversity\nof these samples could affect the sample efficiency of vision-based RL, but\nalso its generalization capability. In this work, we present an approach to\nimprove sample diversity for state representation learning. Our method enhances\nthe exploration capability of RL algorithms, by taking advantage of the SRL\nsetup. Our experiments show that our proposed approach boosts the visitation of\nproblematic states, improves the learned state representation, and outperforms\nthe baselines for all tested environments. These results are most apparent for\nenvironments where the baseline methods struggle. Even in simple environments,\nour method stabilizes the training, reduces the reward variance, and promotes\nsample efficiency.\n",
+        "published": "2021",
+        "authors": [
+            "Elie Aljalbout",
+            "Maximilian Ulmer",
+            "Rudolph Triebel"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2110.00804v2",
+        "title": "ProTo: Program-Guided Transformer for Program-Guided Tasks",
+        "abstract": "  Programs, consisting of semantic and structural information, play an\nimportant role in the communication between humans and agents. Towards learning\ngeneral program executors to unify perception, reasoning, and decision making,\nwe formulate program-guided tasks which require learning to execute a given\nprogram on the observed task specification. Furthermore, we propose the\nProgram-guided Transformer (ProTo), which integrates both semantic and\nstructural guidance of a program by leveraging cross-attention and masked\nself-attention to pass messages between the specification and routines in the\nprogram. ProTo executes a program in a learned latent space and enjoys stronger\nrepresentation ability than previous neural-symbolic approaches. We demonstrate\nthat ProTo significantly outperforms the previous state-of-the-art methods on\nGQA visual reasoning and 2D Minecraft policy learning datasets. Additionally,\nProTo demonstrates better generalization to unseen, complex, and human-written\nprograms.\n",
+        "published": "2021",
+        "authors": [
+            "Zelin Zhao",
+            "Karan Samel",
+            "Binghong Chen",
+            "Le Song"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2110.01641v1",
+        "title": "Investigating Fairness of Ocular Biometrics Among Young, Middle-Aged,\n  and Older Adults",
+        "abstract": "  A number of studies suggest bias of the face biometrics, i.e., face\nrecognition and soft-biometric estimation methods, across gender, race, and age\ngroups. There is a recent urge to investigate the bias of different biometric\nmodalities toward the deployment of fair and trustworthy biometric solutions.\nOcular biometrics has obtained increased attention from academia and industry\ndue to its high accuracy, security, privacy, and ease of use in mobile devices.\nA recent study in $2020$ also suggested the fairness of ocular-based user\nrecognition across males and females. This paper aims to evaluate the fairness\nof ocular biometrics in the visible spectrum among age groups; young, middle,\nand older adults. Thanks to the availability of the latest large-scale 2020\nUFPR ocular biometric dataset, with subjects acquired in the age range 18 - 79\nyears, to facilitate this study. Experimental results suggest the overall\nequivalent performance of ocular biometrics across gender and age groups in\nuser verification and gender classification. Performance difference for older\nadults at lower false match rate and young adults was noted at user\nverification and age classification, respectively. This could be attributed to\ninherent characteristics of the biometric data from these age groups impacting\nspecific applications, which suggest a need for advancement in sensor\ntechnology and software solutions.\n",
+        "published": "2021",
+        "authors": [
+            "Anoop Krishnan",
+            "Ali Almadan",
+            "Ajita Rattani"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2110.02739v2",
+        "title": "A Step Towards Efficient Evaluation of Complex Perception Tasks in\n  Simulation",
+        "abstract": "  There has been increasing interest in characterising the error behaviour of\nsystems which contain deep learning models before deploying them into any\nsafety-critical scenario. However, characterising such behaviour usually\nrequires large-scale testing of the model that can be extremely computationally\nexpensive for complex real-world tasks. For example, tasks involving compute\nintensive object detectors as one of their components. In this work, we propose\nan approach that enables efficient large-scale testing using simplified\nlow-fidelity simulators and without the computational cost of executing\nexpensive deep learning models. Our approach relies on designing an efficient\nsurrogate model corresponding to the compute intensive components of the task\nunder test. We demonstrate the efficacy of our methodology by evaluating the\nperformance of an autonomous driving task in the Carla simulator with reduced\ncomputational expense by training efficient surrogate models for PIXOR and\nCenterPoint LiDAR detectors, whilst demonstrating that the accuracy of the\nsimulation is maintained.\n",
+        "published": "2021",
+        "authors": [
+            "Jonathan Sadeghi",
+            "Blaine Rogers",
+            "James Gunn",
+            "Thomas Saunders",
+            "Sina Samangooei",
+            "Puneet Kumar Dokania",
+            "John Redford"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2110.06558v1",
+        "title": "LENS: Localization enhanced by NeRF synthesis",
+        "abstract": "  Neural Radiance Fields (NeRF) have recently demonstrated photo-realistic\nresults for the task of novel view synthesis. In this paper, we propose to\napply novel view synthesis to the robot relocalization problem: we demonstrate\nimprovement of camera pose regression thanks to an additional synthetic dataset\nrendered by the NeRF class of algorithm. To avoid spawning novel views in\nirrelevant places we selected virtual camera locations from NeRF internal\nrepresentation of the 3D geometry of the scene. We further improved\nlocalization accuracy of pose regressors using synthesized realistic and\ngeometry consistent images as data augmentation during training. At the time of\npublication, our approach improved state of the art with a 60% lower error on\nCambridge Landmarks and 7-scenes datasets. Hence, the resulting accuracy\nbecomes comparable to structure-based methods, without any architecture\nmodification or domain adaptation constraints. Since our method allows almost\ninfinite generation of training data, we investigated limitations of camera\npose regression depending on size and distribution of data used for training on\npublic benchmarks. We concluded that pose regression accuracy is mostly bounded\nby relatively small and biased datasets rather than capacity of the pose\nregression model to solve the localization task.\n",
+        "published": "2021",
+        "authors": [
+            "Arthur Moreau",
+            "Nathan Piasco",
+            "Dzmitry Tsishkou",
+            "Bogdan Stanciulescu",
+            "Arnaud de La Fortelle"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2110.06922v1",
+        "title": "DETR3D: 3D Object Detection from Multi-view Images via 3D-to-2D Queries",
+        "abstract": "  We introduce a framework for multi-camera 3D object detection. In contrast to\nexisting works, which estimate 3D bounding boxes directly from monocular images\nor use depth prediction networks to generate input for 3D object detection from\n2D information, our method manipulates predictions directly in 3D space. Our\narchitecture extracts 2D features from multiple camera images and then uses a\nsparse set of 3D object queries to index into these 2D features, linking 3D\npositions to multi-view images using camera transformation matrices. Finally,\nour model makes a bounding box prediction per object query, using a set-to-set\nloss to measure the discrepancy between the ground-truth and the prediction.\nThis top-down approach outperforms its bottom-up counterpart in which object\nbounding box prediction follows per-pixel depth estimation, since it does not\nsuffer from the compounding error introduced by a depth prediction model.\nMoreover, our method does not require post-processing such as non-maximum\nsuppression, dramatically improving inference speed. We achieve\nstate-of-the-art performance on the nuScenes autonomous driving benchmark.\n",
+        "published": "2021",
+        "authors": [
+            "Yue Wang",
+            "Vitor Guizilini",
+            "Tianyuan Zhang",
+            "Yilun Wang",
+            "Hang Zhao",
+            "Justin Solomon"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2110.06923v1",
+        "title": "Object DGCNN: 3D Object Detection using Dynamic Graphs",
+        "abstract": "  3D object detection often involves complicated training and testing\npipelines, which require substantial domain knowledge about individual\ndatasets. Inspired by recent non-maximum suppression-free 2D object detection\nmodels, we propose a 3D object detection architecture on point clouds. Our\nmethod models 3D object detection as message passing on a dynamic graph,\ngeneralizing the DGCNN framework to predict a set of objects. In our\nconstruction, we remove the necessity of post-processing via object confidence\naggregation or non-maximum suppression. To facilitate object detection from\nsparse point clouds, we also propose a set-to-set distillation approach\ncustomized to 3D detection. This approach aligns the outputs of the teacher\nmodel and the student model in a permutation-invariant fashion, significantly\nsimplifying knowledge distillation for the 3D detection task. Our method\nachieves state-of-the-art performance on autonomous driving benchmarks. We also\nprovide abundant analysis of the detection model and distillation framework.\n",
+        "published": "2021",
+        "authors": [
+            "Yue Wang",
+            "Justin Solomon"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2110.10563v1",
+        "title": "Robust Monocular Localization in Sparse HD Maps Leveraging Multi-Task\n  Uncertainty Estimation",
+        "abstract": "  Robust localization in dense urban scenarios using a low-cost sensor setup\nand sparse HD maps is highly relevant for the current advances in autonomous\ndriving, but remains a challenging topic in research. We present a novel\nmonocular localization approach based on a sliding-window pose graph that\nleverages predicted uncertainties for increased precision and robustness\nagainst challenging scenarios and per frame failures. To this end, we propose\nan efficient multi-task uncertainty-aware perception module, which covers\nsemantic segmentation, as well as bounding box detection, to enable the\nlocalization of vehicles in sparse maps, containing only lane borders and\ntraffic lights. Further, we design differentiable cost maps that are directly\ngenerated from the estimated uncertainties. This opens up the possibility to\nminimize the reprojection loss of amorphous map elements in an association free\nand uncertainty-aware manner. Extensive evaluation on the Lyft 5 dataset shows\nthat, despite the sparsity of the map, our approach enables robust and accurate\n6D localization in challenging urban scenarios\n",
+        "published": "2021",
+        "authors": [
+            "K\u00fcrsat Petek",
+            "Kshitij Sirohi",
+            "Daniel B\u00fcscher",
+            "Wolfram Burgard"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2110.11599v1",
+        "title": "High Fidelity 3D Reconstructions with Limited Physical Views",
+        "abstract": "  Multi-view triangulation is the gold standard for 3D reconstruction from 2D\ncorrespondences given known calibration and sufficient views. However in\npractice, expensive multi-view setups -- involving tens sometimes hundreds of\ncameras -- are required in order to obtain the high fidelity 3D reconstructions\nnecessary for many modern applications. In this paper we present a novel\napproach that leverages recent advances in 2D-3D lifting using neural shape\npriors while also enforcing multi-view equivariance. We show how our method can\nachieve comparable fidelity to expensive calibrated multi-view rigs using a\nlimited (2-3) number of uncalibrated camera views.\n",
+        "published": "2021",
+        "authors": [
+            "Mosam Dabhi",
+            "Chaoyang Wang",
+            "Kunal Saluja",
+            "Laszlo Jeni",
+            "Ian Fasel",
+            "Simon Lucey"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2110.15360v1",
+        "title": "Accelerating Robotic Reinforcement Learning via Parameterized Action\n  Primitives",
+        "abstract": "  Despite the potential of reinforcement learning (RL) for building\ngeneral-purpose robotic systems, training RL agents to solve robotics tasks\nstill remains challenging due to the difficulty of exploration in purely\ncontinuous action spaces. Addressing this problem is an active area of research\nwith the majority of focus on improving RL methods via better optimization or\nmore efficient exploration. An alternate but important component to consider\nimproving is the interface of the RL algorithm with the robot. In this work, we\nmanually specify a library of robot action primitives (RAPS), parameterized\nwith arguments that are learned by an RL policy. These parameterized primitives\nare expressive, simple to implement, enable efficient exploration and can be\ntransferred across robots, tasks and environments. We perform a thorough\nempirical study across challenging tasks in three distinct domains with image\ninput and a sparse terminal reward. We find that our simple change to the\naction interface substantially improves both the learning efficiency and task\nperformance irrespective of the underlying RL algorithm, significantly\noutperforming prior methods which learn skills from offline expert data. Code\nand videos at https://mihdalal.github.io/raps/\n",
+        "published": "2021",
+        "authors": [
+            "Murtaza Dalal",
+            "Deepak Pathak",
+            "Ruslan Salakhutdinov"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2111.00966v1",
+        "title": "VPFNet: Voxel-Pixel Fusion Network for Multi-class 3D Object Detection",
+        "abstract": "  Many LiDAR-based methods for detecting large objects, single-class object\ndetection, or under easy situations were claimed to perform quite well.\nHowever, their performances of detecting small objects or under hard situations\ndid not surpass those of the fusion-based ones due to failure to leverage the\nimage semantics. In order to elevate the detection performance in a complicated\nenvironment, this paper proposes a deep learning (DL)-embedded fusion-based\nmulti-class 3D object detection network which admits both LiDAR and camera\nsensor data streams, named Voxel-Pixel Fusion Network (VPFNet). Inside this\nnetwork, a key novel component is called Voxel-Pixel Fusion (VPF) layer, which\ntakes advantage of the geometric relation of a voxel-pixel pair and fuses the\nvoxel features and the pixel features with proper mechanisms. Moreover, several\nparameters are particularly designed to guide and enhance the fusion effect\nafter considering the characteristics of a voxel-pixel pair. Finally, the\nproposed method is evaluated on the KITTI benchmark for multi-class 3D object\ndetection task under multilevel difficulty, and is shown to outperform all\nstate-of-the-art methods in mean average precision (mAP). It is also noteworthy\nthat our approach here ranks the first on the KITTI leaderboard for the\nchallenging pedestrian class.\n",
+        "published": "2021",
+        "authors": [
+            "Chia-Hung Wang",
+            "Hsueh-Wei Chen",
+            "Li-Chen Fu"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2111.03987v1",
+        "title": "V-MAO: Generative Modeling for Multi-Arm Manipulation of Articulated\n  Objects",
+        "abstract": "  Manipulating articulated objects requires multiple robot arms in general. It\nis challenging to enable multiple robot arms to collaboratively complete\nmanipulation tasks on articulated objects. In this paper, we present\n$\\textbf{V-MAO}$, a framework for learning multi-arm manipulation of\narticulated objects. Our framework includes a variational generative model that\nlearns contact point distribution over object rigid parts for each robot arm.\nThe training signal is obtained from interaction with the simulation\nenvironment which is enabled by planning and a novel formulation of\nobject-centric control for articulated objects. We deploy our framework in a\ncustomized MuJoCo simulation environment and demonstrate that our framework\nachieves a high success rate on six different objects and two different robots.\nWe also show that generative modeling can effectively learn the contact point\ndistribution on articulated objects.\n",
+        "published": "2021",
+        "authors": [
+            "Xingyu Liu",
+            "Kris M. Kitani"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2111.09858v1",
+        "title": "Successor Feature Landmarks for Long-Horizon Goal-Conditioned\n  Reinforcement Learning",
+        "abstract": "  Operating in the real-world often requires agents to learn about a complex\nenvironment and apply this understanding to achieve a breadth of goals. This\nproblem, known as goal-conditioned reinforcement learning (GCRL), becomes\nespecially challenging for long-horizon goals. Current methods have tackled\nthis problem by augmenting goal-conditioned policies with graph-based planning\nalgorithms. However, they struggle to scale to large, high-dimensional state\nspaces and assume access to exploration mechanisms for efficiently collecting\ntraining data. In this work, we introduce Successor Feature Landmarks (SFL), a\nframework for exploring large, high-dimensional environments so as to obtain a\npolicy that is proficient for any goal. SFL leverages the ability of successor\nfeatures (SF) to capture transition dynamics, using it to drive exploration by\nestimating state-novelty and to enable high-level planning by abstracting the\nstate-space as a non-parametric landmark-based graph. We further exploit SF to\ndirectly compute a goal-conditioned policy for inter-landmark traversal, which\nwe use to execute plans to \"frontier\" landmarks at the edge of the explored\nstate space. We show in our experiments on MiniGrid and ViZDoom that SFL\nenables efficient exploration of large, high-dimensional state spaces and\noutperforms state-of-the-art baselines on long-horizon GCRL tasks.\n",
+        "published": "2021",
+        "authors": [
+            "Christopher Hoang",
+            "Sungryull Sohn",
+            "Jongwook Choi",
+            "Wilka Carvalho",
+            "Honglak Lee"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2111.13489v2",
+        "title": "SurfEmb: Dense and Continuous Correspondence Distributions for Object\n  Pose Estimation with Learnt Surface Embeddings",
+        "abstract": "  We present an approach to learn dense, continuous 2D-3D correspondence\ndistributions over the surface of objects from data with no prior knowledge of\nvisual ambiguities like symmetry. We also present a new method for 6D pose\nestimation of rigid objects using the learnt distributions to sample, score and\nrefine pose hypotheses. The correspondence distributions are learnt with a\ncontrastive loss, represented in object-specific latent spaces by an\nencoder-decoder query model and a small fully connected key model. Our method\nis unsupervised with respect to visual ambiguities, yet we show that the query-\nand key models learn to represent accurate multi-modal surface distributions.\nOur pose estimation method improves the state-of-the-art significantly on the\ncomprehensive BOP Challenge, trained purely on synthetic data, even compared\nwith methods trained on real data. The project site is at\nhttps://surfemb.github.io/ .\n",
+        "published": "2021",
+        "authors": [
+            "Rasmus Laurvig Haugaard",
+            "Anders Glent Buch"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2111.13681v3",
+        "title": "ManiFest: Manifold Deformation for Few-shot Image Translation",
+        "abstract": "  Most image-to-image translation methods require a large number of training\nimages, which restricts their applicability. We instead propose ManiFest: a\nframework for few-shot image translation that learns a context-aware\nrepresentation of a target domain from a few images only. To enforce feature\nconsistency, our framework learns a style manifold between source and proxy\nanchor domains (assumed to be composed of large numbers of images). The learned\nmanifold is interpolated and deformed towards the few-shot target domain via\npatch-based adversarial and feature statistics alignment losses. All of these\ncomponents are trained simultaneously during a single end-to-end loop. In\naddition to the general few-shot translation task, our approach can\nalternatively be conditioned on a single exemplar image to reproduce its\nspecific style. Extensive experiments demonstrate the efficacy of ManiFest on\nmultiple tasks, outperforming the state-of-the-art on all metrics and in both\nthe general- and exemplar-based scenarios. Our code is available at\nhttps://github.com/cv-rits/Manifest .\n",
+        "published": "2021",
+        "authors": [
+            "Fabio Pizzati",
+            "Jean-Fran\u00e7ois Lalonde",
+            "Raoul de Charette"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2111.14820v4",
+        "title": "Towards Robust and Adaptive Motion Forecasting: A Causal Representation\n  Perspective",
+        "abstract": "  Learning behavioral patterns from observational data has been a de-facto\napproach to motion forecasting. Yet, the current paradigm suffers from two\nshortcomings: brittle under distribution shifts and inefficient for knowledge\ntransfer. In this work, we propose to address these challenges from a causal\nrepresentation perspective. We first introduce a causal formalism of motion\nforecasting, which casts the problem as a dynamic process with three groups of\nlatent variables, namely invariant variables, style confounders, and spurious\nfeatures. We then introduce a learning framework that treats each group\nseparately: (i) unlike the common practice mixing datasets collected from\ndifferent locations, we exploit their subtle distinctions by means of an\ninvariance loss encouraging the model to suppress spurious correlations; (ii)\nwe devise a modular architecture that factorizes the representations of\ninvariant mechanisms and style confounders to approximate a sparse causal\ngraph; (iii) we introduce a style contrastive loss that not only enforces the\nstructure of style representations but also serves as a self-supervisory signal\nfor test-time refinement on the fly. Experiments on synthetic and real datasets\nshow that our proposed method improves the robustness and reusability of\nlearned motion representations, significantly outperforming prior\nstate-of-the-art motion forecasting models for out-of-distribution\ngeneralization and low-shot transfer.\n",
+        "published": "2021",
+        "authors": [
+            "Yuejiang Liu",
+            "Riccardo Cadei",
+            "Jonas Schweizer",
+            "Sherwin Bahmani",
+            "Alexandre Alahi"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2111.14973v3",
+        "title": "MultiPath++: Efficient Information Fusion and Trajectory Aggregation for\n  Behavior Prediction",
+        "abstract": "  Predicting the future behavior of road users is one of the most challenging\nand important problems in autonomous driving. Applying deep learning to this\nproblem requires fusing heterogeneous world state in the form of rich\nperception signals and map information, and inferring highly multi-modal\ndistributions over possible futures. In this paper, we present MultiPath++, a\nfuture prediction model that achieves state-of-the-art performance on popular\nbenchmarks. MultiPath++ improves the MultiPath architecture by revisiting many\ndesign choices. The first key design difference is a departure from dense\nimage-based encoding of the input world state in favor of a sparse encoding of\nheterogeneous scene elements: MultiPath++ consumes compact and efficient\npolylines to describe road features, and raw agent state information directly\n(e.g., position, velocity, acceleration). We propose a context-aware fusion of\nthese elements and develop a reusable multi-context gating fusion component.\nSecond, we reconsider the choice of pre-defined, static anchors, and develop a\nway to learn latent anchor embeddings end-to-end in the model. Lastly, we\nexplore ensembling and output aggregation techniques -- common in other ML\ndomains -- and find effective variants for our probabilistic multimodal output\nrepresentation. We perform an extensive ablation on these design choices, and\nshow that our proposed model achieves state-of-the-art performance on the\nArgoverse Motion Forecasting Competition and the Waymo Open Dataset Motion\nPrediction Challenge.\n",
+        "published": "2021",
+        "authors": [
+            "Balakrishnan Varadarajan",
+            "Ahmed Hefny",
+            "Avikalp Srivastava",
+            "Khaled S. Refaat",
+            "Nigamaa Nayakanti",
+            "Andre Cornman",
+            "Kan Chen",
+            "Bertrand Douillard",
+            "Chi Pang Lam",
+            "Dragomir Anguelov",
+            "Benjamin Sapp"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2112.01001v1",
+        "title": "SEAL: Self-supervised Embodied Active Learning using Exploration and 3D\n  Consistency",
+        "abstract": "  In this paper, we explore how we can build upon the data and models of\nInternet images and use them to adapt to robot vision without requiring any\nextra labels. We present a framework called Self-supervised Embodied Active\nLearning (SEAL). It utilizes perception models trained on internet images to\nlearn an active exploration policy. The observations gathered by this\nexploration policy are labelled using 3D consistency and used to improve the\nperception model. We build and utilize 3D semantic maps to learn both action\nand perception in a completely self-supervised manner. The semantic map is used\nto compute an intrinsic motivation reward for training the exploration policy\nand for labelling the agent observations using spatio-temporal 3D consistency\nand label propagation. We demonstrate that the SEAL framework can be used to\nclose the action-perception loop: it improves object detection and instance\nsegmentation performance of a pretrained perception model by just moving around\nin training environments and the improved perception model can be used to\nimprove Object Goal Navigation.\n",
+        "published": "2021",
+        "authors": [
+            "Devendra Singh Chaplot",
+            "Murtaza Dalal",
+            "Saurabh Gupta",
+            "Jitendra Malik",
+            "Ruslan Salakhutdinov"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2112.01010v1",
+        "title": "Differentiable Spatial Planning using Transformers",
+        "abstract": "  We consider the problem of spatial path planning. In contrast to the\nclassical solutions which optimize a new plan from scratch and assume access to\nthe full map with ground truth obstacle locations, we learn a planner from the\ndata in a differentiable manner that allows us to leverage statistical\nregularities from past data. We propose Spatial Planning Transformers (SPT),\nwhich given an obstacle map learns to generate actions by planning over\nlong-range spatial dependencies, unlike prior data-driven planners that\npropagate information locally via convolutional structure in an iterative\nmanner. In the setting where the ground truth map is not known to the agent, we\nleverage pre-trained SPTs in an end-to-end framework that has the structure of\nmapper and planner built into it which allows seamless generalization to\nout-of-distribution maps and goals. SPTs outperform prior state-of-the-art\ndifferentiable planners across all the setups for both manipulation and\nnavigation tasks, leading to an absolute improvement of 7-19%.\n",
+        "published": "2021",
+        "authors": [
+            "Devendra Singh Chaplot",
+            "Deepak Pathak",
+            "Jitendra Malik"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2112.01511v2",
+        "title": "The Surprising Effectiveness of Representation Learning for Visual\n  Imitation",
+        "abstract": "  While visual imitation learning offers one of the most effective ways of\nlearning from visual demonstrations, generalizing from them requires either\nhundreds of diverse demonstrations, task specific priors, or large,\nhard-to-train parametric models. One reason such complexities arise is because\nstandard visual imitation frameworks try to solve two coupled problems at once:\nlearning a succinct but good representation from the diverse visual data, while\nsimultaneously learning to associate the demonstrated actions with such\nrepresentations. Such joint learning causes an interdependence between these\ntwo problems, which often results in needing large amounts of demonstrations\nfor learning. To address this challenge, we instead propose to decouple\nrepresentation learning from behavior learning for visual imitation. First, we\nlearn a visual representation encoder from offline data using standard\nsupervised and self-supervised learning methods. Once the representations are\ntrained, we use non-parametric Locally Weighted Regression to predict the\nactions. We experimentally show that this simple decoupling improves the\nperformance of visual imitation models on both offline demonstration datasets\nand real-robot door opening compared to prior work in visual imitation. All of\nour generated data, code, and robot videos are publicly available at\nhttps://jyopari.github.io/VINN/.\n",
+        "published": "2021",
+        "authors": [
+            "Jyothish Pari",
+            "Nur Muhammad Shafiullah",
+            "Sridhar Pandian Arunachalam",
+            "Lerrel Pinto"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2112.02094v2",
+        "title": "Coupling Vision and Proprioception for Navigation of Legged Robots",
+        "abstract": "  We exploit the complementary strengths of vision and proprioception to\ndevelop a point-goal navigation system for legged robots, called VP-Nav. Legged\nsystems are capable of traversing more complex terrain than wheeled robots, but\nto fully utilize this capability, we need a high-level path planner in the\nnavigation system to be aware of the walking capabilities of the low-level\nlocomotion policy in varying environments. We achieve this by using\nproprioceptive feedback to ensure the safety of the planned path by sensing\nunexpected obstacles like glass walls, terrain properties like slipperiness or\nsoftness of the ground and robot properties like extra payload that are likely\nmissed by vision. The navigation system uses onboard cameras to generate an\noccupancy map and a corresponding cost map to reach the goal. A fast marching\nplanner then generates a target path. A velocity command generator takes this\nas input to generate the desired velocity for the walking policy. A safety\nadvisor module adds sensed unexpected obstacles to the occupancy map and\nenvironment-determined speed limits to the velocity command generator. We show\nsuperior performance compared to wheeled robot baselines, and ablation studies\nwhich have disjoint high-level planning and low-level control. We also show the\nreal-world deployment of VP-Nav on a quadruped robot with onboard sensors and\ncomputation. Videos at https://navigation-locomotion.github.io\n",
+        "published": "2021",
+        "authors": [
+            "Zipeng Fu",
+            "Ashish Kumar",
+            "Ananye Agarwal",
+            "Haozhi Qi",
+            "Jitendra Malik",
+            "Deepak Pathak"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2112.02205v1",
+        "title": "Behind the Curtain: Learning Occluded Shapes for 3D Object Detection",
+        "abstract": "  Advances in LiDAR sensors provide rich 3D data that supports 3D scene\nunderstanding. However, due to occlusion and signal miss, LiDAR point clouds\nare in practice 2.5D as they cover only partial underlying shapes, which poses\na fundamental challenge to 3D perception. To tackle the challenge, we present a\nnovel LiDAR-based 3D object detection model, dubbed Behind the Curtain Detector\n(BtcDet), which learns the object shape priors and estimates the complete\nobject shapes that are partially occluded (curtained) in point clouds. BtcDet\nfirst identifies the regions that are affected by occlusion and signal miss. In\nthese regions, our model predicts the probability of occupancy that indicates\nif a region contains object shapes. Integrated with this probability map,\nBtcDet can generate high-quality 3D proposals. Finally, the probability of\noccupancy is also integrated into a proposal refinement module to generate the\nfinal bounding boxes. Extensive experiments on the KITTI Dataset and the Waymo\nOpen Dataset demonstrate the effectiveness of BtcDet. Particularly, for the 3D\ndetection of both cars and cyclists on the KITTI benchmark, BtcDet surpasses\nall of the published state-of-the-art methods by remarkable margins. Code is\nreleased\n(https://github.com/Xharlie/BtcDet}{https://github.com/Xharlie/BtcDet).\n",
+        "published": "2021",
+        "authors": [
+            "Qiangeng Xu",
+            "Yiqi Zhong",
+            "Ulrich Neumann"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2112.05847v1",
+        "title": "A Novel Gaussian Process Based Ground Segmentation Algorithm with\n  Local-Smoothness Estimation",
+        "abstract": "  Autonomous Land Vehicles (ALV) shall efficiently recognize the ground in\nunknown environments. A novel $\\mathcal{GP}$-based method is proposed for the\nground segmentation task in rough driving scenarios. A non-stationary\ncovariance function is utilized as the kernel for the $\\mathcal{GP}$. The\nground surface behavior is assumed to only demonstrate local-smoothness. Thus,\npoint estimates of the kernel's length-scales are obtained. Thus, two Gaussian\nprocesses are introduced to separately model the observation and local\ncharacteristics of the data. While, the \\textit{observation process} is used to\nmodel the ground, the \\textit{latent process} is put on length-scale values to\nestimate point values of length-scales at each input location. Input locations\nfor this latent process are chosen in a physically-motivated procedure to\nrepresent an intuition about ground condition. Furthermore, an intuitive guess\nof length-scale value is represented by assuming the existence of hypothetical\nsurfaces in the environment that every bunch of data points may be assumed to\nbe resulted from measurements from this surfaces. Bayesian inference is\nimplemented using \\textit{maximum a Posteriori} criterion. The log-marginal\nlikelihood function is assumed to be a multi-task objective function, to\nrepresent a whole-frame unbiased view of the ground at each frame. Simulation\nresults shows the effectiveness of the proposed method even in an uneven, rough\nscene which outperforms similar Gaussian process based ground segmentation\nmethods. While adjacent segments do not have similar ground structure in an\nuneven scene, the proposed method gives an efficient ground estimation based on\na whole-frame viewpoint instead of just estimating segment-wise probable ground\nsurfaces.\n",
+        "published": "2021",
+        "authors": [
+            "Pouria Mehrabi",
+            "Hamid D. Taghirad"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2112.09120v2",
+        "title": "Human Hands as Probes for Interactive Object Understanding",
+        "abstract": "  Interactive object understanding, or what we can do to objects and how is a\nlong-standing goal of computer vision. In this paper, we tackle this problem\nthrough observation of human hands in in-the-wild egocentric videos. We\ndemonstrate that observation of what human hands interact with and how can\nprovide both the relevant data and the necessary supervision. Attending to\nhands, readily localizes and stabilizes active objects for learning and reveals\nplaces where interactions with objects occur. Analyzing the hands shows what we\ncan do to objects and how. We apply these basic principles on the EPIC-KITCHENS\ndataset, and successfully learn state-sensitive features, and object\naffordances (regions of interaction and afforded grasps), purely by observing\nhands in egocentric videos.\n",
+        "published": "2021",
+        "authors": [
+            "Mohit Goyal",
+            "Sahil Modi",
+            "Rishabh Goyal",
+            "Saurabh Gupta"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2201.12107v1",
+        "title": "Feature Visualization within an Automated Design Assessment leveraging\n  Explainable Artificial Intelligence Methods",
+        "abstract": "  Not only automation of manufacturing processes but also automation of\nautomation procedures itself become increasingly relevant to automation\nresearch. In this context, automated capability assessment, mainly leveraged by\ndeep learning systems driven from 3D CAD data, have been presented. Current\nassessment systems may be able to assess CAD data with regards to abstract\nfeatures, e.g. the ability to automatically separate components from bulk\ngoods, or the presence of gripping surfaces. Nevertheless, they suffer from the\nfactor of black box systems, where an assessment can be learned and generated\neasily, but without any geometrical indicator about the reasons of the system's\ndecision. By utilizing explainable AI (xAI) methods, we attempt to open up the\nblack box. Explainable AI methods have been used in order to assess whether a\nneural network has successfully learned a given task or to analyze which\nfeatures of an input might lead to an adversarial attack. These methods aim to\nderive additional insights into a neural network, by analyzing patterns from a\ngiven input and its impact to the network output. Within the NeuroCAD Project,\nxAI methods are used to identify geometrical features which are associated with\na certain abstract feature. Within this work, a sensitivity analysis (SA), the\nlayer-wise relevance propagation (LRP), the Gradient-weighted Class Activation\nMapping (Grad-CAM) method as well as the Local Interpretable Model-Agnostic\nExplanations (LIME) have been implemented in the NeuroCAD environment, allowing\nnot only to assess CAD models but also to identify features which have been\nrelevant for the network decision. In the medium run, this might enable to\nidentify regions of interest supporting product designers to optimize their\nmodels with regards to assembly processes.\n",
+        "published": "2022",
+        "authors": [
+            "Raoul Sch\u00f6nhof",
+            "Artem Werner",
+            "Jannes Elstner",
+            "Boldizsar Zopcsak",
+            "Ramez Awad",
+            "Marco Huber"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2203.00156v2",
+        "title": "Preemptive Motion Planning for Human-to-Robot Indirect Placement\n  Handovers",
+        "abstract": "  As technology advances, the need for safe, efficient, and collaborative\nhuman-robot-teams has become increasingly important. One of the most\nfundamental collaborative tasks in any setting is the object handover.\nHuman-to-robot handovers can take either of two approaches: (1) direct\nhand-to-hand or (2) indirect hand-to-placement-to-pick-up. The latter approach\nensures minimal contact between the human and robot but can also result in\nincreased idle time due to having to wait for the object to first be placed\ndown on a surface. To minimize such idle time, the robot must preemptively\npredict the human intent of where the object will be placed. Furthermore, for\nthe robot to preemptively act in any sort of productive manner, predictions and\nmotion planning must occur in real-time. We introduce a novel\nprediction-planning pipeline that allows the robot to preemptively move towards\nthe human agent's intended placement location using gaze and gestures as model\ninputs. In this paper, we investigate the performance and drawbacks of our\nearly intent predictor-planner as well as the practical benefits of using such\na pipeline through a human-robot case study.\n",
+        "published": "2022",
+        "authors": [
+            "Andrew Choi",
+            "Mohammad Khalid Jawed",
+            "Jungseock Joo"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2203.00352v1",
+        "title": "Affordance Learning from Play for Sample-Efficient Policy Learning",
+        "abstract": "  Robots operating in human-centered environments should have the ability to\nunderstand how objects function: what can be done with each object, where this\ninteraction may occur, and how the object is used to achieve a goal. To this\nend, we propose a novel approach that extracts a self-supervised visual\naffordance model from human teleoperated play data and leverages it to enable\nefficient policy learning and motion planning. We combine model-based planning\nwith model-free deep reinforcement learning (RL) to learn policies that favor\nthe same object regions favored by people, while requiring minimal robot\ninteractions with the environment. We evaluate our algorithm, Visual\nAffordance-guided Policy Optimization (VAPO), with both diverse simulation\nmanipulation tasks and real world robot tidy-up experiments to demonstrate the\neffectiveness of our affordance-guided policies. We find that our policies\ntrain 4x faster than the baselines and generalize better to novel objects\nbecause our visual affordance model can anticipate their affordance regions.\n",
+        "published": "2022",
+        "authors": [
+            "Jessica Borja-Diaz",
+            "Oier Mees",
+            "Gabriel Kalweit",
+            "Lukas Hermann",
+            "Joschka Boedecker",
+            "Wolfram Burgard"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2203.02489v1",
+        "title": "Pedestrian Stop and Go Forecasting with Hybrid Feature Fusion",
+        "abstract": "  Forecasting pedestrians' future motions is essential for autonomous driving\nsystems to safely navigate in urban areas. However, existing prediction\nalgorithms often overly rely on past observed trajectories and tend to fail\naround abrupt dynamic changes, such as when pedestrians suddenly start or stop\nwalking. We suggest that predicting these highly non-linear transitions should\nform a core component to improve the robustness of motion prediction\nalgorithms. In this paper, we introduce the new task of pedestrian stop and go\nforecasting. Considering the lack of suitable existing datasets for it, we\nrelease TRANS, a benchmark for explicitly studying the stop and go behaviors of\npedestrians in urban traffic. We build it from several existing datasets\nannotated with pedestrians' walking motions, in order to have various scenarios\nand behaviors. We also propose a novel hybrid model that leverages\npedestrian-specific and scene features from several modalities, both video\nsequences and high-level attributes, and gradually fuses them to integrate\nmultiple levels of context. We evaluate our model and several baselines on\nTRANS, and set a new benchmark for the community to work on pedestrian stop and\ngo forecasting.\n",
+        "published": "2022",
+        "authors": [
+            "Dongxu Guo",
+            "Taylor Mordan",
+            "Alexandre Alahi"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2203.02634v1",
+        "title": "Important Object Identification with Semi-Supervised Learning for\n  Autonomous Driving",
+        "abstract": "  Accurate identification of important objects in the scene is a prerequisite\nfor safe and high-quality decision making and motion planning of intelligent\nagents (e.g., autonomous vehicles) that navigate in complex and dynamic\nenvironments. Most existing approaches attempt to employ attention mechanisms\nto learn importance weights associated with each object indirectly via various\ntasks (e.g., trajectory prediction), which do not enforce direct supervision on\nthe importance estimation. In contrast, we tackle this task in an explicit way\nand formulate it as a binary classification (\"important\" or \"unimportant\")\nproblem. We propose a novel approach for important object identification in\negocentric driving scenarios with relational reasoning on the objects in the\nscene. Besides, since human annotations are limited and expensive to obtain, we\npresent a semi-supervised learning pipeline to enable the model to learn from\nunlimited unlabeled data. Moreover, we propose to leverage the auxiliary tasks\nof ego vehicle behavior prediction to further improve the accuracy of\nimportance estimation. The proposed approach is evaluated on a public\negocentric driving dataset (H3D) collected in complex traffic scenarios. A\ndetailed ablative study is conducted to demonstrate the effectiveness of each\nmodel component and the training strategy. Our approach also outperforms\nrule-based baselines by a large margin.\n",
+        "published": "2022",
+        "authors": [
+            "Jiachen Li",
+            "Haiming Gang",
+            "Hengbo Ma",
+            "Masayoshi Tomizuka",
+            "Chiho Choi"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2203.03580v2",
+        "title": "The Unsurprising Effectiveness of Pre-Trained Vision Models for Control",
+        "abstract": "  Recent years have seen the emergence of pre-trained representations as a\npowerful abstraction for AI applications in computer vision, natural language,\nand speech. However, policy learning for control is still dominated by a\ntabula-rasa learning paradigm, with visuo-motor policies often trained from\nscratch using data from deployment environments. In this context, we revisit\nand study the role of pre-trained visual representations for control, and in\nparticular representations trained on large-scale computer vision datasets.\nThrough extensive empirical evaluation in diverse control domains (Habitat,\nDeepMind Control, Adroit, Franka Kitchen), we isolate and study the importance\nof different representation training methods, data augmentations, and feature\nhierarchies. Overall, we find that pre-trained visual representations can be\ncompetitive or even better than ground-truth state representations to train\ncontrol policies. This is in spite of using only out-of-domain data from\nstandard vision datasets, without any in-domain data from the deployment\nenvironments. Source code and more at\nhttps://sites.google.com/view/pvr-control.\n",
+        "published": "2022",
+        "authors": [
+            "Simone Parisi",
+            "Aravind Rajeswaran",
+            "Senthil Purushwalkam",
+            "Abhinav Gupta"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2203.04563v1",
+        "title": "MLNav: Learning to Safely Navigate on Martian Terrains",
+        "abstract": "  We present MLNav, a learning-enhanced path planning framework for\nsafety-critical and resource-limited systems operating in complex environments,\nsuch as rovers navigating on Mars. MLNav makes judicious use of machine\nlearning to enhance the efficiency of path planning while fully respecting\nsafety constraints. In particular, the dominant computational cost in such\nsafety-critical settings is running a model-based safety checker on the\nproposed paths. Our learned search heuristic can simultaneously predict the\nfeasibility for all path options in a single run, and the model-based safety\nchecker is only invoked on the top-scoring paths. We validate in high-fidelity\nsimulations using both real Martian terrain data collected by the Perseverance\nrover, as well as a suite of challenging synthetic terrains. Our experiments\nshow that: (i) compared to the baseline ENav path planner on board the\nPerserverance rover, MLNav can provide a significant improvement in multiple\nkey metrics, such as a 10x reduction in collision checks when navigating real\nMartian terrains, despite being trained with synthetic terrains; and (ii) MLNav\ncan successfully navigate highly challenging terrains where the baseline ENav\nfails to find a feasible path before timing out.\n",
+        "published": "2022",
+        "authors": [
+            "Shreyansh Daftry",
+            "Neil Abcouwer",
+            "Tyler Del Sesto",
+            "Siddarth Venkatraman",
+            "Jialin Song",
+            "Lucas Igel",
+            "Amos Byon",
+            "Ugo Rosolia",
+            "Yisong Yue",
+            "Masahiro Ono"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2203.04566v2",
+        "title": "All You Need is LUV: Unsupervised Collection of Labeled Images using\n  Invisible UV Fluorescent Indicators",
+        "abstract": "  Large-scale semantic image annotation is a significant challenge for\nlearning-based perception systems in robotics. Current approaches often rely on\nhuman labelers, which can be expensive, or simulation data, which can visually\nor physically differ from real data. This paper proposes Labels from\nUltraViolet (LUV), a novel framework that enables rapid, labeled data\ncollection in real manipulation environments without human labeling. LUV uses\ntransparent, ultraviolet-fluorescent paint with programmable ultraviolet LEDs\nto collect paired images of a scene in standard lighting and UV lighting to\nautonomously extract segmentation masks and keypoints via color segmentation.\nWe apply LUV to a suite of diverse robot perception tasks to evaluate its\nlabeling quality, flexibility, and data collection rate. Results suggest that\nLUV is 180-2500 times faster than a human labeler across the tasks. We show\nthat LUV provides labels consistent with human annotations on unpainted test\nimages. The networks trained on these labels are used to smooth and fold\ncrumpled towels with 83% success rate and achieve 1.7mm position error with\nrespect to human labels on a surgical needle pose estimation task. The low cost\nof LUV makes it ideal as a lightweight replacement for human labeling systems,\nwith the one-time setup costs at $300 equivalent to the cost of collecting\naround 200 semantic segmentation labels on Amazon Mechanical Turk. Code,\ndatasets, visualizations, and supplementary material can be found at\nhttps://sites.google.com/berkeley.edu/luv\n",
+        "published": "2022",
+        "authors": [
+            "Brijen Thananjeyan",
+            "Justin Kerr",
+            "Huang Huang",
+            "Joseph E. Gonzalez",
+            "Ken Goldberg"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2203.05698v2",
+        "title": "Learning-based Localizability Estimation for Robust LiDAR Localization",
+        "abstract": "  LiDAR-based localization and mapping is one of the core components in many\nmodern robotic systems due to the direct integration of range and geometry,\nallowing for precise motion estimation and generation of high quality maps in\nreal-time. Yet, as a consequence of insufficient environmental constraints\npresent in the scene, this dependence on geometry can result in localization\nfailure, happening in self-symmetric surroundings such as tunnels. This work\naddresses precisely this issue by proposing a neural network-based estimation\napproach for detecting (non-)localizability during robot operation. Special\nattention is given to the localizability of scan-to-scan registration, as it is\na crucial component in many LiDAR odometry estimation pipelines. In contrast to\nprevious, mostly traditional detection approaches, the proposed method enables\nearly detection of failure by estimating the localizability on raw sensor\nmeasurements without evaluating the underlying registration optimization.\nMoreover, previous approaches remain limited in their ability to generalize\nacross environments and sensor types, as heuristic-tuning of degeneracy\ndetection thresholds is required. The proposed approach avoids this problem by\nlearning from a collection of different environments, allowing the network to\nfunction over various scenarios. Furthermore, the network is trained\nexclusively on simulated data, avoiding arduous data collection in challenging\nand degenerate, often hard-to-access, environments. The presented method is\ntested during field experiments conducted across challenging environments and\non two different sensor types without any modifications. The observed detection\nperformance is on par with state-of-the-art methods after environment-specific\nthreshold tuning.\n",
+        "published": "2022",
+        "authors": [
+            "Julian Nubert",
+            "Etienne Walther",
+            "Shehryar Khattak",
+            "Marco Hutter"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2203.09510v1",
+        "title": "DetMatch: Two Teachers are Better Than One for Joint 2D and 3D\n  Semi-Supervised Object Detection",
+        "abstract": "  While numerous 3D detection works leverage the complementary relationship\nbetween RGB images and point clouds, developments in the broader framework of\nsemi-supervised object recognition remain uninfluenced by multi-modal fusion.\nCurrent methods develop independent pipelines for 2D and 3D semi-supervised\nlearning despite the availability of paired image and point cloud frames.\nObserving that the distinct characteristics of each sensor cause them to be\nbiased towards detecting different objects, we propose DetMatch, a flexible\nframework for joint semi-supervised learning on 2D and 3D modalities. By\nidentifying objects detected in both sensors, our pipeline generates a cleaner,\nmore robust set of pseudo-labels that both demonstrates stronger performance\nand stymies single-modality error propagation. Further, we leverage the richer\nsemantics of RGB images to rectify incorrect 3D class predictions and improve\nlocalization of 3D boxes. Evaluating on the challenging KITTI and Waymo\ndatasets, we improve upon strong semi-supervised learning methods and observe\nhigher quality pseudo-labels. Code will be released at\nhttps://github.com/Divadi/DetMatch\n",
+        "published": "2022",
+        "authors": [
+            "Jinhyung Park",
+            "Chenfeng Xu",
+            "Yiyang Zhou",
+            "Masayoshi Tomizuka",
+            "Wei Zhan"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2203.10073v1",
+        "title": "Lunar Rover Localization Using Craters as Landmarks",
+        "abstract": "  Onboard localization capabilities for planetary rovers to date have used\nrelative navigation, by integrating combinations of wheel odometry, visual\nodometry, and inertial measurements during each drive to track position\nrelative to the start of each drive. At the end of each drive, a\nground-in-the-loop (GITL) interaction is used to get a position update from\nhuman operators in a more global reference frame, by matching images or local\nmaps from onboard the rover to orbital reconnaissance images or maps of a large\nregion around the rover's current position. Autonomous rover drives are limited\nin distance so that accumulated relative navigation error does not risk the\npossibility of the rover driving into hazards known from orbital images.\nHowever, several rover mission concepts have recently been studied that require\nmuch longer drives between GITL cycles, particularly for the Moon. These\nconcepts require greater autonomy to minimize GITL cycles to enable such large\nrange; onboard global localization is a key element of such autonomy. Multiple\ntechniques have been studied in the past for onboard rover global localization,\nbut a satisfactory solution has not yet emerged. For the Moon, the ubiquitous\ncraters offer a new possibility, which involves mapping craters from orbit,\nthen recognizing crater landmarks with cameras and-or a lidar onboard the\nrover. This approach is applicable everywhere on the Moon, does not require\nhigh resolution stereo imaging from orbit as some other approaches do, and has\npotential to enable position knowledge with order of 5 to 10 m accuracy at all\ntimes. This paper describes our technical approach to crater-based lunar rover\nlocalization and presents initial results on crater detection using 3D point\ncloud data from onboard lidar or stereo cameras, as well as using shading cues\nin monocular onboard imagery.\n",
+        "published": "2022",
+        "authors": [
+            "Larry Matthies",
+            "Shreyansh Daftry",
+            "Scott Tepsuporn",
+            "Yang Cheng",
+            "Deegan Atha",
+            "R. Michael Swan",
+            "Sanjna Ravichandar",
+            "Masahiro Ono"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2203.10194v1",
+        "title": "Analysis and Adaptation of YOLOv4 for Object Detection in Aerial Images",
+        "abstract": "  The recent and rapid growth in Unmanned Aerial Vehicles (UAVs) deployment for\nvarious computer vision tasks has paved the path for numerous opportunities to\nmake them more effective and valuable. Object detection in aerial images is\nchallenging due to variations in appearance, pose, and scale. Autonomous aerial\nflight systems with their inherited limited memory and computational power\ndemand accurate and computationally efficient detection algorithms for\nreal-time applications. Our work shows the adaptation of the popular YOLOv4\nframework for predicting the objects and their locations in aerial images with\nhigh accuracy and inference speed. We utilized transfer learning for faster\nconvergence of the model on the VisDrone DET aerial object detection dataset.\nThe trained model resulted in a mean average precision (mAP) of 45.64% with an\ninference speed reaching 8.7 FPS on the Tesla K80 GPU and was highly accurate\nin detecting truncated and occluded objects. We experimentally evaluated the\nimpact of varying network resolution sizes and training epochs on the\nperformance. A comparative study with several contemporary aerial object\ndetectors proved that YOLOv4 performed better, implying a more suitable\ndetection algorithm to incorporate on aerial platforms.\n",
+        "published": "2022",
+        "authors": [
+            "Aryaman Singh Samyal",
+            "Akshatha K R",
+            "Soham Hans",
+            "Karunakar A K",
+            "Satish Shenoy B"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2203.11194v3",
+        "title": "Test-time Adaptation with Slot-Centric Models",
+        "abstract": "  Current visual detectors, though impressive within their training\ndistribution, often fail to parse out-of-distribution scenes into their\nconstituent entities. Recent test-time adaptation methods use auxiliary\nself-supervised losses to adapt the network parameters to each test example\nindependently and have shown promising results towards generalization outside\nthe training distribution for the task of image classification. In our work, we\nfind evidence that these losses are insufficient for the task of scene\ndecomposition, without also considering architectural inductive biases. Recent\nslot-centric generative models attempt to decompose scenes into entities in a\nself-supervised manner by reconstructing pixels. Drawing upon these two lines\nof work, we propose Slot-TTA, a semi-supervised slot-centric scene\ndecomposition model that at test time is adapted per scene through gradient\ndescent on reconstruction or cross-view synthesis objectives. We evaluate\nSlot-TTA across multiple input modalities, images or 3D point clouds, and show\nsubstantial out-of-distribution performance improvements against\nstate-of-the-art supervised feed-forward detectors, and alternative test-time\nadaptation methods.\n",
+        "published": "2022",
+        "authors": [
+            "Mihir Prabhudesai",
+            "Anirudh Goyal",
+            "Sujoy Paul",
+            "Sjoerd van Steenkiste",
+            "Mehdi S. M. Sajjadi",
+            "Gaurav Aggarwal",
+            "Thomas Kipf",
+            "Deepak Pathak",
+            "Katerina Fragkiadaki"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2203.12601v3",
+        "title": "R3M: A Universal Visual Representation for Robot Manipulation",
+        "abstract": "  We study how visual representations pre-trained on diverse human video data\ncan enable data-efficient learning of downstream robotic manipulation tasks.\nConcretely, we pre-train a visual representation using the Ego4D human video\ndataset using a combination of time-contrastive learning, video-language\nalignment, and an L1 penalty to encourage sparse and compact representations.\nThe resulting representation, R3M, can be used as a frozen perception module\nfor downstream policy learning. Across a suite of 12 simulated robot\nmanipulation tasks, we find that R3M improves task success by over 20% compared\nto training from scratch and by over 10% compared to state-of-the-art visual\nrepresentations like CLIP and MoCo. Furthermore, R3M enables a Franka Emika\nPanda arm to learn a range of manipulation tasks in a real, cluttered apartment\ngiven just 20 demonstrations. Code and pre-trained models are available at\nhttps://tinyurl.com/robotr3m.\n",
+        "published": "2022",
+        "authors": [
+            "Suraj Nair",
+            "Aravind Rajeswaran",
+            "Vikash Kumar",
+            "Chelsea Finn",
+            "Abhinav Gupta"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2203.13251v1",
+        "title": "Dexterous Imitation Made Easy: A Learning-Based Framework for Efficient\n  Dexterous Manipulation",
+        "abstract": "  Optimizing behaviors for dexterous manipulation has been a longstanding\nchallenge in robotics, with a variety of methods from model-based control to\nmodel-free reinforcement learning having been previously explored in\nliterature. Perhaps one of the most powerful techniques to learn complex\nmanipulation strategies is imitation learning. However, collecting and learning\nfrom demonstrations in dexterous manipulation is quite challenging. The\ncomplex, high-dimensional action-space involved with multi-finger control often\nleads to poor sample efficiency of learning-based methods. In this work, we\npropose 'Dexterous Imitation Made Easy' (DIME) a new imitation learning\nframework for dexterous manipulation. DIME only requires a single RGB camera to\nobserve a human operator and teleoperate our robotic hand. Once demonstrations\nare collected, DIME employs standard imitation learning methods to train\ndexterous manipulation policies. On both simulation and real robot benchmarks\nwe demonstrate that DIME can be used to solve complex, in-hand manipulation\ntasks such as 'flipping', 'spinning', and 'rotating' objects with the Allegro\nhand. Our framework along with pre-collected demonstrations is publicly\navailable at https://nyu-robot-learning.github.io/dime.\n",
+        "published": "2022",
+        "authors": [
+            "Sridhar Pandian Arunachalam",
+            "Sneha Silwal",
+            "Ben Evans",
+            "Lerrel Pinto"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2203.14708v1",
+        "title": "Object Memory Transformer for Object Goal Navigation",
+        "abstract": "  This paper presents a reinforcement learning method for object goal\nnavigation (ObjNav) where an agent navigates in 3D indoor environments to reach\na target object based on long-term observations of objects and scenes. To this\nend, we propose Object Memory Transformer (OMT) that consists of two key ideas:\n1) Object-Scene Memory (OSM) that enables to store long-term scenes and object\nsemantics, and 2) Transformer that attends to salient objects in the sequence\nof previously observed scenes and objects stored in OSM. This mechanism allows\nthe agent to efficiently navigate in the indoor environment without prior\nknowledge about the environments, such as topological maps or 3D meshes. To the\nbest of our knowledge, this is the first work that uses a long-term memory of\nobject semantics in a goal-oriented navigation task. Experimental results\nconducted on the AI2-THOR dataset show that OMT outperforms previous approaches\nin navigating in unknown environments. In particular, we show that utilizing\nthe long-term object semantics information improves the efficiency of\nnavigation.\n",
+        "published": "2022",
+        "authors": [
+            "Rui Fukushima",
+            "Kei Ota",
+            "Asako Kanezaki",
+            "Yoko Sasaki",
+            "Yusuke Yoshiyasu"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2203.15174v2",
+        "title": "Disentangling Object Motion and Occlusion for Unsupervised Multi-frame\n  Monocular Depth",
+        "abstract": "  Conventional self-supervised monocular depth prediction methods are based on\na static environment assumption, which leads to accuracy degradation in dynamic\nscenes due to the mismatch and occlusion problems introduced by object motions.\nExisting dynamic-object-focused methods only partially solved the mismatch\nproblem at the training loss level. In this paper, we accordingly propose a\nnovel multi-frame monocular depth prediction method to solve these problems at\nboth the prediction and supervision loss levels. Our method, called\nDynamicDepth, is a new framework trained via a self-supervised cycle consistent\nlearning scheme. A Dynamic Object Motion Disentanglement (DOMD) module is\nproposed to disentangle object motions to solve the mismatch problem. Moreover,\nnovel occlusion-aware Cost Volume and Re-projection Loss are designed to\nalleviate the occlusion effects of object motions. Extensive analyses and\nexperiments on the Cityscapes and KITTI datasets show that our method\nsignificantly outperforms the state-of-the-art monocular depth prediction\nmethods, especially in the areas of dynamic objects. Code is available at\nhttps://github.com/AutoAILab/DynamicDepth\n",
+        "published": "2022",
+        "authors": [
+            "Ziyue Feng",
+            "Liang Yang",
+            "Longlong Jing",
+            "Haiyan Wang",
+            "YingLi Tian",
+            "Bing Li"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2203.15983v2",
+        "title": "VI-IKD: High-Speed Accurate Off-Road Navigation using Learned\n  Visual-Inertial Inverse Kinodynamics",
+        "abstract": "  One of the key challenges in high speed off road navigation on ground\nvehicles is that the kinodynamics of the vehicle terrain interaction can differ\ndramatically depending on the terrain. Previous approaches to addressing this\nchallenge have considered learning an inverse kinodynamics (IKD) model,\nconditioned on inertial information of the vehicle to sense the kinodynamic\ninteractions. In this paper, we hypothesize that to enable accurate high-speed\noff-road navigation using a learned IKD model, in addition to inertial\ninformation from the past, one must also anticipate the kinodynamic\ninteractions of the vehicle with the terrain in the future. To this end, we\nintroduce Visual-Inertial Inverse Kinodynamics (VI-IKD), a novel learning based\nIKD model that is conditioned on visual information from a terrain patch ahead\nof the robot in addition to past inertial information, enabling it to\nanticipate kinodynamic interactions in the future. We validate the\neffectiveness of VI-IKD in accurate high-speed off-road navigation\nexperimentally on a scale 1/5 UT-AlphaTruck off-road autonomous vehicle in both\nindoor and outdoor environments and show that compared to other\nstate-of-the-art approaches, VI-IKD enables more accurate and robust off-road\nnavigation on a variety of different terrains at speeds of up to 3.5 m/s.\n",
+        "published": "2022",
+        "authors": [
+            "Haresh Karnan",
+            "Kavan Singh Sikand",
+            "Pranav Atreya",
+            "Sadegh Rabiee",
+            "Xuesu Xiao",
+            "Garrett Warnell",
+            "Peter Stone",
+            "Joydeep Biswas"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2203.17251v1",
+        "title": "Continuous Scene Representations for Embodied AI",
+        "abstract": "  We propose Continuous Scene Representations (CSR), a scene representation\nconstructed by an embodied agent navigating within a space, where objects and\ntheir relationships are modeled by continuous valued embeddings. Our method\ncaptures feature relationships between objects, composes them into a graph\nstructure on-the-fly, and situates an embodied agent within the representation.\nOur key insight is to embed pair-wise relationships between objects in a latent\nspace. This allows for a richer representation compared to discrete relations\n(e.g., [support], [next-to]) commonly used for building scene representations.\nCSR can track objects as the agent moves in a scene, update the representation\naccordingly, and detect changes in room configurations. Using CSR, we\noutperform state-of-the-art approaches for the challenging downstream task of\nvisual room rearrangement, without any task specific training. Moreover, we\nshow the learned embeddings capture salient spatial details of the scene and\nshow applicability to real world data. A summery video and code is available at\nhttps://prior.allenai.org/projects/csr.\n",
+        "published": "2022",
+        "authors": [
+            "Samir Yitzhak Gadre",
+            "Kiana Ehsani",
+            "Shuran Song",
+            "Roozbeh Mottaghi"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2204.01571v1",
+        "title": "Coarse-to-Fine Q-attention with Learned Path Ranking",
+        "abstract": "  We propose Learned Path Ranking (LPR), a method that accepts an end-effector\ngoal pose, and learns to rank a set of goal-reaching paths generated from an\narray of path generating methods, including: path planning, Bezier curve\nsampling, and a learned policy. The core idea being that each of the path\ngeneration modules will be useful in different tasks, or at different stages in\na task. When LPR is added as an extension to C2F-ARM, our new system,\nC2F-ARM+LPR, retains the sample efficiency of its predecessor, while also being\nable to accomplish a larger set of tasks; in particular, tasks that require\nvery specific motions (e.g. opening toilet seat) that need to be inferred from\nboth demonstrations and exploration data. In addition to benchmarking our\napproach across 16 RLBench tasks, we also learn real-world tasks, tabula rasa,\nin 10-15 minutes, with only 3 demonstrations.\n",
+        "published": "2022",
+        "authors": [
+            "Stephen James",
+            "Pieter Abbeel"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2204.02091v1",
+        "title": "P3Depth: Monocular Depth Estimation with a Piecewise Planarity Prior",
+        "abstract": "  Monocular depth estimation is vital for scene understanding and downstream\ntasks. We focus on the supervised setup, in which ground-truth depth is\navailable only at training time. Based on knowledge about the high regularity\nof real 3D scenes, we propose a method that learns to selectively leverage\ninformation from coplanar pixels to improve the predicted depth. In particular,\nwe introduce a piecewise planarity prior which states that for each pixel,\nthere is a seed pixel which shares the same planar 3D surface with the former.\nMotivated by this prior, we design a network with two heads. The first head\noutputs pixel-level plane coefficients, while the second one outputs a dense\noffset vector field that identifies the positions of seed pixels. The plane\ncoefficients of seed pixels are then used to predict depth at each position.\nThe resulting prediction is adaptively fused with the initial prediction from\nthe first head via a learned confidence to account for potential deviations\nfrom precise local planarity. The entire architecture is trained end-to-end\nthanks to the differentiability of the proposed modules and it learns to\npredict regular depth maps, with sharp edges at occlusion boundaries. An\nextensive evaluation of our method shows that we set the new state of the art\nin supervised monocular depth estimation, surpassing prior methods on NYU\nDepth-v2 and on the Garg split of KITTI. Our method delivers depth maps that\nyield plausible 3D reconstructions of the input scenes. Code is available at:\nhttps://github.com/SysCV/P3Depth\n",
+        "published": "2022",
+        "authors": [
+            "Vaishakh Patil",
+            "Christos Sakaridis",
+            "Alexander Liniger",
+            "Luc Van Gool"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2204.02390v2",
+        "title": "Learning Pneumatic Non-Prehensile Manipulation with a Mobile Blower",
+        "abstract": "  We investigate pneumatic non-prehensile manipulation (i.e., blowing) as a\nmeans of efficiently moving scattered objects into a target receptacle. Due to\nthe chaotic nature of aerodynamic forces, a blowing controller must (i)\ncontinually adapt to unexpected changes from its actions, (ii) maintain\nfine-grained control, since the slightest misstep can result in large\nunintended consequences (e.g., scatter objects already in a pile), and (iii)\ninfer long-range plans (e.g., move the robot to strategic blowing locations).\nWe tackle these challenges in the context of deep reinforcement learning,\nintroducing a multi-frequency version of the spatial action maps framework.\nThis allows for efficient learning of vision-based policies that effectively\ncombine high-level planning and low-level closed-loop control for dynamic\nmobile manipulation. Experiments show that our system learns efficient\nbehaviors for the task, demonstrating in particular that blowing achieves\nbetter downstream performance than pushing, and that our policies improve\nperformance over baselines. Moreover, we show that our system naturally\nencourages emergent specialization between the different subpolicies spanning\nlow-level fine-grained control and high-level planning. On a real mobile robot\nequipped with a miniature air blower, we show that our simulation-trained\npolicies transfer well to a real environment and can generalize to novel\nobjects.\n",
+        "published": "2022",
+        "authors": [
+            "Jimmy Wu",
+            "Xingyuan Sun",
+            "Andy Zeng",
+            "Shuran Song",
+            "Szymon Rusinkiewicz",
+            "Thomas Funkhouser"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2204.07049v2",
+        "title": "Sim-to-Real 6D Object Pose Estimation via Iterative Self-training for\n  Robotic Bin Picking",
+        "abstract": "  In this paper, we propose an iterative self-training framework for\nsim-to-real 6D object pose estimation to facilitate cost-effective robotic\ngrasping. Given a bin-picking scenario, we establish a photo-realistic\nsimulator to synthesize abundant virtual data, and use this to train an initial\npose estimation network. This network then takes the role of a teacher model,\nwhich generates pose predictions for unlabeled real data. With these\npredictions, we further design a comprehensive adaptive selection scheme to\ndistinguish reliable results, and leverage them as pseudo labels to update a\nstudent model for pose estimation on real data. To continuously improve the\nquality of pseudo labels, we iterate the above steps by taking the trained\nstudent model as a new teacher and re-label real data using the refined teacher\nmodel. We evaluate our method on a public benchmark and our newly-released\ndataset, achieving an ADD(-S) improvement of 11.49% and 22.62% respectively.\nOur method is also able to improve robotic bin-picking success by 19.54%,\ndemonstrating the potential of iterative sim-to-real solutions for robotic\napplications.\n",
+        "published": "2022",
+        "authors": [
+            "Kai Chen",
+            "Rui Cao",
+            "Stephen James",
+            "Yichuan Li",
+            "Yun-Hui Liu",
+            "Pieter Abbeel",
+            "Qi Dou"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2204.09616v2",
+        "title": "Assembly Planning from Observations under Physical Constraints",
+        "abstract": "  This paper addresses the problem of copying an unknown assembly of primitives\nwith known shape and appearance using information extracted from a single\nphotograph by an off-the-shelf procedure for object detection and pose\nestimation. The proposed algorithm uses a simple combination of physical\nstability constraints, convex optimization and Monte Carlo tree search to plan\nassemblies as sequences of pick-and-place operations represented by STRIPS\noperators. It is efficient and, most importantly, robust to the errors in\nobject detection and pose estimation unavoidable in any real robotic system.\nThe proposed approach is demonstrated with thorough experiments on a UR5\nmanipulator.\n",
+        "published": "2022",
+        "authors": [
+            "Thomas Chabal",
+            "Robin Strudel",
+            "Etienne Arlaud",
+            "Jean Ponce",
+            "Cordelia Schmid"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2204.10419v2",
+        "title": "Learning Sequential Latent Variable Models from Multimodal Time Series\n  Data",
+        "abstract": "  Sequential modelling of high-dimensional data is an important problem that\nappears in many domains including model-based reinforcement learning and\ndynamics identification for control. Latent variable models applied to\nsequential data (i.e., latent dynamics models) have been shown to be a\nparticularly effective probabilistic approach to solve this problem, especially\nwhen dealing with images. However, in many application areas (e.g., robotics),\ninformation from multiple sensing modalities is available -- existing latent\ndynamics methods have not yet been extended to effectively make use of such\nmultimodal sequential data. Multimodal sensor streams can be correlated in a\nuseful manner and often contain complementary information across modalities. In\nthis work, we present a self-supervised generative modelling framework to\njointly learn a probabilistic latent state representation of multimodal data\nand the respective dynamics. Using synthetic and real-world datasets from a\nmultimodal robotic planar pushing task, we demonstrate that our approach leads\nto significant improvements in prediction and representation quality.\nFurthermore, we compare to the common learning baseline of concatenating each\nmodality in the latent space and show that our principled probabilistic\nformulation performs better. Finally, despite being fully self-supervised, we\ndemonstrate that our method is nearly as effective as an existing supervised\napproach that relies on ground truth labels.\n",
+        "published": "2022",
+        "authors": [
+            "Oliver Limoyo",
+            "Trevor Ablett",
+            "Jonathan Kelly"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2204.12471v2",
+        "title": "Coarse-to-fine Q-attention with Tree Expansion",
+        "abstract": "  Coarse-to-fine Q-attention enables sample-efficient robot manipulation by\ndiscretizing the translation space in a coarse-to-fine manner, where the\nresolution gradually increases at each layer in the hierarchy. Although\neffective, Q-attention suffers from \"coarse ambiguity\" - when voxelization is\nsignificantly coarse, it is not feasible to distinguish similar-looking objects\nwithout first inspecting at a finer resolution. To combat this, we propose to\nenvision Q-attention as a tree that can be expanded and used to accumulate\nvalue estimates across the top-k voxels at each Q-attention depth. When our\nextension, Q-attention with Tree Expansion (QTE), replaces standard Q-attention\nin the Attention-driven Robot Manipulation (ARM) system, we are able to\naccomplish a larger set of tasks; especially on those that suffer from \"coarse\nambiguity\". In addition to evaluating our approach across 12 RLBench tasks, we\nalso show that the improved performance is visible in a real-world task\ninvolving small objects.\n",
+        "published": "2022",
+        "authors": [
+            "Stephen James",
+            "Pieter Abbeel"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2205.01089v1",
+        "title": "ComPhy: Compositional Physical Reasoning of Objects and Events from\n  Videos",
+        "abstract": "  Objects' motions in nature are governed by complex interactions and their\nproperties. While some properties, such as shape and material, can be\nidentified via the object's visual appearances, others like mass and electric\ncharge are not directly visible. The compositionality between the visible and\nhidden properties poses unique challenges for AI models to reason from the\nphysical world, whereas humans can effortlessly infer them with limited\nobservations. Existing studies on video reasoning mainly focus on visually\nobservable elements such as object appearance, movement, and contact\ninteraction. In this paper, we take an initial step to highlight the importance\nof inferring the hidden physical properties not directly observable from visual\nappearances, by introducing the Compositional Physical Reasoning (ComPhy)\ndataset. For a given set of objects, ComPhy includes few videos of them moving\nand interacting under different initial conditions. The model is evaluated\nbased on its capability to unravel the compositional hidden properties, such as\nmass and charge, and use this knowledge to answer a set of questions posted on\none of the videos. Evaluation results of several state-of-the-art video\nreasoning models on ComPhy show unsatisfactory performance as they fail to\ncapture these hidden properties. We further propose an oracle neural-symbolic\nframework named Compositional Physics Learner (CPL), combining visual\nperception, physical property learning, dynamic prediction, and symbolic\nexecution into a unified framework. CPL can effectively identify objects'\nphysical properties from their interactions and predict their dynamics to\nanswer questions.\n",
+        "published": "2022",
+        "authors": [
+            "Zhenfang Chen",
+            "Kexin Yi",
+            "Yunzhu Li",
+            "Mingyu Ding",
+            "Antonio Torralba",
+            "Joshua B. Tenenbaum",
+            "Chuang Gan"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2205.06333v2",
+        "title": "Visuomotor Control in Multi-Object Scenes Using Object-Aware\n  Representations",
+        "abstract": "  Perceptual understanding of the scene and the relationship between its\ndifferent components is important for successful completion of robotic tasks.\nRepresentation learning has been shown to be a powerful technique for this, but\nmost of the current methodologies learn task specific representations that do\nnot necessarily transfer well to other tasks. Furthermore, representations\nlearned by supervised methods require large labeled datasets for each task that\nare expensive to collect in the real world. Using self-supervised learning to\nobtain representations from unlabeled data can mitigate this problem. However,\ncurrent self-supervised representation learning methods are mostly object\nagnostic, and we demonstrate that the resulting representations are\ninsufficient for general purpose robotics tasks as they fail to capture the\ncomplexity of scenes with many components. In this paper, we explore the\neffectiveness of using object-aware representation learning techniques for\nrobotic tasks. Our self-supervised representations are learned by observing the\nagent freely interacting with different parts of the environment and is queried\nin two different settings: (i) policy learning and (ii) object location\nprediction. We show that our model learns control policies in a\nsample-efficient manner and outperforms state-of-the-art object agnostic\ntechniques as well as methods trained on raw RGB images. Our results show a 20\npercent increase in performance in low data regimes (1000 trajectories) in\npolicy training using implicit behavioral cloning (IBC). Furthermore, our\nmethod outperforms the baselines for the task of object localization in\nmulti-object scenes.\n",
+        "published": "2022",
+        "authors": [
+            "Negin Heravi",
+            "Ayzaan Wahid",
+            "Corey Lynch",
+            "Pete Florence",
+            "Travis Armstrong",
+            "Jonathan Tompson",
+            "Pierre Sermanet",
+            "Jeannette Bohg",
+            "Debidatta Dwibedi"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2205.08129v2",
+        "title": "Planning to Practice: Efficient Online Fine-Tuning by Composing Goals in\n  Latent Space",
+        "abstract": "  General-purpose robots require diverse repertoires of behaviors to complete\nchallenging tasks in real-world unstructured environments. To address this\nissue, goal-conditioned reinforcement learning aims to acquire policies that\ncan reach configurable goals for a wide range of tasks on command. However,\nsuch goal-conditioned policies are notoriously difficult and time-consuming to\ntrain from scratch. In this paper, we propose Planning to Practice (PTP), a\nmethod that makes it practical to train goal-conditioned policies for\nlong-horizon tasks that require multiple distinct types of interactions to\nsolve. Our approach is based on two key ideas. First, we decompose the\ngoal-reaching problem hierarchically, with a high-level planner that sets\nintermediate subgoals using conditional subgoal generators in the latent space\nfor a low-level model-free policy. Second, we propose a hybrid approach which\nfirst pre-trains both the conditional subgoal generator and the policy on\npreviously collected data through offline reinforcement learning, and then\nfine-tunes the policy via online exploration. This fine-tuning process is\nitself facilitated by the planned subgoals, which breaks down the original\ntarget task into short-horizon goal-reaching tasks that are significantly\neasier to learn. We conduct experiments in both the simulation and real world,\nin which the policy is pre-trained on demonstrations of short primitive\nbehaviors and fine-tuned for temporally extended tasks that are unseen in the\noffline data. Our experimental results show that PTP can generate feasible\nsequences of subgoals that enable the policy to efficiently solve the target\ntasks.\n",
+        "published": "2022",
+        "authors": [
+            "Kuan Fang",
+            "Patrick Yin",
+            "Ashvin Nair",
+            "Sergey Levine"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2205.09753v2",
+        "title": "HDGT: Heterogeneous Driving Graph Transformer for Multi-Agent Trajectory\n  Prediction via Scene Encoding",
+        "abstract": "  Encoding a driving scene into vector representations has been an essential\ntask for autonomous driving that can benefit downstream tasks e.g. trajectory\nprediction. The driving scene often involves heterogeneous elements such as the\ndifferent types of objects (agents, lanes, traffic signs) and the semantic\nrelations between objects are rich and diverse. Meanwhile, there also exist\nrelativity across elements, which means that the spatial relation is a relative\nconcept and need be encoded in a ego-centric manner instead of in a global\ncoordinate system. Based on these observations, we propose Heterogeneous\nDriving Graph Transformer (HDGT), a backbone modelling the driving scene as a\nheterogeneous graph with different types of nodes and edges. For heterogeneous\ngraph construction, we connect different types of nodes according to diverse\nsemantic relations. For spatial relation encoding, the coordinates of the node\nas well as its in-edges are in the local node-centric coordinate system. For\nthe aggregation module in the graph neural network (GNN), we adopt the\ntransformer structure in a hierarchical way to fit the heterogeneous nature of\ninputs. Experimental results show that HDGT achieves state-of-the-art\nperformance for the task of trajectory prediction, on INTERACTION Prediction\nChallenge and Waymo Open Motion Challenge.\n",
+        "published": "2022",
+        "authors": [
+            "Xiaosong Jia",
+            "Penghao Wu",
+            "Li Chen",
+            "Yu Liu",
+            "Hongyang Li",
+            "Junchi Yan"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2205.10223v1",
+        "title": "Mosaic Zonotope Shadow Matching for Risk-Aware Autonomous Localization\n  in Harsh Urban Environments",
+        "abstract": "  Risk-aware urban localization with the Global Navigation Satellite System\n(GNSS) remains an unsolved problem with frequent misdetection of the user's\nstreet or side of the street. Significant advances in 3D map-aided GNSS use\ngrid-based GNSS shadow matching alongside AI-driven line-of-sight (LOS)\nclassifiers and server-based processing to improve localization accuracy,\nespecially in the cross-street direction. Our prior work introduces a new\nparadigm for shadow matching that proposes set-valued localization with\ncomputationally efficient zonotope set representations. While existing\nliterature improved accuracy and efficiency, the current state of shadow\nmatching theory does not address the needs of risk-aware autonomous systems. We\nextend our prior work to propose Mosaic Zonotope Shadow Matching (MZSM) that\nemploys a classifier-agnostic polytope mosaic architecture to provide\nrisk-awareness and certifiable guarantees on urban positioning. We formulate a\nrecursively expanding binary tree that refines an initial location estimate\nwith set operations into smaller polytopes. Together, the smaller polytopes\nform a mosaic. We weight the tree branches with the probability that the user\nis in line of sight of the satellite and expand the tree with each new\nsatellite observation. Our method yields an exact shadow matching distribution\nfrom which we guarantee uncertainty bounds on the user localization. We perform\nhigh-fidelity simulations using a 3D building map of San Francisco to validate\nour algorithm's risk-aware improvements. We demonstrate that MZSM provides\ncertifiable guarantees across varied data-driven LOS classifier accuracies and\nyields a more precise understanding of the uncertainty over existing methods.\nWe validate that our tree-based construction is efficient and tractable,\ncomputing a mosaic from 14 satellites in 0.63 seconds and growing quadratically\nin the satellite number.\n",
+        "published": "2022",
+        "authors": [
+            "Daniel Neamati",
+            "Sriramya Bhamidipati",
+            "Grace Gao"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2205.11110v2",
+        "title": "Meta-Learning Regrasping Strategies for Physical-Agnostic Objects",
+        "abstract": "  Grasping inhomogeneous objects in real-world applications remains a\nchallenging task due to the unknown physical properties such as mass\ndistribution and coefficient of friction. In this study, we propose a\nmeta-learning algorithm called ConDex, which incorporates Conditional Neural\nProcesses (CNP) with DexNet-2.0 to autonomously discern the underlying physical\nproperties of objects using depth images. ConDex efficiently acquires physical\nembeddings from limited trials, enabling precise grasping point estimation.\nFurthermore, ConDex is capable of updating the predicted grasping quality\niteratively from new trials in an online fashion. To the best of our knowledge,\nwe are the first who generate two object datasets focusing on inhomogeneous\nphysical properties with varying mass distributions and friction coefficients.\nExtensive evaluations in simulation demonstrate ConDex's superior performance\nover DexNet-2.0 and existing meta-learning-based grasping pipelines.\nFurthermore, ConDex shows robust generalization to previously unseen real-world\nobjects despite training solely in the simulation. The synthetic and real-world\ndatasets will be published as well.\n",
+        "published": "2022",
+        "authors": [
+            "Ning Gao",
+            "Jingyu Zhang",
+            "Ruijie Chen",
+            "Ngo Anh Vien",
+            "Hanna Ziesche",
+            "Gerhard Neumann"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2205.15997v1",
+        "title": "TransFuser: Imitation with Transformer-Based Sensor Fusion for\n  Autonomous Driving",
+        "abstract": "  How should we integrate representations from complementary sensors for\nautonomous driving? Geometry-based fusion has shown promise for perception\n(e.g. object detection, motion forecasting). However, in the context of\nend-to-end driving, we find that imitation learning based on existing sensor\nfusion methods underperforms in complex driving scenarios with a high density\nof dynamic agents. Therefore, we propose TransFuser, a mechanism to integrate\nimage and LiDAR representations using self-attention. Our approach uses\ntransformer modules at multiple resolutions to fuse perspective view and bird's\neye view feature maps. We experimentally validate its efficacy on a challenging\nnew benchmark with long routes and dense traffic, as well as the official\nleaderboard of the CARLA urban driving simulator. At the time of submission,\nTransFuser outperforms all prior work on the CARLA leaderboard in terms of\ndriving score by a large margin. Compared to geometry-based fusion, TransFuser\nreduces the average collisions per kilometer by 48%.\n",
+        "published": "2022",
+        "authors": [
+            "Kashyap Chitta",
+            "Aditya Prakash",
+            "Bernhard Jaeger",
+            "Zehao Yu",
+            "Katrin Renz",
+            "Andreas Geiger"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2206.02622v2",
+        "title": "Hardware-accelerated Mars Sample Localization via deep transfer learning\n  from photorealistic simulations",
+        "abstract": "  The goal of the Mars Sample Return campaign is to collect soil samples from\nthe surface of Mars and return them to Earth for further study. The samples\nwill be acquired and stored in metal tubes by the Perseverance rover and\ndeposited on the Martian surface. As part of this campaign, it is expected that\nthe Sample Fetch Rover will be in charge of localizing and gathering up to 35\nsample tubes over 150 Martian sols. Autonomous capabilities are critical for\nthe success of the overall campaign and for the Sample Fetch Rover in\nparticular. This work proposes a novel system architecture for the autonomous\ndetection and pose estimation of the sample tubes. For the detection stage, a\nDeep Neural Network and transfer learning from a synthetic dataset are\nproposed. The dataset is created from photorealistic 3D simulations of Martian\nscenarios. Additionally, the sample tubes poses are estimated using Computer\nVision techniques such as contour detection and line fitting on the detected\narea. Finally, laboratory tests of the Sample Localization procedure are\nperformed using the ExoMars Testing Rover on a Mars-like testbed. These tests\nvalidate the proposed approach in different hardware architectures, providing\npromising results related to the sample detection and pose estimation.\n",
+        "published": "2022",
+        "authors": [
+            "Ra\u00fal Castilla-Arquillo",
+            "Carlos Jes\u00fas P\u00e9rez-del-Pulgar",
+            "Gonzalo Jes\u00fas Paz-Delgado",
+            "Levin Gerdes"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2206.03271v2",
+        "title": "On the Effectiveness of Fine-tuning Versus Meta-reinforcement Learning",
+        "abstract": "  Intelligent agents should have the ability to leverage knowledge from\npreviously learned tasks in order to learn new ones quickly and efficiently.\nMeta-learning approaches have emerged as a popular solution to achieve this.\nHowever, meta-reinforcement learning (meta-RL) algorithms have thus far been\nrestricted to simple environments with narrow task distributions. Moreover, the\nparadigm of pretraining followed by fine-tuning to adapt to new tasks has\nemerged as a simple yet effective solution in supervised and self-supervised\nlearning. This calls into question the benefits of meta-learning approaches\nalso in reinforcement learning, which typically come at the cost of high\ncomplexity. We hence investigate meta-RL approaches in a variety of\nvision-based benchmarks, including Procgen, RLBench, and Atari, where\nevaluations are made on completely novel tasks. Our findings show that when\nmeta-learning approaches are evaluated on different tasks (rather than\ndifferent variations of the same task), multi-task pretraining with fine-tuning\non new tasks performs equally as well, or better, than meta-pretraining with\nmeta test-time adaptation. This is encouraging for future research, as\nmulti-task pretraining tends to be simpler and computationally cheaper than\nmeta-RL. From these findings, we advocate for evaluating future meta-RL methods\non more challenging tasks and including multi-task pretraining with fine-tuning\nas a simple, yet strong baseline.\n",
+        "published": "2022",
+        "authors": [
+            "Zhao Mandi",
+            "Pieter Abbeel",
+            "Stephen James"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2206.03970v2",
+        "title": "Narrowing the Coordinate-frame Gap in Behavior Prediction Models:\n  Distillation for Efficient and Accurate Scene-centric Motion Forecasting",
+        "abstract": "  Behavior prediction models have proliferated in recent years, especially in\nthe popular real-world robotics application of autonomous driving, where\nrepresenting the distribution over possible futures of moving agents is\nessential for safe and comfortable motion planning. In these models, the choice\nof coordinate frames to represent inputs and outputs has crucial trade offs\nwhich broadly fall into one of two categories. Agent-centric models transform\ninputs and perform inference in agent-centric coordinates. These models are\nintrinsically invariant to translation and rotation between scene elements, are\nbest-performing on public leaderboards, but scale quadratically with the number\nof agents and scene elements. Scene-centric models use a fixed coordinate\nsystem to process all agents. This gives them the advantage of sharing\nrepresentations among all agents, offering efficient amortized inference\ncomputation which scales linearly with the number of agents. However, these\nmodels have to learn invariance to translation and rotation between scene\nelements, and typically underperform agent-centric models. In this work, we\ndevelop knowledge distillation techniques between probabilistic motion\nforecasting models, and apply these techniques to close the gap in performance\nbetween agent-centric and scene-centric models. This improves scene-centric\nmodel performance by 13.2% on the public Argoverse benchmark, 7.8% on Waymo\nOpen Dataset and up to 9.4% on a large In-House dataset. These improved\nscene-centric models rank highly in public leaderboards and are up to 15 times\nmore efficient than their agent-centric teacher counterparts in busy scenes.\n",
+        "published": "2022",
+        "authors": [
+            "DiJia Su",
+            "Bertrand Douillard",
+            "Rami Al-Rfou",
+            "Cheolho Park",
+            "Benjamin Sapp"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2206.07162v2",
+        "title": "Category-Agnostic 6D Pose Estimation with Conditional Neural Processes",
+        "abstract": "  We present a novel meta-learning approach for 6D pose estimation on unknown\nobjects. In contrast to ``instance-level\" and ``category-level\" pose estimation\nmethods, our algorithm learns object representation in a category-agnostic way,\nwhich endows it with strong generalization capabilities across object\ncategories. Specifically, we employ a neural process-based meta-learning\napproach to train an encoder to capture texture and geometry of an object in a\nlatent representation, based on very few RGB-D images and ground-truth\nkeypoints. The latent representation is then used by a simultaneously\nmeta-trained decoder to predict the 6D pose of the object in new images.\nFurthermore, we propose a novel geometry-aware decoder for the keypoint\nprediction using a Graph Neural Network (GNN), which explicitly takes geometric\nconstraints specific to each object into consideration. To evaluate our\nalgorithm, extensive experiments are conducted on the \\linemod dataset, and on\nour new fully-annotated synthetic datasets generated from Multiple Categories\nin Multiple Scenes (MCMS). Experimental results demonstrate that our model\nperforms well on unseen objects with very different shapes and appearances.\nRemarkably, our model also shows robust performance on occluded scenes although\ntrained fully on data without occlusion. To our knowledge, this is the first\nwork exploring \\textbf{cross-category level} 6D pose estimation.\n",
+        "published": "2022",
+        "authors": [
+            "Yumeng Li",
+            "Ning Gao",
+            "Hanna Ziesche",
+            "Gerhard Neumann"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2206.08077v1",
+        "title": "Neural Scene Representation for Locomotion on Structured Terrain",
+        "abstract": "  We propose a learning-based method to reconstruct the local terrain for\nlocomotion with a mobile robot traversing urban environments. Using a stream of\ndepth measurements from the onboard cameras and the robot's trajectory, the\nalgorithm estimates the topography in the robot's vicinity. The raw\nmeasurements from these cameras are noisy and only provide partial and occluded\nobservations that in many cases do not show the terrain the robot stands on.\nTherefore, we propose a 3D reconstruction model that faithfully reconstructs\nthe scene, despite the noisy measurements and large amounts of missing data\ncoming from the blind spots of the camera arrangement. The model consists of a\n4D fully convolutional network on point clouds that learns the geometric priors\nto complete the scene from the context and an auto-regressive feedback to\nleverage spatio-temporal consistency and use evidence from the past. The\nnetwork can be solely trained with synthetic data, and due to extensive\naugmentation, it is robust in the real world, as shown in the validation on a\nquadrupedal robot, ANYmal, traversing challenging settings. We run the pipeline\non the robot's onboard low-power computer using an efficient sparse tensor\nimplementation and show that the proposed method outperforms classical map\nrepresentations.\n",
+        "published": "2022",
+        "authors": [
+            "David Hoeller",
+            "Nikita Rudin",
+            "Christopher Choy",
+            "Animashree Anandkumar",
+            "Marco Hutter"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2206.11251v2",
+        "title": "Behavior Transformers: Cloning $k$ modes with one stone",
+        "abstract": "  While behavior learning has made impressive progress in recent times, it lags\nbehind computer vision and natural language processing due to its inability to\nleverage large, human-generated datasets. Human behaviors have wide variance,\nmultiple modes, and human demonstrations typically do not come with reward\nlabels. These properties limit the applicability of current methods in Offline\nRL and Behavioral Cloning to learn from large, pre-collected datasets. In this\nwork, we present Behavior Transformer (BeT), a new technique to model unlabeled\ndemonstration data with multiple modes. BeT retrofits standard transformer\narchitectures with action discretization coupled with a multi-task action\ncorrection inspired by offset prediction in object detection. This allows us to\nleverage the multi-modal modeling ability of modern transformers to predict\nmulti-modal continuous actions. We experimentally evaluate BeT on a variety of\nrobotic manipulation and self-driving behavior datasets. We show that BeT\nsignificantly improves over prior state-of-the-art work on solving demonstrated\ntasks while capturing the major modes present in the pre-collected datasets.\nFinally, through an extensive ablation study, we analyze the importance of\nevery crucial component in BeT. Videos of behavior generated by BeT are\navailable at https://notmahi.github.io/bet\n",
+        "published": "2022",
+        "authors": [
+            "Nur Muhammad Mahi Shafiullah",
+            "Zichen Jeff Cui",
+            "Ariuntuya Altanzaya",
+            "Lerrel Pinto"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2206.13387v1",
+        "title": "ScePT: Scene-consistent, Policy-based Trajectory Predictions for\n  Planning",
+        "abstract": "  Trajectory prediction is a critical functionality of autonomous systems that\nshare environments with uncontrolled agents, one prominent example being\nself-driving vehicles. Currently, most prediction methods do not enforce scene\nconsistency, i.e., there are a substantial amount of self-collisions between\npredicted trajectories of different agents in the scene. Moreover, many\napproaches generate individual trajectory predictions per agent instead of\njoint trajectory predictions of the whole scene, which makes downstream\nplanning difficult. In this work, we present ScePT, a policy planning-based\ntrajectory prediction model that generates accurate, scene-consistent\ntrajectory predictions suitable for autonomous system motion planning. It\nexplicitly enforces scene consistency and learns an agent interaction policy\nthat can be used for conditional prediction. Experiments on multiple real-world\npedestrians and autonomous vehicle datasets show that ScePT} matches current\nstate-of-the-art prediction accuracy with significantly improved scene\nconsistency. We also demonstrate ScePT's ability to work with a downstream\ncontingency planner.\n",
+        "published": "2022",
+        "authors": [
+            "Yuxiao Chen",
+            "Boris Ivanovic",
+            "Marco Pavone"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2206.13396v2",
+        "title": "A Simple Approach for Visual Rearrangement: 3D Mapping and Semantic\n  Search",
+        "abstract": "  Physically rearranging objects is an important capability for embodied\nagents. Visual room rearrangement evaluates an agent's ability to rearrange\nobjects in a room to a desired goal based solely on visual input. We propose a\nsimple yet effective method for this problem: (1) search for and map which\nobjects need to be rearranged, and (2) rearrange each object until the task is\ncomplete. Our approach consists of an off-the-shelf semantic segmentation\nmodel, voxel-based semantic map, and semantic search policy to efficiently find\nobjects that need to be rearranged. On the AI2-THOR Rearrangement Challenge,\nour method improves on current state-of-the-art end-to-end reinforcement\nlearning-based methods that learn visual rearrangement policies from 0.53%\ncorrect rearrangement to 16.56%, using only 2.7% as many samples from the\nenvironment.\n",
+        "published": "2022",
+        "authors": [
+            "Brandon Trabucco",
+            "Gunnar Sigurdsson",
+            "Robinson Piramuthu",
+            "Gaurav S. Sukhatme",
+            "Ruslan Salakhutdinov"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2206.13499v1",
+        "title": "Prompting Decision Transformer for Few-Shot Policy Generalization",
+        "abstract": "  Humans can leverage prior experience and learn novel tasks from a handful of\ndemonstrations. In contrast to offline meta-reinforcement learning, which aims\nto achieve quick adaptation through better algorithm design, we investigate the\neffect of architecture inductive bias on the few-shot learning capability. We\npropose a Prompt-based Decision Transformer (Prompt-DT), which leverages the\nsequential modeling ability of the Transformer architecture and the prompt\nframework to achieve few-shot adaptation in offline RL. We design the\ntrajectory prompt, which contains segments of the few-shot demonstrations, and\nencodes task-specific information to guide policy generation. Our experiments\nin five MuJoCo control benchmarks show that Prompt-DT is a strong few-shot\nlearner without any extra finetuning on unseen target tasks. Prompt-DT\noutperforms its variants and strong meta offline RL baselines by a large margin\nwith a trajectory prompt containing only a few timesteps. Prompt-DT is also\nrobust to prompt length changes and can generalize to out-of-distribution (OOD)\nenvironments.\n",
+        "published": "2022",
+        "authors": [
+            "Mengdi Xu",
+            "Yikang Shen",
+            "Shun Zhang",
+            "Yuchen Lu",
+            "Ding Zhao",
+            "Joshua B. Tenenbaum",
+            "Chuang Gan"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2206.14244v3",
+        "title": "Masked World Models for Visual Control",
+        "abstract": "  Visual model-based reinforcement learning (RL) has the potential to enable\nsample-efficient robot learning from visual observations. Yet the current\napproaches typically train a single model end-to-end for learning both visual\nrepresentations and dynamics, making it difficult to accurately model the\ninteraction between robots and small objects. In this work, we introduce a\nvisual model-based RL framework that decouples visual representation learning\nand dynamics learning. Specifically, we train an autoencoder with convolutional\nlayers and vision transformers (ViT) to reconstruct pixels given masked\nconvolutional features, and learn a latent dynamics model that operates on the\nrepresentations from the autoencoder. Moreover, to encode task-relevant\ninformation, we introduce an auxiliary reward prediction objective for the\nautoencoder. We continually update both autoencoder and dynamics model using\nonline samples collected from environment interaction. We demonstrate that our\ndecoupling approach achieves state-of-the-art performance on a variety of\nvisual robotic tasks from Meta-world and RLBench, e.g., we achieve 81.7%\nsuccess rate on 50 visual robotic manipulation tasks from Meta-world, while the\nbaseline achieves 67.9%. Code is available on the project website:\nhttps://sites.google.com/view/mwm-rl.\n",
+        "published": "2022",
+        "authors": [
+            "Younggyo Seo",
+            "Danijar Hafner",
+            "Hao Liu",
+            "Fangchen Liu",
+            "Stephen James",
+            "Kimin Lee",
+            "Pieter Abbeel"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2206.15469v2",
+        "title": "Watch and Match: Supercharging Imitation with Regularized Optimal\n  Transport",
+        "abstract": "  Imitation learning holds tremendous promise in learning policies efficiently\nfor complex decision making problems. Current state-of-the-art algorithms often\nuse inverse reinforcement learning (IRL), where given a set of expert\ndemonstrations, an agent alternatively infers a reward function and the\nassociated optimal policy. However, such IRL approaches often require\nsubstantial online interactions for complex control problems. In this work, we\npresent Regularized Optimal Transport (ROT), a new imitation learning algorithm\nthat builds on recent advances in optimal transport based trajectory-matching.\nOur key technical insight is that adaptively combining trajectory-matching\nrewards with behavior cloning can significantly accelerate imitation even with\nonly a few demonstrations. Our experiments on 20 visual control tasks across\nthe DeepMind Control Suite, the OpenAI Robotics Suite, and the Meta-World\nBenchmark demonstrate an average of 7.8X faster imitation to reach 90% of\nexpert performance compared to prior state-of-the-art methods. On real-world\nrobotic manipulation, with just one demonstration and an hour of online\ntraining, ROT achieves an average success rate of 90.1% across 14 tasks.\n",
+        "published": "2022",
+        "authors": [
+            "Siddhant Haldar",
+            "Vaibhav Mathur",
+            "Denis Yarats",
+            "Lerrel Pinto"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2207.02959v1",
+        "title": "NeuralGrasps: Learning Implicit Representations for Grasps of Multiple\n  Robotic Hands",
+        "abstract": "  We introduce a neural implicit representation for grasps of objects from\nmultiple robotic hands. Different grasps across multiple robotic hands are\nencoded into a shared latent space. Each latent vector is learned to decode to\nthe 3D shape of an object and the 3D shape of a robotic hand in a grasping pose\nin terms of the signed distance functions of the two 3D shapes. In addition,\nthe distance metric in the latent space is learned to preserve the similarity\nbetween grasps across different robotic hands, where the similarity of grasps\nis defined according to contact regions of the robotic hands. This property\nenables our method to transfer grasps between different grippers including a\nhuman hand, and grasp transfer has the potential to share grasping skills\nbetween robots and enable robots to learn grasping skills from humans.\nFurthermore, the encoded signed distance functions of objects and grasps in our\nimplicit representation can be used for 6D object pose estimation with grasping\ncontact optimization from partial point clouds, which enables robotic grasping\nin the real world.\n",
+        "published": "2022",
+        "authors": [
+            "Ninad Khargonkar",
+            "Neil Song",
+            "Zesheng Xu",
+            "Balakrishnan Prabhakaran",
+            "Yu Xiang"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2207.03146v1",
+        "title": "Self-Supervised Velocity Estimation for Automotive Radar Object\n  Detection Networks",
+        "abstract": "  This paper presents a method to learn the Cartesian velocity of objects using\nan object detection network on automotive radar data. The proposed method is\nself-supervised in terms of generating its own training signal for the\nvelocities. Labels are only required for single-frame, oriented bounding boxes\n(OBBs). Labels for the Cartesian velocities or contiguous sequences, which are\nexpensive to obtain, are not required. The general idea is to pre-train an\nobject detection network without velocities using single-frame OBB labels, and\nthen exploit the network's OBB predictions on unlabelled data for velocity\ntraining. In detail, the network's OBB predictions of the unlabelled frames are\nupdated to the timestamp of a labelled frame using the predicted velocities and\nthe distances between the updated OBBs of the unlabelled frame and the OBB\npredictions of the labelled frame are used to generate a self-supervised\ntraining signal for the velocities. The detection network architecture is\nextended by a module to account for the temporal relation of multiple scans and\na module to represent the radars' radial velocity measurements explicitly. A\ntwo-step approach of first training only OBB detection, followed by training\nOBB detection and velocities is used. Further, a pre-training with\npseudo-labels generated from radar radial velocity measurements bootstraps the\nself-supervised method of this paper. Experiments on the publicly available\nnuScenes dataset show that the proposed method almost reaches the velocity\nestimation performance of a fully supervised training, but does not require\nexpensive velocity labels. Furthermore, we outperform a baseline method which\nuses only radial velocity measurements as labels.\n",
+        "published": "2022",
+        "authors": [
+            "Daniel Niederl\u00f6hner",
+            "Michael Ulrich",
+            "Sascha Braun",
+            "Daniel K\u00f6hler",
+            "Florian Faion",
+            "Claudius Gl\u00e4ser",
+            "Andr\u00e9 Treptow",
+            "Holger Blume"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2207.03333v3",
+        "title": "FewSOL: A Dataset for Few-Shot Object Learning in Robotic Environments",
+        "abstract": "  We introduce the Few-Shot Object Learning (FewSOL) dataset for object\nrecognition with a few images per object. We captured 336 real-world objects\nwith 9 RGB-D images per object from different views. Object segmentation masks,\nobject poses and object attributes are provided. In addition, synthetic images\ngenerated using 330 3D object models are used to augment the dataset. We\ninvestigated (i) few-shot object classification and (ii) joint object\nsegmentation and few-shot classification with the state-of-the-art methods for\nfew-shot learning and meta-learning using our dataset. The evaluation results\nshow that there is still a large margin to be improved for few-shot object\nclassification in robotic environments. Our dataset can be used to study a set\nof few-shot object recognition problems such as classification, detection and\nsegmentation, shape reconstruction, pose estimation, keypoint correspondences\nand attribute recognition. The dataset and code are available at\nhttps://irvlutd.github.io/FewSOL.\n",
+        "published": "2022",
+        "authors": [
+            "Jishnu Jaykumar P",
+            "Yu-Wei Chao",
+            "Yu Xiang"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2207.07418v1",
+        "title": "LapSeg3D: Weakly Supervised Semantic Segmentation of Point Clouds\n  Representing Laparoscopic Scenes",
+        "abstract": "  The semantic segmentation of surgical scenes is a prerequisite for task\nautomation in robot assisted interventions. We propose LapSeg3D, a novel\nDNN-based approach for the voxel-wise annotation of point clouds representing\nsurgical scenes. As the manual annotation of training data is highly time\nconsuming, we introduce a semi-autonomous clustering-based pipeline for the\nannotation of the gallbladder, which is used to generate segmented labels for\nthe DNN. When evaluated against manually annotated data, LapSeg3D achieves an\nF1 score of 0.94 for gallbladder segmentation on various datasets of ex-vivo\nporcine livers. We show LapSeg3D to generalize accurately across different\ngallbladders and datasets recorded with different RGB-D camera systems.\n",
+        "published": "2022",
+        "authors": [
+            "Benjamin Alt",
+            "Christian Kunz",
+            "Darko Katic",
+            "Rayan Younis",
+            "Rainer J\u00e4kel",
+            "Beat Peter M\u00fcller-Stich",
+            "Martin Wagner",
+            "Franziska Mathis-Ullrich"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2207.10082v1",
+        "title": "Model Compression for Resource-Constrained Mobile Robots",
+        "abstract": "  The number of mobile robots with constrained computing resources that need to\nexecute complex machine learning models has been increasing during the past\ndecade. Commonly, these robots rely on edge infrastructure accessible over\nwireless communication to execute heavy computational complex tasks. However,\nthe edge might become unavailable and, consequently, oblige the execution of\nthe tasks on the robot. This work focuses on making it possible to execute the\ntasks on the robots by reducing the complexity and the total number of\nparameters of pre-trained computer vision models. This is achieved by using\nmodel compression techniques such as Pruning and Knowledge Distillation. These\ncompression techniques have strong theoretical and practical foundations, but\ntheir combined usage has not been widely explored in the literature. Therefore,\nthis work especially focuses on investigating the effects of combining these\ntwo compression techniques. The results of this work reveal that up to 90% of\nthe total number of parameters of a computer vision model can be removed\nwithout any considerable reduction in the model's accuracy.\n",
+        "published": "2022",
+        "authors": [
+            "Timotheos Souroulla",
+            "Alberto Hata",
+            "Ahmad Terra",
+            "\u00d6zer \u00d6zkahraman",
+            "Rafia Inam"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2207.14024v5",
+        "title": "Safety-Enhanced Autonomous Driving Using Interpretable Sensor Fusion\n  Transformer",
+        "abstract": "  Large-scale deployment of autonomous vehicles has been continually delayed\ndue to safety concerns. On the one hand, comprehensive scene understanding is\nindispensable, a lack of which would result in vulnerability to rare but\ncomplex traffic situations, such as the sudden emergence of unknown objects.\nHowever, reasoning from a global context requires access to sensors of multiple\ntypes and adequate fusion of multi-modal sensor signals, which is difficult to\nachieve. On the other hand, the lack of interpretability in learning models\nalso hampers the safety with unverifiable failure causes. In this paper, we\npropose a safety-enhanced autonomous driving framework, named Interpretable\nSensor Fusion Transformer(InterFuser), to fully process and fuse information\nfrom multi-modal multi-view sensors for achieving comprehensive scene\nunderstanding and adversarial event detection. Besides, intermediate\ninterpretable features are generated from our framework, which provide more\nsemantics and are exploited to better constrain actions to be within the safe\nsets. We conducted extensive experiments on CARLA benchmarks, where our model\noutperforms prior methods, ranking the first on the public CARLA Leaderboard.\nOur code will be made available at https://github.com/opendilab/InterFuser\n",
+        "published": "2022",
+        "authors": [
+            "Hao Shao",
+            "Letian Wang",
+            "RuoBing Chen",
+            "Hongsheng Li",
+            "Yu Liu"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2208.00113v1",
+        "title": "Neural Correspondence Field for Object Pose Estimation",
+        "abstract": "  We propose a method for estimating the 6DoF pose of a rigid object with an\navailable 3D model from a single RGB image. Unlike classical\ncorrespondence-based methods which predict 3D object coordinates at pixels of\nthe input image, the proposed method predicts 3D object coordinates at 3D query\npoints sampled in the camera frustum. The move from pixels to 3D points, which\nis inspired by recent PIFu-style methods for 3D reconstruction, enables\nreasoning about the whole object, including its (self-)occluded parts. For a 3D\nquery point associated with a pixel-aligned image feature, we train a\nfully-connected neural network to predict: (i) the corresponding 3D object\ncoordinates, and (ii) the signed distance to the object surface, with the first\ndefined only for query points in the surface vicinity. We call the mapping\nrealized by this network as Neural Correspondence Field. The object pose is\nthen robustly estimated from the predicted 3D-3D correspondences by the\nKabsch-RANSAC algorithm. The proposed method achieves state-of-the-art results\non three BOP datasets and is shown superior especially in challenging cases\nwith occlusion. The project website is at: linhuang17.github.io/NCF.\n",
+        "published": "2022",
+        "authors": [
+            "Lin Huang",
+            "Tomas Hodan",
+            "Lingni Ma",
+            "Linguang Zhang",
+            "Luan Tran",
+            "Christopher Twigg",
+            "Po-Chen Wu",
+            "Junsong Yuan",
+            "Cem Keskin",
+            "Robert Wang"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2209.02408v1",
+        "title": "Robustness and invariance properties of image classifiers",
+        "abstract": "  Deep neural networks have achieved impressive results in many image\nclassification tasks. However, since their performance is usually measured in\ncontrolled settings, it is important to ensure that their decisions remain\ncorrect when deployed in noisy environments. In fact, deep networks are not\nrobust to a large variety of semantic-preserving image modifications, even to\nimperceptible image changes known as adversarial perturbations. The poor\nrobustness of image classifiers to small data distribution shifts raises\nserious concerns regarding their trustworthiness. To build reliable machine\nlearning models, we must design principled methods to analyze and understand\nthe mechanisms that shape robustness and invariance. This is exactly the focus\nof this thesis.\n  First, we study the problem of computing sparse adversarial perturbations. We\nexploit the geometry of the decision boundaries of image classifiers for\ncomputing sparse perturbations very fast, and reveal a qualitative connection\nbetween adversarial examples and the data features that image classifiers\nlearn. Then, to better understand this connection, we propose a geometric\nframework that connects the distance of data samples to the decision boundary,\nwith the features existing in the data. We show that deep classifiers have a\nstrong inductive bias towards invariance to non-discriminative features, and\nthat adversarial training exploits this property to confer robustness. Finally,\nwe focus on the challenging problem of generalization to unforeseen corruptions\nof the data, and we propose a novel data augmentation scheme for achieving\nstate-of-the-art robustness to common corruptions of the images.\n  Overall, our results contribute to the understanding of the fundamental\nmechanisms of deep image classifiers, and pave the way for building more\nreliable machine learning systems that can be deployed in real-world\nenvironments.\n",
+        "published": "2022",
+        "authors": [
+            "Apostolos Modas"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2209.03910v1",
+        "title": "PixTrack: Precise 6DoF Object Pose Tracking using NeRF Templates and\n  Feature-metric Alignment",
+        "abstract": "  We present PixTrack, a vision based object pose tracking framework using\nnovel view synthesis and deep feature-metric alignment. Our evaluations\ndemonstrate that our method produces highly accurate, robust, and jitter-free\n6DoF pose estimates of objects in RGB images without the need of any data\nannotation or trajectory smoothing. Our method is also computationally\nefficient making it easy to have multi-object tracking with no alteration to\nour method and just using CPU multiprocessing.\n",
+        "published": "2022",
+        "authors": [
+            "Prajwal Chidananda",
+            "Saurabh Nair",
+            "Douglas Lee",
+            "Adrian Kaehler"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2209.08772v2",
+        "title": "TANDEM3D: Active Tactile Exploration for 3D Object Recognition",
+        "abstract": "  Tactile recognition of 3D objects remains a challenging task. Compared to 2D\nshapes, the complex geometry of 3D surfaces requires richer tactile signals,\nmore dexterous actions, and more advanced encoding techniques. In this work, we\npropose TANDEM3D, a method that applies a co-training framework for exploration\nand decision making to 3D object recognition with tactile signals. Starting\nwith our previous work, which introduced a co-training paradigm for 2D\nrecognition problems, we introduce a number of advances that enable us to scale\nup to 3D. TANDEM3D is based on a novel encoder that builds 3D object\nrepresentation from contact positions and normals using PointNet++.\nFurthermore, by enabling 6DOF movement, TANDEM3D explores and collects\ndiscriminative touch information with high efficiency. Our method is trained\nentirely in simulation and validated with real-world experiments. Compared to\nstate-of-the-art baselines, TANDEM3D achieves higher accuracy and a lower\nnumber of actions in recognizing 3D objects and is also shown to be more robust\nto different types and amounts of sensor noise. Video is available at\nhttps://jxu.ai/tandem3d.\n",
+        "published": "2022",
+        "authors": [
+            "Jingxi Xu",
+            "Han Lin",
+            "Shuran Song",
+            "Matei Ciocarlie"
+        ]
+    }
+]

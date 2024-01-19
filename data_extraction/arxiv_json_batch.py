@@ -10,14 +10,16 @@ import sys
 if __name__ == '__main__':
 
     base_url = 'http://export.arxiv.org/api/query?'
-    ai_query = 'all:"artificial intelligence" OR all:"machine learning" OR all:"deep learning"'
+    categories = ['cs.AI', 'cs.CL', 'cs.CV', 'cs.LG', 'cs.MA', 'cs.NE', 'cs.RO', 'stat.ML']
+    category_query = ' OR '.join(f'cat:{cat}' for cat in categories)
+
     start = 0
     max_results = 100
     total_results = float('inf')
     batch_number = 1
 
     while start < total_results:
-        query = f"search_query={ai_query}&start={start}&max_results={max_results}"
+        query = f"search_query=({category_query})&start={start}&max_results={max_results}"
         response = requests.get(base_url + query)
         root = ET.fromstring(response.content)
 
