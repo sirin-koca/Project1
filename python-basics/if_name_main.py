@@ -14,7 +14,7 @@ other top-level code) are available, and the "main script execution code" doesn'
 provide reusable functions, classes, and other resources to other scripts without executing the main logic.
 
 This design pattern promotes code reusability and modularity. By organizing your code this way, you can build
-libraries of functions and classes that can be easily imported and used in multiple projects, while still being able
+data_extraction of functions and classes that can be easily imported and used in multiple projects, while still being able
 to run and test each script individually. It's one of the many features that make Python a versatile and
 developer-friendly language."""
 

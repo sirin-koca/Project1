@@ -1,6 +1,6 @@
 # DATA2410 - PORTFOLIO2:
 
-# Import required libraries
+# Import required data_extraction
 import argparse
 import socket
 import struct

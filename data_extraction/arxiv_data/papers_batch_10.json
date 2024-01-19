@@ -1,0 +1,1219 @@
+[
+    {
+        "id": "http://arxiv.org/abs/1607.08316v2",
+        "title": "Efficient Hyperparameter Optimization of Deep Learning Algorithms Using\n  Deterministic RBF Surrogates",
+        "abstract": "  Automatically searching for optimal hyperparameter configurations is of\ncrucial importance for applying deep learning algorithms in practice. Recently,\nBayesian optimization has been proposed for optimizing hyperparameters of\nvarious machine learning algorithms. Those methods adopt probabilistic\nsurrogate models like Gaussian processes to approximate and minimize the\nvalidation error function of hyperparameter values. However, probabilistic\nsurrogates require accurate estimates of sufficient statistics (e.g.,\ncovariance) of the error distribution and thus need many function evaluations\nwith a sizeable number of hyperparameters. This makes them inefficient for\noptimizing hyperparameters of deep learning algorithms, which are highly\nexpensive to evaluate. In this work, we propose a new deterministic and\nefficient hyperparameter optimization method that employs radial basis\nfunctions as error surrogates. The proposed mixed integer algorithm, called\nHORD, searches the surrogate for the most promising hyperparameter values\nthrough dynamic coordinate search and requires many fewer function evaluations.\nHORD does well in low dimensions but it is exceptionally better in higher\ndimensions. Extensive evaluations on MNIST and CIFAR-10 for four deep neural\nnetworks demonstrate HORD significantly outperforms the well-established\nBayesian optimization methods such as GP, SMAC, and TPE. For instance, on\naverage, HORD is more than 6 times faster than GP-EI in obtaining the best\nconfiguration of 19 hyperparameters.\n",
+        "published": "2016",
+        "authors": [
+            "Ilija Ilievski",
+            "Taimoor Akhtar",
+            "Jiashi Feng",
+            "Christine Annette Shoemaker"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2009.10149v2",
+        "title": "Crafting Adversarial Examples for Deep Learning Based Prognostics\n  (Extended Version)",
+        "abstract": "  In manufacturing, unexpected failures are considered a primary operational\nrisk, as they can hinder productivity and can incur huge losses.\nState-of-the-art Prognostics and Health Management (PHM) systems incorporate\nDeep Learning (DL) algorithms and Internet of Things (IoT) devices to ascertain\nthe health status of equipment, and thus reduce the downtime, maintenance cost\nand increase the productivity. Unfortunately, IoT sensors and DL algorithms,\nboth are vulnerable to cyber attacks, and hence pose a significant threat to\nPHM systems. In this paper, we adopt the adversarial example crafting\ntechniques from the computer vision domain and apply them to the PHM domain.\nSpecifically, we craft adversarial examples using the Fast Gradient Sign Method\n(FGSM) and Basic Iterative Method (BIM) and apply them on the Long Short-Term\nMemory (LSTM), Gated Recurrent Unit (GRU), and Convolutional Neural Network\n(CNN) based PHM models. We evaluate the impact of adversarial attacks using\nNASA's turbofan engine dataset. The obtained results show that all the\nevaluated PHM models are vulnerable to adversarial attacks and can cause a\nserious defect in the remaining useful life estimation. The obtained results\nalso show that the crafted adversarial examples are highly transferable and may\ncause significant damages to PHM systems.\n",
+        "published": "2020",
+        "authors": [
+            "Gautam Raj Mode",
+            "Khaza Anuarul Hoque"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2206.09654v1",
+        "title": "Performance Prediction in Major League Baseball by Long Short-Term\n  Memory Networks",
+        "abstract": "  Player performance prediction is a serious problem in every sport since it\nbrings valuable future information for managers to make important decisions. In\nbaseball industries, there already existed variable prediction systems and many\ntypes of researches that attempt to provide accurate predictions and help\ndomain users. However, it is a lack of studies about the predicting method or\nsystems based on deep learning. Deep learning models had proven to be the\ngreatest solutions in different fields nowadays, so we believe they could be\ntried and applied to the prediction problem in baseball. Hence, the predicting\nabilities of deep learning models are set to be our research problem in this\npaper. As a beginning, we select numbers of home runs as the target because it\nis one of the most critical indexes to understand the power and the talent of\nbaseball hitters. Moreover, we use the sequential model Long Short-Term Memory\nas our main method to solve the home run prediction problem in Major League\nBaseball. We compare models' ability with several machine learning models and a\nwidely used baseball projection system, sZymborski Projection System. Our\nresults show that Long Short-Term Memory has better performance than others and\nhas the ability to make more exact predictions. We conclude that Long\nShort-Term Memory is a feasible way for performance prediction problems in\nbaseball and could bring valuable information to fit users' needs.\n",
+        "published": "2022",
+        "authors": [
+            "Hsuan-Cheng Sun",
+            "Tse-Yu Lin",
+            "Yen-Lung Tsai"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2211.01675v1",
+        "title": "Spam Review Detection Using Deep Learning",
+        "abstract": "  A robust and reliable system of detecting spam reviews is a crying need in\ntodays world in order to purchase products without being cheated from online\nsites. In many online sites, there are options for posting reviews, and thus\ncreating scopes for fake paid reviews or untruthful reviews. These concocted\nreviews can mislead the general public and put them in a perplexity whether to\nbelieve the review or not. Prominent machine learning techniques have been\nintroduced to solve the problem of spam review detection. The majority of\ncurrent research has concentrated on supervised learning methods, which require\nlabeled data - an inadequacy when it comes to online review. Our focus in this\narticle is to detect any deceptive text reviews. In order to achieve that we\nhave worked with both labeled and unlabeled data and proposed deep learning\nmethods for spam review detection which includes Multi-Layer Perceptron (MLP),\nConvolutional Neural Network (CNN) and a variant of Recurrent Neural Network\n(RNN) that is Long Short-Term Memory (LSTM). We have also applied some\ntraditional machine learning classifiers such as Nave Bayes (NB), K Nearest\nNeighbor (KNN) and Support Vector Machine (SVM) to detect spam reviews and\nfinally, we have shown the performance comparison for both traditional and deep\nlearning classifiers.\n",
+        "published": "2022",
+        "authors": [
+            "G. M. Shahariar",
+            "Swapnil Biswas",
+            "Faiza Omar",
+            "Faisal Muhammad Shah",
+            "Samiha Binte Hassan"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2211.05207v4",
+        "title": "Interpretable Machine Learning System to EEG Patterns on the\n  Ictal-Interictal-Injury Continuum",
+        "abstract": "  In intensive care units (ICUs), critically ill patients are monitored with\nelectroencephalograms (EEGs) to prevent serious brain injury. The number of\npatients who can be monitored is constrained by the availability of trained\nphysicians to read EEGs, and EEG interpretation can be subjective and prone to\ninter-observer variability. Automated deep learning systems for EEG could\nreduce human bias and accelerate the diagnostic process. However, black box\ndeep learning models are untrustworthy, difficult to troubleshoot, and lack\naccountability in real-world applications, leading to a lack of trust and\nadoption by clinicians. To address these challenges, we propose a novel\ninterpretable deep learning model that not only predicts the presence of\nharmful brainwave patterns but also provides high-quality case-based\nexplanations of its decisions. Our model performs better than the corresponding\nblack box model, despite being constrained to be interpretable. The learned 2D\nembedded space provides the first global overview of the structure of\nictal-interictal-injury continuum brainwave patterns. The ability to understand\nhow our model arrived at its decisions will not only help clinicians to\ndiagnose and treat harmful brain activities more accurately but also increase\ntheir trust and adoption of machine learning models in clinical practice; this\ncould be an integral component of the ICU neurologists' standard workflow.\n",
+        "published": "2022",
+        "authors": [
+            "Alina Jade Barnett",
+            "Zhicheng Guo",
+            "Jin Jing",
+            "Wendong Ge",
+            "Cynthia Rudin",
+            "M. Brandon Westover"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2304.02595v1",
+        "title": "Bayesian neural networks via MCMC: a Python-based tutorial",
+        "abstract": "  Bayesian inference provides a methodology for parameter estimation and\nuncertainty quantification in machine learning and deep learning methods.\nVariational inference and Markov Chain Monte-Carlo (MCMC) sampling techniques\nare used to implement Bayesian inference. In the past three decades, MCMC\nmethods have faced a number of challenges in being adapted to larger models\n(such as in deep learning) and big data problems. Advanced proposals that\nincorporate gradients, such as a Langevin proposal distribution, provide a\nmeans to address some of the limitations of MCMC sampling for Bayesian neural\nnetworks. Furthermore, MCMC methods have typically been constrained to use by\nstatisticians and are still not prominent among deep learning researchers. We\npresent a tutorial for MCMC methods that covers simple Bayesian linear and\nlogistic models, and Bayesian neural networks. The aim of this tutorial is to\nbridge the gap between theory and implementation via coding, given a general\nsparsity of libraries and tutorials to this end. This tutorial provides code in\nPython with data and instructions that enable their use and extension. We\nprovide results for some benchmark problems showing the strengths and\nweaknesses of implementing the respective Bayesian models via MCMC. We\nhighlight the challenges in sampling multi-modal posterior distributions in\nparticular for the case of Bayesian neural networks, and the need for further\nimprovement of convergence diagnosis.\n",
+        "published": "2023",
+        "authors": [
+            "Rohitash Chandra",
+            "Royce Chen",
+            "Joshua Simmons"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2307.00280v1",
+        "title": "SysNoise: Exploring and Benchmarking Training-Deployment System\n  Inconsistency",
+        "abstract": "  Extensive studies have shown that deep learning models are vulnerable to\nadversarial and natural noises, yet little is known about model robustness on\nnoises caused by different system implementations. In this paper, we for the\nfirst time introduce SysNoise, a frequently occurred but often overlooked noise\nin the deep learning training-deployment cycle. In particular, SysNoise happens\nwhen the source training system switches to a disparate target system in\ndeployments, where various tiny system mismatch adds up to a non-negligible\ndifference. We first identify and classify SysNoise into three categories based\non the inference stage; we then build a holistic benchmark to quantitatively\nmeasure the impact of SysNoise on 20+ models, comprehending image\nclassification, object detection, instance segmentation and natural language\nprocessing tasks. Our extensive experiments revealed that SysNoise could bring\ncertain impacts on model robustness across different tasks and common\nmitigations like data augmentation and adversarial training show limited\neffects on it. Together, our findings open a new research topic and we hope\nthis work will raise research attention to deep learning deployment systems\naccounting for model performance. We have open-sourced the benchmark and\nframework at https://modeltc.github.io/systemnoise_web.\n",
+        "published": "2023",
+        "authors": [
+            "Yan Wang",
+            "Yuhang Li",
+            "Ruihao Gong",
+            "Aishan Liu",
+            "Yanfei Wang",
+            "Jian Hu",
+            "Yongqiang Yao",
+            "Yunchen Zhang",
+            "Tianzi Xiao",
+            "Fengwei Yu",
+            "Xianglong Liu"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2307.02820v1",
+        "title": "Evaluating raw waveforms with deep learning frameworks for speech\n  emotion recognition",
+        "abstract": "  Speech emotion recognition is a challenging task in speech processing field.\nFor this reason, feature extraction process has a crucial importance to\ndemonstrate and process the speech signals. In this work, we represent a model,\nwhich feeds raw audio files directly into the deep neural networks without any\nfeature extraction stage for the recognition of emotions utilizing six\ndifferent data sets, EMO-DB, RAVDESS, TESS, CREMA, SAVEE, and TESS+RAVDESS. To\ndemonstrate the contribution of proposed model, the performance of traditional\nfeature extraction techniques namely, mel-scale spectogram, mel-frequency\ncepstral coefficients, are blended with machine learning algorithms, ensemble\nlearning methods, deep and hybrid deep learning techniques. Support vector\nmachine, decision tree, naive Bayes, random forests models are evaluated as\nmachine learning algorithms while majority voting and stacking methods are\nassessed as ensemble learning techniques. Moreover, convolutional neural\nnetworks, long short-term memory networks, and hybrid CNN- LSTM model are\nevaluated as deep learning techniques and compared with machine learning and\nensemble learning methods. To demonstrate the effectiveness of proposed model,\nthe comparison with state-of-the-art studies are carried out. Based on the\nexperiment results, CNN model excels existent approaches with 95.86% of\naccuracy for TESS+RAVDESS data set using raw audio files, thence determining\nthe new state-of-the-art. The proposed model performs 90.34% of accuracy for\nEMO-DB with CNN model, 90.42% of accuracy for RAVDESS with CNN model, 99.48% of\naccuracy for TESS with LSTM model, 69.72% of accuracy for CREMA with CNN model,\n85.76% of accuracy for SAVEE with CNN model in speaker-independent audio\ncategorization problems.\n",
+        "published": "2023",
+        "authors": [
+            "Zeynep Hilal Kilimci",
+            "Ulku Bayraktar",
+            "Ayhan Kucukmanisa"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1910.09090v1",
+        "title": "A game method for improving the interpretability of convolution neural\n  network",
+        "abstract": "  Real artificial intelligence always has been focused on by many machine\nlearning researchers, especially in the area of deep learning. However deep\nneural network is hard to be understood and explained, and sometimes, even\nmetaphysics. The reason is, we believe that: the network is essentially a\nperceptual model. Therefore, we believe that in order to complete complex\nintelligent activities from simple perception, it is necessary to con-struct\nanother interpretable logical network to form accurate and reasonable responses\nand explanations to external things. Researchers like Bolei Zhou and Quanshi\nZhang have found many explanatory rules for deep feature extraction aimed at\nthe feature extraction stage of convolution neural network. However, although\nresearchers like Marco Gori have also made great efforts to improve the\ninterpretability of the fully connected layers of the network, the problem is\nalso very difficult. This paper firstly analyzes its reason. Then a method of\nconstructing logical network based on the fully connected layers and extracting\nlogical relation between input and output of the layers is proposed. The game\nprocess between perceptual learning and logical abstract cognitive learning is\nimplemented to improve the interpretable performance of deep learning process\nand deep learning model. The benefits of our approach are illustrated on\nbenchmark data sets and in real-world experiments.\n",
+        "published": "2019",
+        "authors": [
+            "Jinwei Zhao",
+            "Qizhou Wang",
+            "Fuqiang Zhang",
+            "Wanli Qiu",
+            "Yufei Wang",
+            "Yu Liu",
+            "Guo Xie",
+            "Weigang Ma",
+            "Bin Wang",
+            "Xinhong Hei"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2010.00567v1",
+        "title": "Deep learning for time series classification",
+        "abstract": "  Time series analysis is a field of data science which is interested in\nanalyzing sequences of numerical values ordered in time. Time series are\nparticularly interesting because they allow us to visualize and understand the\nevolution of a process over time. Their analysis can reveal trends,\nrelationships and similarities across the data. There exists numerous fields\ncontaining data in the form of time series: health care (electrocardiogram,\nblood sugar, etc.), activity recognition, remote sensing, finance (stock market\nprice), industry (sensors), etc. Time series classification consists of\nconstructing algorithms dedicated to automatically label time series data. The\nsequential aspect of time series data requires the development of algorithms\nthat are able to harness this temporal property, thus making the existing\noff-the-shelf machine learning models for traditional tabular data suboptimal\nfor solving the underlying task. In this context, deep learning has emerged in\nrecent years as one of the most effective methods for tackling the supervised\nclassification task, particularly in the field of computer vision. The main\nobjective of this thesis was to study and develop deep neural networks\nspecifically constructed for the classification of time series data. We thus\ncarried out the first large scale experimental study allowing us to compare the\nexisting deep methods and to position them compared other non-deep learning\nbased state-of-the-art methods. Subsequently, we made numerous contributions in\nthis area, notably in the context of transfer learning, data augmentation,\nensembling and adversarial attacks. Finally, we have also proposed a novel\narchitecture, based on the famous Inception network (Google), which ranks among\nthe most efficient to date.\n",
+        "published": "2020",
+        "authors": [
+            "Hassan Ismail Fawaz"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2202.05240v3",
+        "title": "ChemicalX: A Deep Learning Library for Drug Pair Scoring",
+        "abstract": "  In this paper, we introduce ChemicalX, a PyTorch-based deep learning library\ndesigned for providing a range of state of the art models to solve the drug\npair scoring task. The primary objective of the library is to make deep drug\npair scoring models accessible to machine learning researchers and\npractitioners in a streamlined framework.The design of ChemicalX reuses\nexisting high level model training utilities, geometric deep learning, and deep\nchemistry layers from the PyTorch ecosystem. Our system provides neural network\nlayers, custom pair scoring architectures, data loaders, and batch iterators\nfor end users. We showcase these features with example code snippets and case\nstudies to highlight the characteristics of ChemicalX. A range of experiments\non real world drug-drug interaction, polypharmacy side effect, and combination\nsynergy prediction tasks demonstrate that the models available in ChemicalX are\neffective at solving the pair scoring task. Finally, we show that ChemicalX\ncould be used to train and score machine learning models on large drug pair\ndatasets with hundreds of thousands of compounds on commodity hardware.\n",
+        "published": "2022",
+        "authors": [
+            "Benedek Rozemberczki",
+            "Charles Tapley Hoyt",
+            "Anna Gogleva",
+            "Piotr Grabowski",
+            "Klas Karis",
+            "Andrej Lamov",
+            "Andriy Nikolov",
+            "Sebastian Nilsson",
+            "Michael Ughetto",
+            "Yu Wang",
+            "Tyler Derr",
+            "Benjamin M Gyori"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2104.13478v2",
+        "title": "Geometric Deep Learning: Grids, Groups, Graphs, Geodesics, and Gauges",
+        "abstract": "  The last decade has witnessed an experimental revolution in data science and\nmachine learning, epitomised by deep learning methods. Indeed, many\nhigh-dimensional learning tasks previously thought to be beyond reach -- such\nas computer vision, playing Go, or protein folding -- are in fact feasible with\nappropriate computational scale. Remarkably, the essence of deep learning is\nbuilt from two simple algorithmic principles: first, the notion of\nrepresentation or feature learning, whereby adapted, often hierarchical,\nfeatures capture the appropriate notion of regularity for each task, and\nsecond, learning by local gradient-descent type methods, typically implemented\nas backpropagation.\n  While learning generic functions in high dimensions is a cursed estimation\nproblem, most tasks of interest are not generic, and come with essential\npre-defined regularities arising from the underlying low-dimensionality and\nstructure of the physical world. This text is concerned with exposing these\nregularities through unified geometric principles that can be applied\nthroughout a wide spectrum of applications.\n  Such a 'geometric unification' endeavour, in the spirit of Felix Klein's\nErlangen Program, serves a dual purpose: on one hand, it provides a common\nmathematical framework to study the most successful neural network\narchitectures, such as CNNs, RNNs, GNNs, and Transformers. On the other hand,\nit gives a constructive procedure to incorporate prior physical knowledge into\nneural architectures and provide principled way to build future architectures\nyet to be invented.\n",
+        "published": "2021",
+        "authors": [
+            "Michael M. Bronstein",
+            "Joan Bruna",
+            "Taco Cohen",
+            "Petar Veli\u010dkovi\u0107"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2310.19231v1",
+        "title": "There Are No Data Like More Data- Datasets for Deep Learning in Earth\n  Observation",
+        "abstract": "  Carefully curated and annotated datasets are the foundation of machine\nlearning, with particularly data-hungry deep neural networks forming the core\nof what is often called Artificial Intelligence (AI). Due to the massive\nsuccess of deep learning applied to Earth Observation (EO) problems, the focus\nof the community has been largely on the development of ever-more sophisticated\ndeep neural network architectures and training strategies largely ignoring the\noverall importance of datasets. For that purpose, numerous task-specific\ndatasets have been created that were largely ignored by previously published\nreview articles on AI for Earth observation. With this article, we want to\nchange the perspective and put machine learning datasets dedicated to Earth\nobservation data and applications into the spotlight. Based on a review of the\nhistorical developments, currently available resources are described and a\nperspective for future developments is formed. We hope to contribute to an\nunderstanding that the nature of our data is what distinguishes the Earth\nobservation community from many other communities that apply deep learning\ntechniques to image data, and that a detailed understanding of EO data\npeculiarities is among the core competencies of our discipline.\n",
+        "published": "2023",
+        "authors": [
+            "Michael Schmitt",
+            "Seyed Ali Ahmadi",
+            "Yonghao Xu",
+            "Gulsen Taskin",
+            "Ujjwal Verma",
+            "Francescopaolo Sica",
+            "Ronny Hansch"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2311.05790v1",
+        "title": "The Paradox of Noise: An Empirical Study of Noise-Infusion Mechanisms to\n  Improve Generalization, Stability, and Privacy in Federated Learning",
+        "abstract": "  In a data-centric era, concerns regarding privacy and ethical data handling\ngrow as machine learning relies more on personal information. This empirical\nstudy investigates the privacy, generalization, and stability of deep learning\nmodels in the presence of additive noise in federated learning frameworks. Our\nmain objective is to provide strategies to measure the generalization,\nstability, and privacy-preserving capabilities of these models and further\nimprove them. To this end, five noise infusion mechanisms at varying noise\nlevels within centralized and federated learning settings are explored. As\nmodel complexity is a key component of the generalization and stability of deep\nlearning models during training and evaluation, a comparative analysis of three\nConvolutional Neural Network (CNN) architectures is provided. The paper\nintroduces Signal-to-Noise Ratio (SNR) as a quantitative measure of the\ntrade-off between privacy and training accuracy of noise-infused models, aiming\nto find the noise level that yields optimal privacy and accuracy. Moreover, the\nPrice of Stability and Price of Anarchy are defined in the context of\nprivacy-preserving deep learning, contributing to the systematic investigation\nof the noise infusion strategies to enhance privacy without compromising\nperformance. Our research sheds light on the delicate balance between these\ncritical factors, fostering a deeper understanding of the implications of\nnoise-based regularization in machine learning. By leveraging noise as a tool\nfor regularization and privacy enhancement, we aim to contribute to the\ndevelopment of robust, privacy-aware algorithms, ensuring that AI-driven\nsolutions prioritize both utility and privacy.\n",
+        "published": "2023",
+        "authors": [
+            "Elaheh Jafarigol",
+            "Theodore Trafalis"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2004.12059v2",
+        "title": "SAIA: Split Artificial Intelligence Architecture for Mobile Healthcare\n  System",
+        "abstract": "  As the advancement of deep learning (DL), the Internet of Things and cloud\ncomputing techniques for biomedical and healthcare problems, mobile healthcare\nsystems have received unprecedented attention. Since DL techniques usually\nrequire enormous amount of computation, most of them cannot be directly\ndeployed on the resource-constrained mobile and IoT devices. Hence, most of the\nmobile healthcare systems leverage the cloud computing infrastructure, where\nthe data collected by the mobile and IoT devices would be transmitted to the\ncloud computing platforms for analysis. However, in the contested environments,\nrelying on the cloud might not be practical at all times. For instance, the\nsatellite communication might be denied or disrupted. We propose SAIA, a Split\nArtificial Intelligence Architecture for mobile healthcare systems. Unlike\ntraditional approaches for artificial intelligence (AI) which solely exploits\nthe computational power of the cloud server, SAIA could not only relies on the\ncloud computing infrastructure while the wireless communication is available,\nbut also utilizes the lightweight AI solutions that work locally on the client\nside, hence, it can work even when the communication is impeded. In SAIA, we\npropose a meta-information based decision unit, that could tune whether a\nsample captured by the client should be operated by the embedded AI (i.e.,\nkeeping on the client) or the networked AI (i.e., sending to the server), under\ndifferent conditions. In our experimental evaluation, extensive experiments\nhave been conducted on two popular healthcare datasets. Our results show that\nSAIA consistently outperforms its baselines in terms of both effectiveness and\nefficiency.\n",
+        "published": "2020",
+        "authors": [
+            "Di Zhuang",
+            "Nam Nguyen",
+            "Keyu Chen",
+            "J. Morris Chang"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2107.06179v2",
+        "title": "Application of artificial intelligence techniques for automated\n  detection of myocardial infarction: A review",
+        "abstract": "  Myocardial infarction (MI) results in heart muscle injury due to receiving\ninsufficient blood flow. MI is the most common cause of mortality in\nmiddle-aged and elderly individuals around the world. To diagnose MI,\nclinicians need to interpret electrocardiography (ECG) signals, which requires\nexpertise and is subject to observer bias. Artificial intelligence-based\nmethods can be utilized to screen for or diagnose MI automatically using ECG\nsignals. In this work, we conducted a comprehensive assessment of artificial\nintelligence-based approaches for MI detection based on ECG as well as other\nbiophysical signals, including machine learning (ML) and deep learning (DL)\nmodels. The performance of traditional ML methods relies on handcrafted\nfeatures and manual selection of ECG signals, whereas DL models can automate\nthese tasks. The review observed that deep convolutional neural networks\n(DCNNs) yielded excellent classification performance for MI diagnosis, which\nexplains why they have become prevalent in recent years. To our knowledge, this\nis the first comprehensive survey of artificial intelligence techniques\nemployed for MI diagnosis using ECG and other biophysical signals.\n",
+        "published": "2021",
+        "authors": [
+            "Javad Hassannataj Joloudari",
+            "Sanaz Mojrian",
+            "Issa Nodehi",
+            "Amir Mashmool",
+            "Zeynab Kiani Zadegan",
+            "Sahar Khanjani Shirkharkolaie",
+            "Roohallah Alizadehsani",
+            "Tahereh Tamadon",
+            "Samiyeh Khosravi",
+            "Mitra Akbari Kohnehshari",
+            "Edris Hassannatajjeloudari",
+            "Danial Sharifrazi",
+            "Amir Mosavi",
+            "Hui Wen Loh",
+            "Ru-San Tan",
+            "U Rajendra Acharya"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2202.03407v2",
+        "title": "Investigating the fidelity of explainable artificial intelligence\n  methods for applications of convolutional neural networks in geoscience",
+        "abstract": "  Convolutional neural networks (CNNs) have recently attracted great attention\nin geoscience due to their ability to capture non-linear system behavior and\nextract predictive spatiotemporal patterns. Given their black-box nature\nhowever, and the importance of prediction explainability, methods of\nexplainable artificial intelligence (XAI) are gaining popularity as a means to\nexplain the CNN decision-making strategy. Here, we establish an intercomparison\nof some of the most popular XAI methods and investigate their fidelity in\nexplaining CNN decisions for geoscientific applications. Our goal is to raise\nawareness of the theoretical limitations of these methods and gain insight into\nthe relative strengths and weaknesses to help guide best practices. The\nconsidered XAI methods are first applied to an idealized attribution benchmark,\nwhere the ground truth of explanation of the network is known a priori, to help\nobjectively assess their performance. Secondly, we apply XAI to a\nclimate-related prediction setting, namely to explain a CNN that is trained to\npredict the number of atmospheric rivers in daily snapshots of climate\nsimulations. Our results highlight several important issues of XAI methods\n(e.g., gradient shattering, inability to distinguish the sign of attribution,\nignorance to zero input) that have previously been overlooked in our field and,\nif not considered cautiously, may lead to a distorted picture of the CNN\ndecision-making strategy. We envision that our analysis will motivate further\ninvestigation into XAI fidelity and will help towards a cautious implementation\nof XAI in geoscience, which can lead to further exploitation of CNNs and deep\nlearning for prediction problems.\n",
+        "published": "2022",
+        "authors": [
+            "Antonios Mamalakis",
+            "Elizabeth A. Barnes",
+            "Imme Ebert-Uphoff"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1810.02688v2",
+        "title": "Wikistat 2.0: Educational Resources for Artificial Intelligence",
+        "abstract": "  Big data, data science, deep learning, artificial intelligence are the key\nwords of intense hype related with a job market in full evolution, that impose\nto adapt the contents of our university professional trainings. Which\nartificial intelligence is mostly concerned by the job offers? Which\nmethodologies and technologies should be favored in the training programs?\nWhich objectives, tools and educational resources do we needed to put in place\nto meet these pressing needs? We answer these questions in describing the\ncontents and operational resources in the Data Science orientation of the\nspecialty Applied Mathematics at INSA Toulouse. We focus on basic mathematics\ntraining (Optimization, Probability, Statistics), associated with the practical\nimplementation of the most performing statistical learning algorithms, with the\nmost appropriate technologies and on real examples. Considering the huge\nvolatility of the technologies, it is imperative to train students in\nseft-training, this will be their technological watch tool when they will be in\nprofessional activity. This explains the structuring of the educational site\ngithub.com/wikistat into a set of tutorials. Finally, to motivate the thorough\npractice of these tutorials, a serious game is organized each year in the form\nof a prediction contest between students of Master degrees in Applied\nMathematics for IA.\n",
+        "published": "2018",
+        "authors": [
+            "Philippe Besse",
+            "Brendan Guillouet",
+            "B\u00e9atrice Laurent"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1911.08584v1",
+        "title": "Neocortical plasticity: an unsupervised cake but no free lunch",
+        "abstract": "  The fields of artificial intelligence and neuroscience have a long history of\nfertile bi-directional interactions. On the one hand, important inspiration for\nthe development of artificial intelligence systems has come from the study of\nnatural systems of intelligence, the mammalian neocortex in particular. On the\nother, important inspiration for models and theories of the brain have emerged\nfrom artificial intelligence research. A central question at the intersection\nof these two areas is concerned with the processes by which neocortex learns,\nand the extent to which they are analogous to the back-propagation training\nalgorithm of deep networks. Matching the data efficiency, transfer and\ngeneralization properties of neocortical learning remains an area of active\nresearch in the field of deep learning. Recent advances in our understanding of\nneuronal, synaptic and dendritic physiology of the neocortex suggest new\napproaches for unsupervised representation learning, perhaps through a new\nclass of objective functions, which could act alongside or in lieu of\nback-propagation. Such local learning rules have implicit rather than explicit\nobjectives with respect to the training data, facilitating domain adaptation\nand generalization. Incorporating them into deep networks for representation\nlearning could better leverage unlabelled datasets to offer significant\nimprovements in data efficiency of downstream supervised readout learning, and\nreduce susceptibility to adversarial perturbations, at the cost of a more\nrestricted domain of applicability.\n",
+        "published": "2019",
+        "authors": [
+            "Eilif B. Muller",
+            "Philippe Beaudoin"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2103.04244v2",
+        "title": "Counterfactuals and Causability in Explainable Artificial Intelligence:\n  Theory, Algorithms, and Applications",
+        "abstract": "  There has been a growing interest in model-agnostic methods that can make\ndeep learning models more transparent and explainable to a user. Some\nresearchers recently argued that for a machine to achieve a certain degree of\nhuman-level explainability, this machine needs to provide human causally\nunderstandable explanations, also known as causability. A specific class of\nalgorithms that have the potential to provide causability are counterfactuals.\nThis paper presents an in-depth systematic review of the diverse existing body\nof literature on counterfactuals and causability for explainable artificial\nintelligence. We performed an LDA topic modelling analysis under a PRISMA\nframework to find the most relevant literature articles. This analysis resulted\nin a novel taxonomy that considers the grounding theories of the surveyed\nalgorithms, together with their underlying properties and applications in\nreal-world data. This research suggests that current model-agnostic\ncounterfactual algorithms for explainable AI are not grounded on a causal\ntheoretical formalism and, consequently, cannot promote causability to a human\ndecision-maker. Our findings suggest that the explanations derived from major\nalgorithms in the literature provide spurious correlations rather than\ncause/effects relationships, leading to sub-optimal, erroneous or even biased\nexplanations. This paper also advances the literature with new directions and\nchallenges on promoting causability in model-agnostic approaches for\nexplainable artificial intelligence.\n",
+        "published": "2021",
+        "authors": [
+            "Yu-Liang Chou",
+            "Catarina Moreira",
+            "Peter Bruza",
+            "Chun Ouyang",
+            "Joaquim Jorge"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2309.01038v1",
+        "title": "Neurosymbolic Reinforcement Learning and Planning: A Survey",
+        "abstract": "  The area of Neurosymbolic Artificial Intelligence (Neurosymbolic AI) is\nrapidly developing and has become a popular research topic, encompassing\nsub-fields such as Neurosymbolic Deep Learning (Neurosymbolic DL) and\nNeurosymbolic Reinforcement Learning (Neurosymbolic RL). Compared to\ntraditional learning methods, Neurosymbolic AI offers significant advantages by\nsimplifying complexity and providing transparency and explainability.\nReinforcement Learning(RL), a long-standing Artificial Intelligence(AI) concept\nthat mimics human behavior using rewards and punishment, is a fundamental\ncomponent of Neurosymbolic RL, a recent integration of the two fields that has\nyielded promising results. The aim of this paper is to contribute to the\nemerging field of Neurosymbolic RL by conducting a literature survey. Our\nevaluation focuses on the three components that constitute Neurosymbolic RL:\nneural, symbolic, and RL. We categorize works based on the role played by the\nneural and symbolic parts in RL, into three taxonomies:Learning for Reasoning,\nReasoning for Learning and Learning-Reasoning. These categories are further\ndivided into sub-categories based on their applications. Furthermore, we\nanalyze the RL components of each research work, including the state space,\naction space, policy module, and RL algorithm. Additionally, we identify\nresearch opportunities and challenges in various applications within this\ndynamic field.\n",
+        "published": "2023",
+        "authors": [
+            "K. Acharya",
+            "W. Raza",
+            "C. M. J. M. Dourado Jr",
+            "A. Velasquez",
+            "H. Song"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1903.12069v1",
+        "title": "The Virtual Doctor: An Interactive Artificial Intelligence based on Deep\n  Learning for Non-Invasive Prediction of Diabetes",
+        "abstract": "  Artificial intelligence (AI) will pave the way to a new era in medicine.\nHowever, currently available AI systems do not interact with a patient, e.g.,\nfor anamnesis, and thus are only used by the physicians for predictions in\ndiagnosis or prognosis. However, these systems are widely used, e.g., in\ndiabetes or cancer prediction. In the current study, we developed an AI that is\nable to interact with a patient (virtual doctor) by using a speech recognition\nand speech synthesis system and thus can autonomously interact with the\npatient, which is particularly important for, e.g., rural areas, where the\navailability of primary medical care is strongly limited by low population\ndensities. As a proof-of-concept, the system is able to predict type 2 diabetes\nmellitus (T2DM) based on non-invasive sensors and deep neural networks.\nMoreover, the system provides an easy-to-interpret probability estimation for\nT2DM for a given patient. Besides the development of the AI, we further\nanalyzed the acceptance of young people for AI in healthcare to estimate the\nimpact of such system in the future.\n",
+        "published": "2019",
+        "authors": [
+            "Sebastian Sp\u00e4nig",
+            "Agnes Emberger-Klein",
+            "Jan-Peter Sowa",
+            "Ali Canbay",
+            "Klaus Menrad",
+            "Dominik Heider"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2202.10336v1",
+        "title": "Artificial Intelligence for the Metaverse: A Survey",
+        "abstract": "  Along with the massive growth of the Internet from the 1990s until now,\nvarious innovative technologies have been created to bring users breathtaking\nexperiences with more virtual interactions in cyberspace. Many virtual\nenvironments with thousands of services and applications, from social networks\nto virtual gaming worlds, have been developed with immersive experience and\ndigital transformation, but most are incoherent instead of being integrated\ninto a platform. In this context, metaverse, a term formed by combining meta\nand universe, has been introduced as a shared virtual world that is fueled by\nmany emerging technologies, such as fifth-generation networks and beyond,\nvirtual reality, and artificial intelligence (AI). Among such technologies, AI\nhas shown the great importance of processing big data to enhance immersive\nexperience and enable human-like intelligence of virtual agents. In this\nsurvey, we make a beneficial effort to explore the role of AI in the foundation\nand development of the metaverse. We first deliver a preliminary of AI,\nincluding machine learning algorithms and deep learning architectures, and its\nrole in the metaverse. We then convey a comprehensive investigation of AI-based\nmethods concerning six technical aspects that have potentials for the\nmetaverse: natural language processing, machine vision, blockchain, networking,\ndigital twin, and neural interface, and being potential for the metaverse.\nSubsequently, several AI-aided applications, such as healthcare, manufacturing,\nsmart cities, and gaming, are studied to be deployed in the virtual worlds.\nFinally, we conclude the key contribution of this survey and open some future\nresearch directions in AI for the metaverse.\n",
+        "published": "2022",
+        "authors": [
+            "Thien Huynh-The",
+            "Quoc-Viet Pham",
+            "Xuan-Qui Pham",
+            "Thanh Thi Nguyen",
+            "Zhu Han",
+            "Dong-Seong Kim"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2111.00601v1",
+        "title": "Explainable Artificial Intelligence for Smart City Application: A Secure\n  and Trusted Platform",
+        "abstract": "  Artificial Intelligence (AI) is one of the disruptive technologies that is\nshaping the future. It has growing applications for data-driven decisions in\nmajor smart city solutions, including transportation, education, healthcare,\npublic governance, and power systems. At the same time, it is gaining\npopularity in protecting critical cyber infrastructure from cyber threats,\nattacks, damages, or unauthorized access. However, one of the significant\nissues of those traditional AI technologies (e.g., deep learning) is that the\nrapid progress in complexity and sophistication propelled and turned out to be\nuninterpretable black boxes. On many occasions, it is very challenging to\nunderstand the decision and bias to control and trust systems' unexpected or\nseemingly unpredictable outputs. It is acknowledged that the loss of control\nover interpretability of decision-making becomes a critical issue for many\ndata-driven automated applications. But how may it affect the system's security\nand trustworthiness? This chapter conducts a comprehensive study of machine\nlearning applications in cybersecurity to indicate the need for explainability\nto address this question. While doing that, this chapter first discusses the\nblack-box problems of AI technologies for Cybersecurity applications in smart\ncity-based solutions. Later, considering the new technological paradigm,\nExplainable Artificial Intelligence (XAI), this chapter discusses the\ntransition from black-box to white-box. This chapter also discusses the\ntransition requirements concerning the interpretability, transparency,\nunderstandability, and Explainability of AI-based technologies in applying\ndifferent autonomous systems in smart cities. Finally, it has presented some\ncommercial XAI platforms that offer explainability over traditional AI\ntechnologies before presenting future challenges and opportunities.\n",
+        "published": "2021",
+        "authors": [
+            "M. Humayn Kabir",
+            "Khondokar Fida Hasan",
+            "Mohammad Kamrul Hasan",
+            "Keyvan Ansari"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2303.18062v1",
+        "title": "Solving morphological analogies: from retrieval to generation",
+        "abstract": "  Analogical inference is a remarkable capability of human reasoning, and has\nbeen used to solve hard reasoning tasks. Analogy based reasoning (AR) has\ngained increasing interest from the artificial intelligence community and has\nshown its potential in multiple machine learning tasks such as classification,\ndecision making and recommendation with competitive results. We propose a deep\nlearning (DL) framework to address and tackle two key tasks in AR: analogy\ndetection and solving. The framework is thoroughly tested on the Siganalogies\ndataset of morphological analogical proportions (APs) between words, and shown\nto outperform symbolic approaches in many languages. Previous work have\nexplored the behavior of the Analogy Neural Network for classification (ANNc)\non analogy detection and of the Analogy Neural Network for retrieval (ANNr) on\nanalogy solving by retrieval, as well as the potential of an autoencoder (AE)\nfor analogy solving by generating the solution word. In this article we\nsummarize these findings and we extend them by combining ANNr and the AE\nembedding model, and checking the performance of ANNc as an retrieval method.\nThe combination of ANNr and AE outperforms the other approaches in almost all\ncases, and ANNc as a retrieval method achieves competitive or better\nperformance than 3CosMul. We conclude with general guidelines on using our\nframework to tackle APs with DL.\n",
+        "published": "2023",
+        "authors": [
+            "Esteban Marquer",
+            "Miguel Couceiro"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2309.14383v1",
+        "title": "Towards using Cough for Respiratory Disease Diagnosis by leveraging\n  Artificial Intelligence: A Survey",
+        "abstract": "  Cough acoustics contain multitudes of vital information about\npathomorphological alterations in the respiratory system. Reliable and accurate\ndetection of cough events by investigating the underlying cough latent features\nand disease diagnosis can play an indispensable role in revitalizing the\nhealthcare practices. The recent application of Artificial Intelligence (AI)\nand advances of ubiquitous computing for respiratory disease prediction has\ncreated an auspicious trend and myriad of future possibilities in the medical\ndomain. In particular, there is an expeditiously emerging trend of Machine\nlearning (ML) and Deep Learning (DL)-based diagnostic algorithms exploiting\ncough signatures. The enormous body of literature on cough-based AI algorithms\ndemonstrate that these models can play a significant role for detecting the\nonset of a specific respiratory disease. However, it is pertinent to collect\nthe information from all relevant studies in an exhaustive manner for the\nmedical experts and AI scientists to analyze the decisive role of AI/ML. This\nsurvey offers a comprehensive overview of the cough data-driven ML/DL detection\nand preliminary diagnosis frameworks, along with a detailed list of significant\nfeatures. We investigate the mechanism that causes cough and the latent cough\nfeatures of the respiratory modalities. We also analyze the customized cough\nmonitoring application, and their AI-powered recognition algorithms. Challenges\nand prospective future research directions to develop practical, robust, and\nubiquitous solutions are also discussed in detail.\n",
+        "published": "2023",
+        "authors": [
+            "Aneeqa Ijaz",
+            "Muhammad Nabeel",
+            "Usama Masood",
+            "Tahir Mahmood",
+            "Mydah Sajid Hashmi",
+            "Iryna Posokhova",
+            "Ali Rizwan",
+            "Ali Imran"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1412.6451v1",
+        "title": "Grounding Hierarchical Reinforcement Learning Models for Knowledge\n  Transfer",
+        "abstract": "  Methods of deep machine learning enable to to reuse low-level representations\nefficiently for generating more abstract high-level representations.\nOriginally, deep learning has been applied passively (e.g., for classification\npurposes). Recently, it has been extended to estimate the value of actions for\nautonomous agents within the framework of reinforcement learning (RL). Explicit\nmodels of the environment can be learned to augment such a value function.\nAlthough \"flat\" connectionist methods have already been used for model-based\nRL, up to now, only model-free variants of RL have been equipped with methods\nfrom deep learning. We propose a variant of deep model-based RL that enables an\nagent to learn arbitrarily abstract hierarchical representations of its\nenvironment. In this paper, we present research on how such hierarchical\nrepresentations can be grounded in sensorimotor interaction between an agent\nand its environment.\n",
+        "published": "2014",
+        "authors": [
+            "Mark Wernsdorfer",
+            "Ute Schmid"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1509.05962v2",
+        "title": "Telugu OCR Framework using Deep Learning",
+        "abstract": "  In this paper, we address the task of Optical Character Recognition(OCR) for\nthe Telugu script. We present an end-to-end framework that segments the text\nimage, classifies the characters and extracts lines using a language model. The\nsegmentation is based on mathematical morphology. The classification module,\nwhich is the most challenging task of the three, is a deep convolutional neural\nnetwork. The language is modelled as a third degree markov chain at the glyph\nlevel. Telugu script is a complex alphasyllabary and the language is\nagglutinative, making the problem hard. In this paper we apply the latest\nadvances in neural networks to achieve state-of-the-art error rates. We also\nreview convolutional neural networks in great detail and expound the\nstatistical justification behind the many tricks needed to make Deep Learning\nwork.\n",
+        "published": "2015",
+        "authors": [
+            "Rakesh Achanta",
+            "Trevor Hastie"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1609.04508v2",
+        "title": "Column Networks for Collective Classification",
+        "abstract": "  Relational learning deals with data that are characterized by relational\nstructures. An important task is collective classification, which is to jointly\nclassify networked objects. While it holds a great promise to produce a better\naccuracy than non-collective classifiers, collective classification is\ncomputational challenging and has not leveraged on the recent breakthroughs of\ndeep learning. We present Column Network (CLN), a novel deep learning model for\ncollective classification in multi-relational domains. CLN has many desirable\ntheoretical properties: (i) it encodes multi-relations between any two\ninstances; (ii) it is deep and compact, allowing complex functions to be\napproximated at the network level with a small set of free parameters; (iii)\nlocal and relational features are learned simultaneously; (iv) long-range,\nhigher-order dependencies between instances are supported naturally; and (v)\ncrucially, learning and inference are efficient, linear in the size of the\nnetwork and the number of relations. We evaluate CLN on multiple real-world\napplications: (a) delay prediction in software projects, (b) PubMed Diabetes\npublication classification and (c) film genre classification. In all\napplications, CLN demonstrates a higher accuracy than state-of-the-art rivals.\n",
+        "published": "2016",
+        "authors": [
+            "Trang Pham",
+            "Truyen Tran",
+            "Dinh Phung",
+            "Svetha Venkatesh"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1706.10239v2",
+        "title": "Towards Understanding Generalization of Deep Learning: Perspective of\n  Loss Landscapes",
+        "abstract": "  It is widely observed that deep learning models with learned parameters\ngeneralize well, even with much more model parameters than the number of\ntraining samples. We systematically investigate the underlying reasons why deep\nneural networks often generalize well, and reveal the difference between the\nminima (with the same training error) that generalize well and those they\ndon't. We show that it is the characteristics the landscape of the loss\nfunction that explains the good generalization capability. For the landscape of\nloss function for deep networks, the volume of basin of attraction of good\nminima dominates over that of poor minima, which guarantees optimization\nmethods with random initialization to converge to good minima. We theoretically\njustify our findings through analyzing 2-layer neural networks; and show that\nthe low-complexity solutions have a small norm of Hessian matrix with respect\nto model parameters. For deeper networks, extensive numerical evidence helps to\nsupport our arguments.\n",
+        "published": "2017",
+        "authors": [
+            "Lei Wu",
+            "Zhanxing Zhu",
+            "Weinan E"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1711.03640v1",
+        "title": "Stochastic Deep Learning in Memristive Networks",
+        "abstract": "  We study the performance of stochastically trained deep neural networks\n(DNNs) whose synaptic weights are implemented using emerging memristive devices\nthat exhibit limited dynamic range, resolution, and variability in their\nprogramming characteristics. We show that a key device parameter to optimize\nthe learning efficiency of DNNs is the variability in its programming\ncharacteristics. DNNs with such memristive synapses, even with dynamic range as\nlow as $15$ and only $32$ discrete levels, when trained based on stochastic\nupdates suffer less than $3\\%$ loss in accuracy compared to floating point\nsoftware baseline. We also study the performance of stochastic memristive DNNs\nwhen used as inference engines with noise corrupted data and find that if the\ndevice variability can be minimized, the relative degradation in performance\nfor the Stochastic DNN is better than that of the software baseline. Hence, our\nstudy presents a new optimization corner for memristive devices for building\nlarge noise-immune deep learning systems.\n",
+        "published": "2017",
+        "authors": [
+            "Anakha V Babu",
+            "Bipin Rajendran"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1711.10604v1",
+        "title": "TensorFlow Distributions",
+        "abstract": "  The TensorFlow Distributions library implements a vision of probability\ntheory adapted to the modern deep-learning paradigm of end-to-end\ndifferentiable computation. Building on two basic abstractions, it offers\nflexible building blocks for probabilistic computation. Distributions provide\nfast, numerically stable methods for generating samples and computing\nstatistics, e.g., log density. Bijectors provide composable volume-tracking\ntransformations with automatic caching. Together these enable modular\nconstruction of high dimensional distributions and transformations not possible\nwith previous libraries (e.g., pixelCNNs, autoregressive flows, and reversible\nresidual networks). They are the workhorse behind deep probabilistic\nprogramming systems like Edward and empower fast black-box inference in\nprobabilistic models built on deep-network components. TensorFlow Distributions\nhas proven an important part of the TensorFlow toolkit within Google and in the\nbroader deep learning community.\n",
+        "published": "2017",
+        "authors": [
+            "Joshua V. Dillon",
+            "Ian Langmore",
+            "Dustin Tran",
+            "Eugene Brevdo",
+            "Srinivas Vasudevan",
+            "Dave Moore",
+            "Brian Patton",
+            "Alex Alemi",
+            "Matt Hoffman",
+            "Rif A. Saurous"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1806.00806v2",
+        "title": "k-Space Deep Learning for Parallel MRI: Application to Time-Resolved MR\n  Angiography",
+        "abstract": "  Time-resolved angiography with interleaved stochastic trajectories (TWIST)\nhas been widely used for dynamic contrast enhanced MRI (DCE-MRI). To achieve\nhighly accelerated acquisitions, TWIST combines the periphery of the k-space\ndata from several adjacent frames to reconstruct one temporal frame. However,\nthis view-sharing scheme limits the true temporal resolution of TWIST.\nMoreover, the k-space sampling patterns have been specially designed for a\nspecific generalized autocalibrating partial parallel acquisition (GRAPPA)\nfactor so that it is not possible to reduce the number of view-sharing once the\nk-data is acquired. To address these issues, this paper proposes a novel\nk-space deep learning approach for parallel MRI. In particular, we have\ndesigned our neural network so that accurate k-space interpolations are\nperformed simultaneously for multiple coils by exploiting the redundancies\nalong the coils and images. Reconstruction results using in vivo TWIST data set\nconfirm that the proposed method can immediately generate high-quality\nreconstruction results with various choices of view- sharing, allowing us to\nexploit the trade-off between spatial and temporal resolution in time-resolved\nMR angiography.\n",
+        "published": "2018",
+        "authors": [
+            "Eunju Cha",
+            "Eung Yeop Kim",
+            "Jong Chul Ye"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1806.11463v3",
+        "title": "Bayesian Deep Learning on a Quantum Computer",
+        "abstract": "  Bayesian methods in machine learning, such as Gaussian processes, have great\nadvantages com-pared to other techniques. In particular, they provide estimates\nof the uncertainty associated with a prediction. Extending the Bayesian\napproach to deep architectures has remained a major challenge. Recent results\nconnected deep feedforward neural networks with Gaussian processes, allowing\ntraining without backpropagation. This connection enables us to leverage a\nquantum algorithm designed for Gaussian processes and develop a new algorithm\nfor Bayesian deep learning on quantum computers. The properties of the kernel\nmatrix in the Gaussian process ensure the efficient execution of the core\ncomponent of the protocol, quantum matrix inversion, providing an at least\npolynomial speedup over classical algorithms. Furthermore, we demonstrate the\nexecution of the algorithm on contemporary quantum computers and analyze its\nrobustness with respect to realistic noise models.\n",
+        "published": "2018",
+        "authors": [
+            "Zhikuan Zhao",
+            "Alejandro Pozas-Kerstjens",
+            "Patrick Rebentrost",
+            "Peter Wittek"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1807.00847v1",
+        "title": "Make (Nearly) Every Neural Network Better: Generating Neural Network\n  Ensembles by Weight Parameter Resampling",
+        "abstract": "  Deep Neural Networks (DNNs) have become increasingly popular in computer\nvision, natural language processing, and other areas. However, training and\nfine-tuning a deep learning model is computationally intensive and\ntime-consuming. We propose a new method to improve the performance of nearly\nevery model including pre-trained models. The proposed method uses an ensemble\napproach where the networks in the ensemble are constructed by reassigning\nmodel parameter values based on the probabilistic distribution of these\nparameters, calculated towards the end of the training process. For pre-trained\nmodels, this approach results in an additional training step (usually less than\none epoch). We perform a variety of analysis using the MNIST dataset and\nvalidate the approach with a number of DNN models using pre-trained models on\nthe ImageNet dataset.\n",
+        "published": "2018",
+        "authors": [
+            "Jiayi Liu",
+            "Samarth Tripathi",
+            "Unmesh Kurup",
+            "Mohak Shah"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1807.04585v2",
+        "title": "Deep Learning for Imbalance Data Classification using Class Expert\n  Generative Adversarial Network",
+        "abstract": "  Without any specific way for imbalance data classification, artificial\nintelligence algorithm cannot recognize data from minority classes easily. In\ngeneral, modifying the existing algorithm by assuming that the training data is\nimbalanced, is the only way to handle imbalance data. However, for a normal\ndata handling, this way mostly produces a deficient result. In this research,\nwe propose a class expert generative adversarial network (CE-GAN) as the\nsolution for imbalance data classification. CE-GAN is a modification in deep\nlearning algorithm architecture that does not have an assumption that the\ntraining data is imbalance data. Moreover, CE-GAN is designed to identify more\ndetail about the character of each class before classification step. CE-GAN has\nbeen proved in this research to give a good performance for imbalance data\nclassification.\n",
+        "published": "2018",
+        "authors": [
+            " Fanny",
+            "Tjeng Wawan Cenggoro"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1807.06538v6",
+        "title": "Cavity Filling: Pseudo-Feature Generation for Multi-Class Imbalanced\n  Data Problems in Deep Learning",
+        "abstract": "  Herein, we generate pseudo-features based on the multivariate probability\ndistributions obtained from the feature maps in layers of trained deep neural\nnetworks. Further, we augment the minor-class data based on these generated\npseudo-features to overcome the imbalanced data problems. The proposed method,\ni.e., cavity filling, improves the deep learning capabilities in several\nproblems because all the real-world data are observed to be imbalanced.\n",
+        "published": "2018",
+        "authors": [
+            "Tomohiko Konno",
+            "Michiaki Iwazume"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1807.10251v3",
+        "title": "Aggregated Learning: A Deep Learning Framework Based on\n  Information-Bottleneck Vector Quantization",
+        "abstract": "  Based on the notion of information bottleneck (IB), we formulate a\nquantization problem called \"IB quantization\". We show that IB quantization is\nequivalent to learning based on the IB principle. Under this equivalence, the\nstandard neural network models can be viewed as scalar (single sample) IB\nquantizers. It is known, from conventional rate-distortion theory, that scalar\nquantizers are inferior to vector (multi-sample) quantizers. Such a deficiency\nthen inspires us to develop a novel learning framework, AgrLearn, that\ncorresponds to vector IB quantizers for learning with neural networks. Unlike\nstandard networks, AgrLearn simultaneously optimizes against multiple data\nsamples. We experimentally verify that AgrLearn can result in significant\nimprovements when applied to several current deep learning architectures for\nimage recognition and text classification. We also empirically show that\nAgrLearn can reduce up to 80% of the training samples needed for ResNet\ntraining.\n",
+        "published": "2018",
+        "authors": [
+            "Hongyu Guo",
+            "Yongyi Mao",
+            "Ali Al-Bashabsheh",
+            "Richong Zhang"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1811.04132v1",
+        "title": "Reasoning over RDF Knowledge Bases using Deep Learning",
+        "abstract": "  Semantic Web knowledge representation standards, and in particular RDF and\nOWL, often come endowed with a formal semantics which is considered to be of\nfundamental importance for the field. Reasoning, i.e., the drawing of logical\ninferences from knowledge expressed in such standards, is traditionally based\non logical deductive methods and algorithms which can be proven to be sound and\ncomplete and terminating, i.e. correct in a very strong sense. For various\nreasons, though, in particular, the scalability issues arising from the\never-increasing amounts of Semantic Web data available and the inability of\ndeductive algorithms to deal with noise in the data, it has been argued that\nalternative means of reasoning should be investigated which bear high promise\nfor high scalability and better robustness. From this perspective, deductive\nalgorithms can be considered the gold standard regarding correctness against\nwhich alternative methods need to be tested. In this paper, we show that it is\npossible to train a Deep Learning system on RDF knowledge graphs, such that it\nis able to perform reasoning over new RDF knowledge graphs, with high precision\nand recall compared to the deductive gold standard.\n",
+        "published": "2018",
+        "authors": [
+            "Monireh Ebrahimi",
+            "Md Kamruzzaman Sarker",
+            "Federico Bianchi",
+            "Ning Xie",
+            "Derek Doran",
+            "Pascal Hitzler"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1811.04376v1",
+        "title": "Explaining Deep Learning Models using Causal Inference",
+        "abstract": "  Although deep learning models have been successfully applied to a variety of\ntasks, due to the millions of parameters, they are becoming increasingly opaque\nand complex. In order to establish trust for their widespread commercial use,\nit is important to formalize a principled framework to reason over these\nmodels. In this work, we use ideas from causal inference to describe a general\nframework to reason over CNN models. Specifically, we build a Structural Causal\nModel (SCM) as an abstraction over a specific aspect of the CNN. We also\nformulate a method to quantitatively rank the filters of a convolution layer\naccording to their counterfactual importance. We illustrate our approach with\npopular CNN architectures such as LeNet5, VGG19, and ResNet32.\n",
+        "published": "2018",
+        "authors": [
+            "Tanmayee Narendra",
+            "Anush Sankaran",
+            "Deepak Vijaykeerthy",
+            "Senthil Mani"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1811.04504v2",
+        "title": "SLANG: Fast Structured Covariance Approximations for Bayesian Deep\n  Learning with Natural Gradient",
+        "abstract": "  Uncertainty estimation in large deep-learning models is a computationally\nchallenging task, where it is difficult to form even a Gaussian approximation\nto the posterior distribution. In such situations, existing methods usually\nresort to a diagonal approximation of the covariance matrix despite, the fact\nthat these matrices are known to result in poor uncertainty estimates. To\naddress this issue, we propose a new stochastic, low-rank, approximate\nnatural-gradient (SLANG) method for variational inference in large, deep\nmodels. Our method estimates a \"diagonal plus low-rank\" structure based solely\non back-propagated gradients of the network log-likelihood. This requires\nstrictly less gradient computations than methods that compute the gradient of\nthe whole variational objective. Empirical evaluations on standard benchmarks\nconfirm that SLANG enables faster and more accurate estimation of uncertainty\nthan mean-field methods, and performs comparably to state-of-the-art methods.\n",
+        "published": "2018",
+        "authors": [
+            "Aaron Mishkin",
+            "Frederik Kunstner",
+            "Didrik Nielsen",
+            "Mark Schmidt",
+            "Mohammad Emtiyaz Khan"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1901.02057v2",
+        "title": "A General End-to-end Diagnosis Framework for Manufacturing Systems",
+        "abstract": "  The manufacturing sector is envisioned to be heavily influenced by artificial\nintelligence-based technologies with the extraordinary increases in\ncomputational power and data volumes. A central challenge in manufacturing\nsector lies in the requirement of a general framework to ensure satisfied\ndiagnosis and monitoring performances in different manufacturing applications.\nHere we propose a general data-driven, end-to-end framework for the monitoring\nof manufacturing systems. This framework, derived from deep learning\ntechniques, evaluates fused sensory measurements to detect and even predict\nfaults and wearing conditions. This work exploits the predictive power of deep\nlearning to automatically extract hidden degradation features from noisy,\ntime-course data. We have experimented the proposed framework on ten\nrepresentative datasets drawn from a wide variety of manufacturing\napplications. Results reveal that the framework performs well in examined\nbenchmark applications and can be applied in diverse contexts, indicating its\npotential use as a critical corner stone in smart manufacturing.\n",
+        "published": "2018",
+        "authors": [
+            "Ye Yuan",
+            "Guijun Ma",
+            "Cheng Cheng",
+            "Beitong Zhou",
+            "Huan Zhao",
+            "Hai-Tao Zhang",
+            "Han Ding"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1902.10644v2",
+        "title": "Provable Guarantees for Gradient-Based Meta-Learning",
+        "abstract": "  We study the problem of meta-learning through the lens of online convex\noptimization, developing a meta-algorithm bridging the gap between popular\ngradient-based meta-learning and classical regularization-based multi-task\ntransfer methods. Our method is the first to simultaneously satisfy good sample\nefficiency guarantees in the convex setting, with generalization bounds that\nimprove with task-similarity, while also being computationally scalable to\nmodern deep learning architectures and the many-task setting. Despite its\nsimplicity, the algorithm matches, up to a constant factor, a lower bound on\nthe performance of any such parameter-transfer method under natural task\nsimilarity assumptions. We use experiments in both convex and deep learning\nsettings to verify and demonstrate the applicability of our theory.\n",
+        "published": "2019",
+        "authors": [
+            "Mikhail Khodak",
+            "Maria-Florina Balcan",
+            "Ameet Talwalkar"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2004.06518v3",
+        "title": "Gender Detection on Social Networks using Ensemble Deep Learning",
+        "abstract": "  Analyzing the ever-increasing volume of posts on social media sites such as\nFacebook and Twitter requires improved information processing methods for\nprofiling authorship. Document classification is central to this task, but the\nperformance of traditional supervised classifiers has degraded as the volume of\nsocial media has increased. This paper addresses this problem in the context of\ngender detection through ensemble classification that employs multi-model deep\nlearning architectures to generate specialized understanding from different\nfeature spaces.\n",
+        "published": "2020",
+        "authors": [
+            "Kamran Kowsari",
+            "Mojtaba Heidarysafa",
+            "Tolu Odukoya",
+            "Philip Potter",
+            "Laura E. Barnes",
+            "Donald E. Brown"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2004.07580v2",
+        "title": "If deep learning is the answer, then what is the question?",
+        "abstract": "  Neuroscience research is undergoing a minor revolution. Recent advances in\nmachine learning and artificial intelligence (AI) research have opened up new\nways of thinking about neural computation. Many researchers are excited by the\npossibility that deep neural networks may offer theories of perception,\ncognition and action for biological brains. This perspective has the potential\nto radically reshape our approach to understanding neural systems, because the\ncomputations performed by deep networks are learned from experience, not\nendowed by the researcher. If so, how can neuroscientists use deep networks to\nmodel and understand biological brains? What is the outlook for neuroscientists\nwho seek to characterise computations or neural codes, or who wish to\nunderstand perception, attention, memory, and executive functions? In this\nPerspective, our goal is to offer a roadmap for systems neuroscience research\nin the age of deep learning. We discuss the conceptual and methodological\nchallenges of comparing behaviour, learning dynamics, and neural representation\nin artificial and biological systems. We highlight new research questions that\nhave emerged for neuroscience as a direct consequence of recent advances in\nmachine learning.\n",
+        "published": "2020",
+        "authors": [
+            "Andrew Saxe",
+            "Stephanie Nelli",
+            "Christopher Summerfield"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2004.07636v2",
+        "title": "Hcore-Init: Neural Network Initialization based on Graph Degeneracy",
+        "abstract": "  Neural networks are the pinnacle of Artificial Intelligence, as in recent\nyears we witnessed many novel architectures, learning and optimization\ntechniques for deep learning. Capitalizing on the fact that neural networks\ninherently constitute multipartite graphs among neuron layers, we aim to\nanalyze directly their structure to extract meaningful information that can\nimprove the learning process. To our knowledge graph mining techniques for\nenhancing learning in neural networks have not been thoroughly investigated. In\nthis paper we propose an adapted version of the k-core structure for the\ncomplete weighted multipartite graph extracted from a deep learning\narchitecture. As a multipartite graph is a combination of bipartite graphs,\nthat are in turn the incidence graphs of hypergraphs, we design k-hypercore\ndecomposition, the hypergraph analogue of k-core degeneracy. We applied\nk-hypercore to several neural network architectures, more specifically to\nconvolutional neural networks and multilayer perceptrons for image recognition\ntasks after a very short pretraining. Then we used the information provided by\nthe hypercore numbers of the neurons to re-initialize the weights of the neural\nnetwork, thus biasing the gradient optimization scheme. Extensive experiments\nproved that k-hypercore outperforms the state-of-the-art initialization\nmethods.\n",
+        "published": "2020",
+        "authors": [
+            "Stratis Limnios",
+            "George Dasoulas",
+            "Dimitrios M. Thilikos",
+            "Michalis Vazirgiannis"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2004.10975v3",
+        "title": "Local Adaptation Improves Accuracy of Deep Learning Model for Automated\n  X-Ray Thoracic Disease Detection : A Thai Study",
+        "abstract": "  Despite much promising research in the area of artificial intelligence for\nmedical image diagnosis, there has been no large-scale validation study done in\nThailand to confirm the accuracy and utility of such algorithms when applied to\nlocal datasets. Here we present a wide-reaching development and testing of a\ndeep learning algorithm for automated thoracic disease detection, utilizing\n421,859 local chest radiographs. Our study shows that convolutional neural\nnetworks can achieve remarkable performance in detecting 13 common abnormality\nconditions on chest X-ray, and the incorporation of local images into the\ntraining set is key to the model's success. This paper presents a\nstate-of-the-art model for CXR abnormality detection, reaching an average AUROC\nof 0.91. This model, if integrated to the workflow, can result in up to 55.6%\nwork reduction for medical practitioners in the CXR analysis process. Our work\nemphasizes the importance of investing in local research of medical diagnosis\nalgorithms to ensure safe and efficient usage within the intended region.\n",
+        "published": "2020",
+        "authors": [
+            "Isarun Chamveha",
+            "Trongtum Tongdee",
+            "Pairash Saiviroonporn",
+            "Warasinee Chaisangmongkon"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1709.04875v4",
+        "title": "Spatio-Temporal Graph Convolutional Networks: A Deep Learning Framework\n  for Traffic Forecasting",
+        "abstract": "  Timely accurate traffic forecast is crucial for urban traffic control and\nguidance. Due to the high nonlinearity and complexity of traffic flow,\ntraditional methods cannot satisfy the requirements of mid-and-long term\nprediction tasks and often neglect spatial and temporal dependencies. In this\npaper, we propose a novel deep learning framework, Spatio-Temporal Graph\nConvolutional Networks (STGCN), to tackle the time series prediction problem in\ntraffic domain. Instead of applying regular convolutional and recurrent units,\nwe formulate the problem on graphs and build the model with complete\nconvolutional structures, which enable much faster training speed with fewer\nparameters. Experiments show that our model STGCN effectively captures\ncomprehensive spatio-temporal correlations through modeling multi-scale traffic\nnetworks and consistently outperforms state-of-the-art baselines on various\nreal-world traffic datasets.\n",
+        "published": "2017",
+        "authors": [
+            "Bing Yu",
+            "Haoteng Yin",
+            "Zhanxing Zhu"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1907.01813v1",
+        "title": "A Case Study of Deep-Learned Activations via Hand-Crafted Audio Features",
+        "abstract": "  The explainability of Convolutional Neural Networks (CNNs) is a particularly\nchallenging task in all areas of application, and it is notably\nunder-researched in music and audio domain. In this paper, we approach\nexplainability by exploiting the knowledge we have on hand-crafted audio\nfeatures. Our study focuses on a well-defined MIR task, the recognition of\nmusical instruments from user-generated music recordings. We compute the\nsimilarity between a set of traditional audio features and representations\nlearned by CNNs. We also propose a technique for measuring the similarity\nbetween activation maps and audio features which typically presented in the\nform of a matrix, such as chromagrams or spectrograms. We observe that some\nneurons' activations correspond to well-known classical audio features. In\nparticular, for shallow layers, we found similarities between activations and\nharmonic and percussive components of the spectrum. For deeper layers, we\ncompare chromagrams with high-level activation maps as well as loudness and\nonset rate with deep-learned embeddings.\n",
+        "published": "2019",
+        "authors": [
+            "Olga Slizovskaia",
+            "Emilia G\u00f3mez",
+            "Gloria Haro"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1907.11377v3",
+        "title": "Deep Learning Detection of Inaccurate Smart Electricity Meters: A Case\n  Study",
+        "abstract": "  Detecting inaccurate smart meters and targeting them for replacement can save\nsignificant resources. For this purpose, a novel deep-learning method was\ndeveloped based on long short-term memory (LSTM) and a modified convolutional\nneural network (CNN) to predict electricity usage trajectories based on\nhistorical data. From the significant difference between the predicted\ntrajectory and the observed one, the meters that cannot measure electricity\naccurately are located. In a case study, a proof of principle was demonstrated\nin detecting inaccurate meters with high accuracy for practical usage to\nprevent unnecessary replacement and increase the service life span of smart\nmeters.\n",
+        "published": "2019",
+        "authors": [
+            "Ming Liu",
+            "Dongpeng Liu",
+            "Guangyu Sun",
+            "Yi Zhao",
+            "Duolin Wang",
+            "Fangxing Liu",
+            "Xiang Fang",
+            "Qing He",
+            "Dong Xu"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1712.03890v1",
+        "title": "DeepConfig: Automating Data Center Network Topologies Management with\n  Machine Learning",
+        "abstract": "  In recent years, many techniques have been developed to improve the\nperformance and efficiency of data center networks. While these techniques\nprovide high accuracy, they are often designed using heuristics that leverage\ndomain-specific properties of the workload or hardware.\n  In this vision paper, we argue that many data center networking techniques,\ne.g., routing, topology augmentation, energy savings, with diverse goals\nactually share design and architectural similarity. We present a design for\ndeveloping general intermediate representations of network topologies using\ndeep learning that is amenable to solving classes of data center problems. We\ndevelop a framework, DeepConfig, that simplifies the processing of configuring\nand training deep learning agents that use the intermediate representation to\nlearns different tasks. To illustrate the strength of our approach, we\nconfigured, implemented, and evaluated a DeepConfig-Agent that tackles the data\ncenter topology augmentation problem. Our initial results are promising ---\nDeepConfig performs comparably to the optimal.\n",
+        "published": "2017",
+        "authors": [
+            "Christopher Streiffer",
+            "Huan Chen",
+            "Theophilus Benson",
+            "Asim Kadav"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1712.06096v3",
+        "title": "Efficient B-mode Ultrasound Image Reconstruction from Sub-sampled RF\n  Data using Deep Learning",
+        "abstract": "  In portable, three dimensional, and ultra-fast ultrasound imaging systems,\nthere is an increasing demand for the reconstruction of high quality images\nfrom a limited number of radio-frequency (RF) measurements due to receiver (Rx)\nor transmit (Xmit) event sub-sampling. However, due to the presence of side\nlobe artifacts from RF sub-sampling, the standard beamformer often produces\nblurry images with less contrast, which are unsuitable for diagnostic purposes.\nExisting compressed sensing approaches often require either hardware changes or\ncomputationally expensive algorithms, but their quality improvements are\nlimited. To address this problem, here we propose a novel deep learning\napproach that directly interpolates the missing RF data by utilizing redundancy\nin the Rx-Xmit plane. Our extensive experimental results using sub-sampled RF\ndata from a multi-line acquisition B-mode system confirm that the proposed\nmethod can effectively reduce the data rate without sacrificing image quality.\n",
+        "published": "2017",
+        "authors": [
+            "Yeo Hun Yoon",
+            "Shujaat Khan",
+            "Jaeyoung Huh",
+            "Jong Chul Ye"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1809.00832v1",
+        "title": "Improving the Expressiveness of Deep Learning Frameworks with Recursion",
+        "abstract": "  Recursive neural networks have widely been used by researchers to handle\napplications with recursively or hierarchically structured data. However,\nembedded control flow deep learning frameworks such as TensorFlow, Theano,\nCaffe2, and MXNet fail to efficiently represent and execute such neural\nnetworks, due to lack of support for recursion. In this paper, we add recursion\nto the programming model of existing frameworks by complementing their design\nwith recursive execution of dataflow graphs as well as additional APIs for\nrecursive definitions. Unlike iterative implementations, which can only\nunderstand the topological index of each node in recursive data structures, our\nrecursive implementation is able to exploit the recursive relationships between\nnodes for efficient execution based on parallel computation. We present an\nimplementation on TensorFlow and evaluation results with various recursive\nneural network models, showing that our recursive implementation not only\nconveys the recursive nature of recursive neural networks better than other\nimplementations, but also uses given resources more effectively to reduce\ntraining and inference time.\n",
+        "published": "2018",
+        "authors": [
+            "Eunji Jeong",
+            "Joo Seong Jeong",
+            "Soojeong Kim",
+            "Gyeong-In Yu",
+            "Byung-Gon Chun"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1809.04790v4",
+        "title": "Adversarial Examples: Opportunities and Challenges",
+        "abstract": "  Deep neural networks (DNNs) have shown huge superiority over humans in image\nrecognition, speech processing, autonomous vehicles and medical diagnosis.\nHowever, recent studies indicate that DNNs are vulnerable to adversarial\nexamples (AEs), which are designed by attackers to fool deep learning models.\nDifferent from real examples, AEs can mislead the model to predict incorrect\noutputs while hardly be distinguished by human eyes, therefore threaten\nsecurity-critical deep-learning applications. In recent years, the generation\nand defense of AEs have become a research hotspot in the field of artificial\nintelligence (AI) security. This article reviews the latest research progress\nof AEs. First, we introduce the concept, cause, characteristics and evaluation\nmetrics of AEs, then give a survey on the state-of-the-art AE generation\nmethods with the discussion of advantages and disadvantages. After that, we\nreview the existing defenses and discuss their limitations. Finally, future\nresearch opportunities and challenges on AEs are prospected.\n",
+        "published": "2018",
+        "authors": [
+            "Jiliang Zhang",
+            "Chen Li"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2001.02522v4",
+        "title": "On Interpretability of Artificial Neural Networks: A Survey",
+        "abstract": "  Deep learning as represented by the artificial deep neural networks (DNNs)\nhas achieved great success in many important areas that deal with text, images,\nvideos, graphs, and so on. However, the black-box nature of DNNs has become one\nof the primary obstacles for their wide acceptance in mission-critical\napplications such as medical diagnosis and therapy. Due to the huge potential\nof deep learning, interpreting neural networks has recently attracted much\nresearch attention. In this paper, based on our comprehensive taxonomy, we\nsystematically review recent studies in understanding the mechanism of neural\nnetworks, describe applications of interpretability especially in medicine, and\ndiscuss future directions of interpretability research, such as in relation to\nfuzzy logic and brain science.\n",
+        "published": "2020",
+        "authors": [
+            "Fenglei Fan",
+            "Jinjun Xiong",
+            "Mengzhou Li",
+            "Ge Wang"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2001.04344v1",
+        "title": "An Explainable Autoencoder For Collaborative Filtering Recommendation",
+        "abstract": "  Autoencoders are a common building block of Deep Learning architectures,\nwhere they are mainly used for representation learning. They have also been\nsuccessfully used in Collaborative Filtering (CF) recommender systems to\npredict missing ratings. Unfortunately, like all black box machine learning\nmodels, they are unable to explain their outputs. Hence, while predictions from\nan Autoencoder-based recommender system might be accurate, it might not be\nclear to the user why a recommendation was generated. In this work, we design\nan explainable recommendation system using an Autoencoder model whose\npredictions can be explained using the neighborhood based explanation style.\nOur preliminary work can be considered to be the first step towards an\nexplainable deep learning architecture based on Autoencoders.\n",
+        "published": "2019",
+        "authors": [
+            "Pegah Sagheb Haghighi",
+            "Olurotimi Seton",
+            "Olfa Nasraoui"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2001.05343v1",
+        "title": "Causal Discovery from Incomplete Data: A Deep Learning Approach",
+        "abstract": "  As systems are getting more autonomous with the development of artificial\nintelligence, it is important to discover the causal knowledge from\nobservational sensory inputs. By encoding a series of cause-effect relations\nbetween events, causal networks can facilitate the prediction of effects from a\ngiven action and analyze their underlying data generation mechanism. However,\nmissing data are ubiquitous in practical scenarios. Directly performing\nexisting casual discovery algorithms on partially observed data may lead to the\nincorrect inference. To alleviate this issue, we proposed a deep learning\nframework, dubbed Imputated Causal Learning (ICL), to perform iterative missing\ndata imputation and causal structure discovery. Through extensive simulations\non both synthetic and real data, we show that ICL can outperform\nstate-of-the-art methods under different missing data mechanisms.\n",
+        "published": "2020",
+        "authors": [
+            "Yuhao Wang",
+            "Vlado Menkovski",
+            "Hao Wang",
+            "Xin Du",
+            "Mykola Pechenizkiy"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2008.00682v2",
+        "title": "Discovering indicators of dark horse of soccer games by deep learning\n  from sequential trading data",
+        "abstract": "  It is not surprise for machine learning models to provide decent prediction\naccuracy of soccer games outcomes based on various objective metrics. However,\nthe performance is not that decent in terms of predicting difficult and\nvaluable matches. A deep learning model is designed and trained on a real\nsequential trading data from the real prediction market, with the assumption\nthat such trading data contain critical latent information to determine the\ngame outcomes. A new loss function is proposed which biases the selection\ntoward matches with high investment return to train our model. Full\ninvestigation of 4669 top soccer league matches showed that our model traded\noff prediction accuracy for high value return due to a certain ability to\ndetect dark horses. A further try is conducted to depict some indicators\ndiscovered by our model for describing key features of big dark horses and\nregular hot horses.\n",
+        "published": "2020",
+        "authors": [
+            "Liyao Lu",
+            "Qiang Lyu"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2010.14708v2",
+        "title": "Crop and weed classification based on AutoML",
+        "abstract": "  CNN models already play an important role in classification of crop and weed\nwith high accuracy, more than 95% as reported in literature. However, to\nmanually choose and fine-tune the deep learning models becomes laborious and\nindispensable in most traditional practices and research. Moreover, the classic\nobjective functions are not thoroughly compatible with agricultural farming\ntasks as the corresponding models suffer from misclassifying crop to weed,\noften more likely than in other deep learning application domains. In this\npaper, we applied autonomous machine learning with a new objective function for\ncrop and weed classification, achieving higher accuracy and lower crop killing\nrate (rate of identifying a crop as a weed). The experimental results show that\nour method outperforms state-of-the-art applications, for example, ResNet and\nVGG19.\n",
+        "published": "2020",
+        "authors": [
+            "Xuetao Jiang",
+            "Binbin Yong",
+            "Soheila Garshasbi",
+            "Jun Shen",
+            "Meiyu Jiang",
+            "Qingguo Zhou"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2101.09320v2",
+        "title": "A systematic literature review on state-of-the-art deep learning methods\n  for process prediction",
+        "abstract": "  Process mining enables the reconstruction and evaluation of business\nprocesses based on digital traces in IT systems. An increasingly important\ntechnique in this context is process prediction. Given a sequence of events of\nan ongoing trace, process prediction allows forecasting upcoming events or\nperformance measurements. In recent years, multiple process prediction\napproaches have been proposed, applying different data processing schemes and\nprediction algorithms. This study focuses on deep learning algorithms since\nthey seem to outperform their machine learning alternatives consistently.\nWhilst having a common learning algorithm, they use different data\npreprocessing techniques, implement a variety of network topologies and focus\non various goals such as outcome prediction, time prediction or control-flow\nprediction. Additionally, the set of log-data, evaluation metrics and baselines\nused by the authors diverge, making the results hard to compare. This paper\nattempts to synthesise the advantages and disadvantages of the procedural\ndecisions in these approaches by conducting a systematic literature review.\n",
+        "published": "2021",
+        "authors": [
+            "Dominic A. Neu",
+            "Johannes Lahann",
+            "Peter Fettke"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2105.03045v1",
+        "title": "GANTL: Towards Practical and Real-Time Topology Optimization with\n  Conditional GANs and Transfer Learning",
+        "abstract": "  Many machine learning methods have been recently developed to circumvent the\nhigh computational cost of the gradient-based topology optimization. These\nmethods typically require extensive and costly datasets for training, have a\ndifficult time generalizing to unseen boundary and loading conditions and to\nnew domains, and do not take into consideration topological constraints of the\npredictions, which produces predictions with inconsistent topologies. We\npresent a deep learning method based on generative adversarial networks for\ngenerative design exploration. The proposed method combines the generative\npower of conditional GANs with the knowledge transfer capabilities of transfer\nlearning methods to predict optimal topologies for unseen boundary conditions.\nWe also show that the knowledge transfer capabilities embedded in the design of\nthe proposed algorithm significantly reduces the size of the training dataset\ncompared to the traditional deep learning neural or adversarial networks.\nMoreover, we formulate a topological loss function based on the bottleneck\ndistance obtained from the persistent diagram of the structures and demonstrate\na significant improvement in the topological connectivity of the predicted\nstructures. We use numerous examples to explore the efficiency and accuracy of\nthe proposed approach for both seen and unseen boundary conditions in 2D.\n",
+        "published": "2021",
+        "authors": [
+            "Mohammad Mahdi Behzadi",
+            "Horea T. Ilies"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2105.03701v1",
+        "title": "Business Entity Matching with Siamese Graph Convolutional Networks",
+        "abstract": "  Data integration has been studied extensively for decades and approached from\ndifferent angles. However, this domain still remains largely rule-driven and\nlacks universal automation. Recent developments in machine learning and in\nparticular deep learning have opened the way to more general and efficient\nsolutions to data-integration tasks. In this paper, we demonstrate an approach\nthat allows modeling and integrating entities by leveraging their relations and\ncontextual information. This is achieved by combining siamese and graph neural\nnetworks to effectively propagate information between connected entities and\nsupport high scalability. We evaluated our approach on the task of integrating\ndata about business entities, demonstrating that it outperforms both\ntraditional rule-based systems and other deep learning approaches.\n",
+        "published": "2021",
+        "authors": [
+            "Evgeny Krivosheev",
+            "Mattia Atzeni",
+            "Katsiaryna Mirylenka",
+            "Paolo Scotton",
+            "Christoph Miksovic",
+            "Anton Zorin"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2107.05457v1",
+        "title": "Improving the Algorithm of Deep Learning with Differential Privacy",
+        "abstract": "  In this paper, an adjustment to the original differentially private\nstochastic gradient descent (DPSGD) algorithm for deep learning models is\nproposed. As a matter of motivation, to date, almost no state-of-the-art\nmachine learning algorithm hires the existing privacy protecting components due\nto otherwise serious compromise in their utility despite the vital necessity.\nThe idea in this study is natural and interpretable, contributing to improve\nthe utility with respect to the state-of-the-art. Another property of the\nproposed technique is its simplicity which makes it again more natural and also\nmore appropriate for real world and specially commercial applications. The\nintuition is to trim and balance out wild individual discrepancies for privacy\nreasons, and at the same time, to preserve relative individual differences for\nseeking performance. The idea proposed here can also be applied to the\nrecurrent neural networks (RNN) to solve the gradient exploding problem. The\nalgorithm is applied to benchmark datasets MNIST and CIFAR-10 for a\nclassification task and the utility measure is calculated. The results\noutperformed the original work.\n",
+        "published": "2021",
+        "authors": [
+            "Mehdi Amian"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2107.08074v1",
+        "title": "A comparative study of stochastic and deep generative models for\n  multisite precipitation synthesis",
+        "abstract": "  Future climate change scenarios are usually hypothesized using simulations\nfrom weather generators. However, there only a few works comparing and\nevaluating promising deep learning models for weather generation against\nclassical approaches. This study shows preliminary results making such\nevaluations for the multisite precipitation synthesis task. We compared two\nopen-source weather generators: IBMWeathergen (an extension of the Weathergen\nlibrary) and RGeneratePrec, and two deep generative models: GAN and VAE, on a\nvariety of metrics. Our preliminary results can serve as a guide for improving\nthe design of deep learning architectures and algorithms for the multisite\nprecipitation synthesis task.\n",
+        "published": "2021",
+        "authors": [
+            "Jorge Guevara",
+            "Dario Borges",
+            "Campbell Watson",
+            "Bianca Zadrozny"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1708.05866v2",
+        "title": "A Brief Survey of Deep Reinforcement Learning",
+        "abstract": "  Deep reinforcement learning is poised to revolutionise the field of AI and\nrepresents a step towards building autonomous systems with a higher level\nunderstanding of the visual world. Currently, deep learning is enabling\nreinforcement learning to scale to problems that were previously intractable,\nsuch as learning to play video games directly from pixels. Deep reinforcement\nlearning algorithms are also applied to robotics, allowing control policies for\nrobots to be learned directly from camera inputs in the real world. In this\nsurvey, we begin with an introduction to the general field of reinforcement\nlearning, then progress to the main streams of value-based and policy-based\nmethods. Our survey will cover central algorithms in deep reinforcement\nlearning, including the deep $Q$-network, trust region policy optimisation, and\nasynchronous advantage actor-critic. In parallel, we highlight the unique\nadvantages of deep neural networks, focusing on visual understanding via\nreinforcement learning. To conclude, we describe several current areas of\nresearch within the field.\n",
+        "published": "2017",
+        "authors": [
+            "Kai Arulkumaran",
+            "Marc Peter Deisenroth",
+            "Miles Brundage",
+            "Anil Anthony Bharath"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1710.10686v1",
+        "title": "Regularization for Deep Learning: A Taxonomy",
+        "abstract": "  Regularization is one of the crucial ingredients of deep learning, yet the\nterm regularization has various definitions, and regularization methods are\noften studied separately from each other. In our work we present a systematic,\nunifying taxonomy to categorize existing methods. We distinguish methods that\naffect data, network architectures, error terms, regularization terms, and\noptimization procedures. We do not provide all details about the listed\nmethods; instead, we present an overview of how the methods can be sorted into\nmeaningful categories and sub-categories. This helps revealing links and\nfundamental similarities between them. Finally, we include practical\nrecommendations both for users and for developers of new regularization\nmethods.\n",
+        "published": "2017",
+        "authors": [
+            "Jan Kuka\u010dka",
+            "Vladimir Golkov",
+            "Daniel Cremers"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1804.02528v2",
+        "title": "ANNETT-O: An Ontology for Describing Artificial Neural Network\n  Evaluation, Topology and Training",
+        "abstract": "  Deep learning models, while effective and versatile, are becoming\nincreasingly complex, often including multiple overlapping networks of\narbitrary depths, multiple objectives and non-intuitive training methodologies.\nThis makes it increasingly difficult for researchers and practitioners to\ndesign, train and understand them. In this paper we present ANNETT-O, a\nmuch-needed, generic and computer-actionable vocabulary for researchers and\npractitioners to describe their deep learning configurations, training\nprocedures and experiments. The proposed ontology focuses on topological,\ntraining and evaluation aspects of complex deep neural configurations, while\nkeeping peripheral entities more succinct. Knowledge bases implementing\nANNETT-O can support a wide variety of queries, providing relevant insights to\nusers. In addition to a detailed description of the ontology, we demonstrate\nits suitability to the task via a number of hypothetical use-cases of\nincreasing complexity.\n",
+        "published": "2018",
+        "authors": [
+            "Iraklis A. Klampanos",
+            "Athanasios Davvetas",
+            "Antonis Koukourikos",
+            "Vangelis Karkaletsis"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1804.09400v1",
+        "title": "3D Consistent & Robust Segmentation of Cardiac Images by Deep Learning\n  with Spatial Propagation",
+        "abstract": "  We propose a method based on deep learning to perform cardiac segmentation on\nshort axis MRI image stacks iteratively from the top slice (around the base) to\nthe bottom slice (around the apex). At each iteration, a novel variant of U-net\nis applied to propagate the segmentation of a slice to the adjacent slice below\nit. In other words, the prediction of a segmentation of a slice is dependent\nupon the already existing segmentation of an adjacent slice. 3D-consistency is\nhence explicitly enforced. The method is trained on a large database of 3078\ncases from UK Biobank. It is then tested on 756 different cases from UK Biobank\nand three other state-of-the-art cohorts (ACDC with 100 cases, Sunnybrook with\n30 cases, RVSC with 16 cases). Results comparable or even better than the\nstate-of-the-art in terms of distance measures are achieved. They also\nemphasize the assets of our method, namely enhanced spatial consistency\n(currently neither considered nor achieved by the state-of-the-art), and the\ngeneralization ability to unseen cases even from other databases.\n",
+        "published": "2018",
+        "authors": [
+            "Qiao Zheng",
+            "Herv\u00e9 Delingette",
+            "Nicolas Duchateau",
+            "Nicholas Ayache"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1805.07504v2",
+        "title": "Deep Loopy Neural Network Model for Graph Structured Data Representation\n  Learning",
+        "abstract": "  Existing deep learning models may encounter great challenges in handling\ngraph structured data. In this paper, we introduce a new deep learning model\nfor graph data specifically, namely the deep loopy neural network.\nSignificantly different from the previous deep models, inside the deep loopy\nneural network, there exist a large number of loops created by the extensive\nconnections among nodes in the input graph data, which makes model learning an\ninfeasible task. To resolve such a problem, in this paper, we will introduce a\nnew learning algorithm for the deep loopy neural network specifically. Instead\nof learning the model variables based on the original model, in the proposed\nlearning algorithm, errors will be back-propagated through the edges in a group\nof extracted spanning trees. Extensive numerical experiments have been done on\nseveral real-world graph datasets, and the experimental results demonstrate the\neffectiveness of both the proposed model and the learning algorithm in handling\ngraph data.\n",
+        "published": "2018",
+        "authors": [
+            "Jiawei Zhang"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1805.10402v1",
+        "title": "Deep Convolutional Neural Networks for Map-Type Classification",
+        "abstract": "  Maps are an important medium that enable people to comprehensively understand\nthe configuration of cultural activities and natural elements over different\ntimes and places. Although massive maps are available in the digital era, how\nto effectively and accurately access the required map remains a challenge\ntoday. Previous works partially related to map-type classification mainly\nfocused on map comparison and map matching at the local scale. The features\nderived from local map areas might be insufficient to characterize map content.\nTo facilitate establishing an automatic approach for accessing the needed map,\nthis paper reports our investigation into using deep learning techniques to\nrecognize seven types of map, including topographic map, terrain map, physical\nmap, urban scene map, the National Map, 3D map, nighttime map, orthophoto map,\nand land cover classification map. Experimental results show that the\nstate-of-the-art deep convolutional neural networks can support automatic\nmap-type classification. Additionally, the classification accuracy varies\naccording to different map-types. We hope our work can contribute to the\nimplementation of deep learning techniques in cartographical community and\nadvance the progress of Geographical Artificial Intelligence (GeoAI).\n",
+        "published": "2018",
+        "authors": [
+            "Xiran Zhou",
+            "Wenwen Li",
+            "Samantha T. Arundel",
+            "Jun Liu"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1810.10237v1",
+        "title": "Multistep Speed Prediction on Traffic Networks: A Graph Convolutional\n  Sequence-to-Sequence Learning Approach with Attention Mechanism",
+        "abstract": "  Multistep traffic forecasting on road networks is a crucial task in\nsuccessful intelligent transportation system applications. To capture the\ncomplex non-stationary temporal dynamics and spatial dependency in multistep\ntraffic-condition prediction, we propose a novel deep learning framework named\nattention graph convolutional sequence-to-sequence model (AGC-Seq2Seq). In the\nproposed deep learning framework, spatial and temporal dependencies are modeled\nthrough the Seq2Seq model and graph convolution network separately, and the\nattention mechanism along with a newly designed training method based on the\nSeq2Seq architecture is proposed to overcome the difficulty in multistep\nprediction and further capture the temporal heterogeneity of traffic pattern.\nWe conduct numerical tests to compare AGC-Seq2Seq with other benchmark models\nusing a real-world dataset. The results indicate that our model yields the best\nprediction performance in terms of various prediction error measures.\nFurthermore, the variation of spatiotemporal correlation of traffic conditions\nunder different perdition steps and road segments is revealed through\nsensitivity analyses.\n",
+        "published": "2018",
+        "authors": [
+            "Zhengchao Zhang",
+            "Meng Li",
+            "Xi Lin",
+            "Yinhai Wang",
+            "Fang He"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1810.10659v1",
+        "title": "Combinatorial Optimization with Graph Convolutional Networks and Guided\n  Tree Search",
+        "abstract": "  We present a learning-based approach to computing solutions for certain\nNP-hard problems. Our approach combines deep learning techniques with useful\nalgorithmic elements from classic heuristics. The central component is a graph\nconvolutional network that is trained to estimate the likelihood, for each\nvertex in a graph, of whether this vertex is part of the optimal solution. The\nnetwork is designed and trained to synthesize a diverse set of solutions, which\nenables rapid exploration of the solution space via tree search. The presented\napproach is evaluated on four canonical NP-hard problems and five datasets,\nwhich include benchmark satisfiability problems and real social network graphs\nwith up to a hundred thousand nodes. Experimental results demonstrate that the\npresented approach substantially outperforms recent deep learning work, and\nperforms on par with highly optimized state-of-the-art heuristic solvers for\nsome NP-hard problems. Experiments indicate that our approach generalizes\nacross datasets, and scales to graphs that are orders of magnitude larger than\nthose used during training.\n",
+        "published": "2018",
+        "authors": [
+            "Zhuwen Li",
+            "Qifeng Chen",
+            "Vladlen Koltun"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1904.03241v3",
+        "title": "HOList: An Environment for Machine Learning of Higher-Order Theorem\n  Proving",
+        "abstract": "  We present an environment, benchmark, and deep learning driven automated\ntheorem prover for higher-order logic. Higher-order interactive theorem provers\nenable the formalization of arbitrary mathematical theories and thereby present\nan interesting, open-ended challenge for deep learning. We provide an\nopen-source framework based on the HOL Light theorem prover that can be used as\na reinforcement learning environment. HOL Light comes with a broad coverage of\nbasic mathematical theorems on calculus and the formal proof of the Kepler\nconjecture, from which we derive a challenging benchmark for automated\nreasoning. We also present a deep reinforcement learning driven automated\ntheorem prover, DeepHOL, with strong initial results on this benchmark.\n",
+        "published": "2019",
+        "authors": [
+            "Kshitij Bansal",
+            "Sarah M. Loos",
+            "Markus N. Rabe",
+            "Christian Szegedy",
+            "Stewart Wilcox"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1904.04096v1",
+        "title": "Deep Learning Sentiment Analysis of Amazon.com Reviews and Ratings",
+        "abstract": "  Our study employs sentiment analysis to evaluate the compatibility of\nAmazon.com reviews with their corresponding ratings. Sentiment analysis is the\ntask of identifying and classifying the sentiment expressed in a piece of text\nas being positive or negative. On e-commerce websites such as Amazon.com,\nconsumers can submit their reviews along with a specific polarity rating. In\nsome instances, there is a mismatch between the review and the rating. To\nidentify the reviews with mismatched ratings we performed sentiment analysis\nusing deep learning on Amazon.com product review data. Product reviews were\nconverted to vectors using paragraph vector, which then was used to train a\nrecurrent neural network with gated recurrent unit. Our model incorporated both\nsemantic relationship of review text and product information. We also developed\na web service application that predicts the rating score for a submitted review\nusing the trained model and if there is a mismatch between predicted rating\nscore and submitted rating score, it provides feedback to the reviewer.\n",
+        "published": "2019",
+        "authors": [
+            "Nishit Shrestha",
+            "Fatma Nasoz"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1905.12171v1",
+        "title": "Brain-inspired reverse adversarial examples",
+        "abstract": "  A human does not have to see all elephants to recognize an animal as an\nelephant. On contrast, current state-of-the-art deep learning approaches\nheavily depend on the variety of training samples and the capacity of the\nnetwork. In practice, the size of network is always limited and it is\nimpossible to access all the data samples. Under this circumstance, deep\nlearning models are extremely fragile to human-imperceivable adversarial\nexamples, which impose threats to all safety critical systems. Inspired by the\nassociation and attention mechanisms of the human brain, we propose reverse\nadversarial examples method that can greatly improve models' robustness on\nunseen data. Experiments show that our reverse adversarial method can improve\naccuracy on average 19.02% on ResNet18, MobileNet, and VGG16 on unseen data\ntransformation. Besides, the proposed method is also applicable to compressed\nmodels and shows potential to compensate the robustness drop brought by model\nquantization - an absolute 30.78% accuracy improvement.\n",
+        "published": "2019",
+        "authors": [
+            "Shaokai Ye",
+            "Sia Huat Tan",
+            "Kaidi Xu",
+            "Yanzhi Wang",
+            "Chenglong Bao",
+            "Kaisheng Ma"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1906.09449v3",
+        "title": "Deep learning approach to description and classification of fungi\n  microscopic images",
+        "abstract": "  Diagnosis of fungal infections can rely on microscopic examination, however,\nin many cases, it does not allow unambiguous identification of the species due\nto their visual similarity. Therefore, it is usually necessary to use\nadditional biochemical tests. That involves additional costs and extends the\nidentification process up to 10 days. Such a delay in the implementation of\ntargeted treatment is grave in consequences as the mortality rate for\nimmunosuppressed patients is high. In this paper, we apply machine learning\napproach based on deep learning and bag-of-words to classify microscopic images\nof various fungi species. Our approach makes the last stage of biochemical\nidentification redundant, shortening the identification process by 2-3 days and\nreducing the cost of the diagnostic examination.\n",
+        "published": "2019",
+        "authors": [
+            "Bartosz Zieli\u0144ski",
+            "Agnieszka Sroka-Oleksiak",
+            "Dawid Rymarczyk",
+            "Adam Piekarczyk",
+            "Monika Brzychczy-W\u0142och"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/1909.06034v1",
+        "title": "Deep Learned Path Planning via Randomized Reward-Linked-Goals and\n  Potential Space Applications",
+        "abstract": "  Space exploration missions have seen use of increasingly sophisticated\nrobotic systems with ever more autonomy. Deep learning promises to take this\neven a step further, and has applications for high-level tasks, like path\nplanning, as well as low-level tasks, like motion control, which are critical\ncomponents for mission efficiency and success. Using deep reinforcement\nend-to-end learning with randomized reward function parameters during training,\nwe teach a simulated 8 degree-of-freedom quadruped ant-like robot to travel\nanywhere within a perimeter, conducting path plan and motion control on a\nsingle neural network, without any system model or prior knowledge of the\nterrain or environment. Our approach also allows for user specified waypoints,\nwhich could translate well to either fully autonomous or\nsemi-autonomous/teleoperated space applications that encounter delay times. We\ntrained the agent using randomly generated waypoints linked to the reward\nfunction and passed waypoint coordinates as inputs to the neural network. Such\napplications show promise on a variety of space exploration robots, including\nhigh speed rovers for fast locomotion and legged cave robots for rough terrain.\n",
+        "published": "2019",
+        "authors": [
+            "Tamir Blum",
+            "William Jones",
+            "Kazuya Yoshida"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2005.09634v1",
+        "title": "Automated Copper Alloy Grain Size Evaluation Using a Deep-learning CNN",
+        "abstract": "  Moog Inc. has automated the evaluation of copper (Cu) alloy grain size using\na deep-learning convolutional neural network (CNN). The proof-of-concept\nautomated image acquisition and batch-wise image processing offers the\npotential for significantly reduced labor, improved accuracy of grain\nevaluation, and decreased overall turnaround times for approving Cu alloy bar\nstock for use in flight critical aircraft hardware. A classification accuracy\nof 91.1% on individual sub-images of the Cu alloy coupons was achieved. Process\ndevelopment included minimizing the variation in acquired image color,\nbrightness, and resolution to create a dataset with 12300 sub-images, and then\noptimizing the CNN hyperparameters on this dataset using statistical design of\nexperiments (DoE).\n  Over the development of the automated Cu alloy grain size evaluation, a\ndegree of \"explainability\" in the artificial intelligence (XAI) output was\nrealized, based on the decomposition of the large raw images into many smaller\ndataset sub-images, through the ability to explain the CNN ensemble image\noutput via inspection of the classification results from the individual smaller\nsub-images.\n",
+        "published": "2020",
+        "authors": [
+            "George S. Baggs",
+            "Paul Guerrier",
+            "Andrew Loeb",
+            "Jason C. Jones"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2005.10691v1",
+        "title": "Improving Deep Learning Models via Constraint-Based Domain Knowledge: a\n  Brief Survey",
+        "abstract": "  Deep Learning (DL) models proved themselves to perform extremely well on a\nwide variety of learning tasks, as they can learn useful patterns from large\ndata sets. However, purely data-driven models might struggle when very\ndifficult functions need to be learned or when there is not enough available\ntraining data. Fortunately, in many domains prior information can be retrieved\nand used to boost the performance of DL models. This paper presents a first\nsurvey of the approaches devised to integrate domain knowledge, expressed in\nthe form of constraints, in DL learning models to improve their performance, in\nparticular targeting deep neural networks. We identify five (non-mutually\nexclusive) categories that encompass the main approaches to inject domain\nknowledge: 1) acting on the features space, 2) modifications to the hypothesis\nspace, 3) data augmentation, 4) regularization schemes, 5) constrained\nlearning.\n",
+        "published": "2020",
+        "authors": [
+            "Andrea Borghesi",
+            "Federico Baldo",
+            "Michela Milano"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2009.06389v3",
+        "title": "Neither Private Nor Fair: Impact of Data Imbalance on Utility and\n  Fairness in Differential Privacy",
+        "abstract": "  Deployment of deep learning in different fields and industries is growing day\nby day due to its performance, which relies on the availability of data and\ncompute. Data is often crowd-sourced and contains sensitive information about\nits contributors, which leaks into models that are trained on it. To achieve\nrigorous privacy guarantees, differentially private training mechanisms are\nused. However, it has recently been shown that differential privacy can\nexacerbate existing biases in the data and have disparate impacts on the\naccuracy of different subgroups of data. In this paper, we aim to study these\neffects within differentially private deep learning. Specifically, we aim to\nstudy how different levels of imbalance in the data affect the accuracy and the\nfairness of the decisions made by the model, given different levels of privacy.\nWe demonstrate that even small imbalances and loose privacy guarantees can\ncause disparate impacts.\n",
+        "published": "2020",
+        "authors": [
+            "Tom Farrand",
+            "Fatemehsadat Mireshghallah",
+            "Sahib Singh",
+            "Andrew Trask"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2009.09535v1",
+        "title": "Stochastic Gradient Langevin Dynamics Algorithms with Adaptive Drifts",
+        "abstract": "  Bayesian deep learning offers a principled way to address many issues\nconcerning safety of artificial intelligence (AI), such as model\nuncertainty,model interpretability, and prediction bias. However, due to the\nlack of efficient Monte Carlo algorithms for sampling from the posterior of\ndeep neural networks (DNNs), Bayesian deep learning has not yet powered our AI\nsystem. We propose a class of adaptive stochastic gradient Markov chain Monte\nCarlo (SGMCMC) algorithms, where the drift function is biased to enhance escape\nfrom saddle points and the bias is adaptively adjusted according to the\ngradient of past samples. We establish the convergence of the proposed\nalgorithms under mild conditions, and demonstrate via numerical examples that\nthe proposed algorithms can significantly outperform the existing SGMCMC\nalgorithms, such as stochastic gradient Langevin dynamics (SGLD), stochastic\ngradient Hamiltonian Monte Carlo (SGHMC) and preconditioned SGLD, in both\nsimulation and optimization tasks.\n",
+        "published": "2020",
+        "authors": [
+            "Sehwan Kim",
+            "Qifan Song",
+            "Faming Liang"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2009.11577v3",
+        "title": "Cloud Cover Nowcasting with Deep Learning",
+        "abstract": "  Nowcasting is a field of meteorology which aims at forecasting weather on a\nshort term of up to a few hours. In the meteorology landscape, this field is\nrather specific as it requires particular techniques, such as data\nextrapolation, where conventional meteorology is generally based on physical\nmodeling. In this paper, we focus on cloud cover nowcasting, which has various\napplication areas such as satellite shots optimisation and photovoltaic energy\nproduction forecast.\n  Following recent deep learning successes on multiple imagery tasks, we\napplied deep convolutionnal neural networks on Meteosat satellite images for\ncloud cover nowcasting. We present the results of several architectures\nspecialized in image segmentation and time series prediction. We selected the\nbest models according to machine learning metrics as well as meteorological\nmetrics. All selected architectures showed significant improvements over\npersistence and the well-known U-Net surpasses AROME physical model.\n",
+        "published": "2020",
+        "authors": [
+            "L\u00e9a Berthomier",
+            "Bruno Pradel",
+            "Lior Perez"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2011.05267v1",
+        "title": "Deep Neural Mobile Networking",
+        "abstract": "  The next generation of mobile networks is set to become increasingly complex,\nas these struggle to accommodate tremendous data traffic demands generated by\never-more connected devices that have diverse performance requirements in terms\nof throughput, latency, and reliability. This makes monitoring and managing the\nmultitude of network elements intractable with existing tools and impractical\nfor traditional machine learning algorithms that rely on hand-crafted feature\nengineering. In this context, embedding machine intelligence into mobile\nnetworks becomes necessary, as this enables systematic mining of valuable\ninformation from mobile big data and automatically uncovering correlations that\nwould otherwise have been too difficult to extract by human experts. In\nparticular, deep learning based solutions can automatically extract features\nfrom raw data, without human expertise. The performance of artificial\nintelligence (AI) has achieved in other domains draws unprecedented interest\nfrom both academia and industry in employing deep learning approaches to\naddress technical challenges in mobile networks. This thesis attacks important\nproblems in the mobile networking area from various perspectives by harnessing\nrecent advances in deep neural networks.\n",
+        "published": "2020",
+        "authors": [
+            "Chaoyun Zhang"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2012.03184v1",
+        "title": "dPOLY: Deep Learning of Polymer Phases and Phase Transition",
+        "abstract": "  Machine learning (ML) and artificial intelligence (AI) have the remarkable\nability to classify, recognize, and characterize complex patterns and trends in\nlarge data sets. Here, we adopt a subclass of machine learning methods viz.,\ndeep learnings and develop a general-purpose AI tool - dPOLY for analyzing\nmolecular dynamics trajectory and predicting phases and phase transitions in\npolymers. An unsupervised deep neural network is used within this framework to\nmap a molecular dynamics trajectory undergoing thermophysical treatment such as\ncooling, heating, drying, or compression to a lower dimension. A supervised\ndeep neural network is subsequently developed based on the lower dimensional\ndata to characterize the phases and phase transition. As a proof of concept, we\nemploy this framework to study coil to globule transition of a model polymer\nsystem. We conduct coarse-grained molecular dynamics simulations to collect\nmolecular dynamics trajectories of a single polymer chain over a wide range of\ntemperatures and use dPOLY framework to predict polymer phases. The dPOLY\nframework accurately predicts the critical temperatures for the coil to globule\ntransition for a wide range of polymer sizes. This method is generic and can be\nextended to capture various other phase transitions and dynamical crossovers in\npolymers and other soft materials.\n",
+        "published": "2020",
+        "authors": [
+            "Debjyoti Bhattacharya",
+            "Tarak K Patra"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2012.03531v1",
+        "title": "Why Unsupervised Deep Networks Generalize",
+        "abstract": "  Promising resolutions of the generalization puzzle observe that the actual\nnumber of parameters in a deep network is much smaller than naive estimates\nsuggest. The renormalization group is a compelling example of a problem which\nhas very few parameters, despite the fact that naive estimates suggest\notherwise. Our central hypothesis is that the mechanisms behind the\nrenormalization group are also at work in deep learning, and that this leads to\na resolution of the generalization puzzle. We show detailed quantitative\nevidence that proves the hypothesis for an RBM, by showing that the trained RBM\nis discarding high momentum modes. Specializing attention mainly to\nautoencoders, we give an algorithm to determine the network's parameters\ndirectly from the learning data set. The resulting autoencoder almost performs\nas well as one trained by deep learning, and it provides an excellent initial\ncondition for training, reducing training times by a factor between 4 and 100\nfor the experiments we considered. Further, we are able to suggest a simple\ncriterion to decide if a given problem can or can not be solved using a deep\nnetwork.\n",
+        "published": "2020",
+        "authors": [
+            "Anita de Mello Koch",
+            "Ellen de Mello Koch",
+            "Robert de Mello Koch"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2012.06523v1",
+        "title": "Dependency Decomposition and a Reject Option for Explainable Models",
+        "abstract": "  Deploying machine learning models in safety-related do-mains (e.g. autonomous\ndriving, medical diagnosis) demands for approaches that are explainable, robust\nagainst adversarial attacks and aware of the model uncertainty. Recent deep\nlearning models perform extremely well in various inference tasks, but the\nblack-box nature of these approaches leads to a weakness regarding the three\nrequirements mentioned above. Recent advances offer methods to visualize\nfeatures, describe attribution of the input (e.g.heatmaps), provide textual\nexplanations or reduce dimensionality. However,are explanations for\nclassification tasks dependent or are they independent of each other? For\nin-stance, is the shape of an object dependent on the color? What is the effect\nof using the predicted class for generating explanations and vice versa? In the\ncontext of explainable deep learning models, we present the first analysis of\ndependencies regarding the probability distribution over the desired image\nclassification outputs and the explaining variables (e.g. attributes, texts,\nheatmaps). Therefore, we perform an Explanation Dependency Decomposition (EDD).\nWe analyze the implications of the different dependencies and propose two ways\nof generating the explanation. Finally, we use the explanation to verify\n(accept or reject) the prediction\n",
+        "published": "2020",
+        "authors": [
+            "Jan Kronenberger",
+            "Anselm Haselhoff"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2012.13982v1",
+        "title": "Mathematical Models of Overparameterized Neural Networks",
+        "abstract": "  Deep learning has received considerable empirical successes in recent years.\nHowever, while many ad hoc tricks have been discovered by practitioners, until\nrecently, there has been a lack of theoretical understanding for tricks\ninvented in the deep learning literature. Known by practitioners that\noverparameterized neural networks are easy to learn, in the past few years\nthere have been important theoretical developments in the analysis of\noverparameterized neural networks. In particular, it was shown that such\nsystems behave like convex systems under various restricted settings, such as\nfor two-layer NNs, and when learning is restricted locally in the so-called\nneural tangent kernel space around specialized initializations. This paper\ndiscusses some of these recent progresses leading to significant better\nunderstanding of neural networks. We will focus on the analysis of two-layer\nneural networks, and explain the key mathematical models, with their\nalgorithmic implications. We will then discuss challenges in understanding deep\nneural networks and some current research directions.\n",
+        "published": "2020",
+        "authors": [
+            "Cong Fang",
+            "Hanze Dong",
+            "Tong Zhang"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2102.08990v1",
+        "title": "BEDS: Bagging ensemble deep segmentation for nucleus segmentation with\n  testing stage stain augmentation",
+        "abstract": "  Reducing outcome variance is an essential task in deep learning based medical\nimage analysis. Bootstrap aggregating, also known as bagging, is a canonical\nensemble algorithm for aggregating weak learners to become a strong learner.\nRandom forest is one of the most powerful machine learning algorithms before\ndeep learning era, whose superior performance is driven by fitting bagged\ndecision trees (weak learners). Inspired by the random forest technique, we\npropose a simple bagging ensemble deep segmentation (BEDs) method to train\nmultiple U-Nets with partial training data to segment dense nuclei on\npathological images. The contributions of this study are three-fold: (1)\ndeveloping a self-ensemble learning framework for nucleus segmentation; (2)\naggregating testing stage augmentation with self-ensemble learning; and (3)\nelucidating the idea that self-ensemble and testing stage stain augmentation\nare complementary strategies for a superior segmentation performance.\nImplementation Detail: https://github.com/xingli1102/BEDs.\n",
+        "published": "2021",
+        "authors": [
+            "Xing Li",
+            "Haichun Yang",
+            "Jiaxin He",
+            "Aadarsh Jha",
+            "Agnes B. Fogo",
+            "Lee E. Wheless",
+            "Shilin Zhao",
+            "Yuankai Huo"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2102.10275v1",
+        "title": "An Attention Ensemble Approach for Efficient Text Classification of\n  Indian Languages",
+        "abstract": "  The recent surge of complex attention-based deep learning architectures has\nled to extraordinary results in various downstream NLP tasks in the English\nlanguage. However, such research for resource-constrained and morphologically\nrich Indian vernacular languages has been relatively limited. This paper\nproffers team SPPU\\_AKAH's solution for the TechDOfication 2020 subtask-1f:\nwhich focuses on the coarse-grained technical domain identification of short\ntext documents in Marathi, a Devanagari script-based Indian language. Availing\nthe large dataset at hand, a hybrid CNN-BiLSTM attention ensemble model is\nproposed that competently combines the intermediate sentence representations\ngenerated by the convolutional neural network and the bidirectional long\nshort-term memory, leading to efficient text classification. Experimental\nresults show that the proposed model outperforms various baseline machine\nlearning and deep learning models in the given task, giving the best validation\naccuracy of 89.57\\% and f1-score of 0.8875. Furthermore, the solution resulted\nin the best system submission for this subtask, giving a test accuracy of\n64.26\\% and f1-score of 0.6157, transcending the performances of other teams as\nwell as the baseline system given by the organizers of the shared task.\n",
+        "published": "2021",
+        "authors": [
+            "Atharva Kulkarni",
+            "Amey Hengle",
+            "Rutuja Udyawar"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2103.10975v1",
+        "title": "Accelerating GMRES with Deep Learning in Real-Time",
+        "abstract": "  GMRES is a powerful numerical solver used to find solutions to extremely\nlarge systems of linear equations. These systems of equations appear in many\napplications in science and engineering. Here we demonstrate a real-time\nmachine learning algorithm that can be used to accelerate the time-to-solution\nfor GMRES. Our framework is novel in that is integrates the deep learning\nalgorithm in an in situ fashion: the AI-accelerator gradually learns how to\noptimizes the time to solution without requiring user input (such as a\npre-trained data set). We describe how our algorithm collects data and\noptimizes GMRES. We demonstrate our algorithm by implementing an accelerated\n(MLGMRES) solver in Python. We then use MLGMRES to accelerate a solver for the\nPoisson equation -- a class of linear problems that appears in may\napplications.\n  Informed by the properties of formal solutions to the Poisson equation, we\ntest the performance of different neural networks. Our key takeaway is that\nnetworks which are capable of learning non-local relationships perform well,\nwithout needing to be scaled with the input problem size, making them good\ncandidates for the extremely large problems encountered in high-performance\ncomputing. For the inputs studied, our method provides a roughly 2$\\times$\nacceleration.\n",
+        "published": "2021",
+        "authors": [
+            "Kevin Luna",
+            "Katherine Klymko",
+            "Johannes P. Blaschke"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2103.16295v1",
+        "title": "Exploring Edge TPU for Network Intrusion Detection in IoT",
+        "abstract": "  This paper explores Google's Edge TPU for implementing a practical network\nintrusion detection system (NIDS) at the edge of IoT, based on a deep learning\napproach. While there are a significant number of related works that explore\nmachine learning based NIDS for the IoT edge, they generally do not consider\nthe issue of the required computational and energy resources. The focus of this\npaper is the exploration of deep learning-based NIDS at the edge of IoT, and in\nparticular the computational and energy efficiency. In particular, the paper\nstudies Google's Edge TPU as a hardware platform, and considers the following\nthree key metrics: computation (inference) time, energy efficiency and the\ntraffic classification performance. Various scaled model sizes of two major\ndeep neural network architectures are used to investigate these three metrics.\nThe performance of the Edge TPU-based implementation is compared with that of\nan energy efficient embedded CPU (ARM Cortex A53). Our experimental evaluation\nshows some unexpected results, such as the fact that the CPU significantly\noutperforms the Edge TPU for small model sizes.\n",
+        "published": "2021",
+        "authors": [
+            "Seyedehfaezeh Hosseininoorbin",
+            "Siamak Layeghy",
+            "Mohanad Sarhan",
+            "Raja Jurdak",
+            "Marius Portmann"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2104.03226v1",
+        "title": "Evaluation of Time Series Forecasting Models for Estimation of PM2.5\n  Levels in Air",
+        "abstract": "  Air contamination in urban areas has risen consistently over the past few\nyears. Due to expanding industrialization and increasing concentration of toxic\ngases in the climate, the air is getting more poisonous step by step at an\nalarming rate. Since the arrival of the Coronavirus pandemic, it is getting\nmore critical to lessen air contamination to reduce its impact. The specialists\nand environmentalists are making a valiant effort to gauge air contamination\nlevels. However, its genuinely unpredictable to mimic subatomic communication\nin the air, which brings about off base outcomes. There has been an ascent in\nusing machine learning and deep learning models to foresee the results on time\nseries data. This study adopts ARIMA, FBProphet, and deep learning models such\nas LSTM, 1D CNN, to estimate the concentration of PM2.5 in the environment. Our\npredicted results convey that all adopted methods give comparative outcomes in\nterms of average root mean squared error. However, the LSTM outperforms all\nother models with reference to mean absolute percentage error.\n",
+        "published": "2021",
+        "authors": [
+            "Satvik Garg",
+            "Himanshu Jindal"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2104.04781v2",
+        "title": "Boosted Embeddings for Time Series Forecasting",
+        "abstract": "  Time series forecasting is a fundamental task emerging from diverse\ndata-driven applications. Many advanced autoregressive methods such as ARIMA\nwere used to develop forecasting models. Recently, deep learning based methods\nsuch as DeepAr, NeuralProphet, Seq2Seq have been explored for time series\nforecasting problem. In this paper, we propose a novel time series forecast\nmodel, DeepGB. We formulate and implement a variant of Gradient boosting\nwherein the weak learners are DNNs whose weights are incrementally found in a\ngreedy manner over iterations. In particular, we develop a new embedding\narchitecture that improves the performance of many deep learning models on time\nseries using Gradient boosting variant. We demonstrate that our model\noutperforms existing comparable state-of-the-art models using real-world sensor\ndata and public dataset.\n",
+        "published": "2021",
+        "authors": [
+            "Sankeerth Rao Karingula",
+            "Nandini Ramanan",
+            "Rasool Tahmasbi",
+            "Mehrnaz Amjadi",
+            "Deokwoo Jung",
+            "Ricky Si",
+            "Charanraj Thimmisetty",
+            "Luisa Polania Cabrera",
+            "Marjorie Sayer",
+            "Claudionor Nunes Coelho Jr"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2106.09291v1",
+        "title": "Towards Understanding Deep Learning from Noisy Labels with Small-Loss\n  Criterion",
+        "abstract": "  Deep neural networks need large amounts of labeled data to achieve good\nperformance. In real-world applications, labels are usually collected from\nnon-experts such as crowdsourcing to save cost and thus are noisy. In the past\nfew years, deep learning methods for dealing with noisy labels have been\ndeveloped, many of which are based on the small-loss criterion. However, there\nare few theoretical analyses to explain why these methods could learn well from\nnoisy labels. In this paper, we theoretically explain why the widely-used\nsmall-loss criterion works. Based on the explanation, we reformalize the\nvanilla small-loss criterion to better tackle noisy labels. The experimental\nresults verify our theoretical explanation and also demonstrate the\neffectiveness of the reformalization.\n",
+        "published": "2021",
+        "authors": [
+            "Xian-Jin Gui",
+            "Wei Wang",
+            "Zhang-Hao Tian"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2106.11342v5",
+        "title": "Dive into Deep Learning",
+        "abstract": "  This open-source book represents our attempt to make deep learning\napproachable, teaching readers the concepts, the context, and the code. The\nentire book is drafted in Jupyter notebooks, seamlessly integrating exposition\nfigures, math, and interactive examples with self-contained code. Our goal is\nto offer a resource that could (i) be freely available for everyone; (ii) offer\nsufficient technical depth to provide a starting point on the path to actually\nbecoming an applied machine learning scientist; (iii) include runnable code,\nshowing readers how to solve problems in practice; (iv) allow for rapid\nupdates, both by us and also by the community at large; (v) be complemented by\na forum for interactive discussion of technical details and to answer\nquestions.\n",
+        "published": "2021",
+        "authors": [
+            "Aston Zhang",
+            "Zachary C. Lipton",
+            "Mu Li",
+            "Alexander J. Smola"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2106.12614v1",
+        "title": "Handwritten Digit Recognition using Machine and Deep Learning Algorithms",
+        "abstract": "  The reliance of humans over machines has never been so high such that from\nobject classification in photographs to adding sound to silent movies\neverything can be performed with the help of deep learning and machine learning\nalgorithms. Likewise, Handwritten text recognition is one of the significant\nareas of research and development with a streaming number of possibilities that\ncould be attained. Handwriting recognition (HWR), also known as Handwritten\nText Recognition (HTR), is the ability of a computer to receive and interpret\nintelligible handwritten input from sources such as paper documents,\nphotographs, touch-screens and other devices [1]. Apparently, in this paper, we\nhave performed handwritten digit recognition with the help of MNIST datasets\nusing Support Vector Machines (SVM), Multi-Layer Perceptron (MLP) and\nConvolution Neural Network (CNN) models. Our main objective is to compare the\naccuracy of the models stated above along with their execution time to get the\nbest possible model for digit recognition.\n",
+        "published": "2021",
+        "authors": [
+            "Samay Pashine",
+            "Ritik Dixit",
+            "Rishika Kushwah"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2110.02739v2",
+        "title": "A Step Towards Efficient Evaluation of Complex Perception Tasks in\n  Simulation",
+        "abstract": "  There has been increasing interest in characterising the error behaviour of\nsystems which contain deep learning models before deploying them into any\nsafety-critical scenario. However, characterising such behaviour usually\nrequires large-scale testing of the model that can be extremely computationally\nexpensive for complex real-world tasks. For example, tasks involving compute\nintensive object detectors as one of their components. In this work, we propose\nan approach that enables efficient large-scale testing using simplified\nlow-fidelity simulators and without the computational cost of executing\nexpensive deep learning models. Our approach relies on designing an efficient\nsurrogate model corresponding to the compute intensive components of the task\nunder test. We demonstrate the efficacy of our methodology by evaluating the\nperformance of an autonomous driving task in the Carla simulator with reduced\ncomputational expense by training efficient surrogate models for PIXOR and\nCenterPoint LiDAR detectors, whilst demonstrating that the accuracy of the\nsimulation is maintained.\n",
+        "published": "2021",
+        "authors": [
+            "Jonathan Sadeghi",
+            "Blaine Rogers",
+            "James Gunn",
+            "Thomas Saunders",
+            "Sina Samangooei",
+            "Puneet Kumar Dokania",
+            "John Redford"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2110.03051v3",
+        "title": "Prior and Posterior Networks: A Survey on Evidential Deep Learning\n  Methods For Uncertainty Estimation",
+        "abstract": "  Popular approaches for quantifying predictive uncertainty in deep neural\nnetworks often involve distributions over weights or multiple models, for\ninstance via Markov Chain sampling, ensembling, or Monte Carlo dropout. These\ntechniques usually incur overhead by having to train multiple model instances\nor do not produce very diverse predictions. This comprehensive and extensive\nsurvey aims to familiarize the reader with an alternative class of models based\non the concept of Evidential Deep Learning: For unfamiliar data, they aim to\nadmit \"what they don't know\", and fall back onto a prior belief. Furthermore,\nthey allow uncertainty estimation in a single model and forward pass by\nparameterizing distributions over distributions. This survey recapitulates\nexisting works, focusing on the implementation in a classification setting,\nbefore surveying the application of the same paradigm to regression. We also\nreflect on the strengths and weaknesses compared to other existing methods and\nprovide the most fundamental derivations using a unified notation to aid future\nresearch.\n",
+        "published": "2021",
+        "authors": [
+            "Dennis Ulmer",
+            "Christian Hardmeier",
+            "Jes Frellsen"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2110.13264v1",
+        "title": "Memory visualization tool for training neural network",
+        "abstract": "  Software developed helps world a better place ranging from system software,\nopen source, application software and so on. Software engineering does have\nneural network models applied to code suggestion, bug report summarizing and so\non to demonstrate their effectiveness at a real SE task. Software and machine\nlearning algorithms combine to make software give better solutions and\nunderstanding of environment. In software, there are both generalized\napplications which helps solve problems for entire world and also some specific\napplications which helps one particular community. To address the computational\nchallenge in deep learning, many tools exploit hardware features such as\nmulti-core CPUs and many-core GPUs to shorten the training time. Machine\nlearning algorithms have a greater impact in the world but there is a\nconsiderable amount of memory utilization during the process. We propose a new\ntool for analysis of memory utilized for developing and training deep learning\nmodels. Our tool results in visual utilization of memory concurrently. Various\nparameters affecting the memory utilization are analysed while training. This\ntool helps in knowing better idea of processes or models which consumes more\nmemory.\n",
+        "published": "2021",
+        "authors": [
+            "Mahendran N"
+        ]
+    },
+    {
+        "id": "http://arxiv.org/abs/2111.00830v2",
+        "title": "Deep Learning Transformer Architecture for Named Entity Recognition on\n  Low Resourced Languages: State of the art results",
+        "abstract": "  This paper reports on the evaluation of Deep Learning (DL) transformer\narchitecture models for Named-Entity Recognition (NER) on ten low-resourced\nSouth African (SA) languages. In addition, these DL transformer models were\ncompared to other Neural Network and Machine Learning (ML) NER models. The\nfindings show that transformer models substantially improve performance when\napplying discrete fine-tuning parameters per language. Furthermore, fine-tuned\ntransformer models outperform other neural network and machine learning models\non NER with the low-resourced SA languages. For example, the transformer models\nobtained the highest F-scores for six of the ten SA languages and the highest\naverage F-score surpassing the Conditional Random Fields ML model. Practical\nimplications include developing high-performance NER capability with less\neffort and resource costs, potentially improving downstream NLP tasks such as\nMachine Translation (MT). Therefore, the application of DL transformer\narchitecture models for NLP NER sequence tagging tasks on low-resourced SA\nlanguages is viable. Additional research could evaluate the more recent\ntransformer architecture models on other Natural Language Processing tasks and\napplications, such as Phrase chunking, MT, and Part-of-Speech tagging.\n",
+        "published": "2021",
+        "authors": [
+            "Ridewaan Hanslo"
+        ]
+    }
+]
