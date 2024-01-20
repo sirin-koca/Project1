@@ -3,58 +3,88 @@
         "id": "http://arxiv.org/abs/2011.05605v2",
         "title": "Decentralized Motion Planning for Multi-Robot Navigation using Deep\n  Reinforcement Learning",
         "abstract": "  This work presents a decentralized motion planning framework for addressing\nthe task of multi-robot navigation using deep reinforcement learning. A custom\nsimulator was developed in order to experimentally investigate the navigation\nproblem of 4 cooperative non-holonomic robots sharing limited state information\nwith each other in 3 different settings. The notion of decentralized motion\nplanning with common and shared policy learning was adopted, which allowed\nrobust training and testing of this approach in a stochastic environment since\nthe agents were mutually independent and exhibited asynchronous motion\nbehavior. The task was further aggravated by providing the agents with a sparse\nobservation space and requiring them to generate continuous action commands so\nas to efficiently, yet safely navigate to their respective goal locations,\nwhile avoiding collisions with other dynamic peers and static obstacles at all\ntimes. The experimental results are reported in terms of quantitative measures\nand qualitative remarks for both training and deployment phases.\n",
-        "published": "2020",
+        "published": "2020-11-11",
         "authors": [
             "Sivanathan Kandhasamy",
             "Vinayagam Babu Kuppusamy",
             "Tanmay Vilas Samak",
             "Chinmay Vilas Samak"
+        ],
+        "categories": [
+            null,
+            null,
+            null,
+            null,
+            null
         ]
     },
     {
         "id": "http://arxiv.org/abs/1709.06620v1",
         "title": "Learning of Coordination Policies for Robotic Swarms",
         "abstract": "  Inspired by biological swarms, robotic swarms are envisioned to solve\nreal-world problems that are difficult for individual agents. Biological swarms\ncan achieve collective intelligence based on local interactions and simple\nrules; however, designing effective distributed policies for large-scale\nrobotic swarms to achieve a global objective can be challenging. Although it is\noften possible to design an optimal centralized strategy for smaller numbers of\nagents, those methods can fail as the number of agents increases. Motivated by\nthe growing success of machine learning, we develop a deep learning approach\nthat learns distributed coordination policies from centralized policies. In\ncontrast to traditional distributed control approaches, which are usually based\non human-designed policies for relatively simple tasks, this learning-based\napproach can be adapted to more difficult tasks. We demonstrate the efficacy of\nour proposed approach on two different tasks, the well-known rendezvous problem\nand a more difficult particle assignment problem. For the latter, no known\ndistributed policy exists. From extensive simulations, it is shown that the\nperformance of the learned coordination policies is comparable to the\ncentralized policies, surpassing state-of-the-art distributed policies.\nThereby, our proposed approach provides a promising alternative for real-world\ncoordination problems that would be otherwise computationally expensive to\nsolve or intangible to explore.\n",
-        "published": "2017",
+        "published": "2017-09-19",
         "authors": [
             "Qiyang Li",
             "Xintong Du",
             "Yizhou Huang",
             "Quinlan Sykora",
             "Angela P. Schoellig"
+        ],
+        "categories": [
+            null,
+            null,
+            null,
+            null,
+            null
         ]
     },
     {
         "id": "http://arxiv.org/abs/1807.09341v1",
         "title": "Learning Plannable Representations with Causal InfoGAN",
         "abstract": "  In recent years, deep generative models have been shown to 'imagine'\nconvincing high-dimensional observations such as images, audio, and even video,\nlearning directly from raw data. In this work, we ask how to imagine\ngoal-directed visual plans -- a plausible sequence of observations that\ntransition a dynamical system from its current configuration to a desired goal\nstate, which can later be used as a reference trajectory for control. We focus\non systems with high-dimensional observations, such as images, and propose an\napproach that naturally combines representation learning and planning. Our\nframework learns a generative model of sequential observations, where the\ngenerative process is induced by a transition in a low-dimensional planning\nmodel, and an additional noise. By maximizing the mutual information between\nthe generated observations and the transition in the planning model, we obtain\na low-dimensional representation that best explains the causal nature of the\ndata. We structure the planning model to be compatible with efficient planning\nalgorithms, and we propose several such models based on either discrete or\ncontinuous states. Finally, to generate a visual plan, we project the current\nand goal observations onto their respective states in the planning model, plan\na trajectory, and then use the generative model to transform the trajectory to\na sequence of observations. We demonstrate our method on imagining plausible\nvisual plans of rope manipulation.\n",
-        "published": "2018",
+        "published": "2018-07-24",
         "authors": [
             "Thanard Kurutach",
             "Aviv Tamar",
             "Ge Yang",
             "Stuart Russell",
             "Pieter Abbeel"
+        ],
+        "categories": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
         ]
     },
     {
         "id": "http://arxiv.org/abs/1902.05546v2",
         "title": "Learning to Control Self-Assembling Morphologies: A Study of\n  Generalization via Modularity",
         "abstract": "  Contemporary sensorimotor learning approaches typically start with an\nexisting complex agent (e.g., a robotic arm), which they learn to control. In\ncontrast, this paper investigates a modular co-evolution strategy: a collection\nof primitive agents learns to dynamically self-assemble into composite bodies\nwhile also learning to coordinate their behavior to control these bodies. Each\nprimitive agent consists of a limb with a motor attached at one end. Limbs may\nchoose to link up to form collectives. When a limb initiates a link-up action,\nand there is another limb nearby, the latter is magnetically connected to the\n'parent' limb's motor. This forms a new single agent, which may further link\nwith other agents. In this way, complex morphologies can emerge, controlled by\na policy whose architecture is in explicit correspondence with the morphology.\nWe evaluate the performance of these dynamic and modular agents in simulated\nenvironments. We demonstrate better generalization to test-time changes both in\nthe environment, as well as in the structure of the agent, compared to static\nand monolithic baselines. Project video and code are available at\nhttps://pathak22.github.io/modular-assemblies/\n",
-        "published": "2019",
+        "published": "2019-02-14",
         "authors": [
             "Deepak Pathak",
             "Chris Lu",
             "Trevor Darrell",
             "Phillip Isola",
             "Alexei A. Efros"
+        ],
+        "categories": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
         ]
     },
     {
         "id": "http://arxiv.org/abs/2005.05960v2",
         "title": "Planning to Explore via Self-Supervised World Models",
         "abstract": "  Reinforcement learning allows solving complex tasks, however, the learning\ntends to be task-specific and the sample efficiency remains a challenge. We\npresent Plan2Explore, a self-supervised reinforcement learning agent that\ntackles both these challenges through a new approach to self-supervised\nexploration and fast adaptation to new tasks, which need not be known during\nexploration. During exploration, unlike prior methods which retrospectively\ncompute the novelty of observations after the agent has already reached them,\nour agent acts efficiently by leveraging planning to seek out expected future\nnovelty. After exploration, the agent quickly adapts to multiple downstream\ntasks in a zero or a few-shot manner. We evaluate on challenging control tasks\nfrom high-dimensional image inputs. Without any training supervision or\ntask-specific interaction, Plan2Explore outperforms prior self-supervised\nexploration methods, and in fact, almost matches the performances oracle which\nhas access to rewards. Videos and code at\nhttps://ramanans1.github.io/plan2explore/\n",
-        "published": "2020",
+        "published": "2020-05-12",
         "authors": [
             "Ramanan Sekar",
             "Oleh Rybkin",
@@ -62,78 +92,130 @@
             "Pieter Abbeel",
             "Danijar Hafner",
             "Deepak Pathak"
+        ],
+        "categories": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
         ]
     },
     {
         "id": "http://arxiv.org/abs/1409.8484v1",
         "title": "An agent-driven semantical identifier using radial basis neural networks\n  and reinforcement learning",
         "abstract": "  Due to the huge availability of documents in digital form, and the deception\npossibility raise bound to the essence of digital documents and the way they\nare spread, the authorship attribution problem has constantly increased its\nrelevance. Nowadays, authorship attribution,for both information retrieval and\nanalysis, has gained great importance in the context of security, trust and\ncopyright preservation. This work proposes an innovative multi-agent driven\nmachine learning technique that has been developed for authorship attribution.\nBy means of a preprocessing for word-grouping and time-period related analysis\nof the common lexicon, we determine a bias reference level for the recurrence\nfrequency of the words within analysed texts, and then train a Radial Basis\nNeural Networks (RBPNN)-based classifier to identify the correct author. The\nmain advantage of the proposed approach lies in the generality of the semantic\nanalysis, which can be applied to different contexts and lexical domains,\nwithout requiring any modification. Moreover, the proposed system is able to\nincorporate an external input, meant to tune the classifier, and then\nself-adjust by means of continuous learning reinforcement.\n",
-        "published": "2014",
+        "published": "2014-09-30",
         "authors": [
             "Christian Napoli",
             "Giuseppe Pappalardo",
             "Emiliano Tramontana"
+        ],
+        "categories": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
         ]
     },
     {
         "id": "http://arxiv.org/abs/1806.06464v2",
         "title": "Learning Policy Representations in Multiagent Systems",
         "abstract": "  Modeling agent behavior is central to understanding the emergence of complex\nphenomena in multiagent systems. Prior work in agent modeling has largely been\ntask-specific and driven by hand-engineering domain-specific prior knowledge.\nWe propose a general learning framework for modeling agent behavior in any\nmultiagent system using only a handful of interaction data. Our framework casts\nagent modeling as a representation learning problem. Consequently, we construct\na novel objective inspired by imitation learning and agent identification and\ndesign an algorithm for unsupervised learning of representations of agent\npolicies. We demonstrate empirically the utility of the proposed framework in\n(i) a challenging high-dimensional competitive environment for continuous\ncontrol and (ii) a cooperative environment for communication, on supervised\npredictive tasks, unsupervised clustering, and policy optimization using deep\nreinforcement learning.\n",
-        "published": "2018",
+        "published": "2018-06-17",
         "authors": [
             "Aditya Grover",
             "Maruan Al-Shedivat",
             "Jayesh K. Gupta",
             "Yura Burda",
             "Harrison Edwards"
+        ],
+        "categories": [
+            null,
+            null,
+            null,
+            null,
+            null
         ]
     },
     {
         "id": "http://arxiv.org/abs/2004.07707v1",
         "title": "Analyzing Reinforcement Learning Benchmarks with Random Weight Guessing",
         "abstract": "  We propose a novel method for analyzing and visualizing the complexity of\nstandard reinforcement learning (RL) benchmarks based on score distributions. A\nlarge number of policy networks are generated by randomly guessing their\nparameters, and then evaluated on the benchmark task; the study of their\naggregated results provide insights into the benchmark complexity. Our method\nguarantees objectivity of evaluation by sidestepping learning altogether: the\npolicy network parameters are generated using Random Weight Guessing (RWG),\nmaking our method agnostic to (i) the classic RL setup, (ii) any learning\nalgorithm, and (iii) hyperparameter tuning. We show that this approach isolates\nthe environment complexity, highlights specific types of challenges, and\nprovides a proper foundation for the statistical analysis of the task's\ndifficulty. We test our approach on a variety of classic control benchmarks\nfrom the OpenAI Gym, where we show that small untrained networks can provide a\nrobust baseline for a variety of tasks. The networks generated often show good\nperformance even without gradual learning, incidentally highlighting the\ntriviality of a few popular benchmarks.\n",
-        "published": "2020",
+        "published": "2020-04-16",
         "authors": [
             "Declan Oller",
             "Tobias Glasmachers",
             "Giuseppe Cuccu"
+        ],
+        "categories": [
+            null,
+            null,
+            null,
+            null,
+            null
         ]
     },
     {
         "id": "http://arxiv.org/abs/1906.01470v3",
         "title": "Options as responses: Grounding behavioural hierarchies in multi-agent\n  RL",
         "abstract": "  This paper investigates generalisation in multi-agent games, where the\ngenerality of the agent can be evaluated by playing against opponents it hasn't\nseen during training. We propose two new games with concealed information and\ncomplex, non-transitive reward structure (think rock/paper/scissors). It turns\nout that most current deep reinforcement learning methods fail to efficiently\nexplore the strategy space, thus learning policies that generalise poorly to\nunseen opponents. We then propose a novel hierarchical agent architecture,\nwhere the hierarchy is grounded in the game-theoretic structure of the game --\nthe top level chooses strategic responses to opponents, while the low level\nimplements them into policy over primitive actions. This grounding facilitates\ncredit assignment across the levels of hierarchy. Our experiments show that the\nproposed hierarchical agent is capable of generalisation to unseen opponents,\nwhile conventional baselines fail to generalise whatsoever.\n",
-        "published": "2019",
+        "published": "2019-06-04",
         "authors": [
             "Alexander Sasha Vezhnevets",
             "Yuhuai Wu",
             "Remi Leblond",
             "Joel Z. Leibo"
+        ],
+        "categories": [
+            null,
+            null,
+            null,
+            null,
+            null
         ]
     },
     {
         "id": "http://arxiv.org/abs/2205.10113v1",
         "title": "Evolutionary Multi-Armed Bandits with Genetic Thompson Sampling",
         "abstract": "  As two popular schools of machine learning, online learning and evolutionary\ncomputations have become two important driving forces behind real-world\ndecision making engines for applications in biomedicine, economics, and\nengineering fields. Although there are prior work that utilizes bandits to\nimprove evolutionary algorithms' optimization process, it remains a field of\nblank on how evolutionary approach can help improve the sequential decision\nmaking tasks of online learning agents such as the multi-armed bandits. In this\nwork, we propose the Genetic Thompson Sampling, a bandit algorithm that keeps a\npopulation of agents and update them with genetic principles such as elite\nselection, crossover and mutations. Empirical results in multi-armed bandit\nsimulation environments and a practical epidemic control problem suggest that\nby incorporating the genetic algorithm into the bandit algorithm, our method\nsignificantly outperforms the baselines in nonstationary settings. Lastly, we\nintroduce EvoBandit, a web-based interactive visualization to guide the readers\nthrough the entire learning process and perform lightweight evaluations on the\nfly. We hope to engage researchers into this growing field of research with\nthis investigation.\n",
-        "published": "2022",
+        "published": "2022-04-26",
         "authors": [
             "Baihan Lin"
+        ],
+        "categories": [
+            null,
+            null,
+            null,
+            null,
+            null
         ]
     },
     {
         "id": "http://arxiv.org/abs/2209.14745v2",
         "title": "A Multiagent Framework for the Asynchronous and Collaborative Extension\n  of Multitask ML Systems",
         "abstract": "  The traditional ML development methodology does not enable a large number of\ncontributors, each with distinct objectives, to work collectively on the\ncreation and extension of a shared intelligent system. Enabling such a\ncollaborative methodology can accelerate the rate of innovation, increase ML\ntechnologies accessibility and enable the emergence of novel capabilities. We\nbelieve that this novel methodology for ML development can be demonstrated\nthrough a modularized representation of ML models and the definition of novel\nabstractions allowing to implement and execute diverse methods for the\nasynchronous use and extension of modular intelligent systems. We present a\nmultiagent framework for the collaborative and asynchronous extension of\ndynamic large-scale multitask systems.\n",
-        "published": "2022",
+        "published": "2022-09-29",
         "authors": [
             "Andrea Gesmundo"
+        ],
+        "categories": [
+            null,
+            null,
+            null,
+            null,
+            null
         ]
     },
     {
         "id": "http://arxiv.org/abs/2305.17390v2",
         "title": "SwiftSage: A Generative Agent with Fast and Slow Thinking for Complex\n  Interactive Tasks",
         "abstract": "  We introduce SwiftSage, a novel agent framework inspired by the dual-process\ntheory of human cognition, designed to excel in action planning for complex\ninteractive reasoning tasks. SwiftSage integrates the strengths of behavior\ncloning and prompting large language models (LLMs) to enhance task completion\nperformance. The framework comprises two primary modules: the Swift module,\nrepresenting fast and intuitive thinking, and the Sage module, emulating\ndeliberate thought processes. The Swift module is a small encoder-decoder LM\nfine-tuned on the oracle agent's action trajectories, while the Sage module\nemploys LLMs such as GPT-4 for subgoal planning and grounding. We develop a\nheuristic method to harmoniously integrate the two modules, resulting in a more\nefficient and robust problem-solving process. In 30 tasks from the ScienceWorld\nbenchmark, SwiftSage significantly outperforms other methods such as SayCan,\nReAct, and Reflexion, demonstrating its effectiveness in solving complex\ninteractive tasks.\n",
-        "published": "2023",
+        "published": "2023-05-27",
         "authors": [
             "Bill Yuchen Lin",
             "Yicheng Fu",
@@ -144,128 +226,210 @@
             "Prithviraj Ammanabrolu",
             "Yejin Choi",
             "Xiang Ren"
+        ],
+        "categories": [
+            null,
+            null,
+            null,
+            null,
+            null
         ]
     },
     {
         "id": "http://arxiv.org/abs/2110.00751v2",
         "title": "Partner-Aware Algorithms in Decentralized Cooperative Bandit Teams",
         "abstract": "  When humans collaborate with each other, they often make decisions by\nobserving others and considering the consequences that their actions may have\non the entire team, instead of greedily doing what is best for just themselves.\nWe would like our AI agents to effectively collaborate in a similar way by\ncapturing a model of their partners. In this work, we propose and analyze a\ndecentralized Multi-Armed Bandit (MAB) problem with coupled rewards as an\nabstraction of more general multi-agent collaboration. We demonstrate that\nna\\\"ive extensions of single-agent optimal MAB algorithms fail when applied for\ndecentralized bandit teams. Instead, we propose a Partner-Aware strategy for\njoint sequential decision-making that extends the well-known single-agent Upper\nConfidence Bound algorithm. We analytically show that our proposed strategy\nachieves logarithmic regret, and provide extensive experiments involving\nhuman-AI and human-robot collaboration to validate our theoretical findings.\nOur results show that the proposed partner-aware strategy outperforms other\nknown methods, and our human subject studies suggest humans prefer to\ncollaborate with AI agents implementing our partner-aware strategy.\n",
-        "published": "2021",
+        "published": "2021-10-02",
         "authors": [
             "Erdem B\u0131y\u0131k",
             "Anusha Lalitha",
             "Rajarshi Saha",
             "Andrea Goldsmith",
             "Dorsa Sadigh"
+        ],
+        "categories": [
+            null,
+            null,
+            null,
+            null,
+            null
         ]
     },
     {
         "id": "http://arxiv.org/abs/2007.05096v2",
         "title": "Multi-Agent Routing Value Iteration Network",
         "abstract": "  In this paper we tackle the problem of routing multiple agents in a\ncoordinated manner. This is a complex problem that has a wide range of\napplications in fleet management to achieve a common goal, such as mapping from\na swarm of robots and ride sharing. Traditional methods are typically not\ndesigned for realistic environments hich contain sparsely connected graphs and\nunknown traffic, and are often too slow in runtime to be practical. In\ncontrast, we propose a graph neural network based model that is able to perform\nmulti-agent routing based on learned value iteration in a sparsely connected\ngraph with dynamically changing traffic conditions. Moreover, our learned\ncommunication module enables the agents to coordinate online and adapt to\nchanges more effectively. We created a simulated environment to mimic realistic\nmapping performed by autonomous vehicles with unknown minimum edge coverage and\ntraffic conditions; our approach significantly outperforms traditional solvers\nboth in terms of total cost and runtime. We also show that our model trained\nwith only two agents on graphs with a maximum of 25 nodes can easily generalize\nto situations with more agents and/or nodes.\n",
-        "published": "2020",
+        "published": "2020-07-09",
         "authors": [
             "Quinlan Sykora",
             "Mengye Ren",
             "Raquel Urtasun"
+        ],
+        "categories": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
         ]
     },
     {
         "id": "http://arxiv.org/abs/1905.12204v4",
         "title": "Learning NP-Hard Multi-Agent Assignment Planning using GNN: Inference on\n  a Random Graph and Provable Auction-Fitted Q-learning",
         "abstract": "  This paper explores the possibility of near-optimally solving multi-agent,\nmulti-task NP-hard planning problems with time-dependent rewards using a\nlearning-based algorithm. In particular, we consider a class of robot/machine\nscheduling problems called the multi-robot reward collection problem (MRRC).\nSuch MRRC problems well model ride-sharing, pickup-and-delivery, and a variety\nof related problems. In representing the MRRC problem as a sequential\ndecision-making problem, we observe that each state can be represented as an\nextension of probabilistic graphical models (PGMs), which we refer to as random\nPGMs. We then develop a mean-field inference method for random PGMs. We then\npropose (1) an order-transferable Q-function estimator and (2) an\norder-transferability-enabled auction to select a joint assignment in\npolynomial time. These result in a reinforcement learning framework with at\nleast $1-1/e$ optimality. Experimental results on solving MRRC problems\nhighlight the near-optimality and transferability of the proposed methods. We\nalso consider identical parallel machine scheduling problems (IPMS) and minimax\nmultiple traveling salesman problems (minimax-mTSP).\n",
-        "published": "2019",
+        "published": "2019-05-29",
         "authors": [
             "Hyunwook Kang",
             "Taehwan Kwon",
             "Jinkyoo Park",
             "James R. Morrison"
+        ],
+        "categories": [
+            null,
+            null,
+            null,
+            null,
+            null
         ]
     },
     {
         "id": "http://arxiv.org/abs/1911.04175v1",
         "title": "Multi-Agent Connected Autonomous Driving using Deep Reinforcement\n  Learning",
         "abstract": "  The capability to learn and adapt to changes in the driving environment is\ncrucial for developing autonomous driving systems that are scalable beyond\ngeo-fenced operational design domains. Deep Reinforcement Learning (RL)\nprovides a promising and scalable framework for developing adaptive learning\nbased solutions. Deep RL methods usually model the problem as a (Partially\nObservable) Markov Decision Process in which an agent acts in a stationary\nenvironment to learn an optimal behavior policy. However, driving involves\ncomplex interaction between multiple, intelligent (artificial or human) agents\nin a highly non-stationary environment. In this paper, we propose the use of\nPartially Observable Markov Games(POSG) for formulating the connected\nautonomous driving problems with realistic assumptions. We provide a taxonomy\nof multi-agent learning environments based on the nature of tasks, nature of\nagents and the nature of the environment to help in categorizing various\nautonomous driving problems that can be addressed under the proposed\nformulation. As our main contributions, we provide MACAD-Gym, a Multi-Agent\nConnected, Autonomous Driving agent learning platform for furthering research\nin this direction. Our MACAD-Gym platform provides an extensible set of\nConnected Autonomous Driving (CAD) simulation environments that enable the\nresearch and development of Deep RL- based integrated sensing, perception,\nplanning and control algorithms for CAD systems with unlimited operational\ndesign domain under realistic, multi-agent settings. We also share the\nMACAD-Agents that were trained successfully using the MACAD-Gym platform to\nlearn control policies for multiple vehicle agents in a partially observable,\nstop-sign controlled, 3-way urban intersection environment with raw (camera)\nsensor observations.\n",
-        "published": "2019",
+        "published": "2019-11-11",
         "authors": [
             "Praveen Palanisamy"
+        ],
+        "categories": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
         ]
     },
     {
         "id": "http://arxiv.org/abs/1912.12147v2",
         "title": "Cooperative Perception for 3D Object Detection in Driving Scenarios\n  using Infrastructure Sensors",
         "abstract": "  3D object detection is a common function within the perception system of an\nautonomous vehicle and outputs a list of 3D bounding boxes around objects of\ninterest. Various 3D object detection methods have relied on fusion of\ndifferent sensor modalities to overcome limitations of individual sensors.\nHowever, occlusion, limited field-of-view and low-point density of the sensor\ndata cannot be reliably and cost-effectively addressed by multi-modal sensing\nfrom a single point of view. Alternatively, cooperative perception incorporates\ninformation from spatially diverse sensors distributed around the environment\nas a way to mitigate these limitations. This article proposes two schemes for\ncooperative 3D object detection using single modality sensors. The early fusion\nscheme combines point clouds from multiple spatially diverse sensing points of\nview before detection. In contrast, the late fusion scheme fuses the\nindependently detected bounding boxes from multiple spatially diverse sensors.\nWe evaluate the performance of both schemes, and their hybrid combination,\nusing a synthetic cooperative dataset created in two complex driving scenarios,\na T-junction and a roundabout. The evaluation shows that the early fusion\napproach outperforms late fusion by a significant margin at the cost of higher\ncommunication bandwidth. The results demonstrate that cooperative perception\ncan recall more than 95% of the objects as opposed to 30% for single-point\nsensing in the most challenging scenario. To provide practical insights into\nthe deployment of such system, we report how the number of sensors and their\nconfiguration impact the detection performance of the system.\n",
-        "published": "2019",
+        "published": "2019-12-18",
         "authors": [
             "Eduardo Arnold",
             "Mehrdad Dianati",
             "Robert de Temple",
             "Saber Fallah"
+        ],
+        "categories": [
+            null,
+            null,
+            null,
+            null,
+            null
         ]
     },
     {
         "id": "http://arxiv.org/abs/1911.00997v2",
         "title": "Multiple Futures Prediction",
         "abstract": "  Temporal prediction is critical for making intelligent and robust decisions\nin complex dynamic environments. Motion prediction needs to model the\ninherently uncertain future which often contains multiple potential outcomes,\ndue to multi-agent interactions and the latent goals of others. Towards these\ngoals, we introduce a probabilistic framework that efficiently learns latent\nvariables to jointly model the multi-step future motions of agents in a scene.\nOur framework is data-driven and learns semantically meaningful latent\nvariables to represent the multimodal future, without requiring explicit\nlabels. Using a dynamic attention-based state encoder, we learn to encode the\npast as well as the future interactions among agents, efficiently scaling to\nany number of agents. Finally, our model can be used for planning via computing\na conditional probability density over the trajectories of other agents given a\nhypothetical rollout of the 'self' agent. We demonstrate our algorithms by\npredicting vehicle trajectories of both simulated and real data, demonstrating\nthe state-of-the-art results on several vehicle trajectory datasets.\n",
-        "published": "2019",
+        "published": "2019-11-04",
         "authors": [
             "Yichuan Charlie Tang",
             "Ruslan Salakhutdinov"
+        ],
+        "categories": [
+            null,
+            null,
+            null,
+            null,
+            null
         ]
     },
     {
         "id": "http://arxiv.org/abs/1911.13044v6",
         "title": "Learning Structured Representations of Spatial and Interactive Dynamics\n  for Trajectory Prediction in Crowded Scenes",
         "abstract": "  Context plays a significant role in the generation of motion for dynamic\nagents in interactive environments. This work proposes a modular method that\nutilises a learned model of the environment for motion prediction. This\nmodularity explicitly allows for unsupervised adaptation of trajectory\nprediction models to unseen environments and new tasks by relying on unlabelled\nimage data only. We model both the spatial and dynamic aspects of a given\nenvironment alongside the per agent motions. This results in more informed\nmotion prediction and allows for performance comparable to the\nstate-of-the-art. We highlight the model's prediction capability using a\nbenchmark pedestrian prediction problem and a robot manipulation task and show\nthat we can transfer the predictor across these tasks in a completely\nunsupervised way. The proposed approach allows for robust and label efficient\nforward modelling, and relaxes the need for full model re-training in new\nenvironments.\n",
-        "published": "2019",
+        "published": "2019-11-29",
         "authors": [
             "Todor Davchev",
             "Michael Burke",
             "Subramanian Ramamoorthy"
+        ],
+        "categories": [
+            null,
+            null,
+            null,
+            null,
+            null
         ]
     },
     {
         "id": "http://arxiv.org/abs/2305.16748v1",
         "title": "A Decentralized Spike-based Learning Framework for Sequential Capture in\n  Discrete Perimeter Defense Problem",
         "abstract": "  This paper proposes a novel Decentralized Spike-based Learning (DSL)\nframework for the discrete Perimeter Defense Problem (d-PDP). A team of\ndefenders is operating on the perimeter to protect the circular territory from\nradially incoming intruders. At first, the d-PDP is formulated as a\nspatio-temporal multi-task assignment problem (STMTA). The problem of STMTA is\nthen converted into a multi-label learning problem to obtain labels of segments\nthat defenders have to visit in order to protect the perimeter. The DSL\nframework uses a Multi-Label Classifier using Synaptic Efficacy Function\nspiking neuRON (MLC-SEFRON) network for deterministic multi-label learning.\nEach defender contains a single MLC-SEFRON network. Each MLC-SEFRON network is\ntrained independently using input from its own perspective for decentralized\noperations. The input spikes to the MLC-SEFRON network can be directly obtained\nfrom the spatio-temporal information of defenders and intruders without any\nextra pre-processing step. The output of MLC-SEFRON contains the labels of\nsegments that a defender has to visit in order to protect the perimeter. Based\non the multi-label output from the MLC-SEFRON a trajectory is generated for a\ndefender using a Consensus-Based Bundle Algorithm (CBBA) in order to capture\nthe intruders. The target multi-label output for training MLC-SEFRON is\nobtained from an expert policy. Also, the MLC-SEFRON trained for a defender can\nbe directly used for obtaining labels of segments assigned to another defender\nwithout any retraining. The performance of MLC-SEFRON has been evaluated for\nfull observation and partial observation scenarios of the defender. The overall\nperformance of the DSL framework is then compared with expert policy along with\nother existing learning algorithms. The scalability of the DSL has been\nevaluated using an increasing number of defenders.\n",
-        "published": "2023",
+        "published": "2023-05-26",
         "authors": [
             "Mohammed Thousif",
             "Shridhar Velhal",
             "Suresh Sundaram",
             "Shirin Dora"
+        ],
+        "categories": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
         ]
     },
     {
         "id": "http://arxiv.org/abs/1910.07882v1",
         "title": "Visual Hide and Seek",
         "abstract": "  We train embodied agents to play Visual Hide and Seek where a prey must\nnavigate in a simulated environment in order to avoid capture from a predator.\nWe place a variety of obstacles in the environment for the prey to hide behind,\nand we only give the agents partial observations of their environment using an\negocentric perspective. Although we train the model to play this game from\nscratch, experiments and visualizations suggest that the agent learns to\npredict its own visibility in the environment. Furthermore, we quantitatively\nanalyze how agent weaknesses, such as slower speed, effect the learned policy.\nOur results suggest that, although agent weaknesses make the learning problem\nmore challenging, they also cause more useful features to be learned. Our\nproject website is available at: http://www.cs.columbia.edu/\n~bchen/visualhideseek/.\n",
-        "published": "2019",
+        "published": "2019-10-15",
         "authors": [
             "Boyuan Chen",
             "Shuran Song",
             "Hod Lipson",
             "Carl Vondrick"
+        ],
+        "categories": [
+            null,
+            null,
+            null,
+            null,
+            null
         ]
     },
     {
         "id": "http://arxiv.org/abs/2003.08376v3",
         "title": "Inverting the Pose Forecasting Pipeline with SPF2: Sequential Pointcloud\n  Forecasting for Sequential Pose Forecasting",
         "abstract": "  Many autonomous systems forecast aspects of the future in order to aid\ndecision-making. For example, self-driving vehicles and robotic manipulation\nsystems often forecast future object poses by first detecting and tracking\nobjects. However, this detect-then-forecast pipeline is expensive to scale, as\npose forecasting algorithms typically require labeled sequences of object\nposes, which are costly to obtain in 3D space. Can we scale performance without\nrequiring additional labels? We hypothesize yes, and propose inverting the\ndetect-then-forecast pipeline. Instead of detecting, tracking and then\nforecasting the objects, we propose to first forecast 3D sensor data (e.g.,\npoint clouds with $100$k points) and then detect/track objects on the predicted\npoint cloud sequences to obtain future poses, i.e., a forecast-then-detect\npipeline. This inversion makes it less expensive to scale pose forecasting, as\nthe sensor data forecasting task requires no labels. Part of this work's focus\nis on the challenging first step -- Sequential Pointcloud Forecasting (SPF),\nfor which we also propose an effective approach, SPFNet. To compare our\nforecast-then-detect pipeline relative to the detect-then-forecast pipeline, we\npropose an evaluation procedure and two metrics. Through experiments on a\nrobotic manipulation dataset and two driving datasets, we show that SPFNet is\neffective for the SPF task, our forecast-then-detect pipeline outperforms the\ndetect-then-forecast approaches to which we compared, and that pose forecasting\nperformance improves with the addition of unlabeled data.\n",
-        "published": "2020",
+        "published": "2020-03-18",
         "authors": [
             "Xinshuo Weng",
             "Jianren Wang",
             "Sergey Levine",
             "Kris Kitani",
             "Nicholas Rhinehart"
+        ],
+        "categories": [
+            null,
+            null,
+            null,
+            null,
+            null
         ]
     },
     {
         "id": "http://arxiv.org/abs/2008.12760v1",
         "title": "AllenAct: A Framework for Embodied AI Research",
         "abstract": "  The domain of Embodied AI, in which agents learn to complete tasks through\ninteraction with their environment from egocentric observations, has\nexperienced substantial growth with the advent of deep reinforcement learning\nand increased interest from the computer vision, NLP, and robotics communities.\nThis growth has been facilitated by the creation of a large number of simulated\nenvironments (such as AI2-THOR, Habitat and CARLA), tasks (like point\nnavigation, instruction following, and embodied question answering), and\nassociated leaderboards. While this diversity has been beneficial and organic,\nit has also fragmented the community: a huge amount of effort is required to do\nsomething as simple as taking a model trained in one environment and testing it\nin another. This discourages good science. We introduce AllenAct, a modular and\nflexible learning framework designed with a focus on the unique requirements of\nEmbodied AI research. AllenAct provides first-class support for a growing\ncollection of embodied environments, tasks and algorithms, provides\nreproductions of state-of-the-art models and includes extensive documentation,\ntutorials, start-up code, and pre-trained models. We hope that our framework\nmakes Embodied AI more accessible and encourages new researchers to join this\nexciting area. The framework can be accessed at: https://allenact.org/\n",
-        "published": "2020",
+        "published": "2020-08-28",
         "authors": [
             "Luca Weihs",
             "Jordi Salvador",
@@ -274,50 +438,78 @@
             "Kuo-Hao Zeng",
             "Roozbeh Mottaghi",
             "Aniruddha Kembhavi"
+        ],
+        "categories": [
+            null,
+            null,
+            null,
+            null,
+            null
         ]
     },
     {
         "id": "http://arxiv.org/abs/2105.05145v1",
         "title": "Visual Perspective Taking for Opponent Behavior Modeling",
         "abstract": "  In order to engage in complex social interaction, humans learn at a young age\nto infer what others see and cannot see from a different point-of-view, and\nlearn to predict others' plans and behaviors. These abilities have been mostly\nlacking in robots, sometimes making them appear awkward and socially inept.\nHere we propose an end-to-end long-term visual prediction framework for robots\nto begin to acquire both these critical cognitive skills, known as Visual\nPerspective Taking (VPT) and Theory of Behavior (TOB). We demonstrate our\napproach in the context of visual hide-and-seek - a game that represents a\ncognitive milestone in human development. Unlike traditional visual predictive\nmodel that generates new frames from immediate past frames, our agent can\ndirectly predict to multiple future timestamps (25s), extrapolating by 175%\nbeyond the training horizon. We suggest that visual behavior modeling and\nperspective taking skills will play a critical role in the ability of physical\nrobots to fully integrate into real-world multi-agent activities. Our website\nis at http://www.cs.columbia.edu/~bchen/vpttob/.\n",
-        "published": "2021",
+        "published": "2021-05-11",
         "authors": [
             "Boyuan Chen",
             "Yuhang Hu",
             "Robert Kwiatkowski",
             "Shuran Song",
             "Hod Lipson"
+        ],
+        "categories": [
+            null,
+            null,
+            null,
+            null,
+            null
         ]
     },
     {
         "id": "http://arxiv.org/abs/2011.02608v1",
         "title": "Learning a Decentralized Multi-arm Motion Planner",
         "abstract": "  We present a closed-loop multi-arm motion planner that is scalable and\nflexible with team size. Traditional multi-arm robot systems have relied on\ncentralized motion planners, whose runtimes often scale exponentially with team\nsize, and thus, fail to handle dynamic environments with open-loop control. In\nthis paper, we tackle this problem with multi-agent reinforcement learning,\nwhere a decentralized policy is trained to control one robot arm in the\nmulti-arm system to reach its target end-effector pose given observations of\nits workspace state and target end-effector pose. The policy is trained using\nSoft Actor-Critic with expert demonstrations from a sampling-based motion\nplanning algorithm (i.e., BiRRT). By leveraging classical planning algorithms,\nwe can improve the learning efficiency of the reinforcement learning algorithm\nwhile retaining the fast inference time of neural networks. The resulting\npolicy scales sub-linearly and can be deployed on multi-arm systems with\nvariable team sizes. Thanks to the closed-loop and decentralized formulation,\nour approach generalizes to 5-10 multi-arm systems and dynamic moving targets\n(>90% success rate for a 10-arm system), despite being trained on only 1-4 arm\nplanning tasks with static targets. Code and data links can be found at\nhttps://multiarm.cs.columbia.edu.\n",
-        "published": "2020",
+        "published": "2020-11-05",
         "authors": [
             "Huy Ha",
             "Jingxi Xu",
             "Shuran Song"
+        ],
+        "categories": [
+            null,
+            null,
+            null,
+            null,
+            null
         ]
     },
     {
         "id": "http://arxiv.org/abs/2102.09117v1",
         "title": "Spatio-Temporal Graph Dual-Attention Network for Multi-Agent Prediction\n  and Tracking",
         "abstract": "  An effective understanding of the environment and accurate trajectory\nprediction of surrounding dynamic obstacles are indispensable for intelligent\nmobile systems (e.g. autonomous vehicles and social robots) to achieve safe and\nhigh-quality planning when they navigate in highly interactive and crowded\nscenarios. Due to the existence of frequent interactions and uncertainty in the\nscene evolution, it is desired for the prediction system to enable relational\nreasoning on different entities and provide a distribution of future\ntrajectories for each agent. In this paper, we propose a generic generative\nneural system (called STG-DAT) for multi-agent trajectory prediction involving\nheterogeneous agents. The system takes a step forward to explicit interaction\nmodeling by incorporating relational inductive biases with a dynamic graph\nrepresentation and leverages both trajectory and scene context information. We\nalso employ an efficient kinematic constraint layer applied to vehicle\ntrajectory prediction. The constraint not only ensures physical feasibility but\nalso enhances model performance. Moreover, the proposed prediction model can be\neasily adopted by multi-target tracking frameworks. The tracking accuracy\nproves to be improved by empirical results. The proposed system is evaluated on\nthree public benchmark datasets for trajectory prediction, where the agents\ncover pedestrians, cyclists and on-road vehicles. The experimental results\ndemonstrate that our model achieves better performance than various baseline\napproaches in terms of prediction and tracking accuracy.\n",
-        "published": "2021",
+        "published": "2021-02-18",
         "authors": [
             "Jiachen Li",
             "Hengbo Ma",
             "Zhihao Zhang",
             "Jinning Li",
             "Masayoshi Tomizuka"
+        ],
+        "categories": [
+            null,
+            null,
+            null,
+            null,
+            null
         ]
     },
     {
         "id": "http://arxiv.org/abs/2103.12710v1",
         "title": "Spatial Intention Maps for Multi-Agent Mobile Manipulation",
         "abstract": "  The ability to communicate intention enables decentralized multi-agent robots\nto collaborate while performing physical tasks. In this work, we present\nspatial intention maps, a new intention representation for multi-agent\nvision-based deep reinforcement learning that improves coordination between\ndecentralized mobile manipulators. In this representation, each agent's\nintention is provided to other agents, and rendered into an overhead 2D map\naligned with visual observations. This synergizes with the recently proposed\nspatial action maps framework, in which state and action representations are\nspatially aligned, providing inductive biases that encourage emergent\ncooperative behaviors requiring spatial coordination, such as passing objects\nto each other or avoiding collisions. Experiments across a variety of\nmulti-agent environments, including heterogeneous robot teams with different\nabilities (lifting, pushing, or throwing), show that incorporating spatial\nintention maps improves performance for different mobile manipulation tasks\nwhile significantly enhancing cooperative behaviors.\n",
-        "published": "2021",
+        "published": "2021-03-23",
         "authors": [
             "Jimmy Wu",
             "Xingyuan Sun",
@@ -325,13 +517,20 @@
             "Shuran Song",
             "Szymon Rusinkiewicz",
             "Thomas Funkhouser"
+        ],
+        "categories": [
+            null,
+            null,
+            null,
+            null,
+            null
         ]
     },
     {
         "id": "http://arxiv.org/abs/2108.01316v1",
         "title": "RAIN: Reinforced Hybrid Attention Inference Network for Motion\n  Forecasting",
         "abstract": "  Motion forecasting plays a significant role in various domains (e.g.,\nautonomous driving, human-robot interaction), which aims to predict future\nmotion sequences given a set of historical observations. However, the observed\nelements may be of different levels of importance. Some information may be\nirrelevant or even distracting to the forecasting in certain situations. To\naddress this issue, we propose a generic motion forecasting framework (named\nRAIN) with dynamic key information selection and ranking based on a hybrid\nattention mechanism. The general framework is instantiated to handle\nmulti-agent trajectory prediction and human motion forecasting tasks,\nrespectively. In the former task, the model learns to recognize the relations\nbetween agents with a graph representation and to determine their relative\nsignificance. In the latter task, the model learns to capture the temporal\nproximity and dependency in long-term human motions. We also propose an\neffective double-stage training pipeline with an alternating training strategy\nto optimize the parameters in different modules of the framework. We validate\nthe framework on both synthetic simulations and motion forecasting benchmarks\nin different domains, demonstrating that our method not only achieves\nstate-of-the-art forecasting performance, but also provides interpretable and\nreasonable hybrid attention weights.\n",
-        "published": "2021",
+        "published": "2021-08-03",
         "authors": [
             "Jiachen Li",
             "Fan Yang",
@@ -339,13 +538,20 @@
             "Srikanth Malla",
             "Masayoshi Tomizuka",
             "Chiho Choi"
+        ],
+        "categories": [
+            null,
+            null,
+            null,
+            null,
+            null
         ]
     },
     {
         "id": "http://arxiv.org/abs/2108.08236v3",
         "title": "LOKI: Long Term and Key Intentions for Trajectory Prediction",
         "abstract": "  Recent advances in trajectory prediction have shown that explicit reasoning\nabout agents' intent is important to accurately forecast their motion. However,\nthe current research activities are not directly applicable to intelligent and\nsafety critical systems. This is mainly because very few public datasets are\navailable, and they only consider pedestrian-specific intents for a short\ntemporal horizon from a restricted egocentric view. To this end, we propose\nLOKI (LOng term and Key Intentions), a novel large-scale dataset that is\ndesigned to tackle joint trajectory and intention prediction for heterogeneous\ntraffic agents (pedestrians and vehicles) in an autonomous driving setting. The\nLOKI dataset is created to discover several factors that may affect intention,\nincluding i) agent's own will, ii) social interactions, iii) environmental\nconstraints, and iv) contextual information. We also propose a model that\njointly performs trajectory and intention prediction, showing that recurrently\nreasoning about intention can assist with trajectory prediction. We show our\nmethod outperforms state-of-the-art trajectory prediction methods by upto\n$27\\%$ and also provide a baseline for frame-wise intention estimation.\n",
-        "published": "2021",
+        "published": "2021-08-18",
         "authors": [
             "Harshayu Girase",
             "Haiming Gang",
@@ -354,25 +560,40 @@
             "Akira Kanehara",
             "Karttikeya Mangalam",
             "Chiho Choi"
+        ],
+        "categories": [
+            null,
+            null,
+            null,
+            null,
+            null
         ]
     },
     {
         "id": "http://arxiv.org/abs/2109.02173v3",
         "title": "Multi-Agent Variational Occlusion Inference Using People as Sensors",
         "abstract": "  Autonomous vehicles must reason about spatial occlusions in urban\nenvironments to ensure safety without being overly cautious. Prior work\nexplored occlusion inference from observed social behaviors of road agents,\nhence treating people as sensors. Inferring occupancy from agent behaviors is\nan inherently multimodal problem; a driver may behave similarly for different\noccupancy patterns ahead of them (e.g., a driver may move at constant speed in\ntraffic or on an open road). Past work, however, does not account for this\nmultimodality, thus neglecting to model this source of aleatoric uncertainty in\nthe relationship between driver behaviors and their environment. We propose an\nocclusion inference method that characterizes observed behaviors of human\nagents as sensor measurements, and fuses them with those from a standard sensor\nsuite. To capture the aleatoric uncertainty, we train a conditional variational\nautoencoder with a discrete latent space to learn a multimodal mapping from\nobserved driver trajectories to an occupancy grid representation of the view\nahead of the driver. Our method handles multi-agent scenarios, combining\nmeasurements from multiple observed drivers using evidential theory to solve\nthe sensor fusion problem. Our approach is validated on a cluttered, real-world\nintersection, outperforming baselines and demonstrating real-time capable\nperformance. Our code is available at\nhttps://github.com/sisl/MultiAgentVariationalOcclusionInference .\n",
-        "published": "2021",
+        "published": "2021-09-05",
         "authors": [
             "Masha Itkina",
             "Ye-Ji Mun",
             "Katherine Driggs-Campbell",
             "Mykel J. Kochenderfer"
+        ],
+        "categories": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
         ]
     },
     {
         "id": "http://arxiv.org/abs/2208.13626v1",
         "title": "CH-MARL: A Multimodal Benchmark for Cooperative, Heterogeneous\n  Multi-Agent Reinforcement Learning",
         "abstract": "  We propose a multimodal (vision-and-language) benchmark for cooperative and\nheterogeneous multi-agent learning. We introduce a benchmark multimodal dataset\nwith tasks involving collaboration between multiple simulated heterogeneous\nrobots in a rich multi-room home environment. We provide an integrated learning\nframework, multimodal implementations of state-of-the-art multi-agent\nreinforcement learning techniques, and a consistent evaluation protocol. Our\nexperiments investigate the impact of different modalities on multi-agent\nlearning performance. We also introduce a simple message passing method between\nagents. The results suggest that multimodality introduces unique challenges for\ncooperative multi-agent learning and there is significant room for advancing\nmulti-agent reinforcement learning methods in such settings.\n",
-        "published": "2022",
+        "published": "2022-08-26",
         "authors": [
             "Vasu Sharma",
             "Prasoon Goyal",
@@ -380,25 +601,39 @@
             "Govind Thattai",
             "Qiaozi Gao",
             "Gaurav S. Sukhatme"
+        ],
+        "categories": [
+            null,
+            null,
+            null,
+            null,
+            null
         ]
     },
     {
         "id": "http://arxiv.org/abs/2308.05731v1",
         "title": "Rethinking Integration of Prediction and Planning in Deep Learning-Based\n  Automated Driving Systems: A Review",
         "abstract": "  Automated driving has the potential to revolutionize personal, public, and\nfreight mobility. Besides the enormous challenge of perception, i.e. accurately\nperceiving the environment using available sensor data, automated driving\ncomprises planning a safe, comfortable, and efficient motion trajectory. To\npromote safety and progress, many works rely on modules that predict the future\nmotion of surrounding traffic. Modular automated driving systems commonly\nhandle prediction and planning as sequential separate tasks. While this\naccounts for the influence of surrounding traffic on the ego-vehicle, it fails\nto anticipate the reactions of traffic participants to the ego-vehicle's\nbehavior. Recent works suggest that integrating prediction and planning in an\ninterdependent joint step is necessary to achieve safe, efficient, and\ncomfortable driving. While various models implement such integrated systems, a\ncomprehensive overview and theoretical understanding of different principles\nare lacking. We systematically review state-of-the-art deep learning-based\nprediction, planning, and integrated prediction and planning models. Different\nfacets of the integration ranging from model architecture and model design to\nbehavioral aspects are considered and related to each other. Moreover, we\ndiscuss the implications, strengths, and limitations of different integration\nmethods. By pointing out research gaps, describing relevant future challenges,\nand highlighting trends in the research field, we identify promising directions\nfor future research.\n",
-        "published": "2023",
+        "published": "2023-08-10",
         "authors": [
             "Steffen Hagedorn",
             "Marcel Hallgarten",
             "Martin Stoll",
             "Alexandru Condurache"
+        ],
+        "categories": [
+            null,
+            null,
+            null,
+            null,
+            null
         ]
     },
     {
         "id": "http://arxiv.org/abs/2311.16091v1",
         "title": "Interactive Autonomous Navigation with Internal State Inference and\n  Interactivity Estimation",
         "abstract": "  Deep reinforcement learning (DRL) provides a promising way for intelligent\nagents (e.g., autonomous vehicles) to learn to navigate complex scenarios.\nHowever, DRL with neural networks as function approximators is typically\nconsidered a black box with little explainability and often suffers from\nsuboptimal performance, especially for autonomous navigation in highly\ninteractive multi-agent environments. To address these issues, we propose three\nauxiliary tasks with spatio-temporal relational reasoning and integrate them\ninto the standard DRL framework, which improves the decision making performance\nand provides explainable intermediate indicators. We propose to explicitly\ninfer the internal states (i.e., traits and intentions) of surrounding agents\n(e.g., human drivers) as well as to predict their future trajectories in the\nsituations with and without the ego agent through counterfactual reasoning.\nThese auxiliary tasks provide additional supervision signals to infer the\nbehavior patterns of other interactive agents. Multiple variants of framework\nintegration strategies are compared. We also employ a spatio-temporal graph\nneural network to encode relations between dynamic entities, which enhances\nboth internal state inference and decision making of the ego agent. Moreover,\nwe propose an interactivity estimation mechanism based on the difference\nbetween predicted trajectories in these two situations, which indicates the\ndegree of influence of the ego agent on other agents. To validate the proposed\nmethod, we design an intersection driving simulator based on the Intelligent\nIntersection Driver Model (IIDM) that simulates vehicles and pedestrians. Our\napproach achieves robust and state-of-the-art performance in terms of standard\nevaluation metrics and provides explainable intermediate indicators (i.e.,\ninternal states, and interactivity scores) for decision making.\n",
-        "published": "2023",
+        "published": "2023-11-27",
         "authors": [
             "Jiachen Li",
             "David Isele",
@@ -406,48 +641,76 @@
             "Jinkyoo Park",
             "Kikuo Fujimura",
             "Mykel J. Kochenderfer"
+        ],
+        "categories": [
+            null,
+            null,
+            null,
+            null,
+            null
         ]
     },
     {
         "id": "http://arxiv.org/abs/2312.04540v1",
         "title": "Sim-to-Real Causal Transfer: A Metric Learning Approach to\n  Causally-Aware Interaction Representations",
         "abstract": "  Modeling spatial-temporal interactions among neighboring agents is at the\nheart of multi-agent problems such as motion forecasting and crowd navigation.\nDespite notable progress, it remains unclear to which extent modern\nrepresentations can capture the causal relationships behind agent interactions.\nIn this work, we take an in-depth look at the causal awareness of these\nrepresentations, from computational formalism to real-world practice. First, we\ncast doubt on the notion of non-causal robustness studied in the recent\nCausalAgents benchmark. We show that recent representations are already\npartially resilient to perturbations of non-causal agents, and yet modeling\nindirect causal effects involving mediator agents remains challenging. To\naddress this challenge, we introduce a metric learning approach that\nregularizes latent representations with causal annotations. Our controlled\nexperiments show that this approach not only leads to higher degrees of causal\nawareness but also yields stronger out-of-distribution robustness. To further\noperationalize it in practice, we propose a sim-to-real causal transfer method\nvia cross-domain multi-task learning. Experiments on pedestrian datasets show\nthat our method can substantially boost generalization, even in the absence of\nreal-world causal annotations. We hope our work provides a new perspective on\nthe challenges and potential pathways towards causally-aware representations of\nmulti-agent interactions. Our code is available at\nhttps://github.com/socialcausality.\n",
-        "published": "2023",
+        "published": "2023-12-07",
         "authors": [
             "Yuejiang Liu",
             "Ahmad Rahimi",
             "Po-Chien Luan",
             "Frano Raji\u010d",
             "Alexandre Alahi"
+        ],
+        "categories": [
+            null,
+            null,
+            null,
+            null,
+            null
         ]
     },
     {
         "id": "http://arxiv.org/abs/2012.05894v1",
         "title": "AutoSelect: Automatic and Dynamic Detection Selection for 3D\n  Multi-Object Tracking",
         "abstract": "  3D multi-object tracking is an important component in robotic perception\nsystems such as self-driving vehicles. Recent work follows a\ntracking-by-detection pipeline, which aims to match past tracklets with\ndetections in the current frame. To avoid matching with false positive\ndetections, prior work filters out detections with low confidence scores via a\nthreshold. However, finding a proper threshold is non-trivial, which requires\nextensive manual search via ablation study. Also, this threshold is sensitive\nto many factors such as target object category so we need to re-search the\nthreshold if these factors change. To ease this process, we propose to\nautomatically select high-quality detections and remove the efforts needed for\nmanual threshold search. Also, prior work often uses a single threshold per\ndata sequence, which is sub-optimal in particular frames or for certain\nobjects. Instead, we dynamically search threshold per frame or per object to\nfurther boost performance. Through experiments on KITTI and nuScenes, our\nmethod can filter out $45.7\\%$ false positives while maintaining the recall,\nachieving new S.O.T.A. performance and removing the need for manually threshold\ntuning.\n",
-        "published": "2020",
+        "published": "2020-12-10",
         "authors": [
             "Xinshuo Weng",
             "Kris Kitani"
+        ],
+        "categories": [
+            null,
+            null,
+            null,
+            null,
+            null
         ]
     },
     {
         "id": "http://arxiv.org/abs/2103.14023v3",
         "title": "AgentFormer: Agent-Aware Transformers for Socio-Temporal Multi-Agent\n  Forecasting",
         "abstract": "  Predicting accurate future trajectories of multiple agents is essential for\nautonomous systems, but is challenging due to the complex agent interaction and\nthe uncertainty in each agent's future behavior. Forecasting multi-agent\ntrajectories requires modeling two key dimensions: (1) time dimension, where we\nmodel the influence of past agent states over future states; (2) social\ndimension, where we model how the state of each agent affects others. Most\nprior methods model these two dimensions separately, e.g., first using a\ntemporal model to summarize features over time for each agent independently and\nthen modeling the interaction of the summarized features with a social model.\nThis approach is suboptimal since independent feature encoding over either the\ntime or social dimension can result in a loss of information. Instead, we would\nprefer a method that allows an agent's state at one time to directly affect\nanother agent's state at a future time. To this end, we propose a new\nTransformer, AgentFormer, that jointly models the time and social dimensions.\nThe model leverages a sequence representation of multi-agent trajectories by\nflattening trajectory features across time and agents. Since standard attention\noperations disregard the agent identity of each element in the sequence,\nAgentFormer uses a novel agent-aware attention mechanism that preserves agent\nidentities by attending to elements of the same agent differently than elements\nof other agents. Based on AgentFormer, we propose a stochastic multi-agent\ntrajectory prediction model that can attend to features of any agent at any\nprevious timestep when inferring an agent's future position. The latent intent\nof all agents is also jointly modeled, allowing the stochasticity in one\nagent's behavior to affect other agents. Our method substantially improves the\nstate of the art on well-established pedestrian and autonomous driving\ndatasets.\n",
-        "published": "2021",
+        "published": "2021-03-25",
         "authors": [
             "Ye Yuan",
             "Xinshuo Weng",
             "Yanglan Ou",
             "Kris Kitani"
+        ],
+        "categories": [
+            null,
+            null,
+            null,
+            null,
+            null
         ]
     },
     {
         "id": "http://arxiv.org/abs/2104.00563v3",
         "title": "Latent Variable Sequential Set Transformers For Joint Multi-Agent Motion\n  Prediction",
         "abstract": "  Robust multi-agent trajectory prediction is essential for the safe control of\nrobotic systems. A major challenge is to efficiently learn a representation\nthat approximates the true joint distribution of contextual, social, and\ntemporal information to enable planning. We propose Latent Variable Sequential\nSet Transformers which are encoder-decoder architectures that generate\nscene-consistent multi-agent trajectories. We refer to these architectures as\n\"AutoBots\". The encoder is a stack of interleaved temporal and social\nmulti-head self-attention (MHSA) modules which alternately perform equivariant\nprocessing across the temporal and social dimensions. The decoder employs\nlearnable seed parameters in combination with temporal and social MHSA modules\nallowing it to perform inference over the entire future scene in a single\nforward pass efficiently. AutoBots can produce either the trajectory of one\nego-agent or a distribution over the future trajectories for all agents in the\nscene. For the single-agent prediction case, our model achieves top results on\nthe global nuScenes vehicle motion prediction leaderboard, and produces strong\nresults on the Argoverse vehicle prediction challenge. In the multi-agent\nsetting, we evaluate on the synthetic partition of TrajNet++ dataset to\nshowcase the model's socially-consistent predictions. We also demonstrate our\nmodel on general sequences of sets and provide illustrative experiments\nmodelling the sequential structure of the multiple strokes that make up symbols\nin the Omniglot data. A distinguishing feature of AutoBots is that all models\nare trainable on a single desktop GPU (1080 Ti) in under 48h.\n",
-        "published": "2021",
+        "published": "2021-02-19",
         "authors": [
             "Roger Girgis",
             "Florian Golemo",
@@ -457,13 +720,20 @@
             "Samira Ebrahimi Kahou",
             "Felix Heide",
             "Christopher Pal"
+        ],
+        "categories": [
+            null,
+            null,
+            null,
+            null,
+            null
         ]
     },
     {
         "id": "http://arxiv.org/abs/2112.10143v1",
         "title": "RoboAssembly: Learning Generalizable Furniture Assembly Policy in a\n  Novel Multi-robot Contact-rich Simulation Environment",
         "abstract": "  Part assembly is a typical but challenging task in robotics, where robots\nassemble a set of individual parts into a complete shape. In this paper, we\ndevelop a robotic assembly simulation environment for furniture assembly. We\nformulate the part assembly task as a concrete reinforcement learning problem\nand propose a pipeline for robots to learn to assemble a diverse set of chairs.\nExperiments show that when testing with unseen chairs, our approach achieves a\nsuccess rate of 74.5% under the object-centric setting and 50.0% under the full\nsetting. We adopt an RRT-Connect algorithm as the baseline, which only achieves\na success rate of 18.8% after a significantly longer computation time.\nSupplemental materials and videos are available on our project webpage.\n",
-        "published": "2021",
+        "published": "2021-12-19",
         "authors": [
             "Mingxin Yu",
             "Lin Shao",
@@ -472,13 +742,20 @@
             "Qingnan Fan",
             "Kaichun Mo",
             "Hao Dong"
+        ],
+        "categories": [
+            null,
+            null,
+            null,
+            null,
+            null
         ]
     },
     {
         "id": "http://arxiv.org/abs/2208.05470v1",
         "title": "EvolveHypergraph: Group-Aware Dynamic Relational Reasoning for\n  Trajectory Prediction",
         "abstract": "  While the modeling of pair-wise relations has been widely studied in\nmulti-agent interacting systems, its ability to capture higher-level and\nlarger-scale group-wise activities is limited. In this paper, we propose a\ngroup-aware relational reasoning approach (named EvolveHypergraph) with\nexplicit inference of the underlying dynamically evolving relational\nstructures, and we demonstrate its effectiveness for multi-agent trajectory\nprediction. In addition to the edges between a pair of nodes (i.e., agents), we\npropose to infer hyperedges that adaptively connect multiple nodes to enable\ngroup-aware relational reasoning in an unsupervised manner without fixing the\nnumber of hyperedges. The proposed approach infers the dynamically evolving\nrelation graphs and hypergraphs over time to capture the evolution of\nrelations, which are used by the trajectory predictor to obtain future states.\nMoreover, we propose to regularize the smoothness of the relation evolution and\nthe sparsity of the inferred graphs or hypergraphs, which effectively improves\ntraining stability and enhances the explainability of inferred relations. The\nproposed approach is validated on both synthetic crowd simulations and multiple\nreal-world benchmark datasets. Our approach infers explainable, reasonable\ngroup-aware relations and achieves state-of-the-art performance in long-term\nprediction.\n",
-        "published": "2022",
+        "published": "2022-08-10",
         "authors": [
             "Jiachen Li",
             "Chuanbo Hua",
@@ -486,26 +763,40 @@
             "Hengbo Ma",
             "Victoria Dax",
             "Mykel J. Kochenderfer"
+        ],
+        "categories": [
+            null,
+            null,
+            null,
+            null,
+            null
         ]
     },
     {
         "id": "http://arxiv.org/abs/2211.02545v2",
         "title": "GoRela: Go Relative for Viewpoint-Invariant Motion Forecasting",
         "abstract": "  The task of motion forecasting is critical for self-driving vehicles (SDVs)\nto be able to plan a safe maneuver. Towards this goal, modern approaches reason\nabout the map, the agents' past trajectories and their interactions in order to\nproduce accurate forecasts. The predominant approach has been to encode the map\nand other agents in the reference frame of each target agent. However, this\napproach is computationally expensive for multi-agent prediction as inference\nneeds to be run for each agent. To tackle the scaling challenge, the solution\nthus far has been to encode all agents and the map in a shared coordinate frame\n(e.g., the SDV frame). However, this is sample inefficient and vulnerable to\ndomain shift (e.g., when the SDV visits uncommon states). In contrast, in this\npaper, we propose an efficient shared encoding for all agents and the map\nwithout sacrificing accuracy or generalization. Towards this goal, we leverage\npair-wise relative positional encodings to represent geometric relationships\nbetween the agents and the map elements in a heterogeneous spatial graph. This\nparameterization allows us to be invariant to scene viewpoint, and save online\ncomputation by re-using map embeddings computed offline. Our decoder is also\nviewpoint agnostic, predicting agent goals on the lane graph to enable diverse\nand context-aware multimodal prediction. We demonstrate the effectiveness of\nour approach on the urban Argoverse 2 benchmark as well as a novel highway\ndataset.\n",
-        "published": "2022",
+        "published": "2022-11-04",
         "authors": [
             "Alexander Cui",
             "Sergio Casas",
             "Kelvin Wong",
             "Simon Suo",
             "Raquel Urtasun"
+        ],
+        "categories": [
+            null,
+            null,
+            null,
+            null,
+            null
         ]
     },
     {
         "id": "http://arxiv.org/abs/2307.10160v1",
         "title": "Robust Driving Policy Learning with Guided Meta Reinforcement Learning",
         "abstract": "  Although deep reinforcement learning (DRL) has shown promising results for\nautonomous navigation in interactive traffic scenarios, existing work typically\nadopts a fixed behavior policy to control social vehicles in the training\nenvironment. This may cause the learned driving policy to overfit the\nenvironment, making it difficult to interact well with vehicles with different,\nunseen behaviors. In this work, we introduce an efficient method to train\ndiverse driving policies for social vehicles as a single meta-policy. By\nrandomizing the interaction-based reward functions of social vehicles, we can\ngenerate diverse objectives and efficiently train the meta-policy through\nguiding policies that achieve specific objectives. We further propose a\ntraining strategy to enhance the robustness of the ego vehicle's driving policy\nusing the environment where social vehicles are controlled by the learned\nmeta-policy. Our method successfully learns an ego driving policy that\ngeneralizes well to unseen situations with out-of-distribution (OOD) social\nagents' behaviors in a challenging uncontrolled T-intersection scenario.\n",
-        "published": "2023",
+        "published": "2023-07-19",
         "authors": [
             "Kanghoon Lee",
             "Jiachen Li",
@@ -513,52 +804,80 @@
             "Jinkyoo Park",
             "Kikuo Fujimura",
             "Mykel J. Kochenderfer"
+        ],
+        "categories": [
+            null,
+            null,
+            null,
+            null,
+            null
         ]
     },
     {
         "id": "http://arxiv.org/abs/1910.11424v3",
         "title": "Capacity, Bandwidth, and Compositionality in Emergent Language Learning",
         "abstract": "  Many recent works have discussed the propensity, or lack thereof, for\nemergent languages to exhibit properties of natural languages. A favorite in\nthe literature is learning compositionality. We note that most of those works\nhave focused on communicative bandwidth as being of primary importance. While\nimportant, it is not the only contributing factor. In this paper, we\ninvestigate the learning biases that affect the efficacy and compositionality\nof emergent languages. Our foremost contribution is to explore how capacity of\na neural network impacts its ability to learn a compositional language. We\nadditionally introduce a set of evaluation metrics with which we analyze the\nlearned languages. Our hypothesis is that there should be a specific range of\nmodel capacity and channel bandwidth that induces compositional structure in\nthe resulting language and consequently encourages systematic generalization.\nWhile we empirically see evidence for the bottom of this range, we curiously do\nnot find evidence for the top part of the range and believe that this is an\nopen question for the community.\n",
-        "published": "2019",
+        "published": "2019-10-24",
         "authors": [
             "Cinjon Resnick",
             "Abhinav Gupta",
             "Jakob Foerster",
             "Andrew M. Dai",
             "Kyunghyun Cho"
+        ],
+        "categories": [
+            null,
+            null,
+            null,
+            null,
+            null
         ]
     },
     {
         "id": "http://arxiv.org/abs/2001.09063v2",
         "title": "Towards Graph Representation Learning in Emergent Communication",
         "abstract": "  Recent findings in neuroscience suggest that the human brain represents\ninformation in a geometric structure (for instance, through conceptual spaces).\nIn order to communicate, we flatten the complex representation of entities and\ntheir attributes into a single word or a sentence. In this paper we use graph\nconvolutional networks to support the evolution of language and cooperation in\nmulti-agent systems. Motivated by an image-based referential game, we propose a\ngraph referential game with varying degrees of complexity, and we provide\nstrong baseline models that exhibit desirable properties in terms of language\nemergence and cooperation. We show that the emerged communication protocol is\nrobust, that the agents uncover the true factors of variation in the game, and\nthat they learn to generalize beyond the samples encountered during training.\n",
-        "published": "2020",
+        "published": "2020-01-24",
         "authors": [
             "Agnieszka S\u0142owik",
             "Abhinav Gupta",
             "William L. Hamilton",
             "Mateja Jamnik",
             "Sean B. Holden"
+        ],
+        "categories": [
+            null,
+            null,
+            null,
+            null,
+            null
         ]
     },
     {
         "id": "http://arxiv.org/abs/2002.01093v2",
         "title": "On the interaction between supervision and self-play in emergent\n  communication",
         "abstract": "  A promising approach for teaching artificial agents to use natural language\ninvolves using human-in-the-loop training. However, recent work suggests that\ncurrent machine learning methods are too data inefficient to be trained in this\nway from scratch. In this paper, we investigate the relationship between two\ncategories of learning signals with the ultimate goal of improving sample\nefficiency: imitating human language data via supervised learning, and\nmaximizing reward in a simulated multi-agent environment via self-play (as done\nin emergent communication), and introduce the term supervised self-play (S2P)\nfor algorithms using both of these signals. We find that first training agents\nvia supervised learning on human data followed by self-play outperforms the\nconverse, suggesting that it is not beneficial to emerge languages from\nscratch. We then empirically investigate various S2P schedules that begin with\nsupervised learning in two environments: a Lewis signaling game with symbolic\ninputs, and an image-based referential game with natural language descriptions.\nLastly, we introduce population based approaches to S2P, which further improves\nthe performance over single-agent methods.\n",
-        "published": "2020",
+        "published": "2020-02-04",
         "authors": [
             "Ryan Lowe",
             "Abhinav Gupta",
             "Jakob Foerster",
             "Douwe Kiela",
             "Joelle Pineau"
+        ],
+        "categories": [
+            null,
+            null,
+            null,
+            null,
+            null
         ]
     },
     {
         "id": "http://arxiv.org/abs/2002.01335v4",
         "title": "Structural Inductive Biases in Emergent Communication",
         "abstract": "  In order to communicate, humans flatten a complex representation of ideas and\ntheir attributes into a single word or a sentence. We investigate the impact of\nrepresentation learning in artificial agents by developing graph referential\ngames. We empirically show that agents parametrized by graph neural networks\ndevelop a more compositional language compared to bag-of-words and sequence\nmodels, which allows them to systematically generalize to new combinations of\nfamiliar features.\n",
-        "published": "2020",
+        "published": "2020-02-04",
         "authors": [
             "Agnieszka S\u0142owik",
             "Abhinav Gupta",
@@ -566,35 +885,56 @@
             "Mateja Jamnik",
             "Sean B. Holden",
             "Christopher Pal"
+        ],
+        "categories": [
+            null,
+            null,
+            null,
+            null,
+            null
         ]
     },
     {
         "id": "http://arxiv.org/abs/2110.14241v1",
         "title": "Dynamic population-based meta-learning for multi-agent communication\n  with natural language",
         "abstract": "  In this work, our goal is to train agents that can coordinate with seen,\nunseen as well as human partners in a multi-agent communication environment\ninvolving natural language. Previous work using a single set of agents has\nshown great progress in generalizing to known partners, however it struggles\nwhen coordinating with unfamiliar agents. To mitigate that, recent work\nexplored the use of population-based approaches, where multiple agents interact\nwith each other with the goal of learning more generic protocols. These\nmethods, while able to result in good coordination between unseen partners,\nstill only achieve so in cases of simple languages, thus failing to adapt to\nhuman partners using natural language. We attribute this to the use of static\npopulations and instead propose a dynamic population-based meta-learning\napproach that builds such a population in an iterative manner. We perform a\nholistic evaluation of our method on two different referential games, and show\nthat our agents outperform all prior work when communicating with seen partners\nand humans. Furthermore, we analyze the natural language generation skills of\nour agents, where we find that our agents also outperform strong baselines.\nFinally, we test the robustness of our agents when communicating with\nout-of-population agents and carefully test the importance of each component of\nour method through ablation studies.\n",
-        "published": "2021",
+        "published": "2021-10-27",
         "authors": [
             "Abhinav Gupta",
             "Marc Lanctot",
             "Angeliki Lazaridou"
+        ],
+        "categories": [
+            null,
+            null,
+            null,
+            null,
+            null
         ]
     },
     {
         "id": "http://arxiv.org/abs/1506.04089v4",
         "title": "Listen, Attend, and Walk: Neural Mapping of Navigational Instructions to\n  Action Sequences",
         "abstract": "  We propose a neural sequence-to-sequence model for direction following, a\ntask that is essential to realizing effective autonomous agents. Our\nalignment-based encoder-decoder model with long short-term memory recurrent\nneural networks (LSTM-RNN) translates natural language instructions to action\nsequences based upon a representation of the observable world state. We\nintroduce a multi-level aligner that empowers our model to focus on sentence\n\"regions\" salient to the current world state by using multiple abstractions of\nthe input sentence. In contrast to existing methods, our model uses no\nspecialized linguistic resources (e.g., parsers) or task-specific annotations\n(e.g., seed lexicons). It is therefore generalizable, yet still achieves the\nbest results reported to-date on a benchmark single-sentence dataset and\ncompetitive results for the limited-training multi-sentence setting. We analyze\nour model through a series of ablations that elucidate the contributions of the\nprimary components of our model.\n",
-        "published": "2015",
+        "published": "2015-06-12",
         "authors": [
             "Hongyuan Mei",
             "Mohit Bansal",
             "Matthew R. Walter"
+        ],
+        "categories": [
+            null,
+            null,
+            null,
+            null,
+            null
         ]
     },
     {
         "id": "http://arxiv.org/abs/1706.02490v1",
         "title": "Where is my forearm? Clustering of body parts from simultaneous tactile\n  and linguistic input using sequential mapping",
         "abstract": "  Humans and animals are constantly exposed to a continuous stream of sensory\ninformation from different modalities. At the same time, they form more\ncompressed representations like concepts or symbols. In species that use\nlanguage, this process is further structured by this interaction, where a\nmapping between the sensorimotor concepts and linguistic elements needs to be\nestablished. There is evidence that children might be learning language by\nsimply disambiguating potential meanings based on multiple exposures to\nutterances in different contexts (cross-situational learning). In existing\nmodels, the mapping between modalities is usually found in a single step by\ndirectly using frequencies of referent and meaning co-occurrences. In this\npaper, we present an extension of this one-step mapping and introduce a newly\nproposed sequential mapping algorithm together with a publicly available Matlab\nimplementation. For demonstration, we have chosen a less typical scenario:\ninstead of learning to associate objects with their names, we focus on body\nrepresentations. A humanoid robot is receiving tactile stimulations on its\nbody, while at the same time listening to utterances of the body part names\n(e.g., hand, forearm and torso). With the goal at arriving at the correct \"body\ncategories\", we demonstrate how a sequential mapping algorithm outperforms\none-step mapping. In addition, the effect of data set size and noise in the\nlinguistic input are studied.\n",
-        "published": "2017",
+        "published": "2017-06-08",
         "authors": [
             "Karla Stepanova",
             "Matej Hoffmann",
@@ -602,13 +942,20 @@
             "Frederico B. Klein",
             "Angelo Cangelosi",
             "Michal Vavrecka"
+        ],
+        "categories": [
+            null,
+            null,
+            null,
+            null,
+            null
         ]
     },
     {
         "id": "http://arxiv.org/abs/1706.01905v2",
         "title": "Parameter Space Noise for Exploration",
         "abstract": "  Deep reinforcement learning (RL) methods generally engage in exploratory\nbehavior through noise injection in the action space. An alternative is to add\nnoise directly to the agent's parameters, which can lead to more consistent\nexploration and a richer set of behaviors. Methods such as evolutionary\nstrategies use parameter perturbations, but discard all temporal structure in\nthe process and require significantly more samples. Combining parameter noise\nwith traditional RL methods allows to combine the best of both worlds. We\ndemonstrate that both off- and on-policy methods benefit from this approach\nthrough experimental comparison of DQN, DDPG, and TRPO on high-dimensional\ndiscrete action environments as well as continuous control tasks. Our results\nshow that RL with parameter noise learns more efficiently than traditional RL\nwith action space noise and evolutionary strategies individually.\n",
-        "published": "2017",
+        "published": "2017-06-06",
         "authors": [
             "Matthias Plappert",
             "Rein Houthooft",
@@ -619,71 +966,113 @@
             "Tamim Asfour",
             "Pieter Abbeel",
             "Marcin Andrychowicz"
+        ],
+        "categories": [
+            null,
+            null,
+            null,
+            null,
+            null
         ]
     },
     {
         "id": "http://arxiv.org/abs/1807.01521v3",
         "title": "Curiosity Driven Exploration of Learned Disentangled Goal Spaces",
         "abstract": "  Intrinsically motivated goal exploration processes enable agents to\nautonomously sample goals to explore efficiently complex environments with\nhigh-dimensional continuous actions. They have been applied successfully to\nreal world robots to discover repertoires of policies producing a wide\ndiversity of effects. Often these algorithms relied on engineered goal spaces\nbut it was recently shown that one can use deep representation learning\nalgorithms to learn an adequate goal space in simple environments. However, in\nthe case of more complex environments containing multiple objects or\ndistractors, an efficient exploration requires that the structure of the goal\nspace reflects the one of the environment. In this paper we show that using a\ndisentangled goal space leads to better exploration performances than an\nentangled goal space. We further show that when the representation is\ndisentangled, one can leverage it by sampling goals that maximize learning\nprogress in a modular manner. Finally, we show that the measure of learning\nprogress, used to drive curiosity-driven exploration, can be used\nsimultaneously to discover abstract independently controllable features of the\nenvironment.\n",
-        "published": "2018",
+        "published": "2018-07-04",
         "authors": [
             "Adrien Laversanne-Finot",
             "Alexandre P\u00e9r\u00e9",
             "Pierre-Yves Oudeyer"
+        ],
+        "categories": [
+            null,
+            null,
+            null,
+            null,
+            null
         ]
     },
     {
         "id": "http://arxiv.org/abs/1901.09006v2",
         "title": "On the Limitations of Representing Functions on Sets",
         "abstract": "  Recent work on the representation of functions on sets has considered the use\nof summation in a latent space to enforce permutation invariance. In\nparticular, it has been conjectured that the dimension of this latent space may\nremain fixed as the cardinality of the sets under consideration increases.\nHowever, we demonstrate that the analysis leading to this conjecture requires\nmappings which are highly discontinuous and argue that this is only of limited\npractical use. Motivated by this observation, we prove that an implementation\nof this model via continuous mappings (as provided by e.g. neural networks or\nGaussian processes) actually imposes a constraint on the dimensionality of the\nlatent space. Practical universal function representation for set inputs can\nonly be achieved with a latent dimension at least the size of the maximum\nnumber of input elements.\n",
-        "published": "2019",
+        "published": "2019-01-25",
         "authors": [
             "Edward Wagstaff",
             "Fabian B. Fuchs",
             "Martin Engelcke",
             "Ingmar Posner",
             "Michael Osborne"
+        ],
+        "categories": [
+            null,
+            null,
+            null,
+            null,
+            null
         ]
     },
     {
         "id": "http://arxiv.org/abs/1709.06917v2",
         "title": "Using Parameterized Black-Box Priors to Scale Up Model-Based Policy\n  Search for Robotics",
         "abstract": "  The most data-efficient algorithms for reinforcement learning in robotics are\nmodel-based policy search algorithms, which alternate between learning a\ndynamical model of the robot and optimizing a policy to maximize the expected\nreturn given the model and its uncertainties. Among the few proposed\napproaches, the recently introduced Black-DROPS algorithm exploits a black-box\noptimization algorithm to achieve both high data-efficiency and good\ncomputation times when several cores are used; nevertheless, like all\nmodel-based policy search approaches, Black-DROPS does not scale to high\ndimensional state/action spaces. In this paper, we introduce a new model\nlearning procedure in Black-DROPS that leverages parameterized black-box priors\nto (1) scale up to high-dimensional systems, and (2) be robust to large\ninaccuracies of the prior information. We demonstrate the effectiveness of our\napproach with the \"pendubot\" swing-up task in simulation and with a physical\nhexapod robot (48D state space, 18D action space) that has to walk forward as\nfast as possible. The results show that our new algorithm is more\ndata-efficient than previous model-based policy search algorithms (with and\nwithout priors) and that it can allow a physical 6-legged robot to learn new\ngaits in only 16 to 30 seconds of interaction time.\n",
-        "published": "2017",
+        "published": "2017-09-20",
         "authors": [
             "Konstantinos Chatzilygeroudis",
             "Jean-Baptiste Mouret"
+        ],
+        "categories": [
+            null,
+            null,
+            null,
+            null,
+            null
         ]
     },
     {
         "id": "http://arxiv.org/abs/1709.06919v2",
         "title": "Bayesian Optimization with Automatic Prior Selection for Data-Efficient\n  Direct Policy Search",
         "abstract": "  One of the most interesting features of Bayesian optimization for direct\npolicy search is that it can leverage priors (e.g., from simulation or from\nprevious tasks) to accelerate learning on a robot. In this paper, we are\ninterested in situations for which several priors exist but we do not know in\nadvance which one fits best the current situation. We tackle this problem by\nintroducing a novel acquisition function, called Most Likely Expected\nImprovement (MLEI), that combines the likelihood of the priors and the expected\nimprovement. We evaluate this new acquisition function on a transfer learning\ntask for a 5-DOF planar arm and on a possibly damaged, 6-legged robot that has\nto learn to walk on flat ground and on stairs, with priors corresponding to\ndifferent stairs and different kinds of damages. Our results show that MLEI\neffectively identifies and exploits the priors, even when there is no obvious\nmatch between the current situations and the priors.\n",
-        "published": "2017",
+        "published": "2017-09-20",
         "authors": [
             "R\u00e9mi Pautrat",
             "Konstantinos Chatzilygeroudis",
             "Jean-Baptiste Mouret"
+        ],
+        "categories": [
+            null,
+            null,
+            null,
+            null,
+            null
         ]
     },
     {
         "id": "http://arxiv.org/abs/1809.04423v2",
         "title": "Can a Compact Neuronal Circuit Policy be Re-purposed to Learn Simple\n  Robotic Control?",
         "abstract": "  We propose a neural information processing system which is obtained by\nre-purposing the function of a biological neural circuit model, to govern\nsimulated and real-world control tasks. Inspired by the structure of the\nnervous system of the soil-worm, C. elegans, we introduce Neuronal Circuit\nPolicies (NCPs), defined as the model of biological neural circuits\nreparameterized for the control of an alternative task. We learn instances of\nNCPs to control a series of robotic tasks, including the autonomous parking of\na real-world rover robot. For reconfiguration of the purpose of the neural\ncircuit, we adopt a search-based optimization algorithm. Neuronal circuit\npolicies perform on par and in some cases surpass the performance of\ncontemporary deep learning models with the advantage leveraging significantly\nfewer learnable parameters and realizing interpretable dynamics at the\ncell-level.\n",
-        "published": "2018",
+        "published": "2018-09-11",
         "authors": [
             "Ramin Hasani",
             "Mathias Lechner",
             "Alexander Amini",
             "Daniela Rus",
             "Radu Grosu"
+        ],
+        "categories": [
+            null,
+            null,
+            null,
+            null,
+            null
         ]
     },
     {
         "id": "http://arxiv.org/abs/2003.10423v1",
         "title": "Evolutionary Population Curriculum for Scaling Multi-Agent Reinforcement\n  Learning",
         "abstract": "  In multi-agent games, the complexity of the environment can grow\nexponentially as the number of agents increases, so it is particularly\nchallenging to learn good policies when the agent population is large. In this\npaper, we introduce Evolutionary Population Curriculum (EPC), a curriculum\nlearning paradigm that scales up Multi-Agent Reinforcement Learning (MARL) by\nprogressively increasing the population of training agents in a stage-wise\nmanner. Furthermore, EPC uses an evolutionary approach to fix an objective\nmisalignment issue throughout the curriculum: agents successfully trained in an\nearly stage with a small population are not necessarily the best candidates for\nadapting to later stages with scaled populations. Concretely, EPC maintains\nmultiple sets of agents in each stage, performs mix-and-match and fine-tuning\nover these sets and promotes the sets of agents with the best adaptability to\nthe next stage. We implement EPC on a popular MARL algorithm, MADDPG, and\nempirically show that our approach consistently outperforms baselines by a\nlarge margin as the number of agents grows exponentially.\n",
-        "published": "2020",
+        "published": "2020-03-23",
         "authors": [
             "Qian Long",
             "Zihan Zhou",
@@ -691,56 +1080,91 @@
             "Fei Fang",
             "Yi Wu",
             "Xiaolong Wang"
+        ],
+        "categories": [
+            null,
+            null,
+            null,
+            null,
+            null
         ]
     },
     {
         "id": "http://arxiv.org/abs/1805.08180v2",
         "title": "Hierarchical Reinforcement Learning with Hindsight",
         "abstract": "  Reinforcement Learning (RL) algorithms can suffer from poor sample efficiency\nwhen rewards are delayed and sparse. We introduce a solution that enables\nagents to learn temporally extended actions at multiple levels of abstraction\nin a sample efficient and automated fashion. Our approach combines universal\nvalue functions and hindsight learning, allowing agents to learn policies\nbelonging to different time scales in parallel. We show that our method\nsignificantly accelerates learning in a variety of discrete and continuous\ntasks.\n",
-        "published": "2018",
+        "published": "2018-05-21",
         "authors": [
             "Andrew Levy",
             "Robert Platt",
             "Kate Saenko"
+        ],
+        "categories": [
+            null,
+            null,
+            null,
+            null,
+            null
         ]
     },
     {
         "id": "http://arxiv.org/abs/1906.03967v1",
         "title": "Autonomous Goal Exploration using Learned Goal Spaces for Visuomotor\n  Skill Acquisition in Robots",
         "abstract": "  The automatic and efficient discovery of skills, without supervision, for\nlong-living autonomous agents, remains a challenge of Artificial Intelligence.\nIntrinsically Motivated Goal Exploration Processes give learning agents a\nhuman-inspired mechanism to sequentially select goals to achieve. This approach\ngives a new perspective on the lifelong learning problem, with promising\nresults on both simulated and real-world experiments. Until recently, those\nalgorithms were restricted to domains with experimenter-knowledge, since the\nGoal Space used by the agents was built on engineered feature extractors. The\nrecent advances of deep representation learning, enables new ways of designing\nthose feature extractors, using directly the agent experience. Recent work has\nshown the potential of those methods on simple yet challenging simulated\ndomains. In this paper, we present recent results showing the applicability of\nthose principles on a real-world robotic setup, where a 6-joint robotic arm\nlearns to manipulate a ball inside an arena, by choosing goals in a space\nlearned from its past experience.\n",
-        "published": "2019",
+        "published": "2019-06-10",
         "authors": [
             "Adrien Laversanne-Finot",
             "Alexandre P\u00e9r\u00e9",
             "Pierre-Yves Oudeyer"
+        ],
+        "categories": [
+            null,
+            null,
+            null,
+            null,
+            null
         ]
     },
     {
         "id": "http://arxiv.org/abs/1909.01575v1",
         "title": "Learning sparse representations in reinforcement learning",
         "abstract": "  Reinforcement learning (RL) algorithms allow artificial agents to improve\ntheir selection of actions to increase rewarding experiences in their\nenvironments. Temporal Difference (TD) Learning -- a model-free RL method -- is\na leading account of the midbrain dopamine system and the basal ganglia in\nreinforcement learning. These algorithms typically learn a mapping from the\nagent's current sensed state to a selected action (known as a policy function)\nvia learning a value function (expected future rewards). TD Learning methods\nhave been very successful on a broad range of control tasks, but learning can\nbecome intractably slow as the state space of the environment grows. This has\nmotivated methods that learn internal representations of the agent's state,\neffectively reducing the size of the state space and restructuring state\nrepresentations in order to support generalization. However, TD Learning\ncoupled with an artificial neural network, as a function approximator, has been\nshown to fail to learn some fairly simple control tasks, challenging this\nexplanation of reward-based learning. We hypothesize that such failures do not\narise in the brain because of the ubiquitous presence of lateral inhibition in\nthe cortex, producing sparse distributed internal representations that support\nthe learning of expected future reward. The sparse conjunctive representations\ncan avoid catastrophic interference while still supporting generalization. We\nprovide support for this conjecture through computational simulations,\ndemonstrating the benefits of learned sparse representations for three\nproblematic classic control tasks: Puddle-world, Mountain-car, and Acrobot.\n",
-        "published": "2019",
+        "published": "2019-09-04",
         "authors": [
             "Jacob Rafati",
             "David C. Noelle"
+        ],
+        "categories": [
+            null,
+            null,
+            null,
+            null,
+            null
         ]
     },
     {
         "id": "http://arxiv.org/abs/2002.11708v1",
         "title": "Generalized Hindsight for Reinforcement Learning",
         "abstract": "  One of the key reasons for the high sample complexity in reinforcement\nlearning (RL) is the inability to transfer knowledge from one task to another.\nIn standard multi-task RL settings, low-reward data collected while trying to\nsolve one task provides little to no signal for solving that particular task\nand is hence effectively wasted. However, we argue that this data, which is\nuninformative for one task, is likely a rich source of information for other\ntasks. To leverage this insight and efficiently reuse data, we present\nGeneralized Hindsight: an approximate inverse reinforcement learning technique\nfor relabeling behaviors with the right tasks. Intuitively, given a behavior\ngenerated under one task, Generalized Hindsight returns a different task that\nthe behavior is better suited for. Then, the behavior is relabeled with this\nnew task before being used by an off-policy RL optimizer. Compared to standard\nrelabeling techniques, Generalized Hindsight provides a substantially more\nefficient reuse of samples, which we empirically demonstrate on a suite of\nmulti-task navigation and manipulation tasks. Videos and code can be accessed\nhere: https://sites.google.com/view/generalized-hindsight.\n",
-        "published": "2020",
+        "published": "2020-02-26",
         "authors": [
             "Alexander C. Li",
             "Lerrel Pinto",
             "Pieter Abbeel"
+        ],
+        "categories": [
+            null,
+            null,
+            null,
+            null,
+            null
         ]
     },
     {
         "id": "http://arxiv.org/abs/2106.03748v1",
         "title": "Towards robust and domain agnostic reinforcement learning competitions",
         "abstract": "  Reinforcement learning competitions have formed the basis for standard\nresearch benchmarks, galvanized advances in the state-of-the-art, and shaped\nthe direction of the field. Despite this, a majority of challenges suffer from\nthe same fundamental problems: participant solutions to the posed challenge are\nusually domain-specific, biased to maximally exploit compute resources, and not\nguaranteed to be reproducible. In this paper, we present a new framework of\ncompetition design that promotes the development of algorithms that overcome\nthese barriers. We propose four central mechanisms for achieving this end:\nsubmission retraining, domain randomization, desemantization through domain\nobfuscation, and the limitation of competition compute and environment-sample\nbudget. To demonstrate the efficacy of this design, we proposed, organized, and\nran the MineRL 2020 Competition on Sample-Efficient Reinforcement Learning. In\nthis work, we describe the organizational outcomes of the competition and show\nthat the resulting participant submissions are reproducible, non-specific to\nthe competition environment, and sample/resource efficient, despite the\ndifficult competition task.\n",
-        "published": "2021",
+        "published": "2021-06-07",
         "authors": [
             "William Hebgen Guss",
             "Stephanie Milani",
@@ -771,101 +1195,162 @@
             "Toi Tsuneda",
             "Karolis Ramanauskas",
             "Gabija Juceviciute"
+        ],
+        "categories": [
+            null,
+            null,
+            null,
+            null,
+            null
         ]
     },
     {
         "id": "http://arxiv.org/abs/1806.09351v3",
         "title": "Multi-objective Model-based Policy Search for Data-efficient Learning\n  with Sparse Rewards",
         "abstract": "  The most data-efficient algorithms for reinforcement learning in robotics are\nmodel-based policy search algorithms, which alternate between learning a\ndynamical model of the robot and optimizing a policy to maximize the expected\nreturn given the model and its uncertainties. However, the current algorithms\nlack an effective exploration strategy to deal with sparse or misleading reward\nscenarios: if they do not experience any state with a positive reward during\nthe initial random exploration, it is very unlikely to solve the problem. Here,\nwe propose a novel model-based policy search algorithm, Multi-DEX, that\nleverages a learned dynamical model to efficiently explore the task space and\nsolve tasks with sparse rewards in a few episodes. To achieve this, we frame\nthe policy search problem as a multi-objective, model-based policy optimization\nproblem with three objectives: (1) generate maximally novel state trajectories,\n(2) maximize the expected return and (3) keep the system in state-space regions\nfor which the model is as accurate as possible. We then optimize these\nobjectives using a Pareto-based multi-objective optimization algorithm. The\nexperiments show that Multi-DEX is able to solve sparse reward scenarios (with\na simulated robotic arm) in much lower interaction time than VIME, TRPO,\nGEP-PG, CMA-ES and Black-DROPS.\n",
-        "published": "2018",
+        "published": "2018-06-25",
         "authors": [
             "Rituraj Kaushik",
             "Konstantinos Chatzilygeroudis",
             "Jean-Baptiste Mouret"
+        ],
+        "categories": [
+            null,
+            null,
+            null,
+            null,
+            null
         ]
     },
     {
         "id": "http://arxiv.org/abs/2004.11947v1",
         "title": "Symbolic Regression Driven by Training Data and Prior Knowledge",
         "abstract": "  In symbolic regression, the search for analytic models is typically driven\npurely by the prediction error observed on the training data samples. However,\nwhen the data samples do not sufficiently cover the input space, the prediction\nerror does not provide sufficient guidance toward desired models. Standard\nsymbolic regression techniques then yield models that are partially incorrect,\nfor instance, in terms of their steady-state characteristics or local behavior.\nIf these properties were considered already during the search process, more\naccurate and relevant models could be produced. We propose a multi-objective\nsymbolic regression approach that is driven by both the training data and the\nprior knowledge of the properties the desired model should manifest. The\nproperties given in the form of formal constraints are internally represented\nby a set of discrete data samples on which candidate models are exactly\nchecked. The proposed approach was experimentally evaluated on three test\nproblems with results clearly demonstrating its capability to evolve realistic\nmodels that fit the training data well while complying with the prior knowledge\nof the desired model characteristics at the same time. It outperforms standard\nsymbolic regression by several orders of magnitude in terms of the mean squared\ndeviation from a reference model.\n",
-        "published": "2020",
+        "published": "2020-04-24",
         "authors": [
             "J. Kubal\u00edk",
             "E. Derner",
             "R. Babu\u0161ka"
+        ],
+        "categories": [
+            null,
+            null,
+            null,
+            null,
+            null
         ]
     },
     {
         "id": "http://arxiv.org/abs/1812.03955v1",
         "title": "Improving Model-Based Control and Active Exploration with Reconstruction\n  Uncertainty Optimization",
         "abstract": "  Model based predictions of future trajectories of a dynamical system often\nsuffer from inaccuracies, forcing model based control algorithms to re-plan\noften, thus being computationally expensive, suboptimal and not reliable. In\nthis work, we propose a model agnostic method for estimating the uncertainty of\na model?s predictions based on reconstruction error, using it in control and\nexploration. As our experiments show, this uncertainty estimation can be used\nto improve control performance on a wide variety of environments by choosing\npredictions of which the model is confident. It can also be used for active\nlearning to explore more efficiently the environment by planning for\ntrajectories with high uncertainty, allowing faster model learning.\n",
-        "published": "2018",
+        "published": "2018-12-10",
         "authors": [
             "Norman Di Palo",
             "Harri Valpola"
+        ],
+        "categories": [
+            null,
+            null,
+            null,
+            null,
+            null
         ]
     },
     {
         "id": "http://arxiv.org/abs/2008.09377v1",
         "title": "Curriculum Learning with Hindsight Experience Replay for Sequential\n  Object Manipulation Tasks",
         "abstract": "  Learning complex tasks from scratch is challenging and often impossible for\nhumans as well as for artificial agents. A curriculum can be used instead,\nwhich decomposes a complex task (target task) into a sequence of source tasks\n(the curriculum). Each source task is a simplified version of the next source\ntask with increasing complexity. Learning then occurs gradually by training on\neach source task while using knowledge from the curriculum's prior source\ntasks. In this study, we present a new algorithm that combines curriculum\nlearning with Hindsight Experience Replay (HER), to learn sequential object\nmanipulation tasks for multiple goals and sparse feedback. The algorithm\nexploits the recurrent structure inherent in many object manipulation tasks and\nimplements the entire learning process in the original simulation without\nadjusting it to each source task. We have tested our algorithm on three\nchallenging throwing tasks and show vast improvements compared to vanilla-HER.\n",
-        "published": "2020",
+        "published": "2020-08-21",
         "authors": [
             "Binyamin Manela",
             "Armin Biess"
+        ],
+        "categories": [
+            null,
+            null,
+            null,
+            null,
+            null
         ]
     },
     {
         "id": "http://arxiv.org/abs/1911.06832v1",
         "title": "Data-efficient Co-Adaptation of Morphology and Behaviour with Deep\n  Reinforcement Learning",
         "abstract": "  Humans and animals are capable of quickly learning new behaviours to solve\nnew tasks. Yet, we often forget that they also rely on a highly specialized\nmorphology that co-adapted with motor control throughout thousands of years.\nAlthough compelling, the idea of co-adapting morphology and behaviours in\nrobots is often unfeasible because of the long manufacturing times, and the\nneed to re-design an appropriate controller for each morphology. In this paper,\nwe propose a novel approach to automatically and efficiently co-adapt a robot\nmorphology and its controller. Our approach is based on recent advances in deep\nreinforcement learning, and specifically the soft actor critic algorithm. Key\nto our approach is the possibility of leveraging previously tested morphologies\nand behaviors to estimate the performance of new candidate morphologies. As\nsuch, we can make full use of the information available for making more\ninformed decisions, with the ultimate goal of achieving a more data-efficient\nco-adaptation (i.e., reducing the number of morphologies and behaviors tested).\nSimulated experiments show that our approach requires drastically less design\nprototypes to find good morphology-behaviour combinations, making this method\nparticularly suitable for future co-adaptation of robot designs in the real\nworld.\n",
-        "published": "2019",
+        "published": "2019-11-15",
         "authors": [
             "Kevin Sebastian Luck",
             "Heni Ben Amor",
             "Roberto Calandra"
+        ],
+        "categories": [
+            null,
+            null,
+            null,
+            null,
+            null
         ]
     },
     {
         "id": "http://arxiv.org/abs/2210.06650v2",
         "title": "Interpreting Neural Policies with Disentangled Tree Representations",
         "abstract": "  The advancement of robots, particularly those functioning in complex\nhuman-centric environments, relies on control solutions that are driven by\nmachine learning. Understanding how learning-based controllers make decisions\nis crucial since robots are often safety-critical systems. This urges a formal\nand quantitative understanding of the explanatory factors in the\ninterpretability of robot learning. In this paper, we aim to study\ninterpretability of compact neural policies through the lens of disentangled\nrepresentation. We leverage decision trees to obtain factors of variation [1]\nfor disentanglement in robot learning; these encapsulate skills, behaviors, or\nstrategies toward solving tasks. To assess how well networks uncover the\nunderlying task dynamics, we introduce interpretability metrics that measure\ndisentanglement of learned neural dynamics from a concentration of decisions,\nmutual information and modularity perspective. We showcase the effectiveness of\nthe connection between interpretability and disentanglement consistently across\nextensive experimental analysis.\n",
-        "published": "2022",
+        "published": "2022-10-13",
         "authors": [
             "Tsun-Hsuan Wang",
             "Wei Xiao",
             "Tim Seyde",
             "Ramin Hasani",
             "Daniela Rus"
+        ],
+        "categories": [
+            null,
+            null,
+            null,
+            null,
+            null
         ]
     },
     {
         "id": "http://arxiv.org/abs/1501.01457v1",
         "title": "Comparison of Selection Methods in On-line Distributed Evolutionary\n  Robotics",
         "abstract": "  In this paper, we study the impact of selection methods in the context of\non-line on-board distributed evolutionary algorithms. We propose a variant of\nthe mEDEA algorithm in which we add a selection operator, and we apply it in a\ntaskdriven scenario. We evaluate four selection methods that induce different\nintensity of selection pressure in a multi-robot navigation with obstacle\navoidance task and a collective foraging task. Experiments show that a small\nintensity of selection pressure is sufficient to rapidly obtain good\nperformances on the tasks at hand. We introduce different measures to compare\nthe selection methods, and show that the higher the selection pressure, the\nbetter the performances obtained, especially for the more challenging food\nforaging task.\n",
-        "published": "2015",
+        "published": "2015-01-07",
         "authors": [
             "I\u00f1aki Fern\u00e1ndez P\u00e9rez",
             "Amine Boumaza",
             "Fran\u00e7ois Charpillet"
+        ],
+        "categories": [
+            null,
+            null,
+            null,
+            null
         ]
     },
     {
         "id": "http://arxiv.org/abs/1709.08992v2",
         "title": "Embodied Evolution in Collective Robotics: A Review",
         "abstract": "  This paper provides an overview of evolutionary robotics techniques applied\nto on-line distributed evolution for robot collectives -- namely, embodied\nevolution. It provides a definition of embodied evolution as well as a thorough\ndescription of the underlying concepts and mechanisms. The paper also presents\na comprehensive summary of research published in the field since its inception\n(1999-2017), providing various perspectives to identify the major trends. In\nparticular, we identify a shift from considering embodied evolution as a\nparallel search method within small robot collectives (fewer than 10 robots) to\nembodied evolution as an on-line distributed learning method for designing\ncollective behaviours in swarm-like collectives. The paper concludes with a\ndiscussion of applications and open questions, providing a milestone for past\nand an inspiration for future research.\n",
-        "published": "2017",
+        "published": "2017-09-26",
         "authors": [
             "Nicolas Bredeche",
             "Evert Haasdijk",
             "Abraham Prieto"
+        ],
+        "categories": [
+            null,
+            null,
+            null,
+            null
         ]
     },
     {
         "id": "http://arxiv.org/abs/2105.12196v1",
         "title": "From Motor Control to Team Play in Simulated Humanoid Football",
         "abstract": "  Intelligent behaviour in the physical world exhibits structure at multiple\nspatial and temporal scales. Although movements are ultimately executed at the\nlevel of instantaneous muscle tensions or joint torques, they must be selected\nto serve goals defined on much longer timescales, and in terms of relations\nthat extend far beyond the body itself, ultimately involving coordination with\nother agents. Recent research in artificial intelligence has shown the promise\nof learning-based approaches to the respective problems of complex movement,\nlonger-term planning and multi-agent coordination. However, there is limited\nresearch aimed at their integration. We study this problem by training teams of\nphysically simulated humanoid avatars to play football in a realistic virtual\nenvironment. We develop a method that combines imitation learning, single- and\nmulti-agent reinforcement learning and population-based training, and makes use\nof transferable representations of behaviour for decision making at different\nlevels of abstraction. In a sequence of stages, players first learn to control\na fully articulated body to perform realistic, human-like movements such as\nrunning and turning; they then acquire mid-level football skills such as\ndribbling and shooting; finally, they develop awareness of others and play as a\nteam, bridging the gap between low-level motor control at a timescale of\nmilliseconds, and coordinated goal-directed behaviour as a team at the\ntimescale of tens of seconds. We investigate the emergence of behaviours at\ndifferent levels of abstraction, as well as the representations that underlie\nthese behaviours using several analysis techniques, including statistics from\nreal-world sports analytics. Our work constitutes a complete demonstration of\nintegrated decision-making at multiple scales in a physically embodied\nmulti-agent setting. See project video at https://youtu.be/KHMwq9pv7mg.\n",
-        "published": "2021",
+        "published": "2021-05-25",
         "authors": [
             "Siqi Liu",
             "Guy Lever",
@@ -889,56 +1374,87 @@
             "Karl Tuyls",
             "Thore Graepel",
             "Nicolas Heess"
+        ],
+        "categories": [
+            null,
+            null,
+            null,
+            null
         ]
     },
     {
         "id": "http://arxiv.org/abs/2202.13456v1",
         "title": "PheroCom: Decentralised and asynchronous swarm robotics coordination\n  based on virtual pheromone and vibroacoustic communication",
         "abstract": "  Representation and control of the dynamics of stigmergic substances used by\nbio-inspired approaches is a challenge when applied to robotics. In order to\novercome this challenge, this work proposes a model to coordinate swarms of\nrobots based on the virtualisation and control of these substances in a local\nscope. The model presents a new pheromone modelling, which enables the\ndecentralisation and asynchronicity of navigation decisions. Each robot\nmaintains an independent virtual pheromone map, which is continuously updated\nwith the robot's deposits and pheromone evaporation. Moreover, the individual\npheromone map is also updated by aggregating information from other robots that\nare exploring nearby areas. Thus, individual and independent maps replace the\nneed of a centralising agent that controls and distributes the pheromone\ninformation, which is not always practicable. Pheromone information propagation\nis inspired by ants' vibroacoustic communication, which, in turn, is\ncharacterised as an indirect communication through a type of gossip protocol.\nThe proposed model was evaluated through an agent simulation software,\nimplemented by the authors, and in the Webots platform. Experiments were\ncarried out to validate the model in different environments, with different\nshapes and sizes, as well as varying the number of robots. The analysis of the\nresults has shown that the model was able to perform the coordination of the\nswarm, and the robots have exhibited an expressive performance executing the\nsurveillance task.\n",
-        "published": "2022",
+        "published": "2022-02-27",
         "authors": [
             "Claudiney R. Tinoco",
             "Gina M. B. Oliveira"
+        ],
+        "categories": [
+            null,
+            null,
+            null,
+            null,
+            null
         ]
     },
     {
         "id": "http://arxiv.org/abs/2011.05281v2",
         "title": "A Genetic Algorithm Based Approach for Satellite Autonomy",
         "abstract": "  Autonomous spacecraft maneuver planning using an evolutionary algorithmic\napproach is investigated. Simulated spacecraft were placed into four different\ninitial orbits. Each was allowed a string of thirty delta-v impulse maneuvers\nin six cartesian directions, the positive and negative x, y and z directions.\nThe goal of the spacecraft maneuver string was to, starting from some non-polar\nstarting orbit, place the spacecraft into a polar, low eccentricity orbit. A\ngenetic algorithm was implemented, using a mating, fitness, mutation and\ncrossover scheme for impulse strings. The genetic algorithm was successfully\nable to produce this result for all the starting orbits. Performance and future\nwork is also discussed.\n",
-        "published": "2020",
+        "published": "2020-10-27",
         "authors": [
             "Sidhdharth Sikka",
             "Harshvardhan Sikka"
+        ],
+        "categories": [
+            null,
+            null,
+            null,
+            null
         ]
     },
     {
         "id": "http://arxiv.org/abs/2012.11444v1",
         "title": "Rapidly adapting robot swarms with Swarm Map-based Bayesian Optimisation",
         "abstract": "  Rapid performance recovery from unforeseen environmental perturbations\nremains a grand challenge in swarm robotics. To solve this challenge, we\ninvestigate a behaviour adaptation approach, where one searches an archive of\ncontrollers for potential recovery solutions. To apply behaviour adaptation in\nswarm robotic systems, we propose two algorithms: (i) Swarm Map-based\nOptimisation (SMBO), which selects and evaluates one controller at a time, for\na homogeneous swarm, in a centralised fashion; and (ii) Swarm Map-based\nOptimisation Decentralised (SMBO-Dec), which performs an asynchronous\nbatch-based Bayesian optimisation to simultaneously explore different\ncontrollers for groups of robots in the swarm. We set up foraging experiments\nwith a variety of disturbances: injected faults to proximity sensors, ground\nsensors, and the actuators of individual robots, with 100 unique combinations\nfor each type. We also investigate disturbances in the operating environment of\nthe swarm, where the swarm has to adapt to drastic changes in the number of\nresources available in the environment, and to one of the robots behaving\ndisruptively towards the rest of the swarm, with 30 unique conditions for each\nsuch perturbation. The viability of SMBO and SMBO-Dec is demonstrated,\ncomparing favourably to variants of random search and gradient descent, and\nvarious ablations, and improving performance up to 80% compared to the\nperformance at the time of fault injection within at most 30 evaluations.\n",
-        "published": "2020",
+        "published": "2020-12-21",
         "authors": [
             "David M. Bossens",
             "Danesh Tarapore"
+        ],
+        "categories": [
+            null,
+            null,
+            null,
+            null
         ]
     },
     {
         "id": "http://arxiv.org/abs/2310.18622v1",
         "title": "Arbitrarily Scalable Environment Generators via Neural Cellular Automata",
         "abstract": "  We study the problem of generating arbitrarily large environments to improve\nthe throughput of multi-robot systems. Prior work proposes Quality Diversity\n(QD) algorithms as an effective method for optimizing the environments of\nautomated warehouses. However, these approaches optimize only relatively small\nenvironments, falling short when it comes to replicating real-world warehouse\nsizes. The challenge arises from the exponential increase in the search space\nas the environment size increases. Additionally, the previous methods have only\nbeen tested with up to 350 robots in simulations, while practical warehouses\ncould host thousands of robots. In this paper, instead of optimizing\nenvironments, we propose to optimize Neural Cellular Automata (NCA) environment\ngenerators via QD algorithms. We train a collection of NCA generators with QD\nalgorithms in small environments and then generate arbitrarily large\nenvironments from the generators at test time. We show that NCA environment\ngenerators maintain consistent, regularized patterns regardless of environment\nsize, significantly enhancing the scalability of multi-robot systems in two\ndifferent domains with up to 2,350 robots. Additionally, we demonstrate that\nour method scales a single-agent reinforcement learning policy to arbitrarily\nlarge environments with similar patterns. We include the source code at\n\\url{https://github.com/lunjohnzhang/warehouse_env_gen_nca_public}.\n",
-        "published": "2023",
+        "published": "2023-10-28",
         "authors": [
             "Yulun Zhang",
             "Matthew C. Fontaine",
             "Varun Bhatt",
             "Stefanos Nikolaidis",
             "Jiaoyang Li"
+        ],
+        "categories": [
+            null,
+            null,
+            null,
+            null
         ]
     },
     {
         "id": "http://arxiv.org/abs/1903.02547v2",
         "title": "Tactical Rewind: Self-Correction via Backtracking in Vision-and-Language\n  Navigation",
         "abstract": "  We present the Frontier Aware Search with backTracking (FAST) Navigator, a\ngeneral framework for action decoding, that achieves state-of-the-art results\non the Room-to-Room (R2R) Vision-and-Language navigation challenge of Anderson\net. al. (2018). Given a natural language instruction and photo-realistic image\nviews of a previously unseen environment, the agent was tasked with navigating\nfrom source to target location as quickly as possible. While all current\napproaches make local action decisions or score entire trajectories using beam\nsearch, ours balances local and global signals when exploring an unobserved\nenvironment. Importantly, this lets us act greedily but use global signals to\nbacktrack when necessary. Applying FAST framework to existing state-of-the-art\nmodels achieved a 17% relative gain, an absolute 6% gain on Success rate\nweighted by Path Length (SPL).\n",
-        "published": "2019",
+        "published": "2019-03-06",
         "authors": [
             "Liyiming Ke",
             "Xiujun Li",
@@ -949,25 +1465,39 @@
             "Jianfeng Gao",
             "Yejin Choi",
             "Siddhartha Srinivasa"
+        ],
+        "categories": [
+            null,
+            null,
+            null,
+            null,
+            null
         ]
     },
     {
         "id": "http://arxiv.org/abs/1907.13052v4",
         "title": "GENESIS: Generative Scene Inference and Sampling with Object-Centric\n  Latent Representations",
         "abstract": "  Generative latent-variable models are emerging as promising tools in robotics\nand reinforcement learning. Yet, even though tasks in these domains typically\ninvolve distinct objects, most state-of-the-art generative models do not\nexplicitly capture the compositional nature of visual scenes. Two recent\nexceptions, MONet and IODINE, decompose scenes into objects in an unsupervised\nfashion. Their underlying generative processes, however, do not account for\ncomponent interactions. Hence, neither of them allows for principled sampling\nof novel scenes. Here we present GENESIS, the first object-centric generative\nmodel of 3D visual scenes capable of both decomposing and generating scenes by\ncapturing relationships between scene components. GENESIS parameterises a\nspatial GMM over images which is decoded from a set of object-centric latent\nvariables that are either inferred sequentially in an amortised fashion or\nsampled from an autoregressive prior. We train GENESIS on several publicly\navailable datasets and evaluate its performance on scene generation,\ndecomposition, and semi-supervised learning.\n",
-        "published": "2019",
+        "published": "2019-07-30",
         "authors": [
             "Martin Engelcke",
             "Adam R. Kosiorek",
             "Oiwi Parker Jones",
             "Ingmar Posner"
+        ],
+        "categories": [
+            null,
+            null,
+            null,
+            null,
+            null
         ]
     },
     {
         "id": "http://arxiv.org/abs/2305.17066v1",
         "title": "Mindstorms in Natural Language-Based Societies of Mind",
         "abstract": "  Both Minsky's \"society of mind\" and Schmidhuber's \"learning to think\" inspire\ndiverse societies of large multimodal neural networks (NNs) that solve problems\nby interviewing each other in a \"mindstorm.\" Recent implementations of NN-based\nsocieties of minds consist of large language models (LLMs) and other NN-based\nexperts communicating through a natural language interface. In doing so, they\novercome the limitations of single LLMs, improving multimodal zero-shot\nreasoning. In these natural language-based societies of mind (NLSOMs), new\nagents -- all communicating through the same universal symbolic language -- are\neasily added in a modular fashion. To demonstrate the power of NLSOMs, we\nassemble and experiment with several of them (having up to 129 members),\nleveraging mindstorms in them to solve some practical AI tasks: visual question\nanswering, image captioning, text-to-image synthesis, 3D generation, egocentric\nretrieval, embodied AI, and general language-based task solving. We view this\nas a starting point towards much larger NLSOMs with billions of agents-some of\nwhich may be humans. And with this emergence of great societies of\nheterogeneous minds, many new research questions have suddenly become paramount\nto the future of artificial intelligence. What should be the social structure\nof an NLSOM? What would be the (dis)advantages of having a monarchical rather\nthan a democratic structure? How can principles of NN economies be used to\nmaximize the total reward of a reinforcement learning NLSOM? In this work, we\nidentify, discuss, and try to answer some of these questions.\n",
-        "published": "2023",
+        "published": "2023-05-26",
         "authors": [
             "Mingchen Zhuge",
             "Haozhe Liu",
@@ -995,68 +1525,113 @@
             "Deng-Ping Fan",
             "Bernard Ghanem",
             "J\u00fcrgen Schmidhuber"
+        ],
+        "categories": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
         ]
     },
     {
         "id": "http://arxiv.org/abs/1802.00209v3",
         "title": "Dual Recurrent Attention Units for Visual Question Answering",
         "abstract": "  Visual Question Answering (VQA) requires AI models to comprehend data in two\ndomains, vision and text. Current state-of-the-art models use learned attention\nmechanisms to extract relevant information from the input domains to answer a\ncertain question. Thus, robust attention mechanisms are essential for powerful\nVQA models. In this paper, we propose a recurrent attention mechanism and show\nits benefits compared to the traditional convolutional approach. We perform two\nablation studies to evaluate recurrent attention. First, we introduce a\nbaseline VQA model with visual attention and test the performance difference\nbetween convolutional and recurrent attention on the VQA 2.0 dataset. Secondly,\nwe design an architecture for VQA which utilizes dual (textual and visual)\nRecurrent Attention Units (RAUs). Using this model, we show the effect of all\npossible combinations of recurrent and convolutional dual attention. Our single\nmodel outperforms the first place winner on the VQA 2016 challenge and to the\nbest of our knowledge, it is the second best performing single model on the VQA\n1.0 dataset. Furthermore, our model noticeably improves upon the winner of the\nVQA 2017 challenge. Moreover, we experiment replacing attention mechanisms in\nstate-of-the-art models with our RAUs and show increased performance.\n",
-        "published": "2018",
+        "published": "2018-02-01",
         "authors": [
             "Ahmed Osman",
             "Wojciech Samek"
+        ],
+        "categories": [
+            null,
+            null,
+            null,
+            null,
+            null
         ]
     },
     {
         "id": "http://arxiv.org/abs/1810.04903v2",
         "title": "MOANOFS: Multi-Objective Automated Negotiation based Online Feature\n  Selection System for Big Data Classification",
         "abstract": "  Feature Selection (FS) plays an important role in learning and classification\ntasks. The object of FS is to select the relevant and non-redundant features.\nConsidering the huge amount number of features in real-world applications, FS\nmethods using batch learning technique can't resolve big data problem\nespecially when data arrive sequentially. In this paper, we propose an online\nfeature selection system which resolves this problem. More specifically, we\ntreat the problem of online supervised feature selection for binary\nclassification as a decision-making problem. A philosophical vision to this\nproblem leads to a hybridization between two important domains: feature\nselection using online learning technique (OFS) and automated negotiation (AN).\nThe proposed OFS system called MOANOFS (Multi-Objective Automated Negotiation\nbased Online Feature Selection) uses two levels of decision. In the first\nlevel, from n learners (or OFS methods), we decide which are the k trustful\nones (with high confidence or trust value). These elected k learners will\nparticipate in the second level. In this level, we integrate our proposed\nMultilateral Automated Negotiation based OFS (MANOFS) method to decide finally\nwhich is the best solution or which are relevant features. We show that MOANOFS\nsystem is applicable to different domains successfully and achieves high\naccuracy with several real-world applications.\n  Index Terms: Feature selection, online learning, multi-objective automated\nnegotiation, trust, classification, big data.\n",
-        "published": "2018",
+        "published": "2018-10-11",
         "authors": [
             "Fatma BenSaid",
             "Adel M. Alimi"
+        ],
+        "categories": [
+            null,
+            null,
+            null,
+            null,
+            null
         ]
     },
     {
         "id": "http://arxiv.org/abs/1602.00991v2",
         "title": "Deep Tracking: Seeing Beyond Seeing Using Recurrent Neural Networks",
         "abstract": "  This paper presents to the best of our knowledge the first end-to-end object\ntracking approach which directly maps from raw sensor input to object tracks in\nsensor space without requiring any feature engineering or system identification\nin the form of plant or sensor models. Specifically, our system accepts a\nstream of raw sensor data at one end and, in real-time, produces an estimate of\nthe entire environment state at the output including even occluded objects. We\nachieve this by framing the problem as a deep learning task and exploit\nsequence models in the form of recurrent neural networks to learn a mapping\nfrom sensor measurements to object tracks. In particular, we propose a learning\nmethod based on a form of input dropout which allows learning in an\nunsupervised manner, only based on raw, occluded sensor data without access to\nground-truth annotations. We demonstrate our approach using a synthetic dataset\ndesigned to mimic the task of tracking objects in 2D laser data -- as commonly\nencountered in robotics applications -- and show that it learns to track many\ndynamic objects despite occlusions and the presence of sensor noise.\n",
-        "published": "2016",
+        "published": "2016-02-02",
         "authors": [
             "Peter Ondruska",
             "Ingmar Posner"
+        ],
+        "categories": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
         ]
     },
     {
         "id": "http://arxiv.org/abs/1609.06666v2",
         "title": "Vote3Deep: Fast Object Detection in 3D Point Clouds Using Efficient\n  Convolutional Neural Networks",
         "abstract": "  This paper proposes a computationally efficient approach to detecting objects\nnatively in 3D point clouds using convolutional neural networks (CNNs). In\nparticular, this is achieved by leveraging a feature-centric voting scheme to\nimplement novel convolutional layers which explicitly exploit the sparsity\nencountered in the input. To this end, we examine the trade-off between\naccuracy and speed for different architectures and additionally propose to use\nan L1 penalty on the filter activations to further encourage sparsity in the\nintermediate representations. To the best of our knowledge, this is the first\nwork to propose sparse convolutional layers and L1 regularisation for efficient\nlarge-scale processing of 3D data. We demonstrate the efficacy of our approach\non the KITTI object detection benchmark and show that Vote3Deep models with as\nfew as three layers outperform the previous state of the art in both laser and\nlaser-vision based approaches by margins of up to 40% while remaining highly\ncompetitive in terms of processing time.\n",
-        "published": "2016",
+        "published": "2016-09-21",
         "authors": [
             "Martin Engelcke",
             "Dushyant Rao",
             "Dominic Zeng Wang",
             "Chi Hay Tong",
             "Ingmar Posner"
+        ],
+        "categories": [
+            null,
+            null,
+            null,
+            null,
+            null
         ]
     },
     {
         "id": "http://arxiv.org/abs/1707.03374v2",
         "title": "Imitation from Observation: Learning to Imitate Behaviors from Raw Video\n  via Context Translation",
         "abstract": "  Imitation learning is an effective approach for autonomous systems to acquire\ncontrol policies when an explicit reward function is unavailable, using\nsupervision provided as demonstrations from an expert, typically a human\noperator. However, standard imitation learning methods assume that the agent\nreceives examples of observation-action tuples that could be provided, for\ninstance, to a supervised learning algorithm. This stands in contrast to how\nhumans and animals imitate: we observe another person performing some behavior\nand then figure out which actions will realize that behavior, compensating for\nchanges in viewpoint, surroundings, object positions and types, and other\nfactors. We term this kind of imitation learning \"imitation-from-observation,\"\nand propose an imitation learning method based on video prediction with context\ntranslation and deep reinforcement learning. This lifts the assumption in\nimitation learning that the demonstration should consist of observations in the\nsame environment configuration, and enables a variety of interesting\napplications, including learning robotic skills that involve tool use simply by\nobserving videos of human tool use. Our experimental results show the\neffectiveness of our approach in learning a wide range of real-world robotic\ntasks modeled after common household chores from videos of a human\ndemonstrator, including sweeping, ladling almonds, pushing objects as well as a\nnumber of tasks in simulation.\n",
-        "published": "2017",
+        "published": "2017-07-11",
         "authors": [
             "YuXuan Liu",
             "Abhishek Gupta",
             "Pieter Abbeel",
             "Sergey Levine"
+        ],
+        "categories": [
+            null,
+            null,
+            null,
+            null,
+            null
         ]
     },
     {
         "id": "http://arxiv.org/abs/1910.04142v1",
         "title": "Imagined Value Gradients: Model-Based Policy Optimization with\n  Transferable Latent Dynamics Models",
         "abstract": "  Humans are masters at quickly learning many complex tasks, relying on an\napproximate understanding of the dynamics of their environments. In much the\nsame way, we would like our learning agents to quickly adapt to new tasks. In\nthis paper, we explore how model-based Reinforcement Learning (RL) can\nfacilitate transfer to new tasks. We develop an algorithm that learns an\naction-conditional, predictive model of expected future observations, rewards\nand values from which a policy can be derived by following the gradient of the\nestimated value along imagined trajectories. We show how robust policy\noptimization can be achieved in robot manipulation tasks even with approximate\nmodels that are learned directly from vision and proprioception. We evaluate\nthe efficacy of our approach in a transfer learning scenario, re-using\npreviously learned models on tasks with different reward structures and visual\ndistractors, and show a significant improvement in learning speed compared to\nstrong off-policy baselines. Videos with results can be found at\nhttps://sites.google.com/view/ivg-corl19\n",
-        "published": "2019",
+        "published": "2019-10-09",
         "authors": [
             "Arunkumar Byravan",
             "Jost Tobias Springenberg",
@@ -1067,35 +1642,56 @@
             "Noah Siegel",
             "Nicolas Heess",
             "Martin Riedmiller"
+        ],
+        "categories": [
+            null,
+            null,
+            null,
+            null,
+            null
         ]
     },
     {
         "id": "http://arxiv.org/abs/1301.4862v1",
         "title": "Active Learning of Inverse Models with Intrinsically Motivated Goal\n  Exploration in Robots",
         "abstract": "  We introduce the Self-Adaptive Goal Generation - Robust Intelligent Adaptive\nCuriosity (SAGG-RIAC) architecture as an intrinsi- cally motivated goal\nexploration mechanism which allows active learning of inverse models in\nhigh-dimensional redundant robots. This allows a robot to efficiently and\nactively learn distributions of parameterized motor skills/policies that solve\na corresponding distribution of parameterized tasks/goals. The architecture\nmakes the robot sample actively novel parameterized tasks in the task space,\nbased on a measure of competence progress, each of which triggers low-level\ngoal-directed learning of the motor policy pa- rameters that allow to solve it.\nFor both learning and generalization, the system leverages regression\ntechniques which allow to infer the motor policy parameters corresponding to a\ngiven novel parameterized task, and based on the previously learnt\ncorrespondences between policy and task parameters. We present experiments with\nhigh-dimensional continuous sensorimotor spaces in three different robotic\nsetups: 1) learning the inverse kinematics in a highly-redundant robotic arm,\n2) learning omnidirectional locomotion with motor primitives in a quadruped\nrobot, 3) an arm learning to control a fishing rod with a flexible wire. We\nshow that 1) exploration in the task space can be a lot faster than exploration\nin the actuator space for learning inverse models in redundant robots; 2)\nselecting goals maximizing competence progress creates developmental\ntrajectories driving the robot to progressively focus on tasks of increasing\ncomplexity and is statistically significantly more efficient than selecting\ntasks randomly, as well as more efficient than different standard active motor\nbabbling methods; 3) this architecture allows the robot to actively discover\nwhich parts of its task space it can learn to reach and which part it cannot.\n",
-        "published": "2013",
+        "published": "2013-01-21",
         "authors": [
             "Adrien Baranes",
             "Pierre-Yves Oudeyer"
+        ],
+        "categories": [
+            null,
+            null,
+            null,
+            null,
+            null
         ]
     },
     {
         "id": "http://arxiv.org/abs/1604.05091v2",
         "title": "End-to-End Tracking and Semantic Segmentation Using Recurrent Neural\n  Networks",
         "abstract": "  In this work we present a novel end-to-end framework for tracking and\nclassifying a robot's surroundings in complex, dynamic and only partially\nobservable real-world environments. The approach deploys a recurrent neural\nnetwork to filter an input stream of raw laser measurements in order to\ndirectly infer object locations, along with their identity in both visible and\noccluded areas. To achieve this we first train the network using unsupervised\nDeep Tracking, a recently proposed theoretical framework for end-to-end space\noccupancy prediction. We show that by learning to track on a large amount of\nunsupervised data, the network creates a rich internal representation of its\nenvironment which we in turn exploit through the principle of inductive\ntransfer of knowledge to perform the task of it's semantic classification. As a\nresult, we show that only a small amount of labelled data suffices to steer the\nnetwork towards mastering this additional task. Furthermore we propose a novel\nrecurrent neural network architecture specifically tailored to tracking and\nsemantic classification in real-world robotics applications. We demonstrate the\ntracking and classification performance of the method on real-world data\ncollected at a busy road junction. Our evaluation shows that the proposed\nend-to-end framework compares favourably to a state-of-the-art, model-free\ntracking solution and that it outperforms a conventional one-shot training\nscheme for semantic classification.\n",
-        "published": "2016",
+        "published": "2016-04-18",
         "authors": [
             "Peter Ondruska",
             "Julie Dequaire",
             "Dominic Zeng Wang",
             "Ingmar Posner"
+        ],
+        "categories": [
+            null,
+            null,
+            null,
+            null,
+            null
         ]
     },
     {
         "id": "http://arxiv.org/abs/1812.11971v3",
         "title": "Mid-Level Visual Representations Improve Generalization and Sample\n  Efficiency for Learning Visuomotor Policies",
         "abstract": "  How much does having visual priors about the world (e.g. the fact that the\nworld is 3D) assist in learning to perform downstream motor tasks (e.g.\ndelivering a package)? We study this question by integrating a generic\nperceptual skill set (e.g. a distance estimator, an edge detector, etc.) within\na reinforcement learning framework--see Figure 1. This skill set (hereafter\nmid-level perception) provides the policy with a more processed state of the\nworld compared to raw images.\n  We find that using a mid-level perception confers significant advantages over\ntraining end-to-end from scratch (i.e. not leveraging priors) in\nnavigation-oriented tasks. Agents are able to generalize to situations where\nthe from-scratch approach fails and training becomes significantly more sample\nefficient. However, we show that realizing these gains requires careful\nselection of the mid-level perceptual skills. Therefore, we refine our findings\ninto an efficient max-coverage feature set that can be adopted in lieu of raw\nimages. We perform our study in completely separate buildings for training and\ntesting and compare against visually blind baseline policies and\nstate-of-the-art feature learning methods.\n",
-        "published": "2018",
+        "published": "2018-12-31",
         "authors": [
             "Alexander Sax",
             "Bradley Emi",
@@ -1103,65 +1699,100 @@
             "Leonidas Guibas",
             "Silvio Savarese",
             "Jitendra Malik"
+        ],
+        "categories": [
+            null,
+            null,
+            null,
+            null,
+            null
         ]
     },
     {
         "id": "http://arxiv.org/abs/1810.11714v2",
         "title": "The CoSTAR Block Stacking Dataset: Learning with Workspace Constraints",
         "abstract": "  A robot can now grasp an object more effectively than ever before, but once\nit has the object what happens next? We show that a mild relaxation of the task\nand workspace constraints implicit in existing object grasping datasets can\ncause neural network based grasping algorithms to fail on even a simple block\nstacking task when executed under more realistic circumstances.\n  To address this, we introduce the JHU CoSTAR Block Stacking Dataset (BSD),\nwhere a robot interacts with 5.1 cm colored blocks to complete an\norder-fulfillment style block stacking task. It contains dynamic scenes and\nreal time-series data in a less constrained environment than comparable\ndatasets. There are nearly 12,000 stacking attempts and over 2 million frames\nof real data. We discuss the ways in which this dataset provides a valuable\nresource for a broad range of other topics of investigation.\n  We find that hand-designed neural networks that work on prior datasets do not\ngeneralize to this task. Thus, to establish a baseline for this dataset, we\ndemonstrate an automated search of neural network based models using a novel\nmultiple-input HyperTree MetaModel, and find a final model which makes\nreasonable 3D pose predictions for grasping and stacking on our dataset.\n  The CoSTAR BSD, code, and instructions are available at\nhttps://sites.google.com/site/costardataset.\n",
-        "published": "2018",
+        "published": "2018-10-27",
         "authors": [
             "Andrew Hundt",
             "Varun Jain",
             "Chia-Hung Lin",
             "Chris Paxton",
             "Gregory D. Hager"
+        ],
+        "categories": [
+            null,
+            null,
+            null,
+            null,
+            null
         ]
     },
     {
         "id": "http://arxiv.org/abs/2002.12336v1",
         "title": "Hallucinative Topological Memory for Zero-Shot Visual Planning",
         "abstract": "  In visual planning (VP), an agent learns to plan goal-directed behavior from\nobservations of a dynamical system obtained offline, e.g., images obtained from\nself-supervised robot interaction. Most previous works on VP approached the\nproblem by planning in a learned latent space, resulting in low-quality visual\nplans, and difficult training algorithms. Here, instead, we propose a simple VP\nmethod that plans directly in image space and displays competitive performance.\nWe build on the semi-parametric topological memory (SPTM) method: image samples\nare treated as nodes in a graph, the graph connectivity is learned from image\nsequence data, and planning can be performed using conventional graph search\nmethods. We propose two modifications on SPTM. First, we train an energy-based\ngraph connectivity function using contrastive predictive coding that admits\nstable training. Second, to allow zero-shot planning in new domains, we learn a\nconditional VAE model that generates images given a context of the domain, and\nuse these hallucinated samples for building the connectivity graph and\nplanning. We show that this simple approach significantly outperform the\nstate-of-the-art VP methods, in terms of both plan interpretability and success\nrate when using the plan to guide a trajectory-following controller.\nInterestingly, our method can pick up non-trivial visual properties of objects,\nsuch as their geometry, and account for it in the plans.\n",
-        "published": "2020",
+        "published": "2020-02-27",
         "authors": [
             "Kara Liu",
             "Thanard Kurutach",
             "Christine Tung",
             "Pieter Abbeel",
             "Aviv Tamar"
+        ],
+        "categories": [
+            null,
+            null,
+            null,
+            null,
+            null
         ]
     },
     {
         "id": "http://arxiv.org/abs/2102.02886v3",
         "title": "Ivy: Templated Deep Learning for Inter-Framework Portability",
         "abstract": "  We introduce Ivy, a templated Deep Learning (DL) framework which abstracts\nexisting DL frameworks. Ivy unifies the core functions of these frameworks to\nexhibit consistent call signatures, syntax and input-output behaviour. New\nhigh-level framework-agnostic functions and classes, which are usable alongside\nframework-specific code, can then be implemented as compositions of the unified\nlow-level Ivy functions. Ivy currently supports TensorFlow, PyTorch, MXNet, Jax\nand NumPy. We also release four pure-Ivy libraries for mechanics, 3D vision,\nrobotics, and differentiable environments. Through our evaluations, we show\nthat Ivy can significantly reduce lines of code with a runtime overhead of less\nthan 1% in most cases. We welcome developers to join the Ivy community by\nwriting their own functions, layers and libraries in Ivy, maximizing their\naudience and helping to accelerate DL research through inter-framework\ncodebases. More information can be found at https://ivy-dl.org.\n",
-        "published": "2021",
+        "published": "2021-02-04",
         "authors": [
             "Daniel Lenton",
             "Fabio Pardo",
             "Fabian Falck",
             "Stephen James",
             "Ronald Clark"
+        ],
+        "categories": [
+            null,
+            null,
+            null,
+            null,
+            null
         ]
     },
     {
         "id": "http://arxiv.org/abs/2110.03659v3",
         "title": "Transform2Act: Learning a Transform-and-Control Policy for Efficient\n  Agent Design",
         "abstract": "  An agent's functionality is largely determined by its design, i.e., skeletal\nstructure and joint attributes (e.g., length, size, strength). However, finding\nthe optimal agent design for a given function is extremely challenging since\nthe problem is inherently combinatorial and the design space is prohibitively\nlarge. Additionally, it can be costly to evaluate each candidate design which\nrequires solving for its optimal controller. To tackle these problems, our key\nidea is to incorporate the design procedure of an agent into its\ndecision-making process. Specifically, we learn a conditional policy that, in\nan episode, first applies a sequence of transform actions to modify an agent's\nskeletal structure and joint attributes, and then applies control actions under\nthe new design. To handle a variable number of joints across designs, we use a\ngraph-based policy where each graph node represents a joint and uses message\npassing with its neighbors to output joint-specific actions. Using policy\ngradient methods, our approach enables joint optimization of agent design and\ncontrol as well as experience sharing across different designs, which improves\nsample efficiency substantially. Experiments show that our approach,\nTransform2Act, outperforms prior methods significantly in terms of convergence\nspeed and final performance. Notably, Transform2Act can automatically discover\nplausible designs similar to giraffes, squids, and spiders. Code and videos are\navailable at https://sites.google.com/view/transform2act.\n",
-        "published": "2021",
+        "published": "2021-10-07",
         "authors": [
             "Ye Yuan",
             "Yuda Song",
             "Zhengyi Luo",
             "Wen Sun",
             "Kris Kitani"
+        ],
+        "categories": [
+            null,
+            null,
+            null,
+            null,
+            null
         ]
     },
     {
         "id": "http://arxiv.org/abs/2210.04303v1",
         "title": "Are All Vision Models Created Equal? A Study of the Open-Loop to\n  Closed-Loop Causality Gap",
         "abstract": "  There is an ever-growing zoo of modern neural network models that can\nefficiently learn end-to-end control from visual observations. These advanced\ndeep models, ranging from convolutional to patch-based networks, have been\nextensively tested on offline image classification and regression tasks. In\nthis paper, we study these vision architectures with respect to the open-loop\nto closed-loop causality gap, i.e., offline training followed by an online\nclosed-loop deployment. This causality gap typically emerges in robotics\napplications such as autonomous driving, where a network is trained to imitate\nthe control commands of a human. In this setting, two situations arise: 1)\nClosed-loop testing in-distribution, where the test environment shares\nproperties with those of offline training data. 2) Closed-loop testing under\ndistribution shifts and out-of-distribution. Contrary to recently reported\nresults, we show that under proper training guidelines, all vision models\nperform indistinguishably well on in-distribution deployment, resolving the\ncausality gap. In situation 2, We observe that the causality gap disrupts\nperformance regardless of the choice of the model architecture. Our results\nimply that the causality gap can be solved in situation one with our proposed\ntraining guideline with any modern network architecture, whereas achieving\nout-of-distribution generalization (situation two) requires further\ninvestigations, for instance, on data diversity rather than the model\narchitecture.\n",
-        "published": "2022",
+        "published": "2022-10-09",
         "authors": [
             "Mathias Lechner",
             "Ramin Hasani",
@@ -1169,25 +1800,39 @@
             "Tsun-Hsuan Wang",
             "Thomas A. Henzinger",
             "Daniela Rus"
+        ],
+        "categories": [
+            null,
+            null,
+            null,
+            null,
+            null
         ]
     },
     {
         "id": "http://arxiv.org/abs/2302.14051v2",
         "title": "Internet Explorer: Targeted Representation Learning on the Open Web",
         "abstract": "  Modern vision models typically rely on fine-tuning general-purpose models\npre-trained on large, static datasets. These general-purpose models only\ncapture the knowledge within their pre-training datasets, which are tiny,\nout-of-date snapshots of the Internet -- where billions of images are uploaded\neach day. We suggest an alternate approach: rather than hoping our static\ndatasets transfer to our desired tasks after large-scale pre-training, we\npropose dynamically utilizing the Internet to quickly train a small-scale model\nthat does extremely well on the task at hand. Our approach, called Internet\nExplorer, explores the web in a self-supervised manner to progressively find\nrelevant examples that improve performance on a desired target dataset. It\ncycles between searching for images on the Internet with text queries,\nself-supervised training on downloaded images, determining which images were\nuseful, and prioritizing what to search for next. We evaluate Internet Explorer\nacross several datasets and show that it outperforms or matches CLIP oracle\nperformance by using just a single GPU desktop to actively query the Internet\nfor 30--40 hours. Results, visualizations, and videos at\nhttps://internet-explorer-ssl.github.io/\n",
-        "published": "2023",
+        "published": "2023-02-27",
         "authors": [
             "Alexander C. Li",
             "Ellis Brown",
             "Alexei A. Efros",
             "Deepak Pathak"
+        ],
+        "categories": [
+            null,
+            null,
+            null,
+            null,
+            null
         ]
     },
     {
         "id": "http://arxiv.org/abs/2303.08778v1",
         "title": "Fully neuromorphic vision and control for autonomous drone flight",
         "abstract": "  Biological sensing and processing is asynchronous and sparse, leading to\nlow-latency and energy-efficient perception and action. In robotics,\nneuromorphic hardware for event-based vision and spiking neural networks\npromises to exhibit similar characteristics. However, robotic implementations\nhave been limited to basic tasks with low-dimensional sensory inputs and motor\nactions due to the restricted network size in current embedded neuromorphic\nprocessors and the difficulties of training spiking neural networks. Here, we\npresent the first fully neuromorphic vision-to-control pipeline for controlling\na freely flying drone. Specifically, we train a spiking neural network that\naccepts high-dimensional raw event-based camera data and outputs low-level\ncontrol actions for performing autonomous vision-based flight. The vision part\nof the network, consisting of five layers and 28.8k neurons, maps incoming raw\nevents to ego-motion estimates and is trained with self-supervised learning on\nreal event data. The control part consists of a single decoding layer and is\nlearned with an evolutionary algorithm in a drone simulator. Robotic\nexperiments show a successful sim-to-real transfer of the fully learned\nneuromorphic pipeline. The drone can accurately follow different ego-motion\nsetpoints, allowing for hovering, landing, and maneuvering\nsideways$\\unicode{x2014}$even while yawing at the same time. The neuromorphic\npipeline runs on board on Intel's Loihi neuromorphic processor with an\nexecution frequency of 200 Hz, spending only 27 $\\unicode{x00b5}$J per\ninference. These results illustrate the potential of neuromorphic sensing and\nprocessing for enabling smaller, more intelligent robots.\n",
-        "published": "2023",
+        "published": "2023-03-15",
         "authors": [
             "Federico Paredes-Vall\u00e9s",
             "Jesse Hagenaars",
@@ -1195,13 +1840,20 @@
             "Stein Stroobants",
             "Yingfu Xu",
             "Guido de Croon"
+        ],
+        "categories": [
+            null,
+            null,
+            null,
+            null,
+            null
         ]
     },
     {
         "id": "http://arxiv.org/abs/2303.11373v1",
         "title": "Neural Constraint Satisfaction: Hierarchical Abstraction for\n  Combinatorial Generalization in Object Rearrangement",
         "abstract": "  Object rearrangement is a challenge for embodied agents because solving these\ntasks requires generalizing across a combinatorially large set of\nconfigurations of entities and their locations. Worse, the representations of\nthese entities are unknown and must be inferred from sensory percepts. We\npresent a hierarchical abstraction approach to uncover these underlying\nentities and achieve combinatorial generalization from unstructured visual\ninputs. By constructing a factorized transition graph over clusters of entity\nrepresentations inferred from pixels, we show how to learn a correspondence\nbetween intervening on states of entities in the agent's model and acting on\nobjects in the environment. We use this correspondence to develop a method for\ncontrol that generalizes to different numbers and configurations of objects,\nwhich outperforms current offline deep RL methods when evaluated on simulated\nrearrangement tasks.\n",
-        "published": "2023",
+        "published": "2023-03-20",
         "authors": [
             "Michael Chang",
             "Alyssa L. Dayan",
@@ -1209,49 +1861,77 @@
             "Thomas L. Griffiths",
             "Sergey Levine",
             "Amy Zhang"
+        ],
+        "categories": [
+            null,
+            null,
+            null,
+            null,
+            null
         ]
     },
     {
         "id": "http://arxiv.org/abs/2304.08488v1",
         "title": "Affordances from Human Videos as a Versatile Representation for Robotics",
         "abstract": "  Building a robot that can understand and learn to interact by watching humans\nhas inspired several vision problems. However, despite some successful results\non static datasets, it remains unclear how current models can be used on a\nrobot directly. In this paper, we aim to bridge this gap by leveraging videos\nof human interactions in an environment centric manner. Utilizing internet\nvideos of human behavior, we train a visual affordance model that estimates\nwhere and how in the scene a human is likely to interact. The structure of\nthese behavioral affordances directly enables the robot to perform many complex\ntasks. We show how to seamlessly integrate our affordance model with four robot\nlearning paradigms including offline imitation learning, exploration,\ngoal-conditioned learning, and action parameterization for reinforcement\nlearning. We show the efficacy of our approach, which we call VRB, across 4\nreal world environments, over 10 different tasks, and 2 robotic platforms\noperating in the wild. Results, visualizations and videos at\nhttps://robo-affordances.github.io/\n",
-        "published": "2023",
+        "published": "2023-04-17",
         "authors": [
             "Shikhar Bahl",
             "Russell Mendonca",
             "Lili Chen",
             "Unnat Jain",
             "Deepak Pathak"
+        ],
+        "categories": [
+            null,
+            null,
+            null,
+            null,
+            null
         ]
     },
     {
         "id": "http://arxiv.org/abs/2308.10901v1",
         "title": "Structured World Models from Human Videos",
         "abstract": "  We tackle the problem of learning complex, general behaviors directly in the\nreal world. We propose an approach for robots to efficiently learn manipulation\nskills using only a handful of real-world interaction trajectories from many\ndifferent settings. Inspired by the success of learning from large-scale\ndatasets in the fields of computer vision and natural language, our belief is\nthat in order to efficiently learn, a robot must be able to leverage\ninternet-scale, human video data. Humans interact with the world in many\ninteresting ways, which can allow a robot to not only build an understanding of\nuseful actions and affordances but also how these actions affect the world for\nmanipulation. Our approach builds a structured, human-centric action space\ngrounded in visual affordances learned from human videos. Further, we train a\nworld model on human videos and fine-tune on a small amount of robot\ninteraction data without any task supervision. We show that this approach of\naffordance-space world models enables different robots to learn various\nmanipulation skills in complex settings, in under 30 minutes of interaction.\nVideos can be found at https://human-world-model.github.io\n",
-        "published": "2023",
+        "published": "2023-08-21",
         "authors": [
             "Russell Mendonca",
             "Shikhar Bahl",
             "Deepak Pathak"
+        ],
+        "categories": [
+            null,
+            null,
+            null,
+            null,
+            null
         ]
     },
     {
         "id": "http://arxiv.org/abs/2309.02435v1",
         "title": "Efficient RL via Disentangled Environment and Agent Representations",
         "abstract": "  Agents that are aware of the separation between themselves and their\nenvironments can leverage this understanding to form effective representations\nof visual input. We propose an approach for learning such structured\nrepresentations for RL algorithms, using visual knowledge of the agent, such as\nits shape or mask, which is often inexpensive to obtain. This is incorporated\ninto the RL objective using a simple auxiliary loss. We show that our method,\nStructured Environment-Agent Representations, outperforms state-of-the-art\nmodel-free approaches over 18 different challenging visual simulation\nenvironments spanning 5 different robots. Website at https://sear-rl.github.io/\n",
-        "published": "2023",
+        "published": "2023-09-05",
         "authors": [
             "Kevin Gmelin",
             "Shikhar Bahl",
             "Russell Mendonca",
             "Deepak Pathak"
+        ],
+        "categories": [
+            null,
+            null,
+            null,
+            null,
+            null
         ]
     },
     {
         "id": "http://arxiv.org/abs/1804.08328v1",
         "title": "Taskonomy: Disentangling Task Transfer Learning",
         "abstract": "  Do visual tasks have a relationship, or are they unrelated? For instance,\ncould having surface normals simplify estimating the depth of an image?\nIntuition answers these questions positively, implying existence of a structure\namong visual tasks. Knowing this structure has notable values; it is the\nconcept underlying transfer learning and provides a principled way for\nidentifying redundancies across tasks, e.g., to seamlessly reuse supervision\namong related tasks or solve many tasks in one system without piling up the\ncomplexity.\n  We proposes a fully computational approach for modeling the structure of\nspace of visual tasks. This is done via finding (first and higher-order)\ntransfer learning dependencies across a dictionary of twenty six 2D, 2.5D, 3D,\nand semantic tasks in a latent space. The product is a computational taxonomic\nmap for task transfer learning. We study the consequences of this structure,\ne.g. nontrivial emerged relationships, and exploit them to reduce the demand\nfor labeled data. For example, we show that the total number of labeled\ndatapoints needed for solving a set of 10 tasks can be reduced by roughly 2/3\n(compared to training independently) while keeping the performance nearly the\nsame. We provide a set of tools for computing and probing this taxonomical\nstructure including a solver that users can employ to devise efficient\nsupervision policies for their use cases.\n",
-        "published": "2018",
+        "published": "2018-04-23",
         "authors": [
             "Amir Zamir",
             "Alexander Sax",
@@ -1259,39 +1939,67 @@
             "Leonidas Guibas",
             "Jitendra Malik",
             "Silvio Savarese"
+        ],
+        "categories": [
+            null,
+            null,
+            null,
+            null,
+            null
         ]
     },
     {
         "id": "http://arxiv.org/abs/2102.07764v2",
         "title": "End-to-End Egospheric Spatial Memory",
         "abstract": "  Spatial memory, or the ability to remember and recall specific locations and\nobjects, is central to autonomous agents' ability to carry out tasks in real\nenvironments. However, most existing artificial memory modules are not very\nadept at storing spatial information. We propose a parameter-free module,\nEgospheric Spatial Memory (ESM), which encodes the memory in an ego-sphere\naround the agent, enabling expressive 3D representations. ESM can be trained\nend-to-end via either imitation or reinforcement learning, and improves both\ntraining efficiency and final performance against other memory baselines on\nboth drone and manipulator visuomotor control tasks. The explicit egocentric\ngeometry also enables us to seamlessly combine the learned controller with\nother non-learned modalities, such as local obstacle avoidance. We further show\napplications to semantic segmentation on the ScanNet dataset, where ESM\nnaturally combines image-level and map-level inference modalities. Through our\nbroad set of experiments, we show that ESM provides a general computation graph\nfor embodied spatial reasoning, and the module forms a bridge between real-time\nmapping systems and differentiable memory architectures. Implementation at:\nhttps://github.com/ivy-dl/memory.\n",
-        "published": "2021",
+        "published": "2021-02-15",
         "authors": [
             "Daniel Lenton",
             "Stephen James",
             "Ronald Clark",
             "Andrew J. Davison"
+        ],
+        "categories": [
+            null,
+            null,
+            null,
+            null,
+            null
         ]
     },
     {
         "id": "http://arxiv.org/abs/2112.03257v1",
         "title": "Functional Regularization for Reinforcement Learning via Learned Fourier\n  Features",
         "abstract": "  We propose a simple architecture for deep reinforcement learning by embedding\ninputs into a learned Fourier basis and show that it improves the sample\nefficiency of both state-based and image-based RL. We perform infinite-width\nanalysis of our architecture using the Neural Tangent Kernel and theoretically\nshow that tuning the initial variance of the Fourier basis is equivalent to\nfunctional regularization of the learned deep network. That is, these learned\nFourier features allow for adjusting the degree to which networks underfit or\noverfit different frequencies in the training data, and hence provide a\ncontrolled mechanism to improve the stability and performance of RL\noptimization. Empirically, this allows us to prioritize learning low-frequency\nfunctions and speed up learning by reducing networks' susceptibility to noise\nin the optimization process, such as during Bellman updates. Experiments on\nstandard state-based and image-based RL benchmarks show clear benefits of our\narchitecture over the baselines. Website at\nhttps://alexanderli.com/learned-fourier-features\n",
-        "published": "2021",
+        "published": "2021-12-06",
         "authors": [
             "Alexander C. Li",
             "Deepak Pathak"
+        ],
+        "categories": [
+            null,
+            null,
+            null,
+            null,
+            null
         ]
     },
     {
         "id": "http://arxiv.org/abs/2209.15007v2",
         "title": "Understanding Collapse in Non-Contrastive Siamese Representation\n  Learning",
         "abstract": "  Contrastive methods have led a recent surge in the performance of\nself-supervised representation learning (SSL). Recent methods like BYOL or\nSimSiam purportedly distill these contrastive methods down to their essence,\nremoving bells and whistles, including the negative examples, that do not\ncontribute to downstream performance. These \"non-contrastive\" methods work\nsurprisingly well without using negatives even though the global minimum lies\nat trivial collapse. We empirically analyze these non-contrastive methods and\nfind that SimSiam is extraordinarily sensitive to dataset and model size. In\nparticular, SimSiam representations undergo partial dimensional collapse if the\nmodel is too small relative to the dataset size. We propose a metric to measure\nthe degree of this collapse and show that it can be used to forecast the\ndownstream task performance without any fine-tuning or labels. We further\nanalyze architectural design choices and their effect on the downstream\nperformance. Finally, we demonstrate that shifting to a continual learning\nsetting acts as a regularizer and prevents collapse, and a hybrid between\ncontinual and multi-epoch training can improve linear probe accuracy by as many\nas 18 percentage points using ResNet-18 on ImageNet. Our project page is at\nhttps://alexanderli.com/noncontrastive-ssl/.\n",
-        "published": "2022",
+        "published": "2022-09-29",
         "authors": [
             "Alexander C. Li",
             "Alexei A. Efros",
             "Deepak Pathak"
+        ],
+        "categories": [
+            null,
+            null,
+            null,
+            null,
+            null
         ]
     }
 ]

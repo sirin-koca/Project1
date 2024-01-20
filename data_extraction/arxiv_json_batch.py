@@ -19,7 +19,7 @@ if __name__ == '__main__':
     batch_number = 1
 
     while start < total_results:
-        query = f"search_query=({category_query})&start={start}&max_results={max_results}"
+        query = f"search_query={category_query}&start={start}&max_results={max_results}"
         response = requests.get(base_url + query)
         root = ET.fromstring(response.content)
 
@@ -34,9 +34,10 @@ if __name__ == '__main__':
                 'id': entry.find('{http://www.w3.org/2005/Atom}id').text,
                 'title': entry.find('{http://www.w3.org/2005/Atom}title').text,
                 'abstract': entry.find('{http://www.w3.org/2005/Atom}summary').text,
-                'published': entry.find('{http://www.w3.org/2005/Atom}published').text[:4],  # Extracting the year
+                'published': entry.find('{http://www.w3.org/2005/Atom}published').text[:10],  # Extracting the full date
                 'authors': [author.find('{http://www.w3.org/2005/Atom}name').text for author in
-                            entry.findall('{http://www.w3.org/2005/Atom}author')]
+                            entry.findall('{http://www.w3.org/2005/Atom}author')],
+                'categories': [category.text for category in entry.findall('{http://www.w3.org/2005/Atom}category')]
             }
             papers.append(paper)
 
