@@ -27,6 +27,7 @@ if __name__ == '__main__':
             total_results_element = root.find('{http://a9.com/-/spec/opensearch/1.1/}totalResults')
             if total_results_element is not None:
                 total_results = int(total_results_element.text)
+                print(response.text)
 
         papers = []
         for entry in root.findall('{http://www.w3.org/2005/Atom}entry'):
