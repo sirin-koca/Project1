@@ -81,13 +81,59 @@ if __name__ == '__main__':
             'Count'].sum()
         fig = px.bar(topic_distribution, x=topic_distribution.index, y='Count', labels={'Count': 'Number of Papers'},
                      title='Total Papers per AI Topic')
+
+        # Custom styling
+        fig.update_layout(
+            title={
+                'text': 'Total Papers per AI Topic',
+                'y': 0.9,
+                'x': 0.5,
+                'xanchor': 'center',
+                'yanchor': 'top',
+                'font': {'size': 24}  # Customize title font size here
+            },
+            xaxis_title='AI Topics',
+            yaxis_title='Number of Papers',
+            font=dict(
+                family="Courier New, monospace",
+                size=18,  # Customize axis label and font size
+                color="black"
+            )
+        )
+        fig.update_traces(marker_line_width=1, opacity=0.9, marker_line_color='black')
+        # Different color for each bar:
+        colors = ['#636EFA', 'magenta', '#00CC96', '#AB63FA', '#FFA15A', '#19D3F3', '#FF6692', '#B6E880', '#FF97FF',
+                  '#FECB52']
+        fig.update_traces(marker_color=colors)
         st.plotly_chart(fig, use_container_width=True)
 
+        # Next chart
         st.subheader('Trend of AI Research Over the Years')
         yearly_trend = df.drop(columns=['topic']).sum()
         fig = px.line(yearly_trend, x=yearly_trend.index, y=yearly_trend.values,
                       labels={'y': 'Number of Papers', 'index': 'Year'}, title='Trend of AI Research Over the Years')
+
+        # Custom styling
+        fig.update_layout(
+            title={
+                'text': 'Trend of AI Research Over the Years',
+                'y': 0.9,
+                'x': 0.5,
+                'xanchor': 'center',
+                'yanchor': 'top',
+                'font': {'size': 24}  # Customize title font size here
+            },
+            xaxis_title='Published Year',
+            yaxis_title='Number of Papers',
+            font=dict(
+                family="Courier New, monospace",
+                size=18,  # Customize axis label and tick font size here
+                color="black"
+            )
+        )
+        fig.update_traces(marker_line_width=1.5, opacity=0.8, marker_line_color='black')
         st.plotly_chart(fig, use_container_width=True)
+        # Charts end.
 
     elif page == 'Detailed View':
         st.title('Explore the AI Topics on arXiv')
