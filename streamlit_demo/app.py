@@ -6,6 +6,8 @@ import streamlit as st
 import pandas as pd
 import json
 
+st.set_page_config(page_title="AI Taxonomy Explorer", page_icon="🕹️", layout="wide", initial_sidebar_state="expanded")
+
 
 @st.cache_data
 def load_data():
@@ -27,20 +29,39 @@ if __name__ == '__main__':
     df = load_data()
 
     # Set up the Streamlit app layout
+    st.sidebar.subheader('Streamlit demo by Sirin')
     st.sidebar.title('Bachelor Thesis Project')
-    st.sidebar.subheader('OsloMet 2024')
-    st.sidebar.title('AI Topics Explorer')
+    st.sidebar.subheader('OsloMet // SINTEF')
+    st.sidebar.title('AI Topic Explorer')
 
     # Navigation
     page = st.sidebar.radio('Select a Page', ['Home', 'Detailed View', 'About'])
 
+    # Search bar
+    search_query = st.sidebar.text_input('Search', '')
+
+    if search_query:
+        # Assuming 'df' is your DataFrame and 'topic' is the column with text to search
+        try:
+            # Case-insensitive search
+            filtered_data = df[df['topic'].str.contains(search_query, case=False, na=False)]
+            st.sidebar.write(f"You searched for: {search_query}")
+            st.write(filtered_data)
+        except KeyError:
+            st.error("The specified column does not exist in the DataFrame.")
+        except Exception as e:
+            st.error(f"An error occurred: {e}")
+
     if page == 'Home':
-        st.title('AI Topics Overview')
+        st.title('Overview')
         st.markdown("""
             <p style='font-size: 1.5em;'>
-            Welcome to AI Taxonomy Explorer! <br>
-            This tool visualizes the trends in AI research over recent years, based on the number of academic papers 
-            published in various AI subfields.
+            Welcome to AI Topic Explorer! <br><br>
+            Navigate AI Research Trends with Ease. Discover the latest trends in AI research through a 
+            straightforward and intuitive visual tool. <br> 
+            Perfect for researchers and AI professionals, it offers a clear view of the most impactful topics 
+            and their development over the years. <br>
+            Simple yet powerful - get the insights you need to stay informed and connected with the AI community.
             </p>
             """, unsafe_allow_html=True)
 
@@ -94,7 +115,13 @@ if __name__ == '__main__':
         st.title('About the Project')
         st.markdown("""
             <p style='font-size: 1.5em;'>
-            This project is part of a bachelor thesis at OsloMet 2024. <br>
-            It aims to provide a dynamic visualization 
-            tool to explore the ever-expanding field of artificial intelligence.</p>
+            AI Topics Explorer: A proof-of-concept visualization tool<br><br>
+            As part of the bachelor thesis at OsloMet, this project unfolds an exploratory journey into the dynamic 
+            world of artificial intelligence (AI). Developed in collaboration with SINTEF and Ontotext, the 
+            AI Topics Explorer stands as a proof-of-concept (POC) that shows the potential of interactive 
+            visualization to illuminate AI research trends.
+            The tool encapsulates a digital prototype designed to map the spread of AI topics over time. 
+            This initiative not only demonstrates the practical application of theoretical knowledge but serves as 
+            a basic prototype for subsequent, more detailed development.<br>
+            </p>
             """, unsafe_allow_html=True)
