@@ -29,7 +29,8 @@ if __name__ == '__main__':
     df = load_data()
 
     # Set up the Streamlit app layout
-    st.sidebar.subheader('Streamlit demo by Sirin')
+    # Sidebar
+    st.sidebar.subheader('Demo')
     st.sidebar.title('Bachelor Thesis Project')
     st.sidebar.subheader('OsloMet // SINTEF')
     st.sidebar.title('AI Topic Explorer')
@@ -41,7 +42,7 @@ if __name__ == '__main__':
     search_query = st.sidebar.text_input('Search', '')
 
     if search_query:
-        # Assuming 'df' is your DataFrame and 'topic' is the column with text to search
+        # DataFrame and the column with text to search
         try:
             # Case-insensitive search
             filtered_data = df[df['topic'].str.contains(search_query, case=False, na=False)]
@@ -65,7 +66,7 @@ if __name__ == '__main__':
             </p>
             """, unsafe_allow_html=True)
 
-        st.image('ai-taxo-colour.jpg', caption='AI Research Visualization')  # Replace with the path to your image
+        st.image('ai-taxo-colour.jpg', caption='AI Research Visualization')
 
         st.subheader('Summary of Data')
         total_papers = df.drop(columns=['topic']).sum().sum()  # Sum of all papers
@@ -73,7 +74,7 @@ if __name__ == '__main__':
         - **Total Number of Papers Analyzed:** `{total_papers}`
         """)
 
-        # You can add more statistics here based on your data
+        # I will add more statistics later...
 
         st.subheader('Distribution of Papers Across AI Topics')
         topic_distribution = df.melt(id_vars=['topic'], var_name='Year', value_name='Count').groupby('topic')[
@@ -89,13 +90,13 @@ if __name__ == '__main__':
         st.plotly_chart(fig, use_container_width=True)
 
     elif page == 'Detailed View':
-        st.title('AI Topics on arXiv')
+        st.title('Explore the AI Topics on arXiv')
 
         # Dropdown to select topic
         topic = st.selectbox('Select Topic', df['topic'].unique())
 
         # Slider for selecting the range of years
-        years = [col for col in df.columns if col.isdigit()]  # This will collect only the year columns
+        years = [col for col in df.columns if col.isdigit()]  # Collecting only the year columns
         min_year, max_year = int(min(years)), int(max(years))
         year_range = st.slider('Select the year range', min_year, max_year, (min_year, max_year))
 
@@ -123,5 +124,6 @@ if __name__ == '__main__':
             The tool encapsulates a digital prototype designed to map the spread of AI topics over time. 
             This initiative not only demonstrates the practical application of theoretical knowledge but serves as 
             a basic prototype for subsequent, more detailed development.<br>
+            2024, All Rights Reserved.            
             </p>
             """, unsafe_allow_html=True)
