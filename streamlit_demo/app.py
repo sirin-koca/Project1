@@ -133,7 +133,6 @@ if __name__ == '__main__':
         )
         fig.update_traces(marker_line_width=1.5, opacity=0.8, marker_line_color='black')
         st.plotly_chart(fig, use_container_width=True)
-        # Charts end.
 
     elif page == 'Detailed View':
         st.title('Explore the AI Topics on arXiv')
@@ -173,3 +172,5 @@ if __name__ == '__main__':
             2024, All Rights Reserved.            
             </p>
             """, unsafe_allow_html=True)
+
+        # Streamlit demo by Sirin Koca
