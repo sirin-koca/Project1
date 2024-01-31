@@ -6,7 +6,7 @@ import streamlit as st
 import pandas as pd
 import json
 
-st.set_page_config(page_title="AI Taxonomy Explorer", page_icon="🕹️", layout="wide", initial_sidebar_state="expanded")
+st.set_page_config(page_title="AI Taxonomy Explorer", page_icon=":bar_chart:", layout="wide", initial_sidebar_state="expanded")
 
 
 @st.cache_data
