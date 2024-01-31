@@ -9,6 +9,7 @@ class Dog:
     def display_info(self):
         return f"Dog's Name: {self.name}, Breed: {self.breed}"
 
+
 class Cat:
     def __init__(self, name, breed):
         self.name = name
@@ -20,6 +21,7 @@ class Cat:
     def display_info(self):
         return f"Cat's Name: {self.name}, Breed: {self.breed}"
 
+
 def main():
     # Creating a dog and a cat
     my_dog = Dog("Maya", "Pomchi")
@@ -27,7 +29,8 @@ def main():
 
     while True:
         # User chooses to interact with Dog or Cat
-        choice = input("Do you want to interact with a Dog or a Cat? (Enter 'Dog' or 'Cat', or 'exit' to quit): ").lower()
+        choice = input(
+            "Do you want to interact with a Dog or a Cat? (Enter 'Dog' or 'Cat', or 'exit' to quit): ").lower()
         if choice == 'exit':
             break
 
@@ -51,6 +54,7 @@ def main():
 
         else:
             print("Please enter a valid choice ('Dog', 'Cat', or 'exit').")
+
 
 if __name__ == "__main__":
     main()
