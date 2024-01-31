@@ -6,7 +6,8 @@ import streamlit as st
 import pandas as pd
 import json
 
-st.set_page_config(page_title="AI Taxonomy Explorer", page_icon=":bar_chart:", layout="wide", initial_sidebar_state="expanded")
+st.set_page_config(page_title="AI Taxonomy Explorer", page_icon=":bar_chart:", layout="wide",
+                   initial_sidebar_state="expanded")
 
 
 @st.cache_data
@@ -35,9 +36,6 @@ if __name__ == '__main__':
     st.sidebar.subheader('OsloMet // SINTEF')
     st.sidebar.title('AI Topic Explorer')
 
-    # Navigation
-    page = st.sidebar.radio('Select a Page', ['Home', 'Detailed View', 'About'])
-
     # Search bar
     search_query = st.sidebar.text_input('Search', '')
 
@@ -52,6 +50,9 @@ if __name__ == '__main__':
             st.error("The specified column does not exist in the DataFrame.")
         except Exception as e:
             st.error(f"An error occurred: {e}")
+
+    # Navigation
+    page = st.sidebar.radio('Select a Page', ['Home', 'Detailed View', 'About'])
 
     if page == 'Home':
         st.title('Overview')
