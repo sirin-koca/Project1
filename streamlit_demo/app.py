@@ -142,7 +142,7 @@ if __name__ == '__main__':
         topic = st.selectbox('Select Topic', df['topic'].unique())
 
         # Slider for selecting the range of years
-        years = [col for col in df.columns if col.isdigit()]  # Collecting only the year columns
+        years = [col for col in df.columns if col.isdigit()]  # Collecting only the year columns - or another metric
         min_year, max_year = int(min(years)), int(max(years))
         year_range = st.slider('Select the year range', min_year, max_year, (min_year, max_year))
 
