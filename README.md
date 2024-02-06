@@ -1,6 +1,7 @@
-# Python Fundamentals
-An introduction to the most fundamental aspects of Python programming language.
-My Python projects: [Programs](https://github.com/sirin-koca/Python_Fundamentals/tree/master/programs)
+# Python Fundamentals [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
+An introduction to the most fundamental aspects of Python programming language. 
+
+My Python projects: [Programs](https://github.com/sirin-koca/Python_Fundamentals/tree/master/programs) 
 
 ---
 
